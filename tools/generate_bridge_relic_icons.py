@@ -39,7 +39,7 @@ def pal_for(name):
 
 def glyph_for(name):
     n = name
-    if "cuffs" in n or "chain" in n:
+    if "cuffs" in n or "chain" in n or "rope" in n:
         return "chain"
     if "leash" in n or "collar" in n:
         return "collar"

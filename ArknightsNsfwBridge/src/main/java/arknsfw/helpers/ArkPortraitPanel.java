@@ -246,8 +246,9 @@ public final class ArkPortraitPanel {
         if (hasRelic(arknsfw.relics.equipment.LeashRelic.ID)) drawOverlay(sb, key, "leash", ox, oy, bw, bh, 1.0F);
         if (hasRelic(arknsfw.relics.equipment.BellTagRelic.ID)) drawOverlay(sb, key, "belltag", ox, oy, bw, bh, 1.0F);
 
-        // 绳缚：衣装破损或堕落路线
-        if (fall || ArkExposureHelper.stage() >= 1) {
+        // 绳缚：持有麻绳束缚遗物，或衣装破损/堕落路线
+        if (hasRelic(arknsfw.relics.equipment.RopeBindRelic.ID)
+                || fall || ArkExposureHelper.stage() >= 1) {
             drawOverlay(sb, key, "rope", ox, oy, bw, bh, 0.96F);
         }
 

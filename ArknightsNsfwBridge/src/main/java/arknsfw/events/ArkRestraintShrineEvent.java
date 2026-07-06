@@ -30,6 +30,7 @@ public class ArkRestraintShrineEvent extends AbstractImageEvent {
             arknsfw.relics.equipment.LaceBlindfoldRelic.ID,
             arknsfw.relics.equipment.VibeEggRelic.ID,
             arknsfw.relics.equipment.BodyCrestRelic.ID,
+            arknsfw.relics.equipment.RopeBindRelic.ID,
     };
 
     private static final int REMOVE_COST = 60;

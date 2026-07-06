@@ -456,6 +456,7 @@ public class ArkNsfwMod implements
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), ColorEnum.Eyjafjalla_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), ColorEnum.Eyjafjalla_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), ColorEnum.Eyjafjalla_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), ColorEnum.Eyjafjalla_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
@@ -466,6 +467,7 @@ public class ArkNsfwMod implements
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
@@ -476,6 +478,7 @@ public class ArkNsfwMod implements
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), scene.core.ColorEnum.SCENE_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), scene.core.ColorEnum.SCENE_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), scene.core.ColorEnum.SCENE_COLOR);
@@ -486,6 +489,7 @@ public class ArkNsfwMod implements
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), scene.core.ColorEnum.SCENE_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), scene.core.ColorEnum.SCENE_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), scene.core.ColorEnum.SCENE_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
@@ -496,6 +500,7 @@ public class ArkNsfwMod implements
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
@@ -506,6 +511,7 @@ public class ArkNsfwMod implements
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
@@ -516,6 +522,7 @@ public class ArkNsfwMod implements
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
         BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
 
         BaseMod.addRelic(new SceneBrandCurseRelic(), RelicType.SHARED);
         BaseMod.addRelic(new SceneAltarCurseRelic(), RelicType.SHARED);
