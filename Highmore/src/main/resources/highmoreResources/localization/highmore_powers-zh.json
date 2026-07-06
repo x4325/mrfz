@@ -1,0 +1,9 @@
+{
+  "highmore:ReapPower": {
+    "NAME": "收割",
+    "DESCRIPTIONS": [
+      "每次攻击命中时回复 ",
+      " 点生命值。"
+    ]
+  }
+}

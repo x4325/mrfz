@@ -1,0 +1,190 @@
+{
+  "eyjafjalla:VolcanoEchoPower": {
+    "NAME": "火山回响",
+    "DESCRIPTIONS": [
+      "将你打出的下 #b",
+      " 张牌的 #y投影 放入 #y云层 。"
+    ]
+  },
+  "eyjafjalla:AdelePower": {
+    "NAME": "旅梦",
+    "DESCRIPTIONS": [
+      "在你回合结束时，打出并消耗前 #b",
+      " 张 #y云层 牌。"
+    ]
+  },
+  "eyjafjalla:AdeleFixPower": {
+    "NAME": "旅梦",
+    "DESCRIPTIONS": [
+      "每当你失去1点 #y云量 时，抽 #b",
+      " 张牌。"
+    ]
+  },
+  "eyjafjalla:FireMarkPower": {
+    "NAME": "炎息标记",
+    "DESCRIPTIONS": [
+      "将你打出的下 #b",
+      " 张非炎息牌标记为 #y炎息牌 。"
+    ]
+  },
+  "eyjafjalla:SilentWetPower": {
+    "NAME": "无声润物",
+    "DESCRIPTIONS": [
+      "你每回合打出的前 #b",
+      " 张描述带有 #y格挡 的牌会打出两次。",
+      "格挡"
+    ]
+  },
+  "eyjafjalla:ClearDreamPower": {
+    "NAME": "明晰梦",
+    "DESCRIPTIONS": [
+      "在你的回合开始时，将 #b",
+      " 张 #y云 放入手中。"
+    ]
+  },
+  "eyjafjalla:TranceDreamPower": {
+    "NAME": "恍惚梦",
+    "DESCRIPTIONS": [
+      "每当你完成整段 #y旋律 时，给予所有敌人 #b",
+      " 层 #y洋红蒸汽 。"
+    ]
+  },
+  "eyjafjalla:BetweenUsPower": {
+    "NAME": "你我之间",
+    "DESCRIPTIONS": [
+      "打出 #y云层 牌时获得 #b",
+      " 点格挡，否则随机造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "eyjafjalla:PrepareDrawPower": {
+    "NAME": "抽牌堆的准备",
+    "DESCRIPTIONS": [
+      "在你下 #b",
+      " 回合开始时，消耗 #y抽牌堆 的3张状态牌。",
+      "Draw"
+    ]
+  },
+  "eyjafjalla:PrepareDiscardPower": {
+    "NAME": "弃牌堆的准备",
+    "DESCRIPTIONS": [
+      "在你下 #b",
+      " 回合开始时，消耗 #y弃牌堆 的3张状态牌。",
+      "Dis"
+    ]
+  },
+  "eyjafjalla:AnswerInWindPower": {
+    "NAME": "答案在风中",
+    "DESCRIPTIONS": [
+      "每当一段 #y旋律 开启时，将后 #b",
+      " 个音符修改为 #y任意音符 。"
+    ]
+  },
+  "eyjafjalla:DreitonPower": {
+    "NAME": "三重咏唱",
+    "DESCRIPTIONS": [
+      "你的下 #b",
+      " 张指定单敌人的牌，会对其他敌人各打出一次。"
+    ]
+  },
+  "eyjafjalla:DenseMistPower": {
+    "NAME": "氤氲",
+    "DESCRIPTIONS": [
+      "在你的回合结束时，获得 #b",
+      " 点格挡。每当你失去生命时增加 #b",
+      " 点。"
+    ]
+  },
+  "eyjafjalla:SpurtOutPower": {
+    "NAME": "喷薄",
+    "DESCRIPTIONS": [
+      "在你的回合结束时，获得 #b",
+      " 点 #y活力 并清空。你打出 #y炎息牌 后，将此数字加 #b",
+      " 。"
+    ]
+  },
+  "eyjafjalla:SongOfLovePower": {
+    "NAME": "爱之歌",
+    "DESCRIPTIONS": [
+      "每回合前 #b",
+      " 张耗能大于0的牌打出后返回手中且本回合耗能- #b1 。 NL 本回合还剩 #b",
+      " 张。"
+    ]
+  },
+  "eyjafjalla:VolcanicHealingPower": {
+    "NAME": "火山灰疗愈",
+    "DESCRIPTIONS": [
+      "当你受到伤害时，先获得伤害量 #b20％ 的格挡。 NL #y非攻击 伤害改为50％。"
+    ]
+  },
+  "eyjafjalla:DancingLavaPower": {
+    "NAME": "火舞",
+    "DESCRIPTIONS": [
+      "将你受到的非攻击伤害转移给随机敌人。在你回合开始时，将 #b",
+      " 张 #y灼伤+",
+      " 放入手中。"
+    ]
+  },
+  "eyjafjalla:GiveRedCloudPower": {
+    "NAME": "释放蒸汽",
+    "DESCRIPTIONS": [
+      "受到下 #b",
+      " 次攻击后，给予来源 #y洋红蒸汽 。"
+    ]
+  },
+  "eyjafjalla:RedCloudPower": {
+    "NAME": "洋红蒸汽",
+    "DESCRIPTIONS": [
+      "受到 #y攻击 的伤害+ #b",
+      " ％。受击后移除此效果。",
+      " ％。受击后在回合结束时移除此效果。"
+    ]
+  },
+  "eyjafjalla:WhiteCloudPower": {
+    "NAME": "纯白水汽",
+    "DESCRIPTIONS": [
+      "造成的 #y攻击 伤害降低至 #b",
+      " ％。攻击后移除此效果。"
+    ]
+  },
+  "eyjafjalla:ResplendentTearPower": {
+    "NAME": "璀璨悲泣",
+    "DESCRIPTIONS": [
+      "你的攻击伤害提升 #b40 ％，持续 #b ",
+      " 个回合。"
+    ]
+  },
+  "eyjafjalla:FollowHeartPower": {
+    "NAME": "随心徜羊",
+    "DESCRIPTIONS": [
+      "在你回合开始时，将 ",
+      " 放入弃牌堆。",
+      " 放入手中。",
+      "#y",
+      " 、 "
+    ]
+  },
+  "eyjafjalla:PinkOceanPower": {
+    "NAME": "粉色海羊",
+    "DESCRIPTIONS": [
+      "在你回合开始时，将 #y一首歌 放入",
+      "手中。",
+      "云层。"
+    ]
+  },
+  "eyjafjalla:FluffShieldPower": {
+    "NAME": "绒毛屏障",
+    "DESCRIPTIONS": [
+      "受到的伤害降低 #b80％ 。",
+      "玛丽有只毛绒绒"
+    ]
+  },
+  "eyjafjalla:MelodyMemoryPower": {
+    "NAME": "调律追忆",
+    "DESCRIPTIONS": [
+      "你再打出 #b",
+      " 张 #y技能 牌，受到 #b",
+      " 点伤害并向手中放入 #y眩晕 ，然后重置。"
+    ]
+  }
+}

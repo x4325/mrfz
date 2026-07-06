@@ -1,0 +1,3 @@
+idle/char_336_folivo
+skins/char_336_folivo_epoque_22/char_336_folivo_epoque_22
+skins/char_336_folivo_wild_11/char_336_folivo_wild_11

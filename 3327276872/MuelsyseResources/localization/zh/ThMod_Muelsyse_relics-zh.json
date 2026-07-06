@@ -1,0 +1,148 @@
+{
+  "muelsyse:LifeCircle": {
+    "NAME": "生命吊坠",
+    "FLAVOR": "命运啊，随水歌唱吧……",
+    "DESCRIPTIONS": [
+      "每场战斗召唤一个基础 #ymuelsyse:流形 。每打出 #b",
+      " 张牌，若复制数小于 #b4 则进行 #ymuelsyse:复制 。"
+    ]
+  },
+  "muelsyse:IndeterminateForm": {
+    "NAME": "“未定式”",
+    "FLAVOR": "它沉睡了太久，以至于忘记了自我的形状。",
+    "DESCRIPTIONS": [
+      "每一幕首次进入休息处时，从3张 #ymuelsyse:复制对象 选择1张加入卡组。",
+      "选择一张进行复制……"
+    ]
+  },
+  "muelsyse:TreeFruit": {
+    "NAME": "古地树实",
+    "FLAVOR": "将愿望许进树种里埋入皑皑白雪。待到大树结实，取下前四个果实，将最小的那个留给后代许愿，余下的树果，便是向萨米祈求答案的贡品。",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，你可以从 #r红 #g绿 #b蓝 #p紫 各1张牌中选择1张增加到你的手牌。"
+    ]
+  },
+  "muelsyse:LiveRose": {
+    "NAME": "活玫瑰",
+    "FLAVOR": "是你滋养她，还是她守护你？",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，使随机敌人获得效果：受到攻击后，所有敌人受到 #b1 点伤害，且伤害来源获得 #b1 点格挡。"
+    ]
+  },
+  "muelsyse:CultivateRule": {
+    "NAME": "生态园的日与夜",
+    "FLAVOR": "缪尔赛思主任在莱茵生命生态园写下的日记，记录了每一株植物的变化，书页上有淋湿的痕迹。",
+    "DESCRIPTIONS": [
+      "每当你 #ymuelsyse:栽培 X后，使生命吊坠获得X层计数。"
+    ]
+  },
+  "muelsyse:SpringFood": {
+    "NAME": "涌动之餐",
+    "FLAVOR": "我们生来便学会摄取。别违抗欲求，顺从它。",
+    "DESCRIPTIONS": [
+      "当 #y水 在作为原料时，额外强化目标牌 #b1 点攻击值和格挡值。"
+    ]
+  },
+  "muelsyse:SproutStick": {
+    "NAME": "芽棍",
+    "FLAVOR": "莱茵生命科考科主任的遗物。即使在一场意外中与主人离散，它仍能为持有者带来生存的启示。",
+    "DESCRIPTIONS": [
+      "通过 #y右击 此遗物触发，每场战斗限 #b5 次。在你的回合内，你可以丢弃最右边的手牌并抽 #b1 张牌。"
+    ]
+  },
+  "muelsyse:FineFlower": {
+    "NAME": "清香花束",
+    "FLAVOR": "每一支花都依附着朝露。空气中弥漫的是未知的芳香。",
+    "DESCRIPTIONS": [
+      "你每场战斗的前 #b3 次 #ymuelsyse:栽培 不会使原料 #ymuelsyse:失肥 。"
+    ]
+  },
+  "muelsyse:NatureBreath": {
+    "NAME": "自然之息",
+    "FLAVOR": "原本万物各有声音，直到“祂”代替万物言语。",
+    "DESCRIPTIONS": [
+      "替换 #y生命吊坠 。每场战斗召唤一个基础 #ymuelsyse:流形 。每打出 #b",
+      " 张牌，若复制数小于 #b5 则进行 #ymuelsyse:复制 。"
+    ]
+  },
+  "muelsyse:LeafRing": {
+    "NAME": "荆与叶的织带",
+    "FLAVOR": "于此环中，得受荆棘草叶之偏爱。",
+    "DESCRIPTIONS": [
+      "每回合当你首次 #ymuelsyse:栽培 后，获得 [E] 并 #ymuelsyse:润化 3。"
+    ]
+  },
+  "muelsyse:FruitAssorted": {
+    "NAME": "水果什锦",
+    "FLAVOR": "缪尔赛思的最爱。",
+    "DESCRIPTIONS": [
+      "将精灵的诅咒和3张未拥有的 #ymuelsyse:复制对象 加入卡组。",
+      "美味的水果……",
+      "跳过奖励",
+      "关闭"
+    ]
+  },
+  "muelsyse:SnowRing": {
+    "NAME": "雪与土的织带",
+    "FLAVOR": "于此环中，得受霜雪大地之青睐。",
+    "DESCRIPTIONS": [
+      "休息处的 #y吸收泪珠 提供额外选项：失去 #b10 点生命并获得 #y回流的泪珠 。"
+    ]
+  },
+  "muelsyse:OldDraw": {
+    "NAME": "古老壁画",
+    "FLAVOR": "走出洞窟，抬头看看吧，自古以来，也不尽然。",
+    "DESCRIPTIONS": [
+      "若你 #ymuelsyse:漫步 选择的牌数不小于 #b2 ，抽一张牌。"
+    ]
+  },
+  "muelsyse:Laurel": {
+    "NAME": "桂冠",
+    "FLAVOR": "生灵回响，万物生长。",
+    "DESCRIPTIONS": [
+      "每 #b4 个回合 #ymuelsyse:复制 一个持续 #b1 回合的流形。"
+    ]
+  },
+  "muelsyse:CoffeeCandy": {
+    "NAME": "咖啡平原咖啡糖",
+    "FLAVOR": "多索雷斯咖啡品牌糖果产品，现已广销各地。添加真实咖啡因，让你从上班清醒到加班。",
+    "DESCRIPTIONS": [
+      "当你 #ymuelsyse:栽培 一张带有 #y消耗 的牌时，使其攻击值和格挡值+2。"
+    ]
+  },
+  "muelsyse:OrangeStorm": {
+    "NAME": "橙味风暴",
+    "FLAVOR": "约翰老妈糖果产品，畅销橙子味，以廉价美味为卖点，在孩子中很有人气。",
+    "DESCRIPTIONS": [
+      "当你 #ymuelsyse:栽培 一张带有 #y消耗 的牌时，使其获得效果：打出后获得 [E] 。"
+    ]
+  },
+  "muelsyse:StereoscopicArtInstallation": {
+    "NAME": "立体艺术装置",
+    "FLAVOR": "莱茵生命有时给人的印象就如同这件艺术品：神秘莫测，层层叠叠，永远探不清虚实。",
+    "DESCRIPTIONS": [
+      "在你回合开始时，使所有 #ymuelsyse:流形 回复1点生命。 NL 战斗结束时，每个 #y流形 为你回复1点生命。"
+    ]
+  },
+  "muelsyse:TimeLibrary": {
+    "NAME": "羽蛇的时间博物馆",
+    "FLAVOR": "一个窥探真相的人，一个掌握真相的人，一个玩弄真相的人。",
+    "DESCRIPTIONS": [
+      "改变你的下一场 #y精英 战斗的敌人。这场战斗结束后，你回复 #b30 点生命并获得 #y额外 奖励。"
+    ]
+  },
+  "muelsyse:HerLibrary": {
+    "NAME": "“图书馆”",
+    "FLAVOR": "一个被真相拒绝的人，一个被真相震慑的人，一个被真相愚弄的人。",
+    "DESCRIPTIONS": [
+      "拾起时，从3张 #y霍尔海雅 牌中选择一张加入卡组。"
+    ]
+  },
+  "muelsyse:ArmorShadow": {
+    "NAME": "装甲虚影",
+    "FLAVOR": "不好的回忆……",
+    "DESCRIPTIONS": [
+      "在与 #y精英 或 #y领袖 敌人战斗时，每回合开始丢弃 #b1 张牌并获得 #b4 点 活力 。"
+    ]
+  }
+}

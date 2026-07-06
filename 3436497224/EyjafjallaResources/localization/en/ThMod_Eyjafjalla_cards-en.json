@@ -1,0 +1,744 @@
+{
+
+  "Strike_Eyjafjalla": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! Damage.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :increase the Damage by 2."
+    ]
+  },
+  "Defend_Eyjafjalla": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :increase the  Block by 2."
+    ]
+  },
+  "BurnGround_Eyjafjalla": {
+    "NAME": "Scorched Earth",
+    "DESCRIPTION": "Gain !M!  eyjafjalla:pb-mark . NL Draw 2 cards to your eyjafjalla:clouds .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Gain 1 more eyjafjalla:pb-mark ."
+    ]
+  },
+  "FloorCloud_Eyjafjalla": {
+    "NAME": "Stratus",
+    "DESCRIPTION": " eyjafjalla:retain-C . NL Deal !D! Damage. NL If this card is in your eyjafjalla:clouds ,incease the damage by !M! .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Deal additional 1 times ."
+    ]
+  },
+
+  "CloudCrack_Eyjafjalla": {
+    "NAME": "Riving Light",
+    "DESCRIPTION": " Exhaust . NL Gain !B! Block . NL Add a copy of this crad whose Block is increased by !M! into your discard pile.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Draw 1 card."
+    ]
+  },
+  "ResonanceDefend_Eyjafjalla": {
+    "NAME": "Resonant Defend",
+    "DESCRIPTION": " eyjafjalla:inner-voice . NL Gain !B! Block .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Add a *“Marshmallow” into your hand.",
+      " eyjafjalla:pb :Add a *“Marshmallow”+ into your hand."
+    ]
+  },
+  "IntoDream_Eyjafjalla": {
+    "NAME": "Dreaming",
+    "DESCRIPTION": "Deal !D! damage. NL Choose at most !M! cards in your hand and put them into your eyjafjalla:clouds .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Choose 2 cards instead"
+    ]
+  },
+  "HeartScar_Eyjafjalla": {
+    "NAME": "Heart Scar",
+    "DESCRIPTION": "Deal !D! damage 4 times. NL Gain !M! eyjafjalla:pb-mark .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :deal 5 times instead."
+    ]
+  },
+  "Sunshine_Eyjafjalla": {
+    "NAME": "Sun Burst",
+    "DESCRIPTION": "Deal !D! damage. NL Gain 1 eyjafjalla:cloudage .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb : Exhaust . Gain another !M! eyjafjalla:cloudage ."
+    ]
+  },
+  "ResearchOnNature_Eyjafjalla": {
+    "NAME": "disaster research",
+    "DESCRIPTION": " Upgrade all cards in your eyjafjalla:clouds . NL Gain !M!  eyjafjalla:pb-mark .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb : Upgrade all cards in your hand."
+    ]
+  },
+  "ThunderCloud_Eyjafjalla": {
+    "NAME": "Thunder Cloud",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block . NL If the two numbers above are not equal, apply !M! Weak .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Deal 2 more damage. Gain 1 more Block ."
+    ]
+  },
+  "MissSound_Eyjafjalla": {
+    "NAME": "The Missing Words",
+    "DESCRIPTION": "Play and Exhaust the card in eyjafjalla:Clouds with an index of !M!, then add this number by 1.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Shuffle this card to your draw pile."
+    ]
+  },
+  "SevenColor_Eyjafjalla": {
+    "NAME": "Colorful",
+    "DESCRIPTION": " Exhuast . NL Put  X *Cloud+ into your eyjafjalla:clouds .",
+    "UPGRADE_DESCRIPTION": " Exhaust . NL Put  X+1 *Cloud+ into your eyjafjalla:clouds .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Put 1 more *Cloud+ into your eyjafjalla:clouds ."
+    ]
+  },
+  "RiseUp_Eyjafjalla": {
+    "NAME": "Rise Up",
+    "DESCRIPTION": "Choose at most !M! cards in discard pile and put it into your eyjafjalla:clouds .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Increase the damage and Block of chosen cards by 2."
+    ]
+  },
+  "UrgentPresto_Eyjafjalla": {
+    "NAME": "Quickening Presto",
+    "DESCRIPTION": "Deal !D! damage. NL Start a eyjafjalla:melody :SAA NL For every step you complete, deal !M! damage to a random enemy.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :increase the damage by 2.",
+      "deal ",
+      " damage to a random enemy"
+    ]
+  },
+  "HeartFeel_Eyjafjalla": {
+    "NAME": "Heart Connect",
+    "DESCRIPTION": " eyjafjalla:inner-voice . NL Deal !D! damage NL When draw add a copy of this card to your eyjafjalla:clouds .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Increase the damge by 2."
+    ]
+  },
+  "Chorus_Eyjafjalla": {
+    "NAME": "Chorus",
+    "DESCRIPTION": "Deal !D! damage. NL Increase the damage and Block of all cards in your eyjafjalla:clouds by !M! .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Increase pb-cards by 1 additionally."
+    ]
+  },
+  "TreeAngle_Eyjafjalla": {
+    "NAME": "Lvy",
+    "DESCRIPTION": "Draw !M! cards. NL Start a eyjafjalla:melody :SSA NL For every step you complete, draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Start a eyjafjalla:melody :SSA NL For every step you complete, draw 1 card.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :If you complete the whole melody, gain 1 energy.",
+      "Draw 1 card.",
+      " Gain 1 energy."
+    ]
+  },
+  "InstantFireworks_Eyjafjalla": {
+    "NAME": "Instant Spark",
+    "DESCRIPTION": "Deal !D! damage. NL If you are during a eyjafjalla:melody deal additional !M! damage. NL eyjafjalla:replace :Strike.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Veiwed as the type that eyjafjalla:melody acquires."
+    ]
+  },
+  "FlutteringBreeze_Eyjafjalla": {
+    "NAME": "Lasting Breeze",
+    "DESCRIPTION": "Gain !B! Block . NL If you are during a eyjafjalla:melody gain !M! Block . NL eyjafjalla:replace :Defend.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Veiwed as the type that eyjafjalla:melody acquires."
+    ]
+  },
+  "FlameSurround_Eyjafjalla": {
+    "NAME": "Etangled by Fire",
+    "DESCRIPTION": "Deal !D! damage. NL Add a *Burn+1 into your hand. NL eyjafjalla:replace :Strike.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Deal !M! additional damage for all your *Burn ."
+    ]
+  },
+  "FlameMountain_Eyjafjalla": {
+    "NAME": "Scorched by Mount",
+    "DESCRIPTION": "Gain !B! Block . NL Add a *Burn+1 into your hand. NL eyjafjalla:replace :Defend.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Gain !M! additional Block for all your *Burn ."
+    ]
+  },
+  "Fairy_Eyjafjalla": {
+    "NAME": "Fairy",
+    "DESCRIPTION": "Deal !D! damage. NL Increase the lower one between energy and eyjafjalla:cloudage by  !M! .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb : Additionally increase it by 1. Remove *pb-mark of this card."
+    ]
+  },
+  "DreamCradle_Eyjafjalla": {
+    "NAME": "Cradle to Dreamland",
+    "DESCRIPTION": "Draw !M! cards. NL Gain !B! Block for each eyjafjalla:pb-card your draw. Mark the card without pb-mark.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Draw additional 2 cards. Remove the pb-mark of this card."
+    ]
+  },
+
+  "CloudyBarrier_Eyjafjalla": {
+    "NAME": "Cloudy Barrier",
+    "DESCRIPTION": "Gain !B! Block . NL Apply 2 eyjafjalla:pure-white-steam .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Apply addtional 1 to a random enemy."
+    ]
+  },
+  "Duetto_Eyjafjalla": {
+    "NAME": "Duetto",
+    "DESCRIPTION": " eyjafjalla:inner-voice . NL Deal !D! damage !M! times. NL Increase this card's cost by 1 and damage-dealing time by 2 this combat.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Increase this card's damage by 3."
+    ]
+  },
+  "Morning_Eyjafjalla": {
+    "NAME": "dawn",
+    "DESCRIPTION": " Innate . NL Gain !M! eyjafjalla:cloudage . NL Exhaust .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Gain additinal 1 energy."
+    ]
+  },
+  "Afterglow_Eyjafjalla": {
+    "NAME": "After Glow",
+    "DESCRIPTION": " eyjafjalla:innate-C . NL Choose at most !M! cards in your hand to transform them to *Corresponding *Cloud .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :You can choose 1 more card."
+    ]
+  },
+  "PracticalJoke_Eyjafjalla": {
+    "NAME": "Trick from Dolly",
+    "DESCRIPTION": "Discard the cards whose cost is even, put the eyjafjalla:project  of the rest  of card in your hand.",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:retain-C . NL Discard the cards whose cost is even, put the eyjafjalla:project  of the rest of card in your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Mrak these projects as eyjafjalla:pb-card ."
+    ]
+  },
+  "SilentWet_Eyjafjalla": {
+    "NAME": "Soundproof Moisturizer",
+    "DESCRIPTION": "The first !M! card contains \" Block \" you play each turn will be played twice.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Gain 1 eyjafjalla:cloudage ."
+    ]
+  },
+  "Ignition_Eyjafjalla": {
+    "NAME": "Ignition",
+    "DESCRIPTION": "Deal !D! damage. NL Put the *reignition into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Put the *reignition+ into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Apply !M! Vulnerable ."
+    ]
+  },
+  "ClearDream_Eyjafjalla": {
+    "NAME": "Lucid Dream",
+    "DESCRIPTION": "At the start of your turn, add a *Cloud into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :When played, add a *Cloud+ into your eyjafjalla:clouds ."
+    ]
+  },
+  "CloudSilk_Eyjafjalla": {
+    "NAME": "Whatever Float Your Goat",
+    "DESCRIPTION": "Gain !B! Block . NL If the cards in your hand are less than 5, exchange your hand and your eyjafjalla:clouds .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Draw cards to your eyjafjalla:clouds until it equals to your hand."
+    ]
+  },
+  "DenseMist_Eyjafjalla": {
+    "NAME": "Dense Mist",
+    "DESCRIPTION": "At the end of your turn, gain 2 Block , increase the number by !M! for each time you lose HP.",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:innate-C . NL At the end of your turn, gain 2 Block , increase the number by !M! for each time you lose HP.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Increase the second number by 1."
+    ]
+  },
+  "FireHeart_Eyjafjalla": {
+    "NAME": "Wild Fire",
+    "DESCRIPTION": "Gain !M!  eyjafjalla:pb-mark.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Gain additional 2 eyjafjalla:pb-mark."
+    ]
+  },
+  "SayToSun_Eyjafjalla": {
+    "NAME": "Send Words to the dusk",
+    "DESCRIPTION": "Choose a eyjafjalla:pb-card from Exhaust pile, play it and remove it from the Exhaust pile.",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:retain-C . NL Choose a eyjafjalla:pb-card from Exhaust pile, play it and remove it from the Exhaust pile.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Gain 1 pb-mark."
+    ]
+  },
+  "SilentSound_Eyjafjalla": {
+    "NAME": "Sound of Silence",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Increase the times by 1 for each trun you don't play any Attacks.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb : Gain Block equal to 25% of unblocked damage dealt."
+    ]
+  },
+  "LiveStone_Eyjafjalla": {
+    "NAME": "Monument for life",
+    "DESCRIPTION": " Retain . Exhaust . NL Gain !B! Block . NL Block is not removed at the start of your next !M! turn.",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:pb :Not removed at the start of your next 2 turn instead."
+    ]
+  },
+  "InSunset_Eyjafjalla": {
+    "NAME": "I'm Towards the Western",
+    "DESCRIPTION": " Draw 1 card to your eyjafjalla:clouds . NL Start a eyjafjalla:melody :SA NL During the eyjafjalla:melody, your cards have eyjafjalla:inner-voice .",
+    "UPGRADE_DESCRIPTION": "Draw 1 card to your eyjafjalla:clouds . NL Start a eyjafjalla:melody :SAS NL During the eyjafjalla:melody, your cards have eyjafjalla:inner-voice .",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:pb :Draw 1 card.",
+      "Your #yinner-voice is floating in a sea of clouds ……"
+    ]
+  },
+  "SpurtOut_Eyjafjalla": {
+    "NAME": "Spewing",
+    "DESCRIPTION": "At the end of your turn, let your next attack deal additional !M! damage for each eyjafjalla:pb-card you played.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Mark all the card eyjafjalla:clouds ."
+    ]
+  },
+  "TranceDream_Eyjafjalla": {
+    "NAME": "Ambiguous Dream",
+    "DESCRIPTION": "Whenever you complete a eyjafjalla:melody , apply !M! eyjafjalla:carmine-steam to all enemies.",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:retain-C . NL Whenever you complete a eyjafjalla:melody , apply !M! eyjafjalla:carmine-steam to all enemies .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Apply !M! eyjafjalla:carmine-steam to all enemies."
+    ]
+  },
+  "BetweenUs_Eyjafjalla": {
+    "NAME": "Between You and Me",
+    "DESCRIPTION": "Whenever you play a card in your eyjafjalla:clouds , gain !M! Block . Else deal !M! damage to a random enemy.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :The next Attack you play cost 0."
+    ]
+  },
+  "Dreiton_Eyjafjalla": {
+    "NAME": "Dreiton",
+    "DESCRIPTION": "Your next !M! cards (which select only 1 enemy as target) will be played to all other enemies 1 times. NL Exhaust .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Increase the first number by 1."
+    ]
+  },
+  "PrepareBeforeCamp_Eyjafjalla": {
+    "NAME": "Prepare before a Picnic",
+    "DESCRIPTION": "Gain !B! Block . NL At the start of your next turn, Exhaust 3 Status from draw pile.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Exhaust additional 3 Status in discard."
+    ]
+  },
+  "Push_Eyjafjalla": {
+    "NAME": "Tolerate",
+    "DESCRIPTION": "Deal !D! damage. NL Enemy loses Strength equals to !M! % unblocked damage dealt this turn.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :equals to !M! % unblocked damage dealt this turn instead ."
+    ]
+  },
+  "HeartInCandy_Eyjafjalla": {
+    "NAME": "Bonbon",
+    "DESCRIPTION": " Exhaust 1 card in your hand. NL Put 1 *“Marshmallow”+ into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :If your eyjafjalla:clouds is not full, put additional 1 into your eyjafjalla:clouds."
+    ]
+  },
+  "Sailing_Eyjafjalla": {
+    "NAME": "Set Sail",
+    "DESCRIPTION": " Exhasut . Start 2 eyjafjalla:melody : NL SARS and SARA NL Gain !M! Block for each step you complete.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Replace all the R wtih any-note.",
+      "Gain 4 Block .",
+      "Gain 6 Block."
+    ]
+  },
+  "TheEnd_Eyjafjalla": {
+    "NAME": "Finale",
+    "DESCRIPTION": "Start a eyjafjalla:melody according to your hand order. Your next Attack deal !M!  additional damage for each step you compete.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Put a *Cloud into your hand.",
+      "Your next Attack deal  #b",
+      " additional damage."
+    ]
+  },
+  "WaveFlower_Eyjafjalla": {
+    "NAME": "Flower Wave",
+    "DESCRIPTION": " Exhaust . NL Start !M! random eyjafjalla:melody .",
+    "UPGRADE_DESCRIPTION": " Innate , Exhaust . NL Start !M! random eyjafjalla:melody .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Start additional 1 random eyjafjalla:melody."
+    ]
+  },
+  "FlameBurst_Eyjafjalla": {
+    "NAME": "Pyroblast",
+    "DESCRIPTION": "Mark the sum of energy and eyjafjalla:cloudage as Y. NL Deal !D! damage Y+1 times. NL Add a *Burn +Y into your discard pile. NL (Y equals to !M! )",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Deal additional 2 damage."
+    ]
+  },
+  "CloudMelody_Eyjafjalla": {
+    "NAME": "Melody of Cloud",
+    "DESCRIPTION": "Gain [E] . NL Replace the Attack in your hand with *Corresponding *Cloud .",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:retain-C . NL Gain [E] . NL Replace the Attack in your hand with *Corresponding *Cloud .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Replace the first Attack in your darw pile additionally."
+    ]
+  },
+  "Darkside_Eyjafjalla": {
+    "NAME": "Dark Domain",
+    "DESCRIPTION": "Deal !D! damage. NL Double the damage for each tip is 0 : NL eyjafjalla:cloudage ; Energy; Other cards in eyjafjalla:clouds ; Other cards in hand.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :For each tip below 1 instead."
+    ]
+  },
+  "VolcanicHealing_Eyjafjalla": {
+    "NAME": "Volcanic Ash Therapy",
+    "DESCRIPTION": "When damaged, gain Block equals to 20% of damage in advance.If by non-Attack, gain Block equals to 50% of damage instead.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Heal 4 HP."
+    ]
+  },
+  "HappinessAria_Eyjafjalla": {
+    "NAME": "Passionate Aria",
+    "DESCRIPTION": " Upgard the *Burn this combat, deal !M! times of *Burn Upgade times damage.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Upgade additional 1 times.",
+      " NL (Deal !D! damage)"
+    ]
+  },
+  "SadnessRecitative_Eyjafjalla": {
+    "NAME": "Depressed Aria",
+    "DESCRIPTION": "Put !M! *Burn with highest grade from draw pile and discard pile into your hand, gain !B! times of *Burn 's upgarde times Block .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Put additional 2 *Burn into your hand."
+    ]
+  },
+  "CloudCake_Eyjafjalla": {
+    "NAME": "Cloudy Cake",
+    "DESCRIPTION": " Exhaust . NL Choose 1 of !M! random powers to give it to enenmy, then you get the rest of them.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :You have additional 1 power to choose ."
+    ]
+  },
+  "FollowHeart_Eyjafjalla": {
+    "NAME": "Go-at Your Own Way",
+    "DESCRIPTION": " Exhaust your eyjafjalla:clouds . NL Draw !M! cards to your eyjafjalla:clouds. NL At the start of your turn, add these Exhausted cards into your discard pile.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Add these Exhausted cards to hand."
+    ]
+  },
+  "LittleFeelings_Eyjafjalla": {
+    "NAME": "Little Thought",
+    "DESCRIPTION": " eyjafjalla:inner-voice . NL Apply X eyjafjalla:carmine-steam and eyjafjalla:pure-white-steam .",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:inner-voice . NL Apply X+1 eyjafjalla:carmine-steam and eyjafjalla:pure-white-steam .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :If X is above 0, gain 1 energy."
+    ]
+  },
+  "TheLovedOne_Eyjafjalla": {
+    "NAME": "Lifetime of Love",
+    "DESCRIPTION": " Exhaust . NL Choose 1 card in your hand. Put it into hand for every first time it moves to discard pile in your turn.",
+    "UPGRADE_DESCRIPTION": " Retain , Exhaust . NL Choose 1 card in your hand. Put it into hand for every first time it moves to discard pile in your turn.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :The chosen card costs 0 this turn."
+    ]
+  },
+
+  "Volcano_Eyjafjalla": {
+    "NAME": "Volcano",
+    "DESCRIPTION": " Exhaust . NL Deal !D! damage !M! times to random enemy. NL Put a eyjafjalla:project that cost 1 less [E] and deal 1 less time into your eyjafjalla:clouds .",
+    "EXTENDED_DESCRIPTION": [
+      "[Project]",
+      " eyjafjalla:pb :Your next Attack deal 2 additional damage."
+    ]
+  },
+  "Inherit_Eyjafjalla": {
+    "NAME": "Inherit",
+    "DESCRIPTION": " Exhaust . NL Put your eyjafjalla:clouds into your hand. NL Gain [E] [E] .",
+    "UPGRADE_DESCRIPTION": " Exhuast . NL put your eyjafjalla:clouds into your hand. NL Gain [E] [E] [E] .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Draw 2 cards to your eyjafjalla:clouds ."
+    ]
+  },
+  "Shuttle_Eyjafjalla": {
+    "NAME": "Shuttle",
+    "DESCRIPTION": " eyjafjalla:inner-voice , Exhaust . NL Deal !D! damage. NL Clouds: Put *Shuttle into your hand, else put it into your eyjafjalla:clouds .",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:inner-voice , Exhaust . NL Deal !D! damage. NL Clouds: Put *Shuttle+ into your hand, else put it into your eyjafjalla:clouds .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :The *Shuttle put cost 1 less energy."
+    ]
+  },
+  "SoLongAdele_Eyjafjalla": {
+    "NAME": "So Long Adele",
+    "DESCRIPTION": "At the end of your turn, play the first !M! card in your eyjafjalla:clouds and Exhaust them.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Put 2 *Cloud+ into your hand."
+    ]
+  },
+  "PulseOfTerra_Eyjafjalla": {
+    "NAME": "Pulse Of Terra",
+    "DESCRIPTION": " ceaseless-pb (F= !eyjafjalla:F! ) NL Deal !D! damage !M! times. NL Gain !B! Block !M! times.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Increase the damage and Block by F ."
+    ]
+  },
+  "PinkOcean_Eyjafjalla": {
+    "NAME": "Pink Sea",
+    "DESCRIPTION": " Exhaust . NL Choose arbitrary of !M! eyjafjalla:dolly-card to put them into your eyjafjalla:clouds , and add the rest of them into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb : Upgrade these cards."
+    ]
+  },
+  "FireOfLove_Eyjafjalla": {
+    "NAME": "Fire of Love",
+    "DESCRIPTION": "Draw !M! cards. NL Gain [E] [E] . NL Put *Burn+ !M! in your discard pile, and increase all the number of this card by 1.",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:pb :Your next Attack deal !M! additional damage."
+    ]
+  },
+  "LetRainGo_Eyjafjalla": {
+    "NAME": "Rain Rian Go Away",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Put *Clear *Skies into  your eyjafjalla:clouds , until it is full.",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:pb :Put *Clear *Skies+ into  your eyjafjalla:clouds instead."
+    ]
+  },
+  "AnswerInWind_Eyjafjalla": {
+    "NAME": "Blowing in the Wind",
+    "DESCRIPTION": "Whenever you start a eyjafjalla:melody, replace the next note with eyjafjalla:any-note .",
+    "UPGRADE_DESCRIPTION":" Innate . NL Whenever you start a eyjafjalla:melody, replace the next note with eyjafjalla:any-note .",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:pb :Start a random eyjafjalla:melody ."
+    ]
+  },
+  "TimeOfLove_Eyjafjalla": {
+    "NAME": "Love and Timetamp",
+    "DESCRIPTION": " eyjafjalla:innate-C . Exhaust . NL Restore all piles except for your eyjafjalla:clouds to what they like at the start of the combat.",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:pb :Remove all your debuffs."
+    ]
+  },
+  "GoldAndRoses_Eyjafjalla": {
+    "NAME": "Gold and Rose",
+    "DESCRIPTION": "Start a eyjafjalla:melody :SAASR NL Apply 1 eyjafjalla:pure-white-steam to all enemies for each step you complete.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :If you complete the eyjafjalla:melody , heal !M! HP.",
+      "Apply #y pure-white-steam to all enemies.",
+      "Heal 4 HP.",
+      "Heal 6 Hp."
+    ]
+  },
+  "VolcanoEcho_Eyjafjalla": {
+    "NAME": "Volcano Reverbration",
+    "DESCRIPTION": " Retain , Exhaust . NL If this card is in your hand or eyjafjalla:clouds , put a *Volcano *Stone into your eyjafjalla:clouds .",
+    "UPGRADE_DESCRIPTION": " Retain , Exhaust . NL If this card is in your hand or eyjafjalla:clouds , put a *Volcano *Stone+ into your eyjafjalla:clouds .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Put 2 them into your hand."
+    ]
+  },
+  "SongOfLove_Eyjafjalla": {
+    "NAME": "Skidamarink",
+    "DESCRIPTION": "The first !M! card you play that cost 1 or more each turn will be returned to your hand and cost 1 less [E] this turn.",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:pb :Gain M eyjafjalla:cloudage ."
+    ]
+  },
+  "DancingLava_Eyjafjalla": {
+    "NAME": "Dancing Lava",
+    "DESCRIPTION": "Transfer the non-Attack damage you receive to random enemy. NL At the start of your turn (Y), add *Burn+Y into your hand.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Transfer the non-Attack damage you receive to random enemy. NL At the start of your Y turn, put *Burn+Y into your hand.",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:pb :Transform all your Statuses to *Burn+Y ."
+    ]
+  },
+  "BlazePrelude_Eyjafjalla": {
+    "NAME": "Blaze Prelude",
+    "DESCRIPTION": " Exhaust . NL Start a eyjafjalla:melody :SSSSA NL For each step you complete, increase the damage and Block of cards in your hand by !M! .",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:pb :Increase the cards in eyjafjalla:clouds at the same time.",
+      "Increase the damage and Block of your hand by ",
+      "Increase the damage and Bolck of your hand and clouds by ",
+      "  #b ."
+    ]
+  },
+
+  "ReIgnition_Eyjafjalla": {
+    "NAME": "Reignition",
+    "DESCRIPTION": " Exhaust . NL Deal !D! damage to all enemies.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Deal additional 1 times."
+    ]
+  },
+  "Marshmallow_Eyjafjalla": {
+    "NAME": "“Marshmallow”",
+    "DESCRIPTION": " eyjafjalla:inner-voice . Exhaust . NL Gain !B! Block . NL When played automatically, gain additional !M! Block ."
+  },
+  "Cloud_Eyjafjalla": {
+    "NAME": "Cloud",
+    "DESCRIPTION": " eyjafjalla:retain-C . Exhaust . NL When played from eyjafjalla:clouds , put a random card's eyjafjalla:project into your eyjafjalla:clouds, else draw 1 card.",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:retain-C . Exhaust . NL When played from eyjafjalla:clouds , put a random card's eyjafjalla:project that cost 1 less [E] into your eyjafjalla:clouds, else draw 1 card.",
+    "EXTENDED_DESCRIPTION": [
+      "Won't be marked as eyjafjalla:pb ."
+    ]
+  },
+  "UnknownCloud_Eyjafjalla": {
+    "NAME": "Unknown Cloud",
+    "DESCRIPTION": " eyjafjalla:Retain-C . Exhaust . NL When played from eyjafjalla:clouds ,put a *? into your eyjafjalla:clouds , else put it into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "'s Cloud",
+      " eyjafjalla:retain-C . Exhaust . NL When played from eyjafjalla:clouds ,put a *",
+      " into your cloud, else put it into your hand."
+    ]
+  },
+  "Sunday_Eyjafjalla": {
+    "NAME": "Clear Skies",
+    "DESCRIPTION": " Unplayable . NL At the end of your turn Exhaust , and deal !M! damage to all enemies.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :"
+    ]
+  },
+  "Burn_Eyjafjalla": {
+    "NAME": "Burn",
+    "DESCRIPTION": " Unplayable . NL At the end of your turn, take !M! damage.",
+    "UPGRADE_DESCRIPTION": " Unplayable . NL  At the end of your turn, take !M! damage. NL Can be played during the eyjafjalla:melody ."
+  },
+  "VolcanoStone_Eyjafjalla": {
+    "NAME": "Volcano Stone",
+    "DESCRIPTION": " Exhaust . NL Deal !D! damage. NL When you get this card, increase the damage by the number equals to your Block.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Gain 2 eyjafjalla:pb-mark."
+    ]
+  },
+  "Songs_Eyjafjalla": {
+    "NAME": "A Song",
+    "DESCRIPTION": " Exhaust . NL Choose 1 eyjafjalla:melody below and start it: NL *Mary *Has *A *Little *Lamb ; NL *The *Farmer *in *the *Dell ; NL *Row, *Row, *Row *Your *Boat ."
+  },
+  "SongMary_Eyjafjalla": {
+    "NAME": "Mary Has A Little Lamb",
+    "DESCRIPTION": " eyjafjalla:melody :SAAS NL during the melody, the Lord of the Sheep loses its *Fluffy *Shield .",
+    "EXTENDED_DESCRIPTION": [
+      "Dolly seems to become smaller?"
+    ]
+  },
+  "SongFarmer_Eyjafjalla": {
+    "NAME": "The Farmer in the Dell",
+    "DESCRIPTION": " eyjafjalla:melody :SRRS NL The Lord of the Sheep loses !M! Strength this turn for each step you complete.",
+    "EXTENDED_DESCRIPTION": [
+      "The Lord of the Sheep loses #b",
+      " Strength this turn."
+    ]
+  },
+  "SongBoat_Eyjafjalla": {
+    "NAME": "Row, Row, Row Your Boat",
+    "DESCRIPTION": " eyjafjalla:melody :SSSS NL The Lord of the Sheep loses !M! *Recall *of *Regulation for each step you complete.",
+    "EXTENDED_DESCRIPTION": [
+      "The Lord of the Sheep loses #b",
+      " #y Accidental #y Eruption."
+    ]
+  },
+  "DollyInvitation_Eyjafjalla": {
+    "NAME": "Invitation from Dolly",
+    "DESCRIPTION": " eyjafjalla:disposable . NL Get eyjafjalla:Dreaming-key ."
+  },
+
+  "TQB_Eyjafjalla": {
+    "NAME": "Fluffbag",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Gain !B! Block . NL Whenever you are attacked this turn, deal 4 damage back.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Deal 8 damage back instead."
+    ]
+  },
+  "LTTQB_Eyjafjalla": {
+    "NAME": "Joyful Fluffbag",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Gain !B! Block . NL For the  next 2 times you're attacked, apply 1 eyjafjalla:carmine-steam back.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :For the  next 4 times you're attacked instead."
+    ]
+  },
+  "CPS_Eyjafjalla": {
+    "NAME": "Frisbee",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Deal !D! damage. NL Deal !D! damage again if the enemy intend to attack.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Deal !D! damage for additional 1 times."
+    ]
+  },
+  "JMCPS_Eyjafjalla": {
+    "NAME": "Gym Frisbee",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Deal !D! damage. NL Deal additional damage equals to 50% of the target's attack intend.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Equals to 100% of the target's attack intend instead."
+    ]
+  },
+  "LLH_Eyjafjalla": {
+    "NAME": "Busker",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Gian !B! Block . NL Apply 2 weak.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Apply 2 weak to all enemies instead."
+    ]
+  },
+  "NSLLH_Eyjafjalla": {
+    "NAME": "Muddy Busker",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Gain !B! Block . NL Apply 1 eyjafjalla:pure-white-steam .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Apply 1 eyjafjalla:pure-white-steam to all enemies instead."
+    ]
+  },
+  "FKY_Eyjafjalla": {
+    "NAME": "Pilot",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Draw 2 cards to your eyjafjalla:clouds . NL Increase these card's damage by !M! .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Draw 2 cards."
+    ]
+  },
+  "MTFKY_Eyjafjalla": {
+    "NAME": "Airfluffy Pilot",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Draw !M! cards to your eyjafjalla:clouds . NL Mark these cards as eyjafjalla:pb-card .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Draw M cards."
+    ]
+  },
+  "FXZ_Eyjafjalla": {
+    "NAME": "Wind Drifter",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Gain a random power.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Gain additional 1 power."
+    ]
+  },
+  "LJFXZ_Eyjafjalla": {
+    "NAME": "Cyclone Drifter",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Play the card that cost most in your eyjafjalla:clouds. NL Discard your eyjafjalla:clouds . ",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Play the card that cost lest in your eyjafjalla:clouds additionally."
+    ]
+  },
+  "DGZ_Eyjafjalla": {
+    "NAME": "Big Guy",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Gian !B! Block . NL Your next Attack deak additional !M! damage.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :The next Attack you play cost 0."
+    ]
+  },
+  "DGDGZ_Eyjafjalla": {
+    "NAME": "Big Guy's Big Bro",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Prevent the next !M! times you would lose HP. NL Gain 2 Strength .",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Gain 2 Dexterity ."
+    ]
+  },
+  "XSS_Eyjafjalla": {
+    "NAME": "Stellar Caster",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Deal !D! damage. NL If Fatal , you take !M! damage.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Heal 5 HP."
+    ]
+  },
+  "CXXSS_Eyjafjalla": {
+    "NAME": "Supernova Caster",
+    "DESCRIPTION": " eyjafjalla:dolly-card . NL Deal !D! damage to all enemies. NL If Fatal , this card will be played twice.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :Gain 10 Gold."
+    ]
+  },
+  "HPY_Eyjafjalla": {
+    "NAME":"Best Buddy",
+    "DESCRIPTION": " Unplayable , eyjafjalla:dolly-card . NL When Exhaust draw 1 card, and apply 2 eyjafjalla:carmine-steam or eyjafjalla:pure-white-steam to random enemy.",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:pb :"
+    ]
+  }
+}

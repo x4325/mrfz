@@ -1,0 +1,33 @@
+package nymph.cards;
+
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import nymph.NymphMod;
+
+public class NymphStrike extends AbstractNymphCard {
+    public static final String ID = NymphMod.makeID("Strike");
+
+    public NymphStrike() {
+        super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY, "card_strike.png");
+        baseDamage = 6;
+        this.tags.add(CardTags.STARTER_STRIKE);
+    }
+
+    @Override
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL),
+                AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+    }
+
+    @Override
+    public void upgrade() {
+        if (!upgraded) { upgradeName(); upgradeDamage(3); }
+    }
+
+    @Override
+    public AbstractCard makeCopy() { return new NymphStrike(); }
+}

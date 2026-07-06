@@ -1,0 +1,743 @@
+{
+  "Strike_Eyjafjalla": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：提升2点伤害。"
+    ]
+  },
+  "Defend_Eyjafjalla": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：提升2点 格挡 。"
+    ]
+  },
+  "BurnGround_Eyjafjalla": {
+    "NAME": "灼地",
+    "DESCRIPTION": "获得 !M! 层 eyjafjalla:炎息标记 。 NL 抽2张牌到 eyjafjalla:云层 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外获得1层。"
+    ]
+  },
+  "FloorCloud_Eyjafjalla": {
+    "NAME": "层云",
+    "DESCRIPTION": " eyjafjalla:保留云层 。 NL 造成 !D! 点伤害。 NL 在 eyjafjalla:云层 时提升 !M! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外造成1次伤害。"
+    ]
+  },
+
+  "CloudCrack_Eyjafjalla": {
+    "NAME": "光裂",
+    "DESCRIPTION": " 消耗 。 NL 获得 !B! 点 格挡 。 NL 将格挡值+ !M! 的复制放入弃牌堆。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：抽1张牌。"
+    ]
+  },
+  "ResonanceDefend_Eyjafjalla": {
+    "NAME": "共鸣防御",
+    "DESCRIPTION": " eyjafjalla:心音 。 NL 获得 !B! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：将 *“棉花糖” 放入手中。",
+      " eyjafjalla:炎息 ：将 *“棉花糖”+ 放入手中。"
+    ]
+  },
+  "IntoDream_Eyjafjalla": {
+    "NAME": "入梦",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 选择至多 !M! 张手牌放入 eyjafjalla:云层 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：改为2张。"
+    ]
+  },
+  "HeartScar_Eyjafjalla": {
+    "NAME": "心印",
+    "DESCRIPTION": "造成 !D! 点伤害4次。 NL 获得 !M! 层 eyjafjalla:炎息标记 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：改为伤害6次。"
+    ]
+  },
+  "Sunshine_Eyjafjalla": {
+    "NAME": "阳炎",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1点 eyjafjalla:云量 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：再获得 M 点 eyjafjalla:云量 ，打出后 消耗 。"
+    ]
+  },
+  "ResearchOnNature_Eyjafjalla": {
+    "NAME": "天灾研究",
+    "DESCRIPTION": "升级 eyjafjalla:云层 中所有牌。 NL 获得 !M! 层 eyjafjalla:炎息标记 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：升级所有手牌。"
+    ]
+  },
+  "ThunderCloud_Eyjafjalla": {
+    "NAME": "雷雨云",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 若前两个数字不相等，给予 !M! 层 虚弱 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：提升2点伤害和1点 格挡 。"
+    ]
+  },
+  "MissSound_Eyjafjalla": {
+    "NAME": "错过的声音",
+    "DESCRIPTION": "打出并 消耗 第 !M! 张 eyjafjalla:云层 牌，然后该数字+1。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：打出后返回抽牌堆。"
+    ]
+  },
+  "SevenColor_Eyjafjalla": {
+    "NAME": "七彩",
+    "DESCRIPTION": " 消耗 。 NL 向 eyjafjalla:云层 放入X张 *云+ 。",
+    "UPGRADE_DESCRIPTION": " 消耗 。 NL 向 eyjafjalla:云层 放入X+1张 *云+ 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外放入1张。"
+    ]
+  },
+  "RiseUp_Eyjafjalla": {
+    "NAME": "升腾",
+    "DESCRIPTION": "选择至多 !M! 张弃牌放入 eyjafjalla:云层 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：使被选牌攻击和 格挡 值+2。"
+    ]
+  },
+  "UrgentPresto_Eyjafjalla": {
+    "NAME": "渐快急板",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 开启 eyjafjalla:旋律 ：SAA NL 每完成一步，对随机敌人造成 !M! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：提升2点伤害。",
+      "对随机敌人造成",
+      "点伤害。"
+    ]
+  },
+  "HeartFeel_Eyjafjalla": {
+    "NAME": "聆听心声",
+    "DESCRIPTION": " eyjafjalla:心音 。 NL 造成 !D! 点伤害。 NL 抽到时复制到 eyjafjalla:云层 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：提升2点伤害，自动打出时伤害2次。"
+    ]
+  },
+  "Chorus_Eyjafjalla": {
+    "NAME": "咏唱",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 使所有 eyjafjalla:云层 牌的攻击和 格挡 值+ !M! 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：其中的炎息牌额外+2。"
+    ]
+  },
+  "TreeAngle_Eyjafjalla": {
+    "NAME": "常青树",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 开启 eyjafjalla:旋律 ：SSA NL 每完成一步，抽1张牌。",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌。 NL 开启 eyjafjalla:旋律 ：SSA NL 每完成一步，抽1张牌。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：若完成整段旋律，获得1点能量。",
+      "抽1张牌。",
+      "获得1点能量。"
+    ]
+  },
+  "InstantFireworks_Eyjafjalla": {
+    "NAME": "霎那花火",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 在 eyjafjalla:旋律 期间额外造成 !M! 点伤害。 NL eyjafjalla:替换 ：打击。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：视为当前 eyjafjalla:旋律 要求的类型。"
+    ]
+  },
+  "FlutteringBreeze_Eyjafjalla": {
+    "NAME": "拂波微风",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在 eyjafjalla:旋律 期间额外获得 !M! 点格挡。 NL eyjafjalla:替换 ：防御。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：视为当前 eyjafjalla:旋律 要求的类型。"
+    ]
+  },
+  "FlameSurround_Eyjafjalla": {
+    "NAME": "焰缠身",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 将 *灼伤+1 放入手中。 NL eyjafjalla:替换 ：打击。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：每有一张 *灼伤 ，提升 M 点伤害。"
+    ]
+  },
+  "FlameMountain_Eyjafjalla": {
+    "NAME": "山灼心",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 将 *灼伤+1 放入手中。 NL eyjafjalla:替换 ：防御。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：每有一张 *灼伤 ，提升 M 点格挡。"
+    ]
+  },
+  "Fairy_Eyjafjalla": {
+    "NAME": "童话",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 使能量和 eyjafjalla:云量 的最小者回复 !M! 点。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外回复1点，此牌失去炎息标记。"
+    ]
+  },
+  "DreamCradle_Eyjafjalla": {
+    "NAME": "梦乡摇篮",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 若其为 eyjafjalla:炎息牌 ，获得 !B! 点 格挡 ，否则将其标记为炎息。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外抽2张牌，此牌失去炎息标记。"
+    ]
+  },
+
+  "CloudyBarrier_Eyjafjalla": {
+    "NAME": "云霭荫佑",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予目标敌人1层 eyjafjalla:纯白水汽 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：再给予随机敌人1层。"
+    ]
+  },
+  "Duetto_Eyjafjalla": {
+    "NAME": "二重咏唱",
+    "DESCRIPTION": " eyjafjalla:心音 。 NL 造成 !D! 点伤害 !M! 次。 NL 打出后耗能+1，攻击次数+2。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：打出后提升3点伤害。"
+    ]
+  },
+  "Morning_Eyjafjalla": {
+    "NAME": "晨曦",
+    "DESCRIPTION": " 固有 。 NL 获得 !M! 点 eyjafjalla:云量 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：获得1点能量。"
+    ]
+  },
+  "Afterglow_Eyjafjalla": {
+    "NAME": "夕照",
+    "DESCRIPTION": " eyjafjalla:固有云层 。 NL 选择至多 !M! 张手牌转化为 *对应的云 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：先抽1张牌。"
+    ]
+  },
+  "PracticalJoke_Eyjafjalla": {
+    "NAME": "多利的恶作剧",
+    "DESCRIPTION": "丢弃手中耗能为偶数的牌，将剩余牌的 eyjafjalla:投影 放入手中。",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:保留云层 。 NL 丢弃手中耗能为偶数的牌，将剩余牌的 eyjafjalla:投影 放入手中。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：将这些投影标记为 eyjafjalla:炎息牌 。"
+    ]
+  },
+  "SilentWet_Eyjafjalla": {
+    "NAME": "无声润物",
+    "DESCRIPTION": "你每回合打出的前 !M! 张描述带有 格挡 的牌会打出两次。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：获得1点 eyjafjalla:云量 。"
+    ]
+  },
+  "Ignition_Eyjafjalla": {
+    "NAME": "点燃",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 将 *再燃 放入手中。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 将 *再燃+ 放入手中。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：给予 M 层 易伤 。"
+    ]
+  },
+  "ClearDream_Eyjafjalla": {
+    "NAME": "明晰梦",
+    "DESCRIPTION": "在你的回合开始时，将1张 *云 放入手中。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：打出后将 *云+ 放入 eyjafjalla:云层 。"
+    ]
+  },
+  "CloudSilk_Eyjafjalla": {
+    "NAME": "羊帆起航",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 若手牌数不大于5，交换手牌和 eyjafjalla:云层 牌。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：交换后将 eyjafjalla:云层 与手牌数抽至相等。"
+    ]
+  },
+  "DenseMist_Eyjafjalla": {
+    "NAME": "氤氲",
+    "DESCRIPTION": "在你回合结束时获得2点 格挡 ，每当你失去生命时增加 !M! 。",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:固有云层 。 NL 在你回合结束时获得2点 格挡 ，每当你失去生命时增加 !M! 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：第二个数字+1。"
+    ]
+  },
+  "FireHeart_Eyjafjalla": {
+    "NAME": "乱火",
+    "DESCRIPTION": "获得 !M! 层 eyjafjalla:炎息标记 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外获得2层。"
+    ]
+  },
+  "SayToSun_Eyjafjalla": {
+    "NAME": "寄语予落阳",
+    "DESCRIPTION": "选择一张已 消耗 的 eyjafjalla:炎息牌 ，将其移除并打出一次。",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:保留云层 。 NL 选择一张已 消耗 的 eyjafjalla:炎息牌 ，将其移除并打出一次。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：获得炎息标记。"
+    ]
+  },
+  "SilentSound_Eyjafjalla": {
+    "NAME": "寂静之声",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 一轮结束时若未打出攻击牌，此牌次数+1。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：获得伤害量25％的 格挡 。"
+    ]
+  },
+  "LiveStone_Eyjafjalla": {
+    "NAME": "生命石碑",
+    "DESCRIPTION": " 保留 。 消耗 。 NL 获得 !B! 点 格挡 。 NL 你的下 !M! 回合开始时 格挡 不会消失。",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:炎息 ：改为2回合。"
+    ]
+  },
+  "InSunset_Eyjafjalla": {
+    "NAME": "我正向西去",
+    "DESCRIPTION": "抽1张牌到 eyjafjalla:云层 。 NL 开启 eyjafjalla:旋律 ：SA NL 旋律期间你的牌拥有 eyjafjalla:心音 效果。",
+    "UPGRADE_DESCRIPTION": "抽1张牌到 eyjafjalla:云层 。 NL 开启 eyjafjalla:旋律 ：SAS NL 旋律期间你的牌拥有 eyjafjalla:心音 效果。",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:炎息 ：抽1张牌。",
+      "一阵 #y心灵之声 回荡在云海之中……"
+    ]
+  },
+  "SpurtOut_Eyjafjalla": {
+    "NAME": "喷薄",
+    "DESCRIPTION": "你每打出一张 eyjafjalla:炎息牌 ，回合结束时使你下一次攻击造成 !M! 点额外伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：标记 eyjafjalla:云层 所有牌。"
+    ]
+  },
+  "TranceDream_Eyjafjalla": {
+    "NAME": "恍惚梦",
+    "DESCRIPTION": "每当你完成整段 eyjafjalla:旋律 时，给予所有敌人 !M! 层 eyjafjalla:洋红蒸汽 。",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:保留云层 。 NL 每当你完成整段 eyjafjalla:旋律 时，给予所有敌人 !M! 层 eyjafjalla:洋红蒸汽 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：立即触发一次能力效果。"
+    ]
+  },
+  "BetweenUs_Eyjafjalla": {
+    "NAME": "你我之间",
+    "DESCRIPTION": "打出 eyjafjalla:云层 牌时获得 !M! 点 格挡 ，否则随机造成 !M! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：你的下一张攻击牌耗能变为0。"
+    ]
+  },
+  "Dreiton_Eyjafjalla": {
+    "NAME": "三重奏",
+    "DESCRIPTION": "你的下 !M! 张（目标为单个敌人的）牌会对其他敌人各打出一次。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：此牌数字+1。"
+    ]
+  },
+  "PrepareBeforeCamp_Eyjafjalla": {
+    "NAME": "野餐前的准备",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 下回合开始时， 消耗 抽牌堆的3张状态牌。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：同时 消耗 弃牌堆的3张状态牌。"
+    ]
+  },
+  "Push_Eyjafjalla": {
+    "NAME": "按捺",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 使目标失去相当于未被 格挡 伤害 !M! ％的 力量 直至回合结束。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：改为75％"
+    ]
+  },
+  "HeartInCandy_Eyjafjalla": {
+    "NAME": "夹“心”糖",
+    "DESCRIPTION": " 消耗 一张手牌。 NL 将 *“棉花糖” 放入手中。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：若 eyjafjalla:云层 未满，也放入1张。"
+    ]
+  },
+  "Sailing_Eyjafjalla": {
+    "NAME": "启航",
+    "DESCRIPTION": " 消耗 。开启2段 eyjafjalla:旋律 ： NL SARS和SARA NL 每完成一步，获得 !M! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：将所有R替换为任意类型。",
+      "获得4点格挡。",
+      "获得6点格挡。"
+    ]
+  },
+  "TheEnd_Eyjafjalla": {
+    "NAME": "尾声",
+    "DESCRIPTION": "按手牌顺序对应类型开启 eyjafjalla:旋律 。每完成一步，你的下次攻击提升 !M! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：先将 *云 放入手中。",
+      "你的下次攻击提升 #b",
+      " 点伤害。"
+    ]
+  },
+  "WaveFlower_Eyjafjalla": {
+    "NAME": "浪瓣",
+    "DESCRIPTION": " 消耗 。 NL 开启 !M! 段随机 eyjafjalla:旋律 。",
+    "UPGRADE_DESCRIPTION": " 固有 ， 消耗 。 NL 开启 !M! 段随机 eyjafjalla:旋律 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外开启1段。"
+    ]
+  },
+  "FlameBurst_Eyjafjalla": {
+    "NAME": "炎爆",
+    "DESCRIPTION": "记能量与 eyjafjalla:云量 和为Y。 NL 造成 !D! 点伤害Y+1次。 NL 将 *灼伤 +Y放入弃牌。 NL （Y为 !M! ）",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：提升2点伤害。"
+    ]
+  },
+  "CloudMelody_Eyjafjalla": {
+    "NAME": "云律",
+    "DESCRIPTION": "获得 [E] 。 NL 将手中所有攻击牌转化为 *对应的云 。",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:保留云层 。 NL 获得 [E] 。 NL 将手中所有攻击牌转化为 *对应的云 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：同时转化抽牌堆中首张攻击牌。"
+    ]
+  },
+  "Darkside_Eyjafjalla": {
+    "NAME": "黑暗界",
+    "DESCRIPTION": "造成 !D! 点伤害。每个为0项使伤害翻倍： NL eyjafjalla:云量 ；其他 eyjafjalla:云层 牌数； NL 能量；其他手牌数。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：条件改为“每个不大于1项”。"
+    ]
+  },
+  "VolcanicHealing_Eyjafjalla": {
+    "NAME": "火山灰疗愈",
+    "DESCRIPTION": "当你受到伤害时，先获得伤害量20％的 格挡 ，非攻击伤害改为50％。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：回复4点生命。"
+    ]
+  },
+  "HappinessAria_Eyjafjalla": {
+    "NAME": "热情咏叹调",
+    "DESCRIPTION": " 升级 所有 *灼伤 ，造成其总升级次数 !M! 倍的伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外升级1次。",
+      " NL (造成 !D! 点伤害)"
+    ]
+  },
+  "SadnessRecitative_Eyjafjalla": {
+    "NAME": "忧愁宣叙调",
+    "DESCRIPTION": "将牌堆中 !M! 张最高升级的 *灼伤 放入手中，获得其总升级次数 !B! 倍的 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外放入2张。"
+    ]
+  },
+  "CloudCake_Eyjafjalla": {
+    "NAME": "云朵蛋糕",
+    "DESCRIPTION": " 消耗 。 NL 从 !M! 种随机能力选择1种施加给敌人，其余施加给你。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外检视1种能力。"
+    ]
+  },
+  "FollowHeart_Eyjafjalla": {
+    "NAME": "随心徜羊",
+    "DESCRIPTION": " 消耗 所有 eyjafjalla:云层 牌。 NL 抽 !M! 张牌到云层。 NL 回合开始时将这些被 消耗 牌放入弃牌堆。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：改为放入手中。"
+    ]
+  },
+  "LittleFeelings_Eyjafjalla": {
+    "NAME": "小小心得",
+    "DESCRIPTION": " eyjafjalla:心音 。 NL 给予一名敌人X层 eyjafjalla:洋红蒸汽 和 eyjafjalla:纯白水汽 。",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:心音 。 NL 给予一名敌人X+1层 eyjafjalla:洋红蒸汽 和 eyjafjalla:纯白水汽 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：若X大于0，获得1点能量。"
+    ]
+  },
+  "TheLovedOne_Eyjafjalla": {
+    "NAME": "此生挚爱",
+    "DESCRIPTION": " 消耗 。 NL 选择一张手牌，这张牌每回合首次进入弃牌堆时，将其放入手中。",
+    "UPGRADE_DESCRIPTION": " 保留 ， 消耗 。 NL 选择一张手牌，这张牌每回合首次进入弃牌堆时，将其放入手中。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：使被选牌打出前耗能变为0。"
+    ]
+  },
+
+  "Volcano_Eyjafjalla": {
+    "NAME": "火山",
+    "DESCRIPTION": " 消耗 。 NL 随机造成 !D! 点伤害 !M! 次。 NL 将耗能和次数-1的复制放入 eyjafjalla:云层 。",
+    "EXTENDED_DESCRIPTION": [
+      "[投影]",
+      " eyjafjalla:炎息 ：下次攻击造成2点额外伤害。"
+    ]
+  },
+  "Inherit_Eyjafjalla": {
+    "NAME": "传承",
+    "DESCRIPTION": " 消耗 。 NL 将 eyjafjalla:云层 所有牌放入手中。 NL 获得 [E] [E] 。",
+    "UPGRADE_DESCRIPTION": " 消耗 。 NL 将 eyjafjalla:云层 所有牌放入手中。 NL 获得 [E] [E] [E] 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：抽2张牌到 eyjafjalla:云层 。"
+    ]
+  },
+  "Shuttle_Eyjafjalla": {
+    "NAME": "穿梭",
+    "DESCRIPTION": " eyjafjalla:心音 ， 消耗 。 NL 造成 !D! 点伤害。 NL 云层：将 *穿梭 放入手中，否则放入 eyjafjalla:云层 。",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:心音 ， 消耗 。 NL 造成 !D! 点伤害。 NL 云层：将 *穿梭+ 放入手中，否则放入 eyjafjalla:云层 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：放入的 *穿梭 耗能-1。"
+    ]
+  },
+  "SoLongAdele_Eyjafjalla": {
+    "NAME": "旅梦",
+    "DESCRIPTION": "在你回合结束时，打出并 消耗 前 !M! 张 eyjafjalla:云层 牌。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：将2张 *云+ 放入手中。"
+    ]
+  },
+  "PulseOfTerra_Eyjafjalla": {
+    "NAME": "大地的脉搏",
+    "DESCRIPTION": " eyjafjalla:不绝炎息 （F= !eyjafjalla:F! ) NL 造成 !D! 点伤害 !M! 次。 NL 获得 !B! 点 格挡 !M! 次。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：提升F点攻击和 格挡 值。"
+    ]
+  },
+  "PinkOcean_Eyjafjalla": {
+    "NAME": "粉色海洋",
+    "DESCRIPTION": " 消耗 。 NL 检视 !M! 张 eyjafjalla:多利牌 。 NL 你可以选择任意张放入 eyjafjalla:云层 ，剩余放入手中。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：升级这些牌。"
+    ]
+  },
+  "FireOfLove_Eyjafjalla": {
+    "NAME": "火山挚恋",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 获得 [E] [E] 。 NL 将 *灼伤+ !M! 放入弃牌堆，此牌所有数字加一。",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:炎息 ：下次攻击造成 M 点额外伤害。"
+    ]
+  },
+  "LetRainGo_Eyjafjalla": {
+    "NAME": "雨啊，快离开",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，向 eyjafjalla:云层 所有空位放入 *晴空 。",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:炎息 ：改为 *晴空+ 。"
+    ]
+  },
+  "AnswerInWind_Eyjafjalla": {
+    "NAME": "答案在风中",
+    "DESCRIPTION": "每当一段 eyjafjalla:旋律 开启时，将后1个音符修改为 eyjafjalla:任意音符 。",
+    "UPGRADE_DESCRIPTION":" 固有 。 NL 每当一段 eyjafjalla:旋律 开启时，将后1个音符修改为 eyjafjalla:任意音符 。",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:炎息 ：开启随机旋律。"
+    ]
+  },
+  "TimeOfLove_Eyjafjalla": {
+    "NAME": "爱的时间戳",
+    "DESCRIPTION": " eyjafjalla:固有云层 。 消耗 。 NL 将 eyjafjalla:云层 外的牌堆恢复至战斗开始的状态。",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:炎息 ：清除你的负面效果。"
+    ]
+  },
+  "GoldAndRoses_Eyjafjalla": {
+    "NAME": "黄金与玫瑰",
+    "DESCRIPTION": " 消耗 。 NL 开启 eyjafjalla:旋律 ：SAASR NL 每完成一步，给予所有敌人1层 eyjafjalla:纯白水汽 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：若完成整首旋律，回复 M 点生命。",
+      "给予所有敌人 #y纯白水汽 。",
+      "回复4点生命。",
+      "回复6点生命。"
+    ]
+  },
+  "VolcanoEcho_Eyjafjalla": {
+    "NAME": "火山回响",
+    "DESCRIPTION": " 保留 ， 消耗 。 NL 若此牌在手中或云层，你的回合开始前将 *火山石 放入 eyjafjalla:云层 。",
+    "UPGRADE_DESCRIPTION": " 保留 ， 消耗 。 NL 若此牌在手中或云层，你的回合开始前将 *火山石+ 放入 eyjafjalla:云层 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：立即放入2张。"
+    ]
+  },
+  "SongOfLove_Eyjafjalla": {
+    "NAME": "爱之歌",
+    "DESCRIPTION": "每回合前 !M! 张耗能大于0的牌打出后返回手中且本回合耗能-1。",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:炎息 ：获得1点 eyjafjalla:云量 。"
+    ]
+  },
+  "DancingLava_Eyjafjalla": {
+    "NAME": "火舞之人",
+    "DESCRIPTION": "将你受到的非攻击伤害转移给随机敌人。 NL 在第Y回合开始时，将 *灼伤+Y 放入手中。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 将你受到的非攻击伤害转移给随机敌人。 NL 在第Y回合开始时，将 *灼伤+Y 放入手中。",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:炎息 ：将你的状态牌转化为 *灼伤+Y 。"
+    ]
+  },
+  "BlazePrelude_Eyjafjalla": {
+    "NAME": "烈焰序曲",
+    "DESCRIPTION": " 消耗 。 NL 开启 eyjafjalla:旋律 ：SSSSA NL 每完成一步，使所有手牌提升 !M! 点攻击和 格挡 值。",
+    "EXTENDED_DESCRIPTION" : [
+      " eyjafjalla:炎息 ：同时使 eyjafjalla:云层 牌提升数值。",
+      "使所有手牌提升 #b",
+      "使所有手牌和云层牌提升 #b",
+      " 点攻击和格挡值。"
+    ]
+  },
+
+  "ReIgnition_Eyjafjalla": {
+    "NAME": "再燃",
+    "DESCRIPTION": " 消耗 。 NL 对所有敌人造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外伤害1次。"
+    ]
+  },
+  "Marshmallow_Eyjafjalla": {
+    "NAME": "“棉花糖”",
+    "DESCRIPTION": " eyjafjalla:心音 。 消耗 。 NL 获得 !B! 点 格挡 。 NL 当自动打出时，额外获得 !M! 点 格挡 。"
+  },
+  "Cloud_Eyjafjalla": {
+    "NAME": "云",
+    "DESCRIPTION": " eyjafjalla:保留云层 。 消耗 。 NL 从 eyjafjalla:云层 打出时，将随机牌的 eyjafjalla:投影 放入云层，否则抽1张牌。",
+    "UPGRADE_DESCRIPTION": " eyjafjalla:保留云层 。 消耗 。 NL 从 eyjafjalla:云层 打出时，将随机牌耗能-1的 eyjafjalla:投影 放入云层，否则抽2张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "不会被 eyjafjalla:炎息 标记。"
+    ]
+  },
+  "UnknownCloud_Eyjafjalla": {
+    "NAME": "?的云",
+    "DESCRIPTION": " eyjafjalla:保留云层 。 消耗 。 NL 从 eyjafjalla:云层 打出时将 *？ 放入云层，否则放入手中。",
+    "EXTENDED_DESCRIPTION": [
+      "的云",
+      " eyjafjalla:保留云层 。 消耗 。 NL 从 eyjafjalla:云层 打出时将 *",
+      " 放入云层，否则放入手中。"
+    ]
+  },
+  "Sunday_Eyjafjalla": {
+    "NAME": "晴空",
+    "DESCRIPTION": " 不能被打出 。 NL 回合结束时 消耗 ，并对所有敌人造成 !M! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ："
+    ]
+  },
+  "Burn_Eyjafjalla": {
+    "NAME": "灼伤",
+    "DESCRIPTION": " 不能被打出 。 NL 在你的回合结束时，你受到 !M! 点伤害。",
+    "UPGRADE_DESCRIPTION": " 不能被打出 。 NL 在你的回合结束时，你受到 !M! 点伤害。 NL 可以在 eyjafjalla:旋律 期间打出。"
+  },
+  "VolcanoStone_Eyjafjalla": {
+    "NAME": "火山石",
+    "DESCRIPTION": " 消耗 。 NL 造成 !D! 点伤害。 NL 此牌生成时，提升等同你当前 格挡 的伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：获得2点 eyjafjalla:炎息标记 。"
+    ]
+  },
+  "Songs_Eyjafjalla": {
+    "NAME": "一首歌",
+    "DESCRIPTION": " 消耗 。 NL 选择一段 eyjafjalla:旋律 开启： NL *玛丽有只毛绒绒 ； NL *小农夫在小山谷 ； NL *划呀划呀划小船 。"
+  },
+  "SongMary_Eyjafjalla": {
+    "NAME": "玛丽有只毛绒绒",
+    "DESCRIPTION": " eyjafjalla:旋律 ：SAAS NL 旋律期间，羊之主的 *绒毛屏障 失效。",
+    "EXTENDED_DESCRIPTION": [
+      "多利似乎变小了？"
+    ]
+  },
+  "SongFarmer_Eyjafjalla": {
+    "NAME": "小农夫在小山谷",
+    "DESCRIPTION": " eyjafjalla:旋律 ：SRRS NL 每完成一步，羊之主本回合失去 !M! 点 力量 。",
+    "EXTENDED_DESCRIPTION": [
+      "羊之主本回合失去 #b",
+      " 点力量。"
+    ]
+  },
+  "SongBoat_Eyjafjalla": {
+    "NAME": "划呀划呀划小船",
+    "DESCRIPTION": " eyjafjalla:旋律 ：SSSS NL 每完成一步，羊之主的 *调律追忆 减少 !M! 层。",
+    "EXTENDED_DESCRIPTION": [
+      "羊之主的 #y调律追忆 减少 #b",
+      " 层。"
+    ]
+  },
+  "DollyInvitation_Eyjafjalla": {
+    "NAME": "多利的邀约",
+    "DESCRIPTION": " eyjafjalla:一次性 。 NL 获得 eyjafjalla:旅梦钥匙 。"
+  },
+
+  "TQB_Eyjafjalla": {
+    "NAME": "淘气包",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 获得 !B! 点 格挡 。 NL 当你此回合受到攻击，对来源造成4点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：对来源造成的伤害改为8点。"
+    ]
+  },
+  "LTTQB_Eyjafjalla": {
+    "NAME": "乐淘淘气包",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 获得 !B! 点 格挡 。 NL 你受到下2次攻击后，给予来源 eyjafjalla:洋红蒸汽 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：受到的攻击次数改为4次。"
+    ]
+  },
+  "CPS_Eyjafjalla": {
+    "NAME": "操盘手",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 造成 !D! 点伤害。 NL 对攻击意图的敌人额外攻击1次。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外攻击1次。"
+    ]
+  },
+  "JMCPS_Eyjafjalla": {
+    "NAME": "健美操盘手",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 造成 !D! 点伤害。 NL 额外造成目标攻击意图值50％的伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：改为意图值100％的伤害。"
+    ]
+  },
+  "LLH_Eyjafjalla": {
+    "NAME": "流浪汉",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 获得 !B! 点 格挡 。 NL 给予敌人2层 虚弱 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：改为给予所有敌人虚弱。"
+    ]
+  },
+  "NSLLH_Eyjafjalla": {
+    "NAME": "泥石流浪汉",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 获得 !B! 点 格挡 。 NL 给予敌人 eyjafjalla:纯白水汽 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：改为给予所有敌人纯白水汽。"
+    ]
+  },
+  "FKY_Eyjafjalla": {
+    "NAME": "飞空员",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 抽2张牌到 eyjafjalla:云层 。 NL 使这些牌攻击值+ !M! 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：抽2张牌。"
+    ]
+  },
+  "MTFKY_Eyjafjalla": {
+    "NAME": "满天飞空员",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 抽 !M! 张牌到 eyjafjalla:云层 。 NL 标记这些牌为 eyjafjalla:炎息牌 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：抽 M 张牌。"
+    ]
+  },
+  "FXZ_Eyjafjalla": {
+    "NAME": "风行者",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 给予你1种随机正面能力效果。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：额外给予1种。"
+    ]
+  },
+  "LJFXZ_Eyjafjalla": {
+    "NAME": "龙卷风行者",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 丢弃 eyjafjalla:云层 所有牌。 NL 打出其中耗能最高牌的复制。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：并打出耗能最低牌的复制。"
+    ]
+  },
+  "DGZ_Eyjafjalla": {
+    "NAME": "大个子",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 获得 !B! 点 格挡 。 NL 使你的下一次攻击额外造成 !M! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：你的下一张攻击牌耗能变为0。"
+    ]
+  },
+  "DGDGZ_Eyjafjalla": {
+    "NAME": "大哥大个子",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 防止你受到的下 !M! 次伤害。 NL 获得2点 力量 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：获得2点 敏捷 。"
+    ]
+  },
+  "XSS_Eyjafjalla": {
+    "NAME": "星术师",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 造成 !D! 点伤害。 NL 若此次攻击 斩杀 敌人，你受到 !M! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：先回复5生命。"
+    ]
+  },
+  "CXXSS_Eyjafjalla": {
+    "NAME": "超新星术师",
+    "DESCRIPTION": " eyjafjalla:多利牌 。 NL 对所有敌人造成 !D! 伤害。 NL 若此次攻击杀死敌人，打出此牌的复制。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ：获得10金币。"
+    ]
+  },
+  "HPY_Eyjafjalla": {
+    "NAME":"好朋友",
+    "DESCRIPTION": " 不能被打出 ， eyjafjalla:多利牌 。 NL 消耗 时抽1张牌，并随机给予2层 eyjafjalla:洋红蒸汽 或 eyjafjalla:纯白水汽 。",
+    "EXTENDED_DESCRIPTION": [
+      " eyjafjalla:炎息 ："
+    ]
+  }
+}

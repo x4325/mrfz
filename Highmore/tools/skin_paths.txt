@@ -1,0 +1,3 @@
+idle/char_4066_highmo
+skins/char_4066_highmo_epoque_45/char_4066_highmo_epoque_45
+skins/char_4066_highmo_nian_10/char_4066_highmo_nian_10

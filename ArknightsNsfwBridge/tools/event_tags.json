@@ -1,0 +1,164 @@
+{
+  "events": {
+    "eyja_normal_act1": {
+      "event_id": "arknsfw:EyjaNormalVolcanoRest",
+      "image_file": "event_eyja_normal_act1.png",
+      "route": "normal",
+      "act": "act1",
+      "character": "eyja",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, soft romance, normal route, act 1, outdoor volcano hot spring at dusk, natural rock pool, rising steam, warm orange sunset light, petite girl with red hair and sheep horns, partially wrapped in a modest white towel, sitting on pool edge with knees together, relaxed shoulders, gentle blush, shy calm smile, wet hair clinging to cheeks, scientific field notes and folded coat nearby, serene intimate atmosphere, no explicit penetration, cinematic composition, 1024x1024"
+    },
+    "eyja_normal_act2": {
+      "event_id": "arknsfw:EyjaNormalFieldCamp",
+      "image_file": "event_eyja_normal_act2.png",
+      "route": "normal",
+      "act": "act2",
+      "character": "eyja",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, soft romance, normal route, act 2, night volcano field camp, small campfire glow, starry sky, girl with red hair and horns wrapped in blanket, sitting close beside unseen companion implied off-frame, stargazing, shy tender smile, flushed cheeks, boots and research backpack nearby, warm cozy mood, suggestive closeness but clothed, cinematic wide shot, 1024x1024"
+    },
+    "eyja_normal_act3": {
+      "event_id": "arknsfw:EyjaNormalQuietEmbrace",
+      "image_file": "event_eyja_normal_act3.png",
+      "route": "normal",
+      "act": "act3",
+      "character": "eyja",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, eyjafjalla, arknights, nsfw, soft romance, normal route, act 3, quiet bedroom at night, cool moonlight through window, girl with red hair and horns in loose sleepwear, gentle emotional embrace pose, tears of relief, tender expression, fully clothed, intimate but wholesome mood, soft blue and warm skin tones, no hardcore, cinematic portrait, 1024x1024"
+    },
+    "eyja_shame_act1": {
+      "event_id": "arknsfw:EyjaShamePublicSample",
+      "image_file": "event_eyja_shame_act1.png",
+      "route": "shame",
+      "act": "act1",
+      "character": "eyja",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, eyjafjalla, arknights, nsfw, shame route, act 1, crowded public geology laboratory, silhouettes of researchers watching, girl with red hair and horns in disheveled lab coat with exposed shoulders, being measured for samples, humiliated blush, teary eyes, hands trembling, clipboard and scientific instruments, harsh fluorescent lighting, public embarrassment theme, suggestive not explicit, 1024x1024"
+    },
+    "eyja_shame_act2": {
+      "event_id": "arknsfw:EyjaShameOpenSeminar",
+      "image_file": "event_eyja_shame_act2.png",
+      "route": "shame",
+      "act": "act2",
+      "character": "eyja",
+      "comfyui_tags": "masterpiece, best quality, 1girl, eyjafjalla, arknights, nsfw, shame route, act 2, university seminar stage, large projector screen behind her, audience seats in shadow, girl with red hair and horns in wrinkled open lab coat, trying to cover chest with arms, extreme embarrassment, sweat on skin, spotlight on stage, public lecture gone wrong, humiliation, suggestive exposure, dramatic perspective, 1024x1024"
+    },
+    "eyja_shame_act3": {
+      "event_id": "arknsfw:EyjaShameAuditHall",
+      "image_file": "event_eyja_shame_act3.png",
+      "route": "shame",
+      "act": "act3",
+      "character": "eyja",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, shame route, act 3, grand tribunal audit hall, stone pillars, crowd of stern judges as silhouettes, girl with red hair and horns kneeling on marble floor, torn clothes, head lowered, public scorn, tears, dramatic chiaroscuro lighting, maximum humiliation scene, suggestive defeat pose, dark red accents, 1024x1024"
+    },
+    "eyja_fall_act1": {
+      "event_id": "arknsfw:EyjaFallHeatNeed",
+      "image_file": "event_eyja_fall_act1.png",
+      "route": "fall",
+      "act": "act1",
+      "character": "eyja",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, fall route, corruption, act 1, overheated small room filled with volcanic glow, messy red hair, feverish addicted expression, half-open clothes, sweaty skin, girl with horns trembling from heat need, red ambient light, suggestive needy pose on bed, loss of composure, dark sensual mood, 1024x1024"
+    },
+    "eyja_fall_act2": {
+      "event_id": "arknsfw:EyjaFallBreedingRite",
+      "image_file": "event_eyja_fall_act2.png",
+      "route": "fall",
+      "act": "act2",
+      "character": "eyja",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, fall route, corruption, act 2, ancient lava ritual circle underground, glowing magma altar, girl with red hair and horns wearing collar, submissive kneeling pose, pregnant suggestive belly glow, dark fantasy breeding ritual, chains and runes, intense orange and black palette, explicit theme implied not graphic, 1024x1024"
+    },
+    "eyja_fall_act3": {
+      "event_id": "arknsfw:EyjaFallAshWomb",
+      "image_file": "event_eyja_fall_act3.png",
+      "route": "fall",
+      "act": "act3",
+      "character": "eyja",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, fall route, corruption, act 3, black volcanic altar chamber, corrupted womb glow through lower abdomen, girl with red hair and horns kneeling in ecstasy, broken empty eyes, drool, disheveled body, intense red and black lighting, complete mental fall, breeding corruption climax scene, highly suggestive, 1024x1024"
+    },
+    "eyja_debuff_seal": {
+      "event_id": "arknsfw:EyjaDebuffSealEvent",
+      "image_file": "event_eyja_debuff_seal.png",
+      "route": "seal",
+      "act": "act2",
+      "character": "eyja",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, special event, debuff seal, act 2, sterile research chamber with glowing branding apparatus, girl with red hair and horns restrained on medical chair, volcanic runes being burned into skin, mix of pain and arousal, scientific horror aesthetic, permanent mark theme, dramatic red lighting, suggestive, 1024x1024"
+    },
+    "muel_normal_act1": {
+      "event_id": "arknsfw:MuelNormalBubbleBreak",
+      "image_file": "event_muel_normal_act1.png",
+      "route": "normal",
+      "act": "act1",
+      "character": "muel",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, soft romance, normal route, act 1, bright rhine laboratory bathroom, large bubble bath overflowing with foam, girl with green hair and elf ears playfully popping bubbles, relaxed happy smile, wet shoulders above water, clean cute atmosphere, light blue and white palette, suggestive but gentle, 1024x1024"
+    },
+    "muel_normal_act2": {
+      "event_id": "arknsfw:MuelNormalGardenTea",
+      "image_file": "event_muel_normal_act2.png",
+      "route": "normal",
+      "act": "act2",
+      "character": "muel",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, soft romance, normal route, act 2, lush rhine greenhouse tea party, sunlight through glass ceiling, girl with green hair and elf ears in light sundress sitting among flowers, gentle smile, tea cup in hand, romantic peaceful mood, pastel colors, wholesome intimacy, 1024x1024"
+    },
+    "muel_normal_act3": {
+      "event_id": "arknsfw:MuelNormalStarPool",
+      "image_file": "event_muel_normal_act3.png",
+      "route": "normal",
+      "act": "act3",
+      "character": "muel",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, muelsyse, arknights, nsfw, soft romance, normal route, act 3, rooftop pool at night under stars, girl with green hair and elf ears in swimsuit at pool edge, shy blush, hand reaching toward offscreen partner implied, sparkling water reflections, quiet romantic atmosphere, soft moonlight, 1024x1024"
+    },
+    "muel_shame_act1": {
+      "event_id": "arknsfw:MuelShameLabAudit",
+      "image_file": "event_muel_shame_act1.png",
+      "route": "shame",
+      "act": "act1",
+      "character": "muel",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, shame route, act 1, rhine laboratory inspection scene, strict auditor silhouette with clipboard, girl with green hair and elf ears in wet translucent lab coat after spilled reagent, embarrassed panicked expression, puddle on floor, harsh lab lights, public failure, suggestive wet clothes, 1024x1024"
+    },
+    "muel_shame_act2": {
+      "event_id": "arknsfw:MuelShameLiveDemo",
+      "image_file": "event_muel_shame_act2.png",
+      "route": "shame",
+      "act": "act2",
+      "character": "muel",
+      "comfyui_tags": "masterpiece, best quality, 1girl, muelsyse, arknights, nsfw, shame route, act 2, live science demonstration stage, large audience in darkness, girl with green hair and elf ears in transparent raincoat-like lab outfit, covering body with arms, extreme blush, failed experiment props on table, spotlight humiliation, public exposure theme, 1024x1024"
+    },
+    "muel_shame_act3": {
+      "event_id": "arknsfw:MuelShameBroadcast",
+      "image_file": "event_muel_shame_act3.png",
+      "route": "shame",
+      "act": "act3",
+      "character": "muel",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, shame route, act 3, rhine broadcast control room, giant monitors showing her image to unknown viewers, girl with green hair and elf ears kneeling on floor in messy clothes, cyber screen glow on face, public digital exposure, tears and shame, futuristic blue lighting, 1024x1024"
+    },
+    "muel_fall_act1": {
+      "event_id": "arknsfw:MuelFallCloneNeed",
+      "image_file": "event_muel_fall_act1.png",
+      "route": "fall",
+      "act": "act1",
+      "character": "muel",
+      "comfyui_tags": "masterpiece, best quality, 2girls, same character, muelsyse, arknights, nsfw, fall route, corruption, act 1, rhine cloning laboratory, duplicate elf girl with green hair generated from pod, original and clone in suggestive entangled pose, pleasure and confusion, sci-fi tubes and monitors, green glow, clone identity blur theme, highly suggestive, 1024x1024"
+    },
+    "muel_fall_act2": {
+      "event_id": "arknsfw:MuelFallSeedGreenhouse",
+      "image_file": "event_muel_fall_act2.png",
+      "route": "fall",
+      "act": "act2",
+      "character": "muel",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, fall route, corruption, act 2, overgrown greenhouse at night, bioluminescent vines wrapping around girl with green hair and elf ears, submissive kneeling among flowers, swollen belly suggestive, breeding with nature theme, moist skin, eerie green palette, dark fantasy, 1024x1024"
+    },
+    "muel_fall_act3": {
+      "event_id": "arknsfw:MuelFallFluidOverflow",
+      "image_file": "event_muel_fall_act3.png",
+      "route": "fall",
+      "act": "act3",
+      "character": "muel",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, fall route, corruption, act 3, flooded rhine laboratory, ankle-deep translucent fluid, girl with green hair and elf ears sitting in ecstasy, corrupted smile, soaked clothes clinging to body, broken test tubes, excess fluid overflow theme, cyan and white lighting, complete fall, highly suggestive, 1024x1024"
+    },
+    "muel_debuff_seal": {
+      "event_id": "arknsfw:MuelDebuffSealEvent",
+      "image_file": "event_muel_debuff_seal.png",
+      "route": "seal",
+      "act": "act2",
+      "character": "muel",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, special event, debuff seal, act 2, rhine restraint laboratory, holographic binding straps, girl with green hair and elf ears on examination table, permanent bio-template branding procedure, clinical sci-fi horror, mix of fear and arousal, blue and green neon, suggestive, 1024x1024"
+    }
+  }
+}

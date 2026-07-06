@@ -1,0 +1,15 @@
+{
+  "modid": "Muelsyse_FimmlpS",
+  "name": "Muelsyse_Mod(缪尔赛思)",
+  "author_list": [
+    "FimmlpS"
+  ],
+  "description": "当然是我最爱的缪缪~ 出自《明日方舟》，如水随形！",
+  "dependencies": [
+    "basemod",
+    "stslib"
+  ],
+  "version": "1.0.0",
+  "sts_version": "12-22-2020",
+  "mts_version": "3.23.2"
+}

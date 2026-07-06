@@ -1,0 +1,87 @@
+{
+  "muelsyse:Cultivate": {
+    "TEXT": [
+      "Cultivate",
+      "muelsyse:Dry",
+      "muelsyse:Cul-draw",
+      "muelsyse:Cul-energy",
+      "muelsyse:Cul-moisturize",
+      "muelsyse:Cul-spread",
+      "muelsyse:Cul-parasitism",
+      "muelsyse:Cul-cure",
+      "as main material",
+      "muelsyse:Cul-hydroponic"
+    ]
+  },
+  "muelsyse:Select": {
+    "TEXT": [
+      "Exhaust",
+      "Select any cards to shuffle into draw pile",
+      "Carry pollens",
+      "Copy",
+      "Move to your hand"
+    ]
+  },
+  "muelsyse:SkinSelect": {
+    "TEXT": [
+      "Select the skin",
+      "Default",
+      "Spray",
+      "Golden Reverie"
+    ]
+  },
+  "muelsyse:Tips": {
+    "TEXT": [
+      "Manifold",
+      "Manifold is a friendly entity, which could share the damage you will suffer, and #yCo fight with you.",
+      "Source",
+      "When count of #yLifeCircle turns to 20, basic Manifold will increase max HP by 20, and its Threshold effect will be increased by 5 times. At end of the combat, you can obtain a key to a special area.",
+      "Fallen Tear",
+      "A special enemy with a #bProbability of appearing. If #yKilled before disappearing, you can get a card to strengthen the Manifold in the #yCampfire."
+    ]
+  },
+  "muelsyse:Types": {
+    "TEXT": [
+      "Select a start card",
+      "Difficulty: Easy",
+      "Difficulty: Normal",
+      "Difficulty: Hard"
+    ],
+    "EXTRA_TEXT": [
+      "Enable extra cards"
+    ]
+  },
+  "muelsyse:TearCharge": {
+    "TEXT": [
+      "Recycle Tears",
+      "Remove specific size of [Reflux Tear] to strengthen the Manifold.",
+      "You don't have [Reflux Tear] right now.",
+      "The max HP of Manifold is increased by 2.",
+      "The Threshold of Manifold is increased by 1.",
+      "The last-round of Manifold is increased by 1.",
+      "There has been no Duplicate cards that you don't own."
+    ]
+  },
+  "muelsyse:Enabled": {
+    "TEXT": [
+      "Enable specific enemies ?",
+      "Mod Settings",
+      "Mlss-Copy",
+      "Enable the effect of bubbles",
+      "Enable fast mode to let Manifolds move faster ?",
+      "Enable raining for all time ?",
+      "Ban extra ending ?"
+    ]
+  },
+  "muelsyse:TheSami": {
+    "TEXT": [
+      "Sami In Shadow",
+      "Amma Tal",
+      "Horned beast",
+      "Thick mossy beasts",
+      "Entangled vines",
+      "Source Key",
+      "When you obtain all keys and the Source Key, the ending will be changed to a #ySpecial #yArea."
+    ]
+  }
+}

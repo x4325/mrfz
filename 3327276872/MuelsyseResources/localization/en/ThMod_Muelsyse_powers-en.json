@@ -1,0 +1,329 @@
+{
+  "muelsyse:ManifoldPower": {
+    "NAME": "Threshold",
+    "DESCRIPTIONS": [
+      "When your is going to lose HP, this #yManifold will share the damage for you. No more than #b",
+      " .",
+      "When you is going to lose HP, all #bManifold will take #b",
+      " in total for you."
+    ]
+  },
+  "muelsyse:DisappearPower": {
+    "NAME": "Dissipate",
+    "DESCRIPTIONS":[
+      "This manifold is going to disappear after #b",
+      " turns."
+    ]
+  },
+  "muelsyse:RespawnPower": {
+    "NAME": "Respawn",
+    "DESCRIPTIONS": [
+      "Respawn with all HP after #b",
+      " turns."
+    ]
+  },
+  "muelsyse:CleanWaterPower": {
+    "NAME": "Pure Water Is Life",
+    "DESCRIPTIONS": [
+      "After attack, Derive #b",
+      " Strength from the target. At start of next turn, release #b",
+      " Strength."
+    ]
+  },
+  "muelsyse:SourcePower": {
+    "NAME": "Source",
+    "DESCRIPTIONS": [
+      "Threshold effect will be increased by #b",
+      " times."
+    ]
+  },
+  "muelsyse:NoDamagePower": {
+    "NAME": "No Damage",
+    "DESCRIPTIONS": [
+      "You can't deal damage from card. Last #b",
+      " turns."
+    ]
+  },
+  "muelsyse:RainWorldPower": {
+    "NAME": "Rainy World",
+    "DESCRIPTIONS": [
+      "When you play a #ynon-Exhaust card, it will randomly shuffled into your discard pile, draw pile or return to your hand."
+    ]
+  },
+  "muelsyse:SoilSpreadPower": {
+    "NAME": "Soil improvement:Windy Flower",
+    "DESCRIPTIONS": [
+      " When you #yCultivate, apply !M! #b",
+      " random muelsyse:Pollen to the aim card."
+    ]
+  },
+  "muelsyse:SoilExhaustPower": {
+    "NAME": "Soil improvement:Purification",
+    "DESCRIPTIONS": [
+      "When you #yCultivate ,your Curse and Status cards will trigger #yDepletion . NL When you trigger depletion , draw #b",
+      " cards."
+    ]
+  },
+  "muelsyse:SoilBackPower": {
+    "NAME": "Soil improvement:Fertilize",
+    "DESCRIPTIONS": [
+      "When you #yCultivate , your main material won't #yDry , and it cost #b",
+      " less this turn."
+    ]
+  },
+  "muelsyse:RipplePower": {
+    "NAME": "Life Ripples",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #b",
+      " Block along with your manifolds for each manifold you have."
+    ]
+  },
+  "muelsyse:SourceOfLifePower": {
+    "NAME": "Source Of Life",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " #yWater+ into your hand."
+    ]
+  },
+  "muelsyse:ItIsPower": {
+    "NAME": "There Muel is",
+    "DESCRIPTIONS": [
+      "Decrease the damage you receive by #b80%.Sustain for #b",
+      " turns."
+    ]
+  },
+  "muelsyse:RevivePower": {
+    "NAME": "Revive",
+    "DESCRIPTIONS": [
+      "When a card is shuffled into the draw pile, gain #b",
+      " Block."
+    ]
+  },
+  "muelsyse:UncertainFormPower": {
+    "NAME": "Amorphous Form",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yWander #b",
+      " . Exhaust the cards you have #yNOT chosen and draw so-many cards."
+    ]
+  },
+  "muelsyse:DustPower": {
+    "NAME": "Dust",
+    "DESCRIPTIONS": [
+      "When you #yWander, add #b",
+      " random card to the wander list, which costs 0 until played."
+    ]
+  },
+  "muelsyse:RefluxTearPower": {
+    "NAME": "Reflux",
+    "DESCRIPTIONS": [
+      "If this one is #yKilled before disappearing, add a #yReflux #yTear to your Deck, which can strengthen the Manifold in the campfire."
+    ]
+  },
+  "muelsyse:TreeSourcePower": {
+    "NAME": "Source In Tree",
+    "DESCRIPTIONS": [
+      "Every time you play a card, ",
+      " recover #b",
+      " health. Triggered once, increase the recovery by #b1 . At start of your turn, half the effect (not less than #b",
+      " )"
+    ]
+  },
+  "muelsyse:MeltPower":{
+    "NAME": "Melt",
+    "DESCRIPTIONS": [
+      "Losing #b",
+      " more health, gain #b2 Strength and add #yHypothermia to your hand. Reset the effect after triggering."
+    ]
+  },
+
+  "muelsyse:FlowerSpreadPower": {
+    "NAME": "Spreading Pollen",
+    "DESCRIPTIONS": [
+      "After Attack, deal #b",
+      " damage to all enemies. The amount will halve in every turn."
+    ]
+  },
+  "muelsyse:FlowerParasitismPower": {
+    "NAME": "Parasitic Pollen",
+    "DESCRIPTIONS": [
+      "After attacked, the damage source gain #b",
+      " Block. The amount will halve in every turn."
+    ]
+  },
+  "muelsyse:FlowerCurePower": {
+    "NAME": "Healing Pollen",
+    "DESCRIPTIONS": [
+      "After attacked, gain #b",
+      " Block. The amount will halve in every turn."
+    ]
+  },
+  "muelsyse:FlowerWaterPower": {
+    "NAME": "Aquatic Pollen",
+    "DESCRIPTIONS": [
+      "Increase the damage of your #yWater or #yLeaf by #b",
+      " . The amount will halve in every turn."
+    ]
+  },
+  "muelsyse:RootagePower": {
+    "NAME": "Rootage",
+    "DESCRIPTIONS": [
+      "Decrease the damage dealt by #Manifold by #b50 ％. When damaged, increase the Attack by 1 in this turn. (Current: #b",
+      " )"
+    ]
+  },
+
+  "muelsyse:IfritPower": {
+    "NAME": "Duplicate: Ifrit",
+    "DESCRIPTIONS": [
+      "Basic manifold could attack all enemies."
+    ]
+  },
+  "muelsyse:AstgennePower": {
+    "NAME": "Duplicate: Astgenne",
+    "DESCRIPTIONS": [
+      "Deal #b",
+      " damage to the Min-HP enemy after each action."
+    ]
+  },
+  "muelsyse:SariaPower": {
+    "NAME": "Duplicate: Saria",
+    "DESCRIPTIONS": [
+      "Act at start of turn: Recover #b",
+      " HP for each manifold."
+    ]
+  },
+  "muelsyse:MechanistPower": {
+    "NAME": "Duplicate：Mechanist",
+    "DESCRIPTIONS": [
+      "Act at end of turn: Transfer",
+      " Block to Muelsyse.",
+      " #b150 ％"
+    ]
+  },
+  "muelsyse:SilencePower": {
+    "NAME": "Duplicate: Silence",
+    "DESCRIPTIONS": [
+      "Act at start of turn: Add #yMedical #yDrone to hand.",
+      "Act at start of turn: Add #yMedical #yDrone+ to hand."
+    ]
+  },
+  "muelsyse:PtilopsisPower": {
+    "NAME": "Duplicate: Ptilopsis",
+    "DESCRIPTIONS": [
+      "Apply Muelsyse #b",
+      " Block after each action."
+    ]
+  },
+  "muelsyse:DorothyPower": {
+    "NAME": "Duplicate: Dorothy",
+    "DESCRIPTIONS": [
+      "Act after #yWander X: Deal 2X damage to random enemy.",
+      "Act after #yWander or #yCultivate X: Deal 2X damage to random enemy."
+    ]
+  },
+  "muelsyse:KafkaPower": {
+    "NAME": "Duplicate: Kafka",
+    "DESCRIPTIONS": [
+      "Act at end of turn: Deal #b",
+      " damage to random enemy, gain 1 Strength."
+    ]
+  },
+  "muelsyse:TyphonPower": {
+    "NAME": "Duplicate: Typhon",
+    "DESCRIPTIONS": [
+      "Increase the first damage it deals by #b100 % in each turn.",
+      "Increase the first damage it deals by #b150 % in each turn."
+    ]
+  },
+  "muelsyse:GreyyPower": {
+    "NAME": "Duplicate: Greyy",
+    "DESCRIPTIONS": [
+      "Perform the first #yAttack action #btwice per turn."
+    ]
+  },
+  "muelsyse:SaileachPower": {
+    "NAME": "Duplicate: Saileach",
+    "DESCRIPTIONS": [
+      "Act at start of turn: #yMoisturize #b",
+      " ."
+    ]
+  },
+  "muelsyse:ReedPower": {
+    "NAME": "Duplicate: Reed",
+    "DESCRIPTIONS": [
+      "After each attack, #yMoisturize #b",
+      " .",
+      "After each action, #yMoisturize #b"
+    ]
+  },
+  "muelsyse:AstesiaPower": {
+    "NAME": "Duplicate: Astesia",
+    "DESCRIPTIONS": [
+      "Act after #yMuelsyse plays Power card: Apply #b",
+      " Metallicize to her."
+    ]
+  },
+  "muelsyse:TulipPower": {
+    "NAME": "Duplicate: Tulip",
+    "DESCRIPTIONS": [
+      "Limited by #b",
+      " in each turn, act when a manifold is spawned: Gain [E] ."
+    ]
+  },
+  "muelsyse:PepePower": {
+    "NAME": "Duplicate: Pepe",
+    "DESCRIPTIONS": [
+      "Apply #b",
+      " Vigor to you after each action."
+    ]
+  },
+  "muelsyse:NarantuyaPower": {
+    "NAME": "Duplicate: Narantuya",
+    "DESCRIPTIONS": [
+      "When #yCultivate, increase Attack number of the target card by #b",
+      " ."
+    ]
+  },
+  "muelsyse:SilencePPower": {
+    "NAME": "Duplicate: Silence P",
+    "DESCRIPTIONS": [
+      "When #yCultivate, increase Block number of the target card by #b",
+      " ."
+    ]
+  },
+  "muelsyse:TinManPower": {
+    "NAME": "Duplicate: Tin Man",
+    "DESCRIPTIONS": [
+      "Act at start of turn: Apply #b",
+      " Weakness to random enemy. ",
+      " Then apply #b",
+      " Vulnerable to random enemy. "
+    ]
+  },
+  "muelsyse:AmiyaPower": {
+    "NAME": "Duplicate: Amiya",
+    "DESCRIPTIONS": [
+      "Act after you play card of #gNon-Muelsyse colors: Deal damage equals to the #bmax of #y[Damage/Block] of the card to random enemy."
+    ]
+  },
+  "muelsyse:TheresaPower": {
+    "NAME": "Duplicate: Theresa",
+    "DESCRIPTIONS": [
+      "Act after you play a card: Decrease damage and block of random card in hand by #b1 and apply it #b",
+      " random #yPollen."
+    ]
+  },
+
+  "muelsyse:LingerFragrancePower": {
+    "NAME": "Lingering Fragrance",
+    "DESCRIPTIONS": [
+      "When you shuffle a #yWhite *Rose through #yWander into your draw pile, play it to a random enemy."
+    ]
+  },
+  "muelsyse:GinkgoPower": {
+    "NAME": "The season of ginkgo",
+    "DESCRIPTIONS": [
+      "You won't take any damage till you draw or Exhaust the certain *Ginkgo"
+    ]
+  }
+}

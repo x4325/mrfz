@@ -1,0 +1,9 @@
+{
+  "archetto:AimPower": {
+    "NAME": "瞄准",
+    "DESCRIPTIONS": [
+      "下次攻击额外造成 ",
+      " 点伤害，随后消耗全部瞄准。"
+    ]
+  }
+}

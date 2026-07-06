@@ -1,0 +1,106 @@
+{
+  "eyjafjalla:MonsterNames": {
+    "TEXT": [
+      "Enemy-Fluffbag",
+      "Enemy-Fluffbag and Joyful Fluffbag",
+      "Enemy-Two Frisbee",
+      "Strong-Frisbee and Joyful Fluffbag",
+      "Elite-Gym Frisbee and Airfluffy Pilot",
+      "BOSS-Dolly the master of sheep",
+      "Elite-Four Supernova Caster",
+      "Elite-Big Guy's Big Bro"
+    ]
+  },
+  "eyjafjalla:CloudEnergy": {
+    "TEXT": [
+      "Cloudage",
+      "The cloudage you have, recovering #b1 at the #gend of your turn. Use cloudage to play cards in #yClouds.",
+      "I have no cloudage to play the card in clouds!",
+      "Clouds are full QAQ"
+    ]
+  },
+  "eyjafjalla:CloudOperation": {
+    "TEXT": [
+      "move into Clouds.",
+      "change its cost to 0.",
+      "select ",
+      " discard cards into Clouds.",
+      "Select any discard cards into Clouds.",
+      "Select 1 to apply to the target, apply the remains to you.",
+      "Select 1 in the Exhaust pile to play and remove it.",
+      "transform to Corresponding Cloud.",
+      "Mark as [the-loved-one]"
+    ]
+  },
+  "eyjafjalla:Project": {
+    "TEXT": [
+      "[Project]",
+      "eyjafjalla:project"
+    ]
+  },
+  "eyjafjalla:SpecialDescription": {
+    "TEXT": [
+      "eyjafjalla:pb",
+      "eyjafjalla:pb-mark",
+      "eyjafjalla:inner-voice",
+      "eyjafjalla:the-loved-one"
+    ]
+  },
+  "eyjafjalla:Dolly": {
+    "TEXT": [
+      "Dolly Card"
+    ]
+  },
+  "eyjafjalla:Melody": {
+    "TEXT": [
+      "When you play an #yAny-type #ycard, ",
+      "When you play an #yAttack #ycard, ",
+      "When you play a #ySkill #ycard, ",
+      "When you play a #yNon-Attack-or-Skill #card, ",
+      "After you finish the melody, "
+    ]
+  },
+  "eyjafjalla:TheSiesta": {
+    "TEXT": [
+      "The Siesta in Dreams",
+      "Dreaming Key",
+      "When you finish #yThe #yEnding with this key, enter a special extra area.",
+      "The Master of Sheep"
+    ]
+  },
+  "eyjafjalla:Config": {
+    "TEXT": [
+      "Allow all characters to enter the Siesta (Special Ending)",
+      "Mod Config"
+    ]
+  },
+  "eyjafjalla:CampfireOperation": {
+    "TEXT": [
+      "Mark as [Pyrobreath]",
+      "Pyrobreathe",
+      "Mark a card as [Pyrobreath] in the whole game",
+      "No Card to pyrobreathe"
+    ]
+  },
+  "eyjafjalla:MelodyWord": {
+    "TEXT": [
+      "Do\uD83C\uDFB6",
+      "Re\uD83C\uDFB6",
+      "Mi\uD83C\uDFB6",
+      "Fa\uD83C\uDFB6",
+      "Sol\uD83C\uDFB6",
+      "La\uD83C\uDFB6",
+      "Ti\uD83C\uDFB6"
+    ]
+  },
+  "eyjafjalla:SkinSelect": {
+    "TEXT": [
+      "Select the skin",
+      "Default - Hvit Aska",
+      "Camp Before Travel",
+      "Default",
+      "Coral Coast FA018",
+      "Sanrio Magical Girl"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "arknsfw:GeothermalPower": {
+    "NAME": "地热",
+    "DESCRIPTIONS": ["每回合开始时兴奋 +", "。"]
+  },
+  "arknsfw:HydrationPower": {
+    "NAME": "水化",
+    "DESCRIPTIONS": ["回合结束时受孕度 +", "。"]
+  },
+  "arknsfw:CoreFeverPower": {
+    "NAME": "核心高热",
+    "DESCRIPTIONS": ["受击后兴奋 +", "。"]
+  },
+  "arknsfw:CloneHazePower": {
+    "NAME": "分身雾",
+    "DESCRIPTIONS": ["回合开始兴奋 +", "×5，受孕度 +", "×2。"]
+  },
+  "arknsfw:VolcanicFlushPower": {
+    "NAME": "火山潮红",
+    "DESCRIPTIONS": ["", " 层：回合开始兴奋 +3/层，受击后兴奋 +2/层。", " NL（已刻印，无法解除）"]
+  },
+  "arknsfw:AshShamePower": {
+    "NAME": "灰烬羞怯",
+    "DESCRIPTIONS": ["", " 层：每回合首张牌费用 +1/层。", " NL（已刻印，无法解除）"]
+  },
+  "arknsfw:CoreStrainPower": {
+    "NAME": "核心过载",
+    "DESCRIPTIONS": ["", " 层：回合结束失去 1/层 生命；打出技能后兴奋 +3/层。", " NL（已刻印，无法解除）"]
+  },
+  "arknsfw:BubbleGagPower": {
+    "NAME": "泡沫封口",
+    "DESCRIPTIONS": ["", " 层：每回合首张技能牌费用 +1/层。", " NL（已刻印，无法解除）"]
+  },
+  "arknsfw:LeakPower": {
+    "NAME": "渗漏",
+    "DESCRIPTIONS": ["", " 层：回合结束失去 3/层 格挡，受孕度 +2/层。", " NL（已刻印，无法解除）"]
+  },
+  "arknsfw:CloneEchoPower": {
+    "NAME": "分身回音",
+    "DESCRIPTIONS": ["", " 层：回合开始兴奋 +2/层，首张攻击 -2/层 伤害。", " NL（已刻印，无法解除）"]
+  }
+}

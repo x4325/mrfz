@@ -1,0 +1,15 @@
+{
+  "nymph:HexPanel": {
+    "TEXT": [
+      "咒灵 0"
+    ]
+  },
+  "nymph:SkinSelect": {
+    "TEXT": [
+      "皮肤",
+      "默认",
+      "甜美配方",
+      "繁花梦幻谈"
+    ]
+  }
+}

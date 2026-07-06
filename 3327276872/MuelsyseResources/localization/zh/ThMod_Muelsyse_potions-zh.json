@@ -1,0 +1,25 @@
+{
+  "muelsyse:MeltingSnow": {
+    "NAME": "化雪之水",
+    "DESCRIPTIONS": [
+      "使 #y生命吊坠 计数增加 #b",
+      " 点。"
+    ]
+  },
+  "muelsyse:HeartGrass": {
+    "NAME": "心芳",
+    "DESCRIPTIONS": [
+      "自身与所有流形各提升 #b",
+      " 点最大生命。"
+    ]
+  },
+  "muelsyse:BottledForest": {
+    "NAME": "瓶中林野",
+    "DESCRIPTIONS": [
+      "将你打出的上一张攻击牌的复制在 #y栽培 #b",
+      " 后放入手中，使其打出前耗能为0。",
+      "栽培",
+      "主原料：选择1张手牌。副原料：自动填充X张其他牌。每张 #y原料 强化目标牌 #b1 点攻击和格挡值。"
+    ]
+  }
+}

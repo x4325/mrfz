@@ -1,0 +1,19 @@
+{
+  "eyjafjalla:ALetter": {
+    "NAME": "Warning brought by the messenger",
+    "DESCRIPTIONS": [
+      "A respected naturalist sent his messenger to warn every entity on the spire: ~The~ ~large~ ~volcano~ ~located~ ~on~ ~the~ ~north~ ~side~ ~of~ ~the~ ~spire~ ~will~ ~enter~ ~an~ ~active~ ~period~ ~within~ #b~20-50~ ~observation~ ~cycles~ ",
+      "This natural disaster cannot be prevented. In the midst of confusion, you seem to see the ancient city of Pompeii buried thousands of years ago. NL It constantly warns you: #r~To~ #r~revere~ #r~nature~ .",
+      "Volcanic eruptions are inevitable, at least you should try to minimize their impact on you as much as possible.",
+      "We must leave here as soon as possible.",
+      "We must make some preparations as soon as possible."
+    ],
+    "OPTIONS": [
+      "[Stare] Obtain #gShadow #gof #gPompeii and a special relic.",
+      "[defend] Obtain #gMask #gagainst #gVolcanic #gash and a special relic.",
+      "[step] #gRecover #g10 #gHP.",
+      "[prepare] Obtain #gVolcano #gErupts.",
+      "[move]"
+    ]
+  }
+}

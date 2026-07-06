@@ -1,0 +1,190 @@
+{
+  "eyjafjalla:VolcanoEchoPower": {
+    "NAME": "火山回响",
+    "DESCRIPTIONS": [
+      "将你打出的下 #b",
+      " 张牌的 #y投影 放入 #y云层 。"
+    ]
+  },
+  "eyjafjalla:AdelePower": {
+    "NAME": "So Long Adele",
+    "DESCRIPTIONS": [
+      "At the end of your turn, play the first #b",
+      " card in your #yClouds and Exhaust them."
+    ]
+  },
+  "eyjafjalla:AdeleFixPower": {
+    "NAME": "旅梦",
+    "DESCRIPTIONS": [
+      "每当你失去1点 #y云量 时，抽 #b",
+      " 张牌。"
+    ]
+  },
+  "eyjafjalla:FireMarkPower": {
+    "NAME": "Pyrobreath Mark",
+    "DESCRIPTIONS": [
+      "Mark your #b",
+      " next cards played as #yPyrobreath-card."
+    ]
+  },
+  "eyjafjalla:SilentWetPower": {
+    "NAME": "Soundproof Moisturizer",
+    "DESCRIPTIONS": [
+      "The first #b",
+      " card contains #y\"Block\" you play each turn will be played twice.",
+      "block"
+    ]
+  },
+  "eyjafjalla:ClearDreamPower": {
+    "NAME": "Lucid Dream",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " #yCloud into your hand."
+    ]
+  },
+  "eyjafjalla:TranceDreamPower": {
+    "NAME": "Ambiguous Dream",
+    "DESCRIPTIONS": [
+      "Whenever you complete a #yMelody, apply #b",
+      " #yCarmine-steam to all enemies."
+    ]
+  },
+  "eyjafjalla:BetweenUsPower": {
+    "NAME": "Between You and Me",
+    "DESCRIPTIONS": [
+      "Whenever you play a card in your #yclouds, gain #b",
+      " Block. Else deal #b",
+      " damage to a random enemy."
+    ]
+  },
+  "eyjafjalla:PrepareDrawPower": {
+    "NAME": "Prepare to draw",
+    "DESCRIPTIONS": [
+      "At the start of next #b",
+      " turns, exhaust 3 Status cards in your #yDraw #ypile.",
+      "Draw"
+    ]
+  },
+  "eyjafjalla:PrepareDiscardPower": {
+    "NAME": "Prepare to discard",
+    "DESCRIPTIONS": [
+      "At the start of next #b",
+      " turns, exhaust 3 Status cards in your #yDiscard #ypile.",
+      "Dis"
+    ]
+  },
+  "eyjafjalla:AnswerInWindPower": {
+    "NAME": "Blowing in the Wind",
+    "DESCRIPTIONS": [
+      "Whenever you start a #yMelody, replace the next #b",
+      " notes with #yAny-note."
+    ]
+  },
+  "eyjafjalla:DreitonPower": {
+    "NAME": "Dreiton",
+    "DESCRIPTIONS": [
+      "Your next #b",
+      " cards which select only 1 enemy as target will be played to all other enemies 1 times."
+    ]
+  },
+  "eyjafjalla:DenseMistPower": {
+    "NAME": "Dense Mist",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #b",
+      " Block, increase the number by #b",
+      " for each time you lose HP."
+    ]
+  },
+  "eyjafjalla:SpurtOutPower": {
+    "NAME": "Spewing",
+    "DESCRIPTIONS": [
+      "At the end of your turn, let your next attack deal additional #b",
+      " damage and reset. When you play a #yPyrobreath-card, increase the number by #b",
+      " ."
+    ]
+  },
+  "eyjafjalla:SongOfLovePower": {
+    "NAME": "Skidamarink",
+    "DESCRIPTIONS": [
+      "The first #b",
+      " card which cost more than 0 energy you play each turn, will be returned to your hand and cost 1 less energy this turn. NL Remaining: #b",
+      " ."
+    ]
+  },
+  "eyjafjalla:VolcanicHealingPower": {
+    "NAME": "Volcanic Ash Therapy",
+    "DESCRIPTIONS": [
+      "When damaged, gain Block equals to the 20% of damage in advance. When damaged by #ynon-Attack, Gain Block equals to the #b50% of damage in advance instead."
+    ]
+  },
+  "eyjafjalla:DancingLavaPower": {
+    "NAME": "Dancing Lava",
+    "DESCRIPTIONS": [
+      "Transfer the non-Attack damage you receive to random enemy. At the start of your turn (Y), add #b",
+      " #yBurn+",
+      " into your hand."
+    ]
+  },
+  "eyjafjalla:GiveRedCloudPower": {
+    "NAME": "Release the Steam",
+    "DESCRIPTIONS": [
+      "The next #b",
+      " times you are attacked, apply #yCarmine-steam to the source."
+    ]
+  },
+  "eyjafjalla:RedCloudPower": {
+    "NAME": "Carmine Steam",
+    "DESCRIPTIONS": [
+      "Receive #b",
+      "% more damage from #yAttacks. Remove the effect after being Attacked.",
+      "% more damage from #yAttacks. Remove the effect at the end of turn after being Attacked."
+    ]
+  },
+  "eyjafjalla:WhiteCloudPower": {
+    "NAME": "Pure White Steam",
+    "DESCRIPTIONS": [
+      "#yAttacks deal #b",
+      "% damage. Remove the effect after attacking."
+    ]
+  },
+  "eyjafjalla:ResplendentTearPower": {
+    "NAME": "Brilliant Lament",
+    "DESCRIPTIONS": [
+      "#yAttacks deal #b40％ more damage for #b",
+      " turns."
+    ]
+  },
+  "eyjafjalla:FollowHeartPower": {
+    "NAME": "Go-at Your Own Way",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add ",
+      " into your discard pile.",
+      " to your hand.",
+      "#y",
+      " , "
+    ]
+  },
+  "eyjafjalla:PinkOceanPower": {
+    "NAME": "Pink Ocean Goat",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #yA #ySong to ",
+      "your hand.",
+      "the #yClouds."
+    ]
+  },
+  "eyjafjalla:FluffShieldPower": {
+    "NAME": "Fluff Shield",
+    "DESCRIPTIONS": [
+      "Receive #b80% less damage from #yAttacks.",
+      "Mary Has A Little Lamb"
+    ]
+  },
+  "eyjafjalla:MelodyMemoryPower": {
+    "NAME": "Melody Memory",
+    "DESCRIPTIONS": [
+      "After you play #b",
+      " #ySkill cards, receive #b",
+      " damage and add #yDazed to your hand, then reset the counter."
+    ]
+  }
+}

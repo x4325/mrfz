@@ -1,0 +1,112 @@
+[
+  {
+    "NAMES": [
+      "project"
+    ],
+    "DESCRIPTION": "A #yEthereal and #yExhaust copy."
+  },
+  {
+    "NAMES": [
+      "clouds"
+    ],
+    "DESCRIPTION": "An independent Hand area with a maximum limit of #b5. You need to use #yCloudage to play these cards."
+  },
+  {
+    "NAMES": [
+      "cloudage"
+    ],
+    "DESCRIPTION": "Special Energy. Gain #b1 Cloudage at the end of your turn."
+  },
+  {
+    "NAMES": [
+      "retain-c"
+    ],
+    "DESCRIPTION": "#yRetain. At the end of your turn, move this card to #yClouds if it is in your hand."
+  },
+  {
+    "NAMES": [
+      "innate-c"
+    ],
+    "DESCRIPTION": "At the start of combats, this card will move to #yClouds."
+  },
+  {
+    "NAMES": [
+      "inner-voice"
+    ],
+    "DESCRIPTION": "When played from your hand/ #yClouds (not Autoplay), play an #yInner-voice card in the other area and exhaust it.。"
+  },
+  {
+    "NAMES": [
+      "pb-mark"
+    ],
+    "DESCRIPTION": "Pyrobreath(pb): Mark the next #bX cards you play as #yPyrobreath-card, enable its extra effect in this combat."
+  },
+  {
+    "NAMES": [
+      "pb",
+      "pb-card"
+    ],
+    "DESCRIPTION": "Pyrobreath(pb): Effect in combats after being marked as #yPyrobreath-card."
+  },
+  {
+    "NAMES": [
+      "ceaseless-pb-F",
+      "ceaseless-pb"
+    ],
+    "DESCRIPTION": "Pyrobreath(pb): Could be marked for many times (F). Exhaust all the pyrobreath-marks when played."
+  },
+  {
+    "NAMES": [
+      "dolly-card"
+    ],
+    "DESCRIPTION": "A series of #bExhaust and #bEthereal cards. Apply 1 #yPyrobreath-mark to you when exhausted."
+  },
+  {
+    "NAMES": [
+      "carmine-steam"
+    ],
+    "DESCRIPTION": "Receive #b50% more damage from the next #yAttack."
+  },
+  {
+    "NAMES": [
+      "pure-white-steam"
+    ],
+    "DESCRIPTION": "Next #yAttack deals #b80% damage."
+  },
+  {
+    "NAMES": [
+      "melody"
+    ],
+    "DESCRIPTION": "You shall play Attack( #yA ), Skill( #yS ), Other-type( #yR ) card in specific order. Mismatched type will discontinue the Melody. NL The new melody will follow the existing melody."
+  },
+  {
+    "NAMES": [
+      "any-note"
+    ],
+    "DESCRIPTION":"This step of #yMelody allows you to play any type of cards."
+  },
+  {
+    "NAMES": [
+      "replace"
+    ],
+    "DESCRIPTION": "Remove an #ySpecific #yCard in your deck when adding to your deck, #yUpgrade this card if the removed one is upgraded."
+  },
+  {
+    "NAMES": [
+      "the-loved-one"
+    ],
+    "DESCRIPTION": "Put this card into your hand for every first time this card moves to discard pile in your turn."
+  },
+  {
+    "NAMES": [
+      "disposable"
+    ],
+    "DESCRIPTION": "Remove the card from your deck after played."
+  },
+  {
+    "NAMES": [
+      "dreaming-key"
+    ],
+    "DESCRIPTION": "When you finish #yThe #yEnding with this key, enter a special extra area."
+  }
+]

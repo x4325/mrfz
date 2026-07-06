@@ -1,0 +1,53 @@
+{
+  "muelsyse:Manifold": {
+    "NAME": "流形",
+    "MOVES": [
+
+    ],
+    "DIALOG": [
+      "流形",
+      "当你承受伤害时， #y流形 将轮流为你承受不超出 #b阈值 的伤害。",
+      "破防"
+    ]
+  },
+  "muelsyse:FallenTear": {
+    "NAME": "遗落的泪珠",
+    "MOVES": [],
+    "DIALOG": [
+      "遗落的泪珠"
+    ]
+  },
+  "muelsyse:Heyak": {
+    "NAME": "霍尔海雅",
+    "MOVES": [
+      ""
+    ],
+    "DIALOG": [
+      "哎呀，没想到在这本书里还能找到一个有趣的身影~"
+    ]
+  },
+  "muelsyse:Anma": {
+    "NAME": "安玛塔卢",
+    "MOVES": [
+
+    ],
+    "DIALOG": [
+      "快到雪融的季节了……",
+      "缪尔不在这里。"
+    ]
+  },
+  "muelsyse:Xbdeer": {
+    "NAME": "大角跳兽",
+    "MOVES": [
+
+    ],
+    "DIALOG": [
+
+    ]
+  },
+  "muelsyse:Smgia": {
+    "NAME": "纠缠藤蔓",
+    "MOVES": [],
+    "DIALOG": []
+  }
+}

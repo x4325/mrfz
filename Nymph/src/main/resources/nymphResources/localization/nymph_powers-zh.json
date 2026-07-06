@@ -1,0 +1,22 @@
+{
+  "nymph:HexPower": {
+    "NAME": "咒灵",
+    "DESCRIPTIONS": [
+      "受到攻击时额外受到 ",
+      " 点伤害。"
+    ]
+  },
+  "nymph:FearPower": {
+    "NAME": "恐惧",
+    "DESCRIPTIONS": [
+      "恐惧：造成的伤害为 0，于其回合结束时解除。"
+    ]
+  },
+  "nymph:HeartLockPower": {
+    "NAME": "心锁",
+    "DESCRIPTIONS": [
+      "下回合开始时失去 ",
+      " 点力量。"
+    ]
+  }
+}

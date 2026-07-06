@@ -1,0 +1,654 @@
+{
+  "WaterStrike_Muelsyse": {
+    "NAME": "Waters Strike",
+    "DESCRIPTION": " muelsyse:Co Deal !D! Damage.",
+    "EXTENDED_DESCRIPTION": [
+      " NL muelsyse:Initial ",
+      ": muelsyse:Moisturize 1。"
+    ]
+  },
+  "WaterDefend_Muelsyse": {
+    "NAME": "Waters Defend",
+    "DESCRIPTION": " muelsyse:Co Gain !B! Block.",
+    "EXTENDED_DESCRIPTION": [
+      " NL muelsyse:Initial ",
+      ": muelsyse:Moisturize 1。"
+    ]
+  },
+  "GraduallyWater_Muelsyse": {
+    "NAME": "Progressive Moisturization",
+    "DESCRIPTION": " muelsyse:Moisturize !M! . NL Permanently increase this card's Moisturize by 1. NL Exhaust ."
+  },
+  "SongOfRose_Muelsyse": {
+    "NAME": "Song Of Rose",
+    "DESCRIPTION": " Retain . NL muelsyse:Cultivate ( !M! ) a *White *Rose , and add it into your hand.",
+    "UPGRADE_DESCRIPTION": " Retain . NL muelsyse:Cultivate ( !M! ) the *White *Rose+ , and add it into your hand."
+  },
+  "WordOfFlower_Muelsyse": {
+    "NAME": "Word Of Flowers",
+    "DESCRIPTION": " Retain. Unplayable. NL muelsyse:Depletion : muelsyse:Moisturize !M! .",
+    "EXTENDED_DESCRIPTION": [
+      "Base On Normal: NL muelsyse:Life-circle-deceleration. NL Weakened some cards."
+    ]
+  },
+
+  "WaterStrikePro_Muelsyse": {
+    "NAME": "Waters Strike·Phase 2",
+    "DESCRIPTION": " muelsyse:Co Deal !D! Damage for 2 times.",
+    "EXTENDED_DESCRIPTION": [
+      " NL muelsyse:Initial ",
+      ": muelsyse:Moisturize !M! ."
+    ]
+  },
+  "LossShield_Muelsyse": {
+    "NAME": "Escaping Shield",
+    "DESCRIPTION": " muelsyse:Co Gain !B! Block !M! times NL Ethereal .",
+    "EXTENDED_DESCRIPTION": [
+      " NL muelsyse:Initial ",
+      ": Don't enable Ethereal ."
+    ]
+  },
+  "WaterRecycle_Muelsyse": {
+    "NAME": "Water Recycle",
+    "DESCRIPTION": "Repeatly draw 1 card and muelsyse:Moisturize !M! ,until the cards you have drawn include 2 types (NOT include STATUS)."
+  },
+  "Verdant_Muelsyse": {
+    "NAME": "Verdant",
+    "DESCRIPTION": " Unplayable . NL When you draw this card draw !M! cards NL muelsyse:Nutrient : increase the block by 2.",
+    "UPGRADE_DESCRIPTION": " Unplayable . NL When you draw this card draw !M! cards NL muelsyse:Nutrient : Increase the block by 4."
+  },
+  "PoisonIvy_Muelsyse": {
+    "NAME": "Poisonous Ivy",
+    "DESCRIPTION": " muelsyse:Co Deal !D! Damage. NL Muelsyse:Co Apply !M! Poison. NL muelsyse:Nutrient : Increase the damage by !M! "
+  },
+  "ScatterSpore_Muelsyse": {
+    "NAME": "Scatter Spore",
+    "DESCRIPTION": "Deal !D! Damage. NL When you draw this card, duplicate itself. NL muelsyse:Depletion ."
+  },
+  "Orchid_Muelsyse": {
+    "NAME": "Orchid",
+    "DESCRIPTION": "Increase every manifold's muelsyse:threshold by 1.  NL muelsyse:Nutrient : Decrease the damage by 2. Increase the block by !M! ."
+  },
+  "FineBlend_Muelsyse": {
+    "NAME": "Fine Blending",
+    "DESCRIPTION": " Exhaust . NL Gain [E] . NL muelsyse:Nutrient : Cost 1 more, Increase the damage and block by 50%.",
+    "UPGRADE_DESCRIPTION": " Exhaust . NL Gain [E] [E] . NL muelsyse:Nutrient : Cost 1 more, Increase the damage and block by 75%."
+  },
+  "Wave_Muelsyse": {
+    "NAME": "Waves",
+    "DESCRIPTION": " Ethereal . NL  Unplayable . NL When this card is in you hand, muelsyse:Moisturize !M! after playing a card."
+  },
+  "Rest_Muelsyse": {
+    "NAME": "Rest",
+    "DESCRIPTION": " muelsyse:Co Gain !B! Block . NL Draw !M! more cards in next turn."
+  },
+  "FractalAttack_Muelsyse": {
+    "NAME": "Fractal Attack",
+    "DESCRIPTION": " muelsyse:Co Deal !D! Damage NL Add !M! *Water into your discard pile.",
+    "UPGRADE_DESCRIPTION": " muelsyse:Co Deal !D! Damage NL Add !M! *Water+ into your discard pile."
+  },
+  "Trail_Muelsyse": {
+    "NAME": "Foot Step",
+    "DESCRIPTION": " Gain !B! Block . NL When chosen through muelsyse:Wander, play a copy of this card."
+  },
+  "TerraPatrol_Muelsyse": {
+    "NAME": "A Journey",
+    "DESCRIPTION": " muelsyse:Wander !M! . NL Return the card you have NOT chosen through wandering to your hand. "
+  },
+  "Defoliation_Muelsyse": {
+    "NAME": "Fallen leaves",
+    "DESCRIPTION": " Unplayable . NL muelsyse:Depletion :Gain [E] [E] .",
+    "UPGRADE_DESCRIPTION": " Unplayable . NL muelsyse:Depletion :Gain [E] [E] [E] ."
+  },
+  "Geometry_Muelsyse": {
+    "NAME": "Geometry",
+    "DESCRIPTION": "Discard all cards cost non-number in your hand, Deal !D! Damage for each card.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (you have !M! cards cost non-number)"
+    ]
+  },
+  "SpringWord_Muelsyse": {
+    "NAME": "Spring Talk",
+    "DESCRIPTION": " muelsyse:Cultivate ( 1 ) a *Lily of the Valley and add it into your hand. NL Exhaust the Main Material to power up the aim card twice.",
+    "UPGRADE_DESCRIPTION": "muelsyse:Cultivate ( 1 ) a *Lily of the Valley+ and add it into your hand. NL Exhaust the Main Material to power up the aim card twice."
+  },
+  "Seed_Muelsyse": {
+    "NAME": "Seeding",
+    "DESCRIPTION": " muelsyse:Wander 3. NL Apply !M! random muelsyse:Pollen to the first card you select through Wandering."
+  },
+  "HugOfRegret_Muelsyse": {
+    "NAME": "Regretful Hug",
+    "DESCRIPTION": " Exhaust . NL muelsyse:Co Deal !D! Damage. NL muelsyse:Co Apply !M! Weak ."
+  },
+  "FluidPower_Muelsyse": {
+    "NAME": "Power Of Fluid",
+    "DESCRIPTION": " muelsyse:Co Deal !D! Damage. NL Apply !M! temp Strength to you. NL When chosen through muelsyse:Wander, play a copy of this card."
+  },
+  "Reconfiguration_Muelsyse": {
+    "NAME": "Reconfiguration",
+    "DESCRIPTION": "Discard 3 cards. NL Draw !M! cards.",
+    "EXTENDED_DESCRIPTION": [
+      "Discard 2 cards. NL Draw !M! cards."
+    ]
+  },
+
+  "SeriousSpawn_Muelsyse": {
+    "NAME": "Emergent derive",
+    "DESCRIPTION": " Exhaust . NL Summon 1 manifold that can exceed the limit. It will Dissipate after !M! turns."
+  },
+  "Bright_Muelsyse": {
+    "NAME": "Bright",
+    "DESCRIPTION": " muelsyse:Co Deal !D! Damage to all enemies."
+  },
+  "WaterStrikeEnd_Muelsyse": {
+    "NAME": "Waters Strike·Final Phase",
+    "DESCRIPTION": "Execute follows X times: NL muelsyse:Co Deal !D! Damage. NL muelsyse:Moisturize 2.",
+    "UPGRADE_DESCRIPTION": "Execute follows X+1 times: NL muelsyse:Co Deal !D! Damage. NL muelsyse:Moisturize 2."
+  },
+  "LightFlow_Muelsyse": {
+    "NAME": "Shaping: Gathering Stream",
+    "DESCRIPTION": " muelsyse:Shaping : Increase the muelsyse:Threshold of all the manifolds by 1, the maximum health by 5."
+  },
+  "TransRapid_Muelsyse": {
+    "NAME": "Shaping: Rapid Stream",
+    "DESCRIPTION": " Exhaust. NL  muelsyse:Shaping :Increase the damage of all the manifolds by !M! ."
+  },
+  "TransCleanWater_Muelsyse": {
+    "NAME": "Pure Water is Life",
+    "DESCRIPTION": "After your basic manifold attack, muelsyse:Derive 1 Strength from the target until your next turn."
+  },
+  "CompositeNutrient_Muelsyse": {
+    "NAME": "Composite Nutrient",
+    "DESCRIPTION": " Exhaust . NL Restore all the muelsyse:Dry cards. NL muelsyse:Nutrient (After played): NL Draw !M! cards."
+  },
+  "Irrigate_Muelsyse": {
+    "NAME": "Irrigate",
+    "DESCRIPTION": "Gain !B! Block . NL muelsyse:Nutrient (After played): muelsyse:Moisturize !M! ."
+  },
+  "Reflux_Muelsyse": {
+    "NAME": "Reflux",
+    "DESCRIPTION": "Discard all muelsyse:Dry cards and draw that many. NL muelsyse:Nutrient (After played): NL Gain [E] .",
+    "UPGRADE_DESCRIPTION": "Discard all muelsyse:Dry cards and draw that many.  NL muelsyse:Nutrient (After played): NL Gain  [E] [E] ."
+  },
+  "BornShoots_Muelsyse": {
+    "NAME": "Branching",
+    "DESCRIPTION": "Choose 1 card in your hand, muelsyse:Cultivate ( !M! ) it ."
+  },
+  "DreamBubble_Muelsyse": {
+    "NAME": "Dream Bubble",
+    "DESCRIPTION": "Transfer all the Block from manifold to yourself. NL muelsyse:Nutrient : increase Block by 50%.",
+    "UPGRADE_DESCRIPTION": "Transfer all the Block from manifold to yourself. NL muelsyse:Nutrient : increase Block by 100%."
+  },
+  "FullBlown_Muelsyse": {
+    "NAME": "Carpet Of Flowers",
+    "DESCRIPTION": " Exhaust . NL Choose one card in your hand, apply !M! random muelsyse:Pollen to this card."
+  },
+  "SoilSpread_Muelsyse": {
+    "NAME": "Soil improvement:Windy Flower",
+    "DESCRIPTION": "When muelsyse:Cultivate , apply !M! random muelsyse:Pollen to the aim card."
+  },
+  "SoilExhaust_Muelsyse": {
+    "NAME": "Soil improvement:Purification",
+    "DESCRIPTION": "When muelsyse:Cultivate ,your Curses and Status cards will trigger muelsyse:Depletion . NL When you trigger depletion , draw a card.",
+    "UPGRADE_DESCRIPTION": " Innate. NL When muelsyse:Cultivate, your Curses and Status cards will trigger muelsyse:Depletion . NL When you trigger depletion , draw a card."
+  },
+  "LifeRipple_Muelsyse": {
+    "NAME": "Life Ripples",
+    "DESCRIPTION": "At the end of your turn, each muelsyse:Manifold gives you and itself 2 Block."
+  },
+  "UnknownFluid_Muelsyse": {
+    "NAME": "Unknowable Fluid",
+    "DESCRIPTION": " muelsyse:Co Deal !D! Damage NL muelsyse::Nutrient : Cost 1 less [E] , increase the Damage by !M! ."
+  },
+  "DeepReflect_Muelsyse": {
+    "NAME": "Deep Reflection",
+    "DESCRIPTION": " Add :Gain [E] . to the card that cost most in your hand. NL Increase the cost of this card by 1."
+  },
+  "LifeAndWind_Muelsyse": {
+    "NAME": "Life in Wind",
+    "DESCRIPTION": " Exhaust . NL muelsyse:Cultivate ( !M! ) a *Dandelion ,apply !M! random muelsyse:Pollen to it, and add it into your hand.",
+    "UPGRADE_DESCRIPTION": " Exhaust . NL muelsyse:Cultivate ( !M! ) a *Dandelion+ ,apply !M! random muelsyse:Pollen to it, and add it into your hand."
+  },
+  "EcologyCycle_Muelsyse": {
+    "NAME": "Ecology Cycle",
+    "DESCRIPTION": " muelsyse:Co Deal !D! Damage . NL When you draw this card, apply !M! random muelsyse:Pollen to it."
+  },
+  "LivingEcho_Muelsyse": {
+    "NAME": "Echo Of Life",
+    "DESCRIPTION": " Exhaust . NL Exhaust at most !M! cards. NL Add that many *Water into your hand."
+  },
+  "InverseChange_Muelsyse": {
+    "NAME": "Inverse Enthalpy Change",
+    "DESCRIPTION": " muelsyse:Wander 3. NL Draw !M! cards.",
+    "UPGRADE_DESCRIPTION": " muelsyse:Wander 5. NL Draw !M! cards."
+  },
+  "WaterShield_Muelsyse": {
+    "NAME": "Water Shield",
+    "DESCRIPTION": " Exhaust *Water in all piles, Gain !B! Block for each card Exhausted ."
+  },
+  "SourceOfLife_Muelsyse": {
+    "NAME": "Source Of Life",
+    "DESCRIPTION": "At the start of your turn, add !M! *Water+ into your hand."
+  },
+  "Shoot_Muelsyse": {
+    "NAME": "Spray",
+    "DESCRIPTION": "Add 3 *Water into your hand. NL muelsyse:Cultivate ( !M! ) a *Blue *Hyacinth and add it into your hand.",
+    "UPGRADE_DESCRIPTION": "Add 3 *Water+ into your hand. NL muelsyse:Cultivate ( !M! ) a *Blue *Hyacinth+ and add it into your hand."
+  },
+  "SpruceInCage_Muelsyse": {
+    "NAME": "Spruce In Cage",
+    "DESCRIPTION": "Draw !M! cards. NL Choose 1 card in your hand, muelsyse:Cultivate (2) and Retain it. NL End your turn."
+  },
+  "EcologicalCoupling_Muelsyse": {
+    "NAME": "Shaping:Ecological Interaction",
+    "DESCRIPTION": " muelsyse:Shaping :Extend your manifold exist turn by !M! turn."
+  },
+  "CurseOfSpirit_Muelsyse": {
+    "NAME": "Curse Of Spirit",
+    "DESCRIPTION": " Exhaust . NL heal 2 HP . NL If transformed or removed from your deck, increase !M! Max HP ."
+  },
+  "MatrixWave_Muelsyse": {
+    "NAME": "Matrix Wave",
+    "DESCRIPTION": " muelsyse:Co add a *Water into your hand.",
+    "UPGRADE_DESCRIPTION": " muelsyse:Co add a *Water+ into your hand."
+  },
+  "NightWish_Muelsyse": {
+    "NAME": "Night Wish",
+    "DESCRIPTION": " Unplayable . NL When this card get into your draw pile, draw !M! cards.",
+    "UPGRADE_DESCRIPTION": " Playable . NL  NL When this card get into your draw pile, draw !M! cards."
+  },
+  "Resplendent_Muelsyse": {
+    "NAME": "Resplendent",
+    "DESCRIPTION": " Unplayable . NL When this card get into your draw pile, gain [E] .",
+    "UPGRADE_DESCRIPTION": "Playable . NL When this card get into your draw pile, gain [E] ."
+  },
+  "WaterWave_Muelsyse": {
+    "NAME": "Water Comble",
+    "DESCRIPTION": " Exhaust all the *Water in all pile, Deal !D! Damage for each *Water Exhausted ."
+  },
+  "EndlessSpring_Muelsyse": {
+    "NAME": "Inexhaustible Spring",
+    "DESCRIPTION": " Unplayable . NL  When this card get into your draw pile or server as material , muelsyse:Moisturize !M! . NL This card won't muelsyse:Dry ."
+  },
+  "SoilBack_Muelsyse": {
+    "NAME": "Soil improvement:Fertilize",
+    "DESCRIPTION": " When muelsyse:Cultivate , your main material won't muelsyse:Dry , and it cost 1 less [E] this turn."
+  },
+  "DorothyVision_Muelsyse": {
+    "NAME": "Dorothy's Vision",
+    "DESCRIPTION": " muelsyse:Wander !M! . NL Wander 1 more card for each time you play a card in this turn."
+  },
+  "Starter_Muelsyse": {
+    "NAME": "Fount",
+    "DESCRIPTION": " muelsyse:Co Deal !D! Damage NL Deal 4 less Damage for each card in your discard pile."
+  },
+  "CloudyBarrier_Muelsyse": {
+    "NAME": "Cloudy Barrier",
+    "DESCRIPTION": " Innate , Exhaust . NL For each type of card in your draw pile, randomly draw a card of this type. These cards cost 1 less [E] this trun."
+  },
+  "RemainDust_Muelsyse": {
+    "NAME": "Remain Dust",
+    "DESCRIPTION": "When you muelsyse:Wander, add !M! random card to the wander list, which costs 0 until played."
+  },
+  "WaterStrikeO_Muelsyse": {
+    "NAME": "Waters Strike·Ω",
+    "DESCRIPTION": " Innate, Exhaust. NL muelsyse:Co deal !D! damage. NL muelsyse:Moisturize !M! ."
+  },
+
+  "MyShadow_Muelsyse": {
+    "NAME": "Shape Like Water",
+    "DESCRIPTION": " Retain , Exhaust . NL Summon !M! manifolds that can exceed the limit. These manifolds will dissipate after 1 turn."
+  },
+  "PlantAStar_Muelsyse": {
+    "NAME": "Plant A Star",
+    "DESCRIPTION": " Exhaust . NL Draw cards until your hand is full. NL muelsyse:Cultivate ( !M! ) a *Lift *The *Star ,and shuffle it into you draw pile.",
+    "UPGRADE_DESCRIPTION": " Exhaust . NL Draw cards until your hand is full. NL muelsyse:Cultivate ( !M! ) a *Lift *The *Star+ ,and shuffle it into you draw pile."
+  },
+  "ShallowAdaption_Muelsyse": {
+    "NAME": "Superficial Regulation",
+    "DESCRIPTION": " Exhaust . NL Let the cards in your hand get: When played draw 1 card, muelsyse:Moisturize 1.",
+    "EXTENDED_DESCRIPTION": [
+      " Exhaust . NL Let the cards in your hand get: When played, muelsyse:Moisturize 2."
+    ]
+  },
+  "Ocean_Muelsyse": {
+    "NAME": "Ocean",
+    "DESCRIPTION": " muelsyse:Moisturize 20. NL muelsyse:Source ."
+  },
+  "CondensateWish_Muelsyse": {
+    "NAME": "Coalesce The Wish",
+    "FLAVOR": "\"Oh wishes, I beg you coalesce.\"",
+    "DESCRIPTION": "Deal damage equal to health of manifolds in total.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deal !D! Damage)"
+    ]
+  },
+  "WaterSilently_Muelsyse": {
+    "NAME": "Smooth Moisturization",
+    "DESCRIPTION": "Exhaust. NL All cards in your hand cost 0 until played, and let them get: When played, muelsyse:Moisturize !M! ."
+  },
+  "ExplosionMagic_Muelsyse": {
+    "NAME": "Magic of Explosion",
+    "DESCRIPTION": "Exhaust. NL muelsyse:Co deal !D! damage. NL *Turn *Start : if count of manifolds is more than 3, move this card to your hand."
+  },
+  "RainWorld_Muelsyse": {
+    "NAME": "Rainy World",
+    "DESCRIPTION": "When you play a non-Exhaust card, it will randomly shuffled into your discard pile, draw pile or return to your hand. NL Ethereal. muelsyse:Raining ."
+  },
+  "MillenniumVine_Muelsyse":{
+    "NAME": "Millennial Vine",
+    "DESCRIPTION": " Exhaust .Can be Upgraded any number of times. NL muelsyse:Co Deal !D! Damage . NL Start each combat with applying !M! random muelsyse:Pollen to this card."
+  },
+  "ItIs_Muelsyse": {
+    "NAME": "There Muel is",
+    "DESCRIPTION": "Sustain for !M! turns, decrease the damage you receive by 80%."
+  },
+  "MeetInSnow_Muelsyse": {
+    "NAME": "Meet Where Snow",
+    "DESCRIPTION": " muelsyse:Wander !M! . NL Add a *Water into your discard pile for each card you choose."
+  },
+  "ApartWhenLoss_Muelsyse": {
+    "NAME": "Part When flow",
+    "DESCRIPTION": " muelsyse:Co Deal !D! Damage . NL Increase the Damage by !M! for each *Water Exhausted. When chosen through muelsyse:Wander, play a copy of this card. "
+  },
+  "Revive_Muelsyse": {
+    "NAME": "Revive",
+    "DESCRIPTION": "When a card is shuffled into the draw pile, gain !M! Block .",
+    "UPGRADE_DESCRIPTION": " Innate . NL When a card is shuffled into the draw pile, gain !M! Block ."
+  },
+  "LifeDeduction_Muelsyse": {
+    "NAME": "Life Deduction",
+    "DESCRIPTION": "Mark an enemy's Max HP as Y*Y , summon a Manifold that muelsyse:Deduce Y . NL Exhaust .",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Y equals to !M! )"
+    ]
+  },
+  "TimeRiver_Muelsyse": {
+    "NAME": "River Of Time",
+    "DESCRIPTION": " muelsyse:Wander !M! . NL Play a copy of the first card you select through Wandering."
+  },
+  "UncertainForm_Muelsyse": {
+    "NAME": "Amorphous Form",
+    "DESCRIPTION": "At the start of your turn, muelsyse:Wander !M! . NL Exhaust the cards you have NOT chosen and draw so-many cards."
+  },
+  "EternalGreenfield_Muelsyse": {
+    "NAME": "Eternal Fertile Ground",
+    "DESCRIPTION": " Retain , Unplayable . NL muelsyse:Nutrient : increase the block and damage by !M!. NL After serving as material, increase the number by 1, this card won't muelsyse:Dry ."
+  },
+  "EndTime_Muelsyse": {
+    "NAME": "Ending Years",
+    "DESCRIPTION": "If there are less than 10 cards in discard pile, exchange your hand with discard pile. NL muelsyse:Cultivate ( !M! ) the *Chorus , and add it into your hand.",
+    "UPGRADE_DESCRIPTION": "If there are less than 10 cards in discard pile, exchange your hand with discard pile. NL muelsyse:Cultivate ( !M! ) the *Chorus+ , and add it into your hand."
+  },
+  "LoneStar_Muelsyse": {
+    "NAME": "Lone Star",
+    "DESCRIPTION": " Exhaust. NL Select 1 card in your draw pile, NL muelsyse:Co add its copy to your hand."
+  },
+
+  "WhiteRose_Muelsyse": {
+    "NAME": "White Rose",
+    "DESCRIPTION": " muelsyse:Co Deal !D! Damage . NL muelsyse:Co Gain !B! Block ."
+  },
+  "LiftStar_Muelsyse": {
+    "NAME": "Lift the Star",
+    "DESCRIPTION": " muelsyse:Co Deal !D! Damage to all enemies. NL Apply !M! Weak ."
+  },
+  "Dandelion_Muelsyse": {
+    "NAME": "Dandelion",
+    "DESCRIPTION": " muelsyse:Moisturize !B! 。 NL The power up of the block will act on this card."
+  },
+  "BlueHyacinth_Muelsyse": {
+    "NAME": "Blue Hyacinth",
+    "DESCRIPTION": " Retain , Exhaust . NL Gain !B! Block !M! times."
+  },
+  "Suzuran_Muelsyse": {
+    "NAME": "Lily of the Valley",
+    "DESCRIPTION": " Retain, Exhaust . NL muelsyse:Co Deal !D! Damage .",
+    "UPGRADE_DESCRIPTION": " Retain, Exhaust . NL muelsyse:Co Deal !D! Damage NL Nutrient's block power up: NL muelsyse:Co Deal !B! Damage"
+  },
+  "ChorusFlower_Muelsyse": {
+    "NAME": "Chorus Flower",
+    "DESCRIPTION": " Retain , Exhaust . NL Repeat !D! times: play a copy of random card in draw pile. NL Nutrient's Damage power up will act on this card."
+  },
+  "ForSeek_Muelsyse": {
+    "NAME": "The sake of exploration",
+    "DESCRIPTION": " Exhaust. NL The next !M! Attack you play costs 0."
+  },
+  "StarMove_Muelsyse": {
+    "NAME": "Winding stars",
+    "DESCRIPTION": "Deal !D! damage randomly for !M! times. NL Increase the damage by 1."
+  },
+  "CrazyWord_Muelsyse": {
+    "NAME": "The crazy exhibitor",
+    "DESCRIPTION": "Apply !M! Vulnerable. NL muelsyse:Nutrient : Increase the damage by 100％.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL muelsyse:Nutrient : Increase the damage by 200％."
+  },
+  "NoManMachine_Muelsyse": {
+    "NAME": "Medical drone",
+    "DESCRIPTION": " Ethereal, Exhaust. NL muelsyse:Co gain !B! Block 3 times."
+  },
+  "Mibo_Muelsyse": {
+    "NAME": "Meeboo",
+    "DESCRIPTION": " Exhaust. NL Draw !M! cards. NL muelsyse:Nutrient : Increase the damage by !M! ."
+  },
+  "Hypothermia_Muelsyse": {
+    "NAME": "Hypothermia",
+    "DESCRIPTION": " Exhaust. NL You cannot play *Attack when this card is in your hand.",
+    "UPGRADE_DESCRIPTION": " Return to your hand when Exhaust. NL You cannot play *Attack when this card is in your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "I can't feel my temperature..."
+    ]
+  },
+  "Blocker_Muelsyse": {
+    "NAME": "Blocker",
+    "DESCRIPTION": " Retain, Unplayable. NL muelsyse:Depletion : Increase the cost of target card by !M! ."
+  },
+  "VowAndEvolution_Muelsyse": {
+    "NAME": "Vow|Evolution",
+    "DESCRIPTION": "Deal !D! damage. NL If Fatal, permanently apply 1 random muelsyse:Cultivate-effect to it."
+  },
+
+  "Ifrit_Muelsyse": {
+    "NAME": "Duplicate: Ifrit",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Decrease max HP by 2. NL Gain !M! Strength. NL Basic manifold could attack all enemies when Co."
+  },
+  "Astgenne_Muelsyse": {
+    "NAME": "Duplicate: Astgenne",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Deal !M! damage to the Min-HP enemy after each action."
+  },
+  "Saria_Muelsyse": {
+    "NAME": "Duplicate: Saria",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Increase the muelsyse:Threshold by 1. NL Act at start of turn: Recover !M! HP for each manifold."
+  },
+  "Mechanist_Muelsyse": {
+    "NAME": "Duplicate: Mechanist",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Increase max HP by 3. NL Act at end of turn: Transfer Block to *Muelsyse.",
+    "UPGRADE_DESCRIPTION": " muelsyse:Duplicate. NL Increase max HP by 3. NL Act at end of turn: Transfer 150% Block to *Muelsyse."
+  },
+  "Silence_Muelsyse": {
+    "NAME": "Duplicate: Silence",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Increase max HP by 2. NL Act at start of turn: Add *Medical *Drone to hand.",
+    "UPGRADE_DESCRIPTION": " muelsyse:Duplicate. NL Increase max HP by 2. NL Act at start of turn: Add *Medical *Drone+ to hand."
+  },
+  "Ptilopsis_Muelsyse": {
+    "NAME": "Duplicate: Ptilopsis",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Apply *Muelsyse !M! Block after each action."
+  },
+  "Dorothy_Muelsyse": {
+    "NAME": "Duplicate: Dorothy",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Act after muelsyse:Wander X: Deal 2X damage to random enemy.",
+    "UPGRADE_DESCRIPTION": " muelsyse:Duplicate. NL Act after muelsyse:Wander or muelsyse:Cultivate X: Deal 2X damage to random enemy."
+  },
+  "Kafka_Muelsyse": {
+    "NAME": "Duplicate: Kafka",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Act at end of turn: Deal !M! damage to random enemy, gain 1 Strength."
+  },
+  "Megallan_Muelsyse": {
+    "NAME": "Duplicate: Megallan",
+    "DESCRIPTION": " muelsyse:Duplicate. NL When the basic manifold spawns, muelsyse:Copy 1 manifold which will Dissipate after !M! turns."
+  },
+  "Mayer_Muelsyse": {
+    "NAME": "Duplicate: Mayer",
+    "DESCRIPTION": " muelsyse:Duplicate. NL When the basic manifold spawns, add !M! *Meeboo to the draw pile."
+  },
+  "Typhon_Muelsyse": {
+    "NAME": "Duplicate: Typhon",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Decrease max HP by 2. NL Increase the first damage it deals by 100% in each turn.",
+    "UPGRADE_DESCRIPTION": " muelsyse:Duplicate. NL Decrease max HP by 2. NL Increase the first damage it deals by 150% in each turn."
+  },
+  "Greyy_Muelsyse": {
+    "NAME": "Duplicate: Greyy",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Decrease max HP by 2. NL Perform the first attack action twice per turn.",
+    "UPGRADE_DESCRIPTION": " muelsyse:Duplicate. NL Decrease max HP by 2. NL Gain 1 Strength. NL Perform the first attack action twice per turn."
+  },
+  "Saileach_Muelsyse": {
+    "NAME": "Duplicate: Saileach",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Act at start of turn: muelsyse:Moisturize !M! ."
+  },
+  "Reed_Muelsyse": {
+    "NAME": "Duplicate: Reed",
+    "DESCRIPTION": " muelsyse:Duplicate. NL muelsyse:Moisturize !M! after each attack.",
+    "UPGRADE_DESCRIPTION": " muelsyse:Duplicate. NL muelsyse:Moisturize !M! after each action."
+  },
+  "SilverAsh_Muelsyse": {
+    "NAME": "Duplicate: SilverAsh",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Decrease the muelsyse:Threshold by 1. NL Increase basic damage by !M! ."
+  },
+  "Astesia_Muelsyse": {
+    "NAME": "Duplicate: Astesia",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Act after *Muelsyse plays Power card: Apply !M! Metallicize to her."
+  },
+  "Tulip_Muelsyse": {
+    "NAME": "Duplicate: Tulip",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Limited by !M! in each turn, act when a manifold is spawned: Gain [E] ."
+  },
+  "Pepe_Muelsyse": {
+    "NAME": "Duplicate: Pepe",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Increase max HP by !M! . NL Apply 1 vigor to *Muelsyse after each action."
+  },
+  "Narantuya_Muelsyse": {
+    "NAME": "Duplicate: Narantuya",
+    "DESCRIPTION": " muelsyse:Duplicate. NL When muelsyse:Cultivate, increase Attack number of the target card by !M! ."
+  },
+  "Shu_Muelsyse": {
+    "NAME": "Duplicate: Shu",
+    "DESCRIPTION": " muelsyse:Duplicate. NL When the basic manifold spawns, add a *Smooth *Moisturization to discard pile.",
+    "UPGRADE_DESCRIPTION": " muelsyse:Duplicate. NL When the basic manifold spawns, add a *Smooth *Moisturization+ to discard pile."
+  },
+  "Eyjafjalla_Muelsyse": {
+    "NAME": "Duplicate: Eyjafjalla P",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Increase the muelsyse:Threshold by !M! . NL Increase max HP by 1 for each *Duplicate *Card in your deck."
+  },
+  "SilenceP_Muelsyse": {
+    "NAME": "Duplicate: Silence P",
+    "DESCRIPTION": " muelsyse:Duplicate. NL When muelsyse:Cultivate, increase Block number of the target card by !M! ."
+  },
+  "Marcille_Muelsyse": {
+    "NAME": "Duplicate: Marcille",
+    "DESCRIPTION": " muelsyse:Duplicate. NL When the basic manifold spawns, add a *Magic *Of *Explosion to exhaust pile.",
+    "UPGRADE_DESCRIPTION": " muelsyse:Duplicate. NL When the basic manifold spawns, add a *Magic *Of *Explosion+ to exhaust pile."
+  },
+  "TinMan_Muelsyse": {
+    "NAME": "Duplicate: Tin Man",
+    "DESCRIPTION": " muelsyse:Duplicate. NL Act at start of turn: Apply !M! Weakness to random enemy.",
+    "UPGRADE_DESCRIPTION": " muelsyse:Duplicate. NL Act at start of turn: Apply !M! Weakness to random enemy, then apply !M! Vulnerable to random enemy."
+  },
+
+  "Amiya_Muelsyse": {
+    "NAME": "Duplicate: Amiya",
+    "DESCRIPTION": " muelsyse:Duplicate. Cannot upgrade. NL Act after *Muelsyse plays card of other colors: Deal damage equals to the max of [Damage/Block] of the card to random enemy."
+  },
+  "Theresa_Muelsyse": {
+    "NAME": "Duplicate: Theresa",
+    "DESCRIPTION": " muelsyse:Duplicate. Cannot upgrade. NL Act after *Muelsyse plays a card: Decrease damage and block of random card in hand by 1 and apply it 1 muelsyse:Pollen."
+  },
+  "Isharmla_Muelsyse": {
+    "NAME": "Duplicate: Isharmla",
+    "DESCRIPTION": " muelsyse:Duplicate. Cannot upgrade. NL When this card is picked, add *Vow|Evolution to your deck."
+  },
+
+  "FlowerSpread_Muelsyse": {
+    "NAME": "Spreading Pollen",
+    "DESCRIPTION": "(Before played) Apply to the enemy: After attacked, deal !M! Damage to all enemies."
+  },
+  "FlowerParasitism_Muelsyse": {
+    "NAME": "Parasitic Pollen",
+    "DESCRIPTION": "(Before played) Apply to the enemy: After attacked, the damage source gain !M! Block ."
+  },
+  "FlowerCure_Muelsyse": {
+    "NAME": "Healing Pollen",
+    "DESCRIPTION": "(Before played) Apply to the yourself: After attacked,  gain !M! Block ."
+  },
+  "FlowerWater_Muelsyse": {
+    "NAME": "Aquatic Pollen",
+    "DESCRIPTION": "(Before played) Apply to the yourself: Increase the damage of your *Water by !M! ."
+  },
+
+  "Water_Muelsyse": {
+    "NAME": "Water",
+    "DESCRIPTION": " muelsyse:Dry , Unplayable . NL When get into the piles except for your hand, deal !M! damage to a random enemy.",
+    "UPGRADE_DESCRIPTION": "  muelsyse:Dry , Unplayable . NL When get into the piles except for your hand, deal !M! damage to a random enemy. NL When Exhausted , muelsyse:Moisturize 1."
+  },
+
+  "RefluxTear_Muelsyse": {
+    "NAME": "Reflux Tear",
+    "DESCRIPTION": " muelsyse:Combatless. NL You can remove *Reflux *Tear to strengthen the manifold in the campfire. Not occupying the action of campfire.",
+    "EXTENDED_DESCRIPTION": [
+      "Remove 1. NL The max HP of Manifold is increased by 2. NL Current Increase: !M! ",
+      "Remove 2. NL The muelsyse:Threshold of Manifold is increased by 1. NL Current Increase: !M! ",
+      "Remove 3. NL The Manifold will have 1 additional round to disappear. NL Current Increase: !M! ",
+      "Remove 4. NL Add 1 unowned muelsyse:Duplicate card to your deck.",
+      "Remove 5. NL Meet a special event. NL Limited by 1.",
+      "*Snow *And *Dirt. NL Lose 10 HP, add a *Reflux *Tear to your deck.",
+      "Go back."
+    ]
+  },
+
+  "DeGold_Muelsyse": {
+    "NAME": "The Gold",
+    "DESCRIPTION": "muelsyse:Cultivate !M! a *Marigold and add it to your hand.",
+    "UPGRADE_DESCRIPTION": "muelsyse:Cultivate !M! a *Marigold+ and add it to your hand."
+  },
+  "EcologicalProject_Muelsyse": {
+    "NAME": "Ecological Projct",
+    "DESCRIPTION": "Gain !M! muelsyse:Pollen-Cultivate:cul-hydroponic . NL If this card is muelsyse:Dry , gain extra 2 ."
+  },
+  "ModeCultivate_Muelsyse": {
+    "NAME": "Standardizing Cultivate",
+    "DESCRIPTION": " Exhaust . NL Choose a muelsyse:Cultivate card seperately from your draw pile and discard pile to put them into your hand. NL Add !M! *Water into your hand."
+  },
+  "GoldenWander_Muelsyse": {
+    "NAME": "Wander in Golden Reverie",
+    "DESCRIPTION": "muelsyse:Co deal !D! damage. NL *If *this *card *is *in *your *draw *pile *after *you *shuffle *your *draw *pile, shuffle this card into your discard pile and increase the damage it deal by !M! ."
+  },
+  "LingerFragrance_Muelsyse": {
+    "NAME": "Lingering Fragrance",
+    "DESCRIPTION": "When you shuffle a *White *Rose through muelsyse:Wander into your draw pile, play it to a random enemy."
+  },
+  "StarLaurel_Muelsyse": {
+    "NAME": " Switching Laurel",
+    "DESCRIPTION": "Redistribute the muelsyse:Cultivate effect of the card in your hand. Will only distribute the effect to Attack and Skill.",
+    "UPGRADE_DESCRIPTION": " Retain . NL Redistribute the muelsyse:Cultivate effect of the card in your hand. Will only distribute the effect to Attack and Skill."
+  },
+  "SourceTogether_Muelsyse": {
+    "NAME": "Together in Source",
+    "DESCRIPTION": " muelsyse:Moisturize !M! X."
+  },
+  "FallenSeasons_Muelsyse": {
+    "NAME": "Leaves Fallen Seasons",
+    "DESCRIPTION": "Exhaust . NL muelsyse:Cultivate !M! a *Ginkgo and shuffle it to your draw pile. NL You won't take any damage till you draw or Exhaust this *Ginkgo .",
+    "UPGRADE_DESCRIPTION": "Exhaust . NL muelsyse:Cultivate !M! a *Ginkgo+ and shuffle it to your draw pile. NL You won't take any damage till you draw or Exhaust this *Ginkgo+ ."
+  },
+  "Calendula_Muelsyse": {
+    "NAME": "Marigold",
+    "DESCRIPTION": "muelsyse:Depletion . NL Block increase: NL Draw !B! cards NL If the cards you draw through this card is more than 4, gian [E] and Exhaust this card."
+  },
+  "Ginkgo_Muelsyse": {
+    "NAME": "Ginkgo",
+    "DESCRIPTION": " Unplayable . NL Damage increase: When drawn, shuffle !D! *Leaf into your draw pile. NL Block increase: When shuffled into discard pile, draw !B! cards."
+  },
+  "Leaf_Muelsyse": {
+    "NAME": "Leaf",
+    "DESCRIPTION": " Unplayable . NL When drawn Exhausted , and deal !M! damage to all enemies, and apply 1 random muelsyse:Pollen to them ."
+  }
+}

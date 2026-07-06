@@ -1,0 +1,153 @@
+{
+  "eyjafjalla:CloudInBottle": {
+    "NAME": "Clouds In Bottle",
+    "FLAVOR": " A birthday gift from Dolly. You can feel the fluffy clouds envelop you while openning it.",
+    "DESCRIPTIONS": [
+      "At the start at each combat, darw #b2 cards to your #yeyjafjalla:clouds ."
+    ]
+  },
+  "eyjafjalla:WarmFire": {
+    "NAME": "Warm Stove",
+    "FLAVOR": "It is because the little sheep are born in the  clouds that they desire such stove blended with clouds.",
+    "DESCRIPTIONS": [
+      "Upon pickup, randomly mark #b2 cards as #yeyjafjalla:pyrobreath-card from your deck."
+    ]
+  },
+  "eyjafjalla:CloudInPacket": {
+    "NAME": "Clouds In Packet",
+    "FLAVOR": "Wools from Dolly are continuously floating out from this paket. You can notice that something is burnt.",
+    "DESCRIPTIONS": [
+      "Replaces #gClouds #gIn #gBottle .At the start of your turn, draw #b1 card to your #yeyjafjalla:clouds ,and mark it as #yeyjafjalla:pyrobreath-card ."
+    ]
+  },
+  "eyjafjalla:DreamModel": {
+    "NAME": "Dreambind Castle Model",
+    "FLAVOR": "You've seen this place, and you once wandered the castle, yet you now hold it in your hand. Is this real, or is it all a dream?",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain #b1  #yeyjafjalla:cloudage ."
+    ]
+  },
+  "eyjafjalla:VoidBird": {
+    "NAME": "Hollow Featherbeast",
+    "FLAVOR": "Though the flesh has gone, its soul is still here. O, the unmeltable creature, fly in woods as shall I.",
+    "DESCRIPTIONS": [
+      "When you play the first card each turn, put a random #yExhausted card whose type is same as it to your hand."
+    ]
+  },
+  "eyjafjalla:TreasureMap": {
+    "NAME": "TreasureMap",
+    "FLAVOR": "She write down the name that she see in the dream. According to the TreasureMap the destination seems on the clouds.",
+    "DESCRIPTIONS": [
+      "When you open the next non-Boss chest ,gat an additional #yeyjafjalla:dolly-card reward."
+    ]
+  },
+  "eyjafjalla:ShallowSong": {
+    "NAME": "Whispers of the Shallows",
+    "FLAVOR": "A flower commonly found on the cliffs near the seas in Iberia. This one, however, is stained with colors that defy common sense. ",
+    "DESCRIPTIONS": [
+      "At the start of each combat start a #yeyjafjalla:melody :SAR. All enemies lose #b HP for each step you complete.",
+      " HP. After you compelete the whole melody, permanently increase the Hp enemies lose by #b1 and start it again.",
+      "All enemies lose #b",
+      " HP.",
+      " #bWhispers #bof #bthe #bShallows permanently increase the Hp enemies lose by #b1 and start it again.."
+    ]
+  },
+  "eyjafjalla:UnknownMotherGoose": {
+    "NAME": "Unknown Mother-Goose",
+    "FLAVOR": "I'm stringing words full of lyrical melodies. As the music ripples right out of me.",
+    "DESCRIPTIONS": [
+      "The first step of each #yeyjafjalla:melody you complete will act twice."
+    ]
+  },
+  "eyjafjalla:GodRoll": {
+    "NAME": "Conch of Divine Whispers",
+    "FLAVOR": "Sound it, and gods you've never seen or even heard of will answer your call. Actually, it's just a hollow conch shell.",
+    "DESCRIPTIONS": [
+      "For every #b5 step S or #yeyjafjalla:any-note you complete, let all enemies lose #b2 Strength ."
+    ]
+  },
+  "eyjafjalla:GlassBird": {
+    "NAME": "Glass Bird",
+    "FLAVOR": "“In this paradise of mine, the bird will sing forever and ever.”",
+    "DESCRIPTIONS": [
+      "When you play a card cost more than #b1 energy ,gain 1 energy . NL Each turn each card can trigger only 1 time."
+    ]
+  },
+  "eyjafjalla:NightInForest": {
+    "NAME": "Night-Whispers in the Forest",
+    "FLAVOR": "When the wind wends into wooded vales, all creatures lower their voices, and one can find respite.",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #b3 Block for each enemy intends to attack."
+    ]
+  },
+  "eyjafjalla:DrawPen": {
+    "NAME": "Personal Paintbrush",
+    "FLAVOR": "A haunted brush that compels its owners to paint with their own blood. The masterpiece mesmerizes beholders into adding another stroke the same way.",
+    "DESCRIPTIONS": [
+      "When you start a Boss or Elite combats, mark random #b1 cards in your deck as #yeyjafjalla:pyrobreath-card ."
+    ]
+  },
+  "eyjafjalla:ResplendentTear": {
+    "NAME": "Brilliant Lament",
+    "FLAVOR": "His blood yet flows. He has never left this place.",
+    "DESCRIPTIONS": [
+      "If you do not play any #yAttacks during your turn, increase the damage you deal by #b40% in next turn."
+    ]
+  },
+  "eyjafjalla:BellOfShepherd": {
+    "NAME": "Burdenherd Bell",
+    "FLAVOR": "Whip it, and it will flee in terror; Pull on the reins, and it will resist. Ring the bell, hum a tune, and it will follow you to the ends of the land.",
+    "DESCRIPTIONS": [
+      "At the start of the combat, Choose 1 of 3 random normal #yeyjafjalla:dolly-card to add to your hand."
+    ]
+  },
+  "eyjafjalla:RainbowUrn": {
+    "NAME": "Rainbow Jar",
+    "FLAVOR": "The are usually placed wherever the rainbow falls. They are meticulously maintained in order to withstand the untraceable catastrophes.",
+    "DESCRIPTIONS": [
+      "At the end of your turn, if you still have cost remain, randomly apply 1 #yeyjafjalla:pure-white-steam 2 times."
+    ]
+  },
+  "eyjafjalla:StrangeFlute": {
+    "NAME": "Weird Flute",
+    "FLAVOR": "A weird-looking flute. Someone plays it day in and day out.",
+    "DESCRIPTIONS": [
+      " During the #yeyjafjalla:melody ,your Attacks deal additional #b2 damage."
+    ]
+  },
+  "eyjafjalla:WitchAddax": {
+    "NAME": "Witch King's Twishorn",
+    "FLAVOR": "O, Great Witch King, you have cast your shadow across this land! Your corruption has flooded the Spires! ",
+    "DESCRIPTIONS": [
+      "For each #yeyjafjalla:melody you complete, gain #b2 #yBlock ."
+    ]
+  },
+  "eyjafjalla:DreamKey": {
+    "NAME": "Dream Key",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "After you complete #yThe #yEnd , enetr an additional stage: NL #rSiesta #rin #rYour #rDream ."
+    ]
+  },
+  "eyjafjalla:VolcanoMask": {
+    "NAME": "Mask against Volcanic ash",
+    "FLAVOR": "An old mask that Eyjafjalla regard as treasures. It fit you well!",
+    "DESCRIPTIONS": [
+      "Whenever your energy reduce to 0, heal #b1 HP. Can be triggered only 1 times a turn. NL Lose this relic After defeat #yPompeii ."
+    ]
+  },
+  "eyjafjalla:ShadowOfPompeii": {
+    "NAME": "Shadow of Pompeii",
+    "FLAVOR": "“I want cry but can't speak high. You count the time to say good bye.” ——a poem left upon a ruin",
+    "DESCRIPTIONS": [
+      "Whenever your energy reduce to 0, lose #b1 HP to gain 1 energy.  NL NL Lose this relic After defeat #yPompeii ."
+    ]
+  },
+  "eyjafjalla:VolcanoBoom": {
+    "NAME": "Volcano Erupts",
+    "FLAVOR": "Forgive me my dear. I shall give my all to conquer my fear.",
+    "DESCRIPTIONS": [
+      "At the start of the next #b50 turn of #ynon-Boss #combat after picked up, replace the enemy with #yPompeii , get additional rewards after the combat."
+    ]
+  }
+}

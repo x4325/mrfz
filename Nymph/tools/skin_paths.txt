@@ -1,0 +1,3 @@
+idle/char_4146_nymph
+skins/char_4146_nymph_ambienceSynesthesia_6/char_4146_nymph_ambienceSynesthesia_6
+skins/char_4146_nymph_epoque_42/char_4146_nymph_epoque_42

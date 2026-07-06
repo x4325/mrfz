@@ -1,0 +1,92 @@
+{
+  "muelsyse:RainingWorld": {
+    "NAME": "When it rains",
+    "DESCRIPTIONS": [
+      "The spire seems to have no dome. NL As you climb up the stairs step by step, NL some water #y~beat~ #y~on~ #y~your~ #y~hair~ . NL No one knows where the #bRain comes from...",
+      "You realize that Rain #b~is~ #b~asking~ #b~you~ #b~something~ . NL Perhaps sometimes, #g~listening~ #g~is~ #g~the~ #g~best~ #g~way~ #g~to~ #g~confide~ .",
+      "It seems like it's just an #b~illusion~ ,and soon you can't find any traces of rain in the spire.",
+      "You are used to this world, but #b~feel~ #b~lost~ . NL Deep sadness spreads out in the spire, and your #rregrets are everywhere. NL It's time to go and find the #gFallen #gTears ."
+    ],
+    "OPTIONS": [
+      "[Look up] Look at the sky.",
+      "[Move on] #gHeal #g6 #HP.",
+      "[Illusion] Leave.",
+      "[Forget] #rRemove #r1 #rrare #rcard. Gain #gRain #gWorld.",
+      "[Let go] #rLose #r100 #gold. Gain #gRain #gWorld.",
+      "[Meet] #rDecrease #r12 #rHP. Gain #gRain #gWorld.",
+      "[Lock] Need 1 rare card.",
+      "[Lock] Need 100 gold.",
+      "[Lock] Need 12 max HP.",
+      "[Return] Return to last page.",
+      "[Leave] Go with the rain.",
+      "Remove 1 rare card."
+    ]
+  },
+  "muelsyse:SpecialComer": {
+    "NAME": "An Unexpected Visitor",
+    "DESCRIPTIONS": [
+      "A projection appeared from #g~an~ #g~angle~ #g~that~ #g~you~ #g~could~ #g~hardly~ #g~understand~. NL She is also #b~observing~ #b~you~ #b~with~ #b~great~ #b~interest~, NL and spread out a few books and gestured for you to #rChoose one.",
+      " #r~\"Ha-ha,~ #r~time...\"~ NL The visitor let out a #bchilling laughter, NL The projection moved towards #g~a~ #g~higher~ #g~point~ #g~of~ #g~the~ #g~spire~ in an indescribable manner.",
+      " #r~\"Oh,~ #r~it's~ #r~the~ #r~soul.\"~ NL The other party seems #bquite #bsurprised. NL She waved her hand and a beam of #g~elusive~ objects arrived at your side.",
+      " #r~\"Ah,~ #r~you~ #r~have~ #r~also~ #r~been~ #r~touched~ #r~by~ #r~the~ #r~world——\"~ NL The one who are in the same place #bbetween #breality #band #billusion has no more words. NL A #g~strong~ #g~light~ shone on you, and you found yourself possessing many treasures."
+    ],
+    "OPTIONS": [
+      "[Take #gTime ] Gain #gLibrary #gOf #gTime.",
+      "[Take #bSoul ] Obtain 1 #gApparition.",
+      "[Take #yReality ] #rDecrease #rmaxHP #rto #ryour #rHP. #gFor #geach #ggain #g10 #ggold.",
+      "[Leave] #b\"What #ba #bstrange.\" You feel a bit awful."
+    ]
+  },
+  "muelsyse:MyTrail": {
+    "NAME": "Tear trails",
+    "DESCRIPTIONS": [
+      "In the #b~drizzling~ rain, for some reason, you can feel the familiar feeling coming from the corner at the end of the stairs ahead. NL You're sure a few #gFallen #gTears are right ahead. NL But your #g~\"Lost\"~ is also sensing you at the same time.",
+      "You accelerate forward, NL At the corner, a few #gFallen #gTears seem to be spinning in place at a loss. NL At the same time, #b~unfamiliar~ #b~footsteps~ came from nearby, NL indicating that your reckless actions had also caught the attention of other creatures in the spire.",
+      "It seems that you have felt the tenderness and sincerity in your heart, NL A #gTear turned into #b~a~ #b~flowing~ #b~stream~ and poured into your embrace."
+    ],
+    "OPTIONS": [
+      "[Rush out] #rEncountering #ra #rspecial #rbattle.",
+      "[Gently soothing] Gain 1 #gReflux #gTear.",
+      "[Fight]",
+      "[Leave]"
+    ]
+  },
+  "muelsyse:MeetHer": {
+    "NAME": "Intruder",
+    "DESCRIPTIONS": [
+      "The sound of #rbreaking #rthrough #rthe #rair came from your ears, NL and you instinctively avoided this malicious sneak attack. NL #p~\"Ah-ya,~ #p~it~ #p~seems~ #p~that~ #p~a~ #p~lost~ #p~little~ #p~elf~ #p~has~ #p~slipped~ #p~into~ #p~a~ #p~place~ #p~she~ #p~shouldn't~ #p~have~ #p~come~ #p~to.\"~ NL The familiar figure floated calmly to the front, not welcoming anyone.",
+      "#p~\"I~ #p~have~ #p~come~ #p~up~ #p~with~ #p~an~ #p~interesting~ #p~idea.\"~ NL The person in front of me seems to be holding onto something #g~terrifying~, NL she took out a #gShadow #gof #gArmor, NL you became #rWeak ...",
+      "You quickly activate the water flow organization to counterattack, NL A #ywind #ygust brushed against your side amidst the intertwining spells. NL #p~\"Hmph,~ #p~full~ #p~of~ #p~energy,~ #p~really~ #p~good.\"~ NL During the interval of the confrontation, she flashed into the darkness in the distance and disappeared without a trace, NL only a few #yTears that she caught were left behind. NL #r~\"These~ #r~are~ #r~treated~ #r~as~ #r~a~ #r~welcome~ #r~gift,~ #r~we~ #r~will~ #r~see~ #r~each~ #r~other~ #r~again.\"~ NL Unpleasant sounds echoed in the spire.",
+      "Before the other party takes any action, you should first activate the #b~water~ #b~flow~ to disturb this unwelcome guest and wait for an opportunity to retreat. NL With your current strength, it is not yet a good time to confront her."
+    ],
+    "OPTIONS": [
+      "[Communicate] Gain a #rClumsy. Obtain #gShadow #gof #gArmor.",
+      "[Counterattack] #rLose #r8 #rHP. Gain 2 #gReflux #gTears.",
+      "[Escape] Come with evil intent.",
+      "[Leave]"
+    ]
+  },
+  "muelsyse:LifeRecover": {
+    "NAME": "Lost and Obtain",
+    "DESCRIPTIONS": [
+      "You had thought this was just another path made by a beast, but halfway through you realize your companions are not your manifolds, but a herd of hornbeasts. At the end of the path is a huge white hornbeast sleeping soundly in a flower bed. The hornbeasts frolic and graze ground it, and a spring flows right by its side. A thought suddenly pops into your mind—— #gIt #gdoes #gnot #glive #ghere, #gbut #gthe #gwoodland #gexists #gbecause #git #grests #ghere.",
+      "You hear the poem under the water: \" #b~Snow~ #b~washes~ #b~and~ #b~cleanses~ #b~hair~ #b~and~ #b~skin,~ #b~Water~ #b~calm~ #b~as~ #b~a~ #b~mirror~ \"",
+      "You hear the poem in the forest: \" #g~Stretching~ #g~branches~ #g~and~ #g~sheltering~ #g~foliage,~ #g~Beasts~ #g~grow~ #g~and~ #g~reside~ \"",
+      "You hear the poem behind the memory: \" #r~Inquiring~ #r~nature~ #r~and~ #r~connected~ #r~with~ #r~life,~ #r~Seeking~ #r~our~ #r~path~ #r~forward~ \"",
+      "Naturally, nothing happened. NL The white giant beast is staring at you.",
+      "  NL NL The slender horned beast came to you, presenting the unclaimed relic. The white giant beast is staring at you, with #b~a~ #b~faint~ #b~white~ #b~light~ flashing in its dim eyes."
+    ],
+    "OPTIONS": [
+      "[Give Water] #rLose ",
+      "[Locked] Requires: Potion.",
+      "[Give Leaves] #rLose #r",
+      "[Locked] Requires: At least 50 Gold.",
+      "[Give Memory] #rLose ",
+      "[Locked] Requires: Card.",
+      ". #gObtain #ga #gRelic.",
+      "[Nothing to lose]",
+      "[Leave]",
+      " #rGold"
+    ]
+  }
+}

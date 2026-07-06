@@ -1,0 +1,25 @@
+{
+  "muelsyse:MeltingSnow": {
+    "NAME": "Melting Snow",
+    "DESCRIPTIONS": [
+      "Increase the count of #yLife #yCircle by #b",
+      " ."
+    ]
+  },
+  "muelsyse:HeartGrass": {
+    "NAME": "Heart Grass",
+    "DESCRIPTIONS": [
+      "Increase max HP of you and all manifolds by #b",
+      " ."
+    ]
+  },
+  "muelsyse:BottledForest": {
+    "NAME": "Bottled Green",
+    "DESCRIPTIONS": [
+      "Add the copy of the last #yAttack you play to your hand after #yCultivate #b",
+      " . This card will be free to play once.",
+      "Cultivate",
+      "Main: Select 1 card in hand. Sub: Automatically fill X other cards. Each material will increase Damage and Block of the target card by #b1."
+    ]
+  }
+}

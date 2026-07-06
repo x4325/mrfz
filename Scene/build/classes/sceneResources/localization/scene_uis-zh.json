@@ -1,0 +1,15 @@
+{
+  "scene:FocusPanel": {
+    "TEXT": [
+      "专注 0"
+    ]
+  },
+  "scene:SkinSelect": {
+    "TEXT": [
+      "皮肤",
+      "默认",
+      "别枝",
+      "新地形"
+    ]
+  }
+}

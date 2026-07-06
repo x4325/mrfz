@@ -1,0 +1,15 @@
+{
+  "highmore:HexPanel": {
+    "TEXT": [
+      "泡沫 0"
+    ]
+  },
+  "highmore:SkinSelect": {
+    "TEXT": [
+      "皮肤",
+      "默认",
+      "搁浅",
+      "及山海"
+    ]
+  }
+}

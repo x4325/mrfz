@@ -1,0 +1,63 @@
+{
+  "eyjafjalla:TQB": {
+    "NAME": "淘气包",
+    "MOVES": [],
+    "DIALOG": []
+  },
+  "eyjafjalla:LTTQB": {
+    "NAME": "乐淘淘气包",
+    "MOVES": [],
+    "DIALOG": []
+  },
+  "eyjafjalla:CPS": {
+    "NAME": "操盘手",
+    "MOVES": [],
+    "DIALOG": []
+  },
+  "eyjafjalla:JMCPS": {
+    "NAME": "健美操盘手",
+    "MOVES": [],
+    "DIALOG": []
+  },
+  "eyjafjalla:MTFKY": {
+    "NAME": "满天飞空员",
+    "MOVES": [],
+    "DIALOG": []
+  },
+  "eyjafjalla:CXXSS": {
+    "NAME": "超新星术士",
+    "MOVES": [],
+    "DIALOG": []
+  },
+  "eyjafjalla:DGDGZ": {
+    "NAME": "大哥大个子",
+    "MOVES": [],
+    "DIALOG": []
+  },
+
+  "eyjafjalla:Pompeii": {
+    "NAME": "庞贝",
+    "MOVES": [],
+    "DIALOG": []
+  },
+
+  "eyjafjalla:Dolly": {
+    "NAME": "“羊之主”，多利",
+    "MOVES": [
+      "蒸汽爆发！",
+      "火山喷发！",
+      "激昂地下雨",
+      "轻飘飘的多利",
+      "欢快地喷火",
+      "急冲冲的多利"
+    ],
+    "DIALOG": [
+      "羊之主失去 #b",
+      " 点生命。",
+      " 点力量。",
+      "予雨以火",
+      "予火以雨",
+      "不要耍这种小花招咩"
+    ]
+  }
+}

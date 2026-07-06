@@ -1,0 +1,6 @@
+Power icon source (CC0 / public domain):
+  "496 pixel art icons for medieval/fantasy RPG"
+  Henrique Lazarini (7Soul1) via OpenGameArt.org
+  https://opengameart.org/content/496-pixel-art-icons-for-medievalfantasy-rpg
+
+Cropped to 32x32 for Slay the Spire mod HUD icons (personal use).

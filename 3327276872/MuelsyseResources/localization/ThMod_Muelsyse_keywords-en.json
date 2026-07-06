@@ -1,0 +1,190 @@
+[
+  {
+    "NAMES": [
+      "source"
+    ],
+    "DESCRIPTION": "When count of #yLifeCircle turns to 20, basic Manifold will increase max HP by 20, and its #yThreshold effect will be increased by 5 times."
+  },
+  {
+    "NAMES": [
+      "co"
+    ],
+    "DESCRIPTION": "All Manifolds will take the same action."
+  },
+  {
+    "NAMES": [
+      "manifold",
+      "manifolds"
+    ],
+    "DESCRIPTION": "A friendly entity which has 5 HP."
+  },
+  {
+    "NAMES": [
+      "copy"
+    ],
+    "DESCRIPTION": "Summon a manifold which has the same attributes with the basic. It will #yDissipate after #b3 turns."
+  },
+  {
+    "NAMES": [
+      "duplicate"
+    ],
+    "DESCRIPTION": "Cards which apply special powers to the #yBasic #yManifold. It takes effect in the deck, combatless."
+  },
+  {
+    "NAMES": [
+      "initial"
+    ],
+    "DESCRIPTION": "Words behind won't effect after you play this card for #yX times."
+  },
+  {
+    "NAMES": [
+      "moisturize"
+    ],
+    "DESCRIPTION": "Increase the count of #yLifeCircle."
+  },
+  {
+    "NAMES": [
+      "wet"
+    ],
+    "DESCRIPTION": "回合开始时，使 #y生命吊坠 计数增加数点。"
+  },
+  {
+    "NAMES": [
+      "threshold"
+    ],
+    "DESCRIPTION": "When a Manifold shares your damage or gains blocks, the number will not exceed the threshold."
+  },
+  {
+    "NAMES": [
+      "deduce"
+    ],
+    "DESCRIPTION": "Increase Y max HP and Y #yThreshold. The Deduce manifold won't dissipate automatically."
+  },
+  {
+    "NAMES": [
+      "dissipate"
+    ],
+    "DESCRIPTION": "Die after X turns."
+  },
+  {
+    "NAMES": [
+      "respawn"
+    ],
+    "DESCRIPTION": "Respawn with all HP after X turns."
+  },
+  {
+    "NAMES": [
+      "shaping"
+    ],
+    "DESCRIPTION": "When you copy a Manifold, this effect will be copied at the same time."
+  },
+  {
+    "NAMES": [
+      "derive"
+    ],
+    "DESCRIPTION": "The target will lose the power and apply them to you."
+  },
+  {
+    "NAMES": [
+      "wander"
+    ],
+    "DESCRIPTION": "Look at the random X cards of your discard pile. You may shuffle any of them into draw pile."
+  },
+  {
+    "NAMES": [
+      "cultivate",
+      "cultivated"
+    ],
+    "DESCRIPTION": "Main: Select 1 card in hand. Sub: Automatically fill X other cards. Each material will increase Damage and Block of the target card by #b1."
+  },
+  {
+    "NAMES": [
+      "nutrient"
+    ],
+    "DESCRIPTION": "When you #yCultivate, this card will be filled Preferentially. Words behind will strengthen the target card."
+  },
+  {
+    "NAMES": [
+      "dry"
+    ],
+    "DESCRIPTION": "This card could not join the Cultivation."
+  },
+  {
+    "NAMES": [
+      "depletion"
+    ],
+    "DESCRIPTION": "This card won't occupy the upper limit when joining the Cultivation, 且携带的 #y栽培效果 会同样给予目标牌; Exhaust after Cultivation."
+  },
+  {
+    "NAMES": [
+      "pollen"
+    ],
+    "DESCRIPTION": "A series of special Strengthening that applies buff before the card played. The buff provided will halve its amount in every turn."
+  },
+  {
+    "NAMES": [
+      "raining"
+    ],
+    "DESCRIPTION": "The fog is spreading, and the rain is falling in the spire. NL A #yFallen #yTear will appear in every combat."
+  },
+  {
+    "NAMES": [
+      "combatless"
+    ],
+    "DESCRIPTION": "This card can't be upgraded. At start of each combat, this card won't enter the draw pile."
+  },
+  {
+    "NAMES": [
+      "cultivate-effect"
+    ],
+    "DESCRIPTION": "Include: draw, energy, moisturize and 4 pollen effects."
+  },
+  {
+    "NAMES": [
+      "cul-draw"
+    ],
+    "DESCRIPTION": "Draw X cards after played."
+  },
+  {
+    "NAMES": [
+      "cul-energy"
+    ],
+    "DESCRIPTION": "Gain X energy after played."
+  },
+  {
+    "NAMES": [
+      "cul-moisturize"
+    ],
+    "DESCRIPTION": "Moisturize X after played."
+  },
+  {
+    "NAMES": [
+      "cul-spread"
+    ],
+    "DESCRIPTION": "Apply to Enemy: After Attacked, deal X damage to all enemies."
+  },
+  {
+    "NAMES": [
+      "cul-parasitism"
+    ],
+    "DESCRIPTION": "Apply to Enemy: After Attacked, the damage source gains X blocks."
+  },
+  {
+    "NAMES": [
+      "cul-cure"
+    ],
+    "DESCRIPTION": "Apply to You: After Attacked, you gain X blocks."
+  },
+  {
+    "NAMES": [
+      "cul-hydroponic"
+    ],
+    "DESCRIPTION": "Apply to you: Increase the damage of #yWater or #yLeaf by X."
+  },
+  {
+    "NAMES": [
+      "life-circle-deceleration"
+    ],
+    "DESCRIPTION": "The start count of #yLifeCircle is 4, but you need 4 additional count to #yCopy a Manifold."
+  }
+]

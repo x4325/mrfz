@@ -1,0 +1,389 @@
+{
+  "arknsfw:FeverCaress": {
+    "NAME": "升温爱抚",
+    "DESCRIPTION": "对敌人造成 !M! 点伤害。给予 1 层 易伤。兴奋 +12 NL 艾雅：云层≥2 时伤害 +4；有 云量 时兴奋 +6；获得 炎息 标记与 1 云量。",
+    "UPGRADE_DESCRIPTION": "对敌人造成 !M! 点伤害。给予 1 层 易伤。兴奋 +12 NL 艾雅：云层≥2 时伤害 +4；有 云量 时兴奋 +6；获得 炎息 标记与 1 云量。"
+  },
+  "arknsfw:VolcanicEmbrace": {
+    "NAME": "熔岩拥抱",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +10。中出：受孕 +8/妊娠 +6。 NL 艾雅： 炎息 时伤害 +6、中出强化；消耗 1 云量（≥2 时）再 +8 伤害；打出后获得 炎息。"
+  },
+  "arknsfw:HeatResonance": {
+    "NAME": "地热共鸣",
+    "DESCRIPTION": "获得 1 层 地热（每回合兴奋 +4）。 NL 艾雅：手牌有 云层 牌时获得 1 层 炎息；获得 1 云量。"
+  },
+  "arknsfw:AshKiss": {
+    "NAME": "升温之吻",
+    "DESCRIPTION": "给予 !M! 层 虚弱。兴奋 +8。 NL 艾雅：有 云量 时 虚弱 +1、兴奋按云量额外提升；获得 1 云量。",
+    "UPGRADE_DESCRIPTION": "给予 !M! 层 虚弱。兴奋 +8。 NL 艾雅：有 云量 时 虚弱 +1、兴奋按云量额外提升；获得 1 云量。"
+  },
+  "arknsfw:MagmaThrust": {
+    "NAME": "熔流突刺",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +10。受孕度 +4。 NL 艾雅： 炎息 时伤害 +4；兴奋随 炎息 层数提升；打出后获得 炎息；有 云量 时再 +1 云量。"
+  },
+  "arknsfw:LavaShield": {
+    "NAME": "熔岩护体",
+    "DESCRIPTION": "获得 !B! 点格挡。兴奋 +6。 NL 艾雅：格挡随 云层 数量提升（每张 +2，最多 +8）；云量≥2 获 炎息；无云层时 +1 云量。"
+  },
+  "arknsfw:EruptionPeak": {
+    "NAME": "喷发高潮",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。兴奋 +15。中出：受孕 +6/妊娠 +4。 NL 艾雅：伤害随 炎息 与 云层 数量大幅提升；打出后获得 炎息。"
+  },
+  "arknsfw:BurnMark": {
+    "NAME": "灼痕烙印",
+    "DESCRIPTION": "给予 !M! 层 易伤。兴奋 +8。受孕度 +3。 NL 艾雅：有 云量 时 易伤 +1、受孕 +3；获得 1 云量。"
+  },
+  "arknsfw:CoreFever": {
+    "NAME": "核心高热",
+    "DESCRIPTION": "获得 !M! 层 地热 与 核心高热（受击后兴奋 +5/层）。 NL 艾雅：云层≥2 时各 +1 层；获得 1 云量 与 1 层 炎息。"
+  },
+  "arknsfw:BubbleTease": {
+    "NAME": "泡沫撩拨",
+    "DESCRIPTION": "获得 !B! 点格挡。兴奋 +10。受孕度 +4。 NL 缪尔：有 流形 时格挡 +4；有 溯源 时受孕 +3。"
+  },
+  "arknsfw:CloneService": {
+    "NAME": "分身侍奉",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。兴奋 +14。中出：受孕 +6/妊娠 +5。 NL 缪尔：伤害随 流形 层数提升；流形受击后兴奋 +8；有 流形 时 +1 流形。"
+  },
+  "arknsfw:GreenhouseMist": {
+    "NAME": "温室雾霭",
+    "DESCRIPTION": "获得 1 层 水化（回合结束受孕 +2）。 NL 缪尔：有 流形 时 水化 +1； 栽培 中额外获得 1 层 溯源。"
+  },
+  "arknsfw:WetSlide": {
+    "NAME": "湿滑滑行",
+    "DESCRIPTION": "获得 !B! 点格挡。兴奋 +10。受孕度 +3。 NL 缪尔：有 溯源 时格挡 +3；有 流形 时受孕 +4。"
+  },
+  "arknsfw:FluidSplash": {
+    "NAME": "体液飞溅",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +12。受孕度 +4。 NL 缪尔：有 流形 时伤害 +6；流形本战受击后兴奋 +8。"
+  },
+  "arknsfw:MoistBarrier": {
+    "NAME": "湿润屏障",
+    "DESCRIPTION": "获得 !B! 点格挡。获得 1 层 水化。 NL 缪尔：有 流形 时格挡 +3；有 溯源 时 水化 +1。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。获得 2 层 水化。 NL 缪尔：有 流形 时格挡 +3；有 溯源 时 水化 +1。"
+  },
+  "arknsfw:TwinPleasure": {
+    "NAME": "双份侍奉",
+    "DESCRIPTION": "随机敌人受到两次 !D! 点伤害。兴奋 +18。中出：受孕 +8/妊娠 +6。 NL 缪尔：有 流形 时改为 3 次打击且伤害随流形提升；兴奋随流形层数提升。"
+  },
+  "arknsfw:SeedSpray": {
+    "NAME": "播撒喷雾",
+    "DESCRIPTION": "所有敌人获得 !M! 层 虚弱。兴奋 +8。中出：受孕 +5/妊娠 +3。 NL 缪尔：有 流形 时 虚弱 +1；受孕随 溯源 层数提升。"
+  },
+  "arknsfw:CloneHaze": {
+    "NAME": "分身雾霭",
+    "DESCRIPTION": "获得 !M! 层 分身雾（回合开始兴奋 +5、受孕 +2）。 NL 缪尔：有 流形 时层数 +1 并 +1 流形。"
+  },
+  "arknsfw:WombEmberCard": {
+    "NAME": "子宫余烬",
+    "DESCRIPTION": "诅咒。不可打出。抽到时：兴奋 +8；未怀孕受孕 +15/妊娠 +10，已怀孕妊娠 +18。 NL 艾雅：获得 1 层 炎息 与 1 云量。"
+  },
+  "arknsfw:FeverContractCard": {
+    "NAME": "热症契约",
+    "DESCRIPTION": "诅咒。不可打出。抽到时：兴奋 +20、火山潮红 +2、失去 3 生命。 NL 艾雅：+2 云量；炎息≥2 时额外获得 核心过载 +1。"
+  },
+  "arknsfw:AshCollarCard": {
+    "NAME": "灰烬项圈印",
+    "DESCRIPTION": "诅咒。不可打出。抽到时：灰烬羞怯 +2、兴奋 +15。 NL 艾雅：兴奋随 云层 数量提升；云层≥2 时获得 1 层 炎息。"
+  },
+  "arknsfw:MagmaEchoCard": {
+    "NAME": "熔岩回响",
+    "DESCRIPTION": "诅咒。不可打出。留在手牌时，回合结束兴奋 +10、受孕 +8、妊娠 +6。 NL 艾雅：兴奋随 云层 提升；有云层时 +1 云量。"
+  },
+  "arknsfw:CloneResidueCard": {
+    "NAME": "分身残留",
+    "DESCRIPTION": "诅咒。不可打出。抽到时：兴奋 +15、分身回音 +2。 NL 缪尔：兴奋随 流形 层数提升；有 流形 时分身回音 +3。"
+  },
+  "arknsfw:FloodMarkCard": {
+    "NAME": "洪痕印记",
+    "DESCRIPTION": "诅咒。不可打出。抽到时：渗漏 +2、受孕 +12、失去全部格挡、兴奋 +10。 NL 缪尔：受孕随 溯源 提升；有 流形 时渗漏 +1；流形受击后受孕 +6。"
+  },
+  "arknsfw:BubbleMuteCard": {
+    "NAME": "泡沫禁言",
+    "DESCRIPTION": "诅咒。不可打出。抽到时：兴奋 +12、泡沫封口 +2。 NL 缪尔： 栽培 中泡沫封口 +3。"
+  },
+  "arknsfw:SeedWombCard": {
+    "NAME": "播种子宫",
+    "DESCRIPTION": "诅咒。不可打出。抽到时：兴奋 +14；视为强力中出（受孕 +14/妊娠 +12），已怀孕妊娠 +22。 NL 缪尔：有 流形 时中出强化并 +1 流形；妊娠进度随 溯源 提升。"
+  },
+  "arknsfw:SceneSilentCaress": {
+    "NAME": "SilentCaress",
+    "DESCRIPTION": "给予 !M! 点伤害。兴奋 +12。获得 1 取景。"
+  },
+  "arknsfw:SceneWarmEmbrace": {
+    "NAME": "WarmEmbrace",
+    "DESCRIPTION": "兴奋 +10。获得 2 取景。"
+  },
+  "arknsfw:SceneDeepResonance": {
+    "NAME": "DeepResonance",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +18。受孕度 +6。"
+  },
+  "arknsfw:SceneTenderKiss": {
+    "NAME": "TenderKiss",
+    "DESCRIPTION": "给予 !M! 点伤害。兴奋 +8。"
+  },
+  "arknsfw:ScenePassionThrust": {
+    "NAME": "PassionThrust",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +10。受孕度 +4。"
+  },
+  "arknsfw:SceneMoistBarrier": {
+    "NAME": "MoistBarrier",
+    "DESCRIPTION": "获得 !B! 点格挡。兴奋 +6。"
+  },
+  "arknsfw:SceneTwinPeak": {
+    "NAME": "TwinPeak",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。兴奋 +15。中出：受孕 +6。"
+  },
+  "arknsfw:SceneBlushMark": {
+    "NAME": "BlushMark",
+    "DESCRIPTION": "给予 1 层易伤。兴奋 +8。受孕度 +3。"
+  },
+  "arknsfw:SceneCoreNeed": {
+    "NAME": "CoreNeed",
+    "DESCRIPTION": "每回合兴奋 +5。获得 1 取景。"
+  },
+  "arknsfw:SceneOverflowPulse": {
+    "NAME": "OverflowPulse",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +14。"
+  },
+  "arknsfw:SceneWombMarkCard": {
+    "NAME": "子宫刻印",
+    "DESCRIPTION": "抽到时受孕 +12；若已怀孕则妊娠进度 +15。"
+  },
+  "arknsfw:SceneShameContractCard": {
+    "NAME": "羞耻契约",
+    "DESCRIPTION": "抽到时兴奋 +10，失去 3 生命。"
+  },
+  "arknsfw:SceneBindCollarCard": {
+    "NAME": "拘束项圈",
+    "DESCRIPTION": "抽到时获得 1 层虚弱与 1 层易伤。"
+  },
+  "arknsfw:SceneEchoSeedCard": {
+    "NAME": "回响之种",
+    "DESCRIPTION": "抽到时受孕 +8，妊娠进度 +8（若已怀孕）。"
+  },
+  "arknsfw:HighmoreSilentCaress": {
+    "NAME": "SilentCaress",
+    "DESCRIPTION": "给予 !M! 点伤害。兴奋 +12。获得 1 收割。"
+  },
+  "arknsfw:HighmoreWarmEmbrace": {
+    "NAME": "WarmEmbrace",
+    "DESCRIPTION": "兴奋 +10。获得 2 收割。"
+  },
+  "arknsfw:HighmoreDeepResonance": {
+    "NAME": "DeepResonance",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +18。受孕度 +6。"
+  },
+  "arknsfw:HighmoreTenderKiss": {
+    "NAME": "TenderKiss",
+    "DESCRIPTION": "给予 !M! 点伤害。兴奋 +8。"
+  },
+  "arknsfw:HighmorePassionThrust": {
+    "NAME": "PassionThrust",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +10。受孕度 +4。"
+  },
+  "arknsfw:HighmoreMoistBarrier": {
+    "NAME": "MoistBarrier",
+    "DESCRIPTION": "获得 !B! 点格挡。兴奋 +6。"
+  },
+  "arknsfw:HighmoreTwinPeak": {
+    "NAME": "TwinPeak",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。兴奋 +15。中出：受孕 +6。"
+  },
+  "arknsfw:HighmoreBlushMark": {
+    "NAME": "BlushMark",
+    "DESCRIPTION": "给予 1 层易伤。兴奋 +8。受孕度 +3。"
+  },
+  "arknsfw:HighmoreCoreNeed": {
+    "NAME": "CoreNeed",
+    "DESCRIPTION": "每回合兴奋 +5。获得 1 收割。"
+  },
+  "arknsfw:HighmoreOverflowPulse": {
+    "NAME": "OverflowPulse",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +14。"
+  },
+  "arknsfw:HighmoreWombMarkCard": {
+    "NAME": "子宫刻印",
+    "DESCRIPTION": "抽到时受孕 +12；若已怀孕则妊娠进度 +15。"
+  },
+  "arknsfw:HighmoreShameContractCard": {
+    "NAME": "羞耻契约",
+    "DESCRIPTION": "抽到时兴奋 +10，失去 3 生命。"
+  },
+  "arknsfw:HighmoreBindCollarCard": {
+    "NAME": "拘束项圈",
+    "DESCRIPTION": "抽到时获得 1 层虚弱与 1 层易伤。"
+  },
+  "arknsfw:HighmoreEchoSeedCard": {
+    "NAME": "回响之种",
+    "DESCRIPTION": "抽到时受孕 +8，妊娠进度 +8（若已怀孕）。"
+  },
+  "arknsfw:ArchettoSilentCaress": {
+    "NAME": "SilentCaress",
+    "DESCRIPTION": "给予 !M! 点伤害。兴奋 +12。获得 1 瞄准。"
+  },
+  "arknsfw:ArchettoWarmEmbrace": {
+    "NAME": "WarmEmbrace",
+    "DESCRIPTION": "兴奋 +10。获得 2 瞄准。"
+  },
+  "arknsfw:ArchettoDeepResonance": {
+    "NAME": "DeepResonance",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +18。受孕度 +6。"
+  },
+  "arknsfw:ArchettoTenderKiss": {
+    "NAME": "TenderKiss",
+    "DESCRIPTION": "给予 !M! 点伤害。兴奋 +8。"
+  },
+  "arknsfw:ArchettoPassionThrust": {
+    "NAME": "PassionThrust",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +10。受孕度 +4。"
+  },
+  "arknsfw:ArchettoMoistBarrier": {
+    "NAME": "MoistBarrier",
+    "DESCRIPTION": "获得 !B! 点格挡。兴奋 +6。"
+  },
+  "arknsfw:ArchettoTwinPeak": {
+    "NAME": "TwinPeak",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。兴奋 +15。中出：受孕 +6。"
+  },
+  "arknsfw:ArchettoBlushMark": {
+    "NAME": "BlushMark",
+    "DESCRIPTION": "给予 1 层易伤。兴奋 +8。受孕度 +3。"
+  },
+  "arknsfw:ArchettoCoreNeed": {
+    "NAME": "CoreNeed",
+    "DESCRIPTION": "每回合兴奋 +5。获得 1 瞄准。"
+  },
+  "arknsfw:ArchettoOverflowPulse": {
+    "NAME": "OverflowPulse",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +14。"
+  },
+  "arknsfw:ArchettoWombMarkCard": {
+    "NAME": "子宫刻印",
+    "DESCRIPTION": "抽到时受孕 +12；若已怀孕则妊娠进度 +15。"
+  },
+  "arknsfw:ArchettoShameContractCard": {
+    "NAME": "羞耻契约",
+    "DESCRIPTION": "抽到时兴奋 +10，失去 3 生命。"
+  },
+  "arknsfw:ArchettoBindCollarCard": {
+    "NAME": "拘束项圈",
+    "DESCRIPTION": "抽到时获得 1 层虚弱与 1 层易伤。"
+  },
+  "arknsfw:ArchettoEchoSeedCard": {
+    "NAME": "回响之种",
+    "DESCRIPTION": "抽到时受孕 +8，妊娠进度 +8（若已怀孕）。"
+  },
+  "arknsfw:HarukaSilentCaress": {
+    "NAME": "SilentCaress",
+    "DESCRIPTION": "给予 !M! 点伤害。兴奋 +12。获得 1 花火。"
+  },
+  "arknsfw:HarukaWarmEmbrace": {
+    "NAME": "WarmEmbrace",
+    "DESCRIPTION": "兴奋 +10。获得 2 花火。"
+  },
+  "arknsfw:HarukaDeepResonance": {
+    "NAME": "DeepResonance",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +18。受孕度 +6。"
+  },
+  "arknsfw:HarukaTenderKiss": {
+    "NAME": "TenderKiss",
+    "DESCRIPTION": "给予 !M! 点伤害。兴奋 +8。"
+  },
+  "arknsfw:HarukaPassionThrust": {
+    "NAME": "PassionThrust",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +10。受孕度 +4。"
+  },
+  "arknsfw:HarukaMoistBarrier": {
+    "NAME": "MoistBarrier",
+    "DESCRIPTION": "获得 !B! 点格挡。兴奋 +6。"
+  },
+  "arknsfw:HarukaTwinPeak": {
+    "NAME": "TwinPeak",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。兴奋 +15。中出：受孕 +6。"
+  },
+  "arknsfw:HarukaBlushMark": {
+    "NAME": "BlushMark",
+    "DESCRIPTION": "给予 1 层易伤。兴奋 +8。受孕度 +3。"
+  },
+  "arknsfw:HarukaCoreNeed": {
+    "NAME": "CoreNeed",
+    "DESCRIPTION": "每回合兴奋 +5。获得 1 花火。"
+  },
+  "arknsfw:HarukaOverflowPulse": {
+    "NAME": "OverflowPulse",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +14。"
+  },
+  "arknsfw:HarukaWombMarkCard": {
+    "NAME": "子宫刻印",
+    "DESCRIPTION": "抽到时受孕 +12；若已怀孕则妊娠进度 +15。"
+  },
+  "arknsfw:HarukaShameContractCard": {
+    "NAME": "羞耻契约",
+    "DESCRIPTION": "抽到时兴奋 +10，失去 3 生命。"
+  },
+  "arknsfw:HarukaBindCollarCard": {
+    "NAME": "拘束项圈",
+    "DESCRIPTION": "抽到时获得 1 层虚弱与 1 层易伤。"
+  },
+  "arknsfw:HarukaEchoSeedCard": {
+    "NAME": "回响之种",
+    "DESCRIPTION": "抽到时受孕 +8，妊娠进度 +8（若已怀孕）。"
+  },
+  "arknsfw:NymphSilentCaress": {
+    "NAME": "SilentCaress",
+    "DESCRIPTION": "给予 !M! 点伤害。兴奋 +12。获得 1 咒灵。"
+  },
+  "arknsfw:NymphWarmEmbrace": {
+    "NAME": "WarmEmbrace",
+    "DESCRIPTION": "兴奋 +10。获得 2 咒灵。"
+  },
+  "arknsfw:NymphDeepResonance": {
+    "NAME": "DeepResonance",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +18。受孕度 +6。"
+  },
+  "arknsfw:NymphTenderKiss": {
+    "NAME": "TenderKiss",
+    "DESCRIPTION": "给予 !M! 点伤害。兴奋 +8。"
+  },
+  "arknsfw:NymphPassionThrust": {
+    "NAME": "PassionThrust",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +10。受孕度 +4。"
+  },
+  "arknsfw:NymphMoistBarrier": {
+    "NAME": "MoistBarrier",
+    "DESCRIPTION": "获得 !B! 点格挡。兴奋 +6。"
+  },
+  "arknsfw:NymphTwinPeak": {
+    "NAME": "TwinPeak",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。兴奋 +15。中出：受孕 +6。"
+  },
+  "arknsfw:NymphBlushMark": {
+    "NAME": "BlushMark",
+    "DESCRIPTION": "给予 1 层易伤。兴奋 +8。受孕度 +3。"
+  },
+  "arknsfw:NymphCoreNeed": {
+    "NAME": "CoreNeed",
+    "DESCRIPTION": "每回合兴奋 +5。获得 1 咒灵。"
+  },
+  "arknsfw:NymphOverflowPulse": {
+    "NAME": "OverflowPulse",
+    "DESCRIPTION": "造成 !D! 点伤害。兴奋 +14。"
+  },
+  "arknsfw:NymphWombMarkCard": {
+    "NAME": "子宫刻印",
+    "DESCRIPTION": "抽到时受孕 +12；若已怀孕则妊娠进度 +15。"
+  },
+  "arknsfw:NymphShameContractCard": {
+    "NAME": "羞耻契约",
+    "DESCRIPTION": "抽到时兴奋 +10，失去 3 生命。"
+  },
+  "arknsfw:NymphBindCollarCard": {
+    "NAME": "拘束项圈",
+    "DESCRIPTION": "抽到时获得 1 层虚弱与 1 层易伤。"
+  },
+  "arknsfw:NymphEchoSeedCard": {
+    "NAME": "回响之种",
+    "DESCRIPTION": "抽到时受孕 +8，妊娠进度 +8（若已怀孕）。"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "muelsyse:Manifold": {
+    "NAME": "Manifold",
+    "MOVES": [
+
+    ],
+    "DIALOG": [
+      "Manifold",
+      "When your is going to lose HP, all #yManifold will share the damage (no more than Threshold) for you.",
+      "BLOCK OUT"
+    ]
+  },
+  "muelsyse:FallenTear": {
+    "NAME": "Fallen Tear",
+    "MOVES": [],
+    "DIALOG": [
+      "Fallen Tear"
+    ]
+  },
+  "muelsyse:Heyak": {
+    "NAME": "Hoolheyak",
+    "MOVES": [
+      ""
+    ],
+    "DIALOG": [
+      "Oh, I didn't expect to find an interesting figure in this book~"
+    ]
+  },
+  "muelsyse:Anma": {
+    "NAME": "Amma Tal",
+    "MOVES": [
+
+    ],
+    "DIALOG": [
+      "The snow is going to melt...",
+      "Muel is not here yet..."
+    ]
+  },
+  "muelsyse:Xbdeer": {
+    "NAME": "Horned beast",
+    "MOVES": [
+
+    ],
+    "DIALOG": [
+
+    ]
+  },
+  "muelsyse:Smgia": {
+    "NAME": "Entangled vines",
+    "MOVES": [],
+    "DIALOG": []
+  }
+}

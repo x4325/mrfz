@@ -1,0 +1,148 @@
+{
+  "muelsyse:LifeCircle": {
+    "NAME": "Life Circle",
+    "FLAVOR": "Sing my fate with the river...",
+    "DESCRIPTIONS": [
+      "Summon a basic #ymuelsyse:Manifold in every combat. Every time you play #b",
+      " cards, #ymuelsyse:Copy if copies is less than #b4."
+    ]
+  },
+  "muelsyse:IndeterminateForm": {
+    "NAME": "\"Uncertainty\"",
+    "FLAVOR": "It slept for too long, to the point where it forgot its own form.",
+    "DESCRIPTIONS": [
+      "Every first time you enter the rest room in each Act, choose one from 3 #ymuelsyse:Duplicate cards.",
+      "Choose one to duplicate..."
+    ]
+  },
+  "muelsyse:TreeFruit": {
+    "NAME": "Ancient Tree Fruit",
+    "FLAVOR": "Make a wish and bury it in the white snow of the tree species.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, choose #b1 of #b4 random cards (each from #rRed, #gGreen #bBlue and #pPurple ) and add the chosen card into your hand."
+    ]
+  },
+  "muelsyse:LiveRose": {
+    "NAME": "Live Rose",
+    "FLAVOR": "Is it you who nourish her, or is it her who protects you?",
+    "DESCRIPTIONS": [
+      "At the start of each combat, apply to random enemy: After Attacked, deal #b1 damage to all enemies and the source gains #b1 block."
+    ]
+  },
+  "muelsyse:CultivateRule": {
+    "NAME": "Day and Night",
+    "FLAVOR": "The diary written by Muelsyse records the changes of every plant. There are wet marks on the pages.",
+    "DESCRIPTIONS": [
+      "Every time you #ymuelsyse:Cultivate X, increase the count of Life Circle by X."
+    ]
+  },
+  "muelsyse:SpringFood": {
+    "NAME": "Surging Feast",
+    "FLAVOR": "We've known how to indulge since birth. Do not resist your desires. Submit to them instead.",
+    "DESCRIPTIONS": [
+      "When #yWater joins Cultivation as a material, it additionally increases the Damage and Block of the target card by #b1."
+    ]
+  },
+  "muelsyse:SproutStick": {
+    "NAME": "Sprout Stick",
+    "FLAVOR": "Even if separated from its owner in an accident, it can still bring survival enlightenment to whom takes it.",
+    "DESCRIPTIONS": [
+      "Triggered by #yRight Click, limited by 5 times in each combat. You can discard the rightmost card in hand and draw #b1 card."
+    ]
+  },
+  "muelsyse:FineFlower": {
+    "NAME": "Fragrant bouquet",
+    "FLAVOR": "The air is filled with an unknown fragrance.",
+    "DESCRIPTIONS": [
+      "Your first #b3 #ymuelsyse:Cultivate in each combat will not make the materials #ymuelsyse:Dry."
+    ]
+  },
+  "muelsyse:NatureBreath": {
+    "NAME": "Breath of the Nature",
+    "FLAVOR": "Originally, all things had their own voice, until 'It' replaced the language of all things.",
+    "DESCRIPTIONS": [
+      "Replace #yLifeCircle. Summon a basic #ymuelsyse:Manifold in every combat. Every time you play #b",
+      " cards, #ymuelsyse:Copy if copies is less than #b5."
+    ]
+  },
+  "muelsyse:LeafRing": {
+    "NAME": "Ribbon of Thorns and Leaves",
+    "FLAVOR": "In this ring, one is favored by thorns, grasses, and leaves.",
+    "DESCRIPTIONS": [
+      "The first time you #ymuelsyse:Cultivate each turn, gain [E] and #ymuelsyse:Moisturize 3."
+    ]
+  },
+  "muelsyse:FruitAssorted": {
+    "NAME": "Fruit Assorted",
+    "FLAVOR": "Muelsyse's favorite.",
+    "DESCRIPTIONS": [
+      "Add Curse of Spirit and 3 #ymuelsyse:Duplicate cards to your deck.",
+      "Delicious fruit candies...",
+      "Skip the reward",
+      "Close"
+    ]
+  },
+  "muelsyse:SnowRing": {
+    "NAME": "Ribbon of Snow and Dirt",
+    "FLAVOR": "In this ring, one is favored by frost, snow, and terra.",
+    "DESCRIPTIONS": [
+      "#yRecycle #yTears provides a new selection: Lose #b10 HP and add [Reflux Tear] to your deck."
+    ]
+  },
+  "muelsyse:OldDraw": {
+    "NAME": "Ancient murals",
+    "FLAVOR": "Step out of the cave and look up, it's not always the case since ancient times.",
+    "DESCRIPTIONS": [
+      "When you select not less than #b2 cards in #ymuelsyse:Wander, draw 1 card."
+    ]
+  },
+  "muelsyse:Laurel": {
+    "NAME": "Laurel",
+    "FLAVOR": "Living creatures echo, all things grow.",
+    "DESCRIPTIONS": [
+      "Every #b4 turns, #ymuelsyse:Copy a manifold which will dissipate after #b1 turn."
+    ]
+  },
+  "muelsyse:CoffeeCandy": {
+    "NAME": "Coffee Plains Coffee Candy",
+    "FLAVOR": "Dossoles' famous coffee-flavored candy product. Has real caffeine added, to keep you wide awake from clock-in to overtime.",
+    "DESCRIPTIONS": [
+      "When a card with #yExhaust tag is #ymuelsyse:Cultivated, increases the Damage and Block of it by #b2."
+    ]
+  },
+  "muelsyse:OrangeStorm": {
+    "NAME": "Orange Storm",
+    "FLAVOR": "A Mama John's candy product. The orange flavor, cheap and delicious, is a best-seller among children.",
+    "DESCRIPTIONS": [
+      "When a card with #yExhaust tag is #ymuelsyse:Cultivated, let it get: When played, gain [E] ."
+    ]
+  },
+  "muelsyse:StereoscopicArtInstallation": {
+    "NAME": "Three-Dimensional Art Display",
+    "FLAVOR": "The impression that Rhine Lab often gives is akin to this work of art: inscrutable, multi-faceted, impossible to sift fact from fiction.",
+    "DESCRIPTIONS": [
+      "At start of your turn, all #ymuelsyse:Manifolds recover 1 HP. NL On victory of combats, each #yManifold let you recover 1 HP."
+    ]
+  },
+  "muelsyse:TimeLibrary": {
+    "NAME": "Library of Time",
+    "FLAVOR": "A person who spies on the truth, a person who holds the truth, a person who plays with the truth.",
+    "DESCRIPTIONS": [
+      "Change the next #yElite you meet to #yHoolHeyak. After the combat, you heal #b30 HP and obtain #yExtra rewards."
+    ]
+  },
+  "muelsyse:HerLibrary": {
+    "NAME": "“图书馆”",
+    "FLAVOR": "一个被真相拒绝的人，一个被真相震慑的人，一个被真相愚弄的人。",
+    "DESCRIPTIONS": [
+      "拾起时，从3张 #y霍尔海雅 牌中选择一张加入卡组。"
+    ]
+  },
+  "muelsyse:ArmorShadow": {
+    "NAME": "Shadow of Armor",
+    "FLAVOR": "Bad memories...",
+    "DESCRIPTIONS": [
+      "If your enemy is #yElite or #Boss, discard 1 card and apply #4 Vigor to yourself at the start of turn."
+    ]
+  }
+}

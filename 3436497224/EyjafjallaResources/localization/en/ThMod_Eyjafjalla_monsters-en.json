@@ -1,0 +1,63 @@
+{
+  "eyjafjalla:TQB": {
+    "NAME": "Fluffbag",
+    "MOVES": [],
+    "DIALOG": []
+  },
+  "eyjafjalla:LTTQB": {
+    "NAME": "Joyful Fluffbag",
+    "MOVES": [],
+    "DIALOG": []
+  },
+  "eyjafjalla:CPS": {
+    "NAME": "Frisbee",
+    "MOVES": [],
+    "DIALOG": []
+  },
+  "eyjafjalla:JMCPS": {
+    "NAME": "Gym Frisbee",
+    "MOVES": [],
+    "DIALOG": []
+  },
+  "eyjafjalla:MTFKY": {
+    "NAME": "Airfluffy Pilot",
+    "MOVES": [],
+    "DIALOG": []
+  },
+  "eyjafjalla:CXXSS": {
+    "NAME": "Supernova Caster",
+    "MOVES": [],
+    "DIALOG": []
+  },
+  "eyjafjalla:DGDGZ": {
+    "NAME": "Big Guy's Big Bro",
+    "MOVES": [],
+    "DIALOG": []
+  },
+
+  "eyjafjalla:Pompeii": {
+    "NAME": "Pompeii",
+    "MOVES": [],
+    "DIALOG": []
+  },
+
+  "eyjafjalla:Dolly": {
+    "NAME": "Dolly the master of Sheep",
+    "MOVES": [
+      "Steam Explosion!",
+      "Volcano Burst!",
+      "Raining passionately",
+      "The light and airy Dolly",
+      "Joyfully spewing fire",
+      "The hurry and rushing Dolly"
+    ],
+    "DIALOG": [
+      "Dolly loses #b",
+      " HP.",
+      " Strength.",
+      "Give rain the fire",
+      "Give fire the rain",
+      "Don't play this little trick, ~baa~"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "archetto:HexPanel": {
+    "TEXT": [
+      "箭羽 0"
+    ]
+  },
+  "archetto:SkinSelect": {
+    "TEXT": [
+      "皮肤",
+      "默认",
+      "宣传策略",
+      "至虔者荣光"
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "highmore:HighmoreStarterRelic": {
+    "NAME": "海沫之证",
+    "FLAVOR": "你踏上旅程的信物。",
+    "DESCRIPTIONS": [
+      "战斗开始时获得 1 点力量。"
+    ],
+    "DESCRIPTION": [
+      "战斗开始时获得 1 收割。"
+    ]
+  },
+  "highmore:HighmoreTideCharm": {
+    "NAME": "潮汐护符",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "战斗开始时获得 1 收割，回复 3 生命。"
+    ]
+  },
+  "highmore:HighmoreCoralScythe": {
+    "NAME": "珊瑚镰刀",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "每当你打出攻击牌，获得 1 收割。"
+    ]
+  },
+  "highmore:HighmoreAnchor": {
+    "NAME": "盐锚",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "每当你打出技能牌，获得 3 点格挡。"
+    ]
+  },
+  "highmore:HighmoreShell": {
+    "NAME": "贝壳记忆",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "战斗开始时获得 2 收割。"
+    ]
+  },
+  "highmore:BulkRelic01": {
+    "NAME": "余韵1",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 1 收割。"
+    ]
+  },
+  "highmore:BulkRelic02": {
+    "NAME": "铭刻2",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "每当你打出技能牌，获得 1 收割。"
+    ]
+  },
+  "highmore:BulkRelic03": {
+    "NAME": "回响3",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "战斗开始时获得 2 收割。"
+    ]
+  },
+  "highmore:BulkRelic04": {
+    "NAME": "遗珠4",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 1 收割。"
+    ]
+  },
+  "highmore:BulkRelic05": {
+    "NAME": "旧证5",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "每当你打出技能牌，获得 1 收割。"
+    ]
+  },
+  "highmore:BulkRelic06": {
+    "NAME": "残章6",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "战斗开始时获得 2 收割。"
+    ]
+  },
+  "highmore:BulkRelic07": {
+    "NAME": "秘纹7",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 1 收割。"
+    ]
+  },
+  "highmore:BulkRelic08": {
+    "NAME": "古片8",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "每当你打出技能牌，获得 1 收割。"
+    ]
+  },
+  "highmore:BulkRelic09": {
+    "NAME": "旅标9",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "战斗开始时获得 2 收割。"
+    ]
+  },
+  "highmore:BulkRelic10": {
+    "NAME": "信物10",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 1 收割。"
+    ]
+  },
+  "highmore:BulkRelic11": {
+    "NAME": "终末11",
+    "FLAVOR": "海沫",
+    "DESCRIPTIONS": [
+      "每当你打出技能牌，获得 1 收割。"
+    ]
+  }
+}

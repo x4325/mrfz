@@ -1,0 +1,153 @@
+{
+  "eyjafjalla:CloudInBottle": {
+    "NAME": "瓶中云朵",
+    "FLAVOR": "多利赠送给女孩的生日礼物，只要打开这个瓶子就会有云朵裹住你。",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，将你抽牌堆底的 #b2 张牌放入 #yeyjafjalla:云层 。"
+    ]
+  },
+  "eyjafjalla:WarmFire": {
+    "NAME": "温暖的炉火",
+    "FLAVOR": "正因为小羊们自云中诞生，所以它们渴望，渴望这与云朵相合相融的炉火。",
+    "DESCRIPTIONS": [
+      "拾起时，将牌组随机 #b2 张牌标记为 #yeyjafjalla:炎息牌 。"
+    ]
+  },
+  "eyjafjalla:CloudInPacket": {
+    "NAME": "袋中云朵",
+    "FLAVOR": "多利甩落的羊毛，正源源不绝地从这个袋子里飘出，你闻到一些烧焦的味道。",
+    "DESCRIPTIONS": [
+      "替换 #g瓶中云朵 。在你回合开始时抽 #b1 张牌到 #yeyjafjalla:云层 ，将其标记为 #yeyjafjalla:炎息牌 。"
+    ]
+  },
+  "eyjafjalla:DreamModel": {
+    "NAME": "缠梦模型",
+    "FLAVOR": "你见过这里，你曾在其中游荡，但你现在将其捧在掌心。这一切到底都是真的，还是只是一场梦？",
+    "DESCRIPTIONS": [
+      "在每场战斗的第一回合获得 #b1 点 #yeyjafjalla:云量 。"
+    ]
+  },
+  "eyjafjalla:VoidBird": {
+    "NAME": "空羽兽",
+    "FLAVOR": "肉体早已消逝，灵魂于壳中永驻。枝叶间的不融生灵，带着冰凌于林中展翅。",
+    "DESCRIPTIONS": [
+      "每回合当你打出第一张牌时，将随机已 #y消耗 的同类型牌放入手中。"
+    ]
+  },
+  "eyjafjalla:TreasureMap": {
+    "NAME": "藏宝图",
+    "FLAVOR": "它将梦中看见的名字写在了这张藏宝图上，依坐标来看这座“城市”好像是一片云朵？",
+    "DESCRIPTIONS": [
+      "你打开的下一个非Boss宝箱将出现一组三选一的 #yeyjafjalla:多利牌 奖励。"
+    ]
+  },
+  "eyjafjalla:ShallowSong": {
+    "NAME": "浅海轻唱",
+    "FLAVOR": "临海断崖上常见的鲜花，但唯独这一朵沾染了违背常理的颜色。",
+    "DESCRIPTIONS": [
+      "战斗开始时开启 #yeyjafjalla:旋律 ：SAR。每完成一步所有敌人流失 #b",
+      " 点生命。完成整段旋律后流失量永久+ #b1 并再次开启。",
+      "所有敌人流失 #b",
+      " 点生命。",
+      " #b浅海轻唱 给予的生命流失永久+ #b1 并再次开启旋律。"
+    ]
+  },
+  "eyjafjalla:UnknownMotherGoose": {
+    "NAME": "未知的·童谣",
+    "FLAVOR": "言辞都是过剩多余，无垢的音色流动而去。在你被爱涂满之前，那景色也不过是幻想。",
+    "DESCRIPTIONS": [
+      "每段 #yeyjafjalla:旋律 的第一步完成效果会额外生效一次。"
+    ]
+  },
+  "eyjafjalla:GodRoll": {
+    "NAME": "神音海螺",
+    "FLAVOR": "吹响它，那些你不曾见过、甚至不曾听闻的神明将回应你的声音。其实就是一个空心海螺。",
+    "DESCRIPTIONS": [
+      "你每完成 #b5 步S或 #yeyjafjalla:任意音符 ，使所有敌人失去 #b2 点 力量 。"
+    ]
+  },
+  "eyjafjalla:GlassBird": {
+    "NAME": "玻璃鸟",
+    "FLAVOR": "“在我的乐园里，这只小鸟会永远地歌唱下去。”",
+    "DESCRIPTIONS": [
+      "当你打出耗能大于 #b1 的牌时，获得一点 #y能量 。 NL 每回合每张牌仅触发一次。"
+    ]
+  },
+  "eyjafjalla:NightInForest": {
+    "NAME": "林中夜话",
+    "FLAVOR": "风踏进山林，万物低语，人可好眠。",
+    "DESCRIPTIONS": [
+      "你的回合结束时，每个意图为攻击的敌人会给予你 #b3 点格挡。"
+    ]
+  },
+  "eyjafjalla:DrawPen": {
+    "NAME": "随身画笔",
+    "FLAVOR": "长廊上挂着两幅画，第一幅是黑夜，第二幅不是白天。",
+    "DESCRIPTIONS": [
+      "在你进入精英或BOSS房间时，将牌组随机 #b1 张牌标记为 #yeyjafjalla:炎息牌 。"
+    ]
+  },
+  "eyjafjalla:ResplendentTear": {
+    "NAME": "璀璨悲泣",
+    "FLAVOR": "他的血液仍在流淌，他从不曾真的自这里离开。",
+    "DESCRIPTIONS": [
+      "如果你在回合中不打出任何 #y攻击牌 ，在下一回合攻击提升 #b40 ％伤害。"
+    ]
+  },
+  "eyjafjalla:BellOfShepherd": {
+    "NAME": "牧羊人的驼铃",
+    "FLAVOR": "晃动摇铃，轻哼歌谣，它将随你走遍天涯。",
+    "DESCRIPTIONS": [
+      "战斗开始时，从三张普通 #yeyjafjalla:多利牌 中选择一张放入手中。"
+    ]
+  },
+  "eyjafjalla:RainbowUrn": {
+    "NAME": "彩虹瓮",
+    "FLAVOR": "它通常被放在彩虹落下的地方并精心保存，用以对抗踪迹不定的灾祸。",
+    "DESCRIPTIONS": [
+      "在你回合结束时若有能量剩余，随机给予 #b2 次 #yeyjafjalla:纯白水汽 。"
+    ]
+  },
+  "eyjafjalla:StrangeFlute": {
+    "NAME": "古怪的长笛",
+    "FLAVOR": "外形古怪的长笛，有人日夜将其吹响。",
+    "DESCRIPTIONS": [
+      " #yeyjafjalla:旋律 期间，你的攻击牌额外造成 #b2 点伤害。"
+    ]
+  },
+  "eyjafjalla:WitchAddax": {
+    "NAME": "巫王旋角",
+    "FLAVOR": "你的阴影笼罩着大地！你的腐败浸没了高塔！",
+    "DESCRIPTIONS": [
+      "你每完成一步 #yeyjafjalla:旋律 ，获得 #b2 点 #y格挡 。"
+    ]
+  },
+  "eyjafjalla:DreamKey": {
+    "NAME": "旅梦钥匙",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "结束 #y终幕 时，进入一层额外区域： NL #r梦中的汐斯塔"
+    ]
+  },
+  "eyjafjalla:VolcanoMask": {
+    "NAME": "火山灰面罩",
+    "FLAVOR": "陈旧的面罩，被艾雅法拉视若珍宝，尺寸刚好合适。",
+    "DESCRIPTIONS": [
+      "每当你的能量变为0时，回复 #b1 点生命，每回合最多触发1次。 NL 击败 #y庞贝 后，失去此遗物。"
+    ]
+  },
+  "eyjafjalla:ShadowOfPompeii": {
+    "NAME": "庞贝之影",
+    "FLAVOR": "“我奋力说话可惜被压住了声音，你说时间到了，就要辞行” ——留在古城废墟上的诗词",
+    "DESCRIPTIONS": [
+      "每当你的能量变为0时，失去 #b1 点生命，获得1点能量。 NL 击败 #y庞贝 后，失去此遗物。"
+    ]
+  },
+  "eyjafjalla:VolcanoBoom": {
+    "NAME": "火山喷发",
+    "FLAVOR": "舍烬我一生气力，去攀登名为生命的火山。",
+    "DESCRIPTIONS": [
+      "拾起后第 #b50 个 #y非BOSS战斗 回合开始时，将敌人替换为 #y庞贝 ，战斗结束后获得额外奖励。"
+    ]
+  }
+}

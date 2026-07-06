@@ -1,0 +1,14 @@
+{
+  "modid": "Eyjafjalla_FimmlpS",
+  "name": "Eyjafjalla_Mod(艾雅法拉)",
+  "author_list": [
+    "FimmlpS"
+  ],
+  "description": "舍烬我一生气力，去攀登名为“生命”的火山。",
+  "dependencies": [
+    "basemod"
+  ],
+  "version": "1.0.0",
+  "sts_version": "12-22-2020",
+  "mts_version": "3.23.2"
+}

@@ -1,0 +1,654 @@
+{
+  "WaterStrike_Muelsyse": {
+    "NAME": "水流打击",
+    "DESCRIPTION": " muelsyse:协同 造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL muelsyse:首言 ",
+      "： muelsyse:润化 1。"
+    ]
+  },
+  "WaterDefend_Muelsyse": {
+    "NAME": "水流防御",
+    "DESCRIPTION": " muelsyse:协同 获得 !B! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL muelsyse:首言 ",
+      "： muelsyse:润化 1。"
+    ]
+  },
+  "GraduallyWater_Muelsyse": {
+    "NAME": "渐进性润化",
+    "DESCRIPTION": " muelsyse:润化 !M! 。 NL 打出后，此牌润化层数永久加1。 NL 消耗 。"
+  },
+  "SongOfRose_Muelsyse": {
+    "NAME": "蔷薇之歌",
+    "DESCRIPTION": " 保留 。 NL 将 *白蔷薇 在 muelsyse:栽培 !M! 后放入手中。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 将 *白蔷薇+ 在 muelsyse:栽培 !M! 后放入手中。"
+  },
+  "WordOfFlower_Muelsyse": {
+    "NAME": "花语",
+    "DESCRIPTION": " 保留 。 不能被打出 。 NL muelsyse:枯竭 ： muelsyse:润化 !M! 。",
+    "EXTENDED_DESCRIPTION": [
+      "在普通难度基础上： NL muelsyse:生命吊坠削弱 。 NL 部分卡牌削弱。"
+    ]
+  },
+
+  "WaterStrikePro_Muelsyse": {
+    "NAME": "水流打击·二阶",
+    "DESCRIPTION": " muelsyse:协同 造成 !D! 点伤害2次。",
+    "EXTENDED_DESCRIPTION": [
+      " NL muelsyse:首言 ",
+      "： muelsyse:润化 !M! 。"
+    ]
+  },
+  "LossShield_Muelsyse": {
+    "NAME": "逸散型护盾",
+    "DESCRIPTION": " muelsyse:协同 获得 !B! 点 格挡 !M! 次。 NL 虚无 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL muelsyse:首言 ",
+      "：不启用 虚无 。"
+    ]
+  },
+  "WaterRecycle_Muelsyse": {
+    "NAME": "水循环",
+    "DESCRIPTION": "重复抽1张牌并 muelsyse:润化 !M! ，直至抽到的牌中包含至少2种类型（不计入状态牌）。"
+  },
+  "Verdant_Muelsyse": {
+    "NAME": "苍翠",
+    "DESCRIPTION": " 不能被打出 。 NL 抽到时抽 !M! 张牌。 NL muelsyse:养料 ： 格挡 值+2。",
+    "UPGRADE_DESCRIPTION": " 不能被打出 。 NL 抽到时抽 !M! 张牌。 NL muelsyse:养料 ： 格挡 值+4。"
+  },
+  "PoisonIvy_Muelsyse": {
+    "NAME": "毒藤",
+    "DESCRIPTION": " muelsyse:协同 造成 !D! 点伤害。 NL muelsyse:协同 给予 !M! 层 中毒 。 NL muelsyse:养料 ：攻击值+ !M! 。"
+  },
+  "ScatterSpore_Muelsyse": {
+    "NAME": "散孢",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽到时复制自身。 NL muelsyse:枯竭 。"
+  },
+  "Orchid_Muelsyse": {
+    "NAME": "芳兰",
+    "DESCRIPTION": "所有流形 muelsyse:阈值 加1。 NL muelsyse:养料 ：攻击值-2， 格挡 值+ !M! 。"
+  },
+  "FineBlend_Muelsyse": {
+    "NAME": "精调",
+    "DESCRIPTION": " 消耗 。 NL 获得 [E] 。 NL muelsyse:养料 ：耗能+1，攻击和 格挡 值提升50％。",
+    "UPGRADE_DESCRIPTION": " 消耗 。 NL 获得 [E] [E] 。 NL muelsyse:养料 ：耗能+1，攻击和 格挡 值提升75％。"
+  },
+  "Wave_Muelsyse": {
+    "NAME": "浪",
+    "DESCRIPTION": " 虚无 。 NL 不能被打出 。 NL 当此牌在手中时，打出牌后 muelsyse:润化 !M! 。"
+  },
+  "Rest_Muelsyse": {
+    "NAME": "小憩",
+    "DESCRIPTION": " muelsyse:协同 获得 !B! 点 格挡 。 NL 下回合额外抽 !M! 张牌。"
+  },
+  "FractalAttack_Muelsyse": {
+    "NAME": "分形夹击",
+    "DESCRIPTION": " muelsyse:协同 造成 !D! 点伤害。 NL 将 !M! 张 *水 放入弃牌堆。",
+    "UPGRADE_DESCRIPTION": " muelsyse:协同 造成 !D! 点伤害。 NL 将 !M! 张 *水+ 放入弃牌堆。"
+  },
+  "Trail_Muelsyse": {
+    "NAME": "足迹",
+    "DESCRIPTION": " 获得 !B! 点 格挡 。 NL 被 muelsyse:漫步 选择后，打出此牌的复制。"
+  },
+  "TerraPatrol_Muelsyse": {
+    "NAME": "大地巡旅",
+    "DESCRIPTION": " muelsyse:漫步 !M! 。 NL 将漫步时未选择的牌放入手中。"
+  },
+  "Defoliation_Muelsyse": {
+    "NAME": "落叶",
+    "DESCRIPTION": " 不能被打出 。 NL muelsyse:枯竭 ：获得 [E] [E] ",
+    "UPGRADE_DESCRIPTION": " 不能被打出 。 NL muelsyse:枯竭 ：获得 [E] [E] [E] "
+  },
+  "Geometry_Muelsyse": {
+    "NAME": "几何",
+    "DESCRIPTION": "丢弃手中所有耗能不为数字的牌，每张造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （有 !M! 张）"
+    ]
+  },
+  "SpringWord_Muelsyse": {
+    "NAME": "春语",
+    "DESCRIPTION": "将 *铃兰 在 muelsyse:栽培 1后放入手中。 NL 主原料额外强化一次目标牌并 消耗 。",
+    "UPGRADE_DESCRIPTION": "将 *铃兰+ 在 muelsyse:栽培 1后放入手中。 NL 主原料额外强化一次目标牌并 消耗 。"
+  },
+  "Seed_Muelsyse": {
+    "NAME": "播种",
+    "DESCRIPTION": " muelsyse:漫步 3。 NL 使选择的第1张牌携带 !M! 个随机 muelsyse:花粉 。"
+  },
+  "HugOfRegret_Muelsyse": {
+    "NAME": "遗憾之拥",
+    "DESCRIPTION": " 消耗 。 NL muelsyse:协同 造成 !D! 点伤害。 NL muelsyse:协同 给予 !M! 层 虚弱 。"
+  },
+  "FluidPower_Muelsyse": {
+    "NAME": "流体力学",
+    "DESCRIPTION": " muelsyse:协同 造成 !D! 点伤害。 NL 获得 !M! 点临时 力量 。 NL 被 muelsyse:漫步 选择后，打出此牌的复制。"
+  },
+  "Reconfiguration_Muelsyse": {
+    "NAME": "重构",
+    "DESCRIPTION": "丢弃3张手牌。 NL 抽 !M! 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "丢弃2张手牌。 NL 抽 !M! 张牌。"
+    ]
+  },
+
+  "SeriousSpawn_Muelsyse": {
+    "NAME": "紧急衍生",
+    "DESCRIPTION": " 消耗 。 NL 可超出上限地复制1个流形，会在 !M! 回合后消失。"
+  },
+  "Bright_Muelsyse": {
+    "NAME": "辉光",
+    "DESCRIPTION": " muelsyse:协同 对所有敌人造成 !D! 点伤害。"
+  },
+  "WaterStrikeEnd_Muelsyse": {
+    "NAME": "水流打击·终阶",
+    "DESCRIPTION": "执行X次： NL muelsyse:协同 造成 !D! 点伤害。 NL muelsyse:润化 2。",
+    "UPGRADE_DESCRIPTION": "执行X+1次： NL muelsyse:协同 造成 !D! 点伤害。 NL muelsyse:润化 2。"
+  },
+  "LightFlow_Muelsyse": {
+    "NAME": "塑形：聚流",
+    "DESCRIPTION": " muelsyse:塑形 ：所有流形 muelsyse:阈值 增加1点，生命上限提升5点。"
+  },
+  "TransRapid_Muelsyse": {
+    "NAME": "塑形：激流",
+    "DESCRIPTION": " 消耗 。 NL  muelsyse:塑形 ：使所有流形的基础伤害提升 !M! 点。"
+  },
+  "TransCleanWater_Muelsyse": {
+    "NAME": "净水即生命",
+    "DESCRIPTION": "基础流形攻击后， muelsyse:汲取 目标1点 力量 直至下一回合开始。"
+  },
+  "CompositeNutrient_Muelsyse": {
+    "NAME": "复合型养料",
+    "DESCRIPTION": " 消耗 。 NL 使所有 muelsyse:失肥 手牌复原。 NL muelsyse:养料 （打出后）： NL 抽 !M! 张牌。"
+  },
+  "Irrigate_Muelsyse": {
+    "NAME": "灌溉",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL muelsyse:养料 （打出后）： muelsyse:润化 !M! 。"
+  },
+  "Reflux_Muelsyse": {
+    "NAME": "回流",
+    "DESCRIPTION": "丢弃所有 muelsyse:失肥 牌，抽等量牌。 NL muelsyse:养料 （打出后）： NL 获得 [E] ",
+    "UPGRADE_DESCRIPTION": "丢弃所有 muelsyse:失肥 牌，抽等量牌。 NL muelsyse:养料 （打出后）： NL 获得 [E] [E] "
+  },
+  "BornShoots_Muelsyse": {
+    "NAME": "生枝",
+    "DESCRIPTION": "选择1张手牌，将其 muelsyse:栽培 !M! 后拿回手中。"
+  },
+  "DreamBubble_Muelsyse": {
+    "NAME": "化梦泡影",
+    "DESCRIPTION": "将所有流形的 格挡 转移到你身上。 NL muelsyse:养料 ： 格挡 值+50％",
+    "UPGRADE_DESCRIPTION": "将所有流形的 格挡 转移到你身上。 NL muelsyse:养料 ： 格挡 值+100％"
+  },
+  "FullBlown_Muelsyse": {
+    "NAME": "繁花",
+    "DESCRIPTION": " 消耗 。 NL 选择一张手牌，使其携带 !M! 个随机 muelsyse:花粉 。"
+  },
+  "SoilSpread_Muelsyse": {
+    "NAME": "土壤改造：风花",
+    "DESCRIPTION": " muelsyse:栽培 时，使目标牌额外携带 !M! 个随机 muelsyse:花粉 。"
+  },
+  "SoilExhaust_Muelsyse": {
+    "NAME": "土壤改造：净化",
+    "DESCRIPTION": " muelsyse:栽培 时，状态牌和诅咒牌获得 muelsyse:枯竭 效果。 NL 触发枯竭时抽1张牌。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL muelsyse:栽培 时，状态牌和诅咒牌获得 muelsyse:枯竭 效果。 NL 触发枯竭时抽1张牌。"
+  },
+  "LifeRipple_Muelsyse": {
+    "NAME": "生命涟漪",
+    "DESCRIPTION": "在你回合结束时，每个 muelsyse:流形 给予你和它自身各 !M! 点 格挡 。"
+  },
+  "UnknownFluid_Muelsyse": {
+    "NAME": "不可知流体",
+    "DESCRIPTION": " muelsyse:协同 造成 !D! 点伤害。 NL muelsyse:养料 ：耗能-1，攻击值+ !M! 。"
+  },
+  "DeepReflect_Muelsyse": {
+    "NAME": "深层反映",
+    "DESCRIPTION": "使手中耗能最高的首张牌打出后：获得 [E] 。 NL 打出后此牌耗能+1。"
+  },
+  "LifeAndWind_Muelsyse": {
+    "NAME": "生命与风",
+    "DESCRIPTION": " 消耗 。 NL 将携带 !M! 个随机 muelsyse:花粉 的 *蒲公英 在 muelsyse:栽培 !M! 后拿到手中。",
+    "UPGRADE_DESCRIPTION": " 消耗 。 NL 将携带 !M! 个随机 muelsyse:花粉 的 *蒲公英+ 在 muelsyse:栽培 !M! 后拿到手中。"
+  },
+  "EcologyCycle_Muelsyse": {
+    "NAME": "生态周期",
+    "DESCRIPTION": " muelsyse:协同 造成 !D! 点伤害。 NL 抽到此牌时，携带 !M! 个随机 muelsyse:花粉 。"
+  },
+  "LivingEcho_Muelsyse": {
+    "NAME": "生灵的回响",
+    "DESCRIPTION": " 消耗 。 NL 消耗至多 !M! 张手牌。 NL 将等量张 *水 放入手中。"
+  },
+  "InverseChange_Muelsyse": {
+    "NAME": "逆时性焓变",
+    "DESCRIPTION": " muelsyse:漫步 3。 NL 抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": " muelsyse:漫步 5。 NL 抽 !M! 张牌。"
+  },
+  "WaterShield_Muelsyse": {
+    "NAME": "水障壁",
+    "DESCRIPTION": " 消耗 全牌堆所有 *水 ，每张获得 !B! 点 格挡 。"
+  },
+  "SourceOfLife_Muelsyse": {
+    "NAME": "生命之源",
+    "DESCRIPTION": "回合开始时，将 !M! 张 *水+ 放入手中。"
+  },
+  "Shoot_Muelsyse": {
+    "NAME": "新枝",
+    "DESCRIPTION": "向手中放入3张 *水 。 NL 将 *蓝风信子 在 muelsyse:栽培 !M! 后放入手中。",
+    "UPGRADE_DESCRIPTION": "向手中放入3张 *水+ 。 NL 将 *蓝风信子+ 在 muelsyse:栽培 !M! 后放入手中。"
+  },
+  "SpruceInCage_Muelsyse": {
+    "NAME": "笼中云杉",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 选择1张手牌，将其 muelsyse:栽培 2后 保留 在手中。 NL 结束你的回合。"
+  },
+  "EcologicalCoupling_Muelsyse": {
+    "NAME": "塑形：生态耦合",
+    "DESCRIPTION": " muelsyse:塑形 ：流形的复制将延迟 !M! 个回合消失。"
+  },
+  "CurseOfSpirit_Muelsyse": {
+    "NAME": "精灵的诅咒",
+    "DESCRIPTION": " 消耗 。 NL 回复2点生命。 NL 当此牌从牌组中转化或移除时，你获得 !M! 点最大生命。"
+  },
+  "MatrixWave_Muelsyse": {
+    "NAME": "矩阵浪潮",
+    "DESCRIPTION": " muelsyse:协同 将 *水 放入手中。",
+    "UPGRADE_DESCRIPTION": " muelsyse:协同 将 *水+ 放入手中。"
+  },
+  "NightWish_Muelsyse": {
+    "NAME": "夜愿",
+    "DESCRIPTION": " 不能被打出 。 NL 当此牌进入抽牌堆后，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "可以打出。 NL 当此牌进入抽牌堆后，抽 !M! 张牌。"
+  },
+  "Resplendent_Muelsyse": {
+    "NAME": "璀璨",
+    "DESCRIPTION": " 不能被打出 。 NL 当此牌进入抽牌堆后，获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "可以打出。 NL 当此牌进入抽牌堆后，获得 [E] 。"
+  },
+  "WaterWave_Muelsyse": {
+    "NAME": "水连击",
+    "DESCRIPTION": " 消耗 全牌堆所有 *水 ，每张造成 !D! 点伤害。"
+  },
+  "EndlessSpring_Muelsyse": {
+    "NAME": "不竭之泉",
+    "DESCRIPTION": " 不能被打出 。 NL 当此牌进入抽牌堆或作为原料后， muelsyse:润化 !M! 。 NL 此牌不会 muelsyse:失肥 。"
+  },
+  "SoilBack_Muelsyse": {
+    "NAME": "土壤改造：回肥",
+    "DESCRIPTION": " muelsyse:栽培 后，主原料不再 muelsyse:失肥 ，且本回合耗能减1。"
+  },
+  "DorothyVision_Muelsyse": {
+    "NAME": "绿野幻梦",
+    "DESCRIPTION": " muelsyse:漫步 !M! 。 NL 你本回合每打出过一张牌，使漫步数字+1。"
+  },
+  "Starter_Muelsyse": {
+    "NAME": "始源",
+    "DESCRIPTION": " muelsyse:协同 造成 !D! 点伤害。 NL 弃牌堆每有一张牌，此牌减少4点伤害。"
+  },
+  "CloudyBarrier_Muelsyse": {
+    "NAME": "云霭荫佑",
+    "DESCRIPTION": " 固有 ， 消耗 。 NL 随机将抽牌堆中每种类型各1张牌放入手中。这些牌本回合耗能减1。"
+  },
+  "RemainDust_Muelsyse": {
+    "NAME": "遗尘",
+    "DESCRIPTION": "当你 muelsyse:漫步 时，添加 !M! 张随机牌到检索列表中，使其打出前耗能为0。"
+  },
+  "WaterStrikeO_Muelsyse": {
+    "NAME": "水流打击·Ω",
+    "DESCRIPTION": " 固有 ， 消耗 。 NL muelsyse:协同 造成 !D! 点伤害。 NL muelsyse:润化 !M! 。"
+  },
+
+  "MyShadow_Muelsyse": {
+    "NAME": "如水随形",
+    "DESCRIPTION": " 保留 ， 消耗 。 NL 可超出上限地复制 !M! 个流形，会在1回合后消失。"
+  },
+  "PlantAStar_Muelsyse": {
+    "NAME": "种一颗星星",
+    "DESCRIPTION": " 消耗 。 NL 将手牌抽满。 NL 将 *举星 在 muelsyse:栽培 !M! 后放入抽牌堆。",
+    "UPGRADE_DESCRIPTION": " 消耗 。 NL 将手牌抽满。 NL 将 *举星+ 在 muelsyse:栽培 !M! 后放入抽牌堆。"
+  },
+  "ShallowAdaption_Muelsyse": {
+    "NAME": "浅层非熵适应",
+    "DESCRIPTION": " 消耗 。 NL 使手中所有牌在打出后：抽1张牌， muelsyse:润化 1。",
+    "EXTENDED_DESCRIPTION": [
+      " 消耗 。 NL 使手中所有牌在打出后： muelsyse:润化 2。"
+    ]
+  },
+  "Ocean_Muelsyse": {
+    "NAME": "海",
+    "DESCRIPTION": " muelsyse:润化 20。 NL muelsyse:溯源 。"
+  },
+  "CondensateWish_Muelsyse": {
+    "NAME": "愿望凝结",
+    "FLAVOR": "“愿望啊，请你凝结！”",
+    "DESCRIPTION": "造成相当于所有流形 *生命之和 的伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （造成 !D! 点伤害）"
+    ]
+  },
+  "WaterSilently_Muelsyse": {
+    "NAME": "润物无声",
+    "DESCRIPTION": " 消耗 。 NL 所有手牌打出前耗能变为0，且获得效果：打出后 muelsyse:润化 !M! 。"
+  },
+  "ExplosionMagic_Muelsyse": {
+    "NAME": "爆破魔法",
+    "DESCRIPTION": "消耗 。 NL muelsyse:协同 造成 !D! 点伤害。 NL *回合开始时 ：若流形数不低于4，将此牌放回手中。"
+  },
+  "RainWorld_Muelsyse": {
+    "NAME": "雨世界",
+    "DESCRIPTION": "非 消耗 牌打出后，随机进入抽牌堆、手牌或弃牌堆。 NL 虚无 。 muelsyse:世界开始下雨 。"
+  },
+  "MillenniumVine_Muelsyse":{
+    "NAME": "千年树蔓",
+    "DESCRIPTION": " 消耗 ， 无限升级 。 NL muelsyse:协同 造成 !D! 点伤害。 NL 战斗开始时携带 !M! 个随机 muelsyse:花粉 。"
+  },
+  "ItIs_Muelsyse": {
+    "NAME": "祂在",
+    "DESCRIPTION": "持续 !M! 回合，你受到攻击的伤害降低80％。"
+  },
+  "MeetInSnow_Muelsyse": {
+    "NAME": "在雪落处相见",
+    "DESCRIPTION": " muelsyse:漫步 !M! 。 NL 每选择一张牌，将一张 *水 放入弃牌堆。"
+  },
+  "ApartWhenLoss_Muelsyse": {
+    "NAME": "在水散时相别",
+    "DESCRIPTION": " muelsyse:协同 造成 !D! 点伤害。 NL 每有一张 *水 被 消耗 ，提升 !M! 点伤害。被 muelsyse:漫步 选择后，打出此牌的复制。"
+  },
+  "Revive_Muelsyse": {
+    "NAME": "苏生",
+    "DESCRIPTION": "当一张牌进入抽牌堆后，获得 !M! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 当一张牌进入抽牌堆后，获得 !M! 点 格挡 。"
+  },
+  "LifeDeduction_Muelsyse": {
+    "NAME": "生命演绎",
+    "DESCRIPTION": "选择一名敌人，记其最大生命为平方Y，复制一个 muelsyse:演绎 Y的流形。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （Y为 !M! ）"
+    ]
+  },
+  "TimeRiver_Muelsyse": {
+    "NAME": "时光的河",
+    "DESCRIPTION": " muelsyse:漫步 !M! 。 NL 打出被选择的第1张牌的复制。"
+  },
+  "UncertainForm_Muelsyse": {
+    "NAME": "不定形态",
+    "DESCRIPTION": "每回合开始时 muelsyse:漫步 !M! 。 NL 每有一张未选择的牌，将其 消耗 并抽1张牌。"
+  },
+  "EternalGreenfield_Muelsyse": {
+    "NAME": "永恒的绿地",
+    "DESCRIPTION": " 保留 ， 不能被打出 。 NL muelsyse:养料 ：攻击值和格挡值都+ !M! 。 NL 作为原料后首个数字+1，此牌不会失肥。"
+  },
+  "EndTime_Muelsyse": {
+    "NAME": "终末的岁月",
+    "DESCRIPTION": "若弃牌堆数小于10，交换手牌和弃牌堆。 NL 将 *紫颂 在 muelsyse:栽培 !M! 后放入手中。",
+    "UPGRADE_DESCRIPTION": "若弃牌堆数小于10，交换手牌和弃牌堆。 NL 将 *紫颂+ 在 muelsyse:栽培 !M! 后放入手中。"
+  },
+  "LoneStar_Muelsyse": {
+    "NAME": "孤寂星辉",
+    "DESCRIPTION": " 消耗 。 NL 选择抽牌堆中一张牌， NL muelsyse:协同 将其复制放入手中。"
+  },
+
+  "WhiteRose_Muelsyse": {
+    "NAME": "白蔷薇",
+    "DESCRIPTION": " muelsyse:协同 造成 !D! 点伤害。 NL muelsyse:协同 获得 !B! 点 格挡 。"
+  },
+  "LiftStar_Muelsyse": {
+    "NAME": "举星",
+    "DESCRIPTION": " muelsyse:协同 对所有敌人造成 !D! 点伤害。 NL 你额外给予 !M! 层 虚弱 。"
+  },
+  "Dandelion_Muelsyse": {
+    "NAME": "蒲公英",
+    "DESCRIPTION": " muelsyse:润化 !B! 。 NL 格挡值的强化会作用于此牌数字。"
+  },
+  "BlueHyacinth_Muelsyse": {
+    "NAME": "蓝风信子",
+    "DESCRIPTION": " 保留 ， 消耗 。 NL 获得 !B! 点 格挡 !M! 次。"
+  },
+  "Suzuran_Muelsyse": {
+    "NAME": "铃兰",
+    "DESCRIPTION": " 保留 ， 消耗 。 NL muelsyse:协同 造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": " 保留 ， 消耗 。 NL muelsyse:协同 造成 !D! 点伤害。 NL 格挡值强化： NL muelsyse:协同 造成 !B! 点伤害。"
+  },
+  "ChorusFlower_Muelsyse": {
+    "NAME": "紫颂",
+    "DESCRIPTION": " 保留 ， 消耗 。 NL 重复 !D! 次：打出抽牌堆随机牌的复制。 NL 攻击值的强化作用于此牌数字。"
+  },
+  "ForSeek_Muelsyse": {
+    "NAME": "但为求索",
+    "DESCRIPTION": " 消耗 。 NL 你打出的下 !M! 张攻击牌耗能变为0。"
+  },
+  "StarMove_Muelsyse": {
+    "NAME": "群星逶迤",
+    "DESCRIPTION": "随机造成 !D! 点伤害 !M! 次。 NL 打出后攻击值+1。"
+  },
+  "CrazyWord_Muelsyse": {
+    "NAME": "博览者的狂语",
+    "DESCRIPTION": "给予 !M! 层 易伤 。 NL muelsyse:养料 ：攻击值+100％",
+    "UPGRADE_DESCRIPTION": "给予 !M! 层 易伤 。 NL muelsyse:养料 ：攻击值+200％"
+  },
+  "NoManMachine_Muelsyse": {
+    "NAME": "支援无人机",
+    "DESCRIPTION": " 虚无 ， 消耗 。 NL muelsyse:协同 获得 !B! 点 格挡 3次。"
+  },
+  "Mibo_Muelsyse": {
+    "NAME": "支援型咪啵",
+    "DESCRIPTION": " 消耗 。 NL 抽 !M! 张牌。 NL muelsyse:养料 ：攻击值+ !M! 。"
+  },
+  "Hypothermia_Muelsyse": {
+    "NAME": "失温",
+    "DESCRIPTION": " 消耗 。 NL 在手中时，你无法打出攻击牌。",
+    "UPGRADE_DESCRIPTION": " 消耗 时回到手中。 NL 在手中时，你无法打出攻击牌。",
+    "EXTENDED_DESCRIPTION": [
+      "感觉不到四肢的温度……"
+    ]
+  },
+  "Blocker_Muelsyse": {
+    "NAME": "阻滞剂",
+    "DESCRIPTION": " 保留 ，不能被打出。 NL muelsyse:枯竭 ：使被栽培牌耗能+ !M! 。"
+  },
+  "VowAndEvolution_Muelsyse": {
+    "NAME": "约定|进化",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 斩杀 时，使此牌永久携带1种随机 muelsyse:栽培效果 。"
+  },
+
+  "Ifrit_Muelsyse": {
+    "NAME": "复制：伊芙利特",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 最大生命值-2。 NL 获得 !M! 点 力量 。 NL 可以攻击所有敌人。"
+  },
+  "Astgenne_Muelsyse": {
+    "NAME": "复制：星源",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 行动后使生命值最低的敌人受到 !M! 点伤害。"
+  },
+  "Saria_Muelsyse": {
+    "NAME": "复制：塞雷娅",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 所有流形 muelsyse:阈值 +1。 NL 回合开始时行动：回复所有流形 !M! 点生命。"
+  },
+  "Mechanist_Muelsyse": {
+    "NAME": "复制：Mechanist",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 最大生命值+3。 NL 回合结束时行动：将自身所有 格挡 转移给 *缪尔赛思 。",
+    "UPGRADE_DESCRIPTION": " muelsyse:复制对象 。 NL 最大生命值+3。 NL 回合结束时行动：将自身所有 格挡 以150％转移给 *缪尔赛思 。"
+  },
+  "Silence_Muelsyse": {
+    "NAME": "复制：赫默",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 最大生命值+2。 NL 回合开始时行动：将 *支援无人机 放入手中。",
+    "UPGRADE_DESCRIPTION": " muelsyse:复制对象 。 NL 最大生命值+2。 NL 回合开始时行动：将 *支援无人机+ 放入手中。"
+  },
+  "Ptilopsis_Muelsyse": {
+    "NAME": "复制：白面鸮",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 行动后给予 *缪尔赛思 !M! 点 格挡 。"
+  },
+  "Dorothy_Muelsyse": {
+    "NAME": "复制：多萝西",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL muelsyse:漫步 X后行动：对随机敌人造成2X点伤害。",
+    "UPGRADE_DESCRIPTION": " muelsyse:复制对象 。 NL muelsyse:漫步 或 muelsyse:栽培 X后行动：对随机敌人造成2X点伤害。"
+  },
+  "Kafka_Muelsyse": {
+    "NAME": "复制：卡夫卡",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 回合结束时行动：对随机敌人造成 !M! 点伤害，获得1点 力量 。"
+  },
+  "Megallan_Muelsyse": {
+    "NAME": "复制：麦哲伦",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 生成时 muelsyse:复制 一个持续 !M! 回合的 muelsyse:流形 。"
+  },
+  "Mayer_Muelsyse": {
+    "NAME": "复制：梅尔",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 生成时将 !M! 张 *支援型咪啵 洗入抽牌堆。"
+  },
+  "Typhon_Muelsyse": {
+    "NAME": "复制：提丰",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 最大生命值-2。 NL 每回合首次攻击的伤害提升至200％。",
+    "UPGRADE_DESCRIPTION": " muelsyse:复制对象 。 NL 最大生命值-2。 NL 每回合首次攻击的伤害提升至250％。"
+  },
+  "Greyy_Muelsyse": {
+    "NAME": "复制：格雷伊",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 最大生命值-2。 NL 每回合首次攻击行动2次。",
+    "UPGRADE_DESCRIPTION": " muelsyse:复制对象 。 NL 最大生命值-2。 NL 获得1点 力量 。 NL 每回合首次攻击行动2次。"
+  },
+  "Saileach_Muelsyse": {
+    "NAME": "复制：琴柳",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 每回合开始时行动： muelsyse:润化 !M! 。"
+  },
+  "Reed_Muelsyse": {
+    "NAME": "复制：苇草",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 每次攻击后 muelsyse:润化 !M! 。",
+    "UPGRADE_DESCRIPTION": " muelsyse:复制对象 。 NL 每次行动后 muelsyse:润化 !M! 。"
+  },
+  "SilverAsh_Muelsyse": {
+    "NAME": "复制：银灰",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 所有流形 muelsyse:阈值 -1。 NL 所有流形攻击值+ !M! 。"
+  },
+  "Astesia_Muelsyse": {
+    "NAME": "复制：星极",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 每当 *缪尔赛思 打出能力牌后行动：给予 !M! 层 金属化 。"
+  },
+  "Tulip_Muelsyse": {
+    "NAME": "复制：郁金香",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 每回合限 !M! 次，当 *缪尔赛思 召唤流形时行动：获得 [E] 。"
+  },
+  "Pepe_Muelsyse": {
+    "NAME": "复制：佩佩",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 最大生命值+ !M! 。 NL 行动后给予 *缪尔赛思 1点活力。"
+  },
+  "Narantuya_Muelsyse": {
+    "NAME": "复制：娜仁图亚",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL muelsyse:栽培 时，使目标牌提升 !M! 点攻击值。"
+  },
+  "Shu_Muelsyse": {
+    "NAME": "复制：黍",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 生成时将一张 *润物无声 放入弃牌堆。",
+    "UPGRADE_DESCRIPTION": " muelsyse:复制对象 。 NL 生成时将一张 *润物无声+ 放入弃牌堆。"
+  },
+  "Eyjafjalla_Muelsyse": {
+    "NAME": "复制：纯烬艾雅法拉",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 所有流形 muelsyse:阈值 + !M! 。 NL 牌组每有一张复制对象，最大生命增加1。"
+  },
+  "SilenceP_Muelsyse": {
+    "NAME": "复制：淬羽赫默",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL muelsyse:栽培 时，使目标牌提升 !M! 点格挡值。"
+  },
+  "Marcille_Muelsyse": {
+    "NAME": "复制：玛露西尔",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 生成时将一张 *爆破魔法 放入消耗堆。",
+    "UPGRADE_DESCRIPTION": " muelsyse:复制对象 。 NL 生成时将一张 *爆破魔法+ 放入消耗堆。"
+  },
+  "TinMan_Muelsyse": {
+    "NAME": "复制：锡人",
+    "DESCRIPTION": " muelsyse:复制对象 。 NL 每回合开始时行动：给予随机敌人 !M! 层 虚弱 。",
+    "UPGRADE_DESCRIPTION": " muelsyse:复制对象 。 NL 每回合开始时行动：给予随机敌人 !M! 层 虚弱 ，再给予随机敌人 !M! 层 易伤 。"
+  },
+
+  "Amiya_Muelsyse": {
+    "NAME": "复制：阿米娅",
+    "DESCRIPTION": " muelsyse:复制对象 。不能升级。 NL 每当 *缪尔赛思 打出其他颜色的牌后行动：对随机敌人造成等同此牌[攻击/格挡]的最大值的伤害。"
+  },
+  "Theresa_Muelsyse": {
+    "NAME": "复制：特蕾西娅",
+    "DESCRIPTION": " muelsyse:复制对象 。不能升级。 NL 每当 *缪尔赛思 打出一张牌，使随机手牌攻击和 格挡 值-1并携带1层随机 muelsyse:花粉 。"
+  },
+  "Isharmla_Muelsyse": {
+    "NAME": "复制：伊莎玛拉",
+    "DESCRIPTION": " muelsyse:复制对象 。不能升级。 NL 拾起时，将一张 *约定|进化 加入牌组。"
+  },
+
+  "FlowerSpread_Muelsyse": {
+    "NAME": "弥散性花粉",
+    "DESCRIPTION": "（打出前）使目标在受到攻击后，所有敌人受到 !M! 点伤害。"
+  },
+  "FlowerParasitism_Muelsyse": {
+    "NAME": "寄生性花粉",
+    "DESCRIPTION": "（打出前）使目标在受到攻击后，伤害来源获得 !M! 点 格挡 。"
+  },
+  "FlowerCure_Muelsyse": {
+    "NAME": "疗愈性花粉",
+    "DESCRIPTION": "（打出前）使你在受到攻击时，获得 !M! 点 格挡 。"
+  },
+  "FlowerWater_Muelsyse": {
+    "NAME": "水培性花粉",
+    "DESCRIPTION": "（打出前）你的 *水 造成的伤害提高 !M! 点。"
+  },
+
+  "Water_Muelsyse": {
+    "NAME": "水",
+    "DESCRIPTION": " muelsyse:枯竭 ， 不能被打出 。 NL 进入手牌外的牌堆时，随机造成 !M! 点伤害并获得1种 muelsyse:栽培效果 。",
+    "UPGRADE_DESCRIPTION": " muelsyse:枯竭 ， 不能被打出 。 NL 进入手牌外的牌堆时，对随机敌人造成 !M! 点伤害。"
+  },
+
+  "RefluxTear_Muelsyse": {
+    "NAME": "回流的泪珠",
+    "DESCRIPTION": " muelsyse:不参与战斗 。 NL 可以在休息处移除特定张 *回流的泪珠 以强化流形，不消耗行动次数。",
+    "EXTENDED_DESCRIPTION": [
+      "移除1张。 NL 基础流形增加2点最大生命。 NL 目前已增加： !M! ",
+      "移除2张。 NL 基础流形增加1点 muelsyse:阈值 。 NL 目前已增加： !M! ",
+      "移除3张。 NL 流形的复制会额外存在1回合。 NL 目前已增加： !M! ",
+      "移除4张。 NL 获得1张未拥有的 muelsyse:复制对象 。",
+      "移除5张。 NL 遭遇特殊事件。 NL 限一次。",
+      "*雪与土的织带 。 NL 失去10点生命，获得一张 *回流的泪珠 。",
+      "返回。"
+    ]
+  },
+
+  "DeGold_Muelsyse": {
+    "NAME": "之金",
+    "DESCRIPTION": "将 *金盏花 在 muelsyse:栽培 !M! 后放入手中。",
+    "UPGRADE_DESCRIPTION": "将 *金盏花+ 在 muelsyse:栽培 !M! 后放入手中。"
+  },
+  "EcologicalProject_Muelsyse": {
+    "NAME": "生态科课题",
+    "DESCRIPTION": "获得 !M! 层 muelsyse:花粉栽培：水培 。 NL 若 muelsyse:失肥 ，额外获得2层。"
+  },
+  "ModeCultivate_Muelsyse": {
+    "NAME": "模式化培育",
+    "DESCRIPTION": "消耗 。 NL 从抽牌和弃牌堆中选择一张 muelsyse:栽培 牌放入手中。 NL 将 !M! 张 *水 放入手中。"
+  },
+  "GoldenWander_Muelsyse": {
+    "NAME": "漫步于黄金之梦",
+    "DESCRIPTION": "muelsyse:协同 造成 !D! 点伤害。 NL *洗牌后若在抽牌堆 ：将此牌置入弃牌堆并提升 !M! 点伤害。"
+  },
+  "LingerFragrance_Muelsyse": {
+    "NAME": "余香",
+    "DESCRIPTION": "你的 *白蔷薇 被 muelsyse:漫步 洗回抽牌堆时，将其对随机敌人打出1次。"
+  },
+  "StarLaurel_Muelsyse": {
+    "NAME": "移星桂冠",
+    "DESCRIPTION": "重新分配所有手牌携带的 muelsyse:栽培效果 ，仅分配给攻击或技能牌。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 重新分配所有手牌携带的 muelsyse:栽培效果 ，仅分配给攻击或技能牌。"
+  },
+  "SourceTogether_Muelsyse": {
+    "NAME": "溯途同归",
+    "DESCRIPTION": "muelsyse:润化 !M! X。"
+  },
+  "FallenSeasons_Muelsyse": {
+    "NAME": "落叶四季",
+    "DESCRIPTION": "消耗 。 NL 将 *银杏 在 muelsyse:栽培 !M! 后洗入抽牌堆。 NL 你在抽到或消耗这张 *银杏 前不会受到伤害。",
+    "UPGRADE_DESCRIPTION": "消耗 。 NL 将 *银杏+ 在 muelsyse:栽培 !M! 后洗入抽牌堆。 NL 你在抽到或消耗这张 *银杏 前不会受到伤害。"
+  },
+  "Calendula_Muelsyse": {
+    "NAME": "金盏花",
+    "DESCRIPTION": "muelsyse:枯竭 。 NL 格挡值强化： NL 抽 !B! 张牌。 NL 若抽到的牌数多于4张，获得 [E] 并 消耗 。"
+  },
+  "Ginkgo_Muelsyse": {
+    "NAME": "银杏",
+    "DESCRIPTION": "不能被打出 。 NL 攻击值强化：抽到时，洗 !D! 张 *叶 到抽牌堆。 NL 格挡值强化：进入弃牌堆时，抽 !B! 张牌。"
+  },
+  "Leaf_Muelsyse": {
+    "NAME": "叶",
+    "DESCRIPTION": "不能被打出 。 NL 抽到时 消耗 ，对所有敌人造成 !M! 点伤害，并随机给予1层 muelsyse:花粉 。"
+  }
+}

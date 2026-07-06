@@ -1,0 +1,330 @@
+{
+  "muelsyse:ManifoldPower": {
+    "NAME": "流形-阈值",
+    "DESCRIPTIONS": [
+      "可以为 #y缪尔赛思 承受伤害或同步获得 格挡 。单次不超过 #b",
+      " 点。",
+      "失去生命时，所有 #b流形 会为你分担总计 #b",
+      " 点。"
+    ]
+  },
+  "muelsyse:DisappearPower": {
+    "NAME": "消失",
+    "DESCRIPTIONS":[
+      "会在 #b",
+      " 个回合后消失。"
+    ]
+  },
+  "muelsyse:RespawnPower": {
+    "NAME": "再现",
+    "DESCRIPTIONS": [
+      "死亡后会在 #b",
+      " 个回合后出现，此时会以 格挡 的形式展现。"
+    ]
+  },
+  "muelsyse:CleanWaterPower": {
+    "NAME": "净水",
+    "DESCRIPTIONS": [
+      "攻击后 #y汲取 目标 #b",
+      " 点力量。下一回合开始时，释放 #b",
+      " 点力量。"
+    ]
+  },
+  "muelsyse:SourcePower": {
+    "NAME": "溯源",
+    "DESCRIPTIONS": [
+      " #y阈值 发挥 #b",
+      " 倍作用。"
+    ]
+  },
+  "muelsyse:NoDamagePower": {
+    "NAME": "无法伤害",
+    "DESCRIPTIONS": [
+      "你无法用卡牌造成伤害 ，持续 #b",
+      " 个回合。"
+    ]
+  },
+  "muelsyse:RainWorldPower": {
+    "NAME": "雨世界",
+    "DESCRIPTIONS": [
+      "非 #y消耗 牌打出后，随机进入抽牌堆、手牌或弃牌堆。"
+    ]
+  },
+  "muelsyse:SoilSpreadPower": {
+    "NAME": "土壤改造：风花",
+    "DESCRIPTIONS": [
+      " #y栽培 时，使目标牌额外携带 #b",
+      " 个 #y花粉 。"
+    ]
+  },
+  "muelsyse:SoilExhaustPower": {
+    "NAME": "土壤改造：净化",
+    "DESCRIPTIONS": [
+      " #y栽培 时，状态牌和诅咒牌不计入上限且会消耗。触发 #y枯竭 时，抽 #b",
+      " 张牌。"
+    ]
+  },
+  "muelsyse:SoilBackPower": {
+    "NAME": "土壤改造：回肥",
+    "DESCRIPTIONS": [
+      " #y栽培 时，主原料的牌不再失肥，且耗能减 #b",
+      " 直至回合结束。"
+    ]
+  },
+  "muelsyse:RipplePower": {
+    "NAME": "生命涟漪",
+    "DESCRIPTIONS": [
+      "在你回合结束时每有一个 #y流形 ，你与其各获得 #b",
+      " 点格挡。"
+    ]
+  },
+  "muelsyse:SourceOfLifePower": {
+    "NAME": "生命之源",
+    "DESCRIPTIONS": [
+      "回合开始时，将 #b",
+      " 张 #y水+ 放入手中。"
+    ]
+  },
+  "muelsyse:ItIsPower": {
+    "NAME": "祂在",
+    "DESCRIPTIONS": [
+      "你受到来自攻击的伤害降低 #b80％ ，持续 #b",
+      " 回合。"
+    ]
+  },
+  "muelsyse:RevivePower": {
+    "NAME": "苏生",
+    "DESCRIPTIONS": [
+      "当一张牌进入抽牌堆后，获得 #b",
+      " 点格挡。"
+    ]
+  },
+  "muelsyse:UncertainFormPower": {
+    "NAME": "不定形态",
+    "DESCRIPTIONS": [
+      "每回合开始时 #y漫步 #b",
+      " 。将其中未被选择的牌消耗并抽等量牌。"
+    ]
+  },
+  "muelsyse:DustPower": {
+    "NAME": "遗尘",
+    "DESCRIPTIONS": [
+      "每当你 #y漫步 时，添加 #b",
+      " 张随机牌到检索列表中，使其打出前耗能为0。"
+    ]
+  },
+  "muelsyse:RefluxTearPower": {
+    "NAME": "回流",
+    "DESCRIPTIONS": [
+      "如果在消失前被 #y击杀 ，向你的卡组添加一张 #y回流的泪珠 ，可用以在篝火强化流形。"
+    ]
+  },
+  "muelsyse:TreeSourcePower": {
+    "NAME": "树源",
+    "DESCRIPTIONS": [
+      "你每打出一张牌，",
+      "回复 #b",
+      " 点生命。每触发一次，回复的生命值加 #b1 。在你的回合开始时效果减半（不会低于 #b",
+      " ）"
+    ]
+  },
+  "muelsyse:MeltPower":{
+    "NAME": "雪融",
+    "DESCRIPTIONS": [
+     "再损失 #b",
+      " 点生命，获得 #b2 点力量并向你手中放入 #y失温 。触发后重置效果。"
+    ]
+  },
+  "muelsyse:RootagePower": {
+    "NAME": "生根",
+    "DESCRIPTIONS": [
+      "受到来自 #y流形 的伤害降低 #b50 ％。受到伤害后，本回合提升1点攻击（已提升 #b",
+      " 点）。"
+    ]
+  },
+
+  "muelsyse:FlowerSpreadPower": {
+    "NAME": "弥散性花粉",
+    "DESCRIPTIONS": [
+      "受到 #y攻击 后，所有敌人受到 #b",
+      " 点伤害。每回合层数减半。"
+    ]
+  },
+  "muelsyse:FlowerParasitismPower": {
+    "NAME": "寄生性花粉",
+    "DESCRIPTIONS": [
+      "受到 #y攻击 后，伤害来源获得 #b",
+      " 点格挡。每回合层数减半。"
+    ]
+  },
+  "muelsyse:FlowerCurePower": {
+    "NAME": "疗愈性花粉",
+    "DESCRIPTIONS": [
+      "受到 #y攻击 时，获得 #b",
+      " 点格挡。每回合层数减半。"
+    ]
+  },
+  "muelsyse:FlowerWaterPower": {
+    "NAME": "水培性花粉",
+    "DESCRIPTIONS": [
+      "由 #y水 或 #y叶 造成的伤害提高 #b",
+      " 点。每回合层数减半。"
+    ]
+  },
+
+  "muelsyse:IfritPower": {
+    "NAME": "复制：伊芙利特",
+    "DESCRIPTIONS": [
+      "可以攻击所有敌人。"
+    ]
+  },
+  "muelsyse:AstgennePower": {
+    "NAME": "复制：星源",
+    "DESCRIPTIONS": [
+      "行动后使生命值最低的敌人受到 #b",
+      " 点伤害。"
+    ]
+  },
+  "muelsyse:SariaPower": {
+    "NAME": "复制：塞雷娅",
+    "DESCRIPTIONS": [
+      "回合开始时行动一次，回复所有流形各 #b",
+      " 点生命。"
+    ]
+  },
+  "muelsyse:MechanistPower": {
+    "NAME": "复制：Mechanist",
+    "DESCRIPTIONS": [
+      "回合结束时行动一次，将所有格挡",
+      "转移给你。",
+      "以 #b150 ％"
+    ]
+  },
+  "muelsyse:SilencePower": {
+    "NAME": "复制：赫默",
+    "DESCRIPTIONS": [
+      "回合开始时行动一次，将 #y支援无人机 放入手中。",
+      "回合开始时行动一次，将 #y支援无人机+ 放入手中。"
+    ]
+  },
+  "muelsyse:PtilopsisPower": {
+    "NAME": "复制：白面鸮",
+    "DESCRIPTIONS": [
+      "行动后给予你 #b",
+      " 点格挡。"
+    ]
+  },
+  "muelsyse:DorothyPower": {
+    "NAME": "复制：多萝西",
+    "DESCRIPTIONS": [
+      " #y漫步 X后行动一次，对随机敌人造成2X点伤害。",
+      " #y漫步 或 #y栽培 X后行动一次，对随机敌人造成2X点伤害。"
+    ]
+  },
+  "muelsyse:KafkaPower": {
+    "NAME": "复制：卡夫卡",
+    "DESCRIPTIONS": [
+      "回合结束时行动一次，对随机敌人造成 #b",
+      " 点伤害，并获得 #b1 点 #y力量 。"
+    ]
+  },
+  "muelsyse:TyphonPower": {
+    "NAME": "复制：提丰",
+    "DESCRIPTIONS": [
+      "每回合首次 #y攻击 伤害提升至 #b200 ％。",
+      "每回合首次 #y攻击 伤害提升至 #b250 ％。"
+    ]
+  },
+  "muelsyse:GreyyPower": {
+    "NAME": "复制：格雷伊",
+    "DESCRIPTIONS": [
+      "每回合首次 #y攻击 行动 #b2 次。"
+    ]
+  },
+  "muelsyse:SaileachPower": {
+    "NAME": "复制：琴柳",
+    "DESCRIPTIONS": [
+      "回合开始时行动一次， #y润化 #b",
+      " 。"
+    ]
+  },
+  "muelsyse:ReedPower": {
+    "NAME": "复制：苇草",
+    "DESCRIPTIONS": [
+      "每次攻击后 #y润化 #b",
+      " 。",
+      "每次行动后 #y润化 #b"
+    ]
+  },
+  "muelsyse:AstesiaPower": {
+    "NAME": "复制：星极",
+    "DESCRIPTIONS": [
+      "每当你打出能力牌后行动一次，给予你 #b",
+      " 点 #y金属化 。"
+    ]
+  },
+  "muelsyse:TulipPower": {
+    "NAME": "复制：郁金香",
+    "DESCRIPTIONS": [
+      "每回合限 #b",
+      " 次，当你召唤 #y流形 后行动，使你获得 [E] 。"
+    ]
+  },
+  "muelsyse:PepePower": {
+    "NAME": "复制：佩佩",
+    "DESCRIPTIONS": [
+      "行动后给予你 #b",
+      " 点 #y活力 。"
+    ]
+  },
+  "muelsyse:NarantuyaPower": {
+    "NAME": "复制：娜仁图亚",
+    "DESCRIPTIONS": [
+      "使 #y栽培 目标牌提升 #b",
+      " 点攻击值。"
+    ]
+  },
+  "muelsyse:SilencePPower": {
+    "NAME": "复制：淬羽赫默",
+    "DESCRIPTIONS": [
+      "使 #y栽培 目标牌提升 #b",
+      " 点格挡值。"
+    ]
+  },
+  "muelsyse:TinManPower": {
+    "NAME": "复制：锡人",
+    "DESCRIPTIONS": [
+      "每回合开始时行动一次，给予随机敌人 #b",
+      " 层虚弱。",
+      "再给予随机敌人 #b",
+      " 层易伤。"
+    ]
+  },
+
+  "muelsyse:AmiyaPower": {
+    "NAME": "复制：阿米娅",
+    "DESCRIPTIONS": [
+      "每当你打出 #g非缪尔赛思颜色 的牌后行动一次，对随机敌人造成等同此牌 #y[攻击/格挡] 的 #b最大值 的伤害。"
+    ]
+  },
+  "muelsyse:TheresaPower": {
+    "NAME": "复制：特蕾西娅",
+    "DESCRIPTIONS": [
+      "每当你打出一张牌，使随机手牌攻击和格挡值-1并携带 #b",
+      " 层随机 #y花粉 。"
+    ]
+  },
+
+  "muelsyse:LingerFragrancePower": {
+    "NAME": "余香",
+    "DESCRIPTIONS": [
+      "你的 #y白蔷薇 被 #y漫步 洗回抽牌堆时，将其对随机敌人打出1次。"
+    ]
+  },
+  "muelsyse:GinkgoPower": {
+    "NAME": "银杏的季节",
+    "DESCRIPTIONS": [
+      "你在抽到或消耗特定 #y银杏 前不会受到伤害。"
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "eyjafjalla:MonsterNames": {
+    "TEXT": [
+      "弱敌-一个淘气包",
+      "强敌-大小淘气包",
+      "弱敌-两个操盘手",
+      "强敌-大淘气包和操盘手",
+      "精英-健美操盘手和漫天飞空员",
+      "BOSS-羊之主",
+      "精英-四只超新星术士",
+      "精英-大哥大个子"
+    ]
+  },
+  "eyjafjalla:CloudEnergy": {
+    "TEXT": [
+      "云量",
+      "你当前的云量，每回合 #g结束 时回复 #b1 点。打出 #y云层 的牌需要云量。",
+      "我没有足够的云量来打出云层的牌！",
+      "云层已经满了QAQ"
+    ]
+  },
+  "eyjafjalla:CloudOperation": {
+    "TEXT": [
+      "放入云层",
+      "耗能变为0",
+      "选择",
+      "张弃牌放入云层",
+      "选择任意张弃牌放入云层",
+      "选择1种给予敌人，你获得剩余能力效果",
+      "选择1张从消耗堆移除并打出一次",
+      "转化为对应的云",
+      "标记为[此生挚爱]"
+    ]
+  },
+  "eyjafjalla:Project": {
+    "TEXT": [
+      "[投影]",
+      "eyjafjalla:投影"
+    ]
+  },
+  "eyjafjalla:SpecialDescription": {
+    "TEXT": [
+      "eyjafjalla:炎息",
+      "eyjafjalla:炎息标记",
+      "eyjafjalla:心音",
+      "eyjafjalla:此生挚爱"
+    ]
+  },
+  "eyjafjalla:Dolly": {
+    "TEXT": [
+      "多利牌"
+    ]
+  },
+  "eyjafjalla:Melody": {
+    "TEXT": [
+      "打出 #y任意牌 后，",
+      "打出 #r攻击牌 后，",
+      "打出 #g技能牌 后，",
+      "打出 #b非攻击或技能牌 后，",
+      "完成整段旋律后，"
+    ]
+  },
+  "eyjafjalla:TheSiesta": {
+    "TEXT": [
+      "梦中的汐斯塔",
+      "旅梦钥匙",
+      "拥有旅梦钥匙且 #y完成终幕 后，会进入特殊的额外区域。",
+      "羊之主"
+    ]
+  },
+  "eyjafjalla:Config": {
+    "TEXT": [
+      "允许所有角色挑战羊之主（特殊结局）",
+      "模组设置"
+    ]
+  },
+  "eyjafjalla:CampfireOperation": {
+    "TEXT": [
+      "标记为[炎息]",
+      "炎息化",
+      "将一张牌永久标记为[炎息]",
+      "目前无可炎息化的卡牌"
+    ]
+  },
+  "eyjafjalla:MelodyWord": {
+    "TEXT": [
+      "Do\uD83C\uDFB6",
+      "Re\uD83C\uDFB6",
+      "Mi\uD83C\uDFB6",
+      "Fa\uD83C\uDFB6",
+      "Sol\uD83C\uDFB6",
+      "La\uD83C\uDFB6",
+      "Ti\uD83C\uDFB6"
+    ]
+  },
+  "eyjafjalla:SkinSelect": {
+    "TEXT": [
+      "选择皮肤",
+      "纯烬-默认",
+      "远行前的野餐",
+      "默认",
+      "夏卉 FA018",
+      "棉绒小魔女"
+    ]
+  }
+}
