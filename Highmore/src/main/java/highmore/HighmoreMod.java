@@ -7,6 +7,7 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.RenderSubscriber;
 import basemod.interfaces.OnStartBattleSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.badlogic.gdx.graphics.Color;
@@ -72,7 +73,8 @@ public class HighmoreMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         OnStartBattleSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        RenderSubscriber {
 
     public static final String MOD_ID = "highmore";
     public static final String MOD_NAME = "海沫";
@@ -109,6 +111,11 @@ public class HighmoreMod implements
     public static final String ENERGY_ORB_1024    = imgPath("1024/energy.png");
     public static final String CARD_SMALL_ORB     = imgPath("char/small_orb.png");
 
+    @Override
+    public void receiveRender(com.badlogic.gdx.graphics.g2d.SpriteBatch sb) {
+        highmore.helpers.BridgeWatchdog.render(sb);
+    }
+
     public static String makeID(String id) {
         return MOD_ID + ":" + id;
     }
@@ -135,7 +142,7 @@ public class HighmoreMod implements
 
                                 @Override
     public void receivePostInitialize() {
-        System.out.println("[highmore] 0.4.4-nymphfix loaded");
+        System.out.println("[highmore] 0.4.5-restraints loaded");
         SkinSelectScreen.Inst = new SkinSelectScreen();
         BaseMod.addEvent(HighmoreBeachedWhisper.ID, HighmoreBeachedWhisper.class, Exordium.ID);
         BaseMod.addEvent(HighmoreSaltPond.ID, HighmoreSaltPond.class, TheCity.ID);

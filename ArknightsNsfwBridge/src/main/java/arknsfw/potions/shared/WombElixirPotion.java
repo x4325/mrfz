@@ -26,7 +26,7 @@ public class WombElixirPotion extends AbstractArkPotion {
     public static final String ID = ArkNsfwMod.makeID("WombElixirPotion");
 
     public WombElixirPotion() {
-        super(ID, PotionRarity.RARE, PotionSize.SPHERE, PotionColor.BLOOD);
+        super(ID, PotionRarity.RARE, PotionSize.M, PotionColor.POISON);
     }
 
     @Override

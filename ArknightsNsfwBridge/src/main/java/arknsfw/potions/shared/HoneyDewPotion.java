@@ -26,7 +26,7 @@ public class HoneyDewPotion extends AbstractArkPotion {
     public static final String ID = ArkNsfwMod.makeID("HoneyDewPotion");
 
     public HoneyDewPotion() {
-        super(ID, PotionRarity.COMMON, PotionSize.M, PotionColor.FRUIT);
+        super(ID, PotionRarity.COMMON, PotionSize.M, PotionColor.ANCIENT);
     }
 
     @Override

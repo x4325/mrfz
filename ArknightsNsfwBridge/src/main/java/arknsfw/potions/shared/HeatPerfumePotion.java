@@ -26,7 +26,7 @@ public class HeatPerfumePotion extends AbstractArkPotion {
     public static final String ID = ArkNsfwMod.makeID("HeatPerfumePotion");
 
     public HeatPerfumePotion() {
-        super(ID, PotionRarity.RARE, PotionSize.BOTTLE, PotionColor.FIRE);
+        super(ID, PotionRarity.RARE, PotionSize.M, PotionColor.FIRE);
     }
 
     @Override

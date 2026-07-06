@@ -26,7 +26,7 @@ public class SuppressantPotion extends AbstractArkPotion {
     public static final String ID = ArkNsfwMod.makeID("SuppressantPotion");
 
     public SuppressantPotion() {
-        super(ID, PotionRarity.COMMON, PotionSize.T, PotionColor.WHITE);
+        super(ID, PotionRarity.COMMON, PotionSize.S, PotionColor.BLUE);
     }
 
     @Override

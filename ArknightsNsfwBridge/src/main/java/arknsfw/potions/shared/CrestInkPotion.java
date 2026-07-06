@@ -26,7 +26,7 @@ public class CrestInkPotion extends AbstractArkPotion {
     public static final String ID = ArkNsfwMod.makeID("CrestInkPotion");
 
     public CrestInkPotion() {
-        super(ID, PotionRarity.RARE, PotionSize.GHOST, PotionColor.BLOOD);
+        super(ID, PotionRarity.RARE, PotionSize.S, PotionColor.POISON);
     }
 
     @Override

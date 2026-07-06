@@ -26,7 +26,7 @@ public class CorruptionEssencePotion extends AbstractArkPotion {
     public static final String ID = ArkNsfwMod.makeID("CorruptionEssencePotion");
 
     public CorruptionEssencePotion() {
-        super(ID, PotionRarity.RARE, PotionSize.ANVIL, PotionColor.POISON);
+        super(ID, PotionRarity.RARE, PotionSize.M, PotionColor.POISON);
     }
 
     @Override

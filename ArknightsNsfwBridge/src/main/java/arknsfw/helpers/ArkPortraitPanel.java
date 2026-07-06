@@ -53,11 +53,26 @@ public final class ArkPortraitPanel {
         return tex;
     }
 
+    private static void drawOverlay(SpriteBatch sb, String key, String item,
+                                    float x, float y, float w, float h, float alpha) {
+        Texture t = load("overlays/" + key + "_" + item);
+        if (t != null) {
+            sb.setColor(1.0F, 1.0F, 1.0F, alpha);
+            sb.draw(t, x, y, w, h);
+            sb.setColor(1.0F, 1.0F, 1.0F, 0.95F);
+        }
+    }
+
     /** 淫纹浮现条件：怀孕，或本角色专属印记已被刻印锁定。 */
     private static boolean crestVisible(String key) {
         if (NsfwRunStats.pregnant) {
             return true;
         }
+        return lockVisible(key);
+    }
+
+    /** 专属印记是否已刻印锁定。 */
+    private static boolean lockVisible(String key) {
         if ("eyja".equals(key)) {
             return ArkDebuffHelper.isLocked(arknsfw.powers.eyja.VolcanicFlushPower.POWER_ID)
                     || ArkDebuffHelper.isLocked(arknsfw.powers.eyja.AshShamePower.POWER_ID)
@@ -122,7 +137,7 @@ public final class ArkPortraitPanel {
     }
 
     private static int tier() {
-        int threshold = Math.max(1, NsfwRunStats.getClimaxThreshold());
+        int threshold = Math.max(1, LieseCompat.climaxThreshold());
         int pct = NsfwRunStats.excitement * 100 / threshold;
         if (pct >= 85) return 3;
         if (pct >= 60) return 2;
@@ -203,6 +218,27 @@ public final class ArkPortraitPanel {
         sb.setColor(1.0F, 1.0F, 1.0F, 0.95F);
         sb.draw(tex, x + swayX, y + bob, bw, bh);
 
+        // ---- 拘束差分层（项圈/绳缚/口枷/眼罩/爱心眼），与立绘同画布对齐 ----
+        boolean fall = ArkRunProgress.isRoute(ArkRunProgress.Route.FALL);
+        boolean locked = lockVisible(key);
+        boolean lewd = AbstractDungeon.player.hasPower(arknsfw.powers.LewdTrancePower.POWER_ID);
+        boolean blind = fall && tier >= 3;
+        if (locked) {
+            drawOverlay(sb, key, "collar", x + swayX, y + bob, bw, bh, 1.0F);
+        }
+        if (fall || ArkExposureHelper.stage() >= 1) {
+            drawOverlay(sb, key, "rope", x + swayX, y + bob, bw, bh, 0.96F);
+        }
+        if (fall && tier >= 2 && !blind) {
+            drawOverlay(sb, key, "gag", x + swayX, y + bob, bw, bh, 1.0F);
+        }
+        if (blind) {
+            drawOverlay(sb, key, "blindfold", x + swayX, y + bob, bw, bh, 1.0F);
+        } else if (tier >= 3 || lewd) {
+            float pulse = 0.75F + 0.25F * (0.5F + 0.5F * MathUtils.sin(time * 6.5F));
+            drawOverlay(sb, key, "hearteyes", x + swayX, y + bob, bw, bh, pulse);
+        }
+
         // 淫纹：下腹位置搏动发光，兴奋越高越亮越快，孕肚阶段随之放大
         if (crestVisible(key)) {
             Texture crest = loadCrest(key);
@@ -222,7 +258,7 @@ public final class ArkPortraitPanel {
         renderHearts(sb, dt, tier, x, y, bw, bh);
 
         sb.setColor(Color.WHITE);
-        int threshold = Math.max(1, NsfwRunStats.getClimaxThreshold());
+        int threshold = Math.max(1, LieseCompat.climaxThreshold());
         String info = ArkExposureHelper.stageName() + "    兴奋 " + NsfwRunStats.excitement + "/" + threshold;
         if (NsfwRunStats.pregnant) {
             info = "孕·第" + pregStage() + "期    " + info;

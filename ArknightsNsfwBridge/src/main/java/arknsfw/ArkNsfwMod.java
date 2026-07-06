@@ -126,7 +126,7 @@ public class ArkNsfwMod implements
 
     @Override
     public void receivePostInitialize() {
-        System.out.println("[arknsfw] 0.4.4-nymphfix loaded (portrait+postbattle render active)");
+        System.out.println("[arknsfw] 0.4.5-restraints loaded (portrait+postbattle render active)");
         ArkCharacterSetup.registerCharacters();
         registerEvents();
         registerPotions();
@@ -517,6 +517,7 @@ public class ArkNsfwMod implements
     @Override
     public void receiveRender(com.badlogic.gdx.graphics.g2d.SpriteBatch sb) {
         arknsfw.helpers.ArkPortraitPanel.render(sb);
+        arknsfw.helpers.ArkBattleHeartEyes.render(sb);
         arknsfw.helpers.ArkPostBattleChoice.render(sb);
     }
 

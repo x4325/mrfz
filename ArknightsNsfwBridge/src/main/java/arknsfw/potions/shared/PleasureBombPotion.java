@@ -26,7 +26,7 @@ public class PleasureBombPotion extends AbstractArkPotion {
     public static final String ID = ArkNsfwMod.makeID("PleasureBombPotion");
 
     public PleasureBombPotion() {
-        super(ID, PotionRarity.RARE, PotionSize.SPHERE, PotionColor.EXPLOSIVE);
+        super(ID, PotionRarity.RARE, PotionSize.M, PotionColor.FIRE);
     }
 
     @Override

@@ -7,6 +7,7 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.RenderSubscriber;
 import basemod.interfaces.OnStartBattleSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.badlogic.gdx.graphics.Color;
@@ -73,7 +74,8 @@ public class HarukaMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         OnStartBattleSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        RenderSubscriber {
 
     public static final String MOD_ID = "haruka";
     public static final String MOD_NAME = "遥";
@@ -110,6 +112,11 @@ public class HarukaMod implements
     public static final String ENERGY_ORB_1024    = imgPath("1024/energy.png");
     public static final String CARD_SMALL_ORB     = imgPath("char/small_orb.png");
 
+    @Override
+    public void receiveRender(com.badlogic.gdx.graphics.g2d.SpriteBatch sb) {
+        haruka.helpers.BridgeWatchdog.render(sb);
+    }
+
     public static String makeID(String id) {
         return MOD_ID + ":" + id;
     }
@@ -136,7 +143,7 @@ public class HarukaMod implements
 
                                 @Override
     public void receivePostInitialize() {
-        System.out.println("[haruka] 0.4.4-nymphfix loaded");
+        System.out.println("[haruka] 0.4.5-restraints loaded");
         SkinSelectScreen.Inst = new SkinSelectScreen();
         BaseMod.addEvent(HarukaFestivalGate.ID, HarukaFestivalGate.class, Exordium.ID);
         BaseMod.addEvent(HarukaFireworkFault.ID, HarukaFireworkFault.class, TheCity.ID);

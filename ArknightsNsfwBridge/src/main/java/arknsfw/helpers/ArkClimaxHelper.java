@@ -29,7 +29,7 @@ public final class ArkClimaxHelper {
         if (room == null || room.phase != AbstractRoom.RoomPhase.COMBAT) {
             return;
         }
-        int threshold = NsfwRunStats.getClimaxThreshold();
+        int threshold = LieseCompat.climaxThreshold();
         if (threshold <= 0 || NsfwRunStats.excitement < threshold) {
             return;
         }

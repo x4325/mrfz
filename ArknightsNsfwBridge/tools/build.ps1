@@ -7,9 +7,6 @@ $MODS = "$STEAM\common\SlayTheSpire\mods"
 $WS = "$STEAM\workshop\content\646570"
 
 python "$PROJ\tools\generate_placeholders.py"
-python "$PROJ\tools\import_power_icons.py"
-python "$PROJ\tools\import_ark_relic_icons.py"
-python "$PROJ\tools\import_ark_potion_icons.py"
 python "$PROJ\tools\import_ark_events.py"
 python "$PROJ\tools\import_ark_cards.py"
 
