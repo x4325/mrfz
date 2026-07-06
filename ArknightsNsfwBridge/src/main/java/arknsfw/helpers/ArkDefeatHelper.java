@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.vfx.combat.TextAboveCreatureEffect;
+import com.megacrit.cardcrawl.vfx.TextAboveCreatureEffect;
 import liesecore.helpers.NsfwRunStats;
 
 /**

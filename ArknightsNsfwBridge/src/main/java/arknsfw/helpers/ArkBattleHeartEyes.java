@@ -6,7 +6,7 @@ import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.Bone;
 import com.esotericsoftware.spine.Skeleton;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.creatures.AbstractCreature;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import liesecore.helpers.NsfwRunStats;

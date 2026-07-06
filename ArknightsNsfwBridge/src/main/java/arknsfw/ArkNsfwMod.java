@@ -9,7 +9,6 @@ import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostUpdateSubscriber;
 import basemod.interfaces.RenderSubscriber;
 import basemod.interfaces.OnPlayerTurnStartSubscriber;
-import basemod.interfaces.OnPlayerLoseHpSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Color;
@@ -79,7 +78,6 @@ public class ArkNsfwMod implements
         PostUpdateSubscriber,
         RenderSubscriber,
         OnPlayerTurnStartSubscriber,
-        OnPlayerLoseHpSubscriber,
         PostInitializeSubscriber {
 
     public static final String modID = "arknsfw";
@@ -126,7 +124,7 @@ public class ArkNsfwMod implements
 
     @Override
     public void receivePostInitialize() {
-        System.out.println("[arknsfw] 0.4.8-clean loaded (portrait+postbattle render active)");
+        System.out.println("[arknsfw] 0.4.9-bridge loaded (portrait+postbattle render active)");
         ArkCharacterSetup.registerCharacters();
         registerEvents();
         registerPotions();
@@ -608,11 +606,5 @@ public class ArkNsfwMod implements
     @Override
     public void receiveOnPlayerTurnStart() {
         arknsfw.helpers.ArkClimaxHelper.onPlayerTurnStart();
-    }
-
-    @Override
-    public int receiveOnPlayerLoseHp(int damageAmount) {
-        arknsfw.helpers.ArkExposureHelper.onPlayerLoseHp(damageAmount);
-        return damageAmount;
     }
 }

@@ -18,4 +18,23 @@ public class ArkDefeatPatch {
             }
         }
     }
+
+    /** 掉血累积（衣装破损进度）：替代 BaseMod 不存在的 OnPlayerLoseHpSubscriber。 */
+    @SpirePatch(clz = AbstractPlayer.class, method = "damage", paramtypez = {DamageInfo.class})
+    public static class TrackHpLoss {
+        @com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch
+        public static void Prefix(AbstractPlayer __instance, DamageInfo info) {
+            lastHp = __instance.currentHealth;
+        }
+
+        @SpirePostfixPatch
+        public static void Postfix(AbstractPlayer __instance, DamageInfo info) {
+            int lost = lastHp - __instance.currentHealth;
+            if (lost > 0) {
+                arknsfw.helpers.ArkExposureHelper.onPlayerLoseHp(lost);
+            }
+        }
+
+        private static int lastHp = 0;
+    }
 }
