@@ -26,6 +26,7 @@ import java.util.Iterator;
 public final class ArkPortraitPanel {
 
     private static final HashMap<String, Texture> CACHE = new HashMap<String, Texture>();
+    private static final HashMap<String, Texture> CREST_CACHE = new HashMap<String, Texture>();
     private static Texture heartTex;
     private static final ArrayList<float[]> HEARTS = new ArrayList<float[]>();
     private static float time = 0.0F;
@@ -41,6 +42,38 @@ public final class ArkPortraitPanel {
         if (ArkCharacterSetup.isEyjaRun()) return "eyja";
         if (ArkCharacterSetup.isMuelsyseRun()) return "muel";
         return ArkCharDebuffs.currentCharKey();
+    }
+
+    private static Texture loadCrest(String key) {
+        if (CREST_CACHE.containsKey(key)) {
+            return CREST_CACHE.get(key);
+        }
+        Texture tex = TextureHelper.getTexture(ArkNsfwMod.makeImagePath("crests/" + key + ".png"));
+        CREST_CACHE.put(key, tex);
+        return tex;
+    }
+
+    /** 淫纹浮现条件：怀孕，或本角色专属印记已被刻印锁定。 */
+    private static boolean crestVisible(String key) {
+        if (NsfwRunStats.pregnant) {
+            return true;
+        }
+        if ("eyja".equals(key)) {
+            return ArkDebuffHelper.isLocked(arknsfw.powers.eyja.VolcanicFlushPower.POWER_ID)
+                    || ArkDebuffHelper.isLocked(arknsfw.powers.eyja.AshShamePower.POWER_ID)
+                    || ArkDebuffHelper.isLocked(arknsfw.powers.eyja.CoreStrainPower.POWER_ID);
+        }
+        if ("muel".equals(key)) {
+            return ArkDebuffHelper.isLocked(arknsfw.powers.muel.BubbleGagPower.POWER_ID)
+                    || ArkDebuffHelper.isLocked(arknsfw.powers.muel.LeakPower.POWER_ID)
+                    || ArkDebuffHelper.isLocked(arknsfw.powers.muel.CloneEchoPower.POWER_ID);
+        }
+        if ("highmore".equals(key)) return ArkDebuffHelper.isLocked(arknsfw.powers.highmore.TideBrandPower.POWER_ID);
+        if ("scene".equals(key)) return ArkDebuffHelper.isLocked(arknsfw.powers.scene.ExposedLensPower.POWER_ID);
+        if ("archetto".equals(key)) return ArkDebuffHelper.isLocked(arknsfw.powers.archetto.TremblingGripPower.POWER_ID);
+        if ("haruka".equals(key)) return ArkDebuffHelper.isLocked(arknsfw.powers.haruka.LingeringHeatPower.POWER_ID);
+        if ("nymph".equals(key)) return ArkDebuffHelper.isLocked(arknsfw.powers.nymph.HeartGnawPower.POWER_ID);
+        return false;
     }
 
     private static Texture load(String name) {
@@ -155,6 +188,22 @@ public final class ArkPortraitPanel {
 
         sb.setColor(1.0F, 1.0F, 1.0F, 0.95F);
         sb.draw(tex, x + swayX, y + bob, bw, bh);
+
+        // 淫纹：下腹位置搏动发光，兴奋越高越亮越快，孕肚阶段随之放大
+        if (crestVisible(key)) {
+            Texture crest = loadCrest(key);
+            if (crest != null) {
+                int stage = pregStage();
+                float cw = bw * (0.40F + 0.05F * stage);
+                float cxp = x + swayX + bw * 0.5F;
+                float cyp = y + bob + bh * (1.0F - 0.60F);
+                float speed = 1.6F + tier * 1.1F;
+                float glow = 0.42F + 0.10F * tier + 0.22F * (0.5F + 0.5F * MathUtils.sin(time * speed * 2.2F));
+                float cs = cw * (1.0F + 0.035F * MathUtils.sin(time * speed * 2.2F));
+                sb.setColor(1.0F, 1.0F, 1.0F, Math.min(1.0F, glow));
+                sb.draw(crest, cxp - cs / 2.0F, cyp - cs / 2.0F, cs, cs);
+            }
+        }
 
         renderHearts(sb, dt, tier, x, y, bw, bh);
 
