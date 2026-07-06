@@ -41,8 +41,31 @@ public final class ArkCharacterSetup {
     private static final Map<String, EventMeta> EVENT_META = new HashMap<>();
     private static final Set<String> EYJA_EVENTS = new HashSet<>();
     private static final Set<String> MUEL_EVENTS = new HashSet<>();
+    private static final Set<String> FIVE_CHAR_EVENTS = new HashSet<>();
+
+    private static void regFive(String character, String prefix) {
+        String[][] routes = {
+                {"Normal", "NORMAL"}, {"Shame", "SHAME"}, {"Fall", "FALL"}
+        };
+        for (String[] r : routes) {
+            for (int act = 1; act <= 3; act++) {
+                String id = "arknsfw:" + prefix + r[0] + "Act" + act;
+                EVENT_META.put(id, new EventMeta(character, ArkRunProgress.Route.valueOf(r[1]), act));
+                FIVE_CHAR_EVENTS.add(id);
+            }
+        }
+        String sealId = "arknsfw:" + prefix + "DebuffSeal";
+        EVENT_META.put(sealId, new EventMeta(character, null, 0));
+        FIVE_CHAR_EVENTS.add(sealId);
+    }
 
     static {
+        regFive("highmore", "Highmore");
+        regFive("scene", "Scene");
+        regFive("archetto", "Archetto");
+        regFive("haruka", "Haruka");
+        regFive("nymph", "Nymph");
+
         reg("arknsfw:EyjaNormalVolcanoRest", "eyja", ArkRunProgress.Route.NORMAL, 1);
         reg("arknsfw:EyjaNormalFieldCamp", "eyja", ArkRunProgress.Route.NORMAL, 2);
         reg("arknsfw:EyjaNormalQuietEmbrace", "eyja", ArkRunProgress.Route.NORMAL, 3);
@@ -97,6 +120,9 @@ public final class ArkCharacterSetup {
             NsfwEventPool.registerEvent(id);
         }
         for (String id : MUEL_EVENTS) {
+            NsfwEventPool.registerEvent(id);
+        }
+        for (String id : FIVE_CHAR_EVENTS) {
             NsfwEventPool.registerEvent(id);
         }
     }
@@ -175,12 +201,15 @@ public final class ArkCharacterSetup {
         if (meta == null) {
             return true;
         }
-        if ("eyja".equals(meta.character)) {
-            return isEyjaRun();
+        switch (meta.character) {
+            case "eyja": return isEyjaRun();
+            case "muel": return isMuelsyseRun();
+            case "scene": return isSceneRun();
+            case "highmore": return isHighmoreRun();
+            case "archetto": return isArchettoRun();
+            case "haruka": return isHarukaRun();
+            case "nymph": return isNymphRun();
+            default: return true;
         }
-        if ("muel".equals(meta.character)) {
-            return isMuelsyseRun();
-        }
-        return true;
     }
 }

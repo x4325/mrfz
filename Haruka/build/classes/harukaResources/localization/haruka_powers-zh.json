@@ -6,5 +6,12 @@
       "/10。再打出 ",
       " 次攻击将引爆法术爆发。"
     ]
+  },
+  "haruka:FinaleEchoPower": {
+    "NAME": "终章余韵",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 ",
+      " 层花火。"
+    ]
   }
 }

@@ -1,42 +1,127 @@
 {
-  "arknsfw:GeothermalPower": {
-    "NAME": "地热",
-    "DESCRIPTIONS": ["每回合开始时兴奋 +", "。"]
-  },
-  "arknsfw:HydrationPower": {
-    "NAME": "水化",
-    "DESCRIPTIONS": ["回合结束时受孕度 +", "。"]
-  },
-  "arknsfw:CoreFeverPower": {
-    "NAME": "核心高热",
-    "DESCRIPTIONS": ["受击后兴奋 +", "。"]
-  },
-  "arknsfw:CloneHazePower": {
-    "NAME": "分身雾",
-    "DESCRIPTIONS": ["回合开始兴奋 +", "×5，受孕度 +", "×2。"]
-  },
-  "arknsfw:VolcanicFlushPower": {
-    "NAME": "火山潮红",
-    "DESCRIPTIONS": ["", " 层：回合开始兴奋 +3/层，受击后兴奋 +2/层。", " NL（已刻印，无法解除）"]
-  },
-  "arknsfw:AshShamePower": {
-    "NAME": "灰烬羞怯",
-    "DESCRIPTIONS": ["", " 层：每回合首张牌费用 +1/层。", " NL（已刻印，无法解除）"]
-  },
-  "arknsfw:CoreStrainPower": {
-    "NAME": "核心过载",
-    "DESCRIPTIONS": ["", " 层：回合结束失去 1/层 生命；打出技能后兴奋 +3/层。", " NL（已刻印，无法解除）"]
-  },
-  "arknsfw:BubbleGagPower": {
-    "NAME": "泡沫封口",
-    "DESCRIPTIONS": ["", " 层：每回合首张技能牌费用 +1/层。", " NL（已刻印，无法解除）"]
-  },
-  "arknsfw:LeakPower": {
-    "NAME": "渗漏",
-    "DESCRIPTIONS": ["", " 层：回合结束失去 3/层 格挡，受孕度 +2/层。", " NL（已刻印，无法解除）"]
-  },
-  "arknsfw:CloneEchoPower": {
-    "NAME": "分身回音",
-    "DESCRIPTIONS": ["", " 层：回合开始兴奋 +2/层，首张攻击 -2/层 伤害。", " NL（已刻印，无法解除）"]
-  }
+ "arknsfw:GeothermalPower": {
+  "NAME": "地热",
+  "DESCRIPTIONS": [
+   "每回合开始时兴奋 +",
+   "。"
+  ]
+ },
+ "arknsfw:HydrationPower": {
+  "NAME": "水化",
+  "DESCRIPTIONS": [
+   "回合结束时受孕度 +",
+   "。"
+  ]
+ },
+ "arknsfw:CoreFeverPower": {
+  "NAME": "核心高热",
+  "DESCRIPTIONS": [
+   "受击后兴奋 +",
+   "。"
+  ]
+ },
+ "arknsfw:CloneHazePower": {
+  "NAME": "分身雾",
+  "DESCRIPTIONS": [
+   "回合开始兴奋 +",
+   "×5，受孕度 +",
+   "×2。"
+  ]
+ },
+ "arknsfw:VolcanicFlushPower": {
+  "NAME": "火山潮红",
+  "DESCRIPTIONS": [
+   "",
+   " 层：回合开始兴奋 +3/层，受击后兴奋 +2/层。",
+   " NL（已刻印，无法解除）"
+  ]
+ },
+ "arknsfw:AshShamePower": {
+  "NAME": "灰烬羞怯",
+  "DESCRIPTIONS": [
+   "",
+   " 层：每回合首张牌费用 +1/层。",
+   " NL（已刻印，无法解除）"
+  ]
+ },
+ "arknsfw:CoreStrainPower": {
+  "NAME": "核心过载",
+  "DESCRIPTIONS": [
+   "",
+   " 层：回合结束失去 1/层 生命；打出技能后兴奋 +3/层。",
+   " NL（已刻印，无法解除）"
+  ]
+ },
+ "arknsfw:BubbleGagPower": {
+  "NAME": "泡沫封口",
+  "DESCRIPTIONS": [
+   "",
+   " 层：每回合首张技能牌费用 +1/层。",
+   " NL（已刻印，无法解除）"
+  ]
+ },
+ "arknsfw:LeakPower": {
+  "NAME": "渗漏",
+  "DESCRIPTIONS": [
+   "",
+   " 层：回合结束失去 3/层 格挡，受孕度 +2/层。",
+   " NL（已刻印，无法解除）"
+  ]
+ },
+ "arknsfw:CloneEchoPower": {
+  "NAME": "分身回音",
+  "DESCRIPTIONS": [
+   "",
+   " 层：回合开始兴奋 +2/层，首张攻击 -2/层 伤害。",
+   " NL（已刻印，无法解除）"
+  ]
+ },
+ "arknsfw:TideBrandPower": {
+  "NAME": "潮湿刻印",
+  "DESCRIPTIONS": [
+   "",
+   " 层：回合结束失去等量生命并兴奋 +2/层；身体变得贪婪，治疗效果 +1/层。",
+   " NL（已刻印，无法解除）"
+  ]
+ },
+ "arknsfw:ExposedLensPower": {
+  "NAME": "走光镜头",
+  "DESCRIPTIONS": [
+   "",
+   " 层：回合开始兴奋 +2/层；每打出技能牌被镜头捕捉，兴奋再 +2/层。",
+   " NL（已刻印，无法解除）"
+  ]
+ },
+ "arknsfw:TremblingGripPower": {
+  "NAME": "颤抖弓手",
+  "DESCRIPTIONS": [
+   "",
+   " 层：每回合首张攻击牌费用 +1/层（上限 +2）。",
+   " NL（已刻印，无法解除）"
+  ]
+ },
+ "arknsfw:LingeringHeatPower": {
+  "NAME": "余焰灼身",
+  "DESCRIPTIONS": [
+   "",
+   " 层：回合开始兴奋 +2/层；受到伤害时余焰窜起，兴奋再 +2/层。",
+   " NL（已刻印，无法解除）"
+  ]
+ },
+ "arknsfw:HeartGnawPower": {
+  "NAME": "心蚀低语",
+  "DESCRIPTIONS": [
+   "",
+   " 层：回合开始兴奋 +2/层；回合结束流失 2 点格挡/层。",
+   " NL（已刻印，无法解除）"
+  ]
+ },
+ "arknsfw:CoreNeedPower": {
+  "NAME": "核心渴求",
+  "DESCRIPTIONS": [
+   "每回合开始：兴奋 +",
+   "，获得 ",
+   " 层角色资源（妮芙为对随机敌人施加咒灵）。"
+  ]
+ }
 }
