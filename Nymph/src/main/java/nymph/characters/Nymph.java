@@ -108,8 +108,8 @@ public class Nymph extends CustomPlayer {
                 SPINE_SCALE
         );
         setupSpineAnimations();
-        // 营火/肩部立绘随皮肤切换
-        this.shoulderImg = shoulderTex(idx);
+        // 营火/肩部立绘固定使用精一立绘
+        this.shoulderImg = shoulderTex(0);
         this.shoulder2Img = this.shoulderImg;
         this.img = this.shoulderImg;
     }

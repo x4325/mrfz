@@ -13,29 +13,38 @@ import liesecore.helpers.NsfwRunStats;
 import liesecore.helpers.TextureHelper;
 import arknsfw.ArkNsfwMod;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
 /**
- * 战斗立绘面板：角色左侧官方立绘（膝上、随皮肤），四档差分完全随兴奋值切换（顶档=濒临高潮）。
- * 附动态情欲演出：呼吸起伏、随兴奋脉动的粉雾、上浮的心形粒子。
+ * 战斗立绘面板（角色左侧、膝上、精一立绘，不随皮肤）。
+ * 兴奋四档差分 × 怀孕三阶段孕肚差分；含呼吸/摇曳/脉动粉雾/心形粒子动态演出。
+ * 覆盖七名角色（含艾雅法拉、缪尔赛思，素材取自其自带立绘）。
  */
 public final class ArkPortraitPanel {
 
     private static final HashMap<String, Texture> CACHE = new HashMap<String, Texture>();
     private static Texture heartTex;
-
-    // 心形粒子: x, y, vy, sway-phase, life, scale
     private static final ArrayList<float[]> HEARTS = new ArrayList<float[]>();
     private static float time = 0.0F;
     private static float spawnTimer = 0.0F;
 
+    private static Field pregProgressField;
+    private static boolean pregFieldSearched = false;
+
     private ArkPortraitPanel() {
     }
 
-    private static Texture load(String key, int skin, int tier) {
-        String path = ArkNsfwMod.makeImagePath("portraits/" + key + "_skin" + skin + "_tier" + tier + ".png");
+    private static String portraitKey() {
+        if (ArkCharacterSetup.isEyjaRun()) return "eyja";
+        if (ArkCharacterSetup.isMuelsyseRun()) return "muel";
+        return ArkCharDebuffs.currentCharKey();
+    }
+
+    private static Texture load(String name) {
+        String path = ArkNsfwMod.makeImagePath("portraits/" + name + ".png");
         if (CACHE.containsKey(path)) {
             return CACHE.get(path);
         }
@@ -44,18 +53,39 @@ public final class ArkPortraitPanel {
         return tex;
     }
 
-    private static Texture resolve(String key, int skin, int tier) {
-        Texture tex = load(key, skin, tier);
-        if (tex == null && tier > 0) {
-            tex = load(key, skin, 0);
+    /** 妊娠阶段 1..3；未孕返回 0。优先反射读取 liesecore 进度，失败按幕数。 */
+    private static int pregStage() {
+        if (!NsfwRunStats.pregnant) {
+            return 0;
         }
-        if (tex == null && skin > 0) {
-            tex = load(key, 0, tier);
-            if (tex == null) {
-                tex = load(key, 0, 0);
+        int progress = -1;
+        if (!pregFieldSearched) {
+            pregFieldSearched = true;
+            for (String name : new String[]{"pregnancyProgress", "pregnancy", "pregProgress"}) {
+                try {
+                    Field f = NsfwRunStats.class.getDeclaredField(name);
+                    if (f.getType() == int.class) {
+                        f.setAccessible(true);
+                        pregProgressField = f;
+                        break;
+                    }
+                } catch (Exception ignored) {
+                }
             }
         }
-        return tex;
+        if (pregProgressField != null) {
+            try {
+                progress = pregProgressField.getInt(null);
+            } catch (Exception ignored) {
+            }
+        }
+        if (progress >= 0) {
+            if (progress >= 67) return 3;
+            if (progress >= 34) return 2;
+            return 1;
+        }
+        int act = Math.max(1, AbstractDungeon.actNum);
+        return Math.min(3, act);
     }
 
     private static int tier() {
@@ -67,8 +97,23 @@ public final class ArkPortraitPanel {
         return 0;
     }
 
+    private static Texture resolve(String key, int preg, int tier) {
+        String base = preg > 0 ? key + "_preg" + preg : key;
+        Texture tex = load(base + "_tier" + tier);
+        if (tex == null && tier > 0) {
+            tex = load(base + "_tier0");
+        }
+        if (tex == null && preg > 0) {
+            tex = load(key + "_tier" + tier);
+            if (tex == null) {
+                tex = load(key + "_tier0");
+            }
+        }
+        return tex;
+    }
+
     public static void render(SpriteBatch sb) {
-        String key = ArkCharDebuffs.currentCharKey();
+        String key = portraitKey();
         if (key == null || AbstractDungeon.player == null || AbstractDungeon.currMapNode == null) {
             return;
         }
@@ -80,7 +125,7 @@ public final class ArkPortraitPanel {
             return;
         }
         int tier = tier();
-        Texture tex = resolve(key, ArkCharDebuffs.currentSkinIndex(), tier);
+        Texture tex = resolve(key, pregStage(), tier);
         if (tex == null) {
             return;
         }
@@ -92,30 +137,33 @@ public final class ArkPortraitPanel {
         float x = 10.0F * Settings.scale;
         float y = AbstractDungeon.floorY - 60.0F * Settings.scale;
 
-        // 呼吸起伏：档位越高呼吸越急促、幅度越大
+        // 动态：呼吸起伏 + 高兴奋时轻微摇曳
         float breathFreq = 1.6F + tier * 0.9F;
         float breathAmp = tier == 0 ? 0.002F : 0.004F + tier * 0.003F;
         float breath = 1.0F + breathAmp * MathUtils.sin(time * breathFreq * MathUtils.PI2 * 0.5F);
+        float swayX = tier >= 2 ? 3.0F * Settings.scale * MathUtils.sin(time * 1.3F) : 0.0F;
+        float bob = tier >= 1 ? 2.0F * Settings.scale * MathUtils.sin(time * breathFreq * 0.8F) : 0.0F;
         float bw = w * breath;
         float bh = h * breath;
 
-        // 脉动粉雾（tier2+）：画在立绘之下
         if (tier >= 2) {
             float pulse = 0.10F + 0.08F * (0.5F + 0.5F * MathUtils.sin(time * (2.0F + tier) * 1.7F));
             sb.setColor(1.0F, 0.35F, 0.55F, pulse);
-            sb.draw(tex, x - 8.0F * Settings.scale, y - 8.0F * Settings.scale,
+            sb.draw(tex, x + swayX - 8.0F * Settings.scale, y + bob - 8.0F * Settings.scale,
                     bw + 16.0F * Settings.scale, bh + 16.0F * Settings.scale);
         }
 
         sb.setColor(1.0F, 1.0F, 1.0F, 0.95F);
-        sb.draw(tex, x, y, bw, bh);
+        sb.draw(tex, x + swayX, y + bob, bw, bh);
 
-        // 心形粒子
         renderHearts(sb, dt, tier, x, y, bw, bh);
 
         sb.setColor(Color.WHITE);
         int threshold = Math.max(1, NsfwRunStats.getClimaxThreshold());
         String info = ArkExposureHelper.stageName() + "    兴奋 " + NsfwRunStats.excitement + "/" + threshold;
+        if (NsfwRunStats.pregnant) {
+            info = "孕·第" + pregStage() + "期    " + info;
+        }
         FontHelper.renderFontLeftTopAligned(sb, FontHelper.tipBodyFont, info,
                 x + 6.0F * Settings.scale, y - 4.0F * Settings.scale, Settings.CREAM_COLOR);
     }
@@ -127,7 +175,6 @@ public final class ArkPortraitPanel {
                 return;
             }
         }
-        // 生成频率：tier0 无，tier1 偶尔，tier2 持续，tier3 密集
         float interval = tier <= 0 ? -1.0F : tier == 1 ? 1.6F : tier == 2 ? 0.7F : 0.35F;
         if (interval > 0) {
             spawnTimer += dt;
