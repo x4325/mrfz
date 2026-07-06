@@ -20,6 +20,7 @@ public class DriftPower extends AbstractPower {
         type = PowerType.BUFF;
         isTurnBased = false;
         updateDescription();
+        loadIcon();
     }
 
     @Override
@@ -30,4 +31,20 @@ public class DriftPower extends AbstractPower {
 
     public void stackPower(int n) { super.stackPower(n); updateDescription(); }
     public void updateDescription() { description = ps.DESCRIPTIONS[0] + amount + ps.DESCRIPTIONS[1]; }
+
+    private static com.badlogic.gdx.graphics.Texture ICON_TEX;
+
+    private void loadIcon() {
+        try {
+            if (ICON_TEX == null) {
+                ICON_TEX = new com.badlogic.gdx.graphics.Texture(
+                        com.badlogic.gdx.Gdx.files.internal(HighmoreMod.imgPath("powers/drift_power.png")));
+            }
+            int w = ICON_TEX.getWidth();
+            int h = ICON_TEX.getHeight();
+            this.region128 = new com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion(ICON_TEX, 0, 0, w, h);
+            this.region48 = new com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion(ICON_TEX, 0, 0, w, h);
+        } catch (Exception ignored) {
+        }
+    }
 }

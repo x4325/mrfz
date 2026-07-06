@@ -90,8 +90,8 @@ public class Highmore extends CustomPlayer {
         dialogY = (drawY * Settings.scale) + 240 * Settings.scale;
         initializeClass(
                 null,
-                "images/characters/ironclad/shoulder2.png",
-                "images/characters/ironclad/shoulder.png",
+                HighmoreMod.imgPath("char/shoulder_skin0.png"),
+                HighmoreMod.imgPath("char/shoulder_skin0.png"),
                 "images/characters/ironclad/corpse.png",
                 new CharSelectInfo(
                         getStaticLocalizedCharacterName(),
@@ -114,6 +114,10 @@ public class Highmore extends CustomPlayer {
                 SPINE_SCALE
         );
         setupSpineAnimations();
+        // 营火/肩部立绘随皮肤切换
+        this.shoulderImg = shoulderTex(idx);
+        this.shoulder2Img = this.shoulderImg;
+        this.img = this.shoulderImg;
     }
 
     // ---- 禁疗：外部治疗只有 25% 生效，收割/潮汐来源全额 ----
@@ -165,9 +169,26 @@ public class Highmore extends CustomPlayer {
         }
     }
 
+    private static final java.util.HashMap<String, com.badlogic.gdx.graphics.Texture> SHOULDER_CACHE =
+            new java.util.HashMap<String, com.badlogic.gdx.graphics.Texture>();
+
+    private static com.badlogic.gdx.graphics.Texture shoulderTex(int skinIndex) {
+        String path = HighmoreMod.imgPath("char/shoulder_skin" + skinIndex + ".png");
+        com.badlogic.gdx.graphics.Texture tex = SHOULDER_CACHE.get(path);
+        if (tex == null) {
+            try {
+                tex = new com.badlogic.gdx.graphics.Texture(com.badlogic.gdx.Gdx.files.internal(path));
+            } catch (Exception e) {
+                tex = ImageMaster.loadImage(HighmoreMod.imgPath("char/shoulder_skin0.png"));
+            }
+            SHOULDER_CACHE.put(path, tex);
+        }
+        return tex;
+    }
+
     private void loadCharacterImages() {
-        this.shoulderImg = ImageMaster.loadImage("images/characters/ironclad/shoulder.png");
-        this.shoulder2Img = ImageMaster.loadImage("images/characters/ironclad/shoulder2.png");
+        this.shoulderImg = shoulderTex(0);
+        this.shoulder2Img = this.shoulderImg;
         this.corpseImg = ImageMaster.loadImage("images/characters/ironclad/corpse.png");
         this.img = this.shoulderImg;
     }

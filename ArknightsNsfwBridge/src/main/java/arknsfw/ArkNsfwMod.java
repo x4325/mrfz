@@ -5,6 +5,9 @@ import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.PostBattleSubscriber;
+import basemod.interfaces.PostUpdateSubscriber;
+import basemod.interfaces.RenderSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Color;
@@ -17,6 +20,7 @@ import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.localization.UIStrings;
 import arknsfw.cards.eyja.*;
 import arknsfw.cards.muel.*;
 import arknsfw.events.eyja.*;
@@ -69,6 +73,9 @@ public class ArkNsfwMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
+        PostBattleSubscriber,
+        PostUpdateSubscriber,
+        RenderSubscriber,
         PostInitializeSubscriber {
 
     public static final String modID = "arknsfw";
@@ -432,5 +439,21 @@ public class ArkNsfwMod implements
         BaseMod.loadCustomStringsFile(EventStrings.class, base + "EventStrings.json");
         BaseMod.loadCustomStringsFile(PowerStrings.class, base + "PowerStrings.json");
         BaseMod.loadCustomStringsFile(PotionStrings.class, base + "PotionStrings.json");
+        BaseMod.loadCustomStringsFile(UIStrings.class, base + "UIStrings.json");
+    }
+
+    @Override
+    public void receivePostBattle(com.megacrit.cardcrawl.rooms.AbstractRoom battleRoom) {
+        arknsfw.helpers.ArkPostBattleChoice.onBattleEnd(battleRoom);
+    }
+
+    @Override
+    public void receivePostUpdate() {
+        arknsfw.helpers.ArkPostBattleChoice.update();
+    }
+
+    @Override
+    public void receiveRender(com.badlogic.gdx.graphics.g2d.SpriteBatch sb) {
+        arknsfw.helpers.ArkPostBattleChoice.render(sb);
     }
 }
