@@ -148,6 +148,10 @@ public class Nymph extends CustomPlayer {
             } catch (Exception e) {
                 tex = ImageMaster.loadImage(NymphMod.imgPath("char/shoulder_skin0.png"));
             }
+            if (tex == null) {
+                // 最终兜底：绝不让营火渲染拿到 null
+                tex = ImageMaster.loadImage("images/characters/ironclad/shoulder.png");
+            }
             SHOULDER_CACHE.put(path, tex);
         }
         return tex;

@@ -158,6 +158,28 @@ public class ArkNsfwMod implements
         BaseMod.addPotion(FloodMarkDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
         BaseMod.addPotion(BubbleMuteDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
         BaseMod.addPotion(EchoSludgePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
+        // 五名自制干员共用的色情/堕落药水
+        String[] fivePools = {
+                highmore.core.ColorEnum.HIGHMORE_COLOR.toString(),
+                scene.core.ColorEnum.SCENE_COLOR.toString(),
+                archetto.core.ColorEnum.ARCHETTO_COLOR.toString(),
+                haruka.core.ColorEnum.HARUKA_COLOR.toString(),
+                nymph.core.ColorEnum.NYMPH_COLOR.toString(),
+        };
+        com.badlogic.gdx.graphics.Color fiveLiquid = new com.badlogic.gdx.graphics.Color(0.95f, 0.45f, 0.65f, 1f);
+        com.badlogic.gdx.graphics.Color fiveHybrid = new com.badlogic.gdx.graphics.Color(1f, 0.65f, 0.8f, 1f);
+        com.badlogic.gdx.graphics.Color fiveSpots = new com.badlogic.gdx.graphics.Color(1f, 0.85f, 0.92f, 1f);
+        for (String pool : fivePools) {
+            BaseMod.addPotion(arknsfw.potions.shared.AphroDraughtPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
+            BaseMod.addPotion(arknsfw.potions.shared.HoneyDewPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
+            BaseMod.addPotion(arknsfw.potions.shared.PleasureBombPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
+            BaseMod.addPotion(arknsfw.potions.shared.SensitiveMistPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
+            BaseMod.addPotion(arknsfw.potions.shared.SuppressantPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
+            BaseMod.addPotion(arknsfw.potions.shared.HeatPerfumePotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
+            BaseMod.addPotion(arknsfw.potions.shared.CorruptionEssencePotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
+            BaseMod.addPotion(arknsfw.potions.shared.CrestInkPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
+            BaseMod.addPotion(arknsfw.potions.shared.WombElixirPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
+        }
         BaseMod.addPotion(ClimaxDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
         BaseMod.addPotion(AshShameMistPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
         BaseMod.addPotion(ClimaxDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);

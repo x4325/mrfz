@@ -88,6 +88,13 @@ public final class ArkPostBattleChoice {
     }
 
     public static void update() {
+        try {
+            updateInner();
+        } catch (Exception ignored) {
+        }
+    }
+
+    private static void updateInner() {
         if (!shouldShow()) {
             return;
         }
@@ -136,6 +143,13 @@ public final class ArkPostBattleChoice {
     }
 
     public static void render(SpriteBatch sb) {
+        try {
+            renderInner(sb);
+        } catch (Exception ignored) {
+        }
+    }
+
+    private static void renderInner(SpriteBatch sb) {
         if (!shouldShow()) {
             return;
         }

@@ -146,6 +146,14 @@ public final class ArkPortraitPanel {
     }
 
     public static void render(SpriteBatch sb) {
+        try {
+            renderInner(sb);
+        } catch (Exception ignored) {
+            // 任何异常都不允许拖垮整帧渲染
+        }
+    }
+
+    private static void renderInner(SpriteBatch sb) {
         String key = portraitKey();
         if (key == null || AbstractDungeon.player == null || AbstractDungeon.currMapNode == null) {
             return;
@@ -160,6 +168,10 @@ public final class ArkPortraitPanel {
         int tier = tier();
         Texture tex = resolve(key, pregStage(), tier);
         if (tex == null) {
+            // 素材缺失诊断：提示而不是无声消失
+            FontHelper.renderFontLeftTopAligned(sb, FontHelper.tipBodyFont,
+                    "[arknsfw] 立绘素材缺失: portraits/" + key + "_tier0.png",
+                    20.0F * Settings.scale, AbstractDungeon.floorY + 380.0F * Settings.scale, Settings.CREAM_COLOR);
             return;
         }
         float dt = Gdx.graphics.getDeltaTime();

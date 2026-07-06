@@ -5,7 +5,7 @@
     "Private"
   ],
   "description": "稀音 (Scene) SFW character mod. Mechanism: 取景. NSFW content in ArknightsNsfwBridge.",
-  "version": "0.4.0-cards-anim",
+  "version": "0.4.1-hotfix",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.0",
   "dependencies": [

@@ -28,6 +28,11 @@ public class ArkEventBiasPatch {
             if (AbstractDungeon.eventList == null || AbstractDungeon.eventList.isEmpty()) {
                 return SpireReturn.Continue();
             }
+            // 先剔除其他角色/其他路线的专属事件，杜绝事件互串
+            ArkCharacterSetup.purgeIneligibleEvents(AbstractDungeon.eventList);
+            if (AbstractDungeon.eventList.isEmpty()) {
+                return SpireReturn.Continue();
+            }
             ArrayList<String> eligible = ArkCharacterSetup.eligibleCharacterEvents(AbstractDungeon.eventList);
             if (eligible.isEmpty() || !rng.randomBoolean(CHAR_EVENT_CHANCE)) {
                 return SpireReturn.Continue();

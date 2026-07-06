@@ -164,6 +164,21 @@ public final class ArkCharacterSetup {
         return AbstractDungeon.player instanceof Nymph;
     }
 
+    /** 把不属于当前角色（或路线/幕不匹配）的专属事件从候选池中剔除，防止角色事件互串。 */
+    public static void purgeIneligibleEvents(ArrayList<String> eventList) {
+        if (eventList == null || eventList.isEmpty()) {
+            return;
+        }
+        ArrayList<String> eligible = eligibleCharacterEvents(eventList);
+        ArrayList<String> toRemove = new ArrayList<>();
+        for (String id : eventList) {
+            if (EVENT_META.containsKey(id) && !eligible.contains(id)) {
+                toRemove.add(id);
+            }
+        }
+        eventList.removeAll(toRemove);
+    }
+
     public static ArrayList<String> eligibleCharacterEvents(ArrayList<String> eventList) {
         ArrayList<String> eligible = new ArrayList<>();
         if (eventList == null || !NsfwCharacterRegistry.isActive()) {
