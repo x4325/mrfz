@@ -34,7 +34,8 @@ public class ReapPower extends AbstractPower {
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (info.owner == this.owner && target != this.owner && damageAmount > 0) {
             flash();
-            addToBot(new HealAction(this.owner, this.owner, amount));
+            // 收割治疗走潮汐通道，不受禁疗削减
+            highmore.characters.Highmore.tideHeal(this.owner, amount);
         }
     }
     public void stackPower(int n) { super.stackPower(n); updateDescription(); }

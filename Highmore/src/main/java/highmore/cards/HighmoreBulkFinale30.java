@@ -5,13 +5,12 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import highmore.HighmoreMod;
-import highmore.cards.AbstractHighmoreCard;
 import highmore.powers.ReapPower;
+
+/** 大收割：收割 ≥4 时大爆发并消耗 4 层。 */
 public class HighmoreBulkFinale30 extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("BulkFinale30");
 
@@ -23,15 +22,18 @@ public class HighmoreBulkFinale30 extends AbstractHighmoreCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractPower stacks = p.getPower(ReapPower.POWER_ID);
-        int bonus = (stacks != null && stacks.amount >= 3) ? 6 : 0;
+        boolean burst = stacks != null && stacks.amount >= 4;
+        int bonus = burst ? 12 : 0;
         addToBot(new DamageAction(m, new DamageInfo(p, damage + bonus, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        if (stacks != null && stacks.amount >= 3) { stacks.amount -= 3; }
+        if (burst) {
+            addToBot(new ReducePowerAction(p, p, ReapPower.POWER_ID, 4));
+        }
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
-            upgradeName(); upgradeDamage(4);
+            upgradeName(); upgradeDamage(5);
         }
     }
 

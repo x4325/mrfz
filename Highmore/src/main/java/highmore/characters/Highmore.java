@@ -116,6 +116,33 @@ public class Highmore extends CustomPlayer {
         setupSpineAnimations();
     }
 
+    // ---- 禁疗：外部治疗只有 25% 生效，收割/潮汐来源全额 ----
+    public static boolean tideHealChannel = false;
+
+    @Override
+    public void heal(int healAmount) {
+        if (!tideHealChannel && healAmount > 0) {
+            healAmount = healAmount / 4;
+            if (healAmount <= 0) {
+                return;
+            }
+        }
+        super.heal(healAmount);
+    }
+
+    /** 收割/潮汐系治疗入口：绕过禁疗惩罚。 */
+    public static void tideHeal(final com.megacrit.cardcrawl.core.AbstractCreature target, final int amount) {
+        com.megacrit.cardcrawl.dungeons.AbstractDungeon.actionManager.addToBottom(new AbstractGameAction() {
+            @Override
+            public void update() {
+                tideHealChannel = true;
+                target.heal(amount);
+                tideHealChannel = false;
+                this.isDone = true;
+            }
+        });
+    }
+
 
     private void setupSpineAnimations() {
         if (this.state == null || this.stateData == null) {

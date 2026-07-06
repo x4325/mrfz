@@ -5,25 +5,24 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
 import highmore.HighmoreMod;
-import highmore.cards.AbstractHighmoreCard;
 import highmore.powers.ReapPower;
+
+/** 旋潮：AOE + 2 收割（多段命中配合收割吸血）。 */
 public class HighmoreWhirlReap extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("WhirlReap");
 
     public HighmoreWhirlReap() {
         super(ID, 2, CardType.ATTACK, CardRarity.RARE, CardTarget.ALL_ENEMY);
         baseDamage = 5;
+        isMultiDamage = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new ReapPower(p, 1), 1));
-        addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
+        addToBot(new ApplyPowerAction(p, p, new ReapPower(p, 2), 2));
+        addToBot(new DamageAllEnemiesAction(p, multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     }
 
     @Override
