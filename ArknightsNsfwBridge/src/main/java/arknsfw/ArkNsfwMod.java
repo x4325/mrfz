@@ -132,58 +132,53 @@ public class ArkNsfwMod implements
     }
 
     private static void registerPotions() {
-        String eyjaPool = ColorEnum.Eyjafjalla_COLOR.toString();
-        String muelPool = Muelsyse.patches.ColorEnum.Muelsyse_COLOR.toString();
-        BaseMod.addPotion(CloudWarmTonicPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(PyroAphroPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(VolcanicNectarPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(AshDregPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(FeverSedimentPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(EmberLockPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(HeatLingerPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(EmberDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(LavaBloomPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(CollarSootPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(ContractSedimentPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(MagmaEchoDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(BubbleSerumPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(CloneDripPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(RootDewPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(FloodWastePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(SeedSludgePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(MuteFoamPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(MistSprayPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(TwinSapPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(GreenhouseNectarPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(FloodMarkDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(BubbleMuteDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(EchoSludgePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        // 五名自制干员共用的色情/堕落药水
-        String[] fivePools = {
-                highmore.core.ColorEnum.HIGHMORE_COLOR.toString(),
-                scene.core.ColorEnum.SCENE_COLOR.toString(),
-                archetto.core.ColorEnum.ARCHETTO_COLOR.toString(),
-                haruka.core.ColorEnum.HARUKA_COLOR.toString(),
-                nymph.core.ColorEnum.NYMPH_COLOR.toString(),
-        };
+        // 正确注册方式：potionID 用药水自身 ID，并限定所属角色（参照缪尔赛思 mod 的做法）。
+        // 此前误把颜色名当 potionID，导致所有药水互相覆盖、只有最后一瓶生效。
+        com.megacrit.cardcrawl.characters.AbstractPlayer.PlayerClass eyjaClass =
+                Eyjafjalla.modcore.ClassEnum.Eyjafjalla_CLASS;
+        com.megacrit.cardcrawl.characters.AbstractPlayer.PlayerClass muelClass =
+                Muelsyse.patches.ClassEnum.Muelsyse_CLASS;
+        BaseMod.addPotion(CloudWarmTonicPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, CloudWarmTonicPotion.ID, eyjaClass);
+        BaseMod.addPotion(PyroAphroPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, PyroAphroPotion.ID, eyjaClass);
+        BaseMod.addPotion(VolcanicNectarPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, VolcanicNectarPotion.ID, eyjaClass);
+        BaseMod.addPotion(AshDregPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, AshDregPotion.ID, eyjaClass);
+        BaseMod.addPotion(FeverSedimentPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, FeverSedimentPotion.ID, eyjaClass);
+        BaseMod.addPotion(EmberLockPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, EmberLockPotion.ID, eyjaClass);
+        BaseMod.addPotion(HeatLingerPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, HeatLingerPotion.ID, eyjaClass);
+        BaseMod.addPotion(EmberDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, EmberDraughtPotion.ID, eyjaClass);
+        BaseMod.addPotion(LavaBloomPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, LavaBloomPotion.ID, eyjaClass);
+        BaseMod.addPotion(CollarSootPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, CollarSootPotion.ID, eyjaClass);
+        BaseMod.addPotion(ContractSedimentPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, ContractSedimentPotion.ID, eyjaClass);
+        BaseMod.addPotion(MagmaEchoDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, MagmaEchoDraughtPotion.ID, eyjaClass);
+        BaseMod.addPotion(AshShameMistPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, AshShameMistPotion.ID, eyjaClass);
+        // 绝顶药剂两位角色通用：不限定角色注册一次（同一 potionID 只能注册一次）
+        BaseMod.addPotion(ClimaxDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, ClimaxDraughtPotion.ID);
+        BaseMod.addPotion(BubbleSerumPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, BubbleSerumPotion.ID, muelClass);
+        BaseMod.addPotion(CloneDripPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, CloneDripPotion.ID, muelClass);
+        BaseMod.addPotion(RootDewPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, RootDewPotion.ID, muelClass);
+        BaseMod.addPotion(FloodWastePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, FloodWastePotion.ID, muelClass);
+        BaseMod.addPotion(SeedSludgePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, SeedSludgePotion.ID, muelClass);
+        BaseMod.addPotion(MuteFoamPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, MuteFoamPotion.ID, muelClass);
+        BaseMod.addPotion(MistSprayPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, MistSprayPotion.ID, muelClass);
+        BaseMod.addPotion(TwinSapPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, TwinSapPotion.ID, muelClass);
+        BaseMod.addPotion(GreenhouseNectarPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, GreenhouseNectarPotion.ID, muelClass);
+        BaseMod.addPotion(FloodMarkDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, FloodMarkDraughtPotion.ID, muelClass);
+        BaseMod.addPotion(BubbleMuteDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, BubbleMuteDraughtPotion.ID, muelClass);
+        BaseMod.addPotion(EchoSludgePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, EchoSludgePotion.ID, muelClass);
+        BaseMod.addPotion(BubbleShameMistPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, BubbleShameMistPotion.ID, muelClass);
+        // 五名自制干员共用的色情/堕落药水（不限定角色，桥接 mod 仅在这些角色环境下使用）
         com.badlogic.gdx.graphics.Color fiveLiquid = new com.badlogic.gdx.graphics.Color(0.95f, 0.45f, 0.65f, 1f);
         com.badlogic.gdx.graphics.Color fiveHybrid = new com.badlogic.gdx.graphics.Color(1f, 0.65f, 0.8f, 1f);
         com.badlogic.gdx.graphics.Color fiveSpots = new com.badlogic.gdx.graphics.Color(1f, 0.85f, 0.92f, 1f);
-        for (String pool : fivePools) {
-            BaseMod.addPotion(arknsfw.potions.shared.AphroDraughtPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
-            BaseMod.addPotion(arknsfw.potions.shared.HoneyDewPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
-            BaseMod.addPotion(arknsfw.potions.shared.PleasureBombPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
-            BaseMod.addPotion(arknsfw.potions.shared.SensitiveMistPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
-            BaseMod.addPotion(arknsfw.potions.shared.SuppressantPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
-            BaseMod.addPotion(arknsfw.potions.shared.HeatPerfumePotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
-            BaseMod.addPotion(arknsfw.potions.shared.CorruptionEssencePotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
-            BaseMod.addPotion(arknsfw.potions.shared.CrestInkPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
-            BaseMod.addPotion(arknsfw.potions.shared.WombElixirPotion.class, fiveLiquid, fiveHybrid, fiveSpots, pool);
-        }
-        BaseMod.addPotion(ClimaxDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(AshShameMistPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(ClimaxDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(BubbleShameMistPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
+        BaseMod.addPotion(arknsfw.potions.shared.AphroDraughtPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.AphroDraughtPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.HoneyDewPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.HoneyDewPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.PleasureBombPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.PleasureBombPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.SensitiveMistPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.SensitiveMistPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.SuppressantPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.SuppressantPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.HeatPerfumePotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.HeatPerfumePotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.CorruptionEssencePotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.CorruptionEssencePotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.CrestInkPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.CrestInkPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.WombElixirPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.WombElixirPotion.ID);
     }
 
     private static void registerEvents() {

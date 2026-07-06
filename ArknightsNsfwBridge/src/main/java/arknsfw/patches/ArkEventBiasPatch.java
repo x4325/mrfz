@@ -34,16 +34,28 @@ public class ArkEventBiasPatch {
                 return SpireReturn.Continue();
             }
             ArrayList<String> eligible = ArkCharacterSetup.eligibleCharacterEvents(AbstractDungeon.eventList);
-            if (eligible.isEmpty() || !rng.randomBoolean(CHAR_EVENT_CHANCE)) {
+            if (!eligible.isEmpty() && rng.randomBoolean(CHAR_EVENT_CHANCE)) {
+                String picked = eligible.get(rng.random(eligible.size() - 1));
+                if (AbstractDungeon.eventList.remove(picked)) {
+                    AbstractEvent event = instantiateEvent(picked);
+                    if (event != null) {
+                        return SpireReturn.Return(event);
+                    }
+                    AbstractDungeon.eventList.add(picked);
+                }
+            }
+            // 走原版随机时：只从“非专属事件”里抽，防止抽到同角色但路线/幕不匹配的专属事件
+            ArrayList<String> vanillaPool = ArkCharacterSetup.nonCharacterEvents(AbstractDungeon.eventList);
+            if (vanillaPool.isEmpty() || vanillaPool.size() == AbstractDungeon.eventList.size()) {
                 return SpireReturn.Continue();
             }
-            String picked = eligible.get(rng.random(eligible.size() - 1));
-            if (!AbstractDungeon.eventList.remove(picked)) {
+            String vp = vanillaPool.get(rng.random(vanillaPool.size() - 1));
+            if (!AbstractDungeon.eventList.remove(vp)) {
                 return SpireReturn.Continue();
             }
-            AbstractEvent event = instantiateEvent(picked);
+            AbstractEvent event = instantiateEvent(vp);
             if (event == null) {
-                AbstractDungeon.eventList.add(picked);
+                AbstractDungeon.eventList.add(vp);
                 return SpireReturn.Continue();
             }
             return SpireReturn.Return(event);

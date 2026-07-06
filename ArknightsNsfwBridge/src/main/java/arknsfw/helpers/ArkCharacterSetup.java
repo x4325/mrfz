@@ -164,19 +164,38 @@ public final class ArkCharacterSetup {
         return AbstractDungeon.player instanceof Nymph;
     }
 
-    /** 把不属于当前角色（或路线/幕不匹配）的专属事件从候选池中剔除，防止角色事件互串。 */
+    /** 把不属于当前角色的专属事件从候选池中剔除，杜绝角色事件互串。
+     *  只按“角色归属”过滤；同角色但路线/幕不匹配的事件保留在池中，由偏置选取器负责时机。 */
     public static void purgeIneligibleEvents(ArrayList<String> eventList) {
         if (eventList == null || eventList.isEmpty()) {
             return;
         }
-        ArrayList<String> eligible = eligibleCharacterEvents(eventList);
+        String character = isEyjaRun() ? "eyja" : isMuelsyseRun() ? "muel"
+                : isSceneRun() ? "scene" : isHighmoreRun() ? "highmore"
+                : isArchettoRun() ? "archetto" : isHarukaRun() ? "haruka"
+                : isNymphRun() ? "nymph" : null;
         ArrayList<String> toRemove = new ArrayList<>();
         for (String id : eventList) {
-            if (EVENT_META.containsKey(id) && !eligible.contains(id)) {
+            EventMeta meta = EVENT_META.get(id);
+            if (meta != null && (character == null || !character.equals(meta.character))) {
                 toRemove.add(id);
             }
         }
         eventList.removeAll(toRemove);
+    }
+
+    /** 候选池中不带专属元数据的事件（原版及其他 mod 的事件）。 */
+    public static ArrayList<String> nonCharacterEvents(ArrayList<String> eventList) {
+        ArrayList<String> out = new ArrayList<>();
+        if (eventList == null) {
+            return out;
+        }
+        for (String id : eventList) {
+            if (!EVENT_META.containsKey(id)) {
+                out.add(id);
+            }
+        }
+        return out;
     }
 
     public static ArrayList<String> eligibleCharacterEvents(ArrayList<String> eventList) {
