@@ -21,6 +21,9 @@ public class HighmoreBulkFinale30 extends AbstractHighmoreCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof highmore.characters.Highmore) {
+            ((highmore.characters.Highmore) p).playCharAnimation("Skill_2_Attack");
+        }
         AbstractPower stacks = p.getPower(ReapPower.POWER_ID);
         boolean burst = stacks != null && stacks.amount >= 4;
         int bonus = burst ? 12 : 0;

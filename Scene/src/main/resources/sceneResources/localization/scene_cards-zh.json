@@ -90,5 +90,37 @@
   "scene:BulkFinale30": {
     "NAME": "杰作冲印",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 若取景不少于 4 层：额外造成 12 点伤害并消耗 4 层取景。"
+  },
+  "scene:DevelopRush": {
+    "NAME": "显影加速",
+    "DESCRIPTION": "消耗 1 取景：抽 2 张牌；否则抽 1 张牌。"
+  },
+  "scene:WideFrame": {
+    "NAME": "广角构图",
+    "DESCRIPTION": "获得 !B! 点格挡，再获得等同取景层数的格挡（最多 10）。"
+  },
+  "scene:BurstShutter": {
+    "NAME": "连环快门",
+    "DESCRIPTION": "造成 !D! 点伤害两次。获得 1 取景。"
+  },
+  "scene:Negative": {
+    "NAME": "负片",
+    "DESCRIPTION": "取景层数翻倍（最多增加 6 层）。"
+  },
+  "scene:OverExposure": {
+    "NAME": "曝光过度",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 3 取景：给予 2 层易伤。"
+  },
+  "scene:TimerShutter": {
+    "NAME": "定时快门",
+    "DESCRIPTION": "获得 1 取景。抽 1 张牌。消耗。（升级后不再消耗）"
+  },
+  "scene:DarkroomWash": {
+    "NAME": "暗房冲洗",
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 消耗 2 取景：回复 5 点生命。"
+  },
+  "scene:MasterLens": {
+    "NAME": "取景大师",
+    "DESCRIPTION": "每回合开始时获得 !M! 取景。"
   }
 }

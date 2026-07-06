@@ -21,6 +21,9 @@ public class HighmoreWhirlReap extends AbstractHighmoreCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof highmore.characters.Highmore) {
+            ((highmore.characters.Highmore) p).playCharAnimation("Skill_1");
+        }
         addToBot(new ApplyPowerAction(p, p, new ReapPower(p, 2), 2));
         addToBot(new DamageAllEnemiesAction(p, multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     }

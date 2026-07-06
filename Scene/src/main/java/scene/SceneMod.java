@@ -7,6 +7,7 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,6 +20,14 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import scene.cards.SceneDevelopRush;
+import scene.cards.SceneWideFrame;
+import scene.cards.SceneBurstShutter;
+import scene.cards.SceneNegative;
+import scene.cards.SceneOverExposure;
+import scene.cards.SceneTimerShutter;
+import scene.cards.SceneDarkroomWash;
+import scene.cards.SceneMasterLens;
 import scene.core.ClassEnum;
 import scene.core.ColorEnum;
 import scene.characters.Scene;
@@ -63,6 +72,7 @@ public class SceneMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
+        OnStartBattleSubscriber,
         PostInitializeSubscriber {
 
     public static final String MOD_ID = "scene";
@@ -159,6 +169,14 @@ public class SceneMod implements
         BaseMod.addCard(new SceneBulkGuard07());
         BaseMod.addCard(new SceneBulkDraw08());
         BaseMod.addCard(new SceneBulkFinale30());
+        BaseMod.addCard(new SceneDevelopRush());
+        BaseMod.addCard(new SceneWideFrame());
+        BaseMod.addCard(new SceneBurstShutter());
+        BaseMod.addCard(new SceneNegative());
+        BaseMod.addCard(new SceneOverExposure());
+        BaseMod.addCard(new SceneTimerShutter());
+        BaseMod.addCard(new SceneDarkroomWash());
+        BaseMod.addCard(new SceneMasterLens());
     }
 
     @Override
@@ -194,5 +212,12 @@ public class SceneMod implements
         BaseMod.loadCustomStringsFile(PowerStrings.class, base + "scene_powers-zh.json");
         BaseMod.loadCustomStringsFile(EventStrings.class, base + "scene_events-zh.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, base + "scene_uis-zh.json");
+    }
+
+    @Override
+    public void receiveOnBattleStart(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
+        if (com.megacrit.cardcrawl.dungeons.AbstractDungeon.player instanceof scene.characters.Scene) {
+            ((scene.characters.Scene) com.megacrit.cardcrawl.dungeons.AbstractDungeon.player).playIntroAnimation();
+        }
     }
 }

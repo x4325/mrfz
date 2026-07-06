@@ -38,12 +38,21 @@ public class PyroPower extends AbstractPower {
         AbstractPower p = o.getPower(POWER_ID);
         return p == null ? 0 : p.amount;
     }
+    /** 本场战斗已引爆次数。 */
+    public static int burstsThisCombat(AbstractCreature o) {
+        AbstractPower p = o.getPower(POWER_ID);
+        return (p instanceof PyroPower) ? ((PyroPower) p).burstCount : 0;
+    }
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (info.owner == this.owner && damageAmount > 0) {
             flash();
             amount += 1;
             if (amount >= THRESHOLD) {
                 int dmg = 8 + burstCount * 3;
+                AbstractPower fh = this.owner.getPower(FlameHeartPower.POWER_ID);
+                if (fh != null) {
+                    dmg += 4 * fh.amount;
+                }
                 addToBot(new DamageAllEnemiesAction((AbstractPlayer) this.owner, dmg,
                         DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
                 amount -= THRESHOLD;

@@ -24,6 +24,9 @@ public class NymphSoulBind extends AbstractNymphCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof nymph.characters.Nymph) {
+            ((nymph.characters.Nymph) p).playCharAnimation("Skill_3_Attack");
+        }
         addToBot(new ApplyPowerAction(m, p, new HexPower(m, magicNumber), magicNumber));
     }
 

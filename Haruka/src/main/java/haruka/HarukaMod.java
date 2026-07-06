@@ -7,6 +7,7 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,6 +20,14 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import haruka.cards.HarukaEarlyBurst;
+import haruka.cards.HarukaGatherFlame;
+import haruka.cards.HarukaFlameHeart;
+import haruka.cards.HarukaDuetSpark;
+import haruka.cards.HarukaFireTree;
+import haruka.cards.HarukaAddFuel;
+import haruka.cards.HarukaAfterHeat;
+import haruka.cards.HarukaFinalDance;
 import haruka.core.ClassEnum;
 import haruka.core.ColorEnum;
 import haruka.characters.Haruka;
@@ -63,6 +72,7 @@ public class HarukaMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
+        OnStartBattleSubscriber,
         PostInitializeSubscriber {
 
     public static final String MOD_ID = "haruka";
@@ -159,6 +169,14 @@ public class HarukaMod implements
         BaseMod.addCard(new HarukaBulkGuard07());
         BaseMod.addCard(new HarukaBulkDraw08());
         BaseMod.addCard(new HarukaBulkFinale30());
+        BaseMod.addCard(new HarukaEarlyBurst());
+        BaseMod.addCard(new HarukaGatherFlame());
+        BaseMod.addCard(new HarukaFlameHeart());
+        BaseMod.addCard(new HarukaDuetSpark());
+        BaseMod.addCard(new HarukaFireTree());
+        BaseMod.addCard(new HarukaAddFuel());
+        BaseMod.addCard(new HarukaAfterHeat());
+        BaseMod.addCard(new HarukaFinalDance());
     }
 
     @Override
@@ -194,5 +212,12 @@ public class HarukaMod implements
         BaseMod.loadCustomStringsFile(PowerStrings.class, base + "haruka_powers-zh.json");
         BaseMod.loadCustomStringsFile(EventStrings.class, base + "haruka_events-zh.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, base + "haruka_uis-zh.json");
+    }
+
+    @Override
+    public void receiveOnBattleStart(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
+        if (com.megacrit.cardcrawl.dungeons.AbstractDungeon.player instanceof haruka.characters.Haruka) {
+            ((haruka.characters.Haruka) com.megacrit.cardcrawl.dungeons.AbstractDungeon.player).playIntroAnimation();
+        }
     }
 }

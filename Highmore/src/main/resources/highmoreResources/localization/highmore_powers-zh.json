@@ -12,5 +12,12 @@
       "每回合开始时获得 ",
       " 层收割。"
     ]
+  },
+  "highmore:BloodScalePower": {
+    "NAME": "血鳞",
+    "DESCRIPTIONS": [
+      "每当你失去生命，获得 ",
+      " 层收割。"
+    ]
   }
 }

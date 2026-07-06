@@ -7,6 +7,7 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,6 +20,14 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import nymph.cards.NymphHexSpread;
+import nymph.cards.NymphHeartBite;
+import nymph.cards.NymphFearFeast;
+import nymph.cards.NymphHexLink;
+import nymph.cards.NymphNightEcho;
+import nymph.cards.NymphSpiritClaw;
+import nymph.cards.NymphLockTighten;
+import nymph.cards.NymphShadowReap;
 import nymph.core.ClassEnum;
 import nymph.core.ColorEnum;
 import nymph.characters.Nymph;
@@ -63,6 +72,7 @@ public class NymphMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
+        OnStartBattleSubscriber,
         PostInitializeSubscriber {
 
     public static final String MOD_ID = "nymph";
@@ -159,6 +169,14 @@ public class NymphMod implements
         BaseMod.addCard(new NymphBulkGuard07());
         BaseMod.addCard(new NymphBulkDraw08());
         BaseMod.addCard(new NymphBulkFinale30());
+        BaseMod.addCard(new NymphHexSpread());
+        BaseMod.addCard(new NymphHeartBite());
+        BaseMod.addCard(new NymphFearFeast());
+        BaseMod.addCard(new NymphHexLink());
+        BaseMod.addCard(new NymphNightEcho());
+        BaseMod.addCard(new NymphSpiritClaw());
+        BaseMod.addCard(new NymphLockTighten());
+        BaseMod.addCard(new NymphShadowReap());
     }
 
     @Override
@@ -195,5 +213,12 @@ public class NymphMod implements
         BaseMod.loadCustomStringsFile(PowerStrings.class, base + "nymph_powers-zh.json");
         BaseMod.loadCustomStringsFile(EventStrings.class, base + "nymph_events-zh.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, base + "nymph_uis-zh.json");
+    }
+
+    @Override
+    public void receiveOnBattleStart(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
+        if (com.megacrit.cardcrawl.dungeons.AbstractDungeon.player instanceof nymph.characters.Nymph) {
+            ((nymph.characters.Nymph) com.megacrit.cardcrawl.dungeons.AbstractDungeon.player).playIntroAnimation();
+        }
     }
 }

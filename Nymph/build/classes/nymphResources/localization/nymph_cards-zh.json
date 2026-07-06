@@ -90,5 +90,37 @@
   "nymph:BulkFinale30": {
     "NAME": "心蚀终局",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 若目标咒灵不少于 4 层：额外造成 12 点伤害并移除其 4 层咒灵。"
+  },
+  "nymph:HexSpread": {
+    "NAME": "咒火蔓延",
+    "DESCRIPTION": "将目标咒灵层数的一半（向上取整）施加给所有其他敌人。"
+  },
+  "nymph:HeartBite": {
+    "NAME": "噬心",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若目标有心锁：额外造成 4 点伤害。"
+  },
+  "nymph:FearFeast": {
+    "NAME": "恐惧盛宴",
+    "DESCRIPTION": "对所有敌人施加 1 层恐惧。消耗。"
+  },
+  "nymph:HexLink": {
+    "NAME": "咒缚连结",
+    "DESCRIPTION": "对目标施加 !M! 咒灵。"
+  },
+  "nymph:NightEcho": {
+    "NAME": "梦魇回响",
+    "DESCRIPTION": "每回合开始时对随机敌人施加 !M! 咒灵。"
+  },
+  "nymph:SpiritClaw": {
+    "NAME": "灵爪",
+    "DESCRIPTION": "造成 !D! 点伤害。对目标施加 1 咒灵。"
+  },
+  "nymph:LockTighten": {
+    "NAME": "心锁强化",
+    "DESCRIPTION": "对目标施加 !M! 心锁。抽 1 张牌。"
+  },
+  "nymph:ShadowReap": {
+    "NAME": "收割之影",
+    "DESCRIPTION": "造成 !D! 点伤害，目标每层咒灵额外 +3；然后移除其全部咒灵。"
   }
 }

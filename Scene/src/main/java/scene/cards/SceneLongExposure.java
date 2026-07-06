@@ -22,6 +22,9 @@ public class SceneLongExposure extends AbstractSceneCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof scene.characters.Scene) {
+            ((scene.characters.Scene) p).playCharAnimation("Skill_1");
+        }
         int bonus = FocusPower.get(p) * 2;
         addToBot(new DamageAction(m, new DamageInfo(p, damage + bonus, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));
     }

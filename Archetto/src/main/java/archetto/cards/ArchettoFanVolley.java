@@ -22,6 +22,9 @@ public class ArchettoFanVolley extends AbstractArchettoCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof archetto.characters.Archetto) {
+            ((archetto.characters.Archetto) p).playCharAnimation("Skill_2");
+        }
         addToBot(new ApplyPowerAction(p, p, new AimPower(p, 1), 1));
         addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
     }

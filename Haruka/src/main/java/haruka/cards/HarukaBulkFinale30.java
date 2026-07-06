@@ -20,6 +20,9 @@ public class HarukaBulkFinale30 extends AbstractHarukaCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof haruka.characters.Haruka) {
+            ((haruka.characters.Haruka) p).playCharAnimation("Skill_3_Begin");
+        }
         AbstractPower stacks = p.getPower(PyroPower.POWER_ID);
         int bonus = (stacks != null && stacks.amount >= 6) ? 12 : 0;
         addToBot(new DamageAction(m, new DamageInfo(p, damage + bonus, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));

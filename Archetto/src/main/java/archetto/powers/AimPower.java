@@ -36,9 +36,13 @@ public class AimPower extends AbstractPower {
         AbstractPower p = o.getPower(POWER_ID);
         return p == null ? 0 : p.amount;
     }
+    /** 箭无虚发：下一次攻击不消耗瞄准。 */
+    public static boolean preserveNext = false;
+
     public float atDamageGive(float damage, DamageInfo.DamageType type, AbstractCard card) {
         if (amount > 0 && card.type == AbstractCard.CardType.ATTACK) {
-            return damage + amount * 2;
+            int per = 2 + (owner != null && owner.hasPower(HawkEyePower.POWER_ID) ? 1 : 0);
+            return damage + amount * per;
         }
         return damage;
     }
@@ -47,6 +51,10 @@ public class AimPower extends AbstractPower {
     private boolean pendingConsume = false;
 
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
+        if (preserveNext && info.owner == this.owner && info.type != DamageInfo.DamageType.THORNS) {
+            preserveNext = false;
+            return;
+        }
         if (info.owner == this.owner && info.type != DamageInfo.DamageType.THORNS
                 && amount > 0 && !pendingConsume) {
             pendingConsume = true;

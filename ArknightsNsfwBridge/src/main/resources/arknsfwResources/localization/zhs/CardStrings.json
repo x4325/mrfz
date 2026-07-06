@@ -405,5 +405,105 @@
  "arknsfw:NymphCalmBreath": {
   "NAME": "平复呼吸",
   "DESCRIPTION": "兴奋 -!M! 。消耗。"
+ },
+ "arknsfw:HighmoreIndulgentStrike": {
+  "NAME": "放纵一击",
+  "DESCRIPTION": "造成 !D! 点伤害。兴奋 +15。"
+ },
+ "arknsfw:HighmoreOfferBody": {
+  "NAME": "献身防御",
+  "DESCRIPTION": "获得 !B! 点格挡。受孕度 +3。"
+ },
+ "arknsfw:HighmoreLewdTrance": {
+  "NAME": "淫乱状态",
+  "DESCRIPTION": "每回合开始：获得 !M! 层角色资源，兴奋 +8。"
+ },
+ "arknsfw:HighmoreShameSweat": {
+  "NAME": "羞耻发汗",
+  "DESCRIPTION": "抽 2 张牌。兴奋 +8。"
+ },
+ "arknsfw:HighmorePleasureBurst": {
+  "NAME": "快感转化",
+  "DESCRIPTION": "造成等同兴奋值 1/5 的伤害（最多 !M! ，至少 3）。兴奋 -20。"
+ },
+ "arknsfw:SceneIndulgentStrike": {
+  "NAME": "放纵一击",
+  "DESCRIPTION": "造成 !D! 点伤害。兴奋 +15。"
+ },
+ "arknsfw:SceneOfferBody": {
+  "NAME": "献身防御",
+  "DESCRIPTION": "获得 !B! 点格挡。受孕度 +3。"
+ },
+ "arknsfw:SceneLewdTrance": {
+  "NAME": "淫乱状态",
+  "DESCRIPTION": "每回合开始：获得 !M! 层角色资源，兴奋 +8。"
+ },
+ "arknsfw:SceneShameSweat": {
+  "NAME": "羞耻发汗",
+  "DESCRIPTION": "抽 2 张牌。兴奋 +8。"
+ },
+ "arknsfw:ScenePleasureBurst": {
+  "NAME": "快感转化",
+  "DESCRIPTION": "造成等同兴奋值 1/5 的伤害（最多 !M! ，至少 3）。兴奋 -20。"
+ },
+ "arknsfw:ArchettoIndulgentStrike": {
+  "NAME": "放纵一击",
+  "DESCRIPTION": "造成 !D! 点伤害。兴奋 +15。"
+ },
+ "arknsfw:ArchettoOfferBody": {
+  "NAME": "献身防御",
+  "DESCRIPTION": "获得 !B! 点格挡。受孕度 +3。"
+ },
+ "arknsfw:ArchettoLewdTrance": {
+  "NAME": "淫乱状态",
+  "DESCRIPTION": "每回合开始：获得 !M! 层角色资源，兴奋 +8。"
+ },
+ "arknsfw:ArchettoShameSweat": {
+  "NAME": "羞耻发汗",
+  "DESCRIPTION": "抽 2 张牌。兴奋 +8。"
+ },
+ "arknsfw:ArchettoPleasureBurst": {
+  "NAME": "快感转化",
+  "DESCRIPTION": "造成等同兴奋值 1/5 的伤害（最多 !M! ，至少 3）。兴奋 -20。"
+ },
+ "arknsfw:HarukaIndulgentStrike": {
+  "NAME": "放纵一击",
+  "DESCRIPTION": "造成 !D! 点伤害。兴奋 +15。"
+ },
+ "arknsfw:HarukaOfferBody": {
+  "NAME": "献身防御",
+  "DESCRIPTION": "获得 !B! 点格挡。受孕度 +3。"
+ },
+ "arknsfw:HarukaLewdTrance": {
+  "NAME": "淫乱状态",
+  "DESCRIPTION": "每回合开始：获得 !M! 层角色资源，兴奋 +8。"
+ },
+ "arknsfw:HarukaShameSweat": {
+  "NAME": "羞耻发汗",
+  "DESCRIPTION": "抽 2 张牌。兴奋 +8。"
+ },
+ "arknsfw:HarukaPleasureBurst": {
+  "NAME": "快感转化",
+  "DESCRIPTION": "造成等同兴奋值 1/5 的伤害（最多 !M! ，至少 3）。兴奋 -20。"
+ },
+ "arknsfw:NymphIndulgentStrike": {
+  "NAME": "放纵一击",
+  "DESCRIPTION": "造成 !D! 点伤害。兴奋 +15。"
+ },
+ "arknsfw:NymphOfferBody": {
+  "NAME": "献身防御",
+  "DESCRIPTION": "获得 !B! 点格挡。受孕度 +3。"
+ },
+ "arknsfw:NymphLewdTrance": {
+  "NAME": "淫乱状态",
+  "DESCRIPTION": "每回合开始：获得 !M! 层角色资源，兴奋 +8。"
+ },
+ "arknsfw:NymphShameSweat": {
+  "NAME": "羞耻发汗",
+  "DESCRIPTION": "抽 2 张牌。兴奋 +8。"
+ },
+ "arknsfw:NymphPleasureBurst": {
+  "NAME": "快感转化",
+  "DESCRIPTION": "造成等同兴奋值 1/5 的伤害（最多 !M! ，至少 3）。兴奋 -20。"
  }
 }

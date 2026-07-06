@@ -21,6 +21,9 @@ public class HarukaSparkWave extends AbstractHarukaCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof haruka.characters.Haruka) {
+            ((haruka.characters.Haruka) p).playCharAnimation("Skill_Begin");
+        }
         addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
     }
 

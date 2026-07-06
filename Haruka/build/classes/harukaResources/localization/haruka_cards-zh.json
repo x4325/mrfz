@@ -90,5 +90,37 @@
   "haruka:BulkFinale30": {
     "NAME": "压轴烟花",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 若花火不少于 6 层：额外造成 12 点伤害。"
+  },
+  "haruka:EarlyBurst": {
+    "NAME": "提前引爆",
+    "DESCRIPTION": "若花火不少于 6 层：消耗 6 层，对所有敌人造成 !M! 点法术伤害。"
+  },
+  "haruka:GatherFlame": {
+    "NAME": "蓄势",
+    "DESCRIPTION": "获得 !B! 点格挡。获得 2 花火。"
+  },
+  "haruka:FlameHeart": {
+    "NAME": "焰心",
+    "DESCRIPTION": "花火引爆的伤害 +4。"
+  },
+  "haruka:DuetSpark": {
+    "NAME": "双重奏",
+    "DESCRIPTION": "造成 !D! 点伤害两次。"
+  },
+  "haruka:FireTree": {
+    "NAME": "火树银花",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 花火。"
+  },
+  "haruka:AddFuel": {
+    "NAME": "祭火添薪",
+    "DESCRIPTION": "获得 2 花火。消耗。（升级后不再消耗）"
+  },
+  "haruka:AfterHeat": {
+    "NAME": "余热",
+    "DESCRIPTION": "获得 !B! 点格挡，再获得等同花火层数一半的格挡（最多 9）。"
+  },
+  "haruka:FinalDance": {
+    "NAME": "终夜舞",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若本场战斗引爆过花火：额外造成 10 点伤害。"
   }
 }

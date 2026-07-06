@@ -90,5 +90,37 @@
   "archetto:BulkFinale30": {
     "NAME": "终曲齐鸣",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 若你有至少 4 层瞄准：额外造成 12 点伤害。"
+  },
+  "archetto:SteadyBreath": {
+    "NAME": "稳息",
+    "DESCRIPTION": "获得 !M! 瞄准。"
+  },
+  "archetto:TrueShot": {
+    "NAME": "箭无虚发",
+    "DESCRIPTION": "造成 !D! 点伤害。此攻击不会消耗瞄准。"
+  },
+  "archetto:TripleArrow": {
+    "NAME": "三连箭",
+    "DESCRIPTION": "造成 !D! 点伤害三次。"
+  },
+  "archetto:HawkEye": {
+    "NAME": "鹰眼",
+    "DESCRIPTION": "你的每层瞄准提供的伤害加成 +1。"
+  },
+  "archetto:SnapString": {
+    "NAME": "断弦怒射",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若瞄准不少于 5 层：额外造成 12 点伤害。"
+  },
+  "archetto:QuiverRefill": {
+    "NAME": "补给箭袋",
+    "DESCRIPTION": "获得 2 瞄准。消耗。（升级后不再消耗）"
+  },
+  "archetto:SwiftStep": {
+    "NAME": "迅捷步伐",
+    "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
+  },
+  "archetto:ArrowStorm": {
+    "NAME": "万箭齐发",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
   }
 }

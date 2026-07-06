@@ -248,4 +248,47 @@ public class Archetto extends CustomPlayer {
     }
 
 
+
+    // ================= 骨骼动画触发 =================
+
+    private String idleAnimName() {
+        if (this.stateData == null) {
+            return "Idle";
+        }
+        return this.stateData.getSkeletonData().findAnimation("Idle") != null ? "Idle" : "Default";
+    }
+
+    /** 播放一次指定动作，结束后自动回到待机（含混合过渡）。 */
+    public void playCharAnimation(String name) {
+        if (this.state == null || this.stateData == null || name == null) {
+            return;
+        }
+        if (this.stateData.getSkeletonData().findAnimation(name) == null) {
+            return;
+        }
+        AnimationState.TrackEntry e = this.state.setAnimation(0, name, false);
+        e.setTimeScale(1.0f);
+        AnimationState.TrackEntry idle = this.state.addAnimation(0, idleAnimName(), true, 0.0f);
+        idle.setTimeScale(0.6f);
+    }
+
+    @Override
+    public void useFastAttackAnimation() {
+        super.useFastAttackAnimation();
+        playCharAnimation("Attack");
+    }
+
+    /** 登场动作（战斗开始时由 Mod 调用）。 */
+    public void playIntroAnimation() {
+        playCharAnimation("Start");
+    }
+
+    @Override
+    public void damage(com.megacrit.cardcrawl.cards.DamageInfo info) {
+        int before = this.currentHealth;
+        super.damage(info);
+        if (before > 0 && this.currentHealth <= 0) {
+            playCharAnimation("Die");
+        }
+    }
 }

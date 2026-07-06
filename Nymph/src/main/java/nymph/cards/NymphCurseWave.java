@@ -25,6 +25,9 @@ public class NymphCurseWave extends AbstractNymphCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof nymph.characters.Nymph) {
+            ((nymph.characters.Nymph) p).playCharAnimation("Skill_2");
+        }
         addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
         for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) if (!mo.isDead && !mo.isDying) addToBot(new ApplyPowerAction(mo, p, new HexPower(mo, magicNumber), magicNumber));
     }

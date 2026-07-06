@@ -7,6 +7,7 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,6 +20,14 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import highmore.cards.HighmoreAbyssPull;
+import highmore.cards.HighmoreBloodScale;
+import highmore.cards.HighmoreRipTide;
+import highmore.cards.HighmoreGreatTide;
+import highmore.cards.HighmoreAbyssGaze;
+import highmore.cards.HighmoreDrownEmbrace;
+import highmore.cards.HighmoreSaltDraw;
+import highmore.cards.HighmoreTidePool;
 import highmore.core.ClassEnum;
 import highmore.core.ColorEnum;
 import highmore.characters.Highmore;
@@ -62,6 +71,7 @@ public class HighmoreMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
+        OnStartBattleSubscriber,
         PostInitializeSubscriber {
 
     public static final String MOD_ID = "highmore";
@@ -157,6 +167,14 @@ public class HighmoreMod implements
         BaseMod.addCard(new HighmoreBulkGuard07());
         BaseMod.addCard(new HighmoreBulkDraw08());
         BaseMod.addCard(new HighmoreBulkFinale30());
+        BaseMod.addCard(new HighmoreAbyssPull());
+        BaseMod.addCard(new HighmoreBloodScale());
+        BaseMod.addCard(new HighmoreRipTide());
+        BaseMod.addCard(new HighmoreGreatTide());
+        BaseMod.addCard(new HighmoreAbyssGaze());
+        BaseMod.addCard(new HighmoreDrownEmbrace());
+        BaseMod.addCard(new HighmoreSaltDraw());
+        BaseMod.addCard(new HighmoreTidePool());
     }
 
     @Override
@@ -193,5 +211,12 @@ public class HighmoreMod implements
         BaseMod.loadCustomStringsFile(PowerStrings.class, base + "highmore_powers-zh.json");
         BaseMod.loadCustomStringsFile(EventStrings.class, base + "highmore_events-zh.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, base + "highmore_uis-zh.json");
+    }
+
+    @Override
+    public void receiveOnBattleStart(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
+        if (com.megacrit.cardcrawl.dungeons.AbstractDungeon.player instanceof highmore.characters.Highmore) {
+            ((highmore.characters.Highmore) com.megacrit.cardcrawl.dungeons.AbstractDungeon.player).playIntroAnimation();
+        }
     }
 }

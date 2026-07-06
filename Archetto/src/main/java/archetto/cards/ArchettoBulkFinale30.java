@@ -20,6 +20,9 @@ public class ArchettoBulkFinale30 extends AbstractArchettoCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof archetto.characters.Archetto) {
+            ((archetto.characters.Archetto) p).playCharAnimation("Skill_3");
+        }
         AbstractPower stacks = p.getPower(AimPower.POWER_ID);
         int bonus = (stacks != null && stacks.amount >= 4) ? 12 : 0;
         addToBot(new DamageAction(m, new DamageInfo(p, damage + bonus, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));

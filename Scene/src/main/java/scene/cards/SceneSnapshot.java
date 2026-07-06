@@ -23,6 +23,9 @@ public class SceneSnapshot extends AbstractSceneCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof scene.characters.Scene) {
+            ((scene.characters.Scene) p).playCharAnimation("Skill_2");
+        }
         // 基础伤害必定生效；若取景 ≥3 则消耗 3 层再引爆一次
         addToBot(new DamageAllEnemiesAction(p, multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
         if (FocusPower.get(p) >= 3 && FocusPower.spend(p, 3)) {

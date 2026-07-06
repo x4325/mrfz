@@ -7,6 +7,7 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,6 +20,14 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import archetto.cards.ArchettoSteadyBreath;
+import archetto.cards.ArchettoTrueShot;
+import archetto.cards.ArchettoTripleArrow;
+import archetto.cards.ArchettoHawkEye;
+import archetto.cards.ArchettoSnapString;
+import archetto.cards.ArchettoQuiverRefill;
+import archetto.cards.ArchettoSwiftStep;
+import archetto.cards.ArchettoArrowStorm;
 import archetto.core.ClassEnum;
 import archetto.core.ColorEnum;
 import archetto.characters.Archetto;
@@ -63,6 +72,7 @@ public class ArchettoMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
+        OnStartBattleSubscriber,
         PostInitializeSubscriber {
 
     public static final String MOD_ID = "archetto";
@@ -159,6 +169,14 @@ public class ArchettoMod implements
         BaseMod.addCard(new ArchettoBulkGuard07());
         BaseMod.addCard(new ArchettoBulkDraw08());
         BaseMod.addCard(new ArchettoBulkFinale30());
+        BaseMod.addCard(new ArchettoSteadyBreath());
+        BaseMod.addCard(new ArchettoTrueShot());
+        BaseMod.addCard(new ArchettoTripleArrow());
+        BaseMod.addCard(new ArchettoHawkEye());
+        BaseMod.addCard(new ArchettoSnapString());
+        BaseMod.addCard(new ArchettoQuiverRefill());
+        BaseMod.addCard(new ArchettoSwiftStep());
+        BaseMod.addCard(new ArchettoArrowStorm());
     }
 
     @Override
@@ -194,5 +212,12 @@ public class ArchettoMod implements
         BaseMod.loadCustomStringsFile(PowerStrings.class, base + "archetto_powers-zh.json");
         BaseMod.loadCustomStringsFile(EventStrings.class, base + "archetto_events-zh.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, base + "archetto_uis-zh.json");
+    }
+
+    @Override
+    public void receiveOnBattleStart(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
+        if (com.megacrit.cardcrawl.dungeons.AbstractDungeon.player instanceof archetto.characters.Archetto) {
+            ((archetto.characters.Archetto) com.megacrit.cardcrawl.dungeons.AbstractDungeon.player).playIntroAnimation();
+        }
     }
 }

@@ -86,5 +86,37 @@
   "highmore:BulkFinale30": {
     "NAME": "大收割",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 若收割不少于 4 层：额外造成 12 点伤害并消耗 4 层收割。"
+  },
+  "highmore:AbyssPull": {
+    "NAME": "深海引力",
+    "DESCRIPTION": "获得 !B! 点格挡，再获得等同收割层数的格挡（最多 12）。"
+  },
+  "highmore:BloodScale": {
+    "NAME": "血鳞",
+    "DESCRIPTION": "每当你失去生命，获得 !M! 收割。"
+  },
+  "highmore:RipTide": {
+    "NAME": "撕裂之潮",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若收割不少于 2 层：额外造成 3 点伤害。"
+  },
+  "highmore:GreatTide": {
+    "NAME": "大潮咏叹",
+    "DESCRIPTION": "收割层数翻倍（最多增加 6 层）。"
+  },
+  "highmore:AbyssGaze": {
+    "NAME": "海渊凝视",
+    "DESCRIPTION": "造成 !D! 点伤害。潮汐回复等同收割层数的生命。"
+  },
+  "highmore:DrownEmbrace": {
+    "NAME": "溺亡之抱",
+    "DESCRIPTION": "造成 !D! 点伤害，每层收割额外 +2；然后失去全部收割。"
+  },
+  "highmore:SaltDraw": {
+    "NAME": "盐析",
+    "DESCRIPTION": "失去 3 生命。抽 !M! 张牌。"
+  },
+  "highmore:TidePool": {
+    "NAME": "潮池",
+    "DESCRIPTION": "获得 !B! 点格挡。抽 1 张牌。"
   }
 }
