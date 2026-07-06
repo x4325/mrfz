@@ -136,7 +136,7 @@ public class HarukaMod implements
 
                                 @Override
     public void receivePostInitialize() {
-        System.out.println("[haruka] 0.4.2-verify loaded");
+        System.out.println("[haruka] 0.4.3-restfix loaded");
         SkinSelectScreen.Inst = new SkinSelectScreen();
         BaseMod.addEvent(HarukaFestivalGate.ID, HarukaFestivalGate.class, Exordium.ID);
         BaseMod.addEvent(HarukaFireworkFault.ID, HarukaFireworkFault.class, TheCity.ID);

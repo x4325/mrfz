@@ -76,7 +76,10 @@ public final class ArkPostBattleChoice {
             return false;
         }
         AbstractRoom room = AbstractDungeon.getCurrRoom();
-        if (room == null || room.phase != AbstractRoom.RoomPhase.COMPLETE) {
+        // 只在战斗类房间显示：休息处/商店/事件房的 phase 同样是 COMPLETE，
+        // 不加房间类型判断会渗透到营火界面并吞掉点击。
+        if (room == null || room.phase != AbstractRoom.RoomPhase.COMPLETE
+                || !(room instanceof com.megacrit.cardcrawl.rooms.MonsterRoom)) {
             active = false;
             return false;
         }
@@ -90,7 +93,7 @@ public final class ArkPostBattleChoice {
     public static void update() {
         try {
             updateInner();
-        } catch (Exception ignored) {
+        } catch (Throwable ignored) {
         }
     }
 
@@ -145,7 +148,7 @@ public final class ArkPostBattleChoice {
     public static void render(SpriteBatch sb) {
         try {
             renderInner(sb);
-        } catch (Exception ignored) {
+        } catch (Throwable ignored) {
         }
     }
 

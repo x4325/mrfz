@@ -148,8 +148,8 @@ public final class ArkPortraitPanel {
     public static void render(SpriteBatch sb) {
         try {
             renderInner(sb);
-        } catch (Exception ignored) {
-            // 任何异常都不允许拖垮整帧渲染
+        } catch (Throwable ignored) {
+            // 任何异常/Error 都不允许拖垮整帧渲染
         }
     }
 
@@ -162,7 +162,9 @@ public final class ArkPortraitPanel {
         if (room == null || room.phase != AbstractRoom.RoomPhase.COMBAT) {
             return;
         }
-        if (AbstractDungeon.screen != AbstractDungeon.CurrentScreen.NONE || AbstractDungeon.isScreenUp) {
+        // 注意：不能检查 AbstractDungeon.screen != NONE —— 该字段会保留上一次打开的界面枚举，
+        // 导致进过地图/牌组后条件永远为真、立绘永不渲染。只用 isScreenUp 判断。
+        if (AbstractDungeon.isScreenUp) {
             return;
         }
         int tier = tier();
