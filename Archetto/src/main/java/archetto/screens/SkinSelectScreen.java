@@ -47,10 +47,12 @@ public class SkinSelectScreen implements ISubscriber, CustomSavable<Integer> {
     private static final String CHAR_PREFIX = ArchettoMod.imgPath("char/");
     private static final float SPINE_SCALE = 1.75f;
 
+    // Order must match the SkinSelect names in localization:
+    // 0=默认, 1=宣传策略(sale_14), 2=至虔者荣光(shining_1)
     public static final String[] SKIN_PATHS = {
             "idle/char_332_archet",
-            "skins/char_332_archet_shining_1/char_332_archet_shining_1",
             "skins/char_332_archet_sale_14/char_332_archet_sale_14",
+            "skins/char_332_archet_shining_1/char_332_archet_shining_1",
     };
 
     private static final ArrayList<Skin> skins = new ArrayList<>();
