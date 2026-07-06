@@ -5,29 +5,30 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import nymph.NymphMod;
-import nymph.cards.AbstractNymphCard;
 import nymph.powers.HexPower;
-import nymph.powers.FearPower;
-import nymph.powers.HeartLockPower;
+
+/** 目标咒灵达到阈值时爆发并移除其咒灵。 */
 public class NymphBulkFinale05 extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("BulkFinale05");
 
     public NymphBulkFinale05() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = 12;
+        baseDamage = 10;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractPower stacks = p.getPower(HexPower.POWER_ID);
-        int bonus = (stacks != null && stacks.amount >= 3) ? 6 : 0;
+        AbstractPower stacks = m == null ? null : m.getPower(HexPower.POWER_ID);
+        boolean burst = stacks != null && stacks.amount >= 3;
+        int bonus = burst ? 8 : 0;
         addToBot(new DamageAction(m, new DamageInfo(p, damage + bonus, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        if (stacks != null && stacks.amount >= 3) { stacks.amount -= 3; }
+        if (burst) {
+            addToBot(new ReducePowerAction(m, p, HexPower.POWER_ID, 3));
+        }
     }
 
     @Override

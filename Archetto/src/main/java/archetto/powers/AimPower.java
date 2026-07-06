@@ -41,10 +41,29 @@ public class AimPower extends AbstractPower {
         }
         return damage;
     }
+
+    /** 同一张攻击牌只结算一次消耗；AOE 的每个目标都吃满加成后再统一清层。 */
+    private boolean pendingConsume = false;
+
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (info.owner == this.owner && amount > 0) {
-            addToBot(new ReducePowerAction(owner, owner, POWER_ID, amount));
+        if (info.owner == this.owner && info.type != DamageInfo.DamageType.THORNS
+                && amount > 0 && !pendingConsume) {
+            pendingConsume = true;
+            final int toRemove = amount;
+            addToBot(new ReducePowerAction(owner, owner, POWER_ID, toRemove));
+            addToBot(new AbstractGameAction() {
+                @Override
+                public void update() {
+                    pendingConsume = false;
+                    this.isDone = true;
+                }
+            });
         }
+    }
+
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        pendingConsume = false;
     }
     public void stackPower(int n) { super.stackPower(n); updateDescription(); }
     public void updateDescription() { description = ps.DESCRIPTIONS[0] + (amount * 2) + ps.DESCRIPTIONS[1]; }

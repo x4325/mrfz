@@ -3,10 +3,7 @@
     "NAME": "妮芙之证",
     "FLAVOR": "你踏上旅程的信物。",
     "DESCRIPTIONS": [
-      "战斗开始时获得 1 点力量。"
-    ],
-    "DESCRIPTION": [
-      "战斗开始时获得 1 咒灵。"
+      "战斗开始时，对随机敌人施加 2 咒灵。"
     ]
   },
   "nymph:NymphHexCharm": {
@@ -35,83 +32,6 @@
     "FLAVOR": "妮芙",
     "DESCRIPTIONS": [
       "战斗开始时对所有敌人施加 1 心锁。"
-    ]
-  },
-  "nymph:BulkRelic01": {
-    "NAME": "余韵1",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "每回合开始时获得 1 咒灵。"
-    ]
-  },
-  "nymph:BulkRelic02": {
-    "NAME": "铭刻2",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "每当你打出技能牌，获得 1 咒灵。"
-    ]
-  },
-  "nymph:BulkRelic03": {
-    "NAME": "回响3",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "战斗开始时获得 2 咒灵。"
-    ]
-  },
-  "nymph:BulkRelic04": {
-    "NAME": "遗珠4",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "每回合开始时获得 1 咒灵。"
-    ]
-  },
-  "nymph:BulkRelic05": {
-    "NAME": "旧证5",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "每当你打出技能牌，获得 1 咒灵。"
-    ]
-  },
-  "nymph:BulkRelic06": {
-    "NAME": "残章6",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "战斗开始时获得 2 咒灵。"
-    ]
-  },
-  "nymph:BulkRelic07": {
-    "NAME": "秘纹7",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "每回合开始时获得 1 咒灵。"
-    ]
-  },
-  "nymph:BulkRelic08": {
-    "NAME": "古片8",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "每当你打出技能牌，获得 1 咒灵。"
-    ]
-  },
-  "nymph:BulkRelic09": {
-    "NAME": "旅标9",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "战斗开始时获得 2 咒灵。"
-    ]
-  },
-  "nymph:BulkRelic10": {
-    "NAME": "信物10",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "每回合开始时获得 1 咒灵。"
-    ]
-  },
-  "nymph:BulkRelic11": {
-    "NAME": "终末11",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "每当你打出技能牌，获得 1 咒灵。"
     ]
   }
 }

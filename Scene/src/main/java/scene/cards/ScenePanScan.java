@@ -21,10 +21,19 @@ public class ScenePanScan extends AbstractSceneCard {
     }
 
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    public void use(final AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new FocusPower(p, 1), 1));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        if (FocusPower.get(p) >= 2) { addToBot(new DrawCardAction(p, 1)); }
+        // 在 +1 取景结算之后再判定层数
+        addToBot(new AbstractGameAction() {
+            @Override
+            public void update() {
+                if (FocusPower.get(p) >= 2) {
+                    addToTop(new DrawCardAction(p, 1));
+                }
+                this.isDone = true;
+            }
+        });
     }
 
     @Override
