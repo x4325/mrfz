@@ -2,7 +2,7 @@ package archetto.patches;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpireInstrumentPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.megacrit.cardcrawl.ui.campfire.CampfireUI;
+import com.megacrit.cardcrawl.rooms.CampfireUI;
 import javassist.CannotCompileException;
 import javassist.expr.ExprEditor;
 import javassist.expr.MethodCall;

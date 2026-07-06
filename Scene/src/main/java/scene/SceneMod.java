@@ -143,7 +143,7 @@ public class SceneMod implements
 
                                 @Override
     public void receivePostInitialize() {
-        System.out.println("[scene] 0.4.6-equipment loaded");
+        System.out.println("[scene] 0.4.7-fixbuild loaded");
         SkinSelectScreen.Inst = new SkinSelectScreen();
         BaseMod.addEvent(SceneDarkroom.ID, SceneDarkroom.class, Exordium.ID);
         BaseMod.addEvent(SceneGallery.ID, SceneGallery.class, TheCity.ID);
