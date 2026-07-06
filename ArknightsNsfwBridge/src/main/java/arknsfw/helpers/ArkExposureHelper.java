@@ -4,13 +4,12 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import liesecore.helpers.NsfwRunStats;
 
 /**
- * 服装/暴露度系统：0=完好 1=破损 2=大破。
- * 累计受伤升档；拼死抵抗/温存休息可修复；大破时立绘切换到第 4 档差分。
- * 暴露越高，兴奋获取越快（见 ArkExposurePatch）。
+ * 服装系统：0=完好 1=破损。累计受伤破损；拼死抵抗修复；换幕重整。
+ * 破损时兴奋获取 +25%（见 ArkExposurePatch）。
  */
 public final class ArkExposureHelper {
 
-    public static final int MAX_STAGE = 2;
+    public static final int MAX_STAGE = 1;
     private static final int DAMAGE_PER_STAGE = 14;
 
     private static int stage = 0;
@@ -76,10 +75,6 @@ public final class ArkExposureHelper {
     }
 
     public static String stageName() {
-        switch (stage()) {
-            case 1: return "衣装：破损";
-            case 2: return "衣装：大破";
-            default: return "衣装：完好";
-        }
+        return stage() >= 1 ? "衣装：破损" : "衣装：完好";
     }
 }

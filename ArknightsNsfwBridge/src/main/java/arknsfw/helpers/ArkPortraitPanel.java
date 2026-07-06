@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 /**
- * 战斗立绘面板：角色左侧官方立绘（膝上、随皮肤），四档差分随兴奋/衣装切换。
+ * 战斗立绘面板：角色左侧官方立绘（膝上、随皮肤），四档差分完全随兴奋值切换（顶档=濒临高潮）。
  * 附动态情欲演出：呼吸起伏、随兴奋脉动的粉雾、上浮的心形粒子。
  */
 public final class ArkPortraitPanel {
@@ -59,13 +59,11 @@ public final class ArkPortraitPanel {
     }
 
     private static int tier() {
-        if (ArkExposureHelper.stage() >= 2) {
-            return 3;
-        }
         int threshold = Math.max(1, NsfwRunStats.getClimaxThreshold());
         int pct = NsfwRunStats.excitement * 100 / threshold;
-        if (pct >= 75) return 2;
-        if (pct >= 35) return 1;
+        if (pct >= 85) return 3;
+        if (pct >= 60) return 2;
+        if (pct >= 30) return 1;
         return 0;
     }
 
