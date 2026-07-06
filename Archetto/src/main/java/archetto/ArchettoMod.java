@@ -136,6 +136,7 @@ public class ArchettoMod implements
 
                                 @Override
     public void receivePostInitialize() {
+        System.out.println("[archetto] 0.4.2-verify loaded");
         SkinSelectScreen.Inst = new SkinSelectScreen();
         BaseMod.addEvent(ArchettoMusicHall.ID, ArchettoMusicHall.class, Exordium.ID);
         BaseMod.addEvent(ArchettoBrokenString.ID, ArchettoBrokenString.class, TheCity.ID);
