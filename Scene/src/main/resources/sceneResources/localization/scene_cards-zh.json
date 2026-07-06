@@ -1,42 +1,42 @@
 {
   "scene:Strike": {
-    "NAME": "稀音击",
+    "NAME": "打板",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "scene:Defend": {
-    "NAME": "稀音御",
+    "NAME": "遮光罩",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "scene:Jab": {
-    "NAME": "稀音刺",
+    "NAME": "抓帧",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "scene:Ward": {
-    "NAME": "稀音护",
+    "NAME": "防抖",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "scene:Cut": {
-    "NAME": "稀音斩",
+    "NAME": "剪辑",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "scene:Surge": {
-    "NAME": "稀音涌",
+    "NAME": "增感",
     "DESCRIPTION": "获得 !M! 点 [E] 力量。"
   },
   "scene:FocusShot": {
-    "NAME": "对焦",
+    "NAME": "合焦",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 层 NL 取景。"
   },
   "scene:ShutterGuard": {
-    "NAME": "快门格挡",
+    "NAME": "快门优先",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 层 NL 取景。"
   },
   "scene:Snapshot": {
-    "NAME": "快照",
+    "NAME": "决定性瞬间",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 若取景不少于 3 层：消耗 3 层，再对所有敌人造成 !D! 点伤害。"
   },
   "scene:LensDraw": {
-    "NAME": "换镜",
+    "NAME": "翻包换镜",
     "DESCRIPTION": "获得 !M! 取景。抽 1 张牌。"
   },
   "scene:PanScan": {
@@ -44,7 +44,7 @@
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 取景。 NL 若取景不少于 2 层：抽 1 张牌。"
   },
   "scene:LongExposure": {
-    "NAME": "长曝光",
+    "NAME": "星轨曝光",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 每有 1 取景，额外造成 2 点伤害。"
   },
   "scene:Develop": {
@@ -52,7 +52,7 @@
     "DESCRIPTION": "获得 !B! 点格挡。 NL 消耗 2 取景，回复 6 点生命。"
   },
   "scene:FreezeFrame": {
-    "NAME": "定格",
+    "NAME": "一帧永驻",
     "DESCRIPTION": "获得 !B! 点格挡。获得 2 取景。"
   },
   "scene:BulkStrike01": {
@@ -60,15 +60,15 @@
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 取景。"
   },
   "scene:BulkGuard02": {
-    "NAME": "取景框",
+    "NAME": "安全框",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 取景。"
   },
   "scene:BulkDraw03": {
-    "NAME": "翻检底片",
+    "NAME": "接触印样",
     "DESCRIPTION": "抽 1 张牌。获得 !M! 取景。"
   },
   "scene:BulkSweep04": {
-    "NAME": "全景扫描",
+    "NAME": "全景接片",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 取景。"
   },
   "scene:BulkFinale05": {
@@ -76,7 +76,7 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 若取景不少于 3 层：额外造成 8 点伤害并消耗 3 层取景。"
   },
   "scene:BulkStrike06": {
-    "NAME": "剪影斩",
+    "NAME": "逆光剪影",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 取景。"
   },
   "scene:BulkGuard07": {
@@ -84,23 +84,23 @@
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 取景。"
   },
   "scene:BulkDraw08": {
-    "NAME": "连拍",
+    "NAME": "高速连拍",
     "DESCRIPTION": "抽 2 张牌。获得 !M! 取景。"
   },
   "scene:BulkFinale30": {
-    "NAME": "杰作冲印",
+    "NAME": "银盐杰作",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 若取景不少于 4 层：额外造成 12 点伤害并消耗 4 层取景。"
   },
   "scene:DevelopRush": {
-    "NAME": "显影加速",
+    "NAME": "迫冲",
     "DESCRIPTION": "消耗 1 取景：抽 2 张牌；否则抽 1 张牌。"
   },
   "scene:WideFrame": {
-    "NAME": "广角构图",
+    "NAME": "鱼眼视界",
     "DESCRIPTION": "获得 !B! 点格挡，再获得等同取景层数的格挡（最多 10）。"
   },
   "scene:BurstShutter": {
-    "NAME": "连环快门",
+    "NAME": "双重曝光",
     "DESCRIPTION": "造成 !D! 点伤害两次。获得 1 取景。"
   },
   "scene:Negative": {
@@ -108,19 +108,19 @@
     "DESCRIPTION": "取景层数翻倍（最多增加 6 层）。"
   },
   "scene:OverExposure": {
-    "NAME": "曝光过度",
+    "NAME": "高光溢出",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 3 取景：给予 2 层易伤。"
   },
   "scene:TimerShutter": {
-    "NAME": "定时快门",
+    "NAME": "延时快门",
     "DESCRIPTION": "获得 1 取景。抽 1 张牌。消耗。（升级后不再消耗）"
   },
   "scene:DarkroomWash": {
-    "NAME": "暗房冲洗",
+    "NAME": "暗房红灯",
     "DESCRIPTION": "获得 !B! 点格挡。 NL 消耗 2 取景：回复 5 点生命。"
   },
   "scene:MasterLens": {
-    "NAME": "取景大师",
+    "NAME": "导演视角",
     "DESCRIPTION": "每回合开始时获得 !M! 取景。"
   }
 }

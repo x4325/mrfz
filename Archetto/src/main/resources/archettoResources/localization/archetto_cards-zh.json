@@ -1,90 +1,90 @@
 {
   "archetto:Strike": {
-    "NAME": "空弦击",
+    "NAME": "拨弦",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "archetto:Defend": {
-    "NAME": "空弦御",
+    "NAME": "休止符",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "archetto:Jab": {
-    "NAME": "空弦刺",
+    "NAME": "断奏",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "archetto:Ward": {
-    "NAME": "空弦护",
+    "NAME": "持续音",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "archetto:Cut": {
-    "NAME": "空弦斩",
+    "NAME": "切分音",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "archetto:Surge": {
-    "NAME": "空弦涌",
+    "NAME": "渐强",
     "DESCRIPTION": "获得 !M! 点 [E] 力量。"
   },
   "archetto:QuickShot": {
-    "NAME": "速射",
+    "NAME": "急板",
     "DESCRIPTION": "若你有至少 3 层瞄准：获得 1 点 [E] 。 NL 造成 !D! 点伤害，然后获得 1 瞄准。"
   },
   "archetto:MarkTarget": {
-    "NAME": "标记",
+    "NAME": "定弦",
     "DESCRIPTION": "获得 !M! 瞄准。"
   },
   "archetto:BurstArrow": {
-    "NAME": "连射",
+    "NAME": "震音连射",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
   },
   "archetto:Reload": {
-    "NAME": "装填",
+    "NAME": "翻谱",
     "DESCRIPTION": "获得 !M! 瞄准。抽 1 张牌。"
   },
   "archetto:FanVolley": {
-    "NAME": "扇形齐射",
+    "NAME": "琶音扫射",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 1 瞄准。"
   },
   "archetto:WindPrep": {
-    "NAME": "风备",
+    "NAME": "起拍预备",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
   },
   "archetto:Concerto": {
-    "NAME": "协奏",
+    "NAME": "协奏曲",
     "DESCRIPTION": "每回合开始时获得 !M! 瞄准。"
   },
   "archetto:PierceShot": {
-    "NAME": "穿透箭",
+    "NAME": "破空强音",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "archetto:BulkStrike01": {
-    "NAME": "轻箭",
+    "NAME": "小快板",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
   },
   "archetto:BulkGuard02": {
-    "NAME": "侧身位",
+    "NAME": "弱起小节",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
   },
   "archetto:BulkDraw03": {
-    "NAME": "抽箭",
+    "NAME": "视奏",
     "DESCRIPTION": "抽 1 张牌。获得 !M! 瞄准。"
   },
   "archetto:BulkSweep04": {
-    "NAME": "散射",
+    "NAME": "和弦齐鸣",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
   },
   "archetto:BulkFinale05": {
-    "NAME": "贯穿一矢",
+    "NAME": "华彩一矢",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 若你有至少 3 层瞄准：额外造成 8 点伤害。"
   },
   "archetto:BulkStrike06": {
-    "NAME": "稳固射击",
+    "NAME": "行板稳射",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
   },
   "archetto:BulkGuard07": {
-    "NAME": "满弦戒备",
+    "NAME": "延长记号",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
   },
   "archetto:BulkDraw08": {
-    "NAME": "箭雨补给",
+    "NAME": "快速视奏",
     "DESCRIPTION": "抽 2 张牌。获得 !M! 瞄准。"
   },
   "archetto:BulkFinale30": {
@@ -92,7 +92,7 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 若你有至少 4 层瞄准：额外造成 12 点伤害。"
   },
   "archetto:SteadyBreath": {
-    "NAME": "稳息",
+    "NAME": "均匀运弓",
     "DESCRIPTION": "获得 !M! 瞄准。"
   },
   "archetto:TrueShot": {
@@ -100,27 +100,27 @@
     "DESCRIPTION": "造成 !D! 点伤害。此攻击不会消耗瞄准。"
   },
   "archetto:TripleArrow": {
-    "NAME": "三连箭",
+    "NAME": "三连音",
     "DESCRIPTION": "造成 !D! 点伤害三次。"
   },
   "archetto:HawkEye": {
-    "NAME": "鹰眼",
+    "NAME": "绝对音准",
     "DESCRIPTION": "你的每层瞄准提供的伤害加成 +1。"
   },
   "archetto:SnapString": {
-    "NAME": "断弦怒射",
+    "NAME": "裂弦最强音",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 若瞄准不少于 5 层：额外造成 12 点伤害。"
   },
   "archetto:QuiverRefill": {
-    "NAME": "补给箭袋",
+    "NAME": "调弦上箭",
     "DESCRIPTION": "获得 2 瞄准。消耗。（升级后不再消耗）"
   },
   "archetto:SwiftStep": {
-    "NAME": "迅捷步伐",
+    "NAME": "圆舞步",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
   },
   "archetto:ArrowStorm": {
-    "NAME": "万箭齐发",
+    "NAME": "交响箭雨",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
   }
 }

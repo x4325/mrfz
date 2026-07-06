@@ -1,50 +1,50 @@
 {
   "nymph:Strike": {
-    "NAME": "妮芙击",
+    "NAME": "挠心",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "nymph:Defend": {
-    "NAME": "妮芙御",
+    "NAME": "帷影",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "nymph:Jab": {
-    "NAME": "妮芙刺",
+    "NAME": "耳语刺",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "nymph:Ward": {
-    "NAME": "妮芙护",
+    "NAME": "梦茧",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "nymph:Cut": {
-    "NAME": "妮芙斩",
+    "NAME": "裂梦",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "nymph:Surge": {
-    "NAME": "妮芙涌",
+    "NAME": "妄念",
     "DESCRIPTION": "获得 !M! 点 [E] 力量。"
   },
   "nymph:HexBolt": {
-    "NAME": "咒击",
+    "NAME": "一缕恶意",
     "DESCRIPTION": "造成 !D! 点伤害。施加 !M! 咒灵。"
   },
   "nymph:FearWhisper": {
-    "NAME": "恐惧低语",
+    "NAME": "枕边细语",
     "DESCRIPTION": "施加 !M! 恐惧。"
   },
   "nymph:HeartSeal": {
-    "NAME": "心锁",
+    "NAME": "心扉落锁",
     "DESCRIPTION": "施加 !M! 心锁与 1 咒灵。"
   },
   "nymph:CurseWave": {
-    "NAME": "咒浪",
+    "NAME": "群魔低语",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害并施加 !M! 咒灵。"
   },
   "nymph:DreadGuard": {
-    "NAME": "惧护",
+    "NAME": "以惧为幕",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "nymph:SoulBind": {
-    "NAME": "缚魂",
+    "NAME": "魂线缠绕",
     "DESCRIPTION": "施加 !M! 咒灵。"
   },
   "nymph:Nightmare": {
@@ -52,15 +52,15 @@
     "DESCRIPTION": "施加 !M! 恐惧。"
   },
   "nymph:VoidCut": {
-    "NAME": "虚斩",
+    "NAME": "裁空",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "nymph:BulkStrike01": {
-    "NAME": "咒刺",
+    "NAME": "一点怨怼",
     "DESCRIPTION": "造成 !D! 点伤害。对目标施加 1 咒灵。"
   },
   "nymph:BulkGuard02": {
-    "NAME": "灵幕",
+    "NAME": "影帐",
     "DESCRIPTION": "获得 !B! 点格挡。对随机敌人施加 1 咒灵。"
   },
   "nymph:BulkDraw03": {
@@ -68,19 +68,19 @@
     "DESCRIPTION": "抽 1 张牌。对随机敌人施加 !M! 咒灵。"
   },
   "nymph:BulkSweep04": {
-    "NAME": "咒潮涌动",
+    "NAME": "百鬼夜行",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害并施加 1 咒灵。"
   },
   "nymph:BulkFinale05": {
-    "NAME": "收魂",
+    "NAME": "收魂入匣",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 若目标咒灵不少于 3 层：额外造成 8 点伤害并移除其 3 层咒灵。"
   },
   "nymph:BulkStrike06": {
-    "NAME": "怨击",
+    "NAME": "衔怨",
     "DESCRIPTION": "造成 !D! 点伤害。对目标施加 1 咒灵。"
   },
   "nymph:BulkGuard07": {
-    "NAME": "心障",
+    "NAME": "心墙",
     "DESCRIPTION": "获得 !B! 点格挡。对随机敌人施加 1 咒灵。"
   },
   "nymph:BulkDraw08": {
@@ -92,7 +92,7 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 若目标咒灵不少于 4 层：额外造成 12 点伤害并移除其 4 层咒灵。"
   },
   "nymph:HexSpread": {
-    "NAME": "咒火蔓延",
+    "NAME": "谣言扩散",
     "DESCRIPTION": "将目标咒灵层数的一半（向上取整）施加给所有其他敌人。"
   },
   "nymph:HeartBite": {
@@ -104,7 +104,7 @@
     "DESCRIPTION": "对所有敌人施加 1 层恐惧。消耗。"
   },
   "nymph:HexLink": {
-    "NAME": "咒缚连结",
+    "NAME": "红线错系",
     "DESCRIPTION": "对目标施加 !M! 咒灵。"
   },
   "nymph:NightEcho": {
@@ -112,15 +112,15 @@
     "DESCRIPTION": "每回合开始时对随机敌人施加 !M! 咒灵。"
   },
   "nymph:SpiritClaw": {
-    "NAME": "灵爪",
+    "NAME": "梦爪",
     "DESCRIPTION": "造成 !D! 点伤害。对目标施加 1 咒灵。"
   },
   "nymph:LockTighten": {
-    "NAME": "心锁强化",
+    "NAME": "层层上锁",
     "DESCRIPTION": "对目标施加 !M! 心锁。抽 1 张牌。"
   },
   "nymph:ShadowReap": {
-    "NAME": "收割之影",
+    "NAME": "影中清算",
     "DESCRIPTION": "造成 !D! 点伤害，目标每层咒灵额外 +3；然后移除其全部咒灵。"
   }
 }

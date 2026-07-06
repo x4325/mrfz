@@ -7,7 +7,7 @@
     ]
   },
   "scene:FocusEnginePower": {
-    "NAME": "取景大师",
+    "NAME": "导演视角",
     "DESCRIPTIONS": [
       "每回合开始时获得 ",
       " 层取景。"
