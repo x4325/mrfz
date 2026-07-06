@@ -29,7 +29,7 @@ public class ClothGagRelic extends AbstractArkNsfwRelic {
     }
 
     @Override
-    public int onLoseHp(int damageAmount) {
+    public void onLoseHp(int damageAmount) {
         if (!usedThisTurn && damageAmount > 0 && AbstractDungeon.player != null
                 && AbstractDungeon.getCurrRoom() != null
                 && AbstractDungeon.getCurrRoom().phase == com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase.COMBAT) {
@@ -38,7 +38,6 @@ public class ClothGagRelic extends AbstractArkNsfwRelic {
             addToBot(new GainBlockAction(AbstractDungeon.player, 4));
             NsfwRunStats.addExcitement(5);
         }
-        return damageAmount;
     }
 
     @Override
