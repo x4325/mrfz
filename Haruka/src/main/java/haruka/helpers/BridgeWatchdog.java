@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 /** 桥接包版本检测：桥接包缺失/过旧时在战斗界面直接显示红字提示。 */
 public final class BridgeWatchdog {
 
-    private static final String EXPECTED_PREFIX = "0.4.5";
+    private static final String EXPECTED_PREFIX = "0.4.6";
     private static String status = null;
 
     private BridgeWatchdog() {

@@ -600,5 +600,75 @@
    "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
    "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
   ]
+ },
+ "arknsfw:RestraintCuffsRelic": {
+  "NAME": "拘束手铐",
+  "FLAVOR": "金属的凉意时刻提醒着她双手不属于自己。",
+  "DESCRIPTIONS": [
+   "每回合开始时，随机一张手牌本回合费用 +1；每次受到攻击伤害，兴奋 +3。"
+  ]
+ },
+ "arknsfw:LeashRelic": {
+  "NAME": "牵引项链",
+  "FLAVOR": "绳端在谁手里，她已经不敢去想。",
+  "DESCRIPTIONS": [
+   "战斗结算时无法选择“拼死抵抗”；每场战斗胜利后被牵引者照料，回复 4 点生命。"
+  ]
+ },
+ "arknsfw:ChastityBeltRelic": {
+  "NAME": "贞操带",
+  "FLAVOR": "钥匙被丢进了海里——他们是这么说的。",
+  "DESCRIPTIONS": [
+   "受孕获取减半；欲望无处发泄，每回合开始兴奋 +4。"
+  ]
+ },
+ "arknsfw:LaceGarterRelic": {
+  "NAME": "蕾丝腿环",
+  "FLAVOR": "大腿内侧的束缚感让每个动作都带着提醒。",
+  "DESCRIPTIONS": [
+   "每场战斗第一次打出技能牌时抽 1 张牌；每回合开始兴奋 +2。"
+  ]
+ },
+ "arknsfw:BellTagRelic": {
+  "NAME": "铃铛铭牌",
+  "FLAVOR": "铭牌上刻着编号，不是名字。",
+  "DESCRIPTIONS": [
+   "战斗开始时铃声令随机一名敌人分神，使其获得 1 层虚弱；你兴奋 +5。"
+  ]
+ },
+ "arknsfw:ClothGagRelic": {
+  "NAME": "布口塞",
+  "FLAVOR": "再痛也只能发出呜咽。",
+  "DESCRIPTIONS": [
+   "每回合第一次失去生命时咬紧布团忍耐，获得 4 点格挡，兴奋 +5。"
+  ]
+ },
+ "arknsfw:RingGagRelic": {
+  "NAME": "环形口枷",
+  "FLAVOR": "合不拢的唇齿间尽是无法成句的音节。",
+  "DESCRIPTIONS": [
+   "每回合开始兴奋 +3；高潮失控时不再失去格挡。"
+  ]
+ },
+ "arknsfw:LaceBlindfoldRelic": {
+  "NAME": "蕾丝眼罩",
+  "FLAVOR": "看不见，反而每一寸皮肤都清晰起来。",
+  "DESCRIPTIONS": [
+   "受到的攻击伤害 -1；感官被迫集中，每回合开始兴奋 +2。"
+  ]
+ },
+ "arknsfw:VibeEggRelic": {
+  "NAME": "跳蛋",
+  "FLAVOR": "遥控器不在她手里。",
+  "DESCRIPTIONS": [
+   "每回合开始兴奋 +5；每打出 3 张牌，震动加剧，兴奋再 +3。"
+  ]
+ },
+ "arknsfw:BodyCrestRelic": {
+  "NAME": "淫纹拓印",
+  "FLAVOR": "锁骨、腰侧、大腿——纹样正在蔓延。",
+  "DESCRIPTIONS": [
+   "兴奋获取 +25%；每回合开始受孕 +1。"
+  ]
  }
 }

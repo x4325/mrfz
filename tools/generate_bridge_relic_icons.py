@@ -39,8 +39,24 @@ def pal_for(name):
 
 def glyph_for(name):
     n = name
-    if "collar" in n:
+    if "cuffs" in n or "chain" in n:
+        return "chain"
+    if "leash" in n or "collar" in n:
         return "collar"
+    if "belt" in n:
+        return "heart"
+    if "garter" in n:
+        return "orb"
+    if "belltag" in n or "bell" in n:
+        return "star"
+    if "gag" in n:
+        return "orb"
+    if "blindfold" in n:
+        return "mirror"
+    if "vibe" in n:
+        return "drop"
+    if "bodycrest" in n:
+        return "heart"
     if "mark" in n or "womb" in n or "breed" in n or "seed" in n:
         return "heart"
     if "delivery" in n or "cradle" in n:

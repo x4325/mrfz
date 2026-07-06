@@ -111,7 +111,8 @@ public final class ArkPostBattleChoice {
             for (int i = 0; i < 3; i++) {
                 if (HB[i].hovered) {
                     if (i == 1 && devoteLeft <= 0) return;
-                    if (i == 2 && resistLeft <= 0) return;
+                    if (i == 2 && (resistLeft <= 0
+                            || AbstractDungeon.player.hasRelic(arknsfw.relics.equipment.LeashRelic.ID))) return;
                     InputHelper.justClickedLeft = false;
                     choose(i);
                     return;
@@ -171,7 +172,8 @@ public final class ArkPostBattleChoice {
         FontHelper.renderFontCentered(sb, FontHelper.cardTitleFont, ui.TEXT[0],
                 x, y0 + 46.0f * Settings.scale, Settings.GOLD_COLOR);
         for (int i = 0; i < 3; i++) {
-            boolean disabled = (i == 1 && devoteLeft <= 0) || (i == 2 && resistLeft <= 0);
+            boolean leashed = AbstractDungeon.player.hasRelic(arknsfw.relics.equipment.LeashRelic.ID);
+            boolean disabled = (i == 1 && devoteLeft <= 0) || (i == 2 && (resistLeft <= 0 || leashed));
             float by = y0 - i * (BTN_H + 14.0f) * Settings.scale;
             Color bg;
             if (disabled) {

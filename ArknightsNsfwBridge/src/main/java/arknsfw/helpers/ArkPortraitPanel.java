@@ -53,6 +53,10 @@ public final class ArkPortraitPanel {
         return tex;
     }
 
+    private static boolean hasRelic(String id) {
+        return AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(id);
+    }
+
     private static void drawOverlay(SpriteBatch sb, String key, String item,
                                     float x, float y, float w, float h, float alpha) {
         Texture t = load("overlays/" + key + "_" + item);
@@ -218,25 +222,56 @@ public final class ArkPortraitPanel {
         sb.setColor(1.0F, 1.0F, 1.0F, 0.95F);
         sb.draw(tex, x + swayX, y + bob, bw, bh);
 
-        // ---- 拘束差分层（项圈/绳缚/口枷/眼罩/爱心眼），与立绘同画布对齐 ----
+        // ---- 拘束差分层（状态触发 + 装备遗物触发），与立绘同画布对齐 ----
         boolean fall = ArkRunProgress.isRoute(ArkRunProgress.Route.FALL);
         boolean locked = lockVisible(key);
         boolean lewd = AbstractDungeon.player.hasPower(arknsfw.powers.LewdTrancePower.POWER_ID);
-        boolean blind = fall && tier >= 3;
-        if (locked) {
-            drawOverlay(sb, key, "collar", x + swayX, y + bob, bw, bh, 1.0F);
+        float ox = x + swayX, oy = y + bob;
+
+        // 身体装备（遗物驱动）
+        if (hasRelic(arknsfw.relics.equipment.RestraintCuffsRelic.ID)) drawOverlay(sb, key, "cuffs", ox, oy, bw, bh, 1.0F);
+        if (hasRelic(arknsfw.relics.equipment.ChastityBeltRelic.ID)) drawOverlay(sb, key, "belt", ox, oy, bw, bh, 1.0F);
+        if (hasRelic(arknsfw.relics.equipment.LaceGarterRelic.ID)) drawOverlay(sb, key, "garter", ox, oy, bw, bh, 1.0F);
+        if (hasRelic(arknsfw.relics.equipment.VibeEggRelic.ID)) drawOverlay(sb, key, "vibe", ox, oy, bw, bh, 1.0F);
+        if (hasRelic(arknsfw.relics.equipment.BodyCrestRelic.ID)) {
+            float g = 0.7F + 0.3F * (0.5F + 0.5F * MathUtils.sin(time * 3.0F));
+            drawOverlay(sb, key, "bodycrest", ox, oy, bw, bh, g);
         }
+
+        // 项圈类：印记锁定出基础项圈；牵引绳/铃铛铭牌叠加其上
+        if (locked || hasRelic(arknsfw.relics.equipment.LeashRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.BellTagRelic.ID)) {
+            drawOverlay(sb, key, "collar", ox, oy, bw, bh, 1.0F);
+        }
+        if (hasRelic(arknsfw.relics.equipment.LeashRelic.ID)) drawOverlay(sb, key, "leash", ox, oy, bw, bh, 1.0F);
+        if (hasRelic(arknsfw.relics.equipment.BellTagRelic.ID)) drawOverlay(sb, key, "belltag", ox, oy, bw, bh, 1.0F);
+
+        // 绳缚：衣装破损或堕落路线
         if (fall || ArkExposureHelper.stage() >= 1) {
-            drawOverlay(sb, key, "rope", x + swayX, y + bob, bw, bh, 0.96F);
+            drawOverlay(sb, key, "rope", ox, oy, bw, bh, 0.96F);
         }
-        if (fall && tier >= 2 && !blind) {
-            drawOverlay(sb, key, "gag", x + swayX, y + bob, bw, bh, 1.0F);
+
+        // 口部：环口枷 > 布口塞 > 状态球口枷（互斥）
+        String mouthItem = null;
+        if (hasRelic(arknsfw.relics.equipment.RingGagRelic.ID)) mouthItem = "ringgag";
+        else if (hasRelic(arknsfw.relics.equipment.ClothGagRelic.ID)) mouthItem = "clothgag";
+        else if (fall && tier >= 2) mouthItem = "gag";
+
+        // 眼部：蕾丝眼罩 > 状态黑眼罩 > 爱心眼（互斥）
+        String eyeItem = null;
+        if (hasRelic(arknsfw.relics.equipment.LaceBlindfoldRelic.ID)) eyeItem = "laceblindfold";
+        else if (fall && tier >= 3) eyeItem = "blindfold";
+
+        if (mouthItem != null && eyeItem == null) {
+            drawOverlay(sb, key, mouthItem, ox, oy, bw, bh, 1.0F);
+        } else if (mouthItem != null) {
+            drawOverlay(sb, key, mouthItem, ox, oy, bw, bh, 1.0F);
         }
-        if (blind) {
-            drawOverlay(sb, key, "blindfold", x + swayX, y + bob, bw, bh, 1.0F);
+        if (eyeItem != null) {
+            drawOverlay(sb, key, eyeItem, ox, oy, bw, bh, 1.0F);
         } else if (tier >= 3 || lewd) {
             float pulse = 0.75F + 0.25F * (0.5F + 0.5F * MathUtils.sin(time * 6.5F));
-            drawOverlay(sb, key, "hearteyes", x + swayX, y + bob, bw, bh, pulse);
+            drawOverlay(sb, key, "hearteyes", ox, oy, bw, bh, pulse);
         }
 
         // 淫纹：下腹位置搏动发光，兴奋越高越亮越快，孕肚阶段随之放大

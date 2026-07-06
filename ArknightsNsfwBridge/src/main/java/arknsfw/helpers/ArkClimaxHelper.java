@@ -35,7 +35,9 @@ public final class ArkClimaxHelper {
         }
         AbstractPlayer p = AbstractDungeon.player;
         NsfwRunStats.addExcitement(-NsfwRunStats.excitement);
-        p.loseBlock();
+        if (!p.hasRelic(arknsfw.relics.equipment.RingGagRelic.ID)) {
+            p.loseBlock();
+        }
         PowerHelper.apply(p, new WeakPower(p, 1, false));
         PowerHelper.apply(p, new FrailPower(p, 1, false));
         PowerHelper.apply(p, new DrawReductionPower(p, 1));
