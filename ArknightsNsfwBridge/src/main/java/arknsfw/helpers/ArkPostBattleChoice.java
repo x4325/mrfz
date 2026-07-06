@@ -124,11 +124,13 @@ public final class ArkPostBattleChoice {
             NsfwRunStats.addExcitement(15 + 5 * act);
             NsfwRunStats.addFertility(5, 4, act >= 2);
             AbstractDungeon.player.heal(Math.max(1, AbstractDungeon.player.maxHealth / 10));
+            ArkExposureHelper.tear();
         } else {
             // 拼死抵抗：完全干净地脱身，但整局只有 3 次
             resistLeft--;
             AbstractDungeon.player.damage(new com.megacrit.cardcrawl.cards.DamageInfo(null, 2,
                     com.megacrit.cardcrawl.cards.DamageInfo.DamageType.HP_LOSS));
+            ArkExposureHelper.repair(1);
         }
         active = false;
     }

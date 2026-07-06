@@ -111,11 +111,21 @@ public final class ArkCharacterSetup {
         PregnancyMarkRegistry.register(Muelsyse.class, MuelPregnancyMarkRelic.ID);
         PregnancyDeliveryRegistry.register(Eyjafjalla.class, EyjaPregnancyDeliveryRelic.ID);
         PregnancyDeliveryRegistry.register(Muelsyse.class, MuelPregnancyDeliveryRelic.ID);
-        NsfwCharacterRegistry.register(Scene.class);
-        NsfwCharacterRegistry.register(Highmore.class);
-        NsfwCharacterRegistry.register(Archetto.class);
-        NsfwCharacterRegistry.register(Haruka.class);
-        NsfwCharacterRegistry.register(Nymph.class);
+        NsfwCharacterRegistry.register(Scene.class, ArkFiveIntentHandler.INSTANCE);
+        NsfwCharacterRegistry.register(Highmore.class, ArkFiveIntentHandler.INSTANCE);
+        NsfwCharacterRegistry.register(Archetto.class, ArkFiveIntentHandler.INSTANCE);
+        NsfwCharacterRegistry.register(Haruka.class, ArkFiveIntentHandler.INSTANCE);
+        NsfwCharacterRegistry.register(Nymph.class, ArkFiveIntentHandler.INSTANCE);
+        PregnancyMarkRegistry.register(Scene.class, arknsfw.relics.scene.ScenePregnancyMarkRelic.ID);
+        PregnancyMarkRegistry.register(Highmore.class, arknsfw.relics.highmore.HighmorePregnancyMarkRelic.ID);
+        PregnancyMarkRegistry.register(Archetto.class, arknsfw.relics.archetto.ArchettoPregnancyMarkRelic.ID);
+        PregnancyMarkRegistry.register(Haruka.class, arknsfw.relics.haruka.HarukaPregnancyMarkRelic.ID);
+        PregnancyMarkRegistry.register(Nymph.class, arknsfw.relics.nymph.NymphPregnancyMarkRelic.ID);
+        PregnancyDeliveryRegistry.register(Scene.class, arknsfw.relics.scene.ScenePregnancyDeliveryRelic.ID);
+        PregnancyDeliveryRegistry.register(Highmore.class, arknsfw.relics.highmore.HighmorePregnancyDeliveryRelic.ID);
+        PregnancyDeliveryRegistry.register(Archetto.class, arknsfw.relics.archetto.ArchettoPregnancyDeliveryRelic.ID);
+        PregnancyDeliveryRegistry.register(Haruka.class, arknsfw.relics.haruka.HarukaPregnancyDeliveryRelic.ID);
+        PregnancyDeliveryRegistry.register(Nymph.class, arknsfw.relics.nymph.NymphPregnancyDeliveryRelic.ID);
         for (String id : EYJA_EVENTS) {
             NsfwEventPool.registerEvent(id);
         }

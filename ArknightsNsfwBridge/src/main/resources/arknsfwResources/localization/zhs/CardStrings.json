@@ -385,5 +385,25 @@
  "arknsfw:NymphEchoSeedCard": {
   "NAME": "回响之种",
   "DESCRIPTION": "抽到时受孕 +8，妊娠进度 +8（若已怀孕）。"
+ },
+ "arknsfw:HighmoreCalmBreath": {
+  "NAME": "平复呼吸",
+  "DESCRIPTION": "兴奋 -!M! 。消耗。"
+ },
+ "arknsfw:SceneCalmBreath": {
+  "NAME": "平复呼吸",
+  "DESCRIPTION": "兴奋 -!M! 。消耗。"
+ },
+ "arknsfw:ArchettoCalmBreath": {
+  "NAME": "平复呼吸",
+  "DESCRIPTION": "兴奋 -!M! 。消耗。"
+ },
+ "arknsfw:HarukaCalmBreath": {
+  "NAME": "平复呼吸",
+  "DESCRIPTION": "兴奋 -!M! 。消耗。"
+ },
+ "arknsfw:NymphCalmBreath": {
+  "NAME": "平复呼吸",
+  "DESCRIPTION": "兴奋 -!M! 。消耗。"
  }
 }

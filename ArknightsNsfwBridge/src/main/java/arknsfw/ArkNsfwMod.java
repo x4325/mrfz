@@ -8,6 +8,8 @@ import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostUpdateSubscriber;
 import basemod.interfaces.RenderSubscriber;
+import basemod.interfaces.OnPlayerTurnStartSubscriber;
+import basemod.interfaces.OnPlayerLoseHpSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Color;
@@ -76,6 +78,8 @@ public class ArkNsfwMod implements
         PostBattleSubscriber,
         PostUpdateSubscriber,
         RenderSubscriber,
+        OnPlayerTurnStartSubscriber,
+        OnPlayerLoseHpSubscriber,
         PostInitializeSubscriber {
 
     public static final String modID = "arknsfw";
@@ -282,6 +286,7 @@ public class ArkNsfwMod implements
         BaseMod.addCard(new SceneTwinPeak());
         BaseMod.addCard(new SceneBlushMark());
         BaseMod.addCard(new SceneCoreNeed());
+        BaseMod.addCard(new SceneCalmBreath());
         BaseMod.addCard(new SceneOverflowPulse());
         BaseMod.addCard(new SceneWombMarkCard());
         BaseMod.addCard(new SceneShameContractCard());
@@ -296,6 +301,7 @@ public class ArkNsfwMod implements
         BaseMod.addCard(new HighmoreTwinPeak());
         BaseMod.addCard(new HighmoreBlushMark());
         BaseMod.addCard(new HighmoreCoreNeed());
+        BaseMod.addCard(new HighmoreCalmBreath());
         BaseMod.addCard(new HighmoreOverflowPulse());
         BaseMod.addCard(new HighmoreWombMarkCard());
         BaseMod.addCard(new HighmoreShameContractCard());
@@ -310,6 +316,7 @@ public class ArkNsfwMod implements
         BaseMod.addCard(new ArchettoTwinPeak());
         BaseMod.addCard(new ArchettoBlushMark());
         BaseMod.addCard(new ArchettoCoreNeed());
+        BaseMod.addCard(new ArchettoCalmBreath());
         BaseMod.addCard(new ArchettoOverflowPulse());
         BaseMod.addCard(new ArchettoWombMarkCard());
         BaseMod.addCard(new ArchettoShameContractCard());
@@ -324,6 +331,7 @@ public class ArkNsfwMod implements
         BaseMod.addCard(new HarukaTwinPeak());
         BaseMod.addCard(new HarukaBlushMark());
         BaseMod.addCard(new HarukaCoreNeed());
+        BaseMod.addCard(new HarukaCalmBreath());
         BaseMod.addCard(new HarukaOverflowPulse());
         BaseMod.addCard(new HarukaWombMarkCard());
         BaseMod.addCard(new HarukaShameContractCard());
@@ -338,6 +346,7 @@ public class ArkNsfwMod implements
         BaseMod.addCard(new NymphTwinPeak());
         BaseMod.addCard(new NymphBlushMark());
         BaseMod.addCard(new NymphCoreNeed());
+        BaseMod.addCard(new NymphCalmBreath());
         BaseMod.addCard(new NymphOverflowPulse());
         BaseMod.addCard(new NymphWombMarkCard());
         BaseMod.addCard(new NymphShameContractCard());
@@ -369,6 +378,16 @@ public class ArkNsfwMod implements
         BaseMod.addRelic(new EyjaPregnancyMarkRelic(), RelicType.SHARED);
         BaseMod.addRelic(new MuelPregnancyMarkRelic(), RelicType.SHARED);
         BaseMod.addRelic(new EyjaPregnancyDeliveryRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.highmore.HighmorePregnancyMarkRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.highmore.HighmorePregnancyDeliveryRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.scene.ScenePregnancyMarkRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.scene.ScenePregnancyDeliveryRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.archetto.ArchettoPregnancyMarkRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.archetto.ArchettoPregnancyDeliveryRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.haruka.HarukaPregnancyMarkRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.haruka.HarukaPregnancyDeliveryRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.nymph.NymphPregnancyMarkRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.nymph.NymphPregnancyDeliveryRelic(), RelicType.SHARED);
         BaseMod.addRelic(new MuelPregnancyDeliveryRelic(), RelicType.SHARED);
         // NEW5R
         BaseMod.addRelicToCustomPool(new SceneWarmCharmRelic(), scene.core.ColorEnum.SCENE_COLOR);
@@ -454,6 +473,18 @@ public class ArkNsfwMod implements
 
     @Override
     public void receiveRender(com.badlogic.gdx.graphics.g2d.SpriteBatch sb) {
+        arknsfw.helpers.ArkPortraitPanel.render(sb);
         arknsfw.helpers.ArkPostBattleChoice.render(sb);
+    }
+
+    @Override
+    public void receiveOnPlayerTurnStart() {
+        arknsfw.helpers.ArkClimaxHelper.onPlayerTurnStart();
+    }
+
+    @Override
+    public int receiveOnPlayerLoseHp(int damageAmount) {
+        arknsfw.helpers.ArkExposureHelper.onPlayerLoseHp(damageAmount);
+        return damageAmount;
     }
 }
