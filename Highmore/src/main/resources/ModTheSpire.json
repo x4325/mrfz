@@ -1,11 +1,16 @@
 {
   "modid": "highmore",
   "name": "海沫 / Highmore",
-  "author_list": ["Private"],
+  "author_list": [
+    "Private"
+  ],
   "description": "海沫 (Highmore) SFW character mod. Mechanism: 收割. NSFW content in ArknightsNsfwBridge.",
-  "version": "0.1.1",
+  "version": "0.1.2-spinefix",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.0",
-  "dependencies": ["basemod", "stslib"],
+  "dependencies": [
+    "basemod",
+    "stslib"
+  ],
   "update_json": ""
 }
