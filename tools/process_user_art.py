@@ -19,7 +19,7 @@ SRC = {"艾雅": "eyja", "缪尔赛思": "muel"}
 STATES = {
     "e0": "情欲0", "e1": "情欲1", "e2": "情欲2", "e3": "情欲3",
     "d1": "小幅度破损", "d2": "大幅度破损", "d3": "极大幅度破损", "d4": "全裸",
-    "cuffs": "手铐", "gear": "装备合体", "crest": "淫纹",
+    "cuffs": "手铐", "gear": "装备合体", "crest": "淫纹", "climax": "高潮",
 }
 OUT = "ArknightsNsfwBridge/src/main/resources/arknsfwResources/images/portraits/user"
 

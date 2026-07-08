@@ -46,5 +46,6 @@ public final class ArkClimaxHelper {
             ArkDebuffHelper.apply(p, brand);
         }
         UiHelper.showCenterText(p, "高潮——失控！");
+        ArkPortraitPanel.notifyClimax();
     }
 }

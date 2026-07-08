@@ -30,6 +30,12 @@ public final class ArkPortraitPanel {
     private static Texture heartTex;
     private static final ArrayList<float[]> HEARTS = new ArrayList<float[]>();
     private static float time = 0.0F;
+    private static float climaxUntil = -1.0F;
+
+    /** 高潮失控时由 ArkClimaxHelper 调用：立绘切换高潮表情 6 秒。 */
+    public static void notifyClimax() {
+        climaxUntil = time + 6.0F;
+    }
     private static float spawnTimer = 0.0F;
 
     private static Field pregProgressField;
@@ -77,13 +83,13 @@ public final class ArkPortraitPanel {
     }
 
     private static String userState(String key, int tier) {
-        if (anyGearRelic()) {
-            return "gear";
+        if (time < climaxUntil) {
+            return "climax";
         }
         if (hasRelic(arknsfw.relics.equipment.RestraintCuffsRelic.ID)) {
             return "cuffs";
         }
-        if (crestVisible(key) && !NsfwRunStats.pregnant) {
+        if (crestVisible(key) && !NsfwRunStats.pregnant && ArkExposureHelper.stage() == 0) {
             return "crest";
         }
         int d = Math.min(4, ArkExposureHelper.stage());
@@ -91,6 +97,37 @@ public final class ArkPortraitPanel {
             return "d" + d;
         }
         return "e" + tier;
+    }
+
+    /** 装备单件层：戴哪件叠哪件（从锁底装备合体图切出）。 */
+    private static void drawUserItems(SpriteBatch sb, String key, float ox, float oy, float bw, float bh, int preg) {
+        String suffix = preg > 0 ? "_p" + preg : "";
+        if (hasRelic(arknsfw.relics.equipment.RopeBindRelic.ID)) drawUserItem(sb, key, "rope" + suffix, ox, oy, bw, bh);
+        if (hasRelic(arknsfw.relics.equipment.ChastityBeltRelic.ID)) drawUserItem(sb, key, "chastity" + suffix, ox, oy, bw, bh);
+        if (hasRelic(arknsfw.relics.equipment.LaceGarterRelic.ID)) drawUserItem(sb, key, "garter" + suffix, ox, oy, bw, bh);
+        if (hasRelic(arknsfw.relics.equipment.VibeEggRelic.ID)) drawUserItem(sb, key, "vibe" + suffix, ox, oy, bw, bh);
+        if (hasRelic(arknsfw.relics.equipment.BellTagRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.LeashRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.BodyCrestRelic.ID)) {
+            drawUserItem(sb, key, "collar" + suffix, ox, oy, bw, bh);
+        }
+        if (hasRelic(arknsfw.relics.equipment.RingGagRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.ClothGagRelic.ID)) {
+            drawUserItem(sb, key, "gag" + suffix, ox, oy, bw, bh);
+        }
+        if (hasRelic(arknsfw.relics.equipment.LaceBlindfoldRelic.ID)) {
+            drawUserItem(sb, key, "blindfold" + suffix, ox, oy, bw, bh);
+        }
+    }
+
+    private static void drawUserItem(SpriteBatch sb, String key, String item, float ox, float oy, float bw, float bh) {
+        Texture t = loadUser(key + "_it_" + item);
+        if (t == null && item.contains("_p")) {
+            t = loadUser(key + "_it_" + item.substring(0, item.indexOf("_p")));
+        }
+        if (t != null) {
+            sb.draw(t, ox, oy, bw, bh);
+        }
     }
 
     private static Texture loadUser(String name) {
@@ -141,6 +178,9 @@ public final class ArkPortraitPanel {
                 sb.draw(patch, ox, oy, bw, bh);
             }
         }
+
+        // 装备单件叠加（含孕肚形变版）
+        drawUserItems(sb, key, ox, oy, bw, bh, preg);
 
         // 淫纹辉光穿透：刻印/怀孕时在纹章位置叠加搏动光晕
         if (crestVisible(key)) {
