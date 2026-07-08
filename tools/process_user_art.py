@@ -90,10 +90,15 @@ def sparse_patch(orig, warped):
     return patch
 
 
+# 人工标定的孕肚锚点（肚脐下方；全裸图网格校准）
+BELLY_MANUAL = {"eyja": (395, 560), "muel": (370, 570)}
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     for cn, tag in SRC.items():
-        cx, cy, glow = belly_anchor(cn)
+        _, _, glow = belly_anchor(cn)
+        cx, cy = BELLY_MANUAL[tag]
         meta = {"belly": [cx, cy], "glow": list(glow)}
         json.dump(meta, open(f"{OUT}/{tag}_meta.json", "w"))
         print(f"{tag}: belly=({cx},{cy}) glow={glow}")

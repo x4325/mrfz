@@ -64,7 +64,7 @@ public final class ArkPortraitPanel {
     // 单图状态优先级：装备合体 > 手铐 > 淫纹 > 破损1-4 > 情欲0-3；孕肚为逐状态稀疏补丁。
     private static final java.util.HashMap<String, float[]> USER_META = new java.util.HashMap<String, float[]>();
     static {
-        // {肚脐锚点x, y, 辉光r, g, b}（tools/process_user_art.py 输出）
+        // {淫纹纹章位置x, y, 辉光r, g, b}——辉光贴纹章；孕肚锚点在 process_user_art.py 单独人工标定
         USER_META.put("eyja", new float[]{446, 705, 189, 115, 94});
         USER_META.put("muel", new float[]{445, 672, 169, 165, 147});
     }
@@ -134,7 +134,8 @@ public final class ArkPortraitPanel {
     }
 
     private static void renderUserArt(SpriteBatch sb, String key, boolean atRest) {
-        if (!atRest && AbstractDungeon.isScreenUp) {
+        // 任何全屏界面（锻造选卡/牌组/地图等）打开时都让位
+        if (AbstractDungeon.isScreenUp) {
             return;
         }
         int tier = tier();

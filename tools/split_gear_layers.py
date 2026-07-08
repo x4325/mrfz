@@ -53,7 +53,8 @@ def extract_layer(cn):
 def main():
     for tag, cn in SRC.items():
         layer = extract_layer(cn)
-        cx, cy, _ = belly_anchor(cn)
+        from process_user_art import BELLY_MANUAL
+        cx, cy = BELLY_MANUAL[tag]
         for item, (x0, y0, x1, y1) in BOXES[tag].items():
             piece = np.zeros_like(layer)
             piece[y0:y1, x0:x1] = layer[y0:y1, x0:x1]

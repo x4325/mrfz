@@ -143,7 +143,7 @@ public class NymphMod implements
 
                                     @Override
     public void receivePostInitialize() {
-        System.out.println("[nymph] 0.5.2-restfix2 loaded");
+        System.out.println("[nymph] 0.5.3-bellyfix loaded");
         SkinSelectScreen.Inst = new SkinSelectScreen();
         BaseMod.addEvent(NymphWhisperShrine.ID, NymphWhisperShrine.class, Exordium.ID);
         BaseMod.addEvent(NymphMirrorPool.ID, NymphMirrorPool.class, TheCity.ID);

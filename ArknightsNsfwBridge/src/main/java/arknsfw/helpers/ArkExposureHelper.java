@@ -41,7 +41,8 @@ public final class ArkExposureHelper {
 
     /** 受伤累计：每累计 14 点破损一档。 */
     public static void onPlayerLoseHp(int amount) {
-        if (ArkCharDebuffs.currentCharKey() == null || amount <= 0) {
+        // 覆盖全部七名角色（此前只认五个自制角色，艾雅/缪尔的衣装永远不会破损）
+        if (!ArkCharacterSetup.isArkNsfwRun() || amount <= 0) {
             return;
         }
         syncAct();
