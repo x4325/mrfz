@@ -53,6 +53,130 @@ public final class ArkPortraitPanel {
         return tex;
     }
 
+
+    // ================= 用户手绘全身立绘状态机（eyja/muel） =================
+    // 单图状态优先级：装备合体 > 手铐 > 淫纹 > 破损1-4 > 情欲0-3；孕肚为逐状态稀疏补丁。
+    private static final java.util.HashMap<String, float[]> USER_META = new java.util.HashMap<String, float[]>();
+    static {
+        // {肚脐锚点x, y, 辉光r, g, b}（tools/process_user_art.py 输出）
+        USER_META.put("eyja", new float[]{446, 705, 189, 115, 94});
+        USER_META.put("muel", new float[]{445, 672, 169, 165, 147});
+    }
+
+    private static boolean anyGearRelic() {
+        return hasRelic(arknsfw.relics.equipment.LeashRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.ChastityBeltRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.LaceGarterRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.BellTagRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.ClothGagRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.RingGagRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.LaceBlindfoldRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.VibeEggRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.BodyCrestRelic.ID)
+                || hasRelic(arknsfw.relics.equipment.RopeBindRelic.ID);
+    }
+
+    private static String userState(String key, int tier) {
+        if (anyGearRelic()) {
+            return "gear";
+        }
+        if (hasRelic(arknsfw.relics.equipment.RestraintCuffsRelic.ID)) {
+            return "cuffs";
+        }
+        if (crestVisible(key) && !NsfwRunStats.pregnant) {
+            return "crest";
+        }
+        int d = Math.min(4, ArkExposureHelper.stage());
+        if (d >= 1) {
+            return "d" + d;
+        }
+        return "e" + tier;
+    }
+
+    private static Texture loadUser(String name) {
+        return load("user/" + name);
+    }
+
+    private static void renderUserArt(SpriteBatch sb, String key, boolean atRest) {
+        if (!atRest && AbstractDungeon.isScreenUp) {
+            return;
+        }
+        int tier = tier();
+        String state = userState(key, tier);
+        Texture tex = loadUser(key + "_" + state);
+        if (tex == null) {
+            return;
+        }
+        float dt = Gdx.graphics.getDeltaTime();
+        time += dt;
+
+        // 尺寸：战斗=与旧版同高；休息处=放大
+        float h = (atRest ? 860.0F : 460.0F) * Settings.scale;
+        float w = h * 904.0F / 1264.0F;
+        float x = (atRest ? 60.0F : 10.0F) * Settings.scale;
+        float y = atRest ? (Settings.HEIGHT - h) / 2.0F : AbstractDungeon.floorY - 60.0F * Settings.scale;
+
+        float breathFreq = 1.6F + tier * 0.9F;
+        float breath = 1.0F + (tier == 0 ? 0.002F : 0.004F + tier * 0.003F)
+                * MathUtils.sin(time * breathFreq * MathUtils.PI2 * 0.5F);
+        float swayX = tier >= 2 ? 3.0F * Settings.scale * MathUtils.sin(time * 1.3F) : 0.0F;
+        float bob = tier >= 1 ? 2.0F * Settings.scale * MathUtils.sin(time * breathFreq * 0.8F) : 0.0F;
+        float bw = w * breath, bh = h * breath;
+        float ox = x + swayX, oy = y + bob;
+
+        if (tier >= 2 && !atRest) {
+            float pulse = 0.10F + 0.08F * (0.5F + 0.5F * MathUtils.sin(time * (2.0F + tier) * 1.7F));
+            sb.setColor(1.0F, 0.35F, 0.55F, pulse);
+            sb.draw(tex, ox - 8.0F * Settings.scale, oy - 8.0F * Settings.scale,
+                    bw + 16.0F * Settings.scale, bh + 16.0F * Settings.scale);
+        }
+        sb.setColor(1.0F, 1.0F, 1.0F, atRest ? 1.0F : 0.97F);
+        sb.draw(tex, ox, oy, bw, bh);
+
+        // 孕肚补丁（逐状态形变，画布对齐）
+        int preg = pregStage();
+        if (preg > 0) {
+            Texture patch = loadUser(key + "_" + state + "_p" + preg);
+            if (patch != null) {
+                sb.draw(patch, ox, oy, bw, bh);
+            }
+        }
+
+        // 淫纹辉光穿透：刻印/怀孕时在纹章位置叠加搏动光晕
+        if (crestVisible(key)) {
+            float[] meta = USER_META.get(key);
+            if (meta != null && heartTexOrGlow() != null) {
+                float gx = ox + bw * (meta[0] / 904.0F);
+                float gy = oy + bh * (1.0F - meta[1] / 1264.0F);
+                float speed = 1.6F + tier * 1.1F;
+                float glow = 0.16F + 0.06F * tier
+                        + 0.14F * (0.5F + 0.5F * MathUtils.sin(time * speed * 2.2F));
+                float gs = bw * (0.34F + 0.02F * preg) * (1.0F + 0.05F * MathUtils.sin(time * speed * 2.2F));
+                sb.setColor(meta[2] / 255.0F, meta[3] / 255.0F * 0.7F, meta[4] / 255.0F * 0.8F, glow);
+                sb.draw(heartTexOrGlow(), gx - gs / 2.0F, gy - gs / 2.0F, gs, gs);
+            }
+        }
+
+        if (!atRest) {
+            renderHearts(sb, dt, tier, x, y, bw, bh);
+        }
+        sb.setColor(Color.WHITE);
+        int threshold = Math.max(1, LieseCompat.climaxThreshold());
+        String info = ArkExposureHelper.stageName() + "    兴奋 " + NsfwRunStats.excitement + "/" + threshold;
+        if (NsfwRunStats.pregnant) {
+            info = "孕·第" + pregStage() + "期    " + info;
+        }
+        FontHelper.renderFontLeftTopAligned(sb, FontHelper.tipBodyFont, info,
+                x + 6.0F * Settings.scale, y - 4.0F * Settings.scale, Settings.CREAM_COLOR);
+    }
+
+    private static Texture heartTexOrGlow() {
+        if (heartTex == null) {
+            heartTex = TextureHelper.getTexture(ArkNsfwMod.makeImagePath("ui/heart.png"));
+        }
+        return heartTex;
+    }
+
     private static boolean hasRelic(String id) {
         return AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(id);
     }
@@ -178,7 +302,16 @@ public final class ArkPortraitPanel {
             return;
         }
         AbstractRoom room = AbstractDungeon.getCurrRoom();
-        if (room == null || room.phase != AbstractRoom.RoomPhase.COMBAT) {
+        if (room == null) {
+            return;
+        }
+        boolean atRest = room instanceof com.megacrit.cardcrawl.rooms.RestRoom;
+        if (("eyja".equals(key) || "muel".equals(key))
+                && (room.phase == AbstractRoom.RoomPhase.COMBAT || atRest)) {
+            renderUserArt(sb, key, atRest);
+            return;
+        }
+        if (room.phase != AbstractRoom.RoomPhase.COMBAT) {
             return;
         }
         // 注意：不能检查 AbstractDungeon.screen != NONE —— 该字段会保留上一次打开的界面枚举，

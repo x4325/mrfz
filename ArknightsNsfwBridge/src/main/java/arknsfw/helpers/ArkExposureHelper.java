@@ -9,7 +9,7 @@ import liesecore.helpers.NsfwRunStats;
  */
 public final class ArkExposureHelper {
 
-    public static final int MAX_STAGE = 1;
+    public static final int MAX_STAGE = 4;
     private static final int DAMAGE_PER_STAGE = 14;
 
     private static int stage = 0;
@@ -75,6 +75,12 @@ public final class ArkExposureHelper {
     }
 
     public static String stageName() {
-        return stage() >= 1 ? "衣装：破损" : "衣装：完好";
+        switch (stage()) {
+            case 0: return "衣装：完好";
+            case 1: return "衣装：破损";
+            case 2: return "衣装：大破";
+            case 3: return "衣装：褴褛";
+            default: return "衣装：全裸";
+        }
     }
 }
