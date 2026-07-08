@@ -124,7 +124,7 @@ public class ArkNsfwMod implements
 
     @Override
     public void receivePostInitialize() {
-        System.out.println("[arknsfw] 0.5.5-upgfix loaded (portrait+postbattle render active)");
+        System.out.println("[arknsfw] 0.5.6-cleanlines loaded (portrait+postbattle render active)");
         ArkCharacterSetup.registerCharacters();
         registerEvents();
         registerPotions();

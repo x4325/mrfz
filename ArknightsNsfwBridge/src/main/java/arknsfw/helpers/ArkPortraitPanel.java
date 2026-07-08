@@ -110,6 +110,10 @@ public final class ArkPortraitPanel {
                 || hasRelic(arknsfw.relics.equipment.LeashRelic.ID)) {
             drawUserItem(sb, key, "collar" + suffix, ox, oy, bw, bh);
         }
+        if (hasRelic(arknsfw.relics.equipment.LeashRelic.ID)) {
+            // 垂链层（部分立绘的装备图带牵引链，切成独立件；没有该件时静默跳过）
+            drawUserItem(sb, key, "leash" + suffix, ox, oy, bw, bh);
+        }
         if (hasRelic(arknsfw.relics.equipment.RingGagRelic.ID)
                 || hasRelic(arknsfw.relics.equipment.ClothGagRelic.ID)) {
             drawUserItem(sb, key, "gag" + suffix, ox, oy, bw, bh);
@@ -275,7 +279,12 @@ public final class ArkPortraitPanel {
         if (CACHE.containsKey(path)) {
             return CACHE.get(path);
         }
-        Texture tex = TextureHelper.getTexture(path);
+        Texture tex;
+        try {
+            tex = Gdx.files.internal(path).exists() ? TextureHelper.getTexture(path) : null;
+        } catch (Exception e) {
+            tex = null;
+        }
         CACHE.put(path, tex);
         return tex;
     }
