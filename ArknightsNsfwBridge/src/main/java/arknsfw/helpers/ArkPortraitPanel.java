@@ -178,6 +178,14 @@ public final class ArkPortraitPanel {
             }
         }
 
+        // 表情层：破损/绑手底图表情固定，用锁底情欲图切出的脸部差分补上
+        if (tier >= 1 && (state.startsWith("d") || "cuffs".equals(state))) {
+            Texture fx = loadUser(key + "_fx_e" + tier);
+            if (fx != null) {
+                sb.draw(fx, ox, oy, bw, bh);
+            }
+        }
+
         // 装备单件叠加（含孕肚形变版）
         drawUserItems(sb, key, ox, oy, bw, bh, preg);
 
