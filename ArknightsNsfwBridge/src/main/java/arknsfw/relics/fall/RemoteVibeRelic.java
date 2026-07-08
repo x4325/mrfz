@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import arknsfw.ArkNsfwMod;
 import arknsfw.relics.AbstractArkNsfwRelic;
 
-/** 遥控跳蛋：每回合开始掷硬币——正面抽 1 张牌，反面兴奋 +4。 */
+/** 遥控震动棒：每回合开始掷硬币——正面抽 1 张牌，反面兴奋 +4。 */
 public class RemoteVibeRelic extends AbstractArkNsfwRelic {
     public static final String ID = ArkNsfwMod.makeID("RemoteVibeRelic");
 

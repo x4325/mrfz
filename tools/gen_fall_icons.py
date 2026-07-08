@@ -103,11 +103,16 @@ def ic_mother_brooch():
 
 # ---- 欲望装备 ----
 def ic_exposure_cloak():
+    # 淫语墨书：皮肤色底 + 墨字涂鸦 + 毛笔
     img = canvas(); d = ImageDraw.Draw(img)
-    d.polygon([(64, 14), (24, 44), (32, 108), (96, 108), (104, 44)], fill=CLOTH, outline=(80, 36, 58))
-    d.polygon([(64, 14), (46, 108), (82, 108)], fill=(28, 20, 26))
-    heart(d, 64, 70, 12, PINK)
-    d.ellipse([56, 20, 72, 34], fill=GOLD)
+    d.rounded_rectangle([20, 30, 96, 104], radius=16, fill=(248, 214, 190), outline=(220, 170, 150), width=3)
+    ink = (60, 30, 70)
+    for i, y in enumerate((44, 62, 80)):
+        d.line([(32, y), (60 - i * 4, y)], fill=ink, width=5)
+        d.line([(38, y - 6), (38, y + 6)], fill=ink, width=4)
+    heart(d, 74, 64, 10, PINK)
+    d.line([(88, 20), (104, 60)], fill=(90, 60, 40), width=7)
+    d.polygon([(100, 56), (112, 78), (104, 80)], fill=ink)
     return img
 
 
@@ -123,25 +128,30 @@ def ic_pleasure_converter():
 
 
 def ic_training_collar():
+    # 调教乳环：一对金环 + 连链 + 小铃
     img = canvas(); d = ImageDraw.Draw(img)
-    d.ellipse([26, 36, 102, 94], outline=LEATHER, width=14)
-    d.ellipse([26, 36, 102, 94], outline=(110, 90, 106), width=4)
-    for ang in range(0, 360, 40):
-        x = 64 + 38 * math.cos(math.radians(ang)); y = 65 + 29 * math.sin(math.radians(ang))
-        d.ellipse([x - 4, y - 4, x + 4, y + 4], fill=GOLD)
-    d.rectangle([58, 88, 70, 104], fill=METAL)
-    d.text((59, 90), "+", fill=(40, 30, 40))
+    for cx in (40, 88):
+        d.ellipse([cx - 16, 34, cx + 16, 66], outline=GOLD, width=8)
+        d.ellipse([cx - 16, 34, cx + 16, 66], outline=(255, 230, 160), width=2)
+        d.ellipse([cx - 4, 28, cx + 4, 38], fill=METAL)
+    pts = [(40, 66), (52, 84), (64, 90), (76, 84), (88, 66)]
+    for a, b in zip(pts, pts[1:]):
+        d.line([a, b], fill=METAL, width=4)
+    d.ellipse([57, 88, 71, 102], fill=GOLD, outline=(160, 120, 50))
+    d.ellipse([61, 96, 67, 102], fill=(120, 90, 40))
     return img
 
 
 def ic_remote_vibe():
+    # 遥控震动棒：大头按摩棒 + 遥控器
     img = canvas(); d = ImageDraw.Draw(img)
-    d.ellipse([30, 52, 66, 98], fill=PINK, outline=PINK_HI, width=3)
-    d.rounded_rectangle([72, 30, 102, 86], radius=8, fill=(60, 56, 70), outline=METAL, width=3)
-    d.ellipse([80, 40, 94, 54], fill=PINK_HI)
-    d.rectangle([80, 62, 94, 70], fill=METAL_DK)
+    d.ellipse([22, 16, 62, 56], fill=PINK, outline=PINK_HI, width=3)
+    d.rounded_rectangle([34, 48, 50, 104], radius=7, fill=(235, 235, 240), outline=METAL_DK, width=3)
     for i in range(3):
-        d.arc([50 - i * 8, 30 - i * 6, 90 + i * 8, 70 + i * 6], 220, 320, fill=PINK_HI, width=3)
+        d.arc([10 - i * 7, 6 - i * 6, 74 + i * 7, 66 + i * 6], 240, 330, fill=PINK_HI, width=3)
+    d.rounded_rectangle([74, 46, 104, 100], radius=8, fill=(60, 56, 70), outline=METAL, width=3)
+    d.ellipse([82, 54, 96, 68], fill=PINK_HI)
+    d.rectangle([82, 76, 96, 84], fill=METAL_DK)
     return img
 
 
@@ -156,11 +166,17 @@ def ic_corrupt_hourglass():
 
 
 def ic_crest_ring():
+    # 淫纹阴环：贯穿软肉的小环 + 心形垂坠 + 淫纹微光
     img = canvas(); d = ImageDraw.Draw(img)
-    d.ellipse([30, 34, 98, 102], outline=GOLD, width=11)
-    d.ellipse([30, 34, 98, 102], outline=(255, 230, 160), width=3)
-    d.polygon([(64, 14), (76, 34), (52, 34)], fill=PURPLE)
-    heart(d, 64, 32, 10, PINK)
+    d.ellipse([36, 18, 92, 52], fill=(248, 200, 190), outline=(230, 160, 150), width=3)
+    d.ellipse([48, 40, 80, 84], outline=GOLD, width=9)
+    d.ellipse([48, 40, 80, 84], outline=(255, 230, 160), width=2)
+    d.ellipse([58, 36, 70, 48], fill=METAL)
+    heart(d, 64, 96, 12, PINK)
+    for ang in (150, 30):
+        x = 64 + 34 * math.cos(math.radians(ang)); y = 88 + 18 * math.sin(math.radians(ang))
+        d.line([(x - 4, y), (x + 4, y)], fill=PURPLE, width=3)
+        d.line([(x, y - 4), (x, y + 4)], fill=PURPLE, width=3)
     return img
 
 

@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import arknsfw.ArkNsfwMod;
 import arknsfw.relics.AbstractArkNsfwRelic;
 
-/** 调教项圈·进阶：每次高潮失控计数 +1；每场战斗开始按计数获得力量。 */
+/** 调教乳环：每次高潮失控计数 +1；每场战斗开始按计数获得力量。 */
 public class TrainingCollarPlusRelic extends AbstractArkNsfwRelic {
     public static final String ID = ArkNsfwMod.makeID("TrainingCollarPlusRelic");
 

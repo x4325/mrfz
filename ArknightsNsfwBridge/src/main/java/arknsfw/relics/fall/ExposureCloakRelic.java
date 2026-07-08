@@ -5,7 +5,7 @@ import arknsfw.ArkNsfwMod;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.relics.AbstractArkNsfwRelic;
 
-/** 露出斗篷：衣装不再修复（含篝火）；每档破损攻击伤害 +5%。 */
+/** 淫语墨书：衣装不再修复（含篝火）；每档破损攻击伤害 +5%。 */
 public class ExposureCloakRelic extends AbstractArkNsfwRelic {
     public static final String ID = ArkNsfwMod.makeID("ExposureCloakRelic");
 

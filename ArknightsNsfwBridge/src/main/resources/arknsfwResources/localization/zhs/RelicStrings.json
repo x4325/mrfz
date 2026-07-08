@@ -714,8 +714,8 @@
     ]
   },
   "arknsfw:ExposureCloakRelic": {
-    "NAME": "露出斗篷",
-    "FLAVOR": "遮不住的，就大方展示。",
+    "NAME": "淫语墨书",
+    "FLAVOR": "写在皮肤上的字洗不掉，遮不住。",
     "DESCRIPTIONS": [
       "衣装破损不再修复（换幕与篝火均不修）；每档破损，攻击伤害 +5%。"
     ]
@@ -728,15 +728,15 @@
     ]
   },
   "arknsfw:TrainingCollarPlusRelic": {
-    "NAME": "调教项圈·进阶",
-    "FLAVOR": "每一次崩溃都刻进项圈的记忆里。",
+    "NAME": "调教乳环",
+    "FLAVOR": "每一次绝顶，环身就多一道刻痕。",
     "DESCRIPTIONS": [
       "每次高潮失控计数 +1；每场战斗开始按计数获得力量。"
     ]
   },
   "arknsfw:RemoteVibeRelic": {
-    "NAME": "遥控跳蛋",
-    "FLAVOR": "遥控器不在你手里。",
+    "NAME": "遥控震动棒",
+    "FLAVOR": "开关不在你手里，档位也不在。",
     "DESCRIPTIONS": [
       "每回合开始：50% 抽 1 张牌，50% 兴奋 +4。"
     ]
@@ -749,8 +749,8 @@
     ]
   },
   "arknsfw:CrestAmpRingRelic": {
-    "NAME": "淫纹增幅环",
-    "FLAVOR": "诅咒被环身的纹路吞噬殆尽。",
+    "NAME": "淫纹阴环",
+    "FLAVOR": "贯穿最私密处的环，与淫纹共振，吞噬诅咒。",
     "DESCRIPTIONS": [
       "战斗开始时，抽牌堆中的诅咒全部 #y消耗 ，每张兴奋 +6。"
     ]

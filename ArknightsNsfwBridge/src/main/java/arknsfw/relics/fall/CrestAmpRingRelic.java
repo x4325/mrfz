@@ -7,7 +7,7 @@ import arknsfw.relics.AbstractArkNsfwRelic;
 
 import java.util.ArrayList;
 
-/** 淫纹增幅环：战斗开始时抽牌堆中的诅咒全部消耗，每张兴奋 +6。 */
+/** 淫纹阴环：战斗开始时抽牌堆中的诅咒全部消耗，每张兴奋 +6。 */
 public class CrestAmpRingRelic extends AbstractArkNsfwRelic {
     public static final String ID = ArkNsfwMod.makeID("CrestAmpRingRelic");
 
