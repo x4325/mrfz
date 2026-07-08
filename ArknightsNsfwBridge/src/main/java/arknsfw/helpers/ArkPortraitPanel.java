@@ -107,8 +107,7 @@ public final class ArkPortraitPanel {
         if (hasRelic(arknsfw.relics.equipment.LaceGarterRelic.ID)) drawUserItem(sb, key, "garter" + suffix, ox, oy, bw, bh);
         if (hasRelic(arknsfw.relics.equipment.VibeEggRelic.ID)) drawUserItem(sb, key, "vibe" + suffix, ox, oy, bw, bh);
         if (hasRelic(arknsfw.relics.equipment.BellTagRelic.ID)
-                || hasRelic(arknsfw.relics.equipment.LeashRelic.ID)
-                || hasRelic(arknsfw.relics.equipment.BodyCrestRelic.ID)) {
+                || hasRelic(arknsfw.relics.equipment.LeashRelic.ID)) {
             drawUserItem(sb, key, "collar" + suffix, ox, oy, bw, bh);
         }
         if (hasRelic(arknsfw.relics.equipment.RingGagRelic.ID)
@@ -231,9 +230,12 @@ public final class ArkPortraitPanel {
         }
     }
 
-    /** 淫纹浮现条件：怀孕，或本角色专属印记已被刻印锁定。 */
+    /** 淫纹浮现条件：怀孕、佩戴淫纹拓印、或本角色专属印记已被刻印锁定。 */
     private static boolean crestVisible(String key) {
         if (NsfwRunStats.pregnant) {
+            return true;
+        }
+        if (hasRelic(arknsfw.relics.equipment.BodyCrestRelic.ID)) {
             return true;
         }
         return lockVisible(key);
