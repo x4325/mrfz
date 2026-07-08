@@ -40,7 +40,8 @@ public class AshKiss extends AbstractArkNsfwCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(1); rawDescription = cardStrings.UPGRADE_DESCRIPTION; initializeDescription();
+            upgradeMagicNumber(1);
+            applyUpgradeDescription();
         }
     }
 

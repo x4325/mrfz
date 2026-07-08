@@ -30,8 +30,8 @@ public class GreenhouseMist extends AbstractArkNsfwCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
+            upgradeBaseCost(0);
+            applyUpgradeDescription();
         }
     }
 

@@ -142,7 +142,7 @@ public class HighmoreMod implements
 
                                 @Override
     public void receivePostInitialize() {
-        System.out.println("[highmore] 0.5.4-cmefix loaded");
+        System.out.println("[highmore] 0.5.5-upgfix loaded");
         SkinSelectScreen.Inst = new SkinSelectScreen();
         BaseMod.addEvent(HighmoreBeachedWhisper.ID, HighmoreBeachedWhisper.class, Exordium.ID);
         BaseMod.addEvent(HighmoreSaltPond.ID, HighmoreSaltPond.class, TheCity.ID);

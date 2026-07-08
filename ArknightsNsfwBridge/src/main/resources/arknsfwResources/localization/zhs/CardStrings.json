@@ -10,7 +10,8 @@
  },
  "arknsfw:HeatResonance": {
   "NAME": "地热共鸣",
-  "DESCRIPTION": "获得 1 层 地热（每回合兴奋 +4）。 NL 艾雅：手牌有 云层 牌时获得 1 层 炎息；获得 1 云量。"
+  "DESCRIPTION": "获得 1 层 地热（每回合兴奋 +4）。 NL 艾雅：手牌有 云层 牌时获得 1 层 炎息；获得 1 云量。",
+  "UPGRADE_DESCRIPTION": "获得 1 层 地热（每回合兴奋 +4）。 NL 艾雅：手牌有 云层 牌时获得 1 层 炎息；获得 1 云量。"
  },
  "arknsfw:AshKiss": {
   "NAME": "升温之吻",
@@ -39,7 +40,8 @@
  },
  "arknsfw:BubbleTease": {
   "NAME": "泡沫撩拨",
-  "DESCRIPTION": "获得 !B! 点格挡。兴奋 +10。受孕度 +4。 NL 缪尔：有 流形 时格挡 +4；有 溯源 时受孕 +3。"
+  "DESCRIPTION": "获得 !B! 点格挡。兴奋 +10。受孕度 +4。 NL 缪尔：有 流形 时格挡 +4；有 溯源 时受孕 +3。",
+  "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。兴奋 +10。受孕度 +4。 NL 缪尔：有 流形 时格挡 +4；有 溯源 时受孕 +3。"
  },
  "arknsfw:CloneService": {
   "NAME": "分身侍奉",
@@ -47,7 +49,8 @@
  },
  "arknsfw:GreenhouseMist": {
   "NAME": "温室雾霭",
-  "DESCRIPTION": "获得 1 层 水化（回合结束受孕 +2）。 NL 缪尔：有 流形 时 水化 +1； 栽培 中额外获得 1 层 溯源。"
+  "DESCRIPTION": "获得 1 层 水化（回合结束受孕 +2）。 NL 缪尔：有 流形 时 水化 +1； 栽培 中额外获得 1 层 溯源。",
+  "UPGRADE_DESCRIPTION": "获得 1 层 水化（回合结束受孕 +2）。 NL 缪尔：有 流形 时 水化 +1； 栽培 中额外获得 1 层 溯源。"
  },
  "arknsfw:WetSlide": {
   "NAME": "湿滑滑行",
