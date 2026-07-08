@@ -32,7 +32,7 @@ public class BellTagRelic extends AbstractArkNsfwRelic {
             flash();
             addToBot(new ApplyPowerAction(m, p, new WeakPower(m, 1, false), 1));
         }
-        NsfwRunStats.addExcitement(5);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(5);
     }
 
     @Override

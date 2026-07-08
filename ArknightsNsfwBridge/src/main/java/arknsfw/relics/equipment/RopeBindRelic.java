@@ -28,7 +28,7 @@ public class RopeBindRelic extends AbstractArkNsfwRelic {
     @Override
     public void onUseCard(AbstractCard card, com.megacrit.cardcrawl.actions.utility.UseCardAction action) {
         if (card.type == AbstractCard.CardType.ATTACK) {
-            NsfwRunStats.addExcitement(2);
+            arknsfw.helpers.ArkSafeStats.addExcitementDeferred(2);
         }
     }
 

@@ -22,13 +22,13 @@ public class LingeringHeatPower extends AbstractArkDebuffPower {
 
     @Override
     public void atStartOfTurn() {
-        NsfwRunStats.addExcitement(2 * amount);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(2 * amount);
     }
 
     @Override
     public int onLoseHp(int damageAmount) {
         if (damageAmount > 0 && owner != null && owner.isPlayer) {
-            NsfwRunStats.addExcitement(2 * amount);
+            arknsfw.helpers.ArkSafeStats.addExcitementDeferred(2 * amount);
         }
         return damageAmount;
     }

@@ -23,7 +23,7 @@ public class HydrationPower extends AbstractPower {
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer) {
-            NsfwRunStats.addConception(2 * amount, false);
+            arknsfw.helpers.ArkSafeStats.addConceptionDeferred(2 * amount, false);
         }
     }
 

@@ -30,7 +30,7 @@ public class LaceGarterRelic extends AbstractArkNsfwRelic {
 
     @Override
     public void atTurnStart() {
-        NsfwRunStats.addExcitement(2);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(2);
     }
 
     @Override

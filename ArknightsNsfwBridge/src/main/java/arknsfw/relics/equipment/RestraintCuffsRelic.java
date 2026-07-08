@@ -37,7 +37,7 @@ public class RestraintCuffsRelic extends AbstractArkNsfwRelic {
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.type == DamageInfo.DamageType.NORMAL && damageAmount > 0) {
-            NsfwRunStats.addExcitement(3);
+            arknsfw.helpers.ArkSafeStats.addExcitementDeferred(3);
         }
         return damageAmount;
     }

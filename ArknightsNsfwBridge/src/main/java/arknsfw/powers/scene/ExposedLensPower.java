@@ -24,13 +24,13 @@ public class ExposedLensPower extends AbstractArkDebuffPower {
 
     @Override
     public void atStartOfTurn() {
-        NsfwRunStats.addExcitement(2 * amount);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(2 * amount);
     }
 
     @Override
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
         if (card != null && card.type == AbstractCard.CardType.SKILL) {
-            NsfwRunStats.addExcitement(2 * amount);
+            arknsfw.helpers.ArkSafeStats.addExcitementDeferred(2 * amount);
         }
     }
 

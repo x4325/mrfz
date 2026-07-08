@@ -33,7 +33,7 @@ public class CoreStrainPower extends AbstractArkDebuffPower {
     @Override
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
         if (card != null && card.type == AbstractCard.CardType.SKILL) {
-            NsfwRunStats.addExcitement(3 * amount);
+            arknsfw.helpers.ArkSafeStats.addExcitementDeferred(3 * amount);
         }
     }
 

@@ -23,7 +23,7 @@ public class ChastityBeltRelic extends AbstractArkNsfwRelic {
 
     @Override
     public void atTurnStart() {
-        NsfwRunStats.addExcitement(4);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(4);
     }
 
     @Override

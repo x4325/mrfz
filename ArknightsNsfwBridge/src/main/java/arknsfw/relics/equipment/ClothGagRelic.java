@@ -36,7 +36,7 @@ public class ClothGagRelic extends AbstractArkNsfwRelic {
             usedThisTurn = true;
             flash();
             addToBot(new GainBlockAction(AbstractDungeon.player, 4));
-            NsfwRunStats.addExcitement(5);
+            arknsfw.helpers.ArkSafeStats.addExcitementDeferred(5);
         }
     }
 

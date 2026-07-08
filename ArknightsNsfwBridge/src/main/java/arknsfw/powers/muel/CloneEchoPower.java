@@ -27,7 +27,7 @@ public class CloneEchoPower extends AbstractArkDebuffPower {
     @Override
     public void atStartOfTurn() {
         attackPenaltyUsed = false;
-        NsfwRunStats.addExcitement(2 * amount);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(2 * amount);
     }
 
     @Override

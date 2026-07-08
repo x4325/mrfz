@@ -24,7 +24,7 @@ public class VibeEggRelic extends AbstractArkNsfwRelic {
 
     @Override
     public void atTurnStart() {
-        NsfwRunStats.addExcitement(5);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(5);
     }
 
     @Override
@@ -33,7 +33,7 @@ public class VibeEggRelic extends AbstractArkNsfwRelic {
         if (this.counter >= 3) {
             this.counter = 0;
             flash();
-            NsfwRunStats.addExcitement(3);
+            arknsfw.helpers.ArkSafeStats.addExcitementDeferred(3);
         }
     }
 

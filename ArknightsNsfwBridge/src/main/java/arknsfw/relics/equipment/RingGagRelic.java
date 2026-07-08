@@ -23,7 +23,7 @@ public class RingGagRelic extends AbstractArkNsfwRelic {
 
     @Override
     public void atTurnStart() {
-        NsfwRunStats.addExcitement(3);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(3);
     }
 
     @Override

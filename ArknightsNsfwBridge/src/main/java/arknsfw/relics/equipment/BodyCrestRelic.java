@@ -23,7 +23,7 @@ public class BodyCrestRelic extends AbstractArkNsfwRelic {
 
     @Override
     public void atTurnStart() {
-        NsfwRunStats.addConception(1, false);
+        arknsfw.helpers.ArkSafeStats.addConceptionDeferred(1, false);
     }
 
     @Override

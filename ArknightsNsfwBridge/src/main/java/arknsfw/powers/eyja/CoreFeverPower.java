@@ -23,7 +23,7 @@ public class CoreFeverPower extends AbstractPower {
     @Override
     public int onLoseHp(int damageAmount) {
         if (damageAmount > 0 && owner != null && owner.isPlayer) {
-            NsfwRunStats.addExcitement(5 * amount);
+            arknsfw.helpers.ArkSafeStats.addExcitementDeferred(5 * amount);
         }
         return damageAmount;
     }

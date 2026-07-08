@@ -25,7 +25,7 @@ public class TideBrandPower extends AbstractArkDebuffPower {
     public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer && owner != null && owner.isPlayer && amount > 0) {
             owner.damage(new DamageInfo(null, amount, DamageInfo.DamageType.HP_LOSS));
-            NsfwRunStats.addExcitement(2 * amount);
+            arknsfw.helpers.ArkSafeStats.addExcitementDeferred(2 * amount);
         }
     }
 

@@ -27,7 +27,7 @@ public class LewdTrancePower extends AbstractPower {
     @Override
     public void atStartOfTurn() {
         flash();
-        NsfwRunStats.addExcitement(8);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(8);
         if (owner instanceof AbstractPlayer) {
             AbstractPlayer p = (AbstractPlayer) owner;
             ArkCharMechanicsHelper.applyReapPower(p, amount);

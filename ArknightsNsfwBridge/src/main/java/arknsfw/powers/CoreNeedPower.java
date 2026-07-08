@@ -28,7 +28,7 @@ public class CoreNeedPower extends AbstractPower {
     @Override
     public void atStartOfTurn() {
         flash();
-        NsfwRunStats.addExcitement(5 * amount);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(5 * amount);
         if (owner instanceof AbstractPlayer) {
             AbstractPlayer p = (AbstractPlayer) owner;
             // 每个 apply 内部都会检查当前角色，只有匹配的会生效

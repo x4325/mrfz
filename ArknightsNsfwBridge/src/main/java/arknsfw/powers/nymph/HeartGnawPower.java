@@ -22,7 +22,7 @@ public class HeartGnawPower extends AbstractArkDebuffPower {
 
     @Override
     public void atStartOfTurn() {
-        NsfwRunStats.addExcitement(2 * amount);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(2 * amount);
     }
 
     @Override

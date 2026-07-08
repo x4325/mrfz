@@ -23,7 +23,7 @@ public class GeothermalPower extends AbstractPower {
 
     @Override
     public void atStartOfTurn() {
-        NsfwRunStats.addExcitement(4 * amount);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(4 * amount);
     }
 
     @Override
