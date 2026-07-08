@@ -126,7 +126,7 @@ public class ArkNsfwMod implements
 
     @Override
     public void receivePostInitialize() {
-        System.out.println("[arknsfw] 0.6.0-fallmode loaded (portrait+postbattle+fallmode active)");
+        System.out.println("[arknsfw] 0.6.1-gearart loaded (portrait+postbattle+fallmode active)");
         ArkCharacterSetup.registerCharacters();
         registerEvents();
         registerPotions();

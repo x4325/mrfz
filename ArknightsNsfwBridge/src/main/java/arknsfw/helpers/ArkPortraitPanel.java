@@ -121,12 +121,36 @@ public final class ArkPortraitPanel {
         if (hasRelic(arknsfw.relics.equipment.LaceBlindfoldRelic.ID)) {
             drawUserItem(sb, key, "blindfold" + suffix, ox, oy, bw, bh);
         }
+        // ---- 欲望装备（用户单件差分图） ----
+        if (hasRelic(arknsfw.relics.fall.RemoteVibeRelic.ID)) drawUserItem(sb, key, "wand" + suffix, ox, oy, bw, bh);
+        if (hasRelic(arknsfw.relics.fall.TrainingCollarPlusRelic.ID)) drawUserItem(sb, key, "nipplering" + suffix, ox, oy, bw, bh);
+        if (hasRelic(arknsfw.relics.fall.CrestAmpRingRelic.ID)) drawUserItem(sb, key, "pubring" + suffix, ox, oy, bw, bh);
+        if (hasRelic(arknsfw.relics.fall.ExposureCloakRelic.ID)) drawUserItem(sb, key, "inkwrit" + suffix, ox, oy, bw, bh);
+        if (hasRelic(arknsfw.relics.fall.PleasureConverterRelic.ID)) drawUserItem(sb, key, "converter" + suffix, ox, oy, bw, bh);
+        if (hasRelic(arknsfw.relics.fall.CorruptHourglassRelic.ID)) drawUserItem(sb, key, "watch" + suffix, ox, oy, bw, bh);
+    }
+
+    /** buff/debuff 状态差分层（战斗中生效的 power 驱动）。 */
+    private static void drawUserBuffs(SpriteBatch sb, String key, float ox, float oy, float bw, float bh, int preg) {
+        com.megacrit.cardcrawl.characters.AbstractPlayer p = AbstractDungeon.player;
+        if (p == null || p.powers == null || p.powers.isEmpty()) {
+            return;
+        }
+        String suffix = preg > 0 ? "_p" + preg : "";
+        if (p.hasPower(arknsfw.powers.fall.LustSurgePower.POWER_ID)) drawUserLayer(sb, key, "fxb_lustsurge" + suffix, ox, oy, bw, bh);
+        if (p.hasPower(arknsfw.powers.fall.AphroToxinPower.POWER_ID)) drawUserLayer(sb, key, "fxb_aphrotoxin" + suffix, ox, oy, bw, bh);
+        if (p.hasPower(arknsfw.powers.fall.AfterglowPower.POWER_ID)) drawUserLayer(sb, key, "fxb_afterglow" + suffix, ox, oy, bw, bh);
+        if (p.hasPower(arknsfw.powers.fall.PleasureDependencePower.POWER_ID)) drawUserLayer(sb, key, "fxb_dependence" + suffix, ox, oy, bw, bh);
     }
 
     private static void drawUserItem(SpriteBatch sb, String key, String item, float ox, float oy, float bw, float bh) {
-        Texture t = loadUser(key + "_it_" + item);
-        if (t == null && item.contains("_p")) {
-            t = loadUser(key + "_it_" + item.substring(0, item.indexOf("_p")));
+        drawUserLayer(sb, key, "it_" + item, ox, oy, bw, bh);
+    }
+
+    private static void drawUserLayer(SpriteBatch sb, String key, String name, float ox, float oy, float bw, float bh) {
+        Texture t = loadUser(key + "_" + name);
+        if (t == null && name.matches(".*_p[123]$")) {
+            t = loadUser(key + "_" + name.substring(0, name.lastIndexOf("_p")));
         }
         if (t != null) {
             sb.draw(t, ox, oy, bw, bh);
@@ -193,6 +217,9 @@ public final class ArkPortraitPanel {
 
         // 装备单件叠加（含孕肚形变版）
         drawUserItems(sb, key, ox, oy, bw, bh, preg);
+
+        // buff/debuff 状态差分（淫气高涨/催淫毒素/绝顶余韵/快感依存）
+        drawUserBuffs(sb, key, ox, oy, bw, bh, preg);
 
         // 淫纹辉光穿透：刻印/怀孕时在纹章位置叠加搏动光晕
         if (crestVisible(key)) {
