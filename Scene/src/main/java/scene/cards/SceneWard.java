@@ -10,7 +10,7 @@ public class SceneWard extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("Ward");
 
     public SceneWard() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_scene_ward.png");
         baseBlock = 7;
     }
 

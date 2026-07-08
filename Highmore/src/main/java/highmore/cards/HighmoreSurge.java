@@ -11,7 +11,7 @@ public class HighmoreSurge extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("Surge");
 
     public HighmoreSurge() {
-        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
+        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF, "card_highmore_surge.png");
         baseMagicNumber = magicNumber = 2;
     }
 

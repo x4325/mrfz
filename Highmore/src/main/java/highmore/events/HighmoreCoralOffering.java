@@ -34,7 +34,10 @@ public class HighmoreCoralOffering extends AbstractImageEvent {
                 imageEventText.updateBodyText(STR.DESCRIPTIONS[1]);
                 break;
             case 1:
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ReapPower(AbstractDungeon.player, 3), 3));
+                AbstractDungeon.player.gainGold(50);
+                highmore.characters.Highmore.tideHealChannel = true;
+                AbstractDungeon.player.heal(6);
+                highmore.characters.Highmore.tideHealChannel = false;
                 imageEventText.updateBodyText(STR.DESCRIPTIONS[2]);
                 break;
         }

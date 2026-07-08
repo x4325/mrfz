@@ -1,11 +1,16 @@
 {
   "modid": "haruka",
   "name": "遥 / Haruka",
-  "author_list": ["Private"],
+  "author_list": [
+    "Private"
+  ],
   "description": "遥 (Haruka) SFW character mod. Mechanism: 花火. NSFW content in ArknightsNsfwBridge.",
-  "version": "0.1.0",
+  "version": "0.4.10-final",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.0",
-  "dependencies": ["basemod", "stslib"],
+  "dependencies": [
+    "basemod",
+    "stslib"
+  ],
   "update_json": ""
 }

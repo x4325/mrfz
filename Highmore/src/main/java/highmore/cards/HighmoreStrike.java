@@ -12,7 +12,7 @@ public class HighmoreStrike extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("Strike");
 
     public HighmoreStrike() {
-        super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY, "card_strike.png");
+        super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY, "card_highmore_strike.png");
         baseDamage = 6;
         this.tags.add(CardTags.STARTER_STRIKE);
     }

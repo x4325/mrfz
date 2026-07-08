@@ -18,7 +18,7 @@ public class NymphNightmare extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("Nightmare");
 
     public NymphNightmare() {
-        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.ENEMY, "card_nymph_nightmare.png");
         baseMagicNumber = magicNumber = 1;
     }
 

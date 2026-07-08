@@ -12,7 +12,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.rooms.CampfireUI;
+import com.megacrit.cardcrawl.rooms.RestRoom;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
@@ -90,8 +93,8 @@ public class Haruka extends CustomPlayer {
         dialogY = (drawY * Settings.scale) + 240 * Settings.scale;
         initializeClass(
                 null,
-                "images/characters/ironclad/shoulder2.png",
-                "images/characters/ironclad/shoulder.png",
+                HarukaMod.imgPath("char/shoulder_skin0.png"),
+                HarukaMod.imgPath("char/shoulder_skin0.png"),
                 "images/characters/ironclad/corpse.png",
                 new CharSelectInfo(
                         getStaticLocalizedCharacterName(),
@@ -114,6 +117,10 @@ public class Haruka extends CustomPlayer {
                 SPINE_SCALE
         );
         setupSpineAnimations();
+        // 营火/肩部立绘固定使用精一立绘
+        this.shoulderImg = shoulderTex(0);
+        this.shoulder2Img = this.shoulderImg;
+        this.img = this.shoulderImg;
     }
 
 
@@ -138,9 +145,30 @@ public class Haruka extends CustomPlayer {
         }
     }
 
+    private static final java.util.HashMap<String, com.badlogic.gdx.graphics.Texture> SHOULDER_CACHE =
+            new java.util.HashMap<String, com.badlogic.gdx.graphics.Texture>();
+
+    private static com.badlogic.gdx.graphics.Texture shoulderTex(int skinIndex) {
+        String path = HarukaMod.imgPath("char/shoulder_skin" + skinIndex + ".png");
+        com.badlogic.gdx.graphics.Texture tex = SHOULDER_CACHE.get(path);
+        if (tex == null) {
+            try {
+                tex = new com.badlogic.gdx.graphics.Texture(com.badlogic.gdx.Gdx.files.internal(path));
+            } catch (Exception e) {
+                tex = ImageMaster.loadImage(HarukaMod.imgPath("char/shoulder_skin0.png"));
+            }
+            if (tex == null) {
+                // 最终兜底：绝不让营火渲染拿到 null
+                tex = ImageMaster.loadImage("images/characters/ironclad/shoulder.png");
+            }
+            SHOULDER_CACHE.put(path, tex);
+        }
+        return tex;
+    }
+
     private void loadCharacterImages() {
-        this.shoulderImg = ImageMaster.loadImage("images/characters/ironclad/shoulder.png");
-        this.shoulder2Img = ImageMaster.loadImage("images/characters/ironclad/shoulder2.png");
+        this.shoulderImg = shoulderTex(0);
+        this.shoulder2Img = this.shoulderImg;
         this.corpseImg = ImageMaster.loadImage("images/characters/ironclad/corpse.png");
         this.img = this.shoulderImg;
     }
@@ -226,5 +254,70 @@ public class Haruka extends CustomPlayer {
         CardCrawlGame.sound.playA("ATTACK_HEAVY", -0.3f);
     }
 
+    /** 营火菜单态用 Spine；全屏 shoulder 透明区会变黑盖住按钮。 */
+    @Override
+    public void render(SpriteBatch sb) {
+        if (this.stance != null) {
+            this.stance.render(sb);
+        }
 
+        if (AbstractDungeon.getCurrRoom() instanceof RestRoom) {
+            sb.setColor(Color.WHITE);
+            if (CampfireUI.hidden) {
+                this.renderShoulderImg(sb);
+            } else if (this.atlas != null) {
+                this.renderPlayerImage(sb);
+            } else {
+                this.renderShoulderImg(sb);
+            }
+            this.hb.render(sb);
+            this.healthHb.render(sb);
+            return;
+        }
+
+        super.render(sb);
+    }
+
+    // ================= 骨骼动画触发 =================
+
+    private String idleAnimName() {
+        if (this.stateData == null) {
+            return "Idle";
+        }
+        return this.stateData.getSkeletonData().findAnimation("Idle") != null ? "Idle" : "Default";
+    }
+
+    /** 播放一次指定动作，结束后自动回到待机（含混合过渡）。 */
+    public void playCharAnimation(String name) {
+        if (this.state == null || this.stateData == null || name == null) {
+            return;
+        }
+        if (this.stateData.getSkeletonData().findAnimation(name) == null) {
+            return;
+        }
+        AnimationState.TrackEntry e = this.state.setAnimation(0, name, false);
+        e.setTimeScale(1.0f);
+        AnimationState.TrackEntry idle = this.state.addAnimation(0, idleAnimName(), true, 0.0f);
+        idle.setTimeScale(0.6f);
+    }
+
+    @Override
+    public void useFastAttackAnimation() {
+        super.useFastAttackAnimation();
+        playCharAnimation("Attack");
+    }
+
+    /** 登场动作（战斗开始时由 Mod 调用）。 */
+    public void playIntroAnimation() {
+        playCharAnimation("Start");
+    }
+
+    @Override
+    public void damage(com.megacrit.cardcrawl.cards.DamageInfo info) {
+        int before = this.currentHealth;
+        super.damage(info);
+        if (before > 0 && this.currentHealth <= 0) {
+            playCharAnimation("Die");
+        }
+    }
 }

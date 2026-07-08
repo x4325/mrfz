@@ -15,7 +15,7 @@ public class NymphVoidCut extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("VoidCut");
 
     public NymphVoidCut() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_nymph_voidcut.png");
         baseDamage = 9;
     }
 

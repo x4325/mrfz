@@ -12,7 +12,7 @@ public class HighmoreCut extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("Cut");
 
     public HighmoreCut() {
-        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_highmore_cut.png");
         baseDamage = 13;
     }
 

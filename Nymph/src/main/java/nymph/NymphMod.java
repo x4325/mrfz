@@ -7,6 +7,8 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.RenderSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,53 +21,21 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import nymph.cards.NymphHexSpread;
+import nymph.cards.NymphHeartBite;
+import nymph.cards.NymphFearFeast;
+import nymph.cards.NymphHexLink;
+import nymph.cards.NymphNightEcho;
+import nymph.cards.NymphSpiritClaw;
+import nymph.cards.NymphLockTighten;
+import nymph.cards.NymphShadowReap;
 import nymph.core.ClassEnum;
 import nymph.core.ColorEnum;
 import nymph.characters.Nymph;
 import nymph.cards.NymphStrike;
 import nymph.cards.NymphDefend;
 import nymph.cards.NymphSurge;
-import nymph.cards.NymphBulkSweep49;
-import nymph.cards.NymphBulkDraw48;
-import nymph.cards.NymphBulkGuard47;
-import nymph.cards.NymphBulkStrike46;
-import nymph.cards.NymphBulkFinale45;
-import nymph.cards.NymphBulkSweep44;
-import nymph.cards.NymphBulkDraw43;
-import nymph.cards.NymphBulkGuard42;
-import nymph.cards.NymphBulkStrike41;
-import nymph.cards.NymphBulkFinale40;
-import nymph.cards.NymphBulkSweep39;
-import nymph.cards.NymphBulkDraw38;
-import nymph.cards.NymphBulkGuard37;
-import nymph.cards.NymphBulkStrike36;
-import nymph.cards.NymphBulkFinale35;
-import nymph.cards.NymphBulkSweep34;
-import nymph.cards.NymphBulkDraw33;
-import nymph.cards.NymphBulkGuard32;
-import nymph.cards.NymphBulkStrike31;
 import nymph.cards.NymphBulkFinale30;
-import nymph.cards.NymphBulkSweep29;
-import nymph.cards.NymphBulkDraw28;
-import nymph.cards.NymphBulkGuard27;
-import nymph.cards.NymphBulkStrike26;
-import nymph.cards.NymphBulkFinale25;
-import nymph.cards.NymphBulkSweep24;
-import nymph.cards.NymphBulkDraw23;
-import nymph.cards.NymphBulkGuard22;
-import nymph.cards.NymphBulkStrike21;
-import nymph.cards.NymphBulkFinale20;
-import nymph.cards.NymphBulkSweep19;
-import nymph.cards.NymphBulkDraw18;
-import nymph.cards.NymphBulkGuard17;
-import nymph.cards.NymphBulkStrike16;
-import nymph.cards.NymphBulkFinale15;
-import nymph.cards.NymphBulkSweep14;
-import nymph.cards.NymphBulkDraw13;
-import nymph.cards.NymphBulkGuard12;
-import nymph.cards.NymphBulkStrike11;
-import nymph.cards.NymphBulkFinale10;
-import nymph.cards.NymphBulkSweep09;
 import nymph.cards.NymphBulkDraw08;
 import nymph.cards.NymphBulkGuard07;
 import nymph.cards.NymphBulkStrike06;
@@ -86,17 +56,6 @@ import nymph.cards.NymphCut;
 import nymph.cards.NymphWard;
 import nymph.cards.NymphJab;
 import nymph.relics.NymphStarterRelic;
-import nymph.relics.BulkRelic11;
-import nymph.relics.BulkRelic10;
-import nymph.relics.BulkRelic09;
-import nymph.relics.BulkRelic08;
-import nymph.relics.BulkRelic07;
-import nymph.relics.BulkRelic06;
-import nymph.relics.BulkRelic05;
-import nymph.relics.BulkRelic04;
-import nymph.relics.BulkRelic03;
-import nymph.relics.BulkRelic02;
-import nymph.relics.BulkRelic01;
 import nymph.events.NymphWhisperShrine;
 import nymph.events.NymphMirrorPool;
 import nymph.relics.NymphWaxSeal;
@@ -114,7 +73,9 @@ public class NymphMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        PostInitializeSubscriber {
+        OnStartBattleSubscriber,
+        PostInitializeSubscriber,
+        RenderSubscriber {
 
     public static final String MOD_ID = "nymph";
     public static final String MOD_NAME = "妮芙";
@@ -151,6 +112,11 @@ public class NymphMod implements
     public static final String ENERGY_ORB_1024    = imgPath("1024/energy.png");
     public static final String CARD_SMALL_ORB     = imgPath("char/small_orb.png");
 
+    @Override
+    public void receiveRender(com.badlogic.gdx.graphics.g2d.SpriteBatch sb) {
+        nymph.helpers.BridgeWatchdog.render(sb);
+    }
+
     public static String makeID(String id) {
         return MOD_ID + ":" + id;
     }
@@ -177,6 +143,7 @@ public class NymphMod implements
 
                                     @Override
     public void receivePostInitialize() {
+        System.out.println("[nymph] 0.4.10-final loaded");
         SkinSelectScreen.Inst = new SkinSelectScreen();
         BaseMod.addEvent(NymphWhisperShrine.ID, NymphWhisperShrine.class, Exordium.ID);
         BaseMod.addEvent(NymphMirrorPool.ID, NymphMirrorPool.class, TheCity.ID);
@@ -209,47 +176,15 @@ public class NymphMod implements
         BaseMod.addCard(new NymphBulkStrike06());
         BaseMod.addCard(new NymphBulkGuard07());
         BaseMod.addCard(new NymphBulkDraw08());
-        BaseMod.addCard(new NymphBulkSweep09());
-        BaseMod.addCard(new NymphBulkFinale10());
-        BaseMod.addCard(new NymphBulkStrike11());
-        BaseMod.addCard(new NymphBulkGuard12());
-        BaseMod.addCard(new NymphBulkDraw13());
-        BaseMod.addCard(new NymphBulkSweep14());
-        BaseMod.addCard(new NymphBulkFinale15());
-        BaseMod.addCard(new NymphBulkStrike16());
-        BaseMod.addCard(new NymphBulkGuard17());
-        BaseMod.addCard(new NymphBulkDraw18());
-        BaseMod.addCard(new NymphBulkSweep19());
-        BaseMod.addCard(new NymphBulkFinale20());
-        BaseMod.addCard(new NymphBulkStrike21());
-        BaseMod.addCard(new NymphBulkGuard22());
-        BaseMod.addCard(new NymphBulkDraw23());
-        BaseMod.addCard(new NymphBulkSweep24());
-        BaseMod.addCard(new NymphBulkFinale25());
-        BaseMod.addCard(new NymphBulkStrike26());
-        BaseMod.addCard(new NymphBulkGuard27());
-        BaseMod.addCard(new NymphBulkDraw28());
-        BaseMod.addCard(new NymphBulkSweep29());
         BaseMod.addCard(new NymphBulkFinale30());
-        BaseMod.addCard(new NymphBulkStrike31());
-        BaseMod.addCard(new NymphBulkGuard32());
-        BaseMod.addCard(new NymphBulkDraw33());
-        BaseMod.addCard(new NymphBulkSweep34());
-        BaseMod.addCard(new NymphBulkFinale35());
-        BaseMod.addCard(new NymphBulkStrike36());
-        BaseMod.addCard(new NymphBulkGuard37());
-        BaseMod.addCard(new NymphBulkDraw38());
-        BaseMod.addCard(new NymphBulkSweep39());
-        BaseMod.addCard(new NymphBulkFinale40());
-        BaseMod.addCard(new NymphBulkStrike41());
-        BaseMod.addCard(new NymphBulkGuard42());
-        BaseMod.addCard(new NymphBulkDraw43());
-        BaseMod.addCard(new NymphBulkSweep44());
-        BaseMod.addCard(new NymphBulkFinale45());
-        BaseMod.addCard(new NymphBulkStrike46());
-        BaseMod.addCard(new NymphBulkGuard47());
-        BaseMod.addCard(new NymphBulkDraw48());
-        BaseMod.addCard(new NymphBulkSweep49());
+        BaseMod.addCard(new NymphHexSpread());
+        BaseMod.addCard(new NymphHeartBite());
+        BaseMod.addCard(new NymphFearFeast());
+        BaseMod.addCard(new NymphHexLink());
+        BaseMod.addCard(new NymphNightEcho());
+        BaseMod.addCard(new NymphSpiritClaw());
+        BaseMod.addCard(new NymphLockTighten());
+        BaseMod.addCard(new NymphShadowReap());
     }
 
     @Override
@@ -269,22 +204,12 @@ public class NymphMod implements
         BaseMod.addRelicToCustomPool(new NymphFearBell(), ColorEnum.NYMPH_COLOR);
         BaseMod.addRelicToCustomPool(new NymphHeartKey(), ColorEnum.NYMPH_COLOR);
         BaseMod.addRelicToCustomPool(new NymphWaxSeal(), ColorEnum.NYMPH_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic01(), ColorEnum.NYMPH_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic02(), ColorEnum.NYMPH_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic03(), ColorEnum.NYMPH_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic04(), ColorEnum.NYMPH_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic05(), ColorEnum.NYMPH_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic06(), ColorEnum.NYMPH_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic07(), ColorEnum.NYMPH_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic08(), ColorEnum.NYMPH_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic09(), ColorEnum.NYMPH_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic10(), ColorEnum.NYMPH_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic11(), ColorEnum.NYMPH_COLOR);
     }
 
                                         @Override
     public void receiveEditKeywords() {
-        BaseMod.addKeyword(MOD_ID, "咒灵", new String[]{"咒灵"}, "咒灵刻在敌人身上，放大其受到的伤害；恐惧使意图失效。");
+        BaseMod.addKeyword(MOD_ID, "咒灵", new String[]{"咒灵"}, "咒灵刻在敌人身上：每层使其受到的伤害额外 +2，回合结束时 -1 层。");
+        BaseMod.addKeyword(MOD_ID, "恐惧", new String[]{"恐惧"}, "恐惧使敌人下一回合造成的伤害降为 0。");
     }
 
     @Override
@@ -296,5 +221,12 @@ public class NymphMod implements
         BaseMod.loadCustomStringsFile(PowerStrings.class, base + "nymph_powers-zh.json");
         BaseMod.loadCustomStringsFile(EventStrings.class, base + "nymph_events-zh.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, base + "nymph_uis-zh.json");
+    }
+
+    @Override
+    public void receiveOnBattleStart(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
+        if (com.megacrit.cardcrawl.dungeons.AbstractDungeon.player instanceof nymph.characters.Nymph) {
+            ((nymph.characters.Nymph) com.megacrit.cardcrawl.dungeons.AbstractDungeon.player).playIntroAnimation();
+        }
     }
 }

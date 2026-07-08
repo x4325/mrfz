@@ -12,6 +12,9 @@ public class ArkRunResetPatch {
         @SpirePostfixPatch
         public static void postfix() {
             ArkRunProgress.resetForNewRun();
+            arknsfw.helpers.ArkPostBattleChoice.resetForNewRun();
+            arknsfw.helpers.ArkExposureHelper.resetForNewRun();
+            arknsfw.helpers.ArkDefeatHelper.resetForNewRun();
         }
     }
 }

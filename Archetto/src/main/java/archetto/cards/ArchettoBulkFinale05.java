@@ -5,27 +5,24 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import archetto.ArchettoMod;
-import archetto.cards.AbstractArchettoCard;
 import archetto.powers.AimPower;
+
 public class ArchettoBulkFinale05 extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("BulkFinale05");
 
     public ArchettoBulkFinale05() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = 12;
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_archetto_bulkfinale05.png");
+        baseDamage = 10;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractPower stacks = p.getPower(AimPower.POWER_ID);
-        int bonus = (stacks != null && stacks.amount >= 3) ? 6 : 0;
+        int bonus = (stacks != null && stacks.amount >= 3) ? 8 : 0;
         addToBot(new DamageAction(m, new DamageInfo(p, damage + bonus, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        if (stacks != null && stacks.amount >= 3) { stacks.amount -= 3; }
     }
 
     @Override

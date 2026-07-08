@@ -7,6 +7,8 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.RenderSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,53 +21,21 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import archetto.cards.ArchettoSteadyBreath;
+import archetto.cards.ArchettoTrueShot;
+import archetto.cards.ArchettoTripleArrow;
+import archetto.cards.ArchettoHawkEye;
+import archetto.cards.ArchettoSnapString;
+import archetto.cards.ArchettoQuiverRefill;
+import archetto.cards.ArchettoSwiftStep;
+import archetto.cards.ArchettoArrowStorm;
 import archetto.core.ClassEnum;
 import archetto.core.ColorEnum;
 import archetto.characters.Archetto;
 import archetto.cards.ArchettoStrike;
 import archetto.cards.ArchettoDefend;
 import archetto.cards.ArchettoSurge;
-import archetto.cards.ArchettoBulkSweep49;
-import archetto.cards.ArchettoBulkDraw48;
-import archetto.cards.ArchettoBulkGuard47;
-import archetto.cards.ArchettoBulkStrike46;
-import archetto.cards.ArchettoBulkFinale45;
-import archetto.cards.ArchettoBulkSweep44;
-import archetto.cards.ArchettoBulkDraw43;
-import archetto.cards.ArchettoBulkGuard42;
-import archetto.cards.ArchettoBulkStrike41;
-import archetto.cards.ArchettoBulkFinale40;
-import archetto.cards.ArchettoBulkSweep39;
-import archetto.cards.ArchettoBulkDraw38;
-import archetto.cards.ArchettoBulkGuard37;
-import archetto.cards.ArchettoBulkStrike36;
-import archetto.cards.ArchettoBulkFinale35;
-import archetto.cards.ArchettoBulkSweep34;
-import archetto.cards.ArchettoBulkDraw33;
-import archetto.cards.ArchettoBulkGuard32;
-import archetto.cards.ArchettoBulkStrike31;
 import archetto.cards.ArchettoBulkFinale30;
-import archetto.cards.ArchettoBulkSweep29;
-import archetto.cards.ArchettoBulkDraw28;
-import archetto.cards.ArchettoBulkGuard27;
-import archetto.cards.ArchettoBulkStrike26;
-import archetto.cards.ArchettoBulkFinale25;
-import archetto.cards.ArchettoBulkSweep24;
-import archetto.cards.ArchettoBulkDraw23;
-import archetto.cards.ArchettoBulkGuard22;
-import archetto.cards.ArchettoBulkStrike21;
-import archetto.cards.ArchettoBulkFinale20;
-import archetto.cards.ArchettoBulkSweep19;
-import archetto.cards.ArchettoBulkDraw18;
-import archetto.cards.ArchettoBulkGuard17;
-import archetto.cards.ArchettoBulkStrike16;
-import archetto.cards.ArchettoBulkFinale15;
-import archetto.cards.ArchettoBulkSweep14;
-import archetto.cards.ArchettoBulkDraw13;
-import archetto.cards.ArchettoBulkGuard12;
-import archetto.cards.ArchettoBulkStrike11;
-import archetto.cards.ArchettoBulkFinale10;
-import archetto.cards.ArchettoBulkSweep09;
 import archetto.cards.ArchettoBulkDraw08;
 import archetto.cards.ArchettoBulkGuard07;
 import archetto.cards.ArchettoBulkStrike06;
@@ -86,17 +56,6 @@ import archetto.cards.ArchettoCut;
 import archetto.cards.ArchettoWard;
 import archetto.cards.ArchettoJab;
 import archetto.relics.ArchettoStarterRelic;
-import archetto.relics.BulkRelic11;
-import archetto.relics.BulkRelic10;
-import archetto.relics.BulkRelic09;
-import archetto.relics.BulkRelic08;
-import archetto.relics.BulkRelic07;
-import archetto.relics.BulkRelic06;
-import archetto.relics.BulkRelic05;
-import archetto.relics.BulkRelic04;
-import archetto.relics.BulkRelic03;
-import archetto.relics.BulkRelic02;
-import archetto.relics.BulkRelic01;
 import archetto.events.ArchettoMusicHall;
 import archetto.events.ArchettoBrokenString;
 import archetto.relics.ArchettoEncoreBow;
@@ -114,7 +73,9 @@ public class ArchettoMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        PostInitializeSubscriber {
+        OnStartBattleSubscriber,
+        PostInitializeSubscriber,
+        RenderSubscriber {
 
     public static final String MOD_ID = "archetto";
     public static final String MOD_NAME = "空弦";
@@ -151,6 +112,11 @@ public class ArchettoMod implements
     public static final String ENERGY_ORB_1024    = imgPath("1024/energy.png");
     public static final String CARD_SMALL_ORB     = imgPath("char/small_orb.png");
 
+    @Override
+    public void receiveRender(com.badlogic.gdx.graphics.g2d.SpriteBatch sb) {
+        archetto.helpers.BridgeWatchdog.render(sb);
+    }
+
     public static String makeID(String id) {
         return MOD_ID + ":" + id;
     }
@@ -177,6 +143,7 @@ public class ArchettoMod implements
 
                                 @Override
     public void receivePostInitialize() {
+        System.out.println("[archetto] 0.4.10-final loaded");
         SkinSelectScreen.Inst = new SkinSelectScreen();
         BaseMod.addEvent(ArchettoMusicHall.ID, ArchettoMusicHall.class, Exordium.ID);
         BaseMod.addEvent(ArchettoBrokenString.ID, ArchettoBrokenString.class, TheCity.ID);
@@ -209,47 +176,15 @@ public class ArchettoMod implements
         BaseMod.addCard(new ArchettoBulkStrike06());
         BaseMod.addCard(new ArchettoBulkGuard07());
         BaseMod.addCard(new ArchettoBulkDraw08());
-        BaseMod.addCard(new ArchettoBulkSweep09());
-        BaseMod.addCard(new ArchettoBulkFinale10());
-        BaseMod.addCard(new ArchettoBulkStrike11());
-        BaseMod.addCard(new ArchettoBulkGuard12());
-        BaseMod.addCard(new ArchettoBulkDraw13());
-        BaseMod.addCard(new ArchettoBulkSweep14());
-        BaseMod.addCard(new ArchettoBulkFinale15());
-        BaseMod.addCard(new ArchettoBulkStrike16());
-        BaseMod.addCard(new ArchettoBulkGuard17());
-        BaseMod.addCard(new ArchettoBulkDraw18());
-        BaseMod.addCard(new ArchettoBulkSweep19());
-        BaseMod.addCard(new ArchettoBulkFinale20());
-        BaseMod.addCard(new ArchettoBulkStrike21());
-        BaseMod.addCard(new ArchettoBulkGuard22());
-        BaseMod.addCard(new ArchettoBulkDraw23());
-        BaseMod.addCard(new ArchettoBulkSweep24());
-        BaseMod.addCard(new ArchettoBulkFinale25());
-        BaseMod.addCard(new ArchettoBulkStrike26());
-        BaseMod.addCard(new ArchettoBulkGuard27());
-        BaseMod.addCard(new ArchettoBulkDraw28());
-        BaseMod.addCard(new ArchettoBulkSweep29());
         BaseMod.addCard(new ArchettoBulkFinale30());
-        BaseMod.addCard(new ArchettoBulkStrike31());
-        BaseMod.addCard(new ArchettoBulkGuard32());
-        BaseMod.addCard(new ArchettoBulkDraw33());
-        BaseMod.addCard(new ArchettoBulkSweep34());
-        BaseMod.addCard(new ArchettoBulkFinale35());
-        BaseMod.addCard(new ArchettoBulkStrike36());
-        BaseMod.addCard(new ArchettoBulkGuard37());
-        BaseMod.addCard(new ArchettoBulkDraw38());
-        BaseMod.addCard(new ArchettoBulkSweep39());
-        BaseMod.addCard(new ArchettoBulkFinale40());
-        BaseMod.addCard(new ArchettoBulkStrike41());
-        BaseMod.addCard(new ArchettoBulkGuard42());
-        BaseMod.addCard(new ArchettoBulkDraw43());
-        BaseMod.addCard(new ArchettoBulkSweep44());
-        BaseMod.addCard(new ArchettoBulkFinale45());
-        BaseMod.addCard(new ArchettoBulkStrike46());
-        BaseMod.addCard(new ArchettoBulkGuard47());
-        BaseMod.addCard(new ArchettoBulkDraw48());
-        BaseMod.addCard(new ArchettoBulkSweep49());
+        BaseMod.addCard(new ArchettoSteadyBreath());
+        BaseMod.addCard(new ArchettoTrueShot());
+        BaseMod.addCard(new ArchettoTripleArrow());
+        BaseMod.addCard(new ArchettoHawkEye());
+        BaseMod.addCard(new ArchettoSnapString());
+        BaseMod.addCard(new ArchettoQuiverRefill());
+        BaseMod.addCard(new ArchettoSwiftStep());
+        BaseMod.addCard(new ArchettoArrowStorm());
     }
 
     @Override
@@ -269,17 +204,6 @@ public class ArchettoMod implements
         BaseMod.addRelicToCustomPool(new ArchettoTuningFork(), ColorEnum.ARCHETTO_COLOR);
         BaseMod.addRelicToCustomPool(new ArchettoSalePoster(), ColorEnum.ARCHETTO_COLOR);
         BaseMod.addRelicToCustomPool(new ArchettoEncoreBow(), ColorEnum.ARCHETTO_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic01(), ColorEnum.ARCHETTO_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic02(), ColorEnum.ARCHETTO_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic03(), ColorEnum.ARCHETTO_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic04(), ColorEnum.ARCHETTO_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic05(), ColorEnum.ARCHETTO_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic06(), ColorEnum.ARCHETTO_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic07(), ColorEnum.ARCHETTO_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic08(), ColorEnum.ARCHETTO_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic09(), ColorEnum.ARCHETTO_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic10(), ColorEnum.ARCHETTO_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic11(), ColorEnum.ARCHETTO_COLOR);
     }
 
                                     @Override
@@ -296,5 +220,12 @@ public class ArchettoMod implements
         BaseMod.loadCustomStringsFile(PowerStrings.class, base + "archetto_powers-zh.json");
         BaseMod.loadCustomStringsFile(EventStrings.class, base + "archetto_events-zh.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, base + "archetto_uis-zh.json");
+    }
+
+    @Override
+    public void receiveOnBattleStart(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
+        if (com.megacrit.cardcrawl.dungeons.AbstractDungeon.player instanceof archetto.characters.Archetto) {
+            ((archetto.characters.Archetto) com.megacrit.cardcrawl.dungeons.AbstractDungeon.player).playIntroAnimation();
+        }
     }
 }

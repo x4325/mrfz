@@ -213,11 +213,14 @@ public final class ArkCharMechanicsHelper {
 
     public static void applyHexPower(AbstractPlayer p, int amount) {
         if (!ArkCharacterSetup.isNymphRun() || p == null || amount <= 0) return;
-        AbstractPower existing = p.getPower(HexPower.POWER_ID);
-        if (existing == null) {
+        // 咒灵是敌方 debuff：施加给随机存活敌人
+        if (AbstractDungeon.getCurrRoom() == null || AbstractDungeon.getMonsters() == null) return;
+        com.megacrit.cardcrawl.monsters.AbstractMonster pick =
+                AbstractDungeon.getMonsters().getRandomMonster(true);
+        if (pick != null) {
             AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(p, p, new HexPower(p, amount), amount));
-        } else { existing.stackPower(amount); }
+                new ApplyPowerAction(pick, p, new HexPower(pick, amount), amount));
+        }
     }
 
     public static int hexAmount() {

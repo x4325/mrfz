@@ -30,6 +30,7 @@ public class PyroPower extends AbstractPower {
         type = PowerType.BUFF;
         isTurnBased = false;
         updateDescription();
+        loadIcon();
     }
     public static final int THRESHOLD = 10;
     public int burstCount = 0;
@@ -37,12 +38,21 @@ public class PyroPower extends AbstractPower {
         AbstractPower p = o.getPower(POWER_ID);
         return p == null ? 0 : p.amount;
     }
+    /** 本场战斗已引爆次数。 */
+    public static int burstsThisCombat(AbstractCreature o) {
+        AbstractPower p = o.getPower(POWER_ID);
+        return (p instanceof PyroPower) ? ((PyroPower) p).burstCount : 0;
+    }
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (info.owner == this.owner && damageAmount > 0) {
             flash();
             amount += 1;
             if (amount >= THRESHOLD) {
                 int dmg = 8 + burstCount * 3;
+                AbstractPower fh = this.owner.getPower(FlameHeartPower.POWER_ID);
+                if (fh != null) {
+                    dmg += 4 * fh.amount;
+                }
                 addToBot(new DamageAllEnemiesAction((AbstractPlayer) this.owner, dmg,
                         DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
                 amount -= THRESHOLD;
@@ -54,5 +64,24 @@ public class PyroPower extends AbstractPower {
     public void stackPower(int n) { super.stackPower(n); updateDescription(); }
     public void updateDescription() {
         description = ps.DESCRIPTIONS[0] + amount + ps.DESCRIPTIONS[1] + (THRESHOLD - amount) + ps.DESCRIPTIONS[2];
+    }
+
+    private static com.badlogic.gdx.graphics.Texture ICON_TEX;
+
+    private void loadIcon() {
+        try {
+            if (ICON_TEX == null) {
+                ICON_TEX = new com.badlogic.gdx.graphics.Texture(
+                        com.badlogic.gdx.Gdx.files.internal(HarukaMod.imgPath("powers/pyro_power.png")));
+            }
+            int w = ICON_TEX.getWidth();
+            int h = ICON_TEX.getHeight();
+            this.region128 = new com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion(ICON_TEX, 0, 0, w, h);
+            this.region48 = new com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion(ICON_TEX, 0, 0, w, h);
+        } catch (Exception ignored) {
+        }
+        if (this.region48 == null) {
+            loadRegion("flex");
+        }
     }
 }

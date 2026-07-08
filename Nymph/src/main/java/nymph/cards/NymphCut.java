@@ -12,7 +12,7 @@ public class NymphCut extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("Cut");
 
     public NymphCut() {
-        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_nymph_cut.png");
         baseDamage = 13;
     }
 

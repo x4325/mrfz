@@ -3,9 +3,6 @@
     "NAME": "空弦之证",
     "FLAVOR": "你踏上旅程的信物。",
     "DESCRIPTIONS": [
-      "战斗开始时获得 1 点力量。"
-    ],
-    "DESCRIPTION": [
       "战斗开始时获得 1 瞄准。"
     ]
   },
@@ -35,83 +32,6 @@
     "FLAVOR": "空弦",
     "DESCRIPTIONS": [
       "每回合开始时获得 1 瞄准。"
-    ]
-  },
-  "archetto:BulkRelic01": {
-    "NAME": "余韵1",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "每回合开始时获得 1 瞄准。"
-    ]
-  },
-  "archetto:BulkRelic02": {
-    "NAME": "铭刻2",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "每当你打出技能牌，获得 1 瞄准。"
-    ]
-  },
-  "archetto:BulkRelic03": {
-    "NAME": "回响3",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "战斗开始时获得 2 瞄准。"
-    ]
-  },
-  "archetto:BulkRelic04": {
-    "NAME": "遗珠4",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "每回合开始时获得 1 瞄准。"
-    ]
-  },
-  "archetto:BulkRelic05": {
-    "NAME": "旧证5",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "每当你打出技能牌，获得 1 瞄准。"
-    ]
-  },
-  "archetto:BulkRelic06": {
-    "NAME": "残章6",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "战斗开始时获得 2 瞄准。"
-    ]
-  },
-  "archetto:BulkRelic07": {
-    "NAME": "秘纹7",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "每回合开始时获得 1 瞄准。"
-    ]
-  },
-  "archetto:BulkRelic08": {
-    "NAME": "古片8",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "每当你打出技能牌，获得 1 瞄准。"
-    ]
-  },
-  "archetto:BulkRelic09": {
-    "NAME": "旅标9",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "战斗开始时获得 2 瞄准。"
-    ]
-  },
-  "archetto:BulkRelic10": {
-    "NAME": "信物10",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "每回合开始时获得 1 瞄准。"
-    ]
-  },
-  "archetto:BulkRelic11": {
-    "NAME": "终末11",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "每当你打出技能牌，获得 1 瞄准。"
     ]
   }
 }

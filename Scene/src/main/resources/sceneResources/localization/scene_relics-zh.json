@@ -3,9 +3,6 @@
     "NAME": "稀音之证",
     "FLAVOR": "你踏上旅程的信物。",
     "DESCRIPTIONS": [
-      "战斗开始时获得 1 点力量。"
-    ],
-    "DESCRIPTION": [
       "战斗开始时获得 1 取景。"
     ]
   },
@@ -35,83 +32,6 @@
     "FLAVOR": "稀音",
     "DESCRIPTIONS": [
       "战斗开始时获得 1 取景。"
-    ]
-  },
-  "scene:BulkRelic01": {
-    "NAME": "余韵1",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "每回合开始时获得 1 取景。"
-    ]
-  },
-  "scene:BulkRelic02": {
-    "NAME": "铭刻2",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "每当你打出技能牌，获得 1 取景。"
-    ]
-  },
-  "scene:BulkRelic03": {
-    "NAME": "回响3",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "战斗开始时获得 2 取景。"
-    ]
-  },
-  "scene:BulkRelic04": {
-    "NAME": "遗珠4",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "每回合开始时获得 1 取景。"
-    ]
-  },
-  "scene:BulkRelic05": {
-    "NAME": "旧证5",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "每当你打出技能牌，获得 1 取景。"
-    ]
-  },
-  "scene:BulkRelic06": {
-    "NAME": "残章6",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "战斗开始时获得 2 取景。"
-    ]
-  },
-  "scene:BulkRelic07": {
-    "NAME": "秘纹7",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "每回合开始时获得 1 取景。"
-    ]
-  },
-  "scene:BulkRelic08": {
-    "NAME": "古片8",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "每当你打出技能牌，获得 1 取景。"
-    ]
-  },
-  "scene:BulkRelic09": {
-    "NAME": "旅标9",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "战斗开始时获得 2 取景。"
-    ]
-  },
-  "scene:BulkRelic10": {
-    "NAME": "信物10",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "每回合开始时获得 1 取景。"
-    ]
-  },
-  "scene:BulkRelic11": {
-    "NAME": "终末11",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "每当你打出技能牌，获得 1 取景。"
     ]
   }
 }

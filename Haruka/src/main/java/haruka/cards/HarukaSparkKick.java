@@ -15,7 +15,7 @@ public class HarukaSparkKick extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("SparkKick");
 
     public HarukaSparkKick() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_haruka_sparkkick.png");
         baseDamage = 7;
     }
 

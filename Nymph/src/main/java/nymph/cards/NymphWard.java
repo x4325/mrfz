@@ -10,7 +10,7 @@ public class NymphWard extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("Ward");
 
     public NymphWard() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_nymph_ward.png");
         baseBlock = 7;
     }
 

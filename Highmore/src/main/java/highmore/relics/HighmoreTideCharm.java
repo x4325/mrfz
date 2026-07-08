@@ -30,7 +30,7 @@ public class HighmoreTideCharm extends CustomRelic {
     }
 
     @Override
-    public void atBattleStart() { addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ReapPower(AbstractDungeon.player, 1), 1)); addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 3)); flash(); }
+    public void atBattleStart() { addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ReapPower(AbstractDungeon.player, 1), 1)); highmore.characters.Highmore.tideHeal(AbstractDungeon.player, 3); flash(); }
 
     @Override
     public AbstractRelic makeCopy() { return new HighmoreTideCharm(); }

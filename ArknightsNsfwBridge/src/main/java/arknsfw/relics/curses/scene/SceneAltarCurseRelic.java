@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import arknsfw.ArkNsfwMod;
 import arknsfw.relics.AbstractArkNsfwRelic;
 
+/** 祭坛诅咒：事件中获得的受孕度翻倍（逻辑见 ArkAltarCursePatch）。 */
 public class SceneAltarCurseRelic extends AbstractArkNsfwRelic {
     public static final String ID = ArkNsfwMod.makeID("SceneAltarCurseRelic");
 

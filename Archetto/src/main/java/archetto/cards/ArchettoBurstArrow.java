@@ -16,7 +16,7 @@ public class ArchettoBurstArrow extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("BurstArrow");
 
     public ArchettoBurstArrow() {
-        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_archetto_burstarrow.png");
         baseDamage = 6;
     }
 

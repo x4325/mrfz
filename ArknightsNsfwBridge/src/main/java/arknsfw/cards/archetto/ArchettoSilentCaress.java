@@ -25,6 +25,7 @@ public class ArchettoSilentCaress extends AbstractArkNsfwCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, magicNumber, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
         NsfwRunStats.addExcitement(12);
+        ArkCharMechanicsHelper.applyAimPower(p, 1);
     }
 
     @Override

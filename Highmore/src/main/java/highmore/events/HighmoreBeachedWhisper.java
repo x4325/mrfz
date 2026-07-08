@@ -30,11 +30,14 @@ public class HighmoreBeachedWhisper extends AbstractImageEvent {
         EventStrings STR = CardCrawlGame.languagePack.getEventString(ID);
         switch (buttonPressed) {
             case 0:
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ReapPower(AbstractDungeon.player, 2), 2));
+                AbstractDungeon.player.increaseMaxHp(4, true);
                 imageEventText.updateBodyText(STR.DESCRIPTIONS[1]);
                 break;
             case 1:
+                // 海的低语属于潮汐治疗，绕过禁疗削减
+                highmore.characters.Highmore.tideHealChannel = true;
                 AbstractDungeon.player.heal(10);
+                highmore.characters.Highmore.tideHealChannel = false;
                 imageEventText.updateBodyText(STR.DESCRIPTIONS[2]);
                 break;
         }

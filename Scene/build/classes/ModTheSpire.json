@@ -1,11 +1,16 @@
 {
   "modid": "scene",
   "name": "稀音 / Scene",
-  "author_list": ["Private"],
+  "author_list": [
+    "Private"
+  ],
   "description": "稀音 (Scene) SFW character mod. Mechanism: 取景. NSFW content in ArknightsNsfwBridge.",
-  "version": "0.1.0",
+  "version": "0.4.10-final",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.0",
-  "dependencies": ["basemod", "stslib"],
+  "dependencies": [
+    "basemod",
+    "stslib"
+  ],
   "update_json": ""
 }

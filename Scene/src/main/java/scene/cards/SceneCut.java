@@ -12,7 +12,7 @@ public class SceneCut extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("Cut");
 
     public SceneCut() {
-        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_scene_cut.png");
         baseDamage = 13;
     }
 

@@ -18,7 +18,7 @@ public class NymphFearWhisper extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("FearWhisper");
 
     public NymphFearWhisper() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.ENEMY, "card_nymph_fearwhisper.png");
         baseMagicNumber = magicNumber = 1;
     }
 

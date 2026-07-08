@@ -5,27 +5,23 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import haruka.HarukaMod;
-import haruka.cards.AbstractHarukaCard;
 import haruka.powers.PyroPower;
+
 public class HarukaBulkFinale05 extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("BulkFinale05");
 
     public HarukaBulkFinale05() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = 12;
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_haruka_bulkfinale05.png");
+        baseDamage = 8;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractPower stacks = p.getPower(PyroPower.POWER_ID);
-        int bonus = (stacks != null && stacks.amount >= 3) ? 6 : 0;
-        addToBot(new DamageAction(m, new DamageInfo(p, damage + bonus, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        if (stacks != null && stacks.amount >= 3) { stacks.amount -= 3; }
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
+        addToBot(new ApplyPowerAction(p, p, new PyroPower(p, 2), 2));
     }
 
     @Override

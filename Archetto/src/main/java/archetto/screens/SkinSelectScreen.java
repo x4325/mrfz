@@ -47,6 +47,10 @@ public class SkinSelectScreen implements ISubscriber, CustomSavable<Integer> {
     private static final String CHAR_PREFIX = ArchettoMod.imgPath("char/");
     private static final float SPINE_SCALE = 1.75f;
 
+    // Order must match the SkinSelect names in localization: 0=默认, 1=宣传策略, 2=至虔者荣光.
+    // NOTE: folder names are swapped relative to content — the files in
+    // "shining_1" are actually the 宣传策略 skin and "sale_14" holds 至虔者荣光,
+    // so this path order is visually correct. Do not "fix" it by AK skin IDs.
     public static final String[] SKIN_PATHS = {
             "idle/char_332_archet",
             "skins/char_332_archet_shining_1/char_332_archet_shining_1",

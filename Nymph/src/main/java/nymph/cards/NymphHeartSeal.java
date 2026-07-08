@@ -18,7 +18,7 @@ public class NymphHeartSeal extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("HeartSeal");
 
     public NymphHeartSeal() {
-        super(ID, 2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_nymph_heartseal.png");
         baseMagicNumber = magicNumber = 2;
     }
 

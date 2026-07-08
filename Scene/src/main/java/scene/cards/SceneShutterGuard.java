@@ -16,7 +16,7 @@ public class SceneShutterGuard extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("ShutterGuard");
 
     public SceneShutterGuard() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_scene_shutterguard.png");
         baseBlock = 6;
     }
 

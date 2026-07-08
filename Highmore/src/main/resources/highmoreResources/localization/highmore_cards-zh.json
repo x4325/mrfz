@@ -1,254 +1,122 @@
 {
   "highmore:Strike": {
-    "NAME": "海沫击",
+    "NAME": "碎浪",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "highmore:Defend": {
-    "NAME": "海沫御",
+    "NAME": "聚沫",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "highmore:Jab": {
-    "NAME": "海沫刺",
+    "NAME": "渊刺",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "highmore:Ward": {
-    "NAME": "海沫护",
+    "NAME": "潮垒",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "highmore:Cut": {
-    "NAME": "海沫斩",
+    "NAME": "镰痕",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "highmore:Surge": {
-    "NAME": "海沫涌",
-    "DESCRIPTION": "获得 !M! 点 [E] 力量。"
+    "NAME": "暗涌",
+    "DESCRIPTION": "获得 !M! 点力量。"
   },
   "highmore:TideReap": {
-    "NAME": "潮汐收割",
+    "NAME": "引渡之汐",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 收割。"
   },
   "highmore:ScytheSwing": {
-    "NAME": "镰刀挥斩",
+    "NAME": "镰月弧光",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "highmore:SaltHarvest": {
-    "NAME": "盐雾收割",
+    "NAME": "盐骨归仓",
     "DESCRIPTION": "造成 !D! 点伤害。获得 2 收割。"
   },
   "highmore:BrineWall": {
-    "NAME": "盐墙",
+    "NAME": "卤盐之垒",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "highmore:BloodRush": {
-    "NAME": "血潮",
-    "DESCRIPTION": "失去 2 生命。获得 2 收割。"
+    "NAME": "血沃深渊",
+    "DESCRIPTION": "失去 2 生命。获得 !M! 收割。"
   },
   "highmore:WhirlReap": {
-    "NAME": "旋潮",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 1 收割。"
+    "NAME": "涡心葬礼",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 收割。"
   },
   "highmore:DeadDrift": {
-    "NAME": "漂流",
-    "DESCRIPTION": "获得 2 收割。"
-  },
-  "highmore:CoralCut": {
-    "NAME": "珊瑚斩",
-    "DESCRIPTION": "造成 !D! 点伤害。"
+    "NAME": "死水漂流",
+    "DESCRIPTION": "每回合开始时获得 !M! 收割。"
   },
   "highmore:BulkStrike01": {
-    "NAME": "速击·1",
+    "NAME": "浪尖挽歌",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 收割。"
   },
   "highmore:BulkGuard02": {
-    "NAME": "调息·2",
+    "NAME": "碎沫成幕",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 收割。"
   },
   "highmore:BulkDraw03": {
-    "NAME": "抽换·3",
-    "DESCRIPTION": "抽 1 张牌。获得 1 收割。"
+    "NAME": "退潮拾遗",
+    "DESCRIPTION": "抽 1 张牌。获得 !M! 收割。"
   },
   "highmore:BulkSweep04": {
-    "NAME": "波及·4",
+    "NAME": "潮吞四野",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 收割。"
   },
   "highmore:BulkFinale05": {
-    "NAME": "星落·5",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 收割，额外造成 6 点伤害并消耗 3 收割。"
+    "NAME": "汐落刈魂",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若收割不少于 3 层：额外造成 8 点伤害并消耗 3 层收割。"
   },
   "highmore:BulkStrike06": {
-    "NAME": "裂空·6",
+    "NAME": "裂鳞斩",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 收割。"
   },
   "highmore:BulkGuard07": {
-    "NAME": "缓冲·7",
+    "NAME": "沉降静默",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 收割。"
   },
   "highmore:BulkDraw08": {
-    "NAME": "抽换·8",
-    "DESCRIPTION": "抽 2 张牌。获得 1 收割。"
-  },
-  "highmore:BulkSweep09": {
-    "NAME": "波及·9",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 收割。"
-  },
-  "highmore:BulkFinale10": {
-    "NAME": "飞升·10",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 收割，额外造成 6 点伤害并消耗 3 收割。"
-  },
-  "highmore:BulkStrike11": {
-    "NAME": "回旋·11",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 收割。"
-  },
-  "highmore:BulkGuard12": {
-    "NAME": "布防·12",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 收割。"
-  },
-  "highmore:BulkDraw13": {
-    "NAME": "抽换·13",
-    "DESCRIPTION": "抽 1 张牌。获得 1 收割。"
-  },
-  "highmore:BulkSweep14": {
-    "NAME": "波及·14",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 收割。"
-  },
-  "highmore:BulkFinale15": {
-    "NAME": "星落·15",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 收割，额外造成 6 点伤害并消耗 3 收割。"
-  },
-  "highmore:BulkStrike16": {
-    "NAME": "碎击·16",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 收割。"
-  },
-  "highmore:BulkGuard17": {
-    "NAME": "蓄锐·17",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 收割。"
-  },
-  "highmore:BulkDraw18": {
-    "NAME": "抽换·18",
-    "DESCRIPTION": "抽 2 张牌。获得 1 收割。"
-  },
-  "highmore:BulkSweep19": {
-    "NAME": "波及·19",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 收割。"
-  },
-  "highmore:BulkFinale20": {
-    "NAME": "飞升·20",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 收割，额外造成 6 点伤害并消耗 3 收割。"
-  },
-  "highmore:BulkStrike21": {
-    "NAME": "速击·21",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 收割。"
-  },
-  "highmore:BulkGuard22": {
-    "NAME": "调息·22",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 收割。"
-  },
-  "highmore:BulkDraw23": {
-    "NAME": "抽换·23",
-    "DESCRIPTION": "抽 1 张牌。获得 1 收割。"
-  },
-  "highmore:BulkSweep24": {
-    "NAME": "波及·24",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 收割。"
-  },
-  "highmore:BulkFinale25": {
-    "NAME": "星落·25",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 收割，额外造成 6 点伤害并消耗 3 收割。"
-  },
-  "highmore:BulkStrike26": {
-    "NAME": "裂空·26",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 收割。"
-  },
-  "highmore:BulkGuard27": {
-    "NAME": "缓冲·27",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 收割。"
-  },
-  "highmore:BulkDraw28": {
-    "NAME": "抽换·28",
-    "DESCRIPTION": "抽 2 张牌。获得 1 收割。"
-  },
-  "highmore:BulkSweep29": {
-    "NAME": "波及·29",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 收割。"
+    "NAME": "静观暗澜",
+    "DESCRIPTION": "抽 2 张牌。获得 !M! 收割。"
   },
   "highmore:BulkFinale30": {
-    "NAME": "飞升·30",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 收割，额外造成 6 点伤害并消耗 3 收割。"
+    "NAME": "万顷归墟",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若收割不少于 4 层：额外造成 12 点伤害并消耗 4 层收割。"
   },
-  "highmore:BulkStrike31": {
-    "NAME": "回旋·31",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 收割。"
+  "highmore:AbyssPull": {
+    "NAME": "归墟引力",
+    "DESCRIPTION": "获得 !B! 点格挡，再获得等同收割层数的格挡（最多 12）。"
   },
-  "highmore:BulkGuard32": {
-    "NAME": "布防·32",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 收割。"
+  "highmore:BloodScale": {
+    "NAME": "血鳞",
+    "DESCRIPTION": "每当你失去生命，获得 !M! 收割。"
   },
-  "highmore:BulkDraw33": {
-    "NAME": "抽换·33",
-    "DESCRIPTION": "抽 1 张牌。获得 1 收割。"
+  "highmore:RipTide": {
+    "NAME": "离岸流",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若收割不少于 2 层：额外造成 3 点伤害。"
   },
-  "highmore:BulkSweep34": {
-    "NAME": "波及·34",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 收割。"
+  "highmore:GreatTide": {
+    "NAME": "大潮咏叹",
+    "DESCRIPTION": "收割层数翻倍（最多增加 6 层）。"
   },
-  "highmore:BulkFinale35": {
-    "NAME": "星落·35",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 收割，额外造成 6 点伤害并消耗 3 收割。"
+  "highmore:AbyssGaze": {
+    "NAME": "海渊回望",
+    "DESCRIPTION": "造成 !D! 点伤害。潮汐回复等同收割层数的生命。"
   },
-  "highmore:BulkStrike36": {
-    "NAME": "碎击·36",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 收割。"
+  "highmore:DrownEmbrace": {
+    "NAME": "溺者之拥",
+    "DESCRIPTION": "造成 !D! 点伤害，每层收割额外 +2；然后失去全部收割。"
   },
-  "highmore:BulkGuard37": {
-    "NAME": "蓄锐·37",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 收割。"
+  "highmore:SaltDraw": {
+    "NAME": "盐析",
+    "DESCRIPTION": "失去 3 生命。抽 !M! 张牌。"
   },
-  "highmore:BulkDraw38": {
-    "NAME": "抽换·38",
-    "DESCRIPTION": "抽 2 张牌。获得 1 收割。"
-  },
-  "highmore:BulkSweep39": {
-    "NAME": "波及·39",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 收割。"
-  },
-  "highmore:BulkFinale40": {
-    "NAME": "飞升·40",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 收割，额外造成 6 点伤害并消耗 3 收割。"
-  },
-  "highmore:BulkStrike41": {
-    "NAME": "速击·41",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 收割。"
-  },
-  "highmore:BulkGuard42": {
-    "NAME": "调息·42",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 收割。"
-  },
-  "highmore:BulkDraw43": {
-    "NAME": "抽换·43",
-    "DESCRIPTION": "抽 1 张牌。获得 1 收割。"
-  },
-  "highmore:BulkSweep44": {
-    "NAME": "波及·44",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 收割。"
-  },
-  "highmore:BulkFinale45": {
-    "NAME": "星落·45",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 收割，额外造成 6 点伤害并消耗 3 收割。"
-  },
-  "highmore:BulkStrike46": {
-    "NAME": "裂空·46",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 收割。"
-  },
-  "highmore:BulkGuard47": {
-    "NAME": "缓冲·47",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 收割。"
-  },
-  "highmore:BulkDraw48": {
-    "NAME": "抽换·48",
-    "DESCRIPTION": "抽 2 张牌。获得 1 收割。"
-  },
-  "highmore:BulkSweep49": {
-    "NAME": "波及·49",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 收割。"
+  "highmore:TidePool": {
+    "NAME": "潮间带",
+    "DESCRIPTION": "获得 !B! 点格挡。抽 1 张牌。"
   }
 }

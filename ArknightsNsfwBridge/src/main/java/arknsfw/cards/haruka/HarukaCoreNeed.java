@@ -23,8 +23,8 @@ public class HarukaCoreNeed extends AbstractArkNsfwCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        NsfwRunStats.addExcitement(5);
-        ArkCharMechanicsHelper.applyPyroPower(p, 1);
+        addToBot(new com.megacrit.cardcrawl.actions.common.ApplyPowerAction(p, p,
+                new arknsfw.powers.CoreNeedPower(p, magicNumber), magicNumber));
     }
 
     @Override

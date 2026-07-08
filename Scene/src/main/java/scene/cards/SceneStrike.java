@@ -12,7 +12,7 @@ public class SceneStrike extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("Strike");
 
     public SceneStrike() {
-        super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY, "card_strike.png");
+        super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY, "card_scene_strike.png");
         baseDamage = 6;
         this.tags.add(CardTags.STARTER_STRIKE);
     }

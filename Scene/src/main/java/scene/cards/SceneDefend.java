@@ -10,7 +10,7 @@ public class SceneDefend extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("Defend");
 
     public SceneDefend() {
-        super(ID, 1, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF, "card_defend.png");
+        super(ID, 1, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF, "card_scene_defend.png");
         baseBlock = 5;
         this.tags.add(CardTags.STARTER_DEFEND);
     }

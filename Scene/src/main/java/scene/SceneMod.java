@@ -7,6 +7,8 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.RenderSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,53 +21,21 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import scene.cards.SceneDevelopRush;
+import scene.cards.SceneWideFrame;
+import scene.cards.SceneBurstShutter;
+import scene.cards.SceneNegative;
+import scene.cards.SceneOverExposure;
+import scene.cards.SceneTimerShutter;
+import scene.cards.SceneDarkroomWash;
+import scene.cards.SceneMasterLens;
 import scene.core.ClassEnum;
 import scene.core.ColorEnum;
 import scene.characters.Scene;
 import scene.cards.SceneStrike;
 import scene.cards.SceneDefend;
 import scene.cards.SceneSurge;
-import scene.cards.SceneBulkSweep49;
-import scene.cards.SceneBulkDraw48;
-import scene.cards.SceneBulkGuard47;
-import scene.cards.SceneBulkStrike46;
-import scene.cards.SceneBulkFinale45;
-import scene.cards.SceneBulkSweep44;
-import scene.cards.SceneBulkDraw43;
-import scene.cards.SceneBulkGuard42;
-import scene.cards.SceneBulkStrike41;
-import scene.cards.SceneBulkFinale40;
-import scene.cards.SceneBulkSweep39;
-import scene.cards.SceneBulkDraw38;
-import scene.cards.SceneBulkGuard37;
-import scene.cards.SceneBulkStrike36;
-import scene.cards.SceneBulkFinale35;
-import scene.cards.SceneBulkSweep34;
-import scene.cards.SceneBulkDraw33;
-import scene.cards.SceneBulkGuard32;
-import scene.cards.SceneBulkStrike31;
 import scene.cards.SceneBulkFinale30;
-import scene.cards.SceneBulkSweep29;
-import scene.cards.SceneBulkDraw28;
-import scene.cards.SceneBulkGuard27;
-import scene.cards.SceneBulkStrike26;
-import scene.cards.SceneBulkFinale25;
-import scene.cards.SceneBulkSweep24;
-import scene.cards.SceneBulkDraw23;
-import scene.cards.SceneBulkGuard22;
-import scene.cards.SceneBulkStrike21;
-import scene.cards.SceneBulkFinale20;
-import scene.cards.SceneBulkSweep19;
-import scene.cards.SceneBulkDraw18;
-import scene.cards.SceneBulkGuard17;
-import scene.cards.SceneBulkStrike16;
-import scene.cards.SceneBulkFinale15;
-import scene.cards.SceneBulkSweep14;
-import scene.cards.SceneBulkDraw13;
-import scene.cards.SceneBulkGuard12;
-import scene.cards.SceneBulkStrike11;
-import scene.cards.SceneBulkFinale10;
-import scene.cards.SceneBulkSweep09;
 import scene.cards.SceneBulkDraw08;
 import scene.cards.SceneBulkGuard07;
 import scene.cards.SceneBulkStrike06;
@@ -86,17 +56,6 @@ import scene.cards.SceneCut;
 import scene.cards.SceneWard;
 import scene.cards.SceneJab;
 import scene.relics.SceneStarterRelic;
-import scene.relics.BulkRelic11;
-import scene.relics.BulkRelic10;
-import scene.relics.BulkRelic09;
-import scene.relics.BulkRelic08;
-import scene.relics.BulkRelic07;
-import scene.relics.BulkRelic06;
-import scene.relics.BulkRelic05;
-import scene.relics.BulkRelic04;
-import scene.relics.BulkRelic03;
-import scene.relics.BulkRelic02;
-import scene.relics.BulkRelic01;
 import scene.events.SceneDarkroom;
 import scene.events.SceneGallery;
 import scene.relics.SceneOldCamera;
@@ -114,7 +73,9 @@ public class SceneMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        PostInitializeSubscriber {
+        OnStartBattleSubscriber,
+        PostInitializeSubscriber,
+        RenderSubscriber {
 
     public static final String MOD_ID = "scene";
     public static final String MOD_NAME = "稀音";
@@ -151,6 +112,11 @@ public class SceneMod implements
     public static final String ENERGY_ORB_1024    = imgPath("1024/energy.png");
     public static final String CARD_SMALL_ORB     = imgPath("char/small_orb.png");
 
+    @Override
+    public void receiveRender(com.badlogic.gdx.graphics.g2d.SpriteBatch sb) {
+        scene.helpers.BridgeWatchdog.render(sb);
+    }
+
     public static String makeID(String id) {
         return MOD_ID + ":" + id;
     }
@@ -177,6 +143,7 @@ public class SceneMod implements
 
                                 @Override
     public void receivePostInitialize() {
+        System.out.println("[scene] 0.4.10-final loaded");
         SkinSelectScreen.Inst = new SkinSelectScreen();
         BaseMod.addEvent(SceneDarkroom.ID, SceneDarkroom.class, Exordium.ID);
         BaseMod.addEvent(SceneGallery.ID, SceneGallery.class, TheCity.ID);
@@ -209,47 +176,15 @@ public class SceneMod implements
         BaseMod.addCard(new SceneBulkStrike06());
         BaseMod.addCard(new SceneBulkGuard07());
         BaseMod.addCard(new SceneBulkDraw08());
-        BaseMod.addCard(new SceneBulkSweep09());
-        BaseMod.addCard(new SceneBulkFinale10());
-        BaseMod.addCard(new SceneBulkStrike11());
-        BaseMod.addCard(new SceneBulkGuard12());
-        BaseMod.addCard(new SceneBulkDraw13());
-        BaseMod.addCard(new SceneBulkSweep14());
-        BaseMod.addCard(new SceneBulkFinale15());
-        BaseMod.addCard(new SceneBulkStrike16());
-        BaseMod.addCard(new SceneBulkGuard17());
-        BaseMod.addCard(new SceneBulkDraw18());
-        BaseMod.addCard(new SceneBulkSweep19());
-        BaseMod.addCard(new SceneBulkFinale20());
-        BaseMod.addCard(new SceneBulkStrike21());
-        BaseMod.addCard(new SceneBulkGuard22());
-        BaseMod.addCard(new SceneBulkDraw23());
-        BaseMod.addCard(new SceneBulkSweep24());
-        BaseMod.addCard(new SceneBulkFinale25());
-        BaseMod.addCard(new SceneBulkStrike26());
-        BaseMod.addCard(new SceneBulkGuard27());
-        BaseMod.addCard(new SceneBulkDraw28());
-        BaseMod.addCard(new SceneBulkSweep29());
         BaseMod.addCard(new SceneBulkFinale30());
-        BaseMod.addCard(new SceneBulkStrike31());
-        BaseMod.addCard(new SceneBulkGuard32());
-        BaseMod.addCard(new SceneBulkDraw33());
-        BaseMod.addCard(new SceneBulkSweep34());
-        BaseMod.addCard(new SceneBulkFinale35());
-        BaseMod.addCard(new SceneBulkStrike36());
-        BaseMod.addCard(new SceneBulkGuard37());
-        BaseMod.addCard(new SceneBulkDraw38());
-        BaseMod.addCard(new SceneBulkSweep39());
-        BaseMod.addCard(new SceneBulkFinale40());
-        BaseMod.addCard(new SceneBulkStrike41());
-        BaseMod.addCard(new SceneBulkGuard42());
-        BaseMod.addCard(new SceneBulkDraw43());
-        BaseMod.addCard(new SceneBulkSweep44());
-        BaseMod.addCard(new SceneBulkFinale45());
-        BaseMod.addCard(new SceneBulkStrike46());
-        BaseMod.addCard(new SceneBulkGuard47());
-        BaseMod.addCard(new SceneBulkDraw48());
-        BaseMod.addCard(new SceneBulkSweep49());
+        BaseMod.addCard(new SceneDevelopRush());
+        BaseMod.addCard(new SceneWideFrame());
+        BaseMod.addCard(new SceneBurstShutter());
+        BaseMod.addCard(new SceneNegative());
+        BaseMod.addCard(new SceneOverExposure());
+        BaseMod.addCard(new SceneTimerShutter());
+        BaseMod.addCard(new SceneDarkroomWash());
+        BaseMod.addCard(new SceneMasterLens());
     }
 
     @Override
@@ -269,17 +204,6 @@ public class SceneMod implements
         BaseMod.addRelicToCustomPool(new SceneFilmRoll(), ColorEnum.SCENE_COLOR);
         BaseMod.addRelicToCustomPool(new SceneWideLens(), ColorEnum.SCENE_COLOR);
         BaseMod.addRelicToCustomPool(new SceneOldCamera(), ColorEnum.SCENE_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic01(), ColorEnum.SCENE_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic02(), ColorEnum.SCENE_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic03(), ColorEnum.SCENE_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic04(), ColorEnum.SCENE_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic05(), ColorEnum.SCENE_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic06(), ColorEnum.SCENE_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic07(), ColorEnum.SCENE_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic08(), ColorEnum.SCENE_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic09(), ColorEnum.SCENE_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic10(), ColorEnum.SCENE_COLOR);
-        BaseMod.addRelicToCustomPool(new BulkRelic11(), ColorEnum.SCENE_COLOR);
     }
 
                                     @Override
@@ -296,5 +220,12 @@ public class SceneMod implements
         BaseMod.loadCustomStringsFile(PowerStrings.class, base + "scene_powers-zh.json");
         BaseMod.loadCustomStringsFile(EventStrings.class, base + "scene_events-zh.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, base + "scene_uis-zh.json");
+    }
+
+    @Override
+    public void receiveOnBattleStart(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
+        if (com.megacrit.cardcrawl.dungeons.AbstractDungeon.player instanceof scene.characters.Scene) {
+            ((scene.characters.Scene) com.megacrit.cardcrawl.dungeons.AbstractDungeon.player).playIntroAnimation();
+        }
     }
 }

@@ -16,7 +16,7 @@ public class SceneDevelop extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("Develop");
 
     public SceneDevelop() {
-        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF, "card_scene_develop.png");
         baseBlock = 8;
     }
 

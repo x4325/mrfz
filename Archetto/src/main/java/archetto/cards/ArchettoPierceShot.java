@@ -15,7 +15,7 @@ public class ArchettoPierceShot extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("PierceShot");
 
     public ArchettoPierceShot() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_archetto_pierceshot.png");
         baseDamage = 10;
     }
 
