@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.random.Random;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.screens.shop.ShopScreen;
+import com.megacrit.cardcrawl.shop.ShopScreen;
 import liesecore.helpers.EnemyIntentType;
 import liesecore.helpers.UiHelper;
 import arknsfw.events.ArkFallOfferingEvent;
