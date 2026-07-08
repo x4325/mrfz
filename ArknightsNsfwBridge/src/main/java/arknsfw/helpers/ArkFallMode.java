@@ -21,7 +21,7 @@ import java.util.Map;
 public final class ArkFallMode {
 
     /** 卡牌奖励被替换为色情卡的概率 */
-    public static final float CARD_BIAS = 0.85f;
+    public static final float CARD_BIAS = 0.65f;
     /** 敌人每次行动后追加调教攻击的概率 */
     public static final float H_ATTACK_CHANCE = 0.40f;
 

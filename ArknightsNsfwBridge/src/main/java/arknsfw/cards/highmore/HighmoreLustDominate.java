@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import highmore.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HighmoreLustDominate extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HighmoreLustDominate");
 
     public HighmoreLustDominate() {
-        super(ID, 1, CardType.SKILL, ColorEnum.HIGHMORE_COLOR, CardRarity.RARE, CardTarget.ALL_ENEMY, "card_highmore_highmorepassionthrust.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.HIGHMORE_COLOR, CardRarity.RARE, CardTarget.ALL_ENEMY, "card_highmore_highmoretwinpeak.png");
         baseMagicNumber = magicNumber = 2;
     }
 

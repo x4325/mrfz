@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import haruka.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HarukaLewdBreath extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HarukaLewdBreath");
 
     public HarukaLewdBreath() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.HARUKA_COLOR, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY, "card_haruka_harukacoreneed.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.HARUKA_COLOR, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY, "card_haruka_harukamoistbarrier.png");
         baseDamage = 5;
         this.isMultiDamage = true;
     }

@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import Muelsyse.patches.ColorEnum;
 
@@ -26,7 +27,7 @@ public class MuelSweetReward extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("MuelSweetReward");
 
     public MuelSweetReward() {
-        super(ID, 1, CardType.SKILL, ColorEnum.Muelsyse_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_twin_pleasure.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.Muelsyse_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_seed_spray.png");
         baseMagicNumber = magicNumber = 8;
     }
 

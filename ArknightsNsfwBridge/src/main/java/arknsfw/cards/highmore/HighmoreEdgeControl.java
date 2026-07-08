@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import highmore.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HighmoreEdgeControl extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HighmoreEdgeControl");
 
     public HighmoreEdgeControl() {
-        super(ID, 0, CardType.SKILL, ColorEnum.HIGHMORE_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_highmore_highmoresilentcaress.png");
+        super(ID, 0, CardType.SKILL, ColorEnum.HIGHMORE_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_highmore_highmoretenderkiss.png");
         baseMagicNumber = magicNumber = 2;
         this.exhaust = true;
     }

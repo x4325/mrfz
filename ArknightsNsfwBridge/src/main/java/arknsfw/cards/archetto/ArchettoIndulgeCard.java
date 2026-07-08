@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import archetto.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class ArchettoIndulgeCard extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("ArchettoIndulgeCard");
 
     public ArchettoIndulgeCard() {
-        super(ID, 2, CardType.SKILL, ColorEnum.ARCHETTO_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_archetto_archettodeepresonance.png");
+        super(ID, 2, CardType.SKILL, ColorEnum.ARCHETTO_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_archetto_archettowarmembrace.png");
         baseMagicNumber = magicNumber = 12;
     }
 

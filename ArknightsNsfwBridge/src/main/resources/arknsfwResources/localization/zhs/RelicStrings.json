@@ -754,5 +754,15 @@
     "DESCRIPTIONS": [
       "战斗开始时，抽牌堆中的诅咒全部 #y消耗 ，每张兴奋 +6。"
     ]
+  },
+  "arknsfw:SensitivityBrandRelic": {
+    "NAME": "敏感烙印",
+    "FLAVOR": "每一次沦陷，身体都记得。",
+    "DESCRIPTIONS": [
+      "败北的印记。敏感值 ",
+      "：兴奋获取 +",
+      "%，受孕/妊娠进度 +",
+      "%。"
+    ]
   }
 }

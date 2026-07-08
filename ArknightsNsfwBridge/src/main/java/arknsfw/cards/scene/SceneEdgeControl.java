@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import scene.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class SceneEdgeControl extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("SceneEdgeControl");
 
     public SceneEdgeControl() {
-        super(ID, 0, CardType.SKILL, ColorEnum.SCENE_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_scene_scenesilentcaress.png");
+        super(ID, 0, CardType.SKILL, ColorEnum.SCENE_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_scene_scenetenderkiss.png");
         baseMagicNumber = magicNumber = 2;
         this.exhaust = true;
     }

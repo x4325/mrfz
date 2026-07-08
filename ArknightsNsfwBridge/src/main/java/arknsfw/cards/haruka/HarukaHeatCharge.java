@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import haruka.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HarukaHeatCharge extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HarukaHeatCharge");
 
     public HarukaHeatCharge() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.HARUKA_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_haruka_harukatwinpeak.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.HARUKA_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_haruka_harukapassionthrust.png");
         baseDamage = 9;
     }
 

@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import archetto.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class ArchettoClimaxTransfer extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("ArchettoClimaxTransfer");
 
     public ArchettoClimaxTransfer() {
-        super(ID, 1, CardType.SKILL, ColorEnum.ARCHETTO_COLOR, CardRarity.RARE, CardTarget.ALL_ENEMY, "card_archetto_archettosilentcaress.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.ARCHETTO_COLOR, CardRarity.RARE, CardTarget.ALL_ENEMY, "card_archetto_archettotenderkiss.png");
         baseMagicNumber = magicNumber = 20;
     }
 

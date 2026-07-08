@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import archetto.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class ArchettoMoanEcho extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("ArchettoMoanEcho");
 
     public ArchettoMoanEcho() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.ARCHETTO_COLOR, CardRarity.COMMON, CardTarget.ENEMY, "card_archetto_archettotenderkiss.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.ARCHETTO_COLOR, CardRarity.COMMON, CardTarget.ENEMY, "card_archetto_archettodeepresonance.png");
         baseDamage = 6;
         baseMagicNumber = magicNumber = 6;
     }

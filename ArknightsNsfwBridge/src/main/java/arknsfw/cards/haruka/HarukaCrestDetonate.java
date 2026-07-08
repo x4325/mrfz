@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import haruka.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HarukaCrestDetonate extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HarukaCrestDetonate");
 
     public HarukaCrestDetonate() {
-        super(ID, 2, CardType.ATTACK, ColorEnum.HARUKA_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_haruka_harukamoistbarrier.png");
+        super(ID, 2, CardType.ATTACK, ColorEnum.HARUKA_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_haruka_harukasilentcaress.png");
         baseDamage = 8;
         baseMagicNumber = magicNumber = 4;
     }

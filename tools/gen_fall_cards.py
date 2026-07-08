@@ -61,6 +61,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import {color_import};
 
@@ -375,7 +376,53 @@ t(cls="DeepTraining", name="深度调教", cost=2, ctype="SKILL", rarity="RARE",
   desc="拘束装备≥3件：获得 2 点能量并抽 2 张牌；否则兴奋 +15。消耗。",
   udesc="拘束装备≥3件：获得 2 点能量并抽 2 张牌；否则兴奋 +15。消耗。")
 
-assert len(T) == 28, len(T)
+t(cls="SenseDetonate", name="敏感引爆", cost=1, ctype="ATTACK", rarity="UNCOMMON", target="ENEMY",
+  init="        baseDamage = 8;\n        baseMagicNumber = magicNumber = 3;",
+  use="""        int dmg = damage + magicNumber * ArkSensitivity.points();
+        addToBot(new DamageAction(m, new DamageInfo(p, dmg, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        NsfwRunStats.addExcitement(4);""",
+  up="            upgradeDamage(3);\n            upgradeMagicNumber(1);",
+  desc="造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。",
+  udesc="造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。")
+
+t(cls="SenseResonate", name="敏感共鸣", cost=1, ctype="SKILL", rarity="COMMON", target="SELF",
+  init="        baseBlock = 6;\n        baseMagicNumber = magicNumber = 2;",
+  use="""        addToBot(new GainBlockAction(p, block + magicNumber * ArkSensitivity.points()));""",
+  up="            upgradeBlock(3);\n            upgradeMagicNumber(1);",
+  desc="获得 !B! 点格挡，每点敏感值额外 +!M!。",
+  udesc="获得 !B! 点格挡，每点敏感值额外 +!M!。")
+
+t(cls="SenseDrain", name="敏感汲取", cost=1, ctype="SKILL", rarity="UNCOMMON", target="SELF",
+  init="        baseMagicNumber = magicNumber = 3;",
+  use="""        if (ArkSensitivity.points() >= magicNumber) {
+            addToBot(new GainEnergyAction(1));
+            addToBot(new DrawCardAction(p, 2));
+        } else {
+            NsfwRunStats.addExcitement(10);
+        }""",
+  up="            upgradeMagicNumber(-1);",
+  desc="敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。",
+  udesc="敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。")
+
+t(cls="SenseDeepen", name="敏感刻深", cost=0, ctype="SKILL", rarity="RARE", target="SELF",
+  init="        baseBlock = 8;\n        this.exhaust = true;",
+  use="""        ArkSensitivity.addPoint(p);
+        addToBot(new GainBlockAction(p, block));
+        addToBot(new DrawCardAction(p, 2));""",
+  up="            upgradeBlock(4);",
+  desc="敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。",
+  udesc="敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。")
+
+t(cls="SenseRelease", name="敏感解放", cost=2, ctype="ATTACK", rarity="RARE", target="ALL_ENEMY",
+  init="        baseDamage = 6;\n        baseMagicNumber = magicNumber = 2;",
+  use="""        int dmg = damage + magicNumber * ArkSensitivity.points();
+        addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(dmg, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
+        NsfwRunStats.addExcitement(8);""",
+  up="            upgradeDamage(3);\n            upgradeMagicNumber(1);",
+  desc="对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。",
+  udesc="对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。")
+
+assert len(T) == 33, len(T)
 
 
 def art_files(key):
@@ -396,9 +443,11 @@ def main():
     for key, cfg in CHARS.items():
         arts = art_files(key)
         os.makedirs(f"{JAVA}/cards/{key}", exist_ok=True)
+        import random as _rnd
+        rnd = _rnd.Random(key)
         for i, tpl in enumerate(T):
             cls = cfg["prefix"] + tpl["cls"]
-            art = arts[i % len(arts)]
+            art = rnd.choice(arts) if tpl["cls"].startswith("Sense") else arts[i % len(arts)]
             mech1 = cfg["mech"].replace("{n}", "1")
             mech2 = cfg["mech"].replace("{n}", "2")
             mechd1 = cfg["mechd"].replace("{n}", "1")

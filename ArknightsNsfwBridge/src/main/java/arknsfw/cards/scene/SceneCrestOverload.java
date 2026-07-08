@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import scene.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class SceneCrestOverload extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("SceneCrestOverload");
 
     public SceneCrestOverload() {
-        super(ID, -1, CardType.ATTACK, ColorEnum.SCENE_COLOR, CardRarity.RARE, CardTarget.ENEMY, "card_scene_scenewarmembrace.png");
+        super(ID, -1, CardType.ATTACK, ColorEnum.SCENE_COLOR, CardRarity.RARE, CardTarget.ENEMY, "card_scene_scenecoreneed.png");
         baseMagicNumber = magicNumber = 9;
     }
 

@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import haruka.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HarukaSweetSpotShot extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HarukaSweetSpotShot");
 
     public HarukaSweetSpotShot() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.HARUKA_COLOR, CardRarity.COMMON, CardTarget.ENEMY, "card_haruka_harukadeepresonance.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.HARUKA_COLOR, CardRarity.COMMON, CardTarget.ENEMY, "card_haruka_harukawarmembrace.png");
         baseDamage = 6;
     }
 

@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import Eyjafjalla.modcore.ColorEnum;
 
@@ -26,7 +27,7 @@ public class EyjaHeatCharge extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("EyjaHeatCharge");
 
     public EyjaHeatCharge() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.Eyjafjalla_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_volcanic_embrace.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.Eyjafjalla_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_magma_thrust.png");
         baseDamage = 9;
     }
 

@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import highmore.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HighmoreLewdMist extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HighmoreLewdMist");
 
     public HighmoreLewdMist() {
-        super(ID, 1, CardType.SKILL, ColorEnum.HIGHMORE_COLOR, CardRarity.COMMON, CardTarget.ALL_ENEMY, "card_highmore_highmoredeepresonance.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.HIGHMORE_COLOR, CardRarity.COMMON, CardTarget.ALL_ENEMY, "card_highmore_highmorewarmembrace.png");
         baseMagicNumber = magicNumber = 1;
     }
 

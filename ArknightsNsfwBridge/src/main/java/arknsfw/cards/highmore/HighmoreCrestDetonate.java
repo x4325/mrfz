@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import highmore.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HighmoreCrestDetonate extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HighmoreCrestDetonate");
 
     public HighmoreCrestDetonate() {
-        super(ID, 2, CardType.ATTACK, ColorEnum.HIGHMORE_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_highmore_highmoremoistbarrier.png");
+        super(ID, 2, CardType.ATTACK, ColorEnum.HIGHMORE_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_highmore_highmoresilentcaress.png");
         baseDamage = 8;
         baseMagicNumber = magicNumber = 4;
     }

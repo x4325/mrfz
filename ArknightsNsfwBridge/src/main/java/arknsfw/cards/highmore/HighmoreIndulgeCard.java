@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import highmore.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HighmoreIndulgeCard extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HighmoreIndulgeCard");
 
     public HighmoreIndulgeCard() {
-        super(ID, 2, CardType.SKILL, ColorEnum.HIGHMORE_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_highmore_highmoredeepresonance.png");
+        super(ID, 2, CardType.SKILL, ColorEnum.HIGHMORE_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_highmore_highmorewarmembrace.png");
         baseMagicNumber = magicNumber = 12;
     }
 

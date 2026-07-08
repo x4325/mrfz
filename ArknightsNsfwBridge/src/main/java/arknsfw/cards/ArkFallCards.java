@@ -37,6 +37,11 @@ public final class ArkFallCards {
         BaseMod.addCard(new arknsfw.cards.highmore.HighmoreLewdMist());
         BaseMod.addCard(new arknsfw.cards.highmore.HighmoreSweetReward());
         BaseMod.addCard(new arknsfw.cards.highmore.HighmoreDeepTraining());
+        BaseMod.addCard(new arknsfw.cards.highmore.HighmoreSenseDetonate());
+        BaseMod.addCard(new arknsfw.cards.highmore.HighmoreSenseResonate());
+        BaseMod.addCard(new arknsfw.cards.highmore.HighmoreSenseDrain());
+        BaseMod.addCard(new arknsfw.cards.highmore.HighmoreSenseDeepen());
+        BaseMod.addCard(new arknsfw.cards.highmore.HighmoreSenseRelease());
         BaseMod.addCard(new arknsfw.cards.scene.SceneTeasingTouch());
         BaseMod.addCard(new arknsfw.cards.scene.SceneWetKissCard());
         BaseMod.addCard(new arknsfw.cards.scene.SceneCrestDetonate());
@@ -65,6 +70,11 @@ public final class ArkFallCards {
         BaseMod.addCard(new arknsfw.cards.scene.SceneLewdMist());
         BaseMod.addCard(new arknsfw.cards.scene.SceneSweetReward());
         BaseMod.addCard(new arknsfw.cards.scene.SceneDeepTraining());
+        BaseMod.addCard(new arknsfw.cards.scene.SceneSenseDetonate());
+        BaseMod.addCard(new arknsfw.cards.scene.SceneSenseResonate());
+        BaseMod.addCard(new arknsfw.cards.scene.SceneSenseDrain());
+        BaseMod.addCard(new arknsfw.cards.scene.SceneSenseDeepen());
+        BaseMod.addCard(new arknsfw.cards.scene.SceneSenseRelease());
         BaseMod.addCard(new arknsfw.cards.archetto.ArchettoTeasingTouch());
         BaseMod.addCard(new arknsfw.cards.archetto.ArchettoWetKissCard());
         BaseMod.addCard(new arknsfw.cards.archetto.ArchettoCrestDetonate());
@@ -93,6 +103,11 @@ public final class ArkFallCards {
         BaseMod.addCard(new arknsfw.cards.archetto.ArchettoLewdMist());
         BaseMod.addCard(new arknsfw.cards.archetto.ArchettoSweetReward());
         BaseMod.addCard(new arknsfw.cards.archetto.ArchettoDeepTraining());
+        BaseMod.addCard(new arknsfw.cards.archetto.ArchettoSenseDetonate());
+        BaseMod.addCard(new arknsfw.cards.archetto.ArchettoSenseResonate());
+        BaseMod.addCard(new arknsfw.cards.archetto.ArchettoSenseDrain());
+        BaseMod.addCard(new arknsfw.cards.archetto.ArchettoSenseDeepen());
+        BaseMod.addCard(new arknsfw.cards.archetto.ArchettoSenseRelease());
         BaseMod.addCard(new arknsfw.cards.haruka.HarukaTeasingTouch());
         BaseMod.addCard(new arknsfw.cards.haruka.HarukaWetKissCard());
         BaseMod.addCard(new arknsfw.cards.haruka.HarukaCrestDetonate());
@@ -121,6 +136,11 @@ public final class ArkFallCards {
         BaseMod.addCard(new arknsfw.cards.haruka.HarukaLewdMist());
         BaseMod.addCard(new arknsfw.cards.haruka.HarukaSweetReward());
         BaseMod.addCard(new arknsfw.cards.haruka.HarukaDeepTraining());
+        BaseMod.addCard(new arknsfw.cards.haruka.HarukaSenseDetonate());
+        BaseMod.addCard(new arknsfw.cards.haruka.HarukaSenseResonate());
+        BaseMod.addCard(new arknsfw.cards.haruka.HarukaSenseDrain());
+        BaseMod.addCard(new arknsfw.cards.haruka.HarukaSenseDeepen());
+        BaseMod.addCard(new arknsfw.cards.haruka.HarukaSenseRelease());
         BaseMod.addCard(new arknsfw.cards.nymph.NymphTeasingTouch());
         BaseMod.addCard(new arknsfw.cards.nymph.NymphWetKissCard());
         BaseMod.addCard(new arknsfw.cards.nymph.NymphCrestDetonate());
@@ -149,6 +169,11 @@ public final class ArkFallCards {
         BaseMod.addCard(new arknsfw.cards.nymph.NymphLewdMist());
         BaseMod.addCard(new arknsfw.cards.nymph.NymphSweetReward());
         BaseMod.addCard(new arknsfw.cards.nymph.NymphDeepTraining());
+        BaseMod.addCard(new arknsfw.cards.nymph.NymphSenseDetonate());
+        BaseMod.addCard(new arknsfw.cards.nymph.NymphSenseResonate());
+        BaseMod.addCard(new arknsfw.cards.nymph.NymphSenseDrain());
+        BaseMod.addCard(new arknsfw.cards.nymph.NymphSenseDeepen());
+        BaseMod.addCard(new arknsfw.cards.nymph.NymphSenseRelease());
         BaseMod.addCard(new arknsfw.cards.eyja.EyjaTeasingTouch());
         BaseMod.addCard(new arknsfw.cards.eyja.EyjaWetKissCard());
         BaseMod.addCard(new arknsfw.cards.eyja.EyjaCrestDetonate());
@@ -177,6 +202,11 @@ public final class ArkFallCards {
         BaseMod.addCard(new arknsfw.cards.eyja.EyjaLewdMist());
         BaseMod.addCard(new arknsfw.cards.eyja.EyjaSweetReward());
         BaseMod.addCard(new arknsfw.cards.eyja.EyjaDeepTraining());
+        BaseMod.addCard(new arknsfw.cards.eyja.EyjaSenseDetonate());
+        BaseMod.addCard(new arknsfw.cards.eyja.EyjaSenseResonate());
+        BaseMod.addCard(new arknsfw.cards.eyja.EyjaSenseDrain());
+        BaseMod.addCard(new arknsfw.cards.eyja.EyjaSenseDeepen());
+        BaseMod.addCard(new arknsfw.cards.eyja.EyjaSenseRelease());
         BaseMod.addCard(new arknsfw.cards.muel.MuelTeasingTouch());
         BaseMod.addCard(new arknsfw.cards.muel.MuelWetKissCard());
         BaseMod.addCard(new arknsfw.cards.muel.MuelCrestDetonate());
@@ -205,5 +235,10 @@ public final class ArkFallCards {
         BaseMod.addCard(new arknsfw.cards.muel.MuelLewdMist());
         BaseMod.addCard(new arknsfw.cards.muel.MuelSweetReward());
         BaseMod.addCard(new arknsfw.cards.muel.MuelDeepTraining());
+        BaseMod.addCard(new arknsfw.cards.muel.MuelSenseDetonate());
+        BaseMod.addCard(new arknsfw.cards.muel.MuelSenseResonate());
+        BaseMod.addCard(new arknsfw.cards.muel.MuelSenseDrain());
+        BaseMod.addCard(new arknsfw.cards.muel.MuelSenseDeepen());
+        BaseMod.addCard(new arknsfw.cards.muel.MuelSenseRelease());
     }
 }

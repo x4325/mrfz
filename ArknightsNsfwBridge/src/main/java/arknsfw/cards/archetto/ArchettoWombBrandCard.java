@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import archetto.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class ArchettoWombBrandCard extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("ArchettoWombBrandCard");
 
     public ArchettoWombBrandCard() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.ARCHETTO_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_archetto_archettocoreneed.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.ARCHETTO_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_archetto_archettomoistbarrier.png");
         baseDamage = 10;
     }
 

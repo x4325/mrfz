@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import Eyjafjalla.modcore.ColorEnum;
 
@@ -26,7 +27,7 @@ public class EyjaSageMeditate extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("EyjaSageMeditate");
 
     public EyjaSageMeditate() {
-        super(ID, 1, CardType.SKILL, ColorEnum.Eyjafjalla_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_fever_caress.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.Eyjafjalla_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_volcanic_embrace.png");
         baseBlock = 6;
         baseMagicNumber = magicNumber = 20;
     }

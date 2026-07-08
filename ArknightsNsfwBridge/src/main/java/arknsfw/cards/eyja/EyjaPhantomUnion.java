@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import Eyjafjalla.modcore.ColorEnum;
 
@@ -26,7 +27,7 @@ public class EyjaPhantomUnion extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("EyjaPhantomUnion");
 
     public EyjaPhantomUnion() {
-        super(ID, 2, CardType.ATTACK, ColorEnum.Eyjafjalla_COLOR, CardRarity.RARE, CardTarget.ENEMY, "card_magma_thrust.png");
+        super(ID, 2, CardType.ATTACK, ColorEnum.Eyjafjalla_COLOR, CardRarity.RARE, CardTarget.ENEMY, "card_lava_shield.png");
         baseDamage = 14;
     }
 

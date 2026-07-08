@@ -10,6 +10,7 @@ import basemod.interfaces.PostUpdateSubscriber;
 import basemod.interfaces.RenderSubscriber;
 import basemod.interfaces.OnPlayerTurnStartSubscriber;
 import basemod.interfaces.OnStartBattleSubscriber;
+import basemod.interfaces.OnCardUseSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Color;
@@ -80,6 +81,7 @@ public class ArkNsfwMod implements
         RenderSubscriber,
         OnPlayerTurnStartSubscriber,
         OnStartBattleSubscriber,
+        OnCardUseSubscriber,
         PostInitializeSubscriber {
 
     public static final String modID = "arknsfw";
@@ -126,7 +128,7 @@ public class ArkNsfwMod implements
 
     @Override
     public void receivePostInitialize() {
-        System.out.println("[arknsfw] 0.6.3-shopfix loaded (portrait+postbattle+fallmode active)");
+        System.out.println("[arknsfw] 0.7.0-sensitive loaded (portrait+postbattle+fallmode active)");
         ArkCharacterSetup.registerCharacters();
         registerEvents();
         registerPotions();
@@ -159,6 +161,11 @@ public class ArkNsfwMod implements
     @Override
     public void receiveOnBattleStart(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
         arknsfw.helpers.ArkGearSetHelper.atBattleStart();
+    }
+
+    @Override
+    public void receiveCardUsed(com.megacrit.cardcrawl.cards.AbstractCard card) {
+        arknsfw.helpers.ArkFallCardRider.onCardUsed(card);
     }
 
     private static void registerPotions() {
@@ -613,6 +620,7 @@ public class ArkNsfwMod implements
         BaseMod.addRelic(new arknsfw.relics.fall.SageTimeWatchRelic(), RelicType.SHARED);
         BaseMod.addRelic(new arknsfw.relics.fall.CrestResonancePendantRelic(), RelicType.SHARED);
         BaseMod.addRelic(new arknsfw.relics.fall.MotherGlowBroochRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.fall.SensitivityBrandRelic(), RelicType.SHARED);
         // 欲望装备——加入七个角色色池
         com.megacrit.cardcrawl.cards.AbstractCard.CardColor[] colors = {
                 ColorEnum.Eyjafjalla_COLOR,

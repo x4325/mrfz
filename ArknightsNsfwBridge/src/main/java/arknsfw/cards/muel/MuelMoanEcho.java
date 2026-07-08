@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import Muelsyse.patches.ColorEnum;
 
@@ -26,7 +27,7 @@ public class MuelMoanEcho extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("MuelMoanEcho");
 
     public MuelMoanEcho() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.Muelsyse_COLOR, CardRarity.COMMON, CardTarget.ENEMY, "card_seed_spray.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.Muelsyse_COLOR, CardRarity.COMMON, CardTarget.ENEMY, "card_wet_slide.png");
         baseDamage = 6;
         baseMagicNumber = magicNumber = 6;
     }

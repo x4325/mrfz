@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import haruka.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HarukaWombUrge extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HarukaWombUrge");
 
     public HarukaWombUrge() {
-        super(ID, 1, CardType.SKILL, ColorEnum.HARUKA_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_haruka_harukatenderkiss.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.HARUKA_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_haruka_harukadeepresonance.png");
         baseMagicNumber = magicNumber = 2;
     }
 

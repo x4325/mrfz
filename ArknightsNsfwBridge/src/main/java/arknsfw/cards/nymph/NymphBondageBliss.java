@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import nymph.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class NymphBondageBliss extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("NymphBondageBliss");
 
     public NymphBondageBliss() {
-        super(ID, 1, CardType.SKILL, ColorEnum.NYMPH_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_nymph_nymphmoistbarrier.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.NYMPH_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_nymph_nymphsilentcaress.png");
         baseMagicNumber = magicNumber = 4;
     }
 

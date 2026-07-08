@@ -1488,5 +1488,180 @@
     "NAME": "清漪·深度调教",
     "DESCRIPTION": "拘束装备≥3件：获得 2 点能量并抽 2 张牌；否则兴奋 +15。消耗。",
     "UPGRADE_DESCRIPTION": "拘束装备≥3件：获得 2 点能量并抽 2 张牌；否则兴奋 +15。消耗。"
+  },
+  "arknsfw:HighmoreSenseDetonate": {
+    "NAME": "幽潮·敏感引爆",
+    "DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。"
+  },
+  "arknsfw:HighmoreSenseResonate": {
+    "NAME": "幽潮·敏感共鸣",
+    "DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。"
+  },
+  "arknsfw:HighmoreSenseDrain": {
+    "NAME": "幽潮·敏感汲取",
+    "DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。",
+    "UPGRADE_DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。"
+  },
+  "arknsfw:HighmoreSenseDeepen": {
+    "NAME": "幽潮·敏感刻深",
+    "DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。",
+    "UPGRADE_DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。"
+  },
+  "arknsfw:HighmoreSenseRelease": {
+    "NAME": "幽潮·敏感解放",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。"
+  },
+  "arknsfw:SceneSenseDetonate": {
+    "NAME": "留影·敏感引爆",
+    "DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。"
+  },
+  "arknsfw:SceneSenseResonate": {
+    "NAME": "留影·敏感共鸣",
+    "DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。"
+  },
+  "arknsfw:SceneSenseDrain": {
+    "NAME": "留影·敏感汲取",
+    "DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。",
+    "UPGRADE_DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。"
+  },
+  "arknsfw:SceneSenseDeepen": {
+    "NAME": "留影·敏感刻深",
+    "DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。",
+    "UPGRADE_DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。"
+  },
+  "arknsfw:SceneSenseRelease": {
+    "NAME": "留影·敏感解放",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。"
+  },
+  "arknsfw:ArchettoSenseDetonate": {
+    "NAME": "鸣弦·敏感引爆",
+    "DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。"
+  },
+  "arknsfw:ArchettoSenseResonate": {
+    "NAME": "鸣弦·敏感共鸣",
+    "DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。"
+  },
+  "arknsfw:ArchettoSenseDrain": {
+    "NAME": "鸣弦·敏感汲取",
+    "DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。",
+    "UPGRADE_DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。"
+  },
+  "arknsfw:ArchettoSenseDeepen": {
+    "NAME": "鸣弦·敏感刻深",
+    "DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。",
+    "UPGRADE_DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。"
+  },
+  "arknsfw:ArchettoSenseRelease": {
+    "NAME": "鸣弦·敏感解放",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。"
+  },
+  "arknsfw:HarukaSenseDetonate": {
+    "NAME": "烬焰·敏感引爆",
+    "DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。"
+  },
+  "arknsfw:HarukaSenseResonate": {
+    "NAME": "烬焰·敏感共鸣",
+    "DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。"
+  },
+  "arknsfw:HarukaSenseDrain": {
+    "NAME": "烬焰·敏感汲取",
+    "DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。",
+    "UPGRADE_DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。"
+  },
+  "arknsfw:HarukaSenseDeepen": {
+    "NAME": "烬焰·敏感刻深",
+    "DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。",
+    "UPGRADE_DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。"
+  },
+  "arknsfw:HarukaSenseRelease": {
+    "NAME": "烬焰·敏感解放",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。"
+  },
+  "arknsfw:NymphSenseDetonate": {
+    "NAME": "迷雾·敏感引爆",
+    "DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。"
+  },
+  "arknsfw:NymphSenseResonate": {
+    "NAME": "迷雾·敏感共鸣",
+    "DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。"
+  },
+  "arknsfw:NymphSenseDrain": {
+    "NAME": "迷雾·敏感汲取",
+    "DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。",
+    "UPGRADE_DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。"
+  },
+  "arknsfw:NymphSenseDeepen": {
+    "NAME": "迷雾·敏感刻深",
+    "DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。",
+    "UPGRADE_DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。"
+  },
+  "arknsfw:NymphSenseRelease": {
+    "NAME": "迷雾·敏感解放",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。"
+  },
+  "arknsfw:EyjaSenseDetonate": {
+    "NAME": "熔心·敏感引爆",
+    "DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。"
+  },
+  "arknsfw:EyjaSenseResonate": {
+    "NAME": "熔心·敏感共鸣",
+    "DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。"
+  },
+  "arknsfw:EyjaSenseDrain": {
+    "NAME": "熔心·敏感汲取",
+    "DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。",
+    "UPGRADE_DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。"
+  },
+  "arknsfw:EyjaSenseDeepen": {
+    "NAME": "熔心·敏感刻深",
+    "DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。",
+    "UPGRADE_DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。"
+  },
+  "arknsfw:EyjaSenseRelease": {
+    "NAME": "熔心·敏感解放",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。"
+  },
+  "arknsfw:MuelSenseDetonate": {
+    "NAME": "清漪·敏感引爆",
+    "DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +4。"
+  },
+  "arknsfw:MuelSenseResonate": {
+    "NAME": "清漪·敏感共鸣",
+    "DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，每点敏感值额外 +!M!。"
+  },
+  "arknsfw:MuelSenseDrain": {
+    "NAME": "清漪·敏感汲取",
+    "DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。",
+    "UPGRADE_DESCRIPTION": "敏感值≥!M!：获得 1 点能量并抽 2 张牌；否则兴奋 +10。"
+  },
+  "arknsfw:MuelSenseDeepen": {
+    "NAME": "清漪·敏感刻深",
+    "DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。",
+    "UPGRADE_DESCRIPTION": "敏感值 +1（永久）。获得 !B! 点格挡，抽 2 张牌。消耗。"
+  },
+  "arknsfw:MuelSenseRelease": {
+    "NAME": "清漪·敏感解放",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害，每点敏感值额外 +!M!。兴奋 +8。"
   }
 }

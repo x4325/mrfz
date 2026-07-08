@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import scene.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class SceneLustRush extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("SceneLustRush");
 
     public SceneLustRush() {
-        super(ID, 0, CardType.SKILL, ColorEnum.SCENE_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_scene_scenewarmembrace.png");
+        super(ID, 0, CardType.SKILL, ColorEnum.SCENE_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_scene_scenecoreneed.png");
         baseMagicNumber = magicNumber = 1;
         this.exhaust = true;
     }

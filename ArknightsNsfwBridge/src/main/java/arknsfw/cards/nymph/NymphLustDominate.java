@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import nymph.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class NymphLustDominate extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("NymphLustDominate");
 
     public NymphLustDominate() {
-        super(ID, 1, CardType.SKILL, ColorEnum.NYMPH_COLOR, CardRarity.RARE, CardTarget.ALL_ENEMY, "card_nymph_nymphpassionthrust.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.NYMPH_COLOR, CardRarity.RARE, CardTarget.ALL_ENEMY, "card_nymph_nymphtwinpeak.png");
         baseMagicNumber = magicNumber = 2;
     }
 

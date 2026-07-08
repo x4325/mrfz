@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import haruka.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HarukaClimaxTransfer extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HarukaClimaxTransfer");
 
     public HarukaClimaxTransfer() {
-        super(ID, 1, CardType.SKILL, ColorEnum.HARUKA_COLOR, CardRarity.RARE, CardTarget.ALL_ENEMY, "card_haruka_harukasilentcaress.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.HARUKA_COLOR, CardRarity.RARE, CardTarget.ALL_ENEMY, "card_haruka_harukatenderkiss.png");
         baseMagicNumber = magicNumber = 20;
     }
 

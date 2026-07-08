@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import nymph.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class NymphSweetSpotShot extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("NymphSweetSpotShot");
 
     public NymphSweetSpotShot() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.NYMPH_COLOR, CardRarity.COMMON, CardTarget.ENEMY, "card_nymph_nymphdeepresonance.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.NYMPH_COLOR, CardRarity.COMMON, CardTarget.ENEMY, "card_nymph_nymphwarmembrace.png");
         baseDamage = 6;
     }
 

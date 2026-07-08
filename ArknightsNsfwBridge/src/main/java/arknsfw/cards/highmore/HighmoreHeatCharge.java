@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import highmore.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HighmoreHeatCharge extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HighmoreHeatCharge");
 
     public HighmoreHeatCharge() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.HIGHMORE_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_highmore_highmoretwinpeak.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.HIGHMORE_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_highmore_highmorepassionthrust.png");
         baseDamage = 9;
     }
 

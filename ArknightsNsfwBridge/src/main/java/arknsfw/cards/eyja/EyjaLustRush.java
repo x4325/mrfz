@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import Eyjafjalla.modcore.ColorEnum;
 
@@ -26,7 +27,7 @@ public class EyjaLustRush extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("EyjaLustRush");
 
     public EyjaLustRush() {
-        super(ID, 0, CardType.SKILL, ColorEnum.Eyjafjalla_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_volcanic_embrace.png");
+        super(ID, 0, CardType.SKILL, ColorEnum.Eyjafjalla_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_magma_thrust.png");
         baseMagicNumber = magicNumber = 1;
         this.exhaust = true;
     }

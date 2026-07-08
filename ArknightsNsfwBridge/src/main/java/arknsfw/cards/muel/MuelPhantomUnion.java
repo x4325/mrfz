@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import Muelsyse.patches.ColorEnum;
 
@@ -26,7 +27,7 @@ public class MuelPhantomUnion extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("MuelPhantomUnion");
 
     public MuelPhantomUnion() {
-        super(ID, 2, CardType.ATTACK, ColorEnum.Muelsyse_COLOR, CardRarity.RARE, CardTarget.ENEMY, "card_twin_pleasure.png");
+        super(ID, 2, CardType.ATTACK, ColorEnum.Muelsyse_COLOR, CardRarity.RARE, CardTarget.ENEMY, "card_seed_spray.png");
         baseDamage = 14;
     }
 

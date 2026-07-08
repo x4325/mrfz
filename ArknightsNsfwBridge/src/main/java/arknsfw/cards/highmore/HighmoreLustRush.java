@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import highmore.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HighmoreLustRush extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HighmoreLustRush");
 
     public HighmoreLustRush() {
-        super(ID, 0, CardType.SKILL, ColorEnum.HIGHMORE_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_highmore_highmorewarmembrace.png");
+        super(ID, 0, CardType.SKILL, ColorEnum.HIGHMORE_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_highmore_highmorecoreneed.png");
         baseMagicNumber = magicNumber = 1;
         this.exhaust = true;
     }

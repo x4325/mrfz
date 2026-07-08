@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import archetto.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class ArchettoCrestDetonate extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("ArchettoCrestDetonate");
 
     public ArchettoCrestDetonate() {
-        super(ID, 2, CardType.ATTACK, ColorEnum.ARCHETTO_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_archetto_archettomoistbarrier.png");
+        super(ID, 2, CardType.ATTACK, ColorEnum.ARCHETTO_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_archetto_archettosilentcaress.png");
         baseDamage = 8;
         baseMagicNumber = magicNumber = 4;
     }

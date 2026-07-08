@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import Muelsyse.patches.ColorEnum;
 
@@ -26,7 +27,7 @@ public class MuelPleasureShield extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("MuelPleasureShield");
 
     public MuelPleasureShield() {
-        super(ID, 1, CardType.SKILL, ColorEnum.Muelsyse_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_seed_spray.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.Muelsyse_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_wet_slide.png");
         baseBlock = 5;
     }
 

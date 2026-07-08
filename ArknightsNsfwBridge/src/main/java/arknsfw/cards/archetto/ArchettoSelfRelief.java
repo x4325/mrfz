@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import archetto.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class ArchettoSelfRelief extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("ArchettoSelfRelief");
 
     public ArchettoSelfRelief() {
-        super(ID, 0, CardType.SKILL, ColorEnum.ARCHETTO_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_archetto_archettowarmembrace.png");
+        super(ID, 0, CardType.SKILL, ColorEnum.ARCHETTO_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_archetto_archettocoreneed.png");
         baseMagicNumber = magicNumber = 15;
         this.exhaust = true;
     }

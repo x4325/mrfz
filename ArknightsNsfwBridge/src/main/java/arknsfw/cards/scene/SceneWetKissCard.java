@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import scene.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class SceneWetKissCard extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("SceneWetKissCard");
 
     public SceneWetKissCard() {
-        super(ID, 1, CardType.SKILL, ColorEnum.SCENE_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_scene_scenecoreneed.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.SCENE_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_scene_scenemoistbarrier.png");
         baseBlock = 8;
     }
 

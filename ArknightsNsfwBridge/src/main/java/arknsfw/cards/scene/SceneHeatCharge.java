@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import scene.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class SceneHeatCharge extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("SceneHeatCharge");
 
     public SceneHeatCharge() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.SCENE_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_scene_scenetwinpeak.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.SCENE_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_scene_scenepassionthrust.png");
         baseDamage = 9;
     }
 

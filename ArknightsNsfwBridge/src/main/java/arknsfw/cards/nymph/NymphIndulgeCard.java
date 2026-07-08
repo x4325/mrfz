@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import nymph.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class NymphIndulgeCard extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("NymphIndulgeCard");
 
     public NymphIndulgeCard() {
-        super(ID, 2, CardType.SKILL, ColorEnum.NYMPH_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_nymph_nymphdeepresonance.png");
+        super(ID, 2, CardType.SKILL, ColorEnum.NYMPH_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_nymph_nymphwarmembrace.png");
         baseMagicNumber = magicNumber = 12;
     }
 

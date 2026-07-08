@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import Eyjafjalla.modcore.ColorEnum;
 
@@ -26,7 +27,7 @@ public class EyjaCrestChant extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("EyjaCrestChant");
 
     public EyjaCrestChant() {
-        super(ID, 1, CardType.SKILL, ColorEnum.Eyjafjalla_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_magma_thrust.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.Eyjafjalla_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_lava_shield.png");
         baseMagicNumber = magicNumber = 2;
     }
 

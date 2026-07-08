@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import archetto.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class ArchettoCrestOverload extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("ArchettoCrestOverload");
 
     public ArchettoCrestOverload() {
-        super(ID, -1, CardType.ATTACK, ColorEnum.ARCHETTO_COLOR, CardRarity.RARE, CardTarget.ENEMY, "card_archetto_archettowarmembrace.png");
+        super(ID, -1, CardType.ATTACK, ColorEnum.ARCHETTO_COLOR, CardRarity.RARE, CardTarget.ENEMY, "card_archetto_archettocoreneed.png");
         baseMagicNumber = magicNumber = 9;
     }
 

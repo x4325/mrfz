@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import archetto.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class ArchettoSageMeditate extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("ArchettoSageMeditate");
 
     public ArchettoSageMeditate() {
-        super(ID, 1, CardType.SKILL, ColorEnum.ARCHETTO_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_archetto_archettotwinpeak.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.ARCHETTO_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_archetto_archettopassionthrust.png");
         baseBlock = 6;
         baseMagicNumber = magicNumber = 20;
     }

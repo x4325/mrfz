@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import scene.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class SceneLewdMist extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("SceneLewdMist");
 
     public SceneLewdMist() {
-        super(ID, 1, CardType.SKILL, ColorEnum.SCENE_COLOR, CardRarity.COMMON, CardTarget.ALL_ENEMY, "card_scene_scenedeepresonance.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.SCENE_COLOR, CardRarity.COMMON, CardTarget.ALL_ENEMY, "card_scene_scenewarmembrace.png");
         baseMagicNumber = magicNumber = 1;
     }
 

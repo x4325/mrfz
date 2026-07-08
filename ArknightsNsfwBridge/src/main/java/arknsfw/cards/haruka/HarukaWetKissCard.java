@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import haruka.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HarukaWetKissCard extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HarukaWetKissCard");
 
     public HarukaWetKissCard() {
-        super(ID, 1, CardType.SKILL, ColorEnum.HARUKA_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_haruka_harukacoreneed.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.HARUKA_COLOR, CardRarity.COMMON, CardTarget.SELF, "card_haruka_harukamoistbarrier.png");
         baseBlock = 8;
     }
 

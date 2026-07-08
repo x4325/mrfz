@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import nymph.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class NymphEdgeControl extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("NymphEdgeControl");
 
     public NymphEdgeControl() {
-        super(ID, 0, CardType.SKILL, ColorEnum.NYMPH_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_nymph_nymphsilentcaress.png");
+        super(ID, 0, CardType.SKILL, ColorEnum.NYMPH_COLOR, CardRarity.UNCOMMON, CardTarget.SELF, "card_nymph_nymphtenderkiss.png");
         baseMagicNumber = magicNumber = 2;
         this.exhaust = true;
     }

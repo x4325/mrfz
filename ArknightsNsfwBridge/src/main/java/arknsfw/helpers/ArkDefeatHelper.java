@@ -24,6 +24,24 @@ public final class ArkDefeatHelper {
     }
 
     public static boolean tryRescue(AbstractPlayer p) {
+        // 堕落模式：不会死亡——每次败北复活并加深敏感值（无次数限制）
+        if (p != null && ArkFallMode.active()) {
+            p.isDead = false;
+            p.isDying = false;
+            p.currentHealth = Math.max(1, (int) (p.maxHealth * 0.5F));
+            p.healthBarUpdatedEvent();
+            ArkSensitivity.addPoint(p);
+            NsfwRunStats.addExcitement(20);
+            NsfwRunStats.addFertility(10, 8, true);
+            if (NsfwRunStats.pregnant) {
+                NsfwRunStats.addPregnancyProgress(10);
+            }
+            ArkExposureHelper.tear();
+            AbstractDungeon.effectList.add(new TextAboveCreatureEffect(
+                    p.hb.cX - p.animX, p.hb.cY + p.hb.height / 2.0F,
+                    "败北——身体变得更敏感了（敏感值+1）", Color.PINK.cpy()));
+            return true;
+        }
         if (used || p == null || ArkCharDebuffs.currentCharKey() == null) {
             return false;
         }

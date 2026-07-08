@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import highmore.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class HighmoreMoanEcho extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("HighmoreMoanEcho");
 
     public HighmoreMoanEcho() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.HIGHMORE_COLOR, CardRarity.COMMON, CardTarget.ENEMY, "card_highmore_highmoretenderkiss.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.HIGHMORE_COLOR, CardRarity.COMMON, CardTarget.ENEMY, "card_highmore_highmoredeepresonance.png");
         baseDamage = 6;
         baseMagicNumber = magicNumber = 6;
     }

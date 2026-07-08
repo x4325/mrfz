@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import nymph.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class NymphCrestDetonate extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("NymphCrestDetonate");
 
     public NymphCrestDetonate() {
-        super(ID, 2, CardType.ATTACK, ColorEnum.NYMPH_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_nymph_nymphmoistbarrier.png");
+        super(ID, 2, CardType.ATTACK, ColorEnum.NYMPH_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_nymph_nymphsilentcaress.png");
         baseDamage = 8;
         baseMagicNumber = magicNumber = 4;
     }

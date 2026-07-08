@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import scene.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class SceneCrestDetonate extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("SceneCrestDetonate");
 
     public SceneCrestDetonate() {
-        super(ID, 2, CardType.ATTACK, ColorEnum.SCENE_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_scene_scenemoistbarrier.png");
+        super(ID, 2, CardType.ATTACK, ColorEnum.SCENE_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_scene_scenesilentcaress.png");
         baseDamage = 8;
         baseMagicNumber = magicNumber = 4;
     }

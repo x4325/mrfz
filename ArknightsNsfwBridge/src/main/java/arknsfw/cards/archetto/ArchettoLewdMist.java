@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import archetto.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class ArchettoLewdMist extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("ArchettoLewdMist");
 
     public ArchettoLewdMist() {
-        super(ID, 1, CardType.SKILL, ColorEnum.ARCHETTO_COLOR, CardRarity.COMMON, CardTarget.ALL_ENEMY, "card_archetto_archettodeepresonance.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.ARCHETTO_COLOR, CardRarity.COMMON, CardTarget.ALL_ENEMY, "card_archetto_archettowarmembrace.png");
         baseMagicNumber = magicNumber = 1;
     }
 

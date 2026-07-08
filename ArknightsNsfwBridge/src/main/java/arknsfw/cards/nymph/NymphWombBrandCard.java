@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import nymph.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class NymphWombBrandCard extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("NymphWombBrandCard");
 
     public NymphWombBrandCard() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.NYMPH_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_nymph_nymphcoreneed.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.NYMPH_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_nymph_nymphmoistbarrier.png");
         baseDamage = 10;
     }
 

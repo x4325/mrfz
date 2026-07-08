@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import nymph.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class NymphFallPactCard extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("NymphFallPactCard");
 
     public NymphFallPactCard() {
-        super(ID, 1, CardType.SKILL, ColorEnum.NYMPH_COLOR, CardRarity.RARE, CardTarget.SELF, "card_nymph_nymphtwinpeak.png");
+        super(ID, 1, CardType.SKILL, ColorEnum.NYMPH_COLOR, CardRarity.RARE, CardTarget.SELF, "card_nymph_nymphpassionthrust.png");
         this.exhaust = true;
     }
 

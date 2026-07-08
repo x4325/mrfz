@@ -18,6 +18,7 @@ import arknsfw.helpers.ArkCharMechanicsHelper;
 import arknsfw.helpers.ArkExposureHelper;
 import arknsfw.helpers.ArkGearSetHelper;
 import arknsfw.helpers.ArkSafeStats;
+import arknsfw.helpers.ArkSensitivity;
 import arknsfw.helpers.LieseCompat;
 import scene.core.ColorEnum;
 
@@ -26,7 +27,7 @@ public class SceneLewdBreath extends AbstractArkNsfwCard {
     public static final String ID = ArkNsfwMod.makeID("SceneLewdBreath");
 
     public SceneLewdBreath() {
-        super(ID, 1, CardType.ATTACK, ColorEnum.SCENE_COLOR, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY, "card_scene_scenecoreneed.png");
+        super(ID, 1, CardType.ATTACK, ColorEnum.SCENE_COLOR, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY, "card_scene_scenemoistbarrier.png");
         baseDamage = 5;
         this.isMultiDamage = true;
     }
