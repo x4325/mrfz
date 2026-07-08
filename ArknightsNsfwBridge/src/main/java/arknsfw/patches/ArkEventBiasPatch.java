@@ -22,6 +22,10 @@ public class ArkEventBiasPatch {
     public static class BiasArkCharacterEvents {
         @SpirePrefixPatch
         public static SpireReturn<AbstractEvent> prefix(Random rng) {
+            // 堕落模式：事件全部固定为「堕落供物」三选一
+            if (arknsfw.helpers.ArkFallMode.active()) {
+                return SpireReturn.Return(new arknsfw.events.ArkFallOfferingEvent());
+            }
             if (!NsfwCharacterRegistry.isActive() || !ArkCharacterSetup.isArkNsfwRun() || rng == null) {
                 return SpireReturn.Continue();
             }

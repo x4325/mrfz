@@ -31,11 +31,15 @@ public final class ArkExposureHelper {
     }
 
     private static void syncAct() {
-        // 每进入新的一幕自动整理着装
+        // 每进入新的一幕自动整理着装（露出斗篷持有者除外）
         if (AbstractDungeon.actNum != lastAct) {
             lastAct = AbstractDungeon.actNum;
-            stage = 0;
-            accumulated = 0;
+            boolean cloak = AbstractDungeon.player != null
+                    && AbstractDungeon.player.hasRelic("arknsfw:ExposureCloakRelic");
+            if (!cloak) {
+                stage = 0;
+                accumulated = 0;
+            }
         }
     }
 
@@ -62,9 +66,13 @@ public final class ArkExposureHelper {
         }
     }
 
-    /** 修复一档（拼死抵抗、温存照料）。 */
+    /** 修复一档（拼死抵抗、温存照料）。持有露出斗篷时衣装无法修复。 */
     public static void repair(int stages) {
         syncAct();
+        if (AbstractDungeon.player != null
+                && AbstractDungeon.player.hasRelic(arknsfw.relics.fall.ExposureCloakRelic.ID)) {
+            return;
+        }
         stage = Math.max(0, stage - stages);
         accumulated = 0;
     }

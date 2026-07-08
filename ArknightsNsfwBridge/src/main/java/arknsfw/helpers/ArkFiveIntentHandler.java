@@ -44,6 +44,7 @@ public final class ArkFiveIntentHandler implements SpecialIntentHandler {
                 NsfwRunStats.addExcitement(liesecore.relics.EarplugRelic.scaleIntentExcitement(8));
                 addPower(player, monster, ArkCharDebuffs.fresh(player, 1));
                 addPower(player, monster, new WeakPower(player, 1, false));
+                addPower(player, monster, new arknsfw.powers.fall.PleasureDependencePower(player, 1));
                 break;
             case CREAMPIE: {
                 boolean combo = IntentComboHelper.consumeIfMatches(EnemyIntentType.CREAMPIE);
@@ -66,10 +67,12 @@ public final class ArkFiveIntentHandler implements SpecialIntentHandler {
                 NsfwRunStats.addFertility(0, 7, false);
                 addPower(player, monster, new FakePregnantPower(player, 2));
                 addPower(player, monster, new AphrodisiacPower(player, 1));
+                addPower(player, monster, new arknsfw.powers.fall.AphroToxinPower(player, 4));
                 break;
             case TEASE:
                 NsfwRunStats.addExcitement(12);
                 addPower(player, monster, ArkCharDebuffs.fresh(player, 1));
+                addPower(player, monster, new arknsfw.powers.fall.SensitivePower(player, 2));
                 break;
             case HUMILIATE: {
                 boolean combo = IntentComboHelper.consumeIfMatches(EnemyIntentType.HUMILIATE);

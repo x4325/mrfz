@@ -34,16 +34,38 @@ public final class ArkClimaxHelper {
             return;
         }
         AbstractPlayer p = AbstractDungeon.player;
+        int excitementAtClimax = NsfwRunStats.excitement;
         NsfwRunStats.addExcitement(-NsfwRunStats.excitement);
-        if (!p.hasRelic(arknsfw.relics.equipment.RingGagRelic.ID)) {
+        // 快感转换器：不失去格挡，改为快感冲击（兴奋值一半的全体伤害）
+        boolean converter = p.hasRelic(arknsfw.relics.fall.PleasureConverterRelic.ID);
+        if (converter) {
+            int dmg = Math.max(5, excitementAtClimax / 2);
+            AbstractDungeon.actionManager.addToBottom(
+                    new com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction(
+                            p, com.megacrit.cardcrawl.cards.DamageInfo.createDamageMatrix(dmg, true),
+                            com.megacrit.cardcrawl.cards.DamageInfo.DamageType.THORNS,
+                            com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect.FIRE));
+        } else if (!p.hasRelic(arknsfw.relics.equipment.RingGagRelic.ID)) {
             p.loseBlock();
         }
         PowerHelper.apply(p, new WeakPower(p, 1, false));
         PowerHelper.apply(p, new FrailPower(p, 1, false));
         PowerHelper.apply(p, new DrawReductionPower(p, 1));
+        // 绝顶余韵：高潮后 2 回合格挡获取 -25%
+        PowerHelper.apply(p, new arknsfw.powers.fall.AfterglowPower(p, 2));
         AbstractPower brand = ArkCharDebuffs.fresh(p, 1);
         if (brand != null) {
             ArkDebuffHelper.apply(p, brand);
+        }
+        // 调教项圈·进阶：高潮计数 → 永久力量
+        com.megacrit.cardcrawl.relics.AbstractRelic collar =
+                p.getRelic(arknsfw.relics.fall.TrainingCollarPlusRelic.ID);
+        if (collar instanceof arknsfw.relics.fall.TrainingCollarPlusRelic) {
+            ((arknsfw.relics.fall.TrainingCollarPlusRelic) collar).onClimax();
+        }
+        // 贤者怀表：下回合回神（+1费+2抽）
+        if (p.hasRelic(arknsfw.relics.fall.SageTimeWatchRelic.ID)) {
+            PowerHelper.apply(p, new arknsfw.powers.fall.SageTimePower(p));
         }
         UiHelper.showCenterText(p, "高潮——失控！");
         ArkPortraitPanel.notifyClimax();

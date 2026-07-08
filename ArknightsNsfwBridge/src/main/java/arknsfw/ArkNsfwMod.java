@@ -9,6 +9,7 @@ import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostUpdateSubscriber;
 import basemod.interfaces.RenderSubscriber;
 import basemod.interfaces.OnPlayerTurnStartSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Color;
@@ -78,6 +79,7 @@ public class ArkNsfwMod implements
         PostUpdateSubscriber,
         RenderSubscriber,
         OnPlayerTurnStartSubscriber,
+        OnStartBattleSubscriber,
         PostInitializeSubscriber {
 
     public static final String modID = "arknsfw";
@@ -124,10 +126,39 @@ public class ArkNsfwMod implements
 
     @Override
     public void receivePostInitialize() {
-        System.out.println("[arknsfw] 0.5.6-cleanlines loaded (portrait+postbattle render active)");
+        System.out.println("[arknsfw] 0.6.0-fallmode loaded (portrait+postbattle+fallmode active)");
         ArkCharacterSetup.registerCharacters();
         registerEvents();
         registerPotions();
+        arknsfw.helpers.ArkFallMode.loadConfig();
+        registerModPanel();
+    }
+
+    /** Mods 面板：堕落模式开关。 */
+    private static void registerModPanel() {
+        try {
+            basemod.ModPanel panel = new basemod.ModPanel();
+            basemod.ModLabeledToggleButton toggle = new basemod.ModLabeledToggleButton(
+                    "堕落模式（下一局生效）：卡牌/遗物/药水/事件全面色情化，敌人调教攻击大幅增加",
+                    360.0f, 700.0f,
+                    com.megacrit.cardcrawl.core.Settings.CREAM_COLOR.cpy(),
+                    com.megacrit.cardcrawl.helpers.FontHelper.charDescFont,
+                    arknsfw.helpers.ArkFallMode.enabled(), panel,
+                    label -> { },
+                    button -> arknsfw.helpers.ArkFallMode.setEnabled(button.enabled));
+            panel.addUIElement(toggle);
+            com.badlogic.gdx.graphics.Texture badge =
+                    liesecore.helpers.TextureHelper.getTexture(makeImagePath("badge.png"));
+            BaseMod.registerModBadge(badge, "ArknightsNsfwBridge", "arknsfw",
+                    "方舟七角色 NSFW 桥接与堕落模式", panel);
+        } catch (Exception e) {
+            System.out.println("[arknsfw] mod panel init failed: " + e);
+        }
+    }
+
+    @Override
+    public void receiveOnBattleStart(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
+        arknsfw.helpers.ArkGearSetHelper.atBattleStart();
     }
 
     private static void registerPotions() {
@@ -178,6 +209,10 @@ public class ArkNsfwMod implements
         BaseMod.addPotion(arknsfw.potions.shared.CorruptionEssencePotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.CorruptionEssencePotion.ID);
         BaseMod.addPotion(arknsfw.potions.shared.CrestInkPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.CrestInkPotion.ID);
         BaseMod.addPotion(arknsfw.potions.shared.WombElixirPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.WombElixirPotion.ID);
+        // 堕落模式新增机制药水（全角色共用）
+        BaseMod.addPotion(arknsfw.potions.shared.ClimaxTriggerPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.ClimaxTriggerPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.LubricantPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.LubricantPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.MotherNectarPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.MotherNectarPotion.ID);
     }
 
     private static void registerEvents() {
@@ -398,6 +433,8 @@ public class ArkNsfwMod implements
         BaseMod.addCard(new NymphShameContractCard());
         BaseMod.addCard(new NymphBindCollarCard());
         BaseMod.addCard(new NymphEchoSeedCard());
+        // 堕落模式色情卡（28 模板 × 7 角色）
+        arknsfw.cards.ArkFallCards.registerAll();
     }
 
     @Override
@@ -565,6 +602,35 @@ public class ArkNsfwMod implements
         BaseMod.addRelic(new NymphBrandCurseRelic(), RelicType.SHARED);
         BaseMod.addRelic(new NymphAltarCurseRelic(), RelicType.SHARED);
         BaseMod.addRelic(new NymphLoopCurseRelic(), RelicType.SHARED);
+        registerFallRelics();
+    }
+
+    /** 堕落模式新增遗物：祝福（事件三选一）+ 欲望装备（七角色池）。 */
+    private static void registerFallRelics() {
+        // 祝福（色情状态载体）——事件/堕落池取得
+        BaseMod.addRelic(new arknsfw.relics.fall.LustSurgeCharmRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.fall.HeatAdaptBadgeRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.fall.SageTimeWatchRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.fall.CrestResonancePendantRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.fall.MotherGlowBroochRelic(), RelicType.SHARED);
+        // 欲望装备——加入七个角色色池
+        com.megacrit.cardcrawl.cards.AbstractCard.CardColor[] colors = {
+                ColorEnum.Eyjafjalla_COLOR,
+                Muelsyse.patches.ColorEnum.Muelsyse_COLOR,
+                highmore.core.ColorEnum.HIGHMORE_COLOR,
+                scene.core.ColorEnum.SCENE_COLOR,
+                archetto.core.ColorEnum.ARCHETTO_COLOR,
+                haruka.core.ColorEnum.HARUKA_COLOR,
+                nymph.core.ColorEnum.NYMPH_COLOR,
+        };
+        for (com.megacrit.cardcrawl.cards.AbstractCard.CardColor color : colors) {
+            BaseMod.addRelicToCustomPool(new arknsfw.relics.fall.ExposureCloakRelic(), color);
+            BaseMod.addRelicToCustomPool(new arknsfw.relics.fall.PleasureConverterRelic(), color);
+            BaseMod.addRelicToCustomPool(new arknsfw.relics.fall.TrainingCollarPlusRelic(), color);
+            BaseMod.addRelicToCustomPool(new arknsfw.relics.fall.RemoteVibeRelic(), color);
+            BaseMod.addRelicToCustomPool(new arknsfw.relics.fall.CorruptHourglassRelic(), color);
+            BaseMod.addRelicToCustomPool(new arknsfw.relics.fall.CrestAmpRingRelic(), color);
+        }
     }
 
     @Override
@@ -606,5 +672,6 @@ public class ArkNsfwMod implements
     @Override
     public void receiveOnPlayerTurnStart() {
         arknsfw.helpers.ArkClimaxHelper.onPlayerTurnStart();
+        arknsfw.patches.ArkFallModePatches.rollHAttacks();
     }
 }

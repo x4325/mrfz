@@ -1,257 +1,278 @@
 {
- "arknsfw:CloudWarmTonicPotion": {
-  "NAME": "云暖饮",
-  "DESCRIPTIONS": [
-   "获得 #b2 云量 与 #b1 层 #y地热。兴奋 +",
-   "。 NL 艾雅：云量/地热联动。"
-  ]
- },
- "arknsfw:PyroAphroPotion": {
-  "NAME": "炎息情热液",
-  "DESCRIPTIONS": [
-   "获得 #b1 层 #y炎息。兴奋 +",
-   "，受孕度 +",
-   "。 NL 艾雅：+1 云量。"
-  ]
- },
- "arknsfw:VolcanicNectarPotion": {
-  "NAME": "火山蜜酿",
-  "DESCRIPTIONS": [
-   "回复 #b",
-   " 点生命。兴奋 +",
-   "，获得 #b1 层 #y火山潮红。"
-  ]
- },
- "arknsfw:AshDregPotion": {
-  "NAME": "灰烬沉渣",
-  "DESCRIPTIONS": [
-   "诅咒药水。兴奋 +",
-   "，获得 #b2 层 #y灰烬羞怯，失去 #b5 生命。"
-  ]
- },
- "arknsfw:FeverSedimentPotion": {
-  "NAME": "热症沉淀",
-  "DESCRIPTIONS": [
-   "诅咒药水。兴奋 +",
-   "，受孕 +",
-   "。获得 #y火山潮红 #b2 与 #y核心过载 #b1，失去 #b3 生命。"
-  ]
- },
- "arknsfw:EmberLockPotion": {
-  "NAME": "余烬枷锁",
-  "DESCRIPTIONS": [
-   "诅咒药水。兴奋 +",
-   "。获得 #y灰烬羞怯 #b1，将 #y子宫余烬 洗入弃牌堆，并获得 #b1 层 #y炎息。"
-  ]
- },
- "arknsfw:BubbleSerumPotion": {
-  "NAME": "泡沫血清",
-  "DESCRIPTIONS": [
-   "获得 #b",
-   " 点格挡。兴奋 +",
-   "，受孕 +4，获得 #b1 层 #y水化。"
-  ]
- },
- "arknsfw:CloneDripPotion": {
-  "NAME": "分身原液",
-  "DESCRIPTIONS": [
-   "兴奋 +",
-   "，受孕 +5。 NL 缪尔：有 #y流形 时 +1 流形，否则 +1 #y溯源。"
-  ]
- },
- "arknsfw:RootDewPotion": {
-  "NAME": "溯源晨露",
-  "DESCRIPTIONS": [
-   "回复 #b",
-   " 点生命。获得 #b1 层 #y溯源 与 #y水化，受孕 +6。"
-  ]
- },
- "arknsfw:FloodWastePotion": {
-  "NAME": "洪痕废液",
-  "DESCRIPTIONS": [
-   "诅咒药水。失去全部格挡。兴奋 +",
-   "，受孕 +",
-   "，获得 #b2 层 #y渗漏。"
-  ]
- },
- "arknsfw:SeedSludgePotion": {
-  "NAME": "种籽污泥",
-  "DESCRIPTIONS": [
-   "诅咒药水。兴奋 +",
-   "。视为强力 #y中出，将 #y播种子宫 洗入弃牌堆。 NL 缪尔：有 #y流形 时 +1 流形。"
-  ]
- },
- "arknsfw:MuteFoamPotion": {
-  "NAME": "禁沫毒",
-  "DESCRIPTIONS": [
-   "诅咒药水。兴奋 +",
-   "。获得 #y泡沫封口（栽培中 #b3 层），将 #y分身残留 洗入弃牌堆。"
-  ]
- },
- "arknsfw:HeatLingerPotion": {
-  "NAME": "迟滞余温",
-  "DESCRIPTIONS": [
-   "获得 #b1 层 #y核心热症 与 #y地热。兴奋 +",
-   "。"
-  ]
- },
- "arknsfw:EmberDraughtPotion": {
-  "NAME": "余烬饮",
-  "DESCRIPTIONS": [
-   "获得 #b1 层 #y炎息、#b2 云量，并为手牌中一张牌附加 #y炎息 标记。兴奋 +",
-   "，受孕 +",
-   "。"
-  ]
- },
- "arknsfw:LavaBloomPotion": {
-  "NAME": "熔岩绽放",
-  "DESCRIPTIONS": [
-   "回复 #b",
-   " 点生命。兴奋 +",
-   "，受孕 +5，获得 #b2 云量与 #b1 层 #y核心热症。"
-  ]
- },
- "arknsfw:CollarSootPotion": {
-  "NAME": "项圈炭渣",
-  "DESCRIPTIONS": [
-   "诅咒药水。兴奋 +",
-   "。获得 #y灰烬羞怯 #b2，将 #y灰烬项圈印 洗入弃牌堆，失去少量生命。"
-  ]
- },
- "arknsfw:ContractSedimentPotion": {
-  "NAME": "契约沉渣",
-  "DESCRIPTIONS": [
-   "诅咒药水。兴奋 +",
-   "，受孕 +",
-   "。获得 #y火山潮红 #b2 与 #y核心过载 #b1，将 #y热症契约 洗入弃牌堆，失去 #b3 生命。"
-  ]
- },
- "arknsfw:MagmaEchoDraughtPotion": {
-  "NAME": "熔岩回响液",
-  "DESCRIPTIONS": [
-   "诅咒药水。兴奋 +",
-   "，受孕 +8。获得 #y火山潮红 #b1，将 #y熔岩回响 洗入弃牌堆。"
-  ]
- },
- "arknsfw:MistSprayPotion": {
-  "NAME": "雾沫喷雾",
-  "DESCRIPTIONS": [
-   "获得 #b1 层 #y分身薄雾 与 #y水化。兴奋 +",
-   "，受孕 +3。"
-  ]
- },
- "arknsfw:TwinSapPotion": {
-  "NAME": "双生树液",
-  "DESCRIPTIONS": [
-   "兴奋 +",
-   "，受孕 +8。 NL 缪尔：有 #y流形 时 +1 流形，否则 +2 #y溯源。"
-  ]
- },
- "arknsfw:GreenhouseNectarPotion": {
-  "NAME": "温室蜜露",
-  "DESCRIPTIONS": [
-   "回复 #b",
-   " 点生命。获得 #y水化 #b2，受孕 +6；栽培中额外 +1 #y溯源，否则再受孕 +4。"
-  ]
- },
- "arknsfw:FloodMarkDraughtPotion": {
-  "NAME": "洪痕印记液",
-  "DESCRIPTIONS": [
-   "诅咒药水。失去全部格挡。兴奋 +",
-   "，受孕 +",
-   "，获得 #y渗漏 #b2，将 #y洪痕印记 洗入弃牌堆。"
-  ]
- },
- "arknsfw:BubbleMuteDraughtPotion": {
-  "NAME": "禁言泡沫液",
-  "DESCRIPTIONS": [
-   "诅咒药水。兴奋 +",
-   "。获得 #y泡沫封口（栽培中 #b3 层），将 #y泡沫禁言 洗入弃牌堆。"
-  ]
- },
- "arknsfw:EchoSludgePotion": {
-  "NAME": "回响污泥",
-  "DESCRIPTIONS": [
-   "诅咒药水。兴奋 +",
-   "，受孕 +",
-   "。获得 #y分身回音 #b3 与 #y渗漏 #b1，失去 #b4 生命。"
-  ]
- },
- "arknsfw:AshShameMistPotion": {
-  "NAME": "灰烬媚雾",
-  "DESCRIPTIONS": [
-   "兴奋 +",
-   " ，获得 #y灰烬羞怯 #b2 。"
-  ]
- },
- "arknsfw:BubbleShameMistPotion": {
-  "NAME": "泡沫媚雾",
-  "DESCRIPTIONS": [
-   "兴奋 +",
-   " ，获得 #y泡沫封口 #b2 。"
-  ]
- },
- "arknsfw:AphroDraughtPotion": {
-  "NAME": "催情药剂",
-  "DESCRIPTIONS": [
-   "色情药水。兴奋 +",
-   "，抽 #b2 张牌。"
-  ]
- },
- "arknsfw:HoneyDewPotion": {
-  "NAME": "蜜露药水",
-  "DESCRIPTIONS": [
-   "色情药水。回复 #b15% 生命，兴奋 +",
-   "。"
-  ]
- },
- "arknsfw:PleasureBombPotion": {
-  "NAME": "快感炸弹",
-  "DESCRIPTIONS": [
-   "色情药水。对所有敌人造成等同兴奋值 1/4 的伤害（最多 ",
-   "）。"
-  ]
- },
- "arknsfw:SensitiveMistPotion": {
-  "NAME": "敏感药雾",
-  "DESCRIPTIONS": [
-   "色情药水。获得 #b3 层角色资源，兴奋 +",
-   "。"
-  ]
- },
- "arknsfw:SuppressantPotion": {
-  "NAME": "抑制剂",
-  "DESCRIPTIONS": [
-   "色情药水。兴奋 -",
-   "。"
-  ]
- },
- "arknsfw:HeatPerfumePotion": {
-  "NAME": "发情香水",
-  "DESCRIPTIONS": [
-   "色情药水。所有敌人获得 #b2 层 #y虚弱 与 #b2 层 #y易伤，兴奋 +",
-   "。"
-  ]
- },
- "arknsfw:CorruptionEssencePotion": {
-  "NAME": "堕落原液",
-  "DESCRIPTIONS": [
-   "堕落药水。获得 #b2 层专属印记，兴奋 +",
-   "，获得 #b2 点能量。"
-  ]
- },
- "arknsfw:CrestInkPotion": {
-  "NAME": "淫纹墨水",
-  "DESCRIPTIONS": [
-   "堕落药水。立即将专属印记 #r永久刻印，最大生命 +",
-   "。"
-  ]
- },
- "arknsfw:WombElixirPotion": {
-  "NAME": "受胎灵药",
-  "DESCRIPTIONS": [
-   "堕落药水。受孕 +",
-   "（中出），已孕时妊娠 +#b15，兴奋 +#b20。"
-  ]
- }
+  "arknsfw:CloudWarmTonicPotion": {
+    "NAME": "云暖饮",
+    "DESCRIPTIONS": [
+      "获得 #b2 云量 与 #b1 层 #y地热。兴奋 +",
+      "。 NL 艾雅：云量/地热联动。"
+    ]
+  },
+  "arknsfw:PyroAphroPotion": {
+    "NAME": "炎息情热液",
+    "DESCRIPTIONS": [
+      "获得 #b1 层 #y炎息。兴奋 +",
+      "，受孕度 +",
+      "。 NL 艾雅：+1 云量。"
+    ]
+  },
+  "arknsfw:VolcanicNectarPotion": {
+    "NAME": "火山蜜酿",
+    "DESCRIPTIONS": [
+      "回复 #b",
+      " 点生命。兴奋 +",
+      "，获得 #b1 层 #y火山潮红。"
+    ]
+  },
+  "arknsfw:AshDregPotion": {
+    "NAME": "灰烬沉渣",
+    "DESCRIPTIONS": [
+      "诅咒药水。兴奋 +",
+      "，获得 #b2 层 #y灰烬羞怯，失去 #b5 生命。"
+    ]
+  },
+  "arknsfw:FeverSedimentPotion": {
+    "NAME": "热症沉淀",
+    "DESCRIPTIONS": [
+      "诅咒药水。兴奋 +",
+      "，受孕 +",
+      "。获得 #y火山潮红 #b2 与 #y核心过载 #b1，失去 #b3 生命。"
+    ]
+  },
+  "arknsfw:EmberLockPotion": {
+    "NAME": "余烬枷锁",
+    "DESCRIPTIONS": [
+      "诅咒药水。兴奋 +",
+      "。获得 #y灰烬羞怯 #b1，将 #y子宫余烬 洗入弃牌堆，并获得 #b1 层 #y炎息。"
+    ]
+  },
+  "arknsfw:BubbleSerumPotion": {
+    "NAME": "泡沫血清",
+    "DESCRIPTIONS": [
+      "获得 #b",
+      " 点格挡。兴奋 +",
+      "，受孕 +4，获得 #b1 层 #y水化。"
+    ]
+  },
+  "arknsfw:CloneDripPotion": {
+    "NAME": "分身原液",
+    "DESCRIPTIONS": [
+      "兴奋 +",
+      "，受孕 +5。 NL 缪尔：有 #y流形 时 +1 流形，否则 +1 #y溯源。"
+    ]
+  },
+  "arknsfw:RootDewPotion": {
+    "NAME": "溯源晨露",
+    "DESCRIPTIONS": [
+      "回复 #b",
+      " 点生命。获得 #b1 层 #y溯源 与 #y水化，受孕 +6。"
+    ]
+  },
+  "arknsfw:FloodWastePotion": {
+    "NAME": "洪痕废液",
+    "DESCRIPTIONS": [
+      "诅咒药水。失去全部格挡。兴奋 +",
+      "，受孕 +",
+      "，获得 #b2 层 #y渗漏。"
+    ]
+  },
+  "arknsfw:SeedSludgePotion": {
+    "NAME": "种籽污泥",
+    "DESCRIPTIONS": [
+      "诅咒药水。兴奋 +",
+      "。视为强力 #y中出，将 #y播种子宫 洗入弃牌堆。 NL 缪尔：有 #y流形 时 +1 流形。"
+    ]
+  },
+  "arknsfw:MuteFoamPotion": {
+    "NAME": "禁沫毒",
+    "DESCRIPTIONS": [
+      "诅咒药水。兴奋 +",
+      "。获得 #y泡沫封口（栽培中 #b3 层），将 #y分身残留 洗入弃牌堆。"
+    ]
+  },
+  "arknsfw:HeatLingerPotion": {
+    "NAME": "迟滞余温",
+    "DESCRIPTIONS": [
+      "获得 #b1 层 #y核心热症 与 #y地热。兴奋 +",
+      "。"
+    ]
+  },
+  "arknsfw:EmberDraughtPotion": {
+    "NAME": "余烬饮",
+    "DESCRIPTIONS": [
+      "获得 #b1 层 #y炎息、#b2 云量，并为手牌中一张牌附加 #y炎息 标记。兴奋 +",
+      "，受孕 +",
+      "。"
+    ]
+  },
+  "arknsfw:LavaBloomPotion": {
+    "NAME": "熔岩绽放",
+    "DESCRIPTIONS": [
+      "回复 #b",
+      " 点生命。兴奋 +",
+      "，受孕 +5，获得 #b2 云量与 #b1 层 #y核心热症。"
+    ]
+  },
+  "arknsfw:CollarSootPotion": {
+    "NAME": "项圈炭渣",
+    "DESCRIPTIONS": [
+      "诅咒药水。兴奋 +",
+      "。获得 #y灰烬羞怯 #b2，将 #y灰烬项圈印 洗入弃牌堆，失去少量生命。"
+    ]
+  },
+  "arknsfw:ContractSedimentPotion": {
+    "NAME": "契约沉渣",
+    "DESCRIPTIONS": [
+      "诅咒药水。兴奋 +",
+      "，受孕 +",
+      "。获得 #y火山潮红 #b2 与 #y核心过载 #b1，将 #y热症契约 洗入弃牌堆，失去 #b3 生命。"
+    ]
+  },
+  "arknsfw:MagmaEchoDraughtPotion": {
+    "NAME": "熔岩回响液",
+    "DESCRIPTIONS": [
+      "诅咒药水。兴奋 +",
+      "，受孕 +8。获得 #y火山潮红 #b1，将 #y熔岩回响 洗入弃牌堆。"
+    ]
+  },
+  "arknsfw:MistSprayPotion": {
+    "NAME": "雾沫喷雾",
+    "DESCRIPTIONS": [
+      "获得 #b1 层 #y分身薄雾 与 #y水化。兴奋 +",
+      "，受孕 +3。"
+    ]
+  },
+  "arknsfw:TwinSapPotion": {
+    "NAME": "双生树液",
+    "DESCRIPTIONS": [
+      "兴奋 +",
+      "，受孕 +8。 NL 缪尔：有 #y流形 时 +1 流形，否则 +2 #y溯源。"
+    ]
+  },
+  "arknsfw:GreenhouseNectarPotion": {
+    "NAME": "温室蜜露",
+    "DESCRIPTIONS": [
+      "回复 #b",
+      " 点生命。获得 #y水化 #b2，受孕 +6；栽培中额外 +1 #y溯源，否则再受孕 +4。"
+    ]
+  },
+  "arknsfw:FloodMarkDraughtPotion": {
+    "NAME": "洪痕印记液",
+    "DESCRIPTIONS": [
+      "诅咒药水。失去全部格挡。兴奋 +",
+      "，受孕 +",
+      "，获得 #y渗漏 #b2，将 #y洪痕印记 洗入弃牌堆。"
+    ]
+  },
+  "arknsfw:BubbleMuteDraughtPotion": {
+    "NAME": "禁言泡沫液",
+    "DESCRIPTIONS": [
+      "诅咒药水。兴奋 +",
+      "。获得 #y泡沫封口（栽培中 #b3 层），将 #y泡沫禁言 洗入弃牌堆。"
+    ]
+  },
+  "arknsfw:EchoSludgePotion": {
+    "NAME": "回响污泥",
+    "DESCRIPTIONS": [
+      "诅咒药水。兴奋 +",
+      "，受孕 +",
+      "。获得 #y分身回音 #b3 与 #y渗漏 #b1，失去 #b4 生命。"
+    ]
+  },
+  "arknsfw:AshShameMistPotion": {
+    "NAME": "灰烬媚雾",
+    "DESCRIPTIONS": [
+      "兴奋 +",
+      " ，获得 #y灰烬羞怯 #b2 。"
+    ]
+  },
+  "arknsfw:BubbleShameMistPotion": {
+    "NAME": "泡沫媚雾",
+    "DESCRIPTIONS": [
+      "兴奋 +",
+      " ，获得 #y泡沫封口 #b2 。"
+    ]
+  },
+  "arknsfw:AphroDraughtPotion": {
+    "NAME": "催情药剂",
+    "DESCRIPTIONS": [
+      "色情药水。兴奋 +",
+      "，抽 #b2 张牌。"
+    ]
+  },
+  "arknsfw:HoneyDewPotion": {
+    "NAME": "蜜露药水",
+    "DESCRIPTIONS": [
+      "色情药水。回复 #b15% 生命，兴奋 +",
+      "。"
+    ]
+  },
+  "arknsfw:PleasureBombPotion": {
+    "NAME": "快感炸弹",
+    "DESCRIPTIONS": [
+      "色情药水。对所有敌人造成等同兴奋值 1/4 的伤害（最多 ",
+      "）。"
+    ]
+  },
+  "arknsfw:SensitiveMistPotion": {
+    "NAME": "敏感药雾",
+    "DESCRIPTIONS": [
+      "色情药水。获得 #b3 层角色资源，兴奋 +",
+      "。"
+    ]
+  },
+  "arknsfw:SuppressantPotion": {
+    "NAME": "抑制剂",
+    "DESCRIPTIONS": [
+      "色情药水。兴奋 -",
+      "。"
+    ]
+  },
+  "arknsfw:HeatPerfumePotion": {
+    "NAME": "发情香水",
+    "DESCRIPTIONS": [
+      "色情药水。所有敌人获得 #b2 层 #y虚弱 与 #b2 层 #y易伤，兴奋 +",
+      "。"
+    ]
+  },
+  "arknsfw:CorruptionEssencePotion": {
+    "NAME": "堕落原液",
+    "DESCRIPTIONS": [
+      "堕落药水。获得 #b2 层专属印记，兴奋 +",
+      "，获得 #b2 点能量。"
+    ]
+  },
+  "arknsfw:CrestInkPotion": {
+    "NAME": "淫纹墨水",
+    "DESCRIPTIONS": [
+      "堕落药水。立即将专属印记 #r永久刻印，最大生命 +",
+      "。"
+    ]
+  },
+  "arknsfw:WombElixirPotion": {
+    "NAME": "受胎灵药",
+    "DESCRIPTIONS": [
+      "堕落药水。受孕 +",
+      "（中出），已孕时妊娠 +#b15，兴奋 +#b20。"
+    ]
+  },
+  "arknsfw:ClimaxTriggerPotion": {
+    "NAME": "绝顶引爆剂",
+    "DESCRIPTIONS": [
+      "兴奋直接拉满至高潮阈值（下回合必然失控），获得 ",
+      "2 点能量并抽 2 张牌。"
+    ]
+  },
+  "arknsfw:LubricantPotion": {
+    "NAME": "拘束润滑剂",
+    "DESCRIPTIONS": [
+      "获得 ",
+      "点格挡，抽 2 张牌。兴奋 +8。"
+    ]
+  },
+  "arknsfw:MotherNectarPotion": {
+    "NAME": "母乳蜜露",
+    "DESCRIPTIONS": [
+      "回复 ",
+      "点生命（海沫改为格挡）。受孕 +10；怀孕时改为孕程 +10。"
+    ]
+  }
 }

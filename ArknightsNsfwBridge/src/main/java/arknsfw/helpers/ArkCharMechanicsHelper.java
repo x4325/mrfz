@@ -229,6 +229,28 @@ public final class ArkCharMechanicsHelper {
         return p == null ? 0 : p.amount;
     }
 
+    /** 治疗兼容：海沫（禁疗）改为获得等量格挡，其余角色正常回血。 */
+    public static void healOrBlock(AbstractPlayer p, int amount) {
+        if (p == null || amount <= 0) {
+            return;
+        }
+        boolean inCombat = AbstractDungeon.getCurrRoom() != null
+                && AbstractDungeon.getCurrRoom().phase
+                == com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase.COMBAT;
+        if (ArkCharacterSetup.isHighmoreRun()) {
+            if (inCombat) {
+                AbstractDungeon.actionManager.addToBottom(
+                        new com.megacrit.cardcrawl.actions.common.GainBlockAction(p, amount));
+            }
+            // 非战斗中海沫无法受益（禁疗），静默跳过
+        } else if (inCombat) {
+            AbstractDungeon.actionManager.addToBottom(
+                    new com.megacrit.cardcrawl.actions.common.HealAction(p, p, amount));
+        } else {
+            p.heal(amount);
+        }
+    }
+
     public static void boostManifold(int amount) {
         if (!ArkCharacterSetup.isMuelsyseRun() || amount <= 0 || AbstractDungeon.player == null) {
             return;

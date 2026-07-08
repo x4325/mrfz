@@ -12,8 +12,8 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
  */
 public final class BridgeWatchdog {
 
-    /** 0.4.6 指纹类：拘束装备遗物（0.4.6 新增）。 */
-    private static final String MARKER_CLASS = "arknsfw.relics.equipment.RopeBindRelic";
+    /** 0.6.0 指纹类：堕落模式助手（0.6.0 新增）。 */
+    private static final String MARKER_CLASS = "arknsfw.helpers.ArkFallMode";
     private static final Color WARN = new Color(1.0F, 0.35F, 0.35F, 1.0F);
     private static String status = null;
 

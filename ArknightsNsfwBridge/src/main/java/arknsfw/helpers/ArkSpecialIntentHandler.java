@@ -66,6 +66,7 @@ public final class ArkSpecialIntentHandler implements SpecialIntentHandler {
                 addPower(player, monster, new AshShamePower(player, 1));
                 addPower(player, monster, new CoreStrainPower(player, 1));
                 addPower(player, monster, new WeakPower(player, 1, false));
+                addPower(player, monster, new arknsfw.powers.fall.PleasureDependencePower(player, 1));
                 break;
             case CREAMPIE: {
                 boolean combo = IntentComboHelper.consumeIfMatches(EnemyIntentType.CREAMPIE);
@@ -89,12 +90,14 @@ public final class ArkSpecialIntentHandler implements SpecialIntentHandler {
                 NsfwRunStats.addFertility(0, 7, false);
                 addPower(player, monster, new FakePregnantPower(player, 2));
                 addPower(player, monster, new AphrodisiacPower(player, 1));
+                addPower(player, monster, new arknsfw.powers.fall.AphroToxinPower(player, 4));
                 ArkCharMechanicsHelper.gainCloudEnergy(1);
                 break;
             case TEASE:
                 NsfwRunStats.addExcitement(12);
                 addPower(player, monster, new GeothermalPower(player, 1));
                 addPower(player, monster, new VolcanicFlushPower(player, 1));
+                addPower(player, monster, new arknsfw.powers.fall.SensitivePower(player, 2));
                 ArkCharMechanicsHelper.applyFireMarkPower(player, 1);
                 break;
             case HUMILIATE: {
@@ -159,6 +162,7 @@ public final class ArkSpecialIntentHandler implements SpecialIntentHandler {
                 addPower(player, monster, new BubbleGagPower(player, 1));
                 addPower(player, monster, new LeakPower(player, 1));
                 addPower(player, monster, new WeakPower(player, 1, false));
+                addPower(player, monster, new arknsfw.powers.fall.PleasureDependencePower(player, 1));
                 break;
             case CREAMPIE: {
                 boolean combo = IntentComboHelper.consumeIfMatches(EnemyIntentType.CREAMPIE);
@@ -185,11 +189,13 @@ public final class ArkSpecialIntentHandler implements SpecialIntentHandler {
                 addPower(player, monster, new FakePregnantPower(player, 2));
                 addPower(player, monster, new AphrodisiacPower(player, 1));
                 addPower(player, monster, new HydrationPower(player, 1));
+                addPower(player, monster, new arknsfw.powers.fall.AphroToxinPower(player, 4));
                 break;
             case TEASE:
                 NsfwRunStats.addExcitement(12);
                 addPower(player, monster, new HydrationPower(player, 1));
                 addPower(player, monster, new CloneEchoPower(player, 1));
+                addPower(player, monster, new arknsfw.powers.fall.SensitivePower(player, 2));
                 if (ArkCharMechanicsHelper.isCultivating()) {
                     ArkCharMechanicsHelper.applyRootage(player, 1);
                 }
