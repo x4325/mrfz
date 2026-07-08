@@ -29,6 +29,12 @@ public final class ArkGearSetHelper {
                 n++;
             }
         }
+        // 欲望装备（震动棒/乳环/阴环/墨书/转换器/怀表）同样计入套装件数
+        for (String id : ArkFallMode.GEAR_IDS) {
+            if (p.hasRelic(id)) {
+                n++;
+            }
+        }
         return n;
     }
 
