@@ -12,10 +12,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
-import com.megacrit.cardcrawl.rooms.CampfireUI;
-import com.megacrit.cardcrawl.rooms.RestRoom;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
@@ -254,12 +251,6 @@ public class Haruka extends CustomPlayer {
         CardCrawlGame.sound.playA("ATTACK_HEAVY", -0.3f);
     }
 
-    /** 营火菜单态用 Spine；全屏 shoulder 透明区会变黑盖住按钮。 */
-    @Override
-    public void render(SpriteBatch sb) {
-        if (this.stance != null) {
-            this.stance.render(sb);
-        }
 
 
     // ================= 骨骼动画触发 =================
@@ -304,4 +295,21 @@ public class Haruka extends CustomPlayer {
             playCharAnimation("Die");
         }
     }
+
+    /** 营火界面：全屏 shoulder 的透明区会渲染成黑色盖住按钮，改用 Spine 模型/受控渲染。 */
+    @Override
+    public void render(com.badlogic.gdx.graphics.g2d.SpriteBatch sb) {
+        if (com.megacrit.cardcrawl.dungeons.AbstractDungeon.getCurrRoom()
+                instanceof com.megacrit.cardcrawl.rooms.RestRoom) {
+            sb.setColor(com.badlogic.gdx.graphics.Color.WHITE);
+            if (this.atlas != null) {
+                this.renderPlayerImage(sb);
+            }
+            this.hb.render(sb);
+            this.healthHb.render(sb);
+            return;
+        }
+        super.render(sb);
+    }
+
 }

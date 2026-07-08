@@ -5,7 +5,7 @@
     "Private"
   ],
   "description": "妮芙 (Nymph) SFW character mod. Mechanism: 咒灵. NSFW content in ArknightsNsfwBridge.",
-  "version": "0.5.1-gearsplit",
+  "version": "0.5.2-restfix2",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.0",
   "dependencies": [
