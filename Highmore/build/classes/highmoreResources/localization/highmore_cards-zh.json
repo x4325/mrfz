@@ -1,42 +1,42 @@
 {
   "highmore:Strike": {
-    "NAME": "海沫击",
+    "NAME": "碎浪",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "highmore:Defend": {
-    "NAME": "海沫御",
+    "NAME": "聚沫",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "highmore:Jab": {
-    "NAME": "海沫刺",
+    "NAME": "渊刺",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "highmore:Ward": {
-    "NAME": "海沫护",
+    "NAME": "潮垒",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "highmore:Cut": {
-    "NAME": "海沫斩",
+    "NAME": "镰痕",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "highmore:Surge": {
-    "NAME": "海沫涌",
-    "DESCRIPTION": "获得 !M! 点 [E] 力量。"
+    "NAME": "暗涌",
+    "DESCRIPTION": "获得 !M! 点力量。"
   },
   "highmore:TideReap": {
-    "NAME": "潮汐收割",
+    "NAME": "引渡之汐",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 收割。"
   },
   "highmore:ScytheSwing": {
-    "NAME": "镰刀挥斩",
+    "NAME": "镰月弧光",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "highmore:SaltHarvest": {
-    "NAME": "盐雾收割",
+    "NAME": "盐骨归仓",
     "DESCRIPTION": "造成 !D! 点伤害。获得 2 收割。"
   },
   "highmore:BrineWall": {
-    "NAME": "盐墙",
+    "NAME": "卤盐之垒",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "highmore:BloodRush": {

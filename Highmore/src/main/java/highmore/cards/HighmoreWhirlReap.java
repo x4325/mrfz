@@ -14,7 +14,7 @@ public class HighmoreWhirlReap extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("WhirlReap");
 
     public HighmoreWhirlReap() {
-        super(ID, 2, CardType.ATTACK, CardRarity.RARE, CardTarget.ALL_ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.RARE, CardTarget.ALL_ENEMY, "card_highmore_whirlreap.png");
         baseDamage = 5;
         isMultiDamage = true;
     }

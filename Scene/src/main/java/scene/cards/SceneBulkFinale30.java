@@ -14,7 +14,7 @@ public class SceneBulkFinale30 extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("BulkFinale30");
 
     public SceneBulkFinale30() {
-        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_scene_bulkfinale30.png");
         baseDamage = 13;
     }
 

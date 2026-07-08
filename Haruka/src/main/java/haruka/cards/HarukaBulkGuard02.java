@@ -14,7 +14,7 @@ public class HarukaBulkGuard02 extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("BulkGuard02");
 
     public HarukaBulkGuard02() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_haruka_bulkguard02.png");
         baseBlock = 6;
     }
 

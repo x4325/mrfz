@@ -16,7 +16,7 @@ public class HarukaFireworkPrep extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("FireworkPrep");
 
     public HarukaFireworkPrep() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_haruka_fireworkprep.png");
         baseBlock = 6;
     }
 

@@ -12,7 +12,7 @@ public class HighmoreDeadDrift extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("DeadDrift");
 
     public HighmoreDeadDrift() {
-        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
+        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF, "card_highmore_deaddrift.png");
         baseMagicNumber = magicNumber = 1;
     }
 

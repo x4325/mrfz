@@ -12,7 +12,7 @@ public class HighmoreJab extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("Jab");
 
     public HighmoreJab() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_highmore_jab.png");
         baseDamage = 8;
     }
 

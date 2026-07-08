@@ -16,7 +16,7 @@ public class SceneLongExposure extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("LongExposure");
 
     public SceneLongExposure() {
-        super(ID, 2, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY, "card_scene_longexposure.png");
         baseDamage = 12;
     }
 

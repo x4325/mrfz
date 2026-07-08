@@ -14,7 +14,7 @@ public class SceneBulkSweep04 extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("BulkSweep04");
 
     public SceneBulkSweep04() {
-        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ALL_ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ALL_ENEMY, "card_scene_bulksweep04.png");
         baseDamage = 7;
         isMultiDamage = true;
     }

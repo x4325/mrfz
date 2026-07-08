@@ -10,7 +10,7 @@ public class HighmoreWard extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("Ward");
 
     public HighmoreWard() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_highmore_ward.png");
         baseBlock = 7;
     }
 

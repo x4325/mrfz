@@ -15,7 +15,7 @@ public class HighmoreBulkFinale30 extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("BulkFinale30");
 
     public HighmoreBulkFinale30() {
-        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_highmore_bulkfinale30.png");
         baseDamage = 13;
     }
 

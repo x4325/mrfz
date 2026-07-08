@@ -1,27 +1,27 @@
 {
   "archetto:Strike": {
-    "NAME": "空弦击",
+    "NAME": "拨弦",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "archetto:Defend": {
-    "NAME": "空弦御",
+    "NAME": "休止符",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "archetto:Jab": {
-    "NAME": "空弦刺",
+    "NAME": "断奏",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "archetto:Ward": {
-    "NAME": "空弦护",
+    "NAME": "持续音",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "archetto:Cut": {
-    "NAME": "空弦斩",
+    "NAME": "切分音",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "archetto:Surge": {
-    "NAME": "空弦涌",
-    "DESCRIPTION": "获得 !M! 点 [E] 力量。"
+    "NAME": "渐强",
+    "DESCRIPTION": "获得 !M! 点力量。"
   },
   "archetto:QuickShot": {
     "NAME": "速射",
@@ -32,7 +32,7 @@
     "DESCRIPTION": "获得 !M! 瞄准。"
   },
   "archetto:BurstArrow": {
-    "NAME": "连射",
+    "NAME": "震音连射",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
   },
   "archetto:Reload": {
@@ -40,11 +40,11 @@
     "DESCRIPTION": "获得 !M! 瞄准。抽 1 张牌。"
   },
   "archetto:FanVolley": {
-    "NAME": "扇形齐射",
+    "NAME": "琶音扫射",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 1 瞄准。"
   },
   "archetto:WindPrep": {
-    "NAME": "风备",
+    "NAME": "起拍预备",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
   },
   "archetto:Concerto": {
@@ -52,7 +52,7 @@
     "DESCRIPTION": "每回合开始时获得 !M! 瞄准。"
   },
   "archetto:PierceShot": {
-    "NAME": "穿透箭",
+    "NAME": "破空强音",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "archetto:BulkStrike01": {

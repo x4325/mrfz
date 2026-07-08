@@ -14,7 +14,7 @@ public class ArchettoBulkSweep04 extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("BulkSweep04");
 
     public ArchettoBulkSweep04() {
-        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ALL_ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ALL_ENEMY, "card_archetto_bulksweep04.png");
         baseDamage = 7;
         isMultiDamage = true;
     }

@@ -11,7 +11,7 @@ public class SceneSurge extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("Surge");
 
     public SceneSurge() {
-        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
+        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF, "card_scene_surge.png");
         baseMagicNumber = magicNumber = 2;
     }
 

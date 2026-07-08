@@ -14,7 +14,7 @@ public class ArchettoBulkGuard02 extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("BulkGuard02");
 
     public ArchettoBulkGuard02() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_archetto_bulkguard02.png");
         baseBlock = 6;
     }
 

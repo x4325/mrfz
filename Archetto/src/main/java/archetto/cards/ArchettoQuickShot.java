@@ -16,7 +16,7 @@ public class ArchettoQuickShot extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("QuickShot");
 
     public ArchettoQuickShot() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_archetto_quickshot.png");
         baseDamage = 8;
     }
 

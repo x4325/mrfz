@@ -14,7 +14,7 @@ public class HighmoreBulkSweep04 extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("BulkSweep04");
 
     public HighmoreBulkSweep04() {
-        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ALL_ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ALL_ENEMY, "card_highmore_bulksweep04.png");
         baseDamage = 7;
         isMultiDamage = true;
     }

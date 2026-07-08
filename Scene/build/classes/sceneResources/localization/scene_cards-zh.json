@@ -1,34 +1,34 @@
 {
   "scene:Strike": {
-    "NAME": "稀音击",
+    "NAME": "打板",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "scene:Defend": {
-    "NAME": "稀音御",
+    "NAME": "遮光罩",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "scene:Jab": {
-    "NAME": "稀音刺",
+    "NAME": "抓帧",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "scene:Ward": {
-    "NAME": "稀音护",
+    "NAME": "防抖",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "scene:Cut": {
-    "NAME": "稀音斩",
+    "NAME": "剪辑",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "scene:Surge": {
-    "NAME": "稀音涌",
-    "DESCRIPTION": "获得 !M! 点 [E] 力量。"
+    "NAME": "增感",
+    "DESCRIPTION": "获得 !M! 点力量。"
   },
   "scene:FocusShot": {
-    "NAME": "对焦",
+    "NAME": "合焦",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 层 NL 取景。"
   },
   "scene:ShutterGuard": {
-    "NAME": "快门格挡",
+    "NAME": "快门优先",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 层 NL 取景。"
   },
   "scene:Snapshot": {
@@ -44,7 +44,7 @@
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 取景。 NL 若取景不少于 2 层：抽 1 张牌。"
   },
   "scene:LongExposure": {
-    "NAME": "长曝光",
+    "NAME": "星轨曝光",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 每有 1 取景，额外造成 2 点伤害。"
   },
   "scene:Develop": {
@@ -52,7 +52,7 @@
     "DESCRIPTION": "获得 !B! 点格挡。 NL 消耗 2 取景，回复 6 点生命。"
   },
   "scene:FreezeFrame": {
-    "NAME": "定格",
+    "NAME": "一帧永驻",
     "DESCRIPTION": "获得 !B! 点格挡。获得 2 取景。"
   },
   "scene:BulkStrike01": {

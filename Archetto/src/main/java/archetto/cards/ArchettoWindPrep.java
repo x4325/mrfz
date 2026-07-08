@@ -16,7 +16,7 @@ public class ArchettoWindPrep extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("WindPrep");
 
     public ArchettoWindPrep() {
-        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF, "card_archetto_windprep.png");
         baseBlock = 7;
     }
 

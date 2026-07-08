@@ -12,7 +12,7 @@ public class HighmoreBulkGuard02 extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("BulkGuard02");
 
     public HighmoreBulkGuard02() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_highmore_bulkguard02.png");
         baseBlock = 6;
     }
 

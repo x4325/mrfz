@@ -14,7 +14,7 @@ public class SceneBulkGuard02 extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("BulkGuard02");
 
     public SceneBulkGuard02() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_scene_bulkguard02.png");
         baseBlock = 6;
     }
 

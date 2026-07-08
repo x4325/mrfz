@@ -12,7 +12,7 @@ public class ArchettoJab extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("Jab");
 
     public ArchettoJab() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_archetto_jab.png");
         baseDamage = 8;
     }
 

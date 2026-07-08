@@ -1,34 +1,34 @@
 {
   "haruka:Strike": {
-    "NAME": "遥击",
+    "NAME": "宵宫一闪",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "haruka:Defend": {
-    "NAME": "遥御",
+    "NAME": "祭伞",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "haruka:Jab": {
-    "NAME": "遥刺",
+    "NAME": "挑灯",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "haruka:Ward": {
-    "NAME": "遥护",
+    "NAME": "注连绳",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "haruka:Cut": {
-    "NAME": "遥斩",
+    "NAME": "焰断",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "haruka:Surge": {
-    "NAME": "遥涌",
-    "DESCRIPTION": "获得 !M! 点 [E] 力量。"
+    "NAME": "气焰",
+    "DESCRIPTION": "获得 !M! 点力量。"
   },
   "haruka:SparkKick": {
-    "NAME": "火花踢",
+    "NAME": "踏火起舞",
     "DESCRIPTION": "造成 !D! 点伤害。 NL （攻击时累积花火）"
   },
   "haruka:FireworkPrep": {
-    "NAME": "花火预备",
+    "NAME": "装筒",
     "DESCRIPTION": "获得 !B! 点格挡。获得 2 花火。"
   },
   "haruka:FestivalStep": {
@@ -40,7 +40,7 @@
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "haruka:AshGuard": {
-    "NAME": "灰烬护",
+    "NAME": "余烬披风",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "haruka:FinaleMark": {
@@ -48,7 +48,7 @@
     "DESCRIPTION": "每回合开始时获得 !M! 花火。"
   },
   "haruka:SparkWave": {
-    "NAME": "火花波",
+    "NAME": "千轮菊",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。"
   },
   "haruka:EncoreShout": {

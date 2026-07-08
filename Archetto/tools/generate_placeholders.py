@@ -17,6 +17,16 @@ def solid(rel, w, h, label=None):
         ImageDraw.Draw(img).text((10, 10), label, fill=(220, 220, 220, 255))
     img.save(p)
 
+def sync_small_orb():
+    """卡牌描述 [E] 使用 char/small_orb.png，须与 orbs/1 一致。"""
+    src = ROOT / "orbs/1.png"
+    dst = ROOT / "char/small_orb.png"
+    if not src.exists() or src.stat().st_size <= 2000:
+        solid("char/small_orb.png", 64, 64, "orb")
+        return
+    img = Image.open(src).convert("RGBA")
+    img.resize((64, 64), Image.Resampling.LANCZOS).save(dst)
+
 if __name__ == "__main__":
     # 512 + 1024 card backgrounds + energy
     for bg in ("bg_attack", "bg_skill", "bg_power"):
@@ -28,7 +38,6 @@ if __name__ == "__main__":
     solid("char/char_shoulder.png", 1920, 1136, "空弦")
     solid("char/char_shoulder2.png", 1920, 1136, "空弦")
     solid("char/corpse.png", 512, 512, "空弦")
-    solid("char/small_orb.png", 64, 64, "orb")
     # charSelect
     solid("charSelect/button.png", 240, 240, "空弦")
     solid("charSelect/portrait.png", 480, 600, "空弦")
@@ -41,4 +50,5 @@ if __name__ == "__main__":
     # relic + outline
     solid("relics/relic_starter.png", 128, 128, "starter")
     solid("relics/outline/relic_starter.png", 128, 128, "starter")
+    sync_small_orb()
     print("archetto placeholder images ok")

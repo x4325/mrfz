@@ -16,7 +16,7 @@ public class ArchettoFanVolley extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("FanVolley");
 
     public ArchettoFanVolley() {
-        super(ID, 2, CardType.ATTACK, CardRarity.RARE, CardTarget.ALL_ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.RARE, CardTarget.ALL_ENEMY, "card_archetto_fanvolley.png");
         baseDamage = 4;
     }
 

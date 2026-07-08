@@ -16,7 +16,7 @@ public class ScenePanScan extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("PanScan");
 
     public ScenePanScan() {
-        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_scene_panscan.png");
         baseDamage = 9;
     }
 

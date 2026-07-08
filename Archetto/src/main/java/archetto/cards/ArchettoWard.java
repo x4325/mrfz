@@ -10,7 +10,7 @@ public class ArchettoWard extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("Ward");
 
     public ArchettoWard() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_archetto_ward.png");
         baseBlock = 7;
     }
 

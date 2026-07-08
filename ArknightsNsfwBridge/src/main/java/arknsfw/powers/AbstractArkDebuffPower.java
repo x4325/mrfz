@@ -40,6 +40,9 @@ public abstract class AbstractArkDebuffPower extends AbstractPower {
         } else {
             loadRegion(vanillaRegion);
         }
+        if (this.region48 == null) {
+            loadRegion("flex");
+        }
     }
 
     public boolean isPermanentlyLocked() {

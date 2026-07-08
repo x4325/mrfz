@@ -15,7 +15,7 @@ public class NymphDreadGuard extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("DreadGuard");
 
     public NymphDreadGuard() {
-        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF, "card_nymph_dreadguard.png");
         baseBlock = 9;
     }
 

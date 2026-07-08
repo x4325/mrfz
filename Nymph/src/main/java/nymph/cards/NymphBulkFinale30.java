@@ -16,7 +16,7 @@ public class NymphBulkFinale30 extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("BulkFinale30");
 
     public NymphBulkFinale30() {
-        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_nymph_bulkfinale30.png");
         baseDamage = 13;
     }
 

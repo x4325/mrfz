@@ -14,7 +14,7 @@ public class HarukaBulkFinale30 extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("BulkFinale30");
 
     public HarukaBulkFinale30() {
-        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_haruka_bulkfinale30.png");
         baseDamage = 13;
     }
 

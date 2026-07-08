@@ -18,7 +18,7 @@ public class NymphCurseWave extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("CurseWave");
 
     public NymphCurseWave() {
-        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY, "card_nymph_cursewave.png");
         baseDamage = 7;
         baseMagicNumber = magicNumber = 1;
     }

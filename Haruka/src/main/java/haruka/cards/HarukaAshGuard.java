@@ -15,7 +15,7 @@ public class HarukaAshGuard extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("AshGuard");
 
     public HarukaAshGuard() {
-        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF, "card_haruka_ashguard.png");
         baseBlock = 10;
     }
 

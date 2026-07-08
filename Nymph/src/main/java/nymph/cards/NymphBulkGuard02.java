@@ -16,7 +16,7 @@ public class NymphBulkGuard02 extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("BulkGuard02");
 
     public NymphBulkGuard02() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_nymph_bulkguard02.png");
         baseBlock = 6;
     }
 

@@ -16,7 +16,7 @@ public class NymphBulkSweep04 extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("BulkSweep04");
 
     public NymphBulkSweep04() {
-        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ALL_ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ALL_ENEMY, "card_nymph_bulksweep04.png");
         baseDamage = 7;
         isMultiDamage = true;
     }

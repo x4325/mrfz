@@ -14,7 +14,7 @@ public class HarukaBulkSweep04 extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("BulkSweep04");
 
     public HarukaBulkSweep04() {
-        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ALL_ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ALL_ENEMY, "card_haruka_bulksweep04.png");
         baseDamage = 7;
         isMultiDamage = true;
     }

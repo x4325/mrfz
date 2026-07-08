@@ -11,7 +11,7 @@ public class ArchettoSurge extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("Surge");
 
     public ArchettoSurge() {
-        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
+        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF, "card_archetto_surge.png");
         baseMagicNumber = magicNumber = 2;
     }
 

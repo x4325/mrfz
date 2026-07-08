@@ -14,7 +14,7 @@ public class ArchettoBulkFinale30 extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("BulkFinale30");
 
     public ArchettoBulkFinale30() {
-        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_archetto_bulkfinale30.png");
         baseDamage = 13;
     }
 

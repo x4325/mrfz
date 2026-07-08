@@ -12,7 +12,7 @@ public class HarukaJab extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("Jab");
 
     public HarukaJab() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_haruka_jab.png");
         baseDamage = 8;
     }
 

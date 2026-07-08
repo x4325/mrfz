@@ -12,7 +12,7 @@ public class HarukaStrike extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("Strike");
 
     public HarukaStrike() {
-        super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY, "card_strike.png");
+        super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY, "card_haruka_strike.png");
         baseDamage = 6;
         this.tags.add(CardTags.STARTER_STRIKE);
     }
