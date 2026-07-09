@@ -1,3 +1,3 @@
 idle/char_332_archet
-skins/char_332_archet_sale_14/char_332_archet_sale_14
 skins/char_332_archet_shining_1/char_332_archet_shining_1
+skins/char_332_archet_sale_14/char_332_archet_sale_14

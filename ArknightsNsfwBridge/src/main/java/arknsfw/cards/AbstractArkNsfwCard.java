@@ -36,4 +36,14 @@ public abstract class AbstractArkNsfwCard extends CustomCard {
         initializeTitle();
         initializeDescription();
     }
+
+    /** 升级描述安全应用：UPGRADE_DESCRIPTION 缺失时退回 DESCRIPTION，避免 NPE 闪退。 */
+    protected void applyUpgradeDescription() {
+        String upgradeText = cardStrings.UPGRADE_DESCRIPTION;
+        if (upgradeText == null || upgradeText.isEmpty()) {
+            upgradeText = cardStrings.DESCRIPTION;
+        }
+        rawDescription = upgradeText;
+        initializeDescription();
+    }
 }

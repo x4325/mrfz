@@ -43,8 +43,7 @@ public class FeverCaress extends AbstractArkNsfwCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(3);
-            rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
+            applyUpgradeDescription();
         }
     }
 

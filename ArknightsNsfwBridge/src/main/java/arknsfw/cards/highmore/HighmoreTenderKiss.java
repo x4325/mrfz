@@ -24,7 +24,7 @@ public class HighmoreTenderKiss extends AbstractArkNsfwCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, magicNumber, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
-        NsfwRunStats.addExcitement(12);
+        NsfwRunStats.addExcitement(8);
     }
 
     @Override

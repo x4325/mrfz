@@ -16,12 +16,15 @@ public class SceneLongExposure extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("LongExposure");
 
     public SceneLongExposure() {
-        super(ID, 2, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY, "card_scene_longexposure.png");
         baseDamage = 12;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof scene.characters.Scene) {
+            ((scene.characters.Scene) p).playCharAnimation("Skill_1");
+        }
         int bonus = FocusPower.get(p) * 2;
         addToBot(new DamageAction(m, new DamageInfo(p, damage + bonus, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));
     }

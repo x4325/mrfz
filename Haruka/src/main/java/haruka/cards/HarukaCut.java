@@ -12,7 +12,7 @@ public class HarukaCut extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("Cut");
 
     public HarukaCut() {
-        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_haruka_cut.png");
         baseDamage = 13;
     }
 

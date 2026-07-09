@@ -213,17 +213,42 @@ public final class ArkCharMechanicsHelper {
 
     public static void applyHexPower(AbstractPlayer p, int amount) {
         if (!ArkCharacterSetup.isNymphRun() || p == null || amount <= 0) return;
-        AbstractPower existing = p.getPower(HexPower.POWER_ID);
-        if (existing == null) {
+        // 咒灵是敌方 debuff：施加给随机存活敌人
+        if (AbstractDungeon.getCurrRoom() == null || AbstractDungeon.getMonsters() == null) return;
+        com.megacrit.cardcrawl.monsters.AbstractMonster pick =
+                AbstractDungeon.getMonsters().getRandomMonster(true);
+        if (pick != null) {
             AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(p, p, new HexPower(p, amount), amount));
-        } else { existing.stackPower(amount); }
+                new ApplyPowerAction(pick, p, new HexPower(pick, amount), amount));
+        }
     }
 
     public static int hexAmount() {
         if (!ArkCharacterSetup.isNymphRun() || AbstractDungeon.player == null) return 0;
         AbstractPower p = AbstractDungeon.player.getPower(HexPower.POWER_ID);
         return p == null ? 0 : p.amount;
+    }
+
+    /** 治疗兼容：海沫（禁疗）改为获得等量格挡，其余角色正常回血。 */
+    public static void healOrBlock(AbstractPlayer p, int amount) {
+        if (p == null || amount <= 0) {
+            return;
+        }
+        boolean inCombat = AbstractDungeon.getCurrRoom() != null
+                && AbstractDungeon.getCurrRoom().phase
+                == com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase.COMBAT;
+        if (ArkCharacterSetup.isHighmoreRun()) {
+            if (inCombat) {
+                AbstractDungeon.actionManager.addToBottom(
+                        new com.megacrit.cardcrawl.actions.common.GainBlockAction(p, amount));
+            }
+            // 非战斗中海沫无法受益（禁疗），静默跳过
+        } else if (inCombat) {
+            AbstractDungeon.actionManager.addToBottom(
+                    new com.megacrit.cardcrawl.actions.common.HealAction(p, p, amount));
+        } else {
+            p.heal(amount);
+        }
     }
 
     public static void boostManifold(int amount) {

@@ -1,254 +1,126 @@
 {
   "haruka:Strike": {
-    "NAME": "遥击",
+    "NAME": "宵宫一闪",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "haruka:Defend": {
-    "NAME": "遥御",
+    "NAME": "祭伞",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "haruka:Jab": {
-    "NAME": "遥刺",
+    "NAME": "挑灯",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "haruka:Ward": {
-    "NAME": "遥护",
+    "NAME": "注连绳",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "haruka:Cut": {
-    "NAME": "遥斩",
+    "NAME": "焰断",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "haruka:Surge": {
-    "NAME": "遥涌",
-    "DESCRIPTION": "获得 !M! 点 [E] 力量。"
+    "NAME": "气焰",
+    "DESCRIPTION": "获得 !M! 点力量。"
   },
   "haruka:SparkKick": {
-    "NAME": "火花踢",
+    "NAME": "踏火起舞",
     "DESCRIPTION": "造成 !D! 点伤害。 NL （攻击时累积花火）"
   },
   "haruka:FireworkPrep": {
-    "NAME": "花火预备",
+    "NAME": "装筒",
     "DESCRIPTION": "获得 !B! 点格挡。获得 2 花火。"
   },
   "haruka:FestivalStep": {
     "NAME": "祭步",
-    "DESCRIPTION": "获得 3 花火。抽 1 张牌。"
+    "DESCRIPTION": "获得 !M! 花火。抽 1 张牌。"
   },
   "haruka:DragonDance": {
     "NAME": "龙舞",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "haruka:AshGuard": {
-    "NAME": "灰烬护",
+    "NAME": "余烬披风",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "haruka:FinaleMark": {
     "NAME": "终章",
-    "DESCRIPTION": "获得 4 花火。"
+    "DESCRIPTION": "每回合开始时获得 !M! 花火。"
   },
   "haruka:SparkWave": {
-    "NAME": "火花波",
+    "NAME": "千轮菊",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。"
   },
   "haruka:EncoreShout": {
-    "NAME": " encore 呐喊",
-    "DESCRIPTION": "获得 1 花火。获得 [E] 。"
+    "NAME": "安可呐喊",
+    "DESCRIPTION": "获得 !M! 花火和 1 点 [E] 。消耗。"
   },
   "haruka:BulkStrike01": {
-    "NAME": "速击·1",
+    "NAME": "火星",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 花火。"
   },
   "haruka:BulkGuard02": {
-    "NAME": "调息·2",
+    "NAME": "烟幕",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 花火。"
   },
   "haruka:BulkDraw03": {
-    "NAME": "抽换·3",
-    "DESCRIPTION": "抽 1 张牌。获得 1 花火。"
+    "NAME": "燃引",
+    "DESCRIPTION": "抽 1 张牌。获得 !M! 花火。"
   },
   "haruka:BulkSweep04": {
-    "NAME": "波及·4",
+    "NAME": "烟花散射",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 花火。"
   },
   "haruka:BulkFinale05": {
-    "NAME": "星落·5",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 花火，额外造成 6 点伤害并消耗 3 花火。"
+    "NAME": "小引爆",
+    "DESCRIPTION": "造成 !D! 点伤害。获得 2 花火。"
   },
   "haruka:BulkStrike06": {
-    "NAME": "裂空·6",
+    "NAME": "焰尾踢",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 花火。"
   },
   "haruka:BulkGuard07": {
-    "NAME": "缓冲·7",
+    "NAME": "祭典披风",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 花火。"
   },
   "haruka:BulkDraw08": {
-    "NAME": "抽换·8",
-    "DESCRIPTION": "抽 2 张牌。获得 1 花火。"
-  },
-  "haruka:BulkSweep09": {
-    "NAME": "波及·9",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 花火。"
-  },
-  "haruka:BulkFinale10": {
-    "NAME": "飞升·10",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 花火，额外造成 6 点伤害并消耗 3 花火。"
-  },
-  "haruka:BulkStrike11": {
-    "NAME": "回旋·11",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 花火。"
-  },
-  "haruka:BulkGuard12": {
-    "NAME": "布防·12",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 花火。"
-  },
-  "haruka:BulkDraw13": {
-    "NAME": "抽换·13",
-    "DESCRIPTION": "抽 1 张牌。获得 1 花火。"
-  },
-  "haruka:BulkSweep14": {
-    "NAME": "波及·14",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 花火。"
-  },
-  "haruka:BulkFinale15": {
-    "NAME": "星落·15",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 花火，额外造成 6 点伤害并消耗 3 花火。"
-  },
-  "haruka:BulkStrike16": {
-    "NAME": "碎击·16",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 花火。"
-  },
-  "haruka:BulkGuard17": {
-    "NAME": "蓄锐·17",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 花火。"
-  },
-  "haruka:BulkDraw18": {
-    "NAME": "抽换·18",
-    "DESCRIPTION": "抽 2 张牌。获得 1 花火。"
-  },
-  "haruka:BulkSweep19": {
-    "NAME": "波及·19",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 花火。"
-  },
-  "haruka:BulkFinale20": {
-    "NAME": "飞升·20",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 花火，额外造成 6 点伤害并消耗 3 花火。"
-  },
-  "haruka:BulkStrike21": {
-    "NAME": "速击·21",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 花火。"
-  },
-  "haruka:BulkGuard22": {
-    "NAME": "调息·22",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 花火。"
-  },
-  "haruka:BulkDraw23": {
-    "NAME": "抽换·23",
-    "DESCRIPTION": "抽 1 张牌。获得 1 花火。"
-  },
-  "haruka:BulkSweep24": {
-    "NAME": "波及·24",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 花火。"
-  },
-  "haruka:BulkFinale25": {
-    "NAME": "星落·25",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 花火，额外造成 6 点伤害并消耗 3 花火。"
-  },
-  "haruka:BulkStrike26": {
-    "NAME": "裂空·26",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 花火。"
-  },
-  "haruka:BulkGuard27": {
-    "NAME": "缓冲·27",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 花火。"
-  },
-  "haruka:BulkDraw28": {
-    "NAME": "抽换·28",
-    "DESCRIPTION": "抽 2 张牌。获得 1 花火。"
-  },
-  "haruka:BulkSweep29": {
-    "NAME": "波及·29",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 花火。"
+    "NAME": "花火连段",
+    "DESCRIPTION": "抽 2 张牌。获得 !M! 花火。"
   },
   "haruka:BulkFinale30": {
-    "NAME": "飞升·30",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 花火，额外造成 6 点伤害并消耗 3 花火。"
+    "NAME": "压轴烟花",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若花火不少于 6 层：额外造成 12 点伤害。"
   },
-  "haruka:BulkStrike31": {
-    "NAME": "回旋·31",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 花火。"
+  "haruka:EarlyBurst": {
+    "NAME": "提前引爆",
+    "DESCRIPTION": "若花火不少于 6 层：消耗 6 层，对所有敌人造成 !M! 点法术伤害。"
   },
-  "haruka:BulkGuard32": {
-    "NAME": "布防·32",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 花火。"
+  "haruka:GatherFlame": {
+    "NAME": "蓄势",
+    "DESCRIPTION": "获得 !B! 点格挡。获得 2 花火。"
   },
-  "haruka:BulkDraw33": {
-    "NAME": "抽换·33",
-    "DESCRIPTION": "抽 1 张牌。获得 1 花火。"
+  "haruka:FlameHeart": {
+    "NAME": "焰心",
+    "DESCRIPTION": "花火引爆的伤害 +4。"
   },
-  "haruka:BulkSweep34": {
-    "NAME": "波及·34",
+  "haruka:DuetSpark": {
+    "NAME": "双重奏",
+    "DESCRIPTION": "造成 !D! 点伤害两次。"
+  },
+  "haruka:FireTree": {
+    "NAME": "火树银花",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 花火。"
   },
-  "haruka:BulkFinale35": {
-    "NAME": "星落·35",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 花火，额外造成 6 点伤害并消耗 3 花火。"
+  "haruka:AddFuel": {
+    "NAME": "祭火添薪",
+    "DESCRIPTION": "获得 2 花火。消耗。（升级后不再消耗）"
   },
-  "haruka:BulkStrike36": {
-    "NAME": "碎击·36",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 花火。"
+  "haruka:AfterHeat": {
+    "NAME": "余热",
+    "DESCRIPTION": "获得 !B! 点格挡，再获得等同花火层数一半的格挡（最多 9）。"
   },
-  "haruka:BulkGuard37": {
-    "NAME": "蓄锐·37",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 花火。"
-  },
-  "haruka:BulkDraw38": {
-    "NAME": "抽换·38",
-    "DESCRIPTION": "抽 2 张牌。获得 1 花火。"
-  },
-  "haruka:BulkSweep39": {
-    "NAME": "波及·39",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 花火。"
-  },
-  "haruka:BulkFinale40": {
-    "NAME": "飞升·40",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 花火，额外造成 6 点伤害并消耗 3 花火。"
-  },
-  "haruka:BulkStrike41": {
-    "NAME": "速击·41",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 花火。"
-  },
-  "haruka:BulkGuard42": {
-    "NAME": "调息·42",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 花火。"
-  },
-  "haruka:BulkDraw43": {
-    "NAME": "抽换·43",
-    "DESCRIPTION": "抽 1 张牌。获得 1 花火。"
-  },
-  "haruka:BulkSweep44": {
-    "NAME": "波及·44",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 花火。"
-  },
-  "haruka:BulkFinale45": {
-    "NAME": "星落·45",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 花火，额外造成 6 点伤害并消耗 3 花火。"
-  },
-  "haruka:BulkStrike46": {
-    "NAME": "裂空·46",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 花火。"
-  },
-  "haruka:BulkGuard47": {
-    "NAME": "缓冲·47",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 花火。"
-  },
-  "haruka:BulkDraw48": {
-    "NAME": "抽换·48",
-    "DESCRIPTION": "抽 2 张牌。获得 1 花火。"
-  },
-  "haruka:BulkSweep49": {
-    "NAME": "波及·49",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 花火。"
+  "haruka:FinalDance": {
+    "NAME": "终夜舞",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若本场战斗引爆过花火：额外造成 10 点伤害。"
   }
 }

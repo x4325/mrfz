@@ -18,7 +18,7 @@ public class NymphHexBolt extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("HexBolt");
 
     public NymphHexBolt() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_nymph_hexbolt.png");
         baseDamage = 6;
         baseMagicNumber = magicNumber = 2;
     }

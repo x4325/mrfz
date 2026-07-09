@@ -12,7 +12,7 @@ public class SceneJab extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("Jab");
 
     public SceneJab() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_scene_jab.png");
         baseDamage = 8;
     }
 

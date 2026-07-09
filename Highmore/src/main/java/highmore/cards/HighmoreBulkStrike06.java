@@ -5,19 +5,17 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
 import highmore.HighmoreMod;
-import highmore.cards.AbstractHighmoreCard;
 import highmore.powers.ReapPower;
+
+/** 碎浪斩：标准 1 费攻击 + 1 收割。 */
 public class HighmoreBulkStrike06 extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("BulkStrike06");
 
     public HighmoreBulkStrike06() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = 11;
+        baseDamage = 9;
     }
 
     @Override
@@ -29,7 +27,7 @@ public class HighmoreBulkStrike06 extends AbstractHighmoreCard {
     @Override
     public void upgrade() {
         if (!upgraded) {
-            upgradeName(); upgradeDamage(3);
+            upgradeName(); upgradeDamage(4);
         }
     }
 

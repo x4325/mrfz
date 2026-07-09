@@ -15,7 +15,7 @@ public class HighmoreScytheSwing extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("ScytheSwing");
 
     public HighmoreScytheSwing() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_highmore_scytheswing.png");
         baseDamage = 9;
     }
 

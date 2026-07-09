@@ -18,12 +18,15 @@ public class NymphSoulBind extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("SoulBind");
 
     public NymphSoulBind() {
-        super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.ENEMY, "card_nymph_soulbind.png");
         baseMagicNumber = magicNumber = 3;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof nymph.characters.Nymph) {
+            ((nymph.characters.Nymph) p).playCharAnimation("Skill_3_Attack");
+        }
         addToBot(new ApplyPowerAction(m, p, new HexPower(m, magicNumber), magicNumber));
     }
 

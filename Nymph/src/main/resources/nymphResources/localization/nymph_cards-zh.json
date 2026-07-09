@@ -1,50 +1,50 @@
 {
   "nymph:Strike": {
-    "NAME": "妮芙击",
+    "NAME": "挠心",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "nymph:Defend": {
-    "NAME": "妮芙御",
+    "NAME": "帷影",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "nymph:Jab": {
-    "NAME": "妮芙刺",
+    "NAME": "耳语刺",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "nymph:Ward": {
-    "NAME": "妮芙护",
+    "NAME": "梦茧",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "nymph:Cut": {
-    "NAME": "妮芙斩",
+    "NAME": "裂梦",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "nymph:Surge": {
-    "NAME": "妮芙涌",
+    "NAME": "妄念",
     "DESCRIPTION": "获得 !M! 点 [E] 力量。"
   },
   "nymph:HexBolt": {
-    "NAME": "咒击",
+    "NAME": "一缕恶意",
     "DESCRIPTION": "造成 !D! 点伤害。施加 !M! 咒灵。"
   },
   "nymph:FearWhisper": {
-    "NAME": "恐惧低语",
+    "NAME": "枕边细语",
     "DESCRIPTION": "施加 !M! 恐惧。"
   },
   "nymph:HeartSeal": {
-    "NAME": "心锁",
+    "NAME": "心扉落锁",
     "DESCRIPTION": "施加 !M! 心锁与 1 咒灵。"
   },
   "nymph:CurseWave": {
-    "NAME": "咒浪",
+    "NAME": "群魔低语",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害并施加 !M! 咒灵。"
   },
   "nymph:DreadGuard": {
-    "NAME": "惧护",
+    "NAME": "以惧为幕",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "nymph:SoulBind": {
-    "NAME": "缚魂",
+    "NAME": "魂线缠绕",
     "DESCRIPTION": "施加 !M! 咒灵。"
   },
   "nymph:Nightmare": {
@@ -52,203 +52,75 @@
     "DESCRIPTION": "施加 !M! 恐惧。"
   },
   "nymph:VoidCut": {
-    "NAME": "虚斩",
+    "NAME": "裁空",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "nymph:BulkStrike01": {
-    "NAME": "速击·1",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 咒灵。"
+    "NAME": "一点怨怼",
+    "DESCRIPTION": "造成 !D! 点伤害。对目标施加 1 咒灵。"
   },
   "nymph:BulkGuard02": {
-    "NAME": "调息·2",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 咒灵。"
+    "NAME": "影帐",
+    "DESCRIPTION": "获得 !B! 点格挡。对随机敌人施加 1 咒灵。"
   },
   "nymph:BulkDraw03": {
-    "NAME": "抽换·3",
-    "DESCRIPTION": "抽 1 张牌。获得 1 咒灵。"
+    "NAME": "窥梦",
+    "DESCRIPTION": "抽 1 张牌。对随机敌人施加 !M! 咒灵。"
   },
   "nymph:BulkSweep04": {
-    "NAME": "波及·4",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 咒灵。"
+    "NAME": "百鬼夜行",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害并施加 1 咒灵。"
   },
   "nymph:BulkFinale05": {
-    "NAME": "星落·5",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 咒灵，额外造成 6 点伤害并消耗 3 咒灵。"
+    "NAME": "收魂入匣",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若目标咒灵不少于 3 层：额外造成 8 点伤害并移除其 3 层咒灵。"
   },
   "nymph:BulkStrike06": {
-    "NAME": "裂空·6",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 咒灵。"
+    "NAME": "衔怨",
+    "DESCRIPTION": "造成 !D! 点伤害。对目标施加 1 咒灵。"
   },
   "nymph:BulkGuard07": {
-    "NAME": "缓冲·7",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 咒灵。"
+    "NAME": "心墙",
+    "DESCRIPTION": "获得 !B! 点格挡。对随机敌人施加 1 咒灵。"
   },
   "nymph:BulkDraw08": {
-    "NAME": "抽换·8",
-    "DESCRIPTION": "抽 2 张牌。获得 1 咒灵。"
-  },
-  "nymph:BulkSweep09": {
-    "NAME": "波及·9",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 咒灵。"
-  },
-  "nymph:BulkFinale10": {
-    "NAME": "飞升·10",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 咒灵，额外造成 6 点伤害并消耗 3 咒灵。"
-  },
-  "nymph:BulkStrike11": {
-    "NAME": "回旋·11",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 咒灵。"
-  },
-  "nymph:BulkGuard12": {
-    "NAME": "布防·12",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 咒灵。"
-  },
-  "nymph:BulkDraw13": {
-    "NAME": "抽换·13",
-    "DESCRIPTION": "抽 1 张牌。获得 1 咒灵。"
-  },
-  "nymph:BulkSweep14": {
-    "NAME": "波及·14",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 咒灵。"
-  },
-  "nymph:BulkFinale15": {
-    "NAME": "星落·15",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 咒灵，额外造成 6 点伤害并消耗 3 咒灵。"
-  },
-  "nymph:BulkStrike16": {
-    "NAME": "碎击·16",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 咒灵。"
-  },
-  "nymph:BulkGuard17": {
-    "NAME": "蓄锐·17",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 咒灵。"
-  },
-  "nymph:BulkDraw18": {
-    "NAME": "抽换·18",
-    "DESCRIPTION": "抽 2 张牌。获得 1 咒灵。"
-  },
-  "nymph:BulkSweep19": {
-    "NAME": "波及·19",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 咒灵。"
-  },
-  "nymph:BulkFinale20": {
-    "NAME": "飞升·20",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 咒灵，额外造成 6 点伤害并消耗 3 咒灵。"
-  },
-  "nymph:BulkStrike21": {
-    "NAME": "速击·21",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 咒灵。"
-  },
-  "nymph:BulkGuard22": {
-    "NAME": "调息·22",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 咒灵。"
-  },
-  "nymph:BulkDraw23": {
-    "NAME": "抽换·23",
-    "DESCRIPTION": "抽 1 张牌。获得 1 咒灵。"
-  },
-  "nymph:BulkSweep24": {
-    "NAME": "波及·24",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 咒灵。"
-  },
-  "nymph:BulkFinale25": {
-    "NAME": "星落·25",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 咒灵，额外造成 6 点伤害并消耗 3 咒灵。"
-  },
-  "nymph:BulkStrike26": {
-    "NAME": "裂空·26",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 咒灵。"
-  },
-  "nymph:BulkGuard27": {
-    "NAME": "缓冲·27",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 咒灵。"
-  },
-  "nymph:BulkDraw28": {
-    "NAME": "抽换·28",
-    "DESCRIPTION": "抽 2 张牌。获得 1 咒灵。"
-  },
-  "nymph:BulkSweep29": {
-    "NAME": "波及·29",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 咒灵。"
+    "NAME": "噩兆",
+    "DESCRIPTION": "抽 2 张牌。对随机敌人施加 !M! 咒灵。"
   },
   "nymph:BulkFinale30": {
-    "NAME": "飞升·30",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 咒灵，额外造成 6 点伤害并消耗 3 咒灵。"
+    "NAME": "心蚀终局",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若目标咒灵不少于 4 层：额外造成 12 点伤害并移除其 4 层咒灵。"
   },
-  "nymph:BulkStrike31": {
-    "NAME": "回旋·31",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 咒灵。"
+  "nymph:HexSpread": {
+    "NAME": "谣言扩散",
+    "DESCRIPTION": "将目标咒灵层数的一半（向上取整）施加给所有其他敌人。"
   },
-  "nymph:BulkGuard32": {
-    "NAME": "布防·32",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 咒灵。"
+  "nymph:HeartBite": {
+    "NAME": "噬心",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若目标有心锁：额外造成 4 点伤害。"
   },
-  "nymph:BulkDraw33": {
-    "NAME": "抽换·33",
-    "DESCRIPTION": "抽 1 张牌。获得 1 咒灵。"
+  "nymph:FearFeast": {
+    "NAME": "恐惧盛宴",
+    "DESCRIPTION": "对所有敌人施加 1 层恐惧。消耗。"
   },
-  "nymph:BulkSweep34": {
-    "NAME": "波及·34",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 咒灵。"
+  "nymph:HexLink": {
+    "NAME": "红线错系",
+    "DESCRIPTION": "对目标施加 !M! 咒灵。"
   },
-  "nymph:BulkFinale35": {
-    "NAME": "星落·35",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 咒灵，额外造成 6 点伤害并消耗 3 咒灵。"
+  "nymph:NightEcho": {
+    "NAME": "梦魇回响",
+    "DESCRIPTION": "每回合开始时对随机敌人施加 !M! 咒灵。"
   },
-  "nymph:BulkStrike36": {
-    "NAME": "碎击·36",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 咒灵。"
+  "nymph:SpiritClaw": {
+    "NAME": "梦爪",
+    "DESCRIPTION": "造成 !D! 点伤害。对目标施加 1 咒灵。"
   },
-  "nymph:BulkGuard37": {
-    "NAME": "蓄锐·37",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 咒灵。"
+  "nymph:LockTighten": {
+    "NAME": "层层上锁",
+    "DESCRIPTION": "对目标施加 !M! 心锁。抽 1 张牌。"
   },
-  "nymph:BulkDraw38": {
-    "NAME": "抽换·38",
-    "DESCRIPTION": "抽 2 张牌。获得 1 咒灵。"
-  },
-  "nymph:BulkSweep39": {
-    "NAME": "波及·39",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 咒灵。"
-  },
-  "nymph:BulkFinale40": {
-    "NAME": "飞升·40",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 咒灵，额外造成 6 点伤害并消耗 3 咒灵。"
-  },
-  "nymph:BulkStrike41": {
-    "NAME": "速击·41",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 咒灵。"
-  },
-  "nymph:BulkGuard42": {
-    "NAME": "调息·42",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 咒灵。"
-  },
-  "nymph:BulkDraw43": {
-    "NAME": "抽换·43",
-    "DESCRIPTION": "抽 1 张牌。获得 1 咒灵。"
-  },
-  "nymph:BulkSweep44": {
-    "NAME": "波及·44",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 咒灵。"
-  },
-  "nymph:BulkFinale45": {
-    "NAME": "星落·45",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 咒灵，额外造成 6 点伤害并消耗 3 咒灵。"
-  },
-  "nymph:BulkStrike46": {
-    "NAME": "裂空·46",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 咒灵。"
-  },
-  "nymph:BulkGuard47": {
-    "NAME": "缓冲·47",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 咒灵。"
-  },
-  "nymph:BulkDraw48": {
-    "NAME": "抽换·48",
-    "DESCRIPTION": "抽 2 张牌。获得 1 咒灵。"
-  },
-  "nymph:BulkSweep49": {
-    "NAME": "波及·49",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 咒灵。"
+  "nymph:ShadowReap": {
+    "NAME": "影中清算",
+    "DESCRIPTION": "造成 !D! 点伤害，目标每层咒灵额外 +3；然后移除其全部咒灵。"
   }
 }

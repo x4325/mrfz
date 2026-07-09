@@ -162,353 +162,607 @@
     ]
   },
   "arknsfw:SceneWarmCharmRelic": {
-    "NAME": "WarmCharm",
+    "NAME": "温热护符",
     "FLAVOR": "稀音",
     "DESCRIPTIONS": [
-      "兴奋 ≥30 时，攻击 +2 伤害。"
+      "兴奋 ≥30 时，攻击牌伤害 +2。"
     ]
   },
   "arknsfw:SceneBlushStickerRelic": {
-    "NAME": "BlushSticker",
+    "NAME": "绯红贴纸",
     "FLAVOR": "稀音",
     "DESCRIPTIONS": [
       "每打出一张技能牌，兴奋 +4。"
     ]
   },
   "arknsfw:SceneSoftCollarRelic": {
-    "NAME": "SoftCollar",
+    "NAME": "柔软项圈",
     "FLAVOR": "稀音",
     "DESCRIPTIONS": [
       "战斗开始时兴奋 +10。"
     ]
   },
   "arknsfw:ScenePulsePlugRelic": {
-    "NAME": "PulsePlug",
+    "NAME": "脉动塞",
     "FLAVOR": "稀音",
     "DESCRIPTIONS": [
       "每回合开始时兴奋 +6。"
     ]
   },
   "arknsfw:SceneTwinMirrorRelic": {
-    "NAME": "TwinMirror",
+    "NAME": "双子镜",
     "FLAVOR": "稀音",
     "DESCRIPTIONS": [
-      "中出时额外受孕 +5。"
+      "战斗胜利时受孕度 +3。"
     ]
   },
   "arknsfw:SceneMoistFlaskRelic": {
-    "NAME": "MoistFlask",
+    "NAME": "濡湿药瓶",
     "FLAVOR": "稀音",
     "DESCRIPTIONS": [
       "回复生命时兴奋 +8。"
     ]
   },
   "arknsfw:SceneOverflowCoreRelic": {
-    "NAME": "OverflowCore",
+    "NAME": "满溢核心",
     "FLAVOR": "稀音",
     "DESCRIPTIONS": [
       "战斗胜利后兴奋 +20。"
     ]
   },
   "arknsfw:SceneBrandCurseRelic": {
-    "NAME": "BrandCurse",
+    "NAME": "烙印诅咒",
     "FLAVOR": "稀音",
     "DESCRIPTIONS": [
       "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
     ]
   },
   "arknsfw:SceneAltarCurseRelic": {
-    "NAME": "AltarCurse",
+    "NAME": "祭坛诅咒",
     "FLAVOR": "稀音",
     "DESCRIPTIONS": [
-      "无法移除。事件受孕度翻倍。"
+      "无法移除。事件中获得的受孕度翻倍。"
     ]
   },
   "arknsfw:SceneLoopCurseRelic": {
-    "NAME": "LoopCurse",
+    "NAME": "回环诅咒",
     "FLAVOR": "稀音",
     "DESCRIPTIONS": [
-      "无法移除。诅咒牌抽到时额外兴奋 +5。"
+      "无法移除。抽到诅咒牌时兴奋 +5。"
     ]
   },
   "arknsfw:HighmoreWarmCharmRelic": {
-    "NAME": "WarmCharm",
+    "NAME": "温热护符",
     "FLAVOR": "海沫",
     "DESCRIPTIONS": [
-      "兴奋 ≥30 时，攻击 +2 伤害。"
+      "兴奋 ≥30 时，攻击牌伤害 +2。"
     ]
   },
   "arknsfw:HighmoreBlushStickerRelic": {
-    "NAME": "BlushSticker",
+    "NAME": "绯红贴纸",
     "FLAVOR": "海沫",
     "DESCRIPTIONS": [
       "每打出一张技能牌，兴奋 +4。"
     ]
   },
   "arknsfw:HighmoreSoftCollarRelic": {
-    "NAME": "SoftCollar",
+    "NAME": "柔软项圈",
     "FLAVOR": "海沫",
     "DESCRIPTIONS": [
       "战斗开始时兴奋 +10。"
     ]
   },
   "arknsfw:HighmorePulsePlugRelic": {
-    "NAME": "PulsePlug",
+    "NAME": "脉动塞",
     "FLAVOR": "海沫",
     "DESCRIPTIONS": [
       "每回合开始时兴奋 +6。"
     ]
   },
   "arknsfw:HighmoreTwinMirrorRelic": {
-    "NAME": "TwinMirror",
+    "NAME": "双子镜",
     "FLAVOR": "海沫",
     "DESCRIPTIONS": [
-      "中出时额外受孕 +5。"
+      "战斗胜利时受孕度 +3。"
     ]
   },
   "arknsfw:HighmoreMoistFlaskRelic": {
-    "NAME": "MoistFlask",
+    "NAME": "濡湿药瓶",
     "FLAVOR": "海沫",
     "DESCRIPTIONS": [
       "回复生命时兴奋 +8。"
     ]
   },
   "arknsfw:HighmoreOverflowCoreRelic": {
-    "NAME": "OverflowCore",
+    "NAME": "满溢核心",
     "FLAVOR": "海沫",
     "DESCRIPTIONS": [
       "战斗胜利后兴奋 +20。"
     ]
   },
   "arknsfw:HighmoreBrandCurseRelic": {
-    "NAME": "BrandCurse",
+    "NAME": "烙印诅咒",
     "FLAVOR": "海沫",
     "DESCRIPTIONS": [
       "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
     ]
   },
   "arknsfw:HighmoreAltarCurseRelic": {
-    "NAME": "AltarCurse",
+    "NAME": "祭坛诅咒",
     "FLAVOR": "海沫",
     "DESCRIPTIONS": [
-      "无法移除。事件受孕度翻倍。"
+      "无法移除。事件中获得的受孕度翻倍。"
     ]
   },
   "arknsfw:HighmoreLoopCurseRelic": {
-    "NAME": "LoopCurse",
+    "NAME": "回环诅咒",
     "FLAVOR": "海沫",
     "DESCRIPTIONS": [
-      "无法移除。诅咒牌抽到时额外兴奋 +5。"
+      "无法移除。抽到诅咒牌时兴奋 +5。"
     ]
   },
   "arknsfw:ArchettoWarmCharmRelic": {
-    "NAME": "WarmCharm",
+    "NAME": "温热护符",
     "FLAVOR": "空弦",
     "DESCRIPTIONS": [
-      "兴奋 ≥30 时，攻击 +2 伤害。"
+      "兴奋 ≥30 时，攻击牌伤害 +2。"
     ]
   },
   "arknsfw:ArchettoBlushStickerRelic": {
-    "NAME": "BlushSticker",
+    "NAME": "绯红贴纸",
     "FLAVOR": "空弦",
     "DESCRIPTIONS": [
       "每打出一张技能牌，兴奋 +4。"
     ]
   },
   "arknsfw:ArchettoSoftCollarRelic": {
-    "NAME": "SoftCollar",
+    "NAME": "柔软项圈",
     "FLAVOR": "空弦",
     "DESCRIPTIONS": [
       "战斗开始时兴奋 +10。"
     ]
   },
   "arknsfw:ArchettoPulsePlugRelic": {
-    "NAME": "PulsePlug",
+    "NAME": "脉动塞",
     "FLAVOR": "空弦",
     "DESCRIPTIONS": [
       "每回合开始时兴奋 +6。"
     ]
   },
   "arknsfw:ArchettoTwinMirrorRelic": {
-    "NAME": "TwinMirror",
+    "NAME": "双子镜",
     "FLAVOR": "空弦",
     "DESCRIPTIONS": [
-      "中出时额外受孕 +5。"
+      "战斗胜利时受孕度 +3。"
     ]
   },
   "arknsfw:ArchettoMoistFlaskRelic": {
-    "NAME": "MoistFlask",
+    "NAME": "濡湿药瓶",
     "FLAVOR": "空弦",
     "DESCRIPTIONS": [
       "回复生命时兴奋 +8。"
     ]
   },
   "arknsfw:ArchettoOverflowCoreRelic": {
-    "NAME": "OverflowCore",
+    "NAME": "满溢核心",
     "FLAVOR": "空弦",
     "DESCRIPTIONS": [
       "战斗胜利后兴奋 +20。"
     ]
   },
   "arknsfw:ArchettoBrandCurseRelic": {
-    "NAME": "BrandCurse",
+    "NAME": "烙印诅咒",
     "FLAVOR": "空弦",
     "DESCRIPTIONS": [
       "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
     ]
   },
   "arknsfw:ArchettoAltarCurseRelic": {
-    "NAME": "AltarCurse",
+    "NAME": "祭坛诅咒",
     "FLAVOR": "空弦",
     "DESCRIPTIONS": [
-      "无法移除。事件受孕度翻倍。"
+      "无法移除。事件中获得的受孕度翻倍。"
     ]
   },
   "arknsfw:ArchettoLoopCurseRelic": {
-    "NAME": "LoopCurse",
+    "NAME": "回环诅咒",
     "FLAVOR": "空弦",
     "DESCRIPTIONS": [
-      "无法移除。诅咒牌抽到时额外兴奋 +5。"
+      "无法移除。抽到诅咒牌时兴奋 +5。"
     ]
   },
   "arknsfw:HarukaWarmCharmRelic": {
-    "NAME": "WarmCharm",
+    "NAME": "温热护符",
     "FLAVOR": "遥",
     "DESCRIPTIONS": [
-      "兴奋 ≥30 时，攻击 +2 伤害。"
+      "兴奋 ≥30 时，攻击牌伤害 +2。"
     ]
   },
   "arknsfw:HarukaBlushStickerRelic": {
-    "NAME": "BlushSticker",
+    "NAME": "绯红贴纸",
     "FLAVOR": "遥",
     "DESCRIPTIONS": [
       "每打出一张技能牌，兴奋 +4。"
     ]
   },
   "arknsfw:HarukaSoftCollarRelic": {
-    "NAME": "SoftCollar",
+    "NAME": "柔软项圈",
     "FLAVOR": "遥",
     "DESCRIPTIONS": [
       "战斗开始时兴奋 +10。"
     ]
   },
   "arknsfw:HarukaPulsePlugRelic": {
-    "NAME": "PulsePlug",
+    "NAME": "脉动塞",
     "FLAVOR": "遥",
     "DESCRIPTIONS": [
       "每回合开始时兴奋 +6。"
     ]
   },
   "arknsfw:HarukaTwinMirrorRelic": {
-    "NAME": "TwinMirror",
+    "NAME": "双子镜",
     "FLAVOR": "遥",
     "DESCRIPTIONS": [
-      "中出时额外受孕 +5。"
+      "战斗胜利时受孕度 +3。"
     ]
   },
   "arknsfw:HarukaMoistFlaskRelic": {
-    "NAME": "MoistFlask",
+    "NAME": "濡湿药瓶",
     "FLAVOR": "遥",
     "DESCRIPTIONS": [
       "回复生命时兴奋 +8。"
     ]
   },
   "arknsfw:HarukaOverflowCoreRelic": {
-    "NAME": "OverflowCore",
+    "NAME": "满溢核心",
     "FLAVOR": "遥",
     "DESCRIPTIONS": [
       "战斗胜利后兴奋 +20。"
     ]
   },
   "arknsfw:HarukaBrandCurseRelic": {
-    "NAME": "BrandCurse",
+    "NAME": "烙印诅咒",
     "FLAVOR": "遥",
     "DESCRIPTIONS": [
       "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
     ]
   },
   "arknsfw:HarukaAltarCurseRelic": {
-    "NAME": "AltarCurse",
+    "NAME": "祭坛诅咒",
     "FLAVOR": "遥",
     "DESCRIPTIONS": [
-      "无法移除。事件受孕度翻倍。"
+      "无法移除。事件中获得的受孕度翻倍。"
     ]
   },
   "arknsfw:HarukaLoopCurseRelic": {
-    "NAME": "LoopCurse",
+    "NAME": "回环诅咒",
     "FLAVOR": "遥",
     "DESCRIPTIONS": [
-      "无法移除。诅咒牌抽到时额外兴奋 +5。"
+      "无法移除。抽到诅咒牌时兴奋 +5。"
     ]
   },
   "arknsfw:NymphWarmCharmRelic": {
-    "NAME": "WarmCharm",
+    "NAME": "温热护符",
     "FLAVOR": "妮芙",
     "DESCRIPTIONS": [
-      "兴奋 ≥30 时，攻击 +2 伤害。"
+      "兴奋 ≥30 时，攻击牌伤害 +2。"
     ]
   },
   "arknsfw:NymphBlushStickerRelic": {
-    "NAME": "BlushSticker",
+    "NAME": "绯红贴纸",
     "FLAVOR": "妮芙",
     "DESCRIPTIONS": [
       "每打出一张技能牌，兴奋 +4。"
     ]
   },
   "arknsfw:NymphSoftCollarRelic": {
-    "NAME": "SoftCollar",
+    "NAME": "柔软项圈",
     "FLAVOR": "妮芙",
     "DESCRIPTIONS": [
       "战斗开始时兴奋 +10。"
     ]
   },
   "arknsfw:NymphPulsePlugRelic": {
-    "NAME": "PulsePlug",
+    "NAME": "脉动塞",
     "FLAVOR": "妮芙",
     "DESCRIPTIONS": [
       "每回合开始时兴奋 +6。"
     ]
   },
   "arknsfw:NymphTwinMirrorRelic": {
-    "NAME": "TwinMirror",
+    "NAME": "双子镜",
     "FLAVOR": "妮芙",
     "DESCRIPTIONS": [
-      "中出时额外受孕 +5。"
+      "战斗胜利时受孕度 +3。"
     ]
   },
   "arknsfw:NymphMoistFlaskRelic": {
-    "NAME": "MoistFlask",
+    "NAME": "濡湿药瓶",
     "FLAVOR": "妮芙",
     "DESCRIPTIONS": [
       "回复生命时兴奋 +8。"
     ]
   },
   "arknsfw:NymphOverflowCoreRelic": {
-    "NAME": "OverflowCore",
+    "NAME": "满溢核心",
     "FLAVOR": "妮芙",
     "DESCRIPTIONS": [
       "战斗胜利后兴奋 +20。"
     ]
   },
   "arknsfw:NymphBrandCurseRelic": {
-    "NAME": "BrandCurse",
+    "NAME": "烙印诅咒",
     "FLAVOR": "妮芙",
     "DESCRIPTIONS": [
       "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
     ]
   },
   "arknsfw:NymphAltarCurseRelic": {
-    "NAME": "AltarCurse",
+    "NAME": "祭坛诅咒",
     "FLAVOR": "妮芙",
     "DESCRIPTIONS": [
-      "无法移除。事件受孕度翻倍。"
+      "无法移除。事件中获得的受孕度翻倍。"
     ]
   },
   "arknsfw:NymphLoopCurseRelic": {
-    "NAME": "LoopCurse",
+    "NAME": "回环诅咒",
     "FLAVOR": "妮芙",
     "DESCRIPTIONS": [
-      "无法移除。诅咒牌抽到时额外兴奋 +5。"
+      "无法移除。抽到诅咒牌时兴奋 +5。"
+    ]
+  },
+  "arknsfw:HighmorePregnancyMarkRelic": {
+    "NAME": "潮汐孕印",
+    "FLAVOR": "小腹深处像有潮汐在缓慢起伏。",
+    "DESCRIPTIONS": [
+      "（海沫专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
+    ]
+  },
+  "arknsfw:HighmorePregnancyDeliveryRelic": {
+    "NAME": "潮汐分娩纪念",
+    "FLAVOR": "小腹深处像有潮汐在缓慢起伏。",
+    "DESCRIPTIONS": [
+      "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
+      "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
+      "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
+      "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
+      "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
+    ]
+  },
+  "arknsfw:ScenePregnancyMarkRelic": {
+    "NAME": "显影孕印",
+    "FLAVOR": "镜头之下，那个变化谁都看得见。",
+    "DESCRIPTIONS": [
+      "（稀音专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
+    ]
+  },
+  "arknsfw:ScenePregnancyDeliveryRelic": {
+    "NAME": "显影分娩纪念",
+    "FLAVOR": "镜头之下，那个变化谁都看得见。",
+    "DESCRIPTIONS": [
+      "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
+      "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
+      "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
+      "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
+      "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
+    ]
+  },
+  "arknsfw:ArchettoPregnancyMarkRelic": {
+    "NAME": "弦月孕印",
+    "FLAVOR": "拉弓时能感觉到腹部新的重量。",
+    "DESCRIPTIONS": [
+      "（空弦专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
+    ]
+  },
+  "arknsfw:ArchettoPregnancyDeliveryRelic": {
+    "NAME": "弦月分娩纪念",
+    "FLAVOR": "拉弓时能感觉到腹部新的重量。",
+    "DESCRIPTIONS": [
+      "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
+      "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
+      "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
+      "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
+      "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
+    ]
+  },
+  "arknsfw:HarukaPregnancyMarkRelic": {
+    "NAME": "花火孕印",
+    "FLAVOR": "像一枚迟迟不肯绽放的烟花，在身体里发烫。",
+    "DESCRIPTIONS": [
+      "（遥专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
+    ]
+  },
+  "arknsfw:HarukaPregnancyDeliveryRelic": {
+    "NAME": "花火分娩纪念",
+    "FLAVOR": "像一枚迟迟不肯绽放的烟花，在身体里发烫。",
+    "DESCRIPTIONS": [
+      "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
+      "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
+      "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
+      "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
+      "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
+    ]
+  },
+  "arknsfw:NymphPregnancyMarkRelic": {
+    "NAME": "心蚀孕印",
+    "FLAVOR": "低语如今有了两个听众。",
+    "DESCRIPTIONS": [
+      "（妮芙专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
+    ]
+  },
+  "arknsfw:NymphPregnancyDeliveryRelic": {
+    "NAME": "心蚀分娩纪念",
+    "FLAVOR": "低语如今有了两个听众。",
+    "DESCRIPTIONS": [
+      "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
+      "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
+      "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
+      "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
+      "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
+    ]
+  },
+  "arknsfw:RestraintCuffsRelic": {
+    "NAME": "拘束手铐",
+    "FLAVOR": "金属的凉意时刻提醒着她双手不属于自己。",
+    "DESCRIPTIONS": [
+      "每回合开始时，随机一张手牌本回合费用 +1；每次受到攻击伤害，兴奋 +3。"
+    ]
+  },
+  "arknsfw:LeashRelic": {
+    "NAME": "牵引项链",
+    "FLAVOR": "绳端在谁手里，她已经不敢去想。",
+    "DESCRIPTIONS": [
+      "战斗结算时无法选择“拼死抵抗”；每场战斗胜利后被牵引者照料，回复 4 点生命。"
+    ]
+  },
+  "arknsfw:ChastityBeltRelic": {
+    "NAME": "贞操带",
+    "FLAVOR": "钥匙被丢进了海里——他们是这么说的。",
+    "DESCRIPTIONS": [
+      "受孕获取减半；欲望无处发泄，每回合开始兴奋 +4。"
+    ]
+  },
+  "arknsfw:LaceGarterRelic": {
+    "NAME": "蕾丝腿环",
+    "FLAVOR": "大腿内侧的束缚感让每个动作都带着提醒。",
+    "DESCRIPTIONS": [
+      "每场战斗第一次打出技能牌时抽 1 张牌；每回合开始兴奋 +2。"
+    ]
+  },
+  "arknsfw:BellTagRelic": {
+    "NAME": "铃铛铭牌",
+    "FLAVOR": "铭牌上刻着编号，不是名字。",
+    "DESCRIPTIONS": [
+      "战斗开始时铃声令随机一名敌人分神，使其获得 1 层虚弱；你兴奋 +5。"
+    ]
+  },
+  "arknsfw:ClothGagRelic": {
+    "NAME": "布口塞",
+    "FLAVOR": "再痛也只能发出呜咽。",
+    "DESCRIPTIONS": [
+      "每回合第一次失去生命时咬紧布团忍耐，获得 4 点格挡，兴奋 +5。"
+    ]
+  },
+  "arknsfw:RingGagRelic": {
+    "NAME": "环形口枷",
+    "FLAVOR": "合不拢的唇齿间尽是无法成句的音节。",
+    "DESCRIPTIONS": [
+      "每回合开始兴奋 +3；高潮失控时不再失去格挡。"
+    ]
+  },
+  "arknsfw:LaceBlindfoldRelic": {
+    "NAME": "蕾丝眼罩",
+    "FLAVOR": "看不见，反而每一寸皮肤都清晰起来。",
+    "DESCRIPTIONS": [
+      "受到的攻击伤害 -1；感官被迫集中，每回合开始兴奋 +2。"
+    ]
+  },
+  "arknsfw:VibeEggRelic": {
+    "NAME": "跳蛋",
+    "FLAVOR": "遥控器不在她手里。",
+    "DESCRIPTIONS": [
+      "每回合开始兴奋 +5；每打出 3 张牌，震动加剧，兴奋再 +3。"
+    ]
+  },
+  "arknsfw:BodyCrestRelic": {
+    "NAME": "淫纹拓印",
+    "FLAVOR": "锁骨、腰侧、大腿——纹样正在蔓延。",
+    "DESCRIPTIONS": [
+      "兴奋获取 +25%；每回合开始受孕 +1。"
+    ]
+  },
+  "arknsfw:RopeBindRelic": {
+    "NAME": "麻绳束缚",
+    "FLAVOR": "红绳在胸前交叠成菱，每一次呼吸都被丈量。",
+    "DESCRIPTIONS": [
+      "胸前的菱绳缚紧勒反成支撑，每回合开始获得 3 点格挡；每打出一张攻击牌，绳结摩擦令兴奋 +2。"
+    ]
+  },
+  "arknsfw:LustSurgeCharmRelic": {
+    "NAME": "淫气缠身护符",
+    "FLAVOR": "欲望缠上身，便化作力量。",
+    "DESCRIPTIONS": [
+      "战斗开始时获得 #y淫气高涨 ：每回合开始兴奋≥50 时获得 1 点力量与敏捷。"
+    ]
+  },
+  "arknsfw:HeatAdaptBadgeRelic": {
+    "NAME": "发情适应徽章",
+    "FLAVOR": "身体已经学会与热潮共处。",
+    "DESCRIPTIONS": [
+      "战斗开始时获得 #y发情适应 ：每回合开始若兴奋高于上回合，抽 1 张牌。"
+    ]
+  },
+  "arknsfw:SageTimeWatchRelic": {
+    "NAME": "贤者怀表",
+    "FLAVOR": "潮水退去后的几秒，头脑无比清明。",
+    "DESCRIPTIONS": [
+      "高潮失控后，下回合获得 1 点能量并抽 2 张牌。"
+    ]
+  },
+  "arknsfw:CrestResonancePendantRelic": {
+    "NAME": "淫纹共鸣坠饰",
+    "FLAVOR": "身上的每一道纹路都在嗡鸣。",
+    "DESCRIPTIONS": [
+      "每回合开始，牌组中每张诅咒给予 2 点格挡（至多 12）。"
+    ]
+  },
+  "arknsfw:MotherGlowBroochRelic": {
+    "NAME": "母性光辉胸针",
+    "FLAVOR": "孕育中的身体自有守护。",
+    "DESCRIPTIONS": [
+      "怀孕时：战斗开始获得 10 点格挡并回复 3 点生命（海沫改为格挡）。"
+    ]
+  },
+  "arknsfw:ExposureCloakRelic": {
+    "NAME": "淫语墨书",
+    "FLAVOR": "写在皮肤上的字洗不掉，遮不住。",
+    "DESCRIPTIONS": [
+      "衣装破损不再修复（换幕与篝火均不修）；每档破损，攻击伤害 +5%。"
+    ]
+  },
+  "arknsfw:PleasureConverterRelic": {
+    "NAME": "快感转换器",
+    "FLAVOR": "把决堤的快感对准敌人。",
+    "DESCRIPTIONS": [
+      "高潮失控时不再失去格挡，改为对所有敌人造成（兴奋值一半）的伤害。"
+    ]
+  },
+  "arknsfw:TrainingCollarPlusRelic": {
+    "NAME": "调教乳环",
+    "FLAVOR": "每一次绝顶，环身就多一道刻痕。",
+    "DESCRIPTIONS": [
+      "每次高潮失控计数 +1；每场战斗开始按计数获得力量。"
+    ]
+  },
+  "arknsfw:RemoteVibeRelic": {
+    "NAME": "遥控震动棒",
+    "FLAVOR": "开关不在你手里，档位也不在。",
+    "DESCRIPTIONS": [
+      "每回合开始：50% 抽 1 张牌，50% 兴奋 +4。"
+    ]
+  },
+  "arknsfw:CorruptHourglassRelic": {
+    "NAME": "淫堕怀表",
+    "FLAVOR": "沙漏里流的不是沙。",
+    "DESCRIPTIONS": [
+      "战斗开始兴奋 +5；战斗胜利额外获得 12 金币。"
+    ]
+  },
+  "arknsfw:CrestAmpRingRelic": {
+    "NAME": "淫纹阴环",
+    "FLAVOR": "贯穿最私密处的环，与淫纹共振，吞噬诅咒。",
+    "DESCRIPTIONS": [
+      "战斗开始时，抽牌堆中的诅咒全部 #y消耗 ，每张兴奋 +6。"
+    ]
+  },
+  "arknsfw:SensitivityBrandRelic": {
+    "NAME": "敏感烙印",
+    "FLAVOR": "每一次沦陷，身体都记得。",
+    "DESCRIPTIONS": [
+      "败北的印记。敏感值 ",
+      "：兴奋获取 +",
+      "%，受孕/妊娠进度 +",
+      "%。"
     ]
   }
 }

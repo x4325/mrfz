@@ -1,254 +1,126 @@
 {
   "archetto:Strike": {
-    "NAME": "空弦击",
+    "NAME": "拨弦",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "archetto:Defend": {
-    "NAME": "空弦御",
+    "NAME": "休止符",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "archetto:Jab": {
-    "NAME": "空弦刺",
+    "NAME": "断奏",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "archetto:Ward": {
-    "NAME": "空弦护",
+    "NAME": "持续音",
     "DESCRIPTION": "获得 !B! 点格挡。"
   },
   "archetto:Cut": {
-    "NAME": "空弦斩",
+    "NAME": "切分音",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "archetto:Surge": {
-    "NAME": "空弦涌",
-    "DESCRIPTION": "获得 !M! 点 [E] 力量。"
+    "NAME": "渐强",
+    "DESCRIPTION": "获得 !M! 点力量。"
   },
   "archetto:QuickShot": {
     "NAME": "速射",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。 NL 若至少有 3 瞄准，获得 [E] 。"
+    "DESCRIPTION": "若你有至少 3 层瞄准：获得 1 点 [E] 。 NL 造成 !D! 点伤害，然后获得 1 瞄准。"
   },
   "archetto:MarkTarget": {
     "NAME": "标记",
-    "DESCRIPTION": "获得 2 瞄准。"
+    "DESCRIPTION": "获得 !M! 瞄准。"
   },
   "archetto:BurstArrow": {
-    "NAME": "连射",
+    "NAME": "震音连射",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
   },
   "archetto:Reload": {
     "NAME": "装填",
-    "DESCRIPTION": "获得 1 瞄准。抽 1 张牌。"
+    "DESCRIPTION": "获得 !M! 瞄准。抽 1 张牌。"
   },
   "archetto:FanVolley": {
-    "NAME": "扇形齐射",
+    "NAME": "琶音扫射",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 1 瞄准。"
   },
   "archetto:WindPrep": {
-    "NAME": "风备",
+    "NAME": "起拍预备",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
   },
   "archetto:Concerto": {
     "NAME": "协奏",
-    "DESCRIPTION": "获得 2 瞄准。"
+    "DESCRIPTION": "每回合开始时获得 !M! 瞄准。"
   },
   "archetto:PierceShot": {
-    "NAME": "穿透箭",
+    "NAME": "破空强音",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
   "archetto:BulkStrike01": {
-    "NAME": "速击·1",
+    "NAME": "轻箭",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
   },
   "archetto:BulkGuard02": {
-    "NAME": "调息·2",
+    "NAME": "侧身位",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
   },
   "archetto:BulkDraw03": {
-    "NAME": "抽换·3",
-    "DESCRIPTION": "抽 1 张牌。获得 1 瞄准。"
+    "NAME": "抽箭",
+    "DESCRIPTION": "抽 1 张牌。获得 !M! 瞄准。"
   },
   "archetto:BulkSweep04": {
-    "NAME": "波及·4",
+    "NAME": "散射",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
   },
   "archetto:BulkFinale05": {
-    "NAME": "星落·5",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 瞄准，额外造成 6 点伤害并消耗 3 瞄准。"
+    "NAME": "贯穿一矢",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若你有至少 3 层瞄准：额外造成 8 点伤害。"
   },
   "archetto:BulkStrike06": {
-    "NAME": "裂空·6",
+    "NAME": "稳固射击",
     "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
   },
   "archetto:BulkGuard07": {
-    "NAME": "缓冲·7",
+    "NAME": "满弦戒备",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
   },
   "archetto:BulkDraw08": {
-    "NAME": "抽换·8",
-    "DESCRIPTION": "抽 2 张牌。获得 1 瞄准。"
-  },
-  "archetto:BulkSweep09": {
-    "NAME": "波及·9",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
-  },
-  "archetto:BulkFinale10": {
-    "NAME": "飞升·10",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 瞄准，额外造成 6 点伤害并消耗 3 瞄准。"
-  },
-  "archetto:BulkStrike11": {
-    "NAME": "回旋·11",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
-  },
-  "archetto:BulkGuard12": {
-    "NAME": "布防·12",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
-  },
-  "archetto:BulkDraw13": {
-    "NAME": "抽换·13",
-    "DESCRIPTION": "抽 1 张牌。获得 1 瞄准。"
-  },
-  "archetto:BulkSweep14": {
-    "NAME": "波及·14",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
-  },
-  "archetto:BulkFinale15": {
-    "NAME": "星落·15",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 瞄准，额外造成 6 点伤害并消耗 3 瞄准。"
-  },
-  "archetto:BulkStrike16": {
-    "NAME": "碎击·16",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
-  },
-  "archetto:BulkGuard17": {
-    "NAME": "蓄锐·17",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
-  },
-  "archetto:BulkDraw18": {
-    "NAME": "抽换·18",
-    "DESCRIPTION": "抽 2 张牌。获得 1 瞄准。"
-  },
-  "archetto:BulkSweep19": {
-    "NAME": "波及·19",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
-  },
-  "archetto:BulkFinale20": {
-    "NAME": "飞升·20",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 瞄准，额外造成 6 点伤害并消耗 3 瞄准。"
-  },
-  "archetto:BulkStrike21": {
-    "NAME": "速击·21",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
-  },
-  "archetto:BulkGuard22": {
-    "NAME": "调息·22",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
-  },
-  "archetto:BulkDraw23": {
-    "NAME": "抽换·23",
-    "DESCRIPTION": "抽 1 张牌。获得 1 瞄准。"
-  },
-  "archetto:BulkSweep24": {
-    "NAME": "波及·24",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
-  },
-  "archetto:BulkFinale25": {
-    "NAME": "星落·25",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 瞄准，额外造成 6 点伤害并消耗 3 瞄准。"
-  },
-  "archetto:BulkStrike26": {
-    "NAME": "裂空·26",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
-  },
-  "archetto:BulkGuard27": {
-    "NAME": "缓冲·27",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
-  },
-  "archetto:BulkDraw28": {
-    "NAME": "抽换·28",
-    "DESCRIPTION": "抽 2 张牌。获得 1 瞄准。"
-  },
-  "archetto:BulkSweep29": {
-    "NAME": "波及·29",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
+    "NAME": "箭雨补给",
+    "DESCRIPTION": "抽 2 张牌。获得 !M! 瞄准。"
   },
   "archetto:BulkFinale30": {
-    "NAME": "飞升·30",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 瞄准，额外造成 6 点伤害并消耗 3 瞄准。"
+    "NAME": "终曲齐鸣",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若你有至少 4 层瞄准：额外造成 12 点伤害。"
   },
-  "archetto:BulkStrike31": {
-    "NAME": "回旋·31",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
+  "archetto:SteadyBreath": {
+    "NAME": "稳息",
+    "DESCRIPTION": "获得 !M! 瞄准。"
   },
-  "archetto:BulkGuard32": {
-    "NAME": "布防·32",
+  "archetto:TrueShot": {
+    "NAME": "箭无虚发",
+    "DESCRIPTION": "造成 !D! 点伤害。此攻击不会消耗瞄准。"
+  },
+  "archetto:TripleArrow": {
+    "NAME": "三连箭",
+    "DESCRIPTION": "造成 !D! 点伤害三次。"
+  },
+  "archetto:HawkEye": {
+    "NAME": "鹰眼",
+    "DESCRIPTION": "你的每层瞄准提供的伤害加成 +1。"
+  },
+  "archetto:SnapString": {
+    "NAME": "断弦怒射",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若瞄准不少于 5 层：额外造成 12 点伤害。"
+  },
+  "archetto:QuiverRefill": {
+    "NAME": "补给箭袋",
+    "DESCRIPTION": "获得 2 瞄准。消耗。（升级后不再消耗）"
+  },
+  "archetto:SwiftStep": {
+    "NAME": "迅捷步伐",
     "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
   },
-  "archetto:BulkDraw33": {
-    "NAME": "抽换·33",
-    "DESCRIPTION": "抽 1 张牌。获得 1 瞄准。"
-  },
-  "archetto:BulkSweep34": {
-    "NAME": "波及·34",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
-  },
-  "archetto:BulkFinale35": {
-    "NAME": "星落·35",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 瞄准，额外造成 6 点伤害并消耗 3 瞄准。"
-  },
-  "archetto:BulkStrike36": {
-    "NAME": "碎击·36",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
-  },
-  "archetto:BulkGuard37": {
-    "NAME": "蓄锐·37",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
-  },
-  "archetto:BulkDraw38": {
-    "NAME": "抽换·38",
-    "DESCRIPTION": "抽 2 张牌。获得 1 瞄准。"
-  },
-  "archetto:BulkSweep39": {
-    "NAME": "波及·39",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
-  },
-  "archetto:BulkFinale40": {
-    "NAME": "飞升·40",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 瞄准，额外造成 6 点伤害并消耗 3 瞄准。"
-  },
-  "archetto:BulkStrike41": {
-    "NAME": "速击·41",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
-  },
-  "archetto:BulkGuard42": {
-    "NAME": "调息·42",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
-  },
-  "archetto:BulkDraw43": {
-    "NAME": "抽换·43",
-    "DESCRIPTION": "抽 1 张牌。获得 1 瞄准。"
-  },
-  "archetto:BulkSweep44": {
-    "NAME": "波及·44",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
-  },
-  "archetto:BulkFinale45": {
-    "NAME": "星落·45",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若至少有 3 瞄准，额外造成 6 点伤害并消耗 3 瞄准。"
-  },
-  "archetto:BulkStrike46": {
-    "NAME": "裂空·46",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 1 瞄准。"
-  },
-  "archetto:BulkGuard47": {
-    "NAME": "缓冲·47",
-    "DESCRIPTION": "获得 !B! 点格挡。获得 1 瞄准。"
-  },
-  "archetto:BulkDraw48": {
-    "NAME": "抽换·48",
-    "DESCRIPTION": "抽 2 张牌。获得 1 瞄准。"
-  },
-  "archetto:BulkSweep49": {
-    "NAME": "波及·49",
+  "archetto:ArrowStorm": {
+    "NAME": "万箭齐发",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 2 瞄准。"
   }
 }

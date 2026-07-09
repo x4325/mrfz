@@ -5,19 +5,17 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import archetto.ArchettoMod;
-import archetto.cards.AbstractArchettoCard;
 import archetto.powers.AimPower;
+
 public class ArchettoBulkStrike01 extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("BulkStrike01");
 
     public ArchettoBulkStrike01() {
         super(ID, 0, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = 6;
+        baseDamage = 4;
     }
 
     @Override

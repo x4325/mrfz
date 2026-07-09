@@ -1,11 +1,16 @@
 {
   "modid": "archetto",
   "name": "空弦 / Archetto",
-  "author_list": ["Private"],
+  "author_list": [
+    "Private"
+  ],
   "description": "空弦 (Archetto) SFW character mod. Mechanism: 瞄准. NSFW content in ArknightsNsfwBridge.",
-  "version": "0.1.0",
+  "version": "0.4.0-cards-anim",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.0",
-  "dependencies": ["basemod", "stslib"],
+  "dependencies": [
+    "basemod",
+    "stslib"
+  ],
   "update_json": ""
 }

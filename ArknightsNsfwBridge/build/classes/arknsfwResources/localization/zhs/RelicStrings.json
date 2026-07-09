@@ -1,514 +1,604 @@
 {
-  "arknsfw:ThermometerCharmRelic": {
-    "NAME": "体温计坠饰",
-    "FLAVOR": "艾雅法拉总是偏高的读数。",
-    "DESCRIPTIONS": [
-      "战斗开始时兴奋 +8；高潮阈值 -15。 NL 艾雅：获得 1 云量。"
-    ]
-  },
-  "arknsfw:WoolHeatRelic": {
-    "NAME": "羊毛暖毯",
-    "FLAVOR": "蓬松却闷热。",
-    "DESCRIPTIONS": [
-      "回合开始受孕度 +2。 NL 艾雅：+1 云量；有 炎息 时受击兴奋 +2，否则 -3。"
-    ]
-  },
-  "arknsfw:HeatStickerRelic": {
-    "NAME": "体温贴",
-    "FLAVOR": "体温贴。",
-    "DESCRIPTIONS": [
-      "每回合兴奋 +3，并随 云层 数量额外提升。 NL 艾雅：每 3 回合获得 1 层 炎息。"
-    ]
-  },
-  "arknsfw:LavaPlugRelic": {
-    "NAME": "熔核塞",
-    "FLAVOR": "熔核塞。",
-    "DESCRIPTIONS": [
-      "打出 2 费及以上攻击牌时，妊娠进度 +2 并为该牌附加 炎息。 NL 艾雅：有 云量 时妊娠 +3。"
-    ]
-  },
-  "arknsfw:AshCollarRelic": {
-    "NAME": "灰烬项圈",
-    "FLAVOR": "灰烬项圈。",
-    "DESCRIPTIONS": [
-      "战斗开始兴奋 +10。 NL 艾雅：+1 云量；每回合首次受击后兴奋 +4 并获得 1 层 炎息。"
-    ]
-  },
-  "arknsfw:EmberSeedRelic": {
-    "NAME": "余烬之种",
-    "FLAVOR": "余烬之种。",
-    "DESCRIPTIONS": [
-      "回合结束若兴奋≥50，受孕度 +5（随 炎息 层数提升）。 NL 艾雅：触发时 +1 云量。"
-    ]
-  },
-  "arknsfw:RhineGelRelic": {
-    "NAME": "莱茵润滑凝胶",
-    "FLAVOR": "实验室副产品。",
-    "DESCRIPTIONS": [
-      "回合开始兴奋 +5；回合结束受孕度 +3。 NL 缪尔：有 流形 时回合开始兴奋 +3、受孕 +2；流形本战受击后回合结束受孕 +4。"
-    ]
-  },
-  "arknsfw:DuplicateMirrorRelic": {
-    "NAME": "分身镜",
-    "FLAVOR": "镜中之人也会喘息。",
-    "DESCRIPTIONS": [
-      "战斗开始：兴奋 +12，并视为一次中出。 NL 缪尔：有 流形 时中出强化（妊娠 +12）并 +1 流形。"
-    ]
-  },
-  "arknsfw:BubbleWandRelic": {
-    "NAME": "泡沫魔杖",
-    "FLAVOR": "泡沫魔杖。",
-    "DESCRIPTIONS": [
-      "获得格挡后兴奋 +2（每回合最多 6）。 NL 缪尔：有 流形 时每次 +3。"
-    ]
-  },
-  "arknsfw:CloneTagRelic": {
-    "NAME": "克隆工牌",
-    "FLAVOR": "克隆工牌。",
-    "DESCRIPTIONS": [
-      "战斗开始：兴奋 +8，受孕 +6（随 流形 层数提升）。 NL 缪尔：有 流形 时 +1 流形。"
-    ]
-  },
-  "arknsfw:RootVineRelic": {
-    "NAME": "根须藤蔓",
-    "FLAVOR": "根须藤蔓。",
-    "DESCRIPTIONS": [
-      "回合结束受孕度 +3（随 溯源 层数每层 +2）；兴奋≥40 时再 +3。"
-    ]
-  },
-  "arknsfw:OverflowFlaskRelic": {
-    "NAME": "溢流烧瓶",
-    "FLAVOR": "溢流烧瓶。",
-    "DESCRIPTIONS": [
-      "每打出 3 张技能牌，视为一次中出。 NL 缪尔：有 流形 时仅需 2 张技能牌。"
-    ]
-  },
-  "arknsfw:VolcanoBrandCurseRelic": {
-    "NAME": "火山烙印",
-    "FLAVOR": "诅咒遗物。",
-    "DESCRIPTIONS": [
-      "战斗开始火山潮红 +2。每回合兴奋 +10。 NL 艾雅：战斗开始 +1 云量 与 1 层 炎息；兴奋随 云层 数量提升。"
-    ]
-  },
-  "arknsfw:AshFurnaceCurseRelic": {
-    "NAME": "灰烬熔炉",
-    "FLAVOR": "诅咒遗物。",
-    "DESCRIPTIONS": [
-      "每回合兴奋 +12；打出攻击牌失去 2 生命。 NL 艾雅：兴奋随 炎息 提升、+1 云量； 炎息 攻击失去 3 生命并为牌附加 炎息。"
-    ]
-  },
-  "arknsfw:BreedingAltarCurseRelic": {
-    "NAME": "繁育祭坛",
-    "FLAVOR": "诅咒遗物。",
-    "DESCRIPTIONS": [
-      "战斗开始：未怀孕受孕 +15/妊娠 +12，已怀孕妊娠 +20。每回合受孕 +5、兴奋 +8。 NL 艾雅：战斗开始 +2 云量 与 2 层 炎息；每回合数值随 炎息/云层 提升。"
-    ]
-  },
-  "arknsfw:CloneLoopCurseRelic": {
-    "NAME": "分身循环",
-    "FLAVOR": "诅咒遗物。",
-    "DESCRIPTIONS": [
-      "战斗开始分身回音 +2、渗漏 +1。每回合兴奋 +8。 NL 缪尔：有 流形 时 +1 流形； 栽培 中获 1 层 溯源；兴奋随 流形 提升。"
-    ]
-  },
-  "arknsfw:RhineFilthCurseRelic": {
-    "NAME": "莱茵污秽",
-    "FLAVOR": "诅咒遗物。",
-    "DESCRIPTIONS": [
-      "每回合兴奋 +14、受孕 +8。 NL 缪尔：数值随 流形/溯源 提升； 栽培 中额外 +1 层 溯源。"
-    ]
-  },
-  "arknsfw:OverflowCoreCurseRelic": {
-    "NAME": "溢流核心",
-    "FLAVOR": "诅咒遗物。",
-    "DESCRIPTIONS": [
-      "每打出 2 张技能牌视为一次中出，并兴奋 +15。 NL 缪尔：有 流形 时仅需 1 张技能牌，触发时 +1 流形； 栽培 中获 1 层 溯源。"
-    ]
-  },
-  "arknsfw:EyjaPregnancyMarkRelic": {
-    "NAME": "熔核孕印",
-    "FLAVOR": "腹侧像有一枚未熄的火山核心，随孕期脉动。",
-    "DESCRIPTIONS": [
-      "（艾雅法拉专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
-    ]
-  },
-  "arknsfw:MuelPregnancyMarkRelic": {
-    "NAME": "培育孕印",
-    "FLAVOR": "温室里新芽般的温痕，记录着被播种的周期。",
-    "DESCRIPTIONS": [
-      "（缪尔赛思专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
-    ]
-  },
-  "arknsfw:EyjaPregnancyDeliveryRelic": {
-    "NAME": "熔核分娩纪念",
-    "FLAVOR": "腹侧像有一枚未熄的火山核心，随每次分娩脉动更深。",
-    "DESCRIPTIONS": [
-      "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
-      "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
-      "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
-      "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
-      "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
-    ]
-  },
-  "arknsfw:MuelPregnancyDeliveryRelic": {
-    "NAME": "培育分娩纪念",
-    "FLAVOR": "温室记录本上又多了一行被填满的周期。",
-    "DESCRIPTIONS": [
-      "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
-      "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
-      "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
-      "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
-      "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
-    ]
-  },
-  "arknsfw:SceneWarmCharmRelic": {
-    "NAME": "WarmCharm",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "兴奋 ≥30 时，攻击 +2 伤害。"
-    ]
-  },
-  "arknsfw:SceneBlushStickerRelic": {
-    "NAME": "BlushSticker",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "每打出一张技能牌，兴奋 +4。"
-    ]
-  },
-  "arknsfw:SceneSoftCollarRelic": {
-    "NAME": "SoftCollar",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "战斗开始时兴奋 +10。"
-    ]
-  },
-  "arknsfw:ScenePulsePlugRelic": {
-    "NAME": "PulsePlug",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "每回合开始时兴奋 +6。"
-    ]
-  },
-  "arknsfw:SceneTwinMirrorRelic": {
-    "NAME": "TwinMirror",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "中出时额外受孕 +5。"
-    ]
-  },
-  "arknsfw:SceneMoistFlaskRelic": {
-    "NAME": "MoistFlask",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "回复生命时兴奋 +8。"
-    ]
-  },
-  "arknsfw:SceneOverflowCoreRelic": {
-    "NAME": "OverflowCore",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "战斗胜利后兴奋 +20。"
-    ]
-  },
-  "arknsfw:SceneBrandCurseRelic": {
-    "NAME": "BrandCurse",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
-    ]
-  },
-  "arknsfw:SceneAltarCurseRelic": {
-    "NAME": "AltarCurse",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "无法移除。事件受孕度翻倍。"
-    ]
-  },
-  "arknsfw:SceneLoopCurseRelic": {
-    "NAME": "LoopCurse",
-    "FLAVOR": "稀音",
-    "DESCRIPTIONS": [
-      "无法移除。诅咒牌抽到时额外兴奋 +5。"
-    ]
-  },
-  "arknsfw:HighmoreWarmCharmRelic": {
-    "NAME": "WarmCharm",
-    "FLAVOR": "海沫",
-    "DESCRIPTIONS": [
-      "兴奋 ≥30 时，攻击 +2 伤害。"
-    ]
-  },
-  "arknsfw:HighmoreBlushStickerRelic": {
-    "NAME": "BlushSticker",
-    "FLAVOR": "海沫",
-    "DESCRIPTIONS": [
-      "每打出一张技能牌，兴奋 +4。"
-    ]
-  },
-  "arknsfw:HighmoreSoftCollarRelic": {
-    "NAME": "SoftCollar",
-    "FLAVOR": "海沫",
-    "DESCRIPTIONS": [
-      "战斗开始时兴奋 +10。"
-    ]
-  },
-  "arknsfw:HighmorePulsePlugRelic": {
-    "NAME": "PulsePlug",
-    "FLAVOR": "海沫",
-    "DESCRIPTIONS": [
-      "每回合开始时兴奋 +6。"
-    ]
-  },
-  "arknsfw:HighmoreTwinMirrorRelic": {
-    "NAME": "TwinMirror",
-    "FLAVOR": "海沫",
-    "DESCRIPTIONS": [
-      "中出时额外受孕 +5。"
-    ]
-  },
-  "arknsfw:HighmoreMoistFlaskRelic": {
-    "NAME": "MoistFlask",
-    "FLAVOR": "海沫",
-    "DESCRIPTIONS": [
-      "回复生命时兴奋 +8。"
-    ]
-  },
-  "arknsfw:HighmoreOverflowCoreRelic": {
-    "NAME": "OverflowCore",
-    "FLAVOR": "海沫",
-    "DESCRIPTIONS": [
-      "战斗胜利后兴奋 +20。"
-    ]
-  },
-  "arknsfw:HighmoreBrandCurseRelic": {
-    "NAME": "BrandCurse",
-    "FLAVOR": "海沫",
-    "DESCRIPTIONS": [
-      "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
-    ]
-  },
-  "arknsfw:HighmoreAltarCurseRelic": {
-    "NAME": "AltarCurse",
-    "FLAVOR": "海沫",
-    "DESCRIPTIONS": [
-      "无法移除。事件受孕度翻倍。"
-    ]
-  },
-  "arknsfw:HighmoreLoopCurseRelic": {
-    "NAME": "LoopCurse",
-    "FLAVOR": "海沫",
-    "DESCRIPTIONS": [
-      "无法移除。诅咒牌抽到时额外兴奋 +5。"
-    ]
-  },
-  "arknsfw:ArchettoWarmCharmRelic": {
-    "NAME": "WarmCharm",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "兴奋 ≥30 时，攻击 +2 伤害。"
-    ]
-  },
-  "arknsfw:ArchettoBlushStickerRelic": {
-    "NAME": "BlushSticker",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "每打出一张技能牌，兴奋 +4。"
-    ]
-  },
-  "arknsfw:ArchettoSoftCollarRelic": {
-    "NAME": "SoftCollar",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "战斗开始时兴奋 +10。"
-    ]
-  },
-  "arknsfw:ArchettoPulsePlugRelic": {
-    "NAME": "PulsePlug",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "每回合开始时兴奋 +6。"
-    ]
-  },
-  "arknsfw:ArchettoTwinMirrorRelic": {
-    "NAME": "TwinMirror",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "中出时额外受孕 +5。"
-    ]
-  },
-  "arknsfw:ArchettoMoistFlaskRelic": {
-    "NAME": "MoistFlask",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "回复生命时兴奋 +8。"
-    ]
-  },
-  "arknsfw:ArchettoOverflowCoreRelic": {
-    "NAME": "OverflowCore",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "战斗胜利后兴奋 +20。"
-    ]
-  },
-  "arknsfw:ArchettoBrandCurseRelic": {
-    "NAME": "BrandCurse",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
-    ]
-  },
-  "arknsfw:ArchettoAltarCurseRelic": {
-    "NAME": "AltarCurse",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "无法移除。事件受孕度翻倍。"
-    ]
-  },
-  "arknsfw:ArchettoLoopCurseRelic": {
-    "NAME": "LoopCurse",
-    "FLAVOR": "空弦",
-    "DESCRIPTIONS": [
-      "无法移除。诅咒牌抽到时额外兴奋 +5。"
-    ]
-  },
-  "arknsfw:HarukaWarmCharmRelic": {
-    "NAME": "WarmCharm",
-    "FLAVOR": "遥",
-    "DESCRIPTIONS": [
-      "兴奋 ≥30 时，攻击 +2 伤害。"
-    ]
-  },
-  "arknsfw:HarukaBlushStickerRelic": {
-    "NAME": "BlushSticker",
-    "FLAVOR": "遥",
-    "DESCRIPTIONS": [
-      "每打出一张技能牌，兴奋 +4。"
-    ]
-  },
-  "arknsfw:HarukaSoftCollarRelic": {
-    "NAME": "SoftCollar",
-    "FLAVOR": "遥",
-    "DESCRIPTIONS": [
-      "战斗开始时兴奋 +10。"
-    ]
-  },
-  "arknsfw:HarukaPulsePlugRelic": {
-    "NAME": "PulsePlug",
-    "FLAVOR": "遥",
-    "DESCRIPTIONS": [
-      "每回合开始时兴奋 +6。"
-    ]
-  },
-  "arknsfw:HarukaTwinMirrorRelic": {
-    "NAME": "TwinMirror",
-    "FLAVOR": "遥",
-    "DESCRIPTIONS": [
-      "中出时额外受孕 +5。"
-    ]
-  },
-  "arknsfw:HarukaMoistFlaskRelic": {
-    "NAME": "MoistFlask",
-    "FLAVOR": "遥",
-    "DESCRIPTIONS": [
-      "回复生命时兴奋 +8。"
-    ]
-  },
-  "arknsfw:HarukaOverflowCoreRelic": {
-    "NAME": "OverflowCore",
-    "FLAVOR": "遥",
-    "DESCRIPTIONS": [
-      "战斗胜利后兴奋 +20。"
-    ]
-  },
-  "arknsfw:HarukaBrandCurseRelic": {
-    "NAME": "BrandCurse",
-    "FLAVOR": "遥",
-    "DESCRIPTIONS": [
-      "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
-    ]
-  },
-  "arknsfw:HarukaAltarCurseRelic": {
-    "NAME": "AltarCurse",
-    "FLAVOR": "遥",
-    "DESCRIPTIONS": [
-      "无法移除。事件受孕度翻倍。"
-    ]
-  },
-  "arknsfw:HarukaLoopCurseRelic": {
-    "NAME": "LoopCurse",
-    "FLAVOR": "遥",
-    "DESCRIPTIONS": [
-      "无法移除。诅咒牌抽到时额外兴奋 +5。"
-    ]
-  },
-  "arknsfw:NymphWarmCharmRelic": {
-    "NAME": "WarmCharm",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "兴奋 ≥30 时，攻击 +2 伤害。"
-    ]
-  },
-  "arknsfw:NymphBlushStickerRelic": {
-    "NAME": "BlushSticker",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "每打出一张技能牌，兴奋 +4。"
-    ]
-  },
-  "arknsfw:NymphSoftCollarRelic": {
-    "NAME": "SoftCollar",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "战斗开始时兴奋 +10。"
-    ]
-  },
-  "arknsfw:NymphPulsePlugRelic": {
-    "NAME": "PulsePlug",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "每回合开始时兴奋 +6。"
-    ]
-  },
-  "arknsfw:NymphTwinMirrorRelic": {
-    "NAME": "TwinMirror",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "中出时额外受孕 +5。"
-    ]
-  },
-  "arknsfw:NymphMoistFlaskRelic": {
-    "NAME": "MoistFlask",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "回复生命时兴奋 +8。"
-    ]
-  },
-  "arknsfw:NymphOverflowCoreRelic": {
-    "NAME": "OverflowCore",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "战斗胜利后兴奋 +20。"
-    ]
-  },
-  "arknsfw:NymphBrandCurseRelic": {
-    "NAME": "BrandCurse",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
-    ]
-  },
-  "arknsfw:NymphAltarCurseRelic": {
-    "NAME": "AltarCurse",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "无法移除。事件受孕度翻倍。"
-    ]
-  },
-  "arknsfw:NymphLoopCurseRelic": {
-    "NAME": "LoopCurse",
-    "FLAVOR": "妮芙",
-    "DESCRIPTIONS": [
-      "无法移除。诅咒牌抽到时额外兴奋 +5。"
-    ]
-  }
+ "arknsfw:ThermometerCharmRelic": {
+  "NAME": "体温计坠饰",
+  "FLAVOR": "艾雅法拉总是偏高的读数。",
+  "DESCRIPTIONS": [
+   "战斗开始时兴奋 +8；高潮阈值 -15。 NL 艾雅：获得 1 云量。"
+  ]
+ },
+ "arknsfw:WoolHeatRelic": {
+  "NAME": "羊毛暖毯",
+  "FLAVOR": "蓬松却闷热。",
+  "DESCRIPTIONS": [
+   "回合开始受孕度 +2。 NL 艾雅：+1 云量；有 炎息 时受击兴奋 +2，否则 -3。"
+  ]
+ },
+ "arknsfw:HeatStickerRelic": {
+  "NAME": "体温贴",
+  "FLAVOR": "体温贴。",
+  "DESCRIPTIONS": [
+   "每回合兴奋 +3，并随 云层 数量额外提升。 NL 艾雅：每 3 回合获得 1 层 炎息。"
+  ]
+ },
+ "arknsfw:LavaPlugRelic": {
+  "NAME": "熔核塞",
+  "FLAVOR": "熔核塞。",
+  "DESCRIPTIONS": [
+   "打出 2 费及以上攻击牌时，妊娠进度 +2 并为该牌附加 炎息。 NL 艾雅：有 云量 时妊娠 +3。"
+  ]
+ },
+ "arknsfw:AshCollarRelic": {
+  "NAME": "灰烬项圈",
+  "FLAVOR": "灰烬项圈。",
+  "DESCRIPTIONS": [
+   "战斗开始兴奋 +10。 NL 艾雅：+1 云量；每回合首次受击后兴奋 +4 并获得 1 层 炎息。"
+  ]
+ },
+ "arknsfw:EmberSeedRelic": {
+  "NAME": "余烬之种",
+  "FLAVOR": "余烬之种。",
+  "DESCRIPTIONS": [
+   "回合结束若兴奋≥50，受孕度 +5（随 炎息 层数提升）。 NL 艾雅：触发时 +1 云量。"
+  ]
+ },
+ "arknsfw:RhineGelRelic": {
+  "NAME": "莱茵润滑凝胶",
+  "FLAVOR": "实验室副产品。",
+  "DESCRIPTIONS": [
+   "回合开始兴奋 +5；回合结束受孕度 +3。 NL 缪尔：有 流形 时回合开始兴奋 +3、受孕 +2；流形本战受击后回合结束受孕 +4。"
+  ]
+ },
+ "arknsfw:DuplicateMirrorRelic": {
+  "NAME": "分身镜",
+  "FLAVOR": "镜中之人也会喘息。",
+  "DESCRIPTIONS": [
+   "战斗开始：兴奋 +12，并视为一次中出。 NL 缪尔：有 流形 时中出强化（妊娠 +12）并 +1 流形。"
+  ]
+ },
+ "arknsfw:BubbleWandRelic": {
+  "NAME": "泡沫魔杖",
+  "FLAVOR": "泡沫魔杖。",
+  "DESCRIPTIONS": [
+   "获得格挡后兴奋 +2（每回合最多 6）。 NL 缪尔：有 流形 时每次 +3。"
+  ]
+ },
+ "arknsfw:CloneTagRelic": {
+  "NAME": "克隆工牌",
+  "FLAVOR": "克隆工牌。",
+  "DESCRIPTIONS": [
+   "战斗开始：兴奋 +8，受孕 +6（随 流形 层数提升）。 NL 缪尔：有 流形 时 +1 流形。"
+  ]
+ },
+ "arknsfw:RootVineRelic": {
+  "NAME": "根须藤蔓",
+  "FLAVOR": "根须藤蔓。",
+  "DESCRIPTIONS": [
+   "回合结束受孕度 +3（随 溯源 层数每层 +2）；兴奋≥40 时再 +3。"
+  ]
+ },
+ "arknsfw:OverflowFlaskRelic": {
+  "NAME": "溢流烧瓶",
+  "FLAVOR": "溢流烧瓶。",
+  "DESCRIPTIONS": [
+   "每打出 3 张技能牌，视为一次中出。 NL 缪尔：有 流形 时仅需 2 张技能牌。"
+  ]
+ },
+ "arknsfw:VolcanoBrandCurseRelic": {
+  "NAME": "火山烙印",
+  "FLAVOR": "诅咒遗物。",
+  "DESCRIPTIONS": [
+   "战斗开始火山潮红 +2。每回合兴奋 +10。 NL 艾雅：战斗开始 +1 云量 与 1 层 炎息；兴奋随 云层 数量提升。"
+  ]
+ },
+ "arknsfw:AshFurnaceCurseRelic": {
+  "NAME": "灰烬熔炉",
+  "FLAVOR": "诅咒遗物。",
+  "DESCRIPTIONS": [
+   "每回合兴奋 +12；打出攻击牌失去 2 生命。 NL 艾雅：兴奋随 炎息 提升、+1 云量； 炎息 攻击失去 3 生命并为牌附加 炎息。"
+  ]
+ },
+ "arknsfw:BreedingAltarCurseRelic": {
+  "NAME": "繁育祭坛",
+  "FLAVOR": "诅咒遗物。",
+  "DESCRIPTIONS": [
+   "战斗开始：未怀孕受孕 +15/妊娠 +12，已怀孕妊娠 +20。每回合受孕 +5、兴奋 +8。 NL 艾雅：战斗开始 +2 云量 与 2 层 炎息；每回合数值随 炎息/云层 提升。"
+  ]
+ },
+ "arknsfw:CloneLoopCurseRelic": {
+  "NAME": "分身循环",
+  "FLAVOR": "诅咒遗物。",
+  "DESCRIPTIONS": [
+   "战斗开始分身回音 +2、渗漏 +1。每回合兴奋 +8。 NL 缪尔：有 流形 时 +1 流形； 栽培 中获 1 层 溯源；兴奋随 流形 提升。"
+  ]
+ },
+ "arknsfw:RhineFilthCurseRelic": {
+  "NAME": "莱茵污秽",
+  "FLAVOR": "诅咒遗物。",
+  "DESCRIPTIONS": [
+   "每回合兴奋 +14、受孕 +8。 NL 缪尔：数值随 流形/溯源 提升； 栽培 中额外 +1 层 溯源。"
+  ]
+ },
+ "arknsfw:OverflowCoreCurseRelic": {
+  "NAME": "溢流核心",
+  "FLAVOR": "诅咒遗物。",
+  "DESCRIPTIONS": [
+   "每打出 2 张技能牌视为一次中出，并兴奋 +15。 NL 缪尔：有 流形 时仅需 1 张技能牌，触发时 +1 流形； 栽培 中获 1 层 溯源。"
+  ]
+ },
+ "arknsfw:EyjaPregnancyMarkRelic": {
+  "NAME": "熔核孕印",
+  "FLAVOR": "腹侧像有一枚未熄的火山核心，随孕期脉动。",
+  "DESCRIPTIONS": [
+   "（艾雅法拉专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
+  ]
+ },
+ "arknsfw:MuelPregnancyMarkRelic": {
+  "NAME": "培育孕印",
+  "FLAVOR": "温室里新芽般的温痕，记录着被播种的周期。",
+  "DESCRIPTIONS": [
+   "（缪尔赛思专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
+  ]
+ },
+ "arknsfw:EyjaPregnancyDeliveryRelic": {
+  "NAME": "熔核分娩纪念",
+  "FLAVOR": "腹侧像有一枚未熄的火山核心，随每次分娩脉动更深。",
+  "DESCRIPTIONS": [
+   "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
+   "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
+   "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
+   "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
+   "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
+  ]
+ },
+ "arknsfw:MuelPregnancyDeliveryRelic": {
+  "NAME": "培育分娩纪念",
+  "FLAVOR": "温室记录本上又多了一行被填满的周期。",
+  "DESCRIPTIONS": [
+   "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
+   "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
+   "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
+   "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
+   "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
+  ]
+ },
+ "arknsfw:SceneWarmCharmRelic": {
+  "NAME": "温热护符",
+  "FLAVOR": "稀音",
+  "DESCRIPTIONS": [
+   "兴奋 ≥30 时，攻击牌伤害 +2。"
+  ]
+ },
+ "arknsfw:SceneBlushStickerRelic": {
+  "NAME": "绯红贴纸",
+  "FLAVOR": "稀音",
+  "DESCRIPTIONS": [
+   "每打出一张技能牌，兴奋 +4。"
+  ]
+ },
+ "arknsfw:SceneSoftCollarRelic": {
+  "NAME": "柔软项圈",
+  "FLAVOR": "稀音",
+  "DESCRIPTIONS": [
+   "战斗开始时兴奋 +10。"
+  ]
+ },
+ "arknsfw:ScenePulsePlugRelic": {
+  "NAME": "脉动塞",
+  "FLAVOR": "稀音",
+  "DESCRIPTIONS": [
+   "每回合开始时兴奋 +6。"
+  ]
+ },
+ "arknsfw:SceneTwinMirrorRelic": {
+  "NAME": "双子镜",
+  "FLAVOR": "稀音",
+  "DESCRIPTIONS": [
+   "战斗胜利时受孕度 +3。"
+  ]
+ },
+ "arknsfw:SceneMoistFlaskRelic": {
+  "NAME": "濡湿药瓶",
+  "FLAVOR": "稀音",
+  "DESCRIPTIONS": [
+   "回复生命时兴奋 +8。"
+  ]
+ },
+ "arknsfw:SceneOverflowCoreRelic": {
+  "NAME": "满溢核心",
+  "FLAVOR": "稀音",
+  "DESCRIPTIONS": [
+   "战斗胜利后兴奋 +20。"
+  ]
+ },
+ "arknsfw:SceneBrandCurseRelic": {
+  "NAME": "烙印诅咒",
+  "FLAVOR": "稀音",
+  "DESCRIPTIONS": [
+   "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
+  ]
+ },
+ "arknsfw:SceneAltarCurseRelic": {
+  "NAME": "祭坛诅咒",
+  "FLAVOR": "稀音",
+  "DESCRIPTIONS": [
+   "无法移除。事件中获得的受孕度翻倍。"
+  ]
+ },
+ "arknsfw:SceneLoopCurseRelic": {
+  "NAME": "回环诅咒",
+  "FLAVOR": "稀音",
+  "DESCRIPTIONS": [
+   "无法移除。抽到诅咒牌时兴奋 +5。"
+  ]
+ },
+ "arknsfw:HighmoreWarmCharmRelic": {
+  "NAME": "温热护符",
+  "FLAVOR": "海沫",
+  "DESCRIPTIONS": [
+   "兴奋 ≥30 时，攻击牌伤害 +2。"
+  ]
+ },
+ "arknsfw:HighmoreBlushStickerRelic": {
+  "NAME": "绯红贴纸",
+  "FLAVOR": "海沫",
+  "DESCRIPTIONS": [
+   "每打出一张技能牌，兴奋 +4。"
+  ]
+ },
+ "arknsfw:HighmoreSoftCollarRelic": {
+  "NAME": "柔软项圈",
+  "FLAVOR": "海沫",
+  "DESCRIPTIONS": [
+   "战斗开始时兴奋 +10。"
+  ]
+ },
+ "arknsfw:HighmorePulsePlugRelic": {
+  "NAME": "脉动塞",
+  "FLAVOR": "海沫",
+  "DESCRIPTIONS": [
+   "每回合开始时兴奋 +6。"
+  ]
+ },
+ "arknsfw:HighmoreTwinMirrorRelic": {
+  "NAME": "双子镜",
+  "FLAVOR": "海沫",
+  "DESCRIPTIONS": [
+   "战斗胜利时受孕度 +3。"
+  ]
+ },
+ "arknsfw:HighmoreMoistFlaskRelic": {
+  "NAME": "濡湿药瓶",
+  "FLAVOR": "海沫",
+  "DESCRIPTIONS": [
+   "回复生命时兴奋 +8。"
+  ]
+ },
+ "arknsfw:HighmoreOverflowCoreRelic": {
+  "NAME": "满溢核心",
+  "FLAVOR": "海沫",
+  "DESCRIPTIONS": [
+   "战斗胜利后兴奋 +20。"
+  ]
+ },
+ "arknsfw:HighmoreBrandCurseRelic": {
+  "NAME": "烙印诅咒",
+  "FLAVOR": "海沫",
+  "DESCRIPTIONS": [
+   "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
+  ]
+ },
+ "arknsfw:HighmoreAltarCurseRelic": {
+  "NAME": "祭坛诅咒",
+  "FLAVOR": "海沫",
+  "DESCRIPTIONS": [
+   "无法移除。事件中获得的受孕度翻倍。"
+  ]
+ },
+ "arknsfw:HighmoreLoopCurseRelic": {
+  "NAME": "回环诅咒",
+  "FLAVOR": "海沫",
+  "DESCRIPTIONS": [
+   "无法移除。抽到诅咒牌时兴奋 +5。"
+  ]
+ },
+ "arknsfw:ArchettoWarmCharmRelic": {
+  "NAME": "温热护符",
+  "FLAVOR": "空弦",
+  "DESCRIPTIONS": [
+   "兴奋 ≥30 时，攻击牌伤害 +2。"
+  ]
+ },
+ "arknsfw:ArchettoBlushStickerRelic": {
+  "NAME": "绯红贴纸",
+  "FLAVOR": "空弦",
+  "DESCRIPTIONS": [
+   "每打出一张技能牌，兴奋 +4。"
+  ]
+ },
+ "arknsfw:ArchettoSoftCollarRelic": {
+  "NAME": "柔软项圈",
+  "FLAVOR": "空弦",
+  "DESCRIPTIONS": [
+   "战斗开始时兴奋 +10。"
+  ]
+ },
+ "arknsfw:ArchettoPulsePlugRelic": {
+  "NAME": "脉动塞",
+  "FLAVOR": "空弦",
+  "DESCRIPTIONS": [
+   "每回合开始时兴奋 +6。"
+  ]
+ },
+ "arknsfw:ArchettoTwinMirrorRelic": {
+  "NAME": "双子镜",
+  "FLAVOR": "空弦",
+  "DESCRIPTIONS": [
+   "战斗胜利时受孕度 +3。"
+  ]
+ },
+ "arknsfw:ArchettoMoistFlaskRelic": {
+  "NAME": "濡湿药瓶",
+  "FLAVOR": "空弦",
+  "DESCRIPTIONS": [
+   "回复生命时兴奋 +8。"
+  ]
+ },
+ "arknsfw:ArchettoOverflowCoreRelic": {
+  "NAME": "满溢核心",
+  "FLAVOR": "空弦",
+  "DESCRIPTIONS": [
+   "战斗胜利后兴奋 +20。"
+  ]
+ },
+ "arknsfw:ArchettoBrandCurseRelic": {
+  "NAME": "烙印诅咒",
+  "FLAVOR": "空弦",
+  "DESCRIPTIONS": [
+   "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
+  ]
+ },
+ "arknsfw:ArchettoAltarCurseRelic": {
+  "NAME": "祭坛诅咒",
+  "FLAVOR": "空弦",
+  "DESCRIPTIONS": [
+   "无法移除。事件中获得的受孕度翻倍。"
+  ]
+ },
+ "arknsfw:ArchettoLoopCurseRelic": {
+  "NAME": "回环诅咒",
+  "FLAVOR": "空弦",
+  "DESCRIPTIONS": [
+   "无法移除。抽到诅咒牌时兴奋 +5。"
+  ]
+ },
+ "arknsfw:HarukaWarmCharmRelic": {
+  "NAME": "温热护符",
+  "FLAVOR": "遥",
+  "DESCRIPTIONS": [
+   "兴奋 ≥30 时，攻击牌伤害 +2。"
+  ]
+ },
+ "arknsfw:HarukaBlushStickerRelic": {
+  "NAME": "绯红贴纸",
+  "FLAVOR": "遥",
+  "DESCRIPTIONS": [
+   "每打出一张技能牌，兴奋 +4。"
+  ]
+ },
+ "arknsfw:HarukaSoftCollarRelic": {
+  "NAME": "柔软项圈",
+  "FLAVOR": "遥",
+  "DESCRIPTIONS": [
+   "战斗开始时兴奋 +10。"
+  ]
+ },
+ "arknsfw:HarukaPulsePlugRelic": {
+  "NAME": "脉动塞",
+  "FLAVOR": "遥",
+  "DESCRIPTIONS": [
+   "每回合开始时兴奋 +6。"
+  ]
+ },
+ "arknsfw:HarukaTwinMirrorRelic": {
+  "NAME": "双子镜",
+  "FLAVOR": "遥",
+  "DESCRIPTIONS": [
+   "战斗胜利时受孕度 +3。"
+  ]
+ },
+ "arknsfw:HarukaMoistFlaskRelic": {
+  "NAME": "濡湿药瓶",
+  "FLAVOR": "遥",
+  "DESCRIPTIONS": [
+   "回复生命时兴奋 +8。"
+  ]
+ },
+ "arknsfw:HarukaOverflowCoreRelic": {
+  "NAME": "满溢核心",
+  "FLAVOR": "遥",
+  "DESCRIPTIONS": [
+   "战斗胜利后兴奋 +20。"
+  ]
+ },
+ "arknsfw:HarukaBrandCurseRelic": {
+  "NAME": "烙印诅咒",
+  "FLAVOR": "遥",
+  "DESCRIPTIONS": [
+   "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
+  ]
+ },
+ "arknsfw:HarukaAltarCurseRelic": {
+  "NAME": "祭坛诅咒",
+  "FLAVOR": "遥",
+  "DESCRIPTIONS": [
+   "无法移除。事件中获得的受孕度翻倍。"
+  ]
+ },
+ "arknsfw:HarukaLoopCurseRelic": {
+  "NAME": "回环诅咒",
+  "FLAVOR": "遥",
+  "DESCRIPTIONS": [
+   "无法移除。抽到诅咒牌时兴奋 +5。"
+  ]
+ },
+ "arknsfw:NymphWarmCharmRelic": {
+  "NAME": "温热护符",
+  "FLAVOR": "妮芙",
+  "DESCRIPTIONS": [
+   "兴奋 ≥30 时，攻击牌伤害 +2。"
+  ]
+ },
+ "arknsfw:NymphBlushStickerRelic": {
+  "NAME": "绯红贴纸",
+  "FLAVOR": "妮芙",
+  "DESCRIPTIONS": [
+   "每打出一张技能牌，兴奋 +4。"
+  ]
+ },
+ "arknsfw:NymphSoftCollarRelic": {
+  "NAME": "柔软项圈",
+  "FLAVOR": "妮芙",
+  "DESCRIPTIONS": [
+   "战斗开始时兴奋 +10。"
+  ]
+ },
+ "arknsfw:NymphPulsePlugRelic": {
+  "NAME": "脉动塞",
+  "FLAVOR": "妮芙",
+  "DESCRIPTIONS": [
+   "每回合开始时兴奋 +6。"
+  ]
+ },
+ "arknsfw:NymphTwinMirrorRelic": {
+  "NAME": "双子镜",
+  "FLAVOR": "妮芙",
+  "DESCRIPTIONS": [
+   "战斗胜利时受孕度 +3。"
+  ]
+ },
+ "arknsfw:NymphMoistFlaskRelic": {
+  "NAME": "濡湿药瓶",
+  "FLAVOR": "妮芙",
+  "DESCRIPTIONS": [
+   "回复生命时兴奋 +8。"
+  ]
+ },
+ "arknsfw:NymphOverflowCoreRelic": {
+  "NAME": "满溢核心",
+  "FLAVOR": "妮芙",
+  "DESCRIPTIONS": [
+   "战斗胜利后兴奋 +20。"
+  ]
+ },
+ "arknsfw:NymphBrandCurseRelic": {
+  "NAME": "烙印诅咒",
+  "FLAVOR": "妮芙",
+  "DESCRIPTIONS": [
+   "无法移除。兴奋上限 +20，但每回合失去 2 生命。"
+  ]
+ },
+ "arknsfw:NymphAltarCurseRelic": {
+  "NAME": "祭坛诅咒",
+  "FLAVOR": "妮芙",
+  "DESCRIPTIONS": [
+   "无法移除。事件中获得的受孕度翻倍。"
+  ]
+ },
+ "arknsfw:NymphLoopCurseRelic": {
+  "NAME": "回环诅咒",
+  "FLAVOR": "妮芙",
+  "DESCRIPTIONS": [
+   "无法移除。抽到诅咒牌时兴奋 +5。"
+  ]
+ },
+ "arknsfw:HighmorePregnancyMarkRelic": {
+  "NAME": "潮汐孕印",
+  "FLAVOR": "小腹深处像有潮汐在缓慢起伏。",
+  "DESCRIPTIONS": [
+   "（海沫专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
+  ]
+ },
+ "arknsfw:HighmorePregnancyDeliveryRelic": {
+  "NAME": "潮汐分娩纪念",
+  "FLAVOR": "小腹深处像有潮汐在缓慢起伏。",
+  "DESCRIPTIONS": [
+   "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
+   "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
+   "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
+   "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
+   "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
+  ]
+ },
+ "arknsfw:ScenePregnancyMarkRelic": {
+  "NAME": "显影孕印",
+  "FLAVOR": "镜头之下，那个变化谁都看得见。",
+  "DESCRIPTIONS": [
+   "（稀音专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
+  ]
+ },
+ "arknsfw:ScenePregnancyDeliveryRelic": {
+  "NAME": "显影分娩纪念",
+  "FLAVOR": "镜头之下，那个变化谁都看得见。",
+  "DESCRIPTIONS": [
+   "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
+   "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
+   "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
+   "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
+   "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
+  ]
+ },
+ "arknsfw:ArchettoPregnancyMarkRelic": {
+  "NAME": "弦月孕印",
+  "FLAVOR": "拉弓时能感觉到腹部新的重量。",
+  "DESCRIPTIONS": [
+   "（空弦专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
+  ]
+ },
+ "arknsfw:ArchettoPregnancyDeliveryRelic": {
+  "NAME": "弦月分娩纪念",
+  "FLAVOR": "拉弓时能感觉到腹部新的重量。",
+  "DESCRIPTIONS": [
+   "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
+   "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
+   "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
+   "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
+   "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
+  ]
+ },
+ "arknsfw:HarukaPregnancyMarkRelic": {
+  "NAME": "花火孕印",
+  "FLAVOR": "像一枚迟迟不肯绽放的烟花，在身体里发烫。",
+  "DESCRIPTIONS": [
+   "（遥专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
+  ]
+ },
+ "arknsfw:HarukaPregnancyDeliveryRelic": {
+  "NAME": "花火分娩纪念",
+  "FLAVOR": "像一枚迟迟不肯绽放的烟花，在身体里发烫。",
+  "DESCRIPTIONS": [
+   "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
+   "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
+   "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
+   "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
+   "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
+  ]
+ },
+ "arknsfw:NymphPregnancyMarkRelic": {
+  "NAME": "心蚀孕印",
+  "FLAVOR": "低语如今有了两个听众。",
+  "DESCRIPTIONS": [
+   "（妮芙专属）每完成一阶段 妊娠 获得 1 层（仅战斗奖励获得）。战斗开始：最大生命 +层数，恢复 2 点生命/层。"
+  ]
+ },
+ "arknsfw:NymphPregnancyDeliveryRelic": {
+  "NAME": "心蚀分娩纪念",
+  "FLAVOR": "低语如今有了两个听众。",
+  "DESCRIPTIONS": [
+   "第 1 次分娩纪念。战斗开始：最大生命 +1，恢复 2 点生命；已孕时每层额外推进妊娠 +1。",
+   "第 2 次分娩纪念（2 层）。战斗开始：最大生命 +2，恢复 4 点生命；已孕时每层额外推进妊娠 +2。",
+   "第 3 次分娩纪念（3 层）。战斗开始：最大生命 +3，恢复 6 点生命；已孕时每层额外推进妊娠 +3。",
+   "第 4 次分娩纪念（4 层）。战斗开始：最大生命 +4，恢复 8 点生命；已孕时每层额外推进妊娠 +4。",
+   "第 5 次分娩纪念（5 层）。战斗开始：最大生命 +5，恢复 10 点生命；已孕时每层额外推进妊娠 +5。"
+  ]
+ }
 }

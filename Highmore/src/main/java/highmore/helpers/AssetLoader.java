@@ -23,8 +23,36 @@ public class AssetLoader {
     }
 
     private static final String[] CARD_ART_FILES = {
-            "card_attack.png", "card_skill.png", "card_power.png",
-            "card_strike.png", "card_defend.png",
+            "card_highmore_abyssgaze.png",
+            "card_highmore_abysspull.png",
+            "card_highmore_bloodrush.png",
+            "card_highmore_bloodscale.png",
+            "card_highmore_brinewall.png",
+            "card_highmore_bulkdraw03.png",
+            "card_highmore_bulkdraw08.png",
+            "card_highmore_bulkfinale05.png",
+            "card_highmore_bulkfinale30.png",
+            "card_highmore_bulkguard02.png",
+            "card_highmore_bulkguard07.png",
+            "card_highmore_bulkstrike01.png",
+            "card_highmore_bulkstrike06.png",
+            "card_highmore_bulksweep04.png",
+            "card_highmore_cut.png",
+            "card_highmore_deaddrift.png",
+            "card_highmore_defend.png",
+            "card_highmore_drownembrace.png",
+            "card_highmore_greattide.png",
+            "card_highmore_jab.png",
+            "card_highmore_riptide.png",
+            "card_highmore_saltdraw.png",
+            "card_highmore_saltharvest.png",
+            "card_highmore_scytheswing.png",
+            "card_highmore_strike.png",
+            "card_highmore_surge.png",
+            "card_highmore_tidepool.png",
+            "card_highmore_tidereap.png",
+            "card_highmore_ward.png",
+            "card_highmore_whirlreap.png",
     };
 
     public static void preloadCardArts() {

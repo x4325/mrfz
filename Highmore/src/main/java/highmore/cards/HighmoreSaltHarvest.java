@@ -16,7 +16,7 @@ public class HighmoreSaltHarvest extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("SaltHarvest");
 
     public HighmoreSaltHarvest() {
-        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY, "card_highmore_saltharvest.png");
         baseDamage = 8;
     }
 

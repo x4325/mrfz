@@ -10,7 +10,7 @@ public class NymphDefend extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("Defend");
 
     public NymphDefend() {
-        super(ID, 1, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF, "card_defend.png");
+        super(ID, 1, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF, "card_nymph_defend.png");
         baseBlock = 5;
         this.tags.add(CardTags.STARTER_DEFEND);
     }

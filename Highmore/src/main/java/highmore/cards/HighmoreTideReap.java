@@ -16,7 +16,7 @@ public class HighmoreTideReap extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("TideReap");
 
     public HighmoreTideReap() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_highmore_tidereap.png");
         baseBlock = 8;
     }
 

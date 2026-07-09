@@ -12,7 +12,7 @@ public class ArchettoStrike extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("Strike");
 
     public ArchettoStrike() {
-        super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY, "card_strike.png");
+        super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY, "card_archetto_strike.png");
         baseDamage = 6;
         this.tags.add(CardTags.STARTER_STRIKE);
     }

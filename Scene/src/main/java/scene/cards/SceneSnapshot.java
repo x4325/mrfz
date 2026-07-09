@@ -17,20 +17,26 @@ public class SceneSnapshot extends AbstractSceneCard {
 
     public SceneSnapshot() {
         super(ID, 2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
-        baseDamage = 18;
+        baseDamage = 8;
+        isMultiDamage = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof scene.characters.Scene) {
+            ((scene.characters.Scene) p).playCharAnimation("Skill_2");
+        }
+        // 基础伤害必定生效；若取景 ≥3 则消耗 3 层再引爆一次
+        addToBot(new DamageAllEnemiesAction(p, multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
         if (FocusPower.get(p) >= 3 && FocusPower.spend(p, 3)) {
-            addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
+            addToBot(new DamageAllEnemiesAction(p, multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
         }
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
-            upgradeName(); upgradeDamage(6);
+            upgradeName(); upgradeDamage(3);
         }
     }
 

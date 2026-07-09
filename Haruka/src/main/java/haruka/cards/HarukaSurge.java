@@ -11,7 +11,7 @@ public class HarukaSurge extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("Surge");
 
     public HarukaSurge() {
-        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
+        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF, "card_haruka_surge.png");
         baseMagicNumber = magicNumber = 2;
     }
 

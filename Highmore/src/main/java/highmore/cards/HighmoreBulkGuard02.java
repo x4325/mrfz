@@ -1,28 +1,24 @@
 package highmore.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
 import highmore.HighmoreMod;
-import highmore.cards.AbstractHighmoreCard;
 import highmore.powers.ReapPower;
+
+/** 泡沫盾：1 费格挡 + 1 收割。 */
 public class HighmoreBulkGuard02 extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("BulkGuard02");
 
     public HighmoreBulkGuard02() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_highmore_bulkguard02.png");
         baseBlock = 6;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, block));
+        addToBot(new GainBlockAction(p, p, block));
         addToBot(new ApplyPowerAction(p, p, new ReapPower(p, 1), 1));
     }
 

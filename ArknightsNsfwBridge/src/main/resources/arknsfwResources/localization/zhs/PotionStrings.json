@@ -190,5 +190,89 @@
       "兴奋 +",
       " ，获得 #y泡沫封口 #b2 。"
     ]
+  },
+  "arknsfw:AphroDraughtPotion": {
+    "NAME": "催情药剂",
+    "DESCRIPTIONS": [
+      "色情药水。兴奋 +",
+      "，抽 #b2 张牌。"
+    ]
+  },
+  "arknsfw:HoneyDewPotion": {
+    "NAME": "蜜露药水",
+    "DESCRIPTIONS": [
+      "色情药水。回复 #b15% 生命，兴奋 +",
+      "。"
+    ]
+  },
+  "arknsfw:PleasureBombPotion": {
+    "NAME": "快感炸弹",
+    "DESCRIPTIONS": [
+      "色情药水。对所有敌人造成等同兴奋值 1/4 的伤害（最多 ",
+      "）。"
+    ]
+  },
+  "arknsfw:SensitiveMistPotion": {
+    "NAME": "敏感药雾",
+    "DESCRIPTIONS": [
+      "色情药水。获得 #b3 层角色资源，兴奋 +",
+      "。"
+    ]
+  },
+  "arknsfw:SuppressantPotion": {
+    "NAME": "抑制剂",
+    "DESCRIPTIONS": [
+      "色情药水。兴奋 -",
+      "。"
+    ]
+  },
+  "arknsfw:HeatPerfumePotion": {
+    "NAME": "发情香水",
+    "DESCRIPTIONS": [
+      "色情药水。所有敌人获得 #b2 层 #y虚弱 与 #b2 层 #y易伤，兴奋 +",
+      "。"
+    ]
+  },
+  "arknsfw:CorruptionEssencePotion": {
+    "NAME": "堕落原液",
+    "DESCRIPTIONS": [
+      "堕落药水。获得 #b2 层专属印记，兴奋 +",
+      "，获得 #b2 点能量。"
+    ]
+  },
+  "arknsfw:CrestInkPotion": {
+    "NAME": "淫纹墨水",
+    "DESCRIPTIONS": [
+      "堕落药水。立即将专属印记 #r永久刻印，最大生命 +",
+      "。"
+    ]
+  },
+  "arknsfw:WombElixirPotion": {
+    "NAME": "受胎灵药",
+    "DESCRIPTIONS": [
+      "堕落药水。受孕 +",
+      "（中出），已孕时妊娠 +#b15，兴奋 +#b20。"
+    ]
+  },
+  "arknsfw:ClimaxTriggerPotion": {
+    "NAME": "绝顶引爆剂",
+    "DESCRIPTIONS": [
+      "兴奋直接拉满至高潮阈值（下回合必然失控），获得 ",
+      "2 点能量并抽 2 张牌。"
+    ]
+  },
+  "arknsfw:LubricantPotion": {
+    "NAME": "拘束润滑剂",
+    "DESCRIPTIONS": [
+      "获得 ",
+      "点格挡，抽 2 张牌。兴奋 +8。"
+    ]
+  },
+  "arknsfw:MotherNectarPotion": {
+    "NAME": "母乳蜜露",
+    "DESCRIPTIONS": [
+      "回复 ",
+      "点生命（海沫改为格挡）。受孕 +10；怀孕时改为孕程 +10。"
+    ]
   }
 }

@@ -16,7 +16,7 @@ public class SceneFreezeFrame extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("FreezeFrame");
 
     public SceneFreezeFrame() {
-        super(ID, 2, CardType.SKILL, CardRarity.RARE, CardTarget.SELF);
+        super(ID, 2, CardType.SKILL, CardRarity.RARE, CardTarget.SELF, "card_scene_freezeframe.png");
         baseBlock = 12;
     }
 

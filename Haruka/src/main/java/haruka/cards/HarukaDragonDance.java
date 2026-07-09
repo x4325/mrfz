@@ -15,7 +15,7 @@ public class HarukaDragonDance extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("DragonDance");
 
     public HarukaDragonDance() {
-        super(ID, 2, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY, "card_haruka_dragondance.png");
         baseDamage = 14;
     }
 

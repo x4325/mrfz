@@ -5,6 +5,12 @@ import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.PostBattleSubscriber;
+import basemod.interfaces.PostUpdateSubscriber;
+import basemod.interfaces.RenderSubscriber;
+import basemod.interfaces.OnPlayerTurnStartSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
+import basemod.interfaces.OnCardUseSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Color;
@@ -17,6 +23,7 @@ import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.localization.UIStrings;
 import arknsfw.cards.eyja.*;
 import arknsfw.cards.muel.*;
 import arknsfw.events.eyja.*;
@@ -69,6 +76,12 @@ public class ArkNsfwMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
+        PostBattleSubscriber,
+        PostUpdateSubscriber,
+        RenderSubscriber,
+        OnPlayerTurnStartSubscriber,
+        OnStartBattleSubscriber,
+        OnCardUseSubscriber,
         PostInitializeSubscriber {
 
     public static final String modID = "arknsfw";
@@ -115,45 +128,112 @@ public class ArkNsfwMod implements
 
     @Override
     public void receivePostInitialize() {
+        System.out.println("[arknsfw] 0.7.3-cuffs loaded (portrait+postbattle+fallmode active)");
         ArkCharacterSetup.registerCharacters();
         registerEvents();
         registerPotions();
+        arknsfw.helpers.ArkFallMode.loadConfig();
+        arknsfw.helpers.ArkFallCardRider.applyDescriptions();
+        registerModPanel();
+    }
+
+    /** Mods 面板：堕落模式开关。 */
+    private static void registerModPanel() {
+        try {
+            basemod.ModPanel panel = new basemod.ModPanel();
+            basemod.ModLabeledToggleButton toggle = new basemod.ModLabeledToggleButton(
+                    "堕落模式（下一局生效）：卡牌/遗物/药水/事件全面色情化，敌人调教攻击大幅增加",
+                    360.0f, 700.0f,
+                    com.megacrit.cardcrawl.core.Settings.CREAM_COLOR.cpy(),
+                    com.megacrit.cardcrawl.helpers.FontHelper.charDescFont,
+                    arknsfw.helpers.ArkFallMode.enabled(), panel,
+                    label -> { },
+                    button -> {
+                        arknsfw.helpers.ArkFallMode.setEnabled(button.enabled);
+                        if (button.enabled) {
+                            arknsfw.helpers.ArkFallCardRider.applyDescriptions();
+                        }
+                    });
+            panel.addUIElement(toggle);
+            com.badlogic.gdx.graphics.Texture badge =
+                    liesecore.helpers.TextureHelper.getTexture(makeImagePath("badge.png"));
+            BaseMod.registerModBadge(badge, "ArknightsNsfwBridge", "arknsfw",
+                    "方舟七角色 NSFW 桥接与堕落模式", panel);
+        } catch (Exception e) {
+            System.out.println("[arknsfw] mod panel init failed: " + e);
+        }
+    }
+
+    @Override
+    public void receiveOnBattleStart(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
+        arknsfw.helpers.ArkGearSetHelper.atBattleStart();
+    }
+
+    @Override
+    public void receiveCardUsed(com.megacrit.cardcrawl.cards.AbstractCard card) {
+        arknsfw.helpers.ArkFallCardRider.onCardUsed(card);
     }
 
     private static void registerPotions() {
-        String eyjaPool = ColorEnum.Eyjafjalla_COLOR.toString();
-        String muelPool = Muelsyse.patches.ColorEnum.Muelsyse_COLOR.toString();
-        BaseMod.addPotion(CloudWarmTonicPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(PyroAphroPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(VolcanicNectarPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(AshDregPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(FeverSedimentPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(EmberLockPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(HeatLingerPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(EmberDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(LavaBloomPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(CollarSootPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(ContractSedimentPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(MagmaEchoDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(BubbleSerumPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(CloneDripPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(RootDewPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(FloodWastePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(SeedSludgePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(MuteFoamPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(MistSprayPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(TwinSapPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(GreenhouseNectarPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(FloodMarkDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(BubbleMuteDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(EchoSludgePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(ClimaxDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(AshShameMistPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, eyjaPool);
-        BaseMod.addPotion(ClimaxDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
-        BaseMod.addPotion(BubbleShameMistPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, muelPool);
+        // 正确注册方式：potionID 用药水自身 ID，并限定所属角色（参照缪尔赛思 mod 的做法）。
+        // 此前误把颜色名当 potionID，导致所有药水互相覆盖、只有最后一瓶生效。
+        com.megacrit.cardcrawl.characters.AbstractPlayer.PlayerClass eyjaClass =
+                Eyjafjalla.modcore.ClassEnum.Eyjafjalla_CLASS;
+        com.megacrit.cardcrawl.characters.AbstractPlayer.PlayerClass muelClass =
+                Muelsyse.patches.ClassEnum.Muelsyse_CLASS;
+        BaseMod.addPotion(CloudWarmTonicPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, CloudWarmTonicPotion.ID, eyjaClass);
+        BaseMod.addPotion(PyroAphroPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, PyroAphroPotion.ID, eyjaClass);
+        BaseMod.addPotion(VolcanicNectarPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, VolcanicNectarPotion.ID, eyjaClass);
+        BaseMod.addPotion(AshDregPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, AshDregPotion.ID, eyjaClass);
+        BaseMod.addPotion(FeverSedimentPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, FeverSedimentPotion.ID, eyjaClass);
+        BaseMod.addPotion(EmberLockPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, EmberLockPotion.ID, eyjaClass);
+        BaseMod.addPotion(HeatLingerPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, HeatLingerPotion.ID, eyjaClass);
+        BaseMod.addPotion(EmberDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, EmberDraughtPotion.ID, eyjaClass);
+        BaseMod.addPotion(LavaBloomPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, LavaBloomPotion.ID, eyjaClass);
+        BaseMod.addPotion(CollarSootPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, CollarSootPotion.ID, eyjaClass);
+        BaseMod.addPotion(ContractSedimentPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, ContractSedimentPotion.ID, eyjaClass);
+        BaseMod.addPotion(MagmaEchoDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, MagmaEchoDraughtPotion.ID, eyjaClass);
+        BaseMod.addPotion(AshShameMistPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, AshShameMistPotion.ID, eyjaClass);
+        // 绝顶药剂两位角色通用：不限定角色注册一次（同一 potionID 只能注册一次）
+        BaseMod.addPotion(ClimaxDraughtPotion.class, EYJA_LIQUID, EYJA_HYBRID, EYJA_SPOTS, ClimaxDraughtPotion.ID);
+        BaseMod.addPotion(BubbleSerumPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, BubbleSerumPotion.ID, muelClass);
+        BaseMod.addPotion(CloneDripPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, CloneDripPotion.ID, muelClass);
+        BaseMod.addPotion(RootDewPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, RootDewPotion.ID, muelClass);
+        BaseMod.addPotion(FloodWastePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, FloodWastePotion.ID, muelClass);
+        BaseMod.addPotion(SeedSludgePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, SeedSludgePotion.ID, muelClass);
+        BaseMod.addPotion(MuteFoamPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, MuteFoamPotion.ID, muelClass);
+        BaseMod.addPotion(MistSprayPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, MistSprayPotion.ID, muelClass);
+        BaseMod.addPotion(TwinSapPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, TwinSapPotion.ID, muelClass);
+        BaseMod.addPotion(GreenhouseNectarPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, GreenhouseNectarPotion.ID, muelClass);
+        BaseMod.addPotion(FloodMarkDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, FloodMarkDraughtPotion.ID, muelClass);
+        BaseMod.addPotion(BubbleMuteDraughtPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, BubbleMuteDraughtPotion.ID, muelClass);
+        BaseMod.addPotion(EchoSludgePotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, EchoSludgePotion.ID, muelClass);
+        BaseMod.addPotion(BubbleShameMistPotion.class, MUEL_LIQUID, MUEL_HYBRID, MUEL_SPOTS, BubbleShameMistPotion.ID, muelClass);
+        // 五名自制干员共用的色情/堕落药水（不限定角色，桥接 mod 仅在这些角色环境下使用）
+        com.badlogic.gdx.graphics.Color fiveLiquid = new com.badlogic.gdx.graphics.Color(0.95f, 0.45f, 0.65f, 1f);
+        com.badlogic.gdx.graphics.Color fiveHybrid = new com.badlogic.gdx.graphics.Color(1f, 0.65f, 0.8f, 1f);
+        com.badlogic.gdx.graphics.Color fiveSpots = new com.badlogic.gdx.graphics.Color(1f, 0.85f, 0.92f, 1f);
+        BaseMod.addPotion(arknsfw.potions.shared.AphroDraughtPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.AphroDraughtPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.HoneyDewPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.HoneyDewPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.PleasureBombPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.PleasureBombPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.SensitiveMistPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.SensitiveMistPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.SuppressantPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.SuppressantPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.HeatPerfumePotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.HeatPerfumePotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.CorruptionEssencePotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.CorruptionEssencePotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.CrestInkPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.CrestInkPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.WombElixirPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.WombElixirPotion.ID);
+        // 堕落模式新增机制药水（全角色共用）
+        BaseMod.addPotion(arknsfw.potions.shared.ClimaxTriggerPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.ClimaxTriggerPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.LubricantPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.LubricantPotion.ID);
+        BaseMod.addPotion(arknsfw.potions.shared.MotherNectarPotion.class, fiveLiquid, fiveHybrid, fiveSpots, arknsfw.potions.shared.MotherNectarPotion.ID);
     }
 
     private static void registerEvents() {
+        // 拘束祭坛：全角色通用（三幕都注册）
+        BaseMod.addEvent(arknsfw.events.ArkRestraintShrineEvent.ID, arknsfw.events.ArkRestraintShrineEvent.class, Exordium.ID);
+        BaseMod.addEvent(arknsfw.events.ArkRestraintShrineEvent.ID, arknsfw.events.ArkRestraintShrineEvent.class, TheCity.ID);
+        BaseMod.addEvent(arknsfw.events.ArkRestraintShrineEvent.ID, arknsfw.events.ArkRestraintShrineEvent.class, TheBeyond.ID);
+
         // Eyja — normal
         BaseMod.addEvent(EyjaNormalVolcanoRestEvent.ID, EyjaNormalVolcanoRestEvent.class, Exordium.ID);
         BaseMod.addEvent(EyjaNormalFieldCampEvent.ID, EyjaNormalFieldCampEvent.class, TheCity.ID);
@@ -275,6 +355,12 @@ public class ArkNsfwMod implements
         BaseMod.addCard(new SceneTwinPeak());
         BaseMod.addCard(new SceneBlushMark());
         BaseMod.addCard(new SceneCoreNeed());
+        BaseMod.addCard(new SceneCalmBreath());
+        BaseMod.addCard(new SceneIndulgentStrike());
+        BaseMod.addCard(new SceneOfferBody());
+        BaseMod.addCard(new SceneLewdTrance());
+        BaseMod.addCard(new SceneShameSweat());
+        BaseMod.addCard(new ScenePleasureBurst());
         BaseMod.addCard(new SceneOverflowPulse());
         BaseMod.addCard(new SceneWombMarkCard());
         BaseMod.addCard(new SceneShameContractCard());
@@ -289,6 +375,12 @@ public class ArkNsfwMod implements
         BaseMod.addCard(new HighmoreTwinPeak());
         BaseMod.addCard(new HighmoreBlushMark());
         BaseMod.addCard(new HighmoreCoreNeed());
+        BaseMod.addCard(new HighmoreCalmBreath());
+        BaseMod.addCard(new HighmoreIndulgentStrike());
+        BaseMod.addCard(new HighmoreOfferBody());
+        BaseMod.addCard(new HighmoreLewdTrance());
+        BaseMod.addCard(new HighmoreShameSweat());
+        BaseMod.addCard(new HighmorePleasureBurst());
         BaseMod.addCard(new HighmoreOverflowPulse());
         BaseMod.addCard(new HighmoreWombMarkCard());
         BaseMod.addCard(new HighmoreShameContractCard());
@@ -303,6 +395,12 @@ public class ArkNsfwMod implements
         BaseMod.addCard(new ArchettoTwinPeak());
         BaseMod.addCard(new ArchettoBlushMark());
         BaseMod.addCard(new ArchettoCoreNeed());
+        BaseMod.addCard(new ArchettoCalmBreath());
+        BaseMod.addCard(new ArchettoIndulgentStrike());
+        BaseMod.addCard(new ArchettoOfferBody());
+        BaseMod.addCard(new ArchettoLewdTrance());
+        BaseMod.addCard(new ArchettoShameSweat());
+        BaseMod.addCard(new ArchettoPleasureBurst());
         BaseMod.addCard(new ArchettoOverflowPulse());
         BaseMod.addCard(new ArchettoWombMarkCard());
         BaseMod.addCard(new ArchettoShameContractCard());
@@ -317,6 +415,12 @@ public class ArkNsfwMod implements
         BaseMod.addCard(new HarukaTwinPeak());
         BaseMod.addCard(new HarukaBlushMark());
         BaseMod.addCard(new HarukaCoreNeed());
+        BaseMod.addCard(new HarukaCalmBreath());
+        BaseMod.addCard(new HarukaIndulgentStrike());
+        BaseMod.addCard(new HarukaOfferBody());
+        BaseMod.addCard(new HarukaLewdTrance());
+        BaseMod.addCard(new HarukaShameSweat());
+        BaseMod.addCard(new HarukaPleasureBurst());
         BaseMod.addCard(new HarukaOverflowPulse());
         BaseMod.addCard(new HarukaWombMarkCard());
         BaseMod.addCard(new HarukaShameContractCard());
@@ -331,11 +435,19 @@ public class ArkNsfwMod implements
         BaseMod.addCard(new NymphTwinPeak());
         BaseMod.addCard(new NymphBlushMark());
         BaseMod.addCard(new NymphCoreNeed());
+        BaseMod.addCard(new NymphCalmBreath());
+        BaseMod.addCard(new NymphIndulgentStrike());
+        BaseMod.addCard(new NymphOfferBody());
+        BaseMod.addCard(new NymphLewdTrance());
+        BaseMod.addCard(new NymphShameSweat());
+        BaseMod.addCard(new NymphPleasureBurst());
         BaseMod.addCard(new NymphOverflowPulse());
         BaseMod.addCard(new NymphWombMarkCard());
         BaseMod.addCard(new NymphShameContractCard());
         BaseMod.addCard(new NymphBindCollarCard());
         BaseMod.addCard(new NymphEchoSeedCard());
+        // 堕落模式色情卡（28 模板 × 7 角色）
+        arknsfw.cards.ArkFallCards.registerAll();
     }
 
     @Override
@@ -362,6 +474,16 @@ public class ArkNsfwMod implements
         BaseMod.addRelic(new EyjaPregnancyMarkRelic(), RelicType.SHARED);
         BaseMod.addRelic(new MuelPregnancyMarkRelic(), RelicType.SHARED);
         BaseMod.addRelic(new EyjaPregnancyDeliveryRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.highmore.HighmorePregnancyMarkRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.highmore.HighmorePregnancyDeliveryRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.scene.ScenePregnancyMarkRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.scene.ScenePregnancyDeliveryRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.archetto.ArchettoPregnancyMarkRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.archetto.ArchettoPregnancyDeliveryRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.haruka.HarukaPregnancyMarkRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.haruka.HarukaPregnancyDeliveryRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.nymph.NymphPregnancyMarkRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.nymph.NymphPregnancyDeliveryRelic(), RelicType.SHARED);
         BaseMod.addRelic(new MuelPregnancyDeliveryRelic(), RelicType.SHARED);
         // NEW5R
         BaseMod.addRelicToCustomPool(new SceneWarmCharmRelic(), scene.core.ColorEnum.SCENE_COLOR);
@@ -371,6 +493,85 @@ public class ArkNsfwMod implements
         BaseMod.addRelicToCustomPool(new SceneTwinMirrorRelic(), scene.core.ColorEnum.SCENE_COLOR);
         BaseMod.addRelicToCustomPool(new SceneMoistFlaskRelic(), scene.core.ColorEnum.SCENE_COLOR);
         BaseMod.addRelicToCustomPool(new SceneOverflowCoreRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        // ---- 拘束装备遗物：七名角色共通 ----
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), ColorEnum.Eyjafjalla_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), ColorEnum.Eyjafjalla_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), ColorEnum.Eyjafjalla_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceGarterRelic(), ColorEnum.Eyjafjalla_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BellTagRelic(), ColorEnum.Eyjafjalla_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ClothGagRelic(), ColorEnum.Eyjafjalla_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RingGagRelic(), ColorEnum.Eyjafjalla_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), ColorEnum.Eyjafjalla_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), ColorEnum.Eyjafjalla_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), ColorEnum.Eyjafjalla_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), ColorEnum.Eyjafjalla_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceGarterRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BellTagRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ClothGagRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RingGagRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), Muelsyse.patches.ColorEnum.Muelsyse_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceGarterRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BellTagRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ClothGagRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RingGagRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), highmore.core.ColorEnum.HIGHMORE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceGarterRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BellTagRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ClothGagRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RingGagRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), scene.core.ColorEnum.SCENE_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceGarterRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BellTagRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ClothGagRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RingGagRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), archetto.core.ColorEnum.ARCHETTO_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceGarterRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BellTagRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ClothGagRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RingGagRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), haruka.core.ColorEnum.HARUKA_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RestraintCuffsRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LeashRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ChastityBeltRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceGarterRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BellTagRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.ClothGagRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RingGagRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.LaceBlindfoldRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.VibeEggRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.BodyCrestRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
+        BaseMod.addRelicToCustomPool(new arknsfw.relics.equipment.RopeBindRelic(), nymph.core.ColorEnum.NYMPH_COLOR);
+
         BaseMod.addRelic(new SceneBrandCurseRelic(), RelicType.SHARED);
         BaseMod.addRelic(new SceneAltarCurseRelic(), RelicType.SHARED);
         BaseMod.addRelic(new SceneLoopCurseRelic(), RelicType.SHARED);
@@ -414,6 +615,36 @@ public class ArkNsfwMod implements
         BaseMod.addRelic(new NymphBrandCurseRelic(), RelicType.SHARED);
         BaseMod.addRelic(new NymphAltarCurseRelic(), RelicType.SHARED);
         BaseMod.addRelic(new NymphLoopCurseRelic(), RelicType.SHARED);
+        registerFallRelics();
+    }
+
+    /** 堕落模式新增遗物：祝福（事件三选一）+ 欲望装备（七角色池）。 */
+    private static void registerFallRelics() {
+        // 祝福（色情状态载体）——事件/堕落池取得
+        BaseMod.addRelic(new arknsfw.relics.fall.LustSurgeCharmRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.fall.HeatAdaptBadgeRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.fall.SageTimeWatchRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.fall.CrestResonancePendantRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.fall.MotherGlowBroochRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new arknsfw.relics.fall.SensitivityBrandRelic(), RelicType.SHARED);
+        // 欲望装备——加入七个角色色池
+        com.megacrit.cardcrawl.cards.AbstractCard.CardColor[] colors = {
+                ColorEnum.Eyjafjalla_COLOR,
+                Muelsyse.patches.ColorEnum.Muelsyse_COLOR,
+                highmore.core.ColorEnum.HIGHMORE_COLOR,
+                scene.core.ColorEnum.SCENE_COLOR,
+                archetto.core.ColorEnum.ARCHETTO_COLOR,
+                haruka.core.ColorEnum.HARUKA_COLOR,
+                nymph.core.ColorEnum.NYMPH_COLOR,
+        };
+        for (com.megacrit.cardcrawl.cards.AbstractCard.CardColor color : colors) {
+            BaseMod.addRelicToCustomPool(new arknsfw.relics.fall.ExposureCloakRelic(), color);
+            BaseMod.addRelicToCustomPool(new arknsfw.relics.fall.PleasureConverterRelic(), color);
+            BaseMod.addRelicToCustomPool(new arknsfw.relics.fall.TrainingCollarPlusRelic(), color);
+            BaseMod.addRelicToCustomPool(new arknsfw.relics.fall.RemoteVibeRelic(), color);
+            BaseMod.addRelicToCustomPool(new arknsfw.relics.fall.CorruptHourglassRelic(), color);
+            BaseMod.addRelicToCustomPool(new arknsfw.relics.fall.CrestAmpRingRelic(), color);
+        }
     }
 
     @Override
@@ -432,5 +663,29 @@ public class ArkNsfwMod implements
         BaseMod.loadCustomStringsFile(EventStrings.class, base + "EventStrings.json");
         BaseMod.loadCustomStringsFile(PowerStrings.class, base + "PowerStrings.json");
         BaseMod.loadCustomStringsFile(PotionStrings.class, base + "PotionStrings.json");
+        BaseMod.loadCustomStringsFile(UIStrings.class, base + "UIStrings.json");
+    }
+
+    @Override
+    public void receivePostBattle(com.megacrit.cardcrawl.rooms.AbstractRoom battleRoom) {
+        arknsfw.helpers.ArkPostBattleChoice.onBattleEnd(battleRoom);
+    }
+
+    @Override
+    public void receivePostUpdate() {
+        arknsfw.helpers.ArkPostBattleChoice.update();
+    }
+
+    @Override
+    public void receiveRender(com.badlogic.gdx.graphics.g2d.SpriteBatch sb) {
+        arknsfw.helpers.ArkPortraitPanel.render(sb);
+        arknsfw.helpers.ArkBattleHeartEyes.render(sb);
+        arknsfw.helpers.ArkPostBattleChoice.render(sb);
+    }
+
+    @Override
+    public void receiveOnPlayerTurnStart() {
+        arknsfw.helpers.ArkClimaxHelper.onPlayerTurnStart();
+        arknsfw.patches.ArkFallModePatches.rollHAttacks();
     }
 }

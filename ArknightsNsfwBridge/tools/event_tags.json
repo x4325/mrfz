@@ -2,163 +2,633 @@
   "events": {
     "eyja_normal_act1": {
       "event_id": "arknsfw:EyjaNormalVolcanoRest",
+      "event_name": "艾雅法拉·温存线·第一幕",
       "image_file": "event_eyja_normal_act1.png",
       "route": "normal",
       "act": "act1",
       "character": "eyja",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, soft romance, normal route, act 1, outdoor volcano hot spring at dusk, natural rock pool, rising steam, warm orange sunset light, petite girl with red hair and sheep horns, partially wrapped in a modest white towel, sitting on pool edge with knees together, relaxed shoulders, gentle blush, shy calm smile, wet hair clinging to cheeks, scientific field notes and folded coat nearby, serene intimate atmosphere, no explicit penetration, cinematic composition, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 1, outdoor volcano hot spring at dusk, natural rock pool, rising steam, warm orange sunset light, partially wrapped in modest white towel, sitting on pool edge with knees together, relaxed shoulders, gentle blush, shy calm smile, wet hair clinging to cheeks, scientific field notes and folded coat nearby, serene intimate atmosphere, no explicit penetration, cinematic composition, 1024x1024"
     },
     "eyja_normal_act2": {
       "event_id": "arknsfw:EyjaNormalFieldCamp",
+      "event_name": "艾雅法拉·温存线·第二幕",
       "image_file": "event_eyja_normal_act2.png",
       "route": "normal",
       "act": "act2",
       "character": "eyja",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, soft romance, normal route, act 2, night volcano field camp, small campfire glow, starry sky, girl with red hair and horns wrapped in blanket, sitting close beside unseen companion implied off-frame, stargazing, shy tender smile, flushed cheeks, boots and research backpack nearby, warm cozy mood, suggestive closeness but clothed, cinematic wide shot, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 2, night volcano field camp, small campfire glow, starry sky, wrapped in blanket, sitting close beside unseen companion implied off-frame, stargazing, shy tender smile, flushed cheeks, boots and research backpack nearby, warm cozy mood, suggestive closeness but clothed, cinematic wide shot, 1024x1024"
     },
     "eyja_normal_act3": {
       "event_id": "arknsfw:EyjaNormalQuietEmbrace",
+      "event_name": "艾雅法拉·温存线·第三幕",
       "image_file": "event_eyja_normal_act3.png",
       "route": "normal",
       "act": "act3",
       "character": "eyja",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, eyjafjalla, arknights, nsfw, soft romance, normal route, act 3, quiet bedroom at night, cool moonlight through window, girl with red hair and horns in loose sleepwear, gentle emotional embrace pose, tears of relief, tender expression, fully clothed, intimate but wholesome mood, soft blue and warm skin tones, no hardcore, cinematic portrait, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, soft romance, normal route, act 3, quiet bedroom at night, cool moonlight through window, loose sleepwear, gentle emotional embrace pose, tears of relief, tender expression, fully clothed, intimate but wholesome mood, soft blue and warm skin tones, no hardcore, cinematic portrait, 1024x1024"
     },
     "eyja_shame_act1": {
       "event_id": "arknsfw:EyjaShamePublicSample",
+      "event_name": "艾雅法拉·羞耻线·第一幕",
       "image_file": "event_eyja_shame_act1.png",
       "route": "shame",
       "act": "act1",
       "character": "eyja",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, eyjafjalla, arknights, nsfw, shame route, act 1, crowded public geology laboratory, silhouettes of researchers watching, girl with red hair and horns in disheveled lab coat with exposed shoulders, being measured for samples, humiliated blush, teary eyes, hands trembling, clipboard and scientific instruments, harsh fluorescent lighting, public embarrassment theme, suggestive not explicit, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, shame route, act 1, crowded public geology laboratory, silhouettes of researchers watching, disheveled lab coat with exposed shoulders, being measured for samples, humiliated blush, teary eyes, hands trembling, clipboard and scientific instruments, harsh fluorescent lighting, public embarrassment theme, suggestive not explicit, 1024x1024"
     },
     "eyja_shame_act2": {
       "event_id": "arknsfw:EyjaShameOpenSeminar",
+      "event_name": "艾雅法拉·羞耻线·第二幕",
       "image_file": "event_eyja_shame_act2.png",
       "route": "shame",
       "act": "act2",
       "character": "eyja",
-      "comfyui_tags": "masterpiece, best quality, 1girl, eyjafjalla, arknights, nsfw, shame route, act 2, university seminar stage, large projector screen behind her, audience seats in shadow, girl with red hair and horns in wrinkled open lab coat, trying to cover chest with arms, extreme embarrassment, sweat on skin, spotlight on stage, public lecture gone wrong, humiliation, suggestive exposure, dramatic perspective, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, nsfw, shame route, act 2, university seminar stage, large projector screen behind, audience seats in shadow, wrinkled open lab coat, trying to cover chest with arms, extreme embarrassment, sweat on skin, spotlight on stage, public lecture gone wrong, humiliation, suggestive exposure, dramatic perspective, 1024x1024"
     },
     "eyja_shame_act3": {
       "event_id": "arknsfw:EyjaShameAuditHall",
+      "event_name": "艾雅法拉·羞耻线·第三幕",
       "image_file": "event_eyja_shame_act3.png",
       "route": "shame",
       "act": "act3",
       "character": "eyja",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, shame route, act 3, grand tribunal audit hall, stone pillars, crowd of stern judges as silhouettes, girl with red hair and horns kneeling on marble floor, torn clothes, head lowered, public scorn, tears, dramatic chiaroscuro lighting, maximum humiliation scene, suggestive defeat pose, dark red accents, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, shame route, act 3, grand tribunal audit hall, stone pillars, crowd of stern judges as silhouettes, kneeling on marble floor, torn clothes, head lowered, public scorn, tears, dramatic chiaroscuro lighting, maximum humiliation scene, suggestive defeat pose, dark red accents, 1024x1024"
     },
     "eyja_fall_act1": {
       "event_id": "arknsfw:EyjaFallHeatNeed",
+      "event_name": "艾雅法拉·堕落线·第一幕",
       "image_file": "event_eyja_fall_act1.png",
       "route": "fall",
       "act": "act1",
       "character": "eyja",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, fall route, corruption, act 1, overheated small room filled with volcanic glow, messy red hair, feverish addicted expression, half-open clothes, sweaty skin, girl with horns trembling from heat need, red ambient light, suggestive needy pose on bed, loss of composure, dark sensual mood, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 1, overheated small room filled with volcanic glow, messy hair, feverish addicted expression, half-open clothes, sweaty skin, trembling from heat need, red ambient light, suggestive needy pose on bed, loss of composure, dark sensual mood, 1024x1024"
     },
     "eyja_fall_act2": {
       "event_id": "arknsfw:EyjaFallBreedingRite",
+      "event_name": "艾雅法拉·堕落线·第二幕",
       "image_file": "event_eyja_fall_act2.png",
       "route": "fall",
       "act": "act2",
       "character": "eyja",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, fall route, corruption, act 2, ancient lava ritual circle underground, glowing magma altar, girl with red hair and horns wearing collar, submissive kneeling pose, pregnant suggestive belly glow, dark fantasy breeding ritual, chains and runes, intense orange and black palette, explicit theme implied not graphic, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 2, ancient lava ritual circle underground, glowing magma altar, wearing collar, submissive kneeling pose, pregnant suggestive belly glow, dark fantasy breeding ritual, chains and runes, intense orange and black palette, explicit theme implied not graphic, 1024x1024"
     },
     "eyja_fall_act3": {
       "event_id": "arknsfw:EyjaFallAshWomb",
+      "event_name": "艾雅法拉·堕落线·第三幕",
       "image_file": "event_eyja_fall_act3.png",
       "route": "fall",
       "act": "act3",
       "character": "eyja",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, fall route, corruption, act 3, black volcanic altar chamber, corrupted womb glow through lower abdomen, girl with red hair and horns kneeling in ecstasy, broken empty eyes, drool, disheveled body, intense red and black lighting, complete mental fall, breeding corruption climax scene, highly suggestive, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 3, black volcanic altar chamber, corrupted womb glow through lower abdomen, kneeling in ecstasy, broken empty eyes, drool, disheveled body, intense red and black lighting, complete mental fall, breeding corruption climax scene, highly suggestive, 1024x1024"
     },
     "eyja_debuff_seal": {
       "event_id": "arknsfw:EyjaDebuffSealEvent",
+      "event_name": "刻印：火山烙印",
       "image_file": "event_eyja_debuff_seal.png",
       "route": "seal",
       "act": "act2",
       "character": "eyja",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, eyjafjalla, arknights, nsfw, special event, debuff seal, act 2, sterile research chamber with glowing branding apparatus, girl with red hair and horns restrained on medical chair, volcanic runes being burned into skin, mix of pain and arousal, scientific horror aesthetic, permanent mark theme, dramatic red lighting, suggestive, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, special event, debuff seal, act 2, sterile research chamber with glowing branding apparatus, restrained on medical chair, volcanic runes being burned into skin, mix of pain and arousal, scientific horror aesthetic, permanent mark theme, dramatic red lighting, suggestive, 1024x1024"
     },
     "muel_normal_act1": {
       "event_id": "arknsfw:MuelNormalBubbleBreak",
+      "event_name": "缪尔赛思·温存线·第一幕",
       "image_file": "event_muel_normal_act1.png",
       "route": "normal",
       "act": "act1",
       "character": "muel",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, soft romance, normal route, act 1, bright rhine laboratory bathroom, large bubble bath overflowing with foam, girl with green hair and elf ears playfully popping bubbles, relaxed happy smile, wet shoulders above water, clean cute atmosphere, light blue and white palette, suggestive but gentle, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 1, bright rhine laboratory bathroom, large bubble bath overflowing with foam, playfully popping bubbles, relaxed happy smile, wet shoulders above water, clean cute atmosphere, light blue and white palette, suggestive but gentle, 1024x1024"
     },
     "muel_normal_act2": {
       "event_id": "arknsfw:MuelNormalGardenTea",
+      "event_name": "缪尔赛思·温存线·第二幕",
       "image_file": "event_muel_normal_act2.png",
       "route": "normal",
       "act": "act2",
       "character": "muel",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, soft romance, normal route, act 2, lush rhine greenhouse tea party, sunlight through glass ceiling, girl with green hair and elf ears in light sundress sitting among flowers, gentle smile, tea cup in hand, romantic peaceful mood, pastel colors, wholesome intimacy, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 2, lush rhine greenhouse tea party, sunlight through glass ceiling, light sundress sitting among flowers, gentle smile, tea cup in hand, romantic peaceful mood, pastel colors, wholesome intimacy, 1024x1024"
     },
     "muel_normal_act3": {
       "event_id": "arknsfw:MuelNormalStarPool",
+      "event_name": "缪尔赛思·温存线·第三幕",
       "image_file": "event_muel_normal_act3.png",
       "route": "normal",
       "act": "act3",
       "character": "muel",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, muelsyse, arknights, nsfw, soft romance, normal route, act 3, rooftop pool at night under stars, girl with green hair and elf ears in swimsuit at pool edge, shy blush, hand reaching toward offscreen partner implied, sparkling water reflections, quiet romantic atmosphere, soft moonlight, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, soft romance, normal route, act 3, rooftop pool at night under stars, swimsuit at pool edge, shy blush, hand reaching toward offscreen partner implied, sparkling water reflections, quiet romantic atmosphere, soft moonlight, 1024x1024"
     },
     "muel_shame_act1": {
       "event_id": "arknsfw:MuelShameLabAudit",
+      "event_name": "缪尔赛思·羞耻线·第一幕",
       "image_file": "event_muel_shame_act1.png",
       "route": "shame",
       "act": "act1",
       "character": "muel",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, shame route, act 1, rhine laboratory inspection scene, strict auditor silhouette with clipboard, girl with green hair and elf ears in wet translucent lab coat after spilled reagent, embarrassed panicked expression, puddle on floor, harsh lab lights, public failure, suggestive wet clothes, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, shame route, act 1, rhine laboratory inspection scene, strict auditor silhouette with clipboard, wet translucent lab coat after spilled reagent, embarrassed panicked expression, puddle on floor, harsh lab lights, public failure, suggestive wet clothes, 1024x1024"
     },
     "muel_shame_act2": {
       "event_id": "arknsfw:MuelShameLiveDemo",
+      "event_name": "缪尔赛思·羞耻线·第二幕",
       "image_file": "event_muel_shame_act2.png",
       "route": "shame",
       "act": "act2",
       "character": "muel",
-      "comfyui_tags": "masterpiece, best quality, 1girl, muelsyse, arknights, nsfw, shame route, act 2, live science demonstration stage, large audience in darkness, girl with green hair and elf ears in transparent raincoat-like lab outfit, covering body with arms, extreme blush, failed experiment props on table, spotlight humiliation, public exposure theme, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, nsfw, shame route, act 2, live science demonstration stage, large audience in darkness, transparent raincoat-like lab outfit, covering body with arms, extreme blush, failed experiment props on table, spotlight humiliation, public exposure theme, 1024x1024"
     },
     "muel_shame_act3": {
       "event_id": "arknsfw:MuelShameBroadcast",
+      "event_name": "缪尔赛思·羞耻线·第三幕",
       "image_file": "event_muel_shame_act3.png",
       "route": "shame",
       "act": "act3",
       "character": "muel",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, shame route, act 3, rhine broadcast control room, giant monitors showing her image to unknown viewers, girl with green hair and elf ears kneeling on floor in messy clothes, cyber screen glow on face, public digital exposure, tears and shame, futuristic blue lighting, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, shame route, act 3, rhine broadcast control room, giant monitors showing image to unknown viewers, kneeling on floor in messy clothes, cyber screen glow on face, public digital exposure, tears and shame, futuristic blue lighting, 1024x1024"
     },
     "muel_fall_act1": {
       "event_id": "arknsfw:MuelFallCloneNeed",
+      "event_name": "缪尔赛思·堕落线·第一幕",
       "image_file": "event_muel_fall_act1.png",
       "route": "fall",
       "act": "act1",
       "character": "muel",
-      "comfyui_tags": "masterpiece, best quality, 2girls, same character, muelsyse, arknights, nsfw, fall route, corruption, act 1, rhine cloning laboratory, duplicate elf girl with green hair generated from pod, original and clone in suggestive entangled pose, pleasure and confusion, sci-fi tubes and monitors, green glow, clone identity blur theme, highly suggestive, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 2girls, duplicate self, nsfw, fall route, corruption, act 1, rhine cloning laboratory, duplicate generated from pod, suggestive entangled pose, pleasure and confusion, sci-fi tubes and monitors, green glow, clone identity blur theme, highly suggestive, 1024x1024"
     },
     "muel_fall_act2": {
       "event_id": "arknsfw:MuelFallSeedGreenhouse",
+      "event_name": "缪尔赛思·堕落线·第二幕",
       "image_file": "event_muel_fall_act2.png",
       "route": "fall",
       "act": "act2",
       "character": "muel",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, fall route, corruption, act 2, overgrown greenhouse at night, bioluminescent vines wrapping around girl with green hair and elf ears, submissive kneeling among flowers, swollen belly suggestive, breeding with nature theme, moist skin, eerie green palette, dark fantasy, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 2, overgrown greenhouse at night, bioluminescent vines wrapping around body, submissive kneeling among flowers, swollen belly suggestive, breeding with nature theme, moist skin, eerie green palette, dark fantasy, 1024x1024"
     },
     "muel_fall_act3": {
       "event_id": "arknsfw:MuelFallFluidOverflow",
+      "event_name": "缪尔赛思·堕落线·第三幕",
       "image_file": "event_muel_fall_act3.png",
       "route": "fall",
       "act": "act3",
       "character": "muel",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, fall route, corruption, act 3, flooded rhine laboratory, ankle-deep translucent fluid, girl with green hair and elf ears sitting in ecstasy, corrupted smile, soaked clothes clinging to body, broken test tubes, excess fluid overflow theme, cyan and white lighting, complete fall, highly suggestive, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 3, flooded rhine laboratory, ankle-deep translucent fluid, sitting in ecstasy, corrupted smile, soaked clothes clinging to body, broken test tubes, excess fluid overflow theme, cyan and white lighting, complete fall, highly suggestive, 1024x1024"
     },
     "muel_debuff_seal": {
       "event_id": "arknsfw:MuelDebuffSealEvent",
+      "event_name": "刻印：莱茵拘束",
       "image_file": "event_muel_debuff_seal.png",
       "route": "seal",
       "act": "act2",
       "character": "muel",
-      "comfyui_tags": "masterpiece, best quality, 1girl, solo, muelsyse, arknights, nsfw, special event, debuff seal, act 2, rhine restraint laboratory, holographic binding straps, girl with green hair and elf ears on examination table, permanent bio-template branding procedure, clinical sci-fi horror, mix of fear and arousal, blue and green neon, suggestive, 1024x1024"
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, special event, debuff seal, act 2, rhine restraint laboratory, holographic binding straps, on examination table, permanent bio-template branding procedure, clinical sci-fi horror, mix of fear and arousal, blue and green neon, suggestive, 1024x1024"
+    },
+    "scene_normal_act1": {
+      "event_id": "arknsfw:SceneNormalAct1",
+      "event_name": "稀音·温存线·第1幕",
+      "image_file": "event_scene_normal_act1.png",
+      "route": "normal",
+      "act": "act1",
+      "character": "scene",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 1, photography studio dressing room, warm tungsten lights, hot towel on shoulders, sitting on makeup stool, shy relaxed expression, gentle blush, camera equipment nearby, intimate but clothed, cinematic composition, 1024x1024"
+    },
+    "scene_normal_act2": {
+      "event_id": "arknsfw:SceneNormalAct2",
+      "event_name": "稀音·温存线·第2幕",
+      "image_file": "event_scene_normal_act2.png",
+      "route": "normal",
+      "act": "act2",
+      "character": "scene",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 2, studio lounge warmer lighting, leaning on shoulder implied off-frame, flushed cheeks, breath visible in warm air, suggestive closeness, no explicit, 1024x1024"
+    },
+    "scene_normal_act3": {
+      "event_id": "arknsfw:SceneNormalAct3",
+      "event_name": "稀音·温存线·第3幕",
+      "image_file": "event_scene_normal_act3.png",
+      "route": "normal",
+      "act": "act3",
+      "character": "scene",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, soft romance, normal route, act 3, private studio corner at night, tender emotional embrace, tears of relief, fully clothed, warm intimate mood, cinematic portrait, 1024x1024"
+    },
+    "scene_shame_act1": {
+      "event_id": "arknsfw:SceneShameAct1",
+      "event_name": "稀音·羞耻线·第1幕",
+      "image_file": "event_scene_shame_act1.png",
+      "route": "shame",
+      "act": "act1",
+      "character": "scene",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, shame route, act 1, art gallery exhibition, camera flashes like rain, crowd silhouettes, disheveled clothes, humiliated blush, covering body with arms, harsh spotlight, public embarrassment, suggestive not explicit, 1024x1024"
+    },
+    "scene_shame_act2": {
+      "event_id": "arknsfw:SceneShameAct2",
+      "event_name": "稀音·羞耻线·第2幕",
+      "image_file": "event_scene_shame_act2.png",
+      "route": "shame",
+      "act": "act2",
+      "character": "scene",
+      "comfyui_tags": "masterpiece, best quality, 1girl, nsfw, shame route, act 2, gallery press wall, multiple photographers, trembling hands, extreme blush, sweat on skin, trying to hide face, public exposure theme, dramatic perspective, 1024x1024"
+    },
+    "scene_shame_act3": {
+      "event_id": "arknsfw:SceneShameAct3",
+      "event_name": "稀音·羞耻线·第3幕",
+      "image_file": "event_scene_shame_act3.png",
+      "route": "shame",
+      "act": "act3",
+      "character": "scene",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, shame route, act 3, exhibition hall center stage, kneeling under spotlights, torn outfit, head lowered, tears, audience shadows, maximum humiliation, suggestive defeat pose, dark dramatic lighting, 1024x1024"
+    },
+    "scene_fall_act1": {
+      "event_id": "arknsfw:SceneFallAct1",
+      "event_name": "稀音·堕落线·第1幕",
+      "image_file": "event_scene_fall_act1.png",
+      "route": "fall",
+      "act": "act1",
+      "character": "scene",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 1, anonymous commission, holding camera at self, sitting on floor, feverish addicted expression, dim room, collector theme, suggestive self-portrait pose, 1024x1024"
+    },
+    "scene_fall_act2": {
+      "event_id": "arknsfw:SceneFallAct2",
+      "event_name": "稀音·堕落线·第2幕",
+      "image_file": "event_scene_fall_act2.png",
+      "route": "fall",
+      "act": "act2",
+      "character": "scene",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 2, private booth single spotlight, camera on tripod, collector silhouette, kneeling pose, undone buttons, heavy blush, submissive directing session, dark sensual mood, 1024x1024"
+    },
+    "scene_fall_act3": {
+      "event_id": "arknsfw:SceneFallAct3",
+      "event_name": "稀音·堕落线·第3幕",
+      "image_file": "event_scene_fall_act3.png",
+      "route": "fall",
+      "act": "act3",
+      "character": "scene",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 3, glass display case exhibition room, red recording lights everywhere, permanent collection label, relaxed shoulders surrender pose, corrupted calm smile, intense white flash, complete fall, highly suggestive, 1024x1024"
+    },
+    "scene_debuff_seal": {
+      "event_id": "arknsfw:SceneDebuffSeal",
+      "event_name": "刻印台：走光镜头",
+      "image_file": "event_scene_debuff_seal.png",
+      "route": "seal",
+      "act": "act2",
+      "character": "scene",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, special event, debuff seal, act 2, black stone altar with glowing runes, branding ritual, restrained on stone table, mix of pain and arousal, permanent mark theme, dramatic red lighting, suggestive, 1024x1024"
+    },
+    "highmore_normal_act1": {
+      "event_id": "arknsfw:HighmoreNormalAct1",
+      "event_name": "海沫·温存线·第1幕",
+      "image_file": "event_highmore_normal_act1.png",
+      "route": "normal",
+      "act": "act1",
+      "character": "highmore",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 1, tidal flat after ebb, temporary rest tent, warm sunset, sitting on driftwood, relaxed shoulders, gentle blush, sea breeze, serene intimate atmosphere, clothed, 1024x1024"
+    },
+    "highmore_normal_act2": {
+      "event_id": "arknsfw:HighmoreNormalAct2",
+      "event_name": "海沫·温存线·第2幕",
+      "image_file": "event_highmore_normal_act2.png",
+      "route": "normal",
+      "act": "act2",
+      "character": "highmore",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 2, beach camp at dusk, closer sitting pose, blanket shared implied, shy tender smile, flushed cheeks, wet sand, warm cozy mood, suggestive closeness, 1024x1024"
+    },
+    "highmore_normal_act3": {
+      "event_id": "arknsfw:HighmoreNormalAct3",
+      "event_name": "海沫·温存线·第3幕",
+      "image_file": "event_highmore_normal_act3.png",
+      "route": "normal",
+      "act": "act3",
+      "character": "highmore",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, soft romance, normal route, act 3, quiet shoreline night, emotional embrace pose, tears of relief, fully clothed, moonlight on waves, intimate wholesome mood, cinematic portrait, 1024x1024"
+    },
+    "highmore_shame_act1": {
+      "event_id": "arknsfw:HighmoreShameAct1",
+      "event_name": "海沫·羞耻线·第1幕",
+      "image_file": "event_highmore_shame_act1.png",
+      "route": "shame",
+      "act": "act1",
+      "character": "highmore",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, shame route, act 1, fishing village festival stage, wet clinging clothes, crowd watching, humiliated blush, teary eyes, hands trembling, harsh lantern light, public embarrassment, suggestive not explicit, 1024x1024"
+    },
+    "highmore_shame_act2": {
+      "event_id": "arknsfw:HighmoreShameAct2",
+      "event_name": "海沫·羞耻线·第2幕",
+      "image_file": "event_highmore_shame_act2.png",
+      "route": "shame",
+      "act": "act2",
+      "character": "highmore",
+      "comfyui_tags": "masterpiece, best quality, 1girl, nsfw, shame route, act 2, festival platform, transparent wet fabric, covering chest with arms, extreme embarrassment, sweat on skin, villagers silhouettes, spotlight humiliation, 1024x1024"
+    },
+    "highmore_shame_act3": {
+      "event_id": "arknsfw:HighmoreShameAct3",
+      "event_name": "海沫·羞耻线·第3幕",
+      "image_file": "event_highmore_shame_act3.png",
+      "route": "shame",
+      "act": "act3",
+      "character": "highmore",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, shame route, act 3, village square display podium, kneeling, torn clothes, head down, public scorn, tears, dramatic chiaroscuro, maximum humiliation scene, 1024x1024"
+    },
+    "highmore_fall_act1": {
+      "event_id": "arknsfw:HighmoreFallAct1",
+      "event_name": "海沫·堕落线·第1幕",
+      "image_file": "event_highmore_fall_act1.png",
+      "route": "fall",
+      "act": "act1",
+      "character": "highmore",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 1, sea cave at low tide, bioluminescent water, ancient whispering tide, sitting on wet rock, blue glow on skin, submissive trance, salty marks on body, dark sensual mood, 1024x1024"
+    },
+    "highmore_fall_act2": {
+      "event_id": "arknsfw:HighmoreFallAct2",
+      "event_name": "海沫·堕落线·第2幕",
+      "image_file": "event_highmore_fall_act2.png",
+      "route": "fall",
+      "act": "act2",
+      "character": "highmore",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 2, urban flood channel, wet concrete walls, mist wrapping body, leaning against pipe, corrupted longing expression, knee trembling, cyan ambient light, 1024x1024"
+    },
+    "highmore_fall_act3": {
+      "event_id": "arknsfw:HighmoreFallAct3",
+      "event_name": "海沫·堕落线·第3幕",
+      "image_file": "event_highmore_fall_act3.png",
+      "route": "fall",
+      "act": "act3",
+      "character": "highmore",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 3, deep underwater abyss chamber, surrendering to tide, ecstasy expression, glowing mark on lower abdomen, complete mental fall, dark blue and black palette, highly suggestive, 1024x1024"
+    },
+    "highmore_debuff_seal": {
+      "event_id": "arknsfw:HighmoreDebuffSeal",
+      "event_name": "刻印台：潮湿刻印",
+      "image_file": "event_highmore_debuff_seal.png",
+      "route": "seal",
+      "act": "act2",
+      "character": "highmore",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, special event, debuff seal, act 2, tidal altar with glowing water runes, restrained on wet stone, branding procedure, mix of pain and arousal, permanent mark theme, dramatic blue lighting, suggestive, 1024x1024"
+    },
+    "archetto_normal_act1": {
+      "event_id": "arknsfw:ArchettoNormalAct1",
+      "event_name": "空弦·温存线·第1幕",
+      "image_file": "event_archetto_normal_act1.png",
+      "route": "normal",
+      "act": "act1",
+      "character": "archetto",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 1, concert backstage, warm lamp glow, violin bow in hand, sitting on equipment case, relaxed smile, gentle blush, music sheets scattered, clothed, 1024x1024"
+    },
+    "archetto_normal_act2": {
+      "event_id": "arknsfw:ArchettoNormalAct2",
+      "event_name": "空弦·温存线·第2幕",
+      "image_file": "event_archetto_normal_act2.png",
+      "route": "normal",
+      "act": "act2",
+      "character": "archetto",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 2, backstage couch, closer implied companion, shy tender expression, flushed cheeks, warm intimate mood, 1024x1024"
+    },
+    "archetto_normal_act3": {
+      "event_id": "arknsfw:ArchettoNormalAct3",
+      "event_name": "空弦·温存线·第3幕",
+      "image_file": "event_archetto_normal_act3.png",
+      "route": "normal",
+      "act": "act3",
+      "character": "archetto",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, soft romance, normal route, act 3, empty music hall after show, emotional embrace pose, tears of relief, moonlight through windows, cinematic portrait, 1024x1024"
+    },
+    "archetto_shame_act1": {
+      "event_id": "arknsfw:ArchettoShameAct1",
+      "event_name": "空弦·羞耻线·第1幕",
+      "image_file": "event_archetto_shame_act1.png",
+      "route": "shame",
+      "act": "act1",
+      "character": "archetto",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, shame route, act 1, choir loft audience staring, holding bow with trembling fingers, disheveled performance outfit, humiliated blush, public stage, suggestive embarrassment, 1024x1024"
+    },
+    "archetto_shame_act2": {
+      "event_id": "arknsfw:ArchettoShameAct2",
+      "event_name": "空弦·羞耻线·第2幕",
+      "image_file": "event_archetto_shame_act2.png",
+      "route": "shame",
+      "act": "act2",
+      "character": "archetto",
+      "comfyui_tags": "masterpiece, best quality, 1girl, nsfw, shame route, act 2, cathedral choir seats during mass, standing in spotlight, biting sleeve, extreme blush, choir silhouettes, public humiliation, dramatic lighting, 1024x1024"
+    },
+    "archetto_shame_act3": {
+      "event_id": "arknsfw:ArchettoShameAct3",
+      "event_name": "空弦·羞耻线·第3幕",
+      "image_file": "event_archetto_shame_act3.png",
+      "route": "shame",
+      "act": "act3",
+      "character": "archetto",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, shame route, act 3, grand choir hall center, kneeling, torn clothes, head lowered, tears, audience shadows, maximum humiliation, 1024x1024"
+    },
+    "archetto_fall_act1": {
+      "event_id": "arknsfw:ArchettoFallAct1",
+      "event_name": "空弦·堕落线·第1幕",
+      "image_file": "event_archetto_fall_act1.png",
+      "route": "fall",
+      "act": "act1",
+      "character": "archetto",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 1, confession booth curtain, kneeling inside, bow set aside, submissive penitent pose, dim candlelight, corrupted devotion theme, 1024x1024"
+    },
+    "archetto_fall_act2": {
+      "event_id": "arknsfw:ArchettoFallAct2",
+      "event_name": "空弦·堕落线·第2幕",
+      "image_file": "event_archetto_fall_act2.png",
+      "route": "fall",
+      "act": "act2",
+      "character": "archetto",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 2, cathedral during choir practice, standing among singers, hidden touching under robe, biting lip, flushed face, sacred profane contrast, 1024x1024"
+    },
+    "archetto_fall_act3": {
+      "event_id": "arknsfw:ArchettoFallAct3",
+      "event_name": "空弦·堕落线·第3幕",
+      "image_file": "event_archetto_fall_act3.png",
+      "route": "fall",
+      "act": "act3",
+      "character": "archetto",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 3, stone ritual altar in church, lying on cold altar, stigmata branding moment, arched back, candles flickering, complete fall climax, intense chiaroscuro, 1024x1024"
+    },
+    "archetto_debuff_seal": {
+      "event_id": "arknsfw:ArchettoDebuffSeal",
+      "event_name": "刻印台：颤抖弓手",
+      "image_file": "event_archetto_debuff_seal.png",
+      "route": "seal",
+      "act": "act2",
+      "character": "archetto",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, special event, debuff seal, act 2, church seal altar, glowing bow-shaped runes burned into skin, restrained wrists, mix of pain and arousal, permanent mark theme, dramatic gold lighting, suggestive, 1024x1024"
+    },
+    "nymph_normal_act1": {
+      "event_id": "arknsfw:NymphNormalAct1",
+      "event_name": "妮芙·温存线·第1幕",
+      "image_file": "event_nymph_normal_act1.png",
+      "route": "normal",
+      "act": "act1",
+      "character": "nymph",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 1, dreamlike calm shoal, soft mist, sitting on smooth stone, relaxed expression, gentle blush, surreal peaceful atmosphere, clothed, 1024x1024"
+    },
+    "nymph_normal_act2": {
+      "event_id": "arknsfw:NymphNormalAct2",
+      "event_name": "妮芙·温存线·第2幕",
+      "image_file": "event_nymph_normal_act2.png",
+      "route": "normal",
+      "act": "act2",
+      "character": "nymph",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 2, dream shore at twilight, closer implied presence, shy smile, flushed cheeks, floating petals, warm ethereal mood, 1024x1024"
+    },
+    "nymph_normal_act3": {
+      "event_id": "arknsfw:NymphNormalAct3",
+      "event_name": "妮芙·温存线·第3幕",
+      "image_file": "event_nymph_normal_act3.png",
+      "route": "normal",
+      "act": "act3",
+      "character": "nymph",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, soft romance, normal route, act 3, quiet dream bedroom, tender embrace pose, tears of relief, soft blue and purple tones, cinematic portrait, 1024x1024"
+    },
+    "nymph_shame_act1": {
+      "event_id": "arknsfw:NymphShameAct1",
+      "event_name": "妮芙·羞耻线·第1幕",
+      "image_file": "event_nymph_shame_act1.png",
+      "route": "shame",
+      "act": "act1",
+      "character": "nymph",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, shame route, act 1, nightmare void with countless watching eyes, standing exposed, humiliated blush, teary eyes, whispering shadows, surreal horror embarrassment, suggestive, 1024x1024"
+    },
+    "nymph_shame_act2": {
+      "event_id": "arknsfw:NymphShameAct2",
+      "event_name": "妮芙·羞耻线·第2幕",
+      "image_file": "event_nymph_shame_act2.png",
+      "route": "shame",
+      "act": "act2",
+      "character": "nymph",
+      "comfyui_tags": "masterpiece, best quality, 1girl, nsfw, shame route, act 2, dream courtroom of eyes, covering body, extreme blush, trembling, floating judgment symbols, public psychic exposure theme, 1024x1024"
+    },
+    "nymph_shame_act3": {
+      "event_id": "arknsfw:NymphShameAct3",
+      "event_name": "妮芙·羞耻线·第3幕",
+      "image_file": "event_nymph_shame_act3.png",
+      "route": "shame",
+      "act": "act3",
+      "character": "nymph",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, shame route, act 3, abyssal dream pit, kneeling surrounded by whispers, torn outfit, head down, tears, maximum humiliation, dark purple lighting, 1024x1024"
+    },
+    "nymph_fall_act1": {
+      "event_id": "arknsfw:NymphFallAct1",
+      "event_name": "妮芙·堕落线·第1幕",
+      "image_file": "event_nymph_fall_act1.png",
+      "route": "fall",
+      "act": "act1",
+      "character": "nymph",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 1, dream edge bedroom, unseen feeder voice, dazed after kiss, messy hair, addicted expression, bite mark on neck suggest, 1024x1024"
+    },
+    "nymph_fall_act2": {
+      "event_id": "arknsfw:NymphFallAct2",
+      "event_name": "妮芙·堕落线·第2幕",
+      "image_file": "event_nymph_fall_act2.png",
+      "route": "fall",
+      "act": "act2",
+      "character": "nymph",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 2, daytime alley hearing whispers, leaning on wall panting, giving true name, corrupted trance, surreal urban dream bleed, 1024x1024"
+    },
+    "nymph_fall_act3": {
+      "event_id": "arknsfw:NymphFallAct3",
+      "event_name": "妮芙·堕落线·第3幕",
+      "image_file": "event_nymph_fall_act3.png",
+      "route": "fall",
+      "act": "act3",
+      "character": "nymph",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 3, heart offering ritual in dream abyss, kneeling in feeder embrace, empty blissful eyes, heart mark on chest, complete mental fall, highly suggestive, 1024x1024"
+    },
+    "nymph_debuff_seal": {
+      "event_id": "arknsfw:NymphDebuffSeal",
+      "event_name": "刻印台：心蚀低语",
+      "image_file": "event_nymph_debuff_seal.png",
+      "route": "seal",
+      "act": "act2",
+      "character": "nymph",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, special event, debuff seal, act 2, whispering altar with ear-shaped runes, restrained on ritual bed, permanent psychic branding, mix of fear and arousal, purple neon glow, suggestive, 1024x1024"
+    },
+    "haruka_normal_act1": {
+      "event_id": "arknsfw:HarukaNormalAct1",
+      "event_name": "遥·温存线·第1幕",
+      "image_file": "event_haruka_normal_act1.png",
+      "route": "normal",
+      "act": "act1",
+      "character": "haruka",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 1, festival ending, paper lanterns on shoulder, yukata, sitting on wooden steps, relaxed smile, gentle blush, warm orange night light, 1024x1024"
+    },
+    "haruka_normal_act2": {
+      "event_id": "arknsfw:HarukaNormalAct2",
+      "event_name": "遥·温存线·第2幕",
+      "image_file": "event_haruka_normal_act2.png",
+      "route": "normal",
+      "act": "act2",
+      "character": "haruka",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, soft romance, normal route, act 2, lantern-lit festival alley, closer implied companion, shy tender smile, flushed cheeks, fireworks distant glow, 1024x1024"
+    },
+    "haruka_normal_act3": {
+      "event_id": "arknsfw:HarukaNormalAct3",
+      "event_name": "遥·温存线·第3幕",
+      "image_file": "event_haruka_normal_act3.png",
+      "route": "normal",
+      "act": "act3",
+      "character": "haruka",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, soft romance, normal route, act 3, quiet shrine steps after festival, emotional embrace, tears of relief, yukata, moonlight, intimate mood, 1024x1024"
+    },
+    "haruka_shame_act1": {
+      "event_id": "arknsfw:HarukaShameAct1",
+      "event_name": "遥·羞耻线·第1幕",
+      "image_file": "event_haruka_shame_act1.png",
+      "route": "shame",
+      "act": "act1",
+      "character": "haruka",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo focus, nsfw, shame route, act 1, fireworks backlight projecting silhouette on public screen, crowd watching, wet yukata clinging, humiliated blush, festival stage, 1024x1024"
+    },
+    "haruka_shame_act2": {
+      "event_id": "arknsfw:HarukaShameAct2",
+      "event_name": "遥·羞耻线·第2幕",
+      "image_file": "event_haruka_shame_act2.png",
+      "route": "shame",
+      "act": "act2",
+      "character": "haruka",
+      "comfyui_tags": "masterpiece, best quality, 1girl, nsfw, shame route, act 2, festival projection screen close-up, covering body, extreme blush, audience silhouettes, bright pyrotechnic glare, public exposure theme, 1024x1024"
+    },
+    "haruka_shame_act3": {
+      "event_id": "arknsfw:HarukaShameAct3",
+      "event_name": "遥·羞耻线·第3幕",
+      "image_file": "event_haruka_shame_act3.png",
+      "route": "shame",
+      "act": "act3",
+      "character": "haruka",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, shame route, act 3, festival main stage, kneeling under fireworks, torn yukata, head lowered, tears, maximum humiliation, dramatic red gold lighting, 1024x1024"
+    },
+    "haruka_fall_act1": {
+      "event_id": "arknsfw:HarukaFallAct1",
+      "event_name": "遥·堕落线·第1幕",
+      "image_file": "event_haruka_fall_act1.png",
+      "route": "fall",
+      "act": "act1",
+      "character": "haruka",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 1, summer festival crowd, fox mask partner, yukata half undone, dancing close, heavy blush, fireworks above, suggestive dance, 1024x1024"
+    },
+    "haruka_fall_act2": {
+      "event_id": "arknsfw:HarukaFallAct2",
+      "event_name": "遥·堕落线·第2幕",
+      "image_file": "event_haruka_fall_act2.png",
+      "route": "fall",
+      "act": "act2",
+      "character": "haruka",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 2, torii gate at night, pressed against wooden pillar, fox mask lover, hair ribbon on wrist, festival drums distant, corrupted desire, 1024x1024"
+    },
+    "haruka_fall_act3": {
+      "event_id": "arknsfw:HarukaFallAct3",
+      "event_name": "遥·堕落线·第3幕",
+      "image_file": "event_haruka_fall_act3.png",
+      "route": "fall",
+      "act": "act3",
+      "character": "haruka",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, fall route, corruption, act 3, shrine inner hall firelight, ritual offering dance, clothes falling like firework sparks, ecstasy in smoke, complete fall, intense warm lighting, 1024x1024"
+    },
+    "haruka_debuff_seal": {
+      "event_id": "arknsfw:HarukaDebuffSeal",
+      "event_name": "刻印台：余焰灼身",
+      "image_file": "event_haruka_debuff_seal.png",
+      "route": "seal",
+      "act": "act2",
+      "character": "haruka",
+      "comfyui_tags": "masterpiece, best quality, 1girl, solo, nsfw, special event, debuff seal, act 2, festival altar with ember runes, restrained on tatami, fire-branding permanent mark, mix of pain and arousal, orange glow, suggestive, 1024x1024"
     }
   }
 }

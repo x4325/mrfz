@@ -30,7 +30,7 @@ public class LeakPower extends AbstractArkDebuffPower {
         if (AbstractDungeon.player.currentBlock > 0) {
             AbstractDungeon.player.loseBlock(Math.min(drain, AbstractDungeon.player.currentBlock));
         }
-        NsfwRunStats.addConception(2 * amount, false);
+        arknsfw.helpers.ArkSafeStats.addConceptionDeferred(2 * amount, false);
     }
 
     @Override

@@ -15,7 +15,7 @@ public class HighmoreBrineWall extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("BrineWall");
 
     public HighmoreBrineWall() {
-        super(ID, 2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, 2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF, "card_highmore_brinewall.png");
         baseBlock = 14;
     }
 

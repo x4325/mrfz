@@ -10,7 +10,7 @@ public class HarukaDefend extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("Defend");
 
     public HarukaDefend() {
-        super(ID, 1, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF, "card_defend.png");
+        super(ID, 1, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF, "card_haruka_defend.png");
         baseBlock = 5;
         this.tags.add(CardTags.STARTER_DEFEND);
     }

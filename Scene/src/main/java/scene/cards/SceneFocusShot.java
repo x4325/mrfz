@@ -16,7 +16,7 @@ public class SceneFocusShot extends AbstractSceneCard {
     public static final String ID = SceneMod.makeID("FocusShot");
 
     public SceneFocusShot() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_scene_focusshot.png");
         baseDamage = 7;
     }
 

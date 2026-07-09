@@ -15,12 +15,15 @@ public class HarukaSparkWave extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("SparkWave");
 
     public HarukaSparkWave() {
-        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY, "card_haruka_sparkwave.png");
         baseDamage = 5;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof haruka.characters.Haruka) {
+            ((haruka.characters.Haruka) p).playCharAnimation("Skill_Begin");
+        }
         addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
     }
 

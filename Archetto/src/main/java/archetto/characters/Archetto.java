@@ -90,8 +90,8 @@ public class Archetto extends CustomPlayer {
         dialogY = (drawY * Settings.scale) + 240 * Settings.scale;
         initializeClass(
                 null,
-                "images/characters/ironclad/shoulder2.png",
-                "images/characters/ironclad/shoulder.png",
+                ArchettoMod.imgPath("char/shoulder_skin0.png"),
+                ArchettoMod.imgPath("char/shoulder_skin0.png"),
                 "images/characters/ironclad/corpse.png",
                 new CharSelectInfo(
                         getStaticLocalizedCharacterName(),
@@ -114,6 +114,10 @@ public class Archetto extends CustomPlayer {
                 SPINE_SCALE
         );
         setupSpineAnimations();
+        // 营火/肩部立绘固定使用精一立绘
+        this.shoulderImg = shoulderTex(0);
+        this.shoulder2Img = this.shoulderImg;
+        this.img = this.shoulderImg;
     }
 
 
@@ -138,9 +142,30 @@ public class Archetto extends CustomPlayer {
         }
     }
 
+    private static final java.util.HashMap<String, com.badlogic.gdx.graphics.Texture> SHOULDER_CACHE =
+            new java.util.HashMap<String, com.badlogic.gdx.graphics.Texture>();
+
+    private static com.badlogic.gdx.graphics.Texture shoulderTex(int skinIndex) {
+        String path = ArchettoMod.imgPath("char/shoulder_skin" + skinIndex + ".png");
+        com.badlogic.gdx.graphics.Texture tex = SHOULDER_CACHE.get(path);
+        if (tex == null) {
+            try {
+                tex = new com.badlogic.gdx.graphics.Texture(com.badlogic.gdx.Gdx.files.internal(path));
+            } catch (Exception e) {
+                tex = ImageMaster.loadImage(ArchettoMod.imgPath("char/shoulder_skin0.png"));
+            }
+            if (tex == null) {
+                // 最终兜底：绝不让营火渲染拿到 null
+                tex = ImageMaster.loadImage("images/characters/ironclad/shoulder.png");
+            }
+            SHOULDER_CACHE.put(path, tex);
+        }
+        return tex;
+    }
+
     private void loadCharacterImages() {
-        this.shoulderImg = ImageMaster.loadImage("images/characters/ironclad/shoulder.png");
-        this.shoulder2Img = ImageMaster.loadImage("images/characters/ironclad/shoulder2.png");
+        this.shoulderImg = shoulderTex(0);
+        this.shoulder2Img = this.shoulderImg;
         this.corpseImg = ImageMaster.loadImage("images/characters/ironclad/corpse.png");
         this.img = this.shoulderImg;
     }
@@ -226,5 +251,65 @@ public class Archetto extends CustomPlayer {
         CardCrawlGame.sound.playA("ATTACK_HEAVY", -0.3f);
     }
 
+
+
+    // ================= 骨骼动画触发 =================
+
+    private String idleAnimName() {
+        if (this.stateData == null) {
+            return "Idle";
+        }
+        return this.stateData.getSkeletonData().findAnimation("Idle") != null ? "Idle" : "Default";
+    }
+
+    /** 播放一次指定动作，结束后自动回到待机（含混合过渡）。 */
+    public void playCharAnimation(String name) {
+        if (this.state == null || this.stateData == null || name == null) {
+            return;
+        }
+        if (this.stateData.getSkeletonData().findAnimation(name) == null) {
+            return;
+        }
+        AnimationState.TrackEntry e = this.state.setAnimation(0, name, false);
+        e.setTimeScale(1.0f);
+        AnimationState.TrackEntry idle = this.state.addAnimation(0, idleAnimName(), true, 0.0f);
+        idle.setTimeScale(0.6f);
+    }
+
+    @Override
+    public void useFastAttackAnimation() {
+        super.useFastAttackAnimation();
+        playCharAnimation("Attack");
+    }
+
+    /** 登场动作（战斗开始时由 Mod 调用）。 */
+    public void playIntroAnimation() {
+        playCharAnimation("Start");
+    }
+
+    @Override
+    public void damage(com.megacrit.cardcrawl.cards.DamageInfo info) {
+        int before = this.currentHealth;
+        super.damage(info);
+        if (before > 0 && this.currentHealth <= 0) {
+            playCharAnimation("Die");
+        }
+    }
+
+    /** 营火界面：全屏 shoulder 的透明区会渲染成黑色盖住按钮，改用 Spine 模型/受控渲染。 */
+    @Override
+    public void render(com.badlogic.gdx.graphics.g2d.SpriteBatch sb) {
+        if (com.megacrit.cardcrawl.dungeons.AbstractDungeon.getCurrRoom()
+                instanceof com.megacrit.cardcrawl.rooms.RestRoom) {
+            sb.setColor(com.badlogic.gdx.graphics.Color.WHITE);
+            if (this.atlas != null) {
+                this.renderPlayerImage(sb);
+            }
+            this.hb.render(sb);
+            this.healthHb.render(sb);
+            return;
+        }
+        super.render(sb);
+    }
 
 }

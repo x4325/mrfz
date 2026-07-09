@@ -10,7 +10,7 @@ public class HarukaWard extends AbstractHarukaCard {
     public static final String ID = HarukaMod.makeID("Ward");
 
     public HarukaWard() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF, "card_haruka_ward.png");
         baseBlock = 7;
     }
 

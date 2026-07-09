@@ -16,15 +16,18 @@ public class ArchettoQuickShot extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("QuickShot");
 
     public ArchettoQuickShot() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_archetto_quickshot.png");
         baseDamage = 8;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new AimPower(p, 1), 1));
+        // 打出瞬间若已有 ≥3 层瞄准（即本次射击享受满加成），返还 1 点能量
+        if (AimPower.get(p) >= 3) {
+            addToBot(new GainEnergyAction(1));
+        }
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        if (AimPower.get(p) >= 3) { addToBot(new GainEnergyAction(1)); }
+        addToBot(new ApplyPowerAction(p, p, new AimPower(p, 1), 1));
     }
 
     @Override

@@ -41,8 +41,31 @@ public final class ArkCharacterSetup {
     private static final Map<String, EventMeta> EVENT_META = new HashMap<>();
     private static final Set<String> EYJA_EVENTS = new HashSet<>();
     private static final Set<String> MUEL_EVENTS = new HashSet<>();
+    private static final Set<String> FIVE_CHAR_EVENTS = new HashSet<>();
+
+    private static void regFive(String character, String prefix) {
+        String[][] routes = {
+                {"Normal", "NORMAL"}, {"Shame", "SHAME"}, {"Fall", "FALL"}
+        };
+        for (String[] r : routes) {
+            for (int act = 1; act <= 3; act++) {
+                String id = "arknsfw:" + prefix + r[0] + "Act" + act;
+                EVENT_META.put(id, new EventMeta(character, ArkRunProgress.Route.valueOf(r[1]), act));
+                FIVE_CHAR_EVENTS.add(id);
+            }
+        }
+        String sealId = "arknsfw:" + prefix + "DebuffSeal";
+        EVENT_META.put(sealId, new EventMeta(character, null, 0));
+        FIVE_CHAR_EVENTS.add(sealId);
+    }
 
     static {
+        regFive("highmore", "Highmore");
+        regFive("scene", "Scene");
+        regFive("archetto", "Archetto");
+        regFive("haruka", "Haruka");
+        regFive("nymph", "Nymph");
+
         reg("arknsfw:EyjaNormalVolcanoRest", "eyja", ArkRunProgress.Route.NORMAL, 1);
         reg("arknsfw:EyjaNormalFieldCamp", "eyja", ArkRunProgress.Route.NORMAL, 2);
         reg("arknsfw:EyjaNormalQuietEmbrace", "eyja", ArkRunProgress.Route.NORMAL, 3);
@@ -88,15 +111,28 @@ public final class ArkCharacterSetup {
         PregnancyMarkRegistry.register(Muelsyse.class, MuelPregnancyMarkRelic.ID);
         PregnancyDeliveryRegistry.register(Eyjafjalla.class, EyjaPregnancyDeliveryRelic.ID);
         PregnancyDeliveryRegistry.register(Muelsyse.class, MuelPregnancyDeliveryRelic.ID);
-        NsfwCharacterRegistry.register(Scene.class);
-        NsfwCharacterRegistry.register(Highmore.class);
-        NsfwCharacterRegistry.register(Archetto.class);
-        NsfwCharacterRegistry.register(Haruka.class);
-        NsfwCharacterRegistry.register(Nymph.class);
+        NsfwCharacterRegistry.register(Scene.class, ArkFiveIntentHandler.INSTANCE);
+        NsfwCharacterRegistry.register(Highmore.class, ArkFiveIntentHandler.INSTANCE);
+        NsfwCharacterRegistry.register(Archetto.class, ArkFiveIntentHandler.INSTANCE);
+        NsfwCharacterRegistry.register(Haruka.class, ArkFiveIntentHandler.INSTANCE);
+        NsfwCharacterRegistry.register(Nymph.class, ArkFiveIntentHandler.INSTANCE);
+        PregnancyMarkRegistry.register(Scene.class, arknsfw.relics.scene.ScenePregnancyMarkRelic.ID);
+        PregnancyMarkRegistry.register(Highmore.class, arknsfw.relics.highmore.HighmorePregnancyMarkRelic.ID);
+        PregnancyMarkRegistry.register(Archetto.class, arknsfw.relics.archetto.ArchettoPregnancyMarkRelic.ID);
+        PregnancyMarkRegistry.register(Haruka.class, arknsfw.relics.haruka.HarukaPregnancyMarkRelic.ID);
+        PregnancyMarkRegistry.register(Nymph.class, arknsfw.relics.nymph.NymphPregnancyMarkRelic.ID);
+        PregnancyDeliveryRegistry.register(Scene.class, arknsfw.relics.scene.ScenePregnancyDeliveryRelic.ID);
+        PregnancyDeliveryRegistry.register(Highmore.class, arknsfw.relics.highmore.HighmorePregnancyDeliveryRelic.ID);
+        PregnancyDeliveryRegistry.register(Archetto.class, arknsfw.relics.archetto.ArchettoPregnancyDeliveryRelic.ID);
+        PregnancyDeliveryRegistry.register(Haruka.class, arknsfw.relics.haruka.HarukaPregnancyDeliveryRelic.ID);
+        PregnancyDeliveryRegistry.register(Nymph.class, arknsfw.relics.nymph.NymphPregnancyDeliveryRelic.ID);
         for (String id : EYJA_EVENTS) {
             NsfwEventPool.registerEvent(id);
         }
         for (String id : MUEL_EVENTS) {
+            NsfwEventPool.registerEvent(id);
+        }
+        for (String id : FIVE_CHAR_EVENTS) {
             NsfwEventPool.registerEvent(id);
         }
     }
@@ -126,6 +162,40 @@ public final class ArkCharacterSetup {
     }
     public static boolean isNymphRun() {
         return AbstractDungeon.player instanceof Nymph;
+    }
+
+    /** 把不属于当前角色的专属事件从候选池中剔除，杜绝角色事件互串。
+     *  只按“角色归属”过滤；同角色但路线/幕不匹配的事件保留在池中，由偏置选取器负责时机。 */
+    public static void purgeIneligibleEvents(ArrayList<String> eventList) {
+        if (eventList == null || eventList.isEmpty()) {
+            return;
+        }
+        String character = isEyjaRun() ? "eyja" : isMuelsyseRun() ? "muel"
+                : isSceneRun() ? "scene" : isHighmoreRun() ? "highmore"
+                : isArchettoRun() ? "archetto" : isHarukaRun() ? "haruka"
+                : isNymphRun() ? "nymph" : null;
+        ArrayList<String> toRemove = new ArrayList<>();
+        for (String id : eventList) {
+            EventMeta meta = EVENT_META.get(id);
+            if (meta != null && (character == null || !character.equals(meta.character))) {
+                toRemove.add(id);
+            }
+        }
+        eventList.removeAll(toRemove);
+    }
+
+    /** 候选池中不带专属元数据的事件（原版及其他 mod 的事件）。 */
+    public static ArrayList<String> nonCharacterEvents(ArrayList<String> eventList) {
+        ArrayList<String> out = new ArrayList<>();
+        if (eventList == null) {
+            return out;
+        }
+        for (String id : eventList) {
+            if (!EVENT_META.containsKey(id)) {
+                out.add(id);
+            }
+        }
+        return out;
     }
 
     public static ArrayList<String> eligibleCharacterEvents(ArrayList<String> eventList) {
@@ -175,12 +245,15 @@ public final class ArkCharacterSetup {
         if (meta == null) {
             return true;
         }
-        if ("eyja".equals(meta.character)) {
-            return isEyjaRun();
+        switch (meta.character) {
+            case "eyja": return isEyjaRun();
+            case "muel": return isMuelsyseRun();
+            case "scene": return isSceneRun();
+            case "highmore": return isHighmoreRun();
+            case "archetto": return isArchettoRun();
+            case "haruka": return isHarukaRun();
+            case "nymph": return isNymphRun();
+            default: return true;
         }
-        if ("muel".equals(meta.character)) {
-            return isMuelsyseRun();
-        }
-        return true;
     }
 }

@@ -12,7 +12,7 @@ public class NymphJab extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("Jab");
 
     public NymphJab() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY, "card_nymph_jab.png");
         baseDamage = 8;
     }
 

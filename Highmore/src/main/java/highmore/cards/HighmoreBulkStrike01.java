@@ -5,19 +5,17 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
 import highmore.HighmoreMod;
-import highmore.cards.AbstractHighmoreCard;
 import highmore.powers.ReapPower;
+
+/** 浪尖轻掠：0 费小攻击 + 1 收割。 */
 public class HighmoreBulkStrike01 extends AbstractHighmoreCard {
     public static final String ID = HighmoreMod.makeID("BulkStrike01");
 
     public HighmoreBulkStrike01() {
         super(ID, 0, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = 6;
+        baseDamage = 4;
     }
 
     @Override

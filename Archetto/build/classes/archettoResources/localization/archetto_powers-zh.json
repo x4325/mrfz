@@ -5,5 +5,19 @@
       "下次攻击额外造成 ",
       " 点伤害，随后消耗全部瞄准。"
     ]
+  },
+  "archetto:ConcertoPower": {
+    "NAME": "协奏",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 ",
+      " 层瞄准。"
+    ]
+  },
+  "archetto:HawkEyePower": {
+    "NAME": "鹰眼",
+    "DESCRIPTIONS": [
+      "每层瞄准的伤害加成 +",
+      " （基础 2）。"
+    ]
   }
 }

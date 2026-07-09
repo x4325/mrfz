@@ -18,13 +18,16 @@ public class NymphCurseWave extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("CurseWave");
 
     public NymphCurseWave() {
-        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY, "card_nymph_cursewave.png");
         baseDamage = 7;
         baseMagicNumber = magicNumber = 1;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (p instanceof nymph.characters.Nymph) {
+            ((nymph.characters.Nymph) p).playCharAnimation("Skill_2");
+        }
         addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
         for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) if (!mo.isDead && !mo.isDying) addToBot(new ApplyPowerAction(mo, p, new HexPower(mo, magicNumber), magicNumber));
     }

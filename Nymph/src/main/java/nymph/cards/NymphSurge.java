@@ -11,7 +11,7 @@ public class NymphSurge extends AbstractNymphCard {
     public static final String ID = NymphMod.makeID("Surge");
 
     public NymphSurge() {
-        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
+        super(ID, 1, CardType.POWER, CardRarity.RARE, CardTarget.SELF, "card_nymph_surge.png");
         baseMagicNumber = magicNumber = 2;
     }
 

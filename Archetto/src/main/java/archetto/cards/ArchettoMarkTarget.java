@@ -1,34 +1,30 @@
 package archetto.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
 import archetto.ArchettoMod;
-import archetto.cards.AbstractArchettoCard;
 import archetto.powers.AimPower;
+
+/** 标记：获得瞄准。 */
 public class ArchettoMarkTarget extends AbstractArchettoCard {
     public static final String ID = ArchettoMod.makeID("MarkTarget");
 
     public ArchettoMarkTarget() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
-        
+        baseMagicNumber = magicNumber = 2;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new AimPower(p, 2), 2));
+        addToBot(new ApplyPowerAction(p, p, new AimPower(p, magicNumber), magicNumber));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
-            upgradeName();
+            upgradeName(); upgradeMagicNumber(1);
         }
     }
 

@@ -25,8 +25,8 @@ public class HighmoreDeepResonance extends AbstractArkNsfwCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        NsfwRunStats.addExcitement(10);
-        NsfwRunStats.addFertility(4, 0, false);
+        NsfwRunStats.addExcitement(18);
+        NsfwRunStats.addFertility(6, 0, false);
         ArkCharMechanicsHelper.applyReapPower(p, 1);
     }
 

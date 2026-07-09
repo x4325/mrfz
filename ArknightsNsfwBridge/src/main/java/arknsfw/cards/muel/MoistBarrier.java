@@ -39,8 +39,7 @@ public class MoistBarrier extends AbstractArkNsfwCard {
         if (!upgraded) {
             upgradeName();
             upgradeBlock(4);
-            rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
+            applyUpgradeDescription();
         }
     }
 

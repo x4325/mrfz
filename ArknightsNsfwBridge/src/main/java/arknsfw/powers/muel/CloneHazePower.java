@@ -22,8 +22,8 @@ public class CloneHazePower extends AbstractPower {
 
     @Override
     public void atStartOfTurn() {
-        NsfwRunStats.addExcitement(5 * amount);
-        NsfwRunStats.addConception(2 * amount, false);
+        arknsfw.helpers.ArkSafeStats.addExcitementDeferred(5 * amount);
+        arknsfw.helpers.ArkSafeStats.addConceptionDeferred(2 * amount, false);
     }
 
     @Override

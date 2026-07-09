@@ -7,9 +7,6 @@ $MODS = "$STEAM\common\SlayTheSpire\mods"
 $WS = "$STEAM\workshop\content\646570"
 
 python "$PROJ\tools\generate_placeholders.py"
-python "$PROJ\tools\import_power_icons.py"
-python "$PROJ\tools\import_ark_relic_icons.py"
-python "$PROJ\tools\import_ark_potion_icons.py"
 python "$PROJ\tools\import_ark_events.py"
 python "$PROJ\tools\import_ark_cards.py"
 
@@ -38,7 +35,11 @@ $src | Set-Content -Encoding ascii $sourcesFile
 if ($LASTEXITCODE -ne 0) { exit 1 }
 Copy-Item -Recurse -Force "$PROJ\src\main\resources\*" "$PROJ\build\classes\"
 
+# 先打到临时文件，成功后原子替换——避免游戏占用/中断留下半截坏 jar
 Push-Location "$PROJ\build\classes"
-& "$JAVA_HOME\bin\jar.exe" cf "$MODS\arknsfw.jar" .
+& "$JAVA_HOME\bin\jar.exe" cf "$PROJ\build\arknsfw.jar" .
+if ($LASTEXITCODE -ne 0) { Pop-Location; Write-Error "jar failed"; exit 1 }
 Pop-Location
+Move-Item -Force "$PROJ\build\arknsfw.jar" "$MODS\arknsfw.jar"
+Write-Host "arknsfw.jar built OK -> $MODS\arknsfw.jar"
 Write-Host "Built: $MODS\arknsfw.jar"

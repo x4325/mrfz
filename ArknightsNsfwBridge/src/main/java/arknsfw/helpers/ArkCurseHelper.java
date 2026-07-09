@@ -24,14 +24,33 @@ public final class ArkCurseHelper {
             "arknsfw:SeedWombCard",
     };
 
+    private static String[] fiveCharCurses(String prefix) {
+        return new String[]{
+                "arknsfw:" + prefix + "WombMarkCard",
+                "arknsfw:" + prefix + "ShameContractCard",
+                "arknsfw:" + prefix + "BindCollarCard",
+                "arknsfw:" + prefix + "EchoSeedCard",
+        };
+    }
+
+    private static String[] currentCharacterCurses() {
+        if (ArkCharacterSetup.isEyjaRun()) return EYJA_CURSES;
+        if (ArkCharacterSetup.isMuelsyseRun()) return MUEL_CURSES;
+        if (ArkCharacterSetup.isSceneRun()) return fiveCharCurses("Scene");
+        if (ArkCharacterSetup.isHighmoreRun()) return fiveCharCurses("Highmore");
+        if (ArkCharacterSetup.isArchettoRun()) return fiveCharCurses("Archetto");
+        if (ArkCharacterSetup.isHarukaRun()) return fiveCharCurses("Haruka");
+        if (ArkCharacterSetup.isNymphRun()) return fiveCharCurses("Nymph");
+        return null;
+    }
+
     private ArkCurseHelper() {
     }
 
     public static void addRandomCurseForCurrentCharacter() {
-        if (ArkCharacterSetup.isEyjaRun()) {
-            addCurse(randomFrom(EYJA_CURSES));
-        } else if (ArkCharacterSetup.isMuelsyseRun()) {
-            addCurse(randomFrom(MUEL_CURSES));
+        String[] pool = currentCharacterCurses();
+        if (pool != null) {
+            addCurse(randomFrom(pool));
         } else {
             CurseHelper.addRandomCurseToDeck();
         }
@@ -39,13 +58,8 @@ public final class ArkCurseHelper {
 
     /** 战后诅咒卡奖励：按当前 Ark 角色返回对应诅咒池。 */
     public static AbstractCard randomCurseForCurrentCharacter() {
-        if (ArkCharacterSetup.isEyjaRun()) {
-            return copyOrNull(randomFrom(EYJA_CURSES));
-        }
-        if (ArkCharacterSetup.isMuelsyseRun()) {
-            return copyOrNull(randomFrom(MUEL_CURSES));
-        }
-        return null;
+        String[] pool = currentCharacterCurses();
+        return pool != null ? copyOrNull(randomFrom(pool)) : null;
     }
 
     public static void addCurseById(String id) {
@@ -75,6 +89,26 @@ public final class ArkCurseHelper {
             addIfMissing(pool, new arknsfw.relics.curses.muel.CloneLoopCurseRelic());
             addIfMissing(pool, new arknsfw.relics.curses.muel.RhineFilthCurseRelic());
             addIfMissing(pool, new arknsfw.relics.curses.muel.OverflowCoreCurseRelic());
+        } else if (ArkCharacterSetup.isSceneRun()) {
+            addIfMissing(pool, new arknsfw.relics.curses.scene.SceneBrandCurseRelic());
+            addIfMissing(pool, new arknsfw.relics.curses.scene.SceneAltarCurseRelic());
+            addIfMissing(pool, new arknsfw.relics.curses.scene.SceneLoopCurseRelic());
+        } else if (ArkCharacterSetup.isHighmoreRun()) {
+            addIfMissing(pool, new arknsfw.relics.curses.highmore.HighmoreBrandCurseRelic());
+            addIfMissing(pool, new arknsfw.relics.curses.highmore.HighmoreAltarCurseRelic());
+            addIfMissing(pool, new arknsfw.relics.curses.highmore.HighmoreLoopCurseRelic());
+        } else if (ArkCharacterSetup.isArchettoRun()) {
+            addIfMissing(pool, new arknsfw.relics.curses.archetto.ArchettoBrandCurseRelic());
+            addIfMissing(pool, new arknsfw.relics.curses.archetto.ArchettoAltarCurseRelic());
+            addIfMissing(pool, new arknsfw.relics.curses.archetto.ArchettoLoopCurseRelic());
+        } else if (ArkCharacterSetup.isHarukaRun()) {
+            addIfMissing(pool, new arknsfw.relics.curses.haruka.HarukaBrandCurseRelic());
+            addIfMissing(pool, new arknsfw.relics.curses.haruka.HarukaAltarCurseRelic());
+            addIfMissing(pool, new arknsfw.relics.curses.haruka.HarukaLoopCurseRelic());
+        } else if (ArkCharacterSetup.isNymphRun()) {
+            addIfMissing(pool, new arknsfw.relics.curses.nymph.NymphBrandCurseRelic());
+            addIfMissing(pool, new arknsfw.relics.curses.nymph.NymphAltarCurseRelic());
+            addIfMissing(pool, new arknsfw.relics.curses.nymph.NymphLoopCurseRelic());
         }
         if (pool.isEmpty()) {
             return CurseHelper.randomUnownedCurseRelic();
@@ -86,7 +120,8 @@ public final class ArkCurseHelper {
         if (ids == null || ids.length == 0 || AbstractDungeon.cardRandomRng == null) {
             return null;
         }
-        String id = ids[AbstractDungeon.cardRandomRng.random(ids.length)];
+        // Random.random(n) 是闭区间 [0, n]，必须用 length - 1
+        String id = ids[AbstractDungeon.cardRandomRng.random(ids.length - 1)];
         return CardLibrary.getCopy(id);
     }
 

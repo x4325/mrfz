@@ -116,7 +116,8 @@ def save_relic(name, color):
         d = ROOT / sub
         d.mkdir(parents=True, exist_ok=True)
         out = d / f"{name}.png"
-        if out.exists() and out.stat().st_size > 2000:
+        if out.exists():
+            # 已有成品图标（含轮廓）一律不覆盖
             continue
         img = Image.new("RGBA", (128, 128), color + (255,))
         ImageDraw.Draw(img).ellipse((8, 8, 120, 120), fill=(240, 240, 240, 255))
@@ -144,6 +145,29 @@ def save_potion(name, color):
     ImageDraw.Draw(img).rounded_rectangle((10, 20, 121, 170), radius=12, fill=(240, 240, 250, 255))
     ImageDraw.Draw(img).text((16, 80), name[:12], fill=color + (255,))
     img.save(out)
+
+
+PORTRAIT_W, PORTRAIT_H = 450, 630
+CHAR_KEYS = ("eyja", "muel", "scene", "highmore", "archetto", "haruka", "nymph")
+OVERLAY_ITEMS = (
+    "cuffs", "belt", "garter", "vibe", "bodycrest", "collar", "leash", "belltag",
+    "rope", "ringgag", "clothgag", "gag", "laceblindfold", "blindfold", "hearteyes",
+)
+
+
+def ensure_portrait_overlays():
+    """Transparent 450x630 overlays so missing files never trigger purple fallback."""
+    d = ROOT / "portraits" / "overlays"
+    d.mkdir(parents=True, exist_ok=True)
+    n = 0
+    for key in CHAR_KEYS:
+        for item in OVERLAY_ITEMS:
+            out = d / f"{key}_{item}.png"
+            if out.exists():
+                continue
+            Image.new("RGBA", (PORTRAIT_W, PORTRAIT_H), (0, 0, 0, 0)).save(out)
+            n += 1
+    return n
 
 
 if __name__ == "__main__":
@@ -195,4 +219,5 @@ if __name__ == "__main__":
     for n in muel_potions:
         save_potion(n, PALETTE["muel"])
     scanned = scan_java_assets() or 0
-    print(f"placeholder images ok (scanned {scanned} java refs)")
+    overlays = ensure_portrait_overlays()
+    print(f"placeholder images ok (scanned {scanned} java refs, {overlays} new overlays)")
