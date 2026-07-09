@@ -128,11 +128,12 @@ public class ArkNsfwMod implements
 
     @Override
     public void receivePostInitialize() {
-        System.out.println("[arknsfw] 0.7.0-sensitive loaded (portrait+postbattle+fallmode active)");
+        System.out.println("[arknsfw] 0.7.1-tailored loaded (portrait+postbattle+fallmode active)");
         ArkCharacterSetup.registerCharacters();
         registerEvents();
         registerPotions();
         arknsfw.helpers.ArkFallMode.loadConfig();
+        arknsfw.helpers.ArkFallCardRider.applyDescriptions();
         registerModPanel();
     }
 
@@ -147,7 +148,12 @@ public class ArkNsfwMod implements
                     com.megacrit.cardcrawl.helpers.FontHelper.charDescFont,
                     arknsfw.helpers.ArkFallMode.enabled(), panel,
                     label -> { },
-                    button -> arknsfw.helpers.ArkFallMode.setEnabled(button.enabled));
+                    button -> {
+                        arknsfw.helpers.ArkFallMode.setEnabled(button.enabled);
+                        if (button.enabled) {
+                            arknsfw.helpers.ArkFallCardRider.applyDescriptions();
+                        }
+                    });
             panel.addUIElement(toggle);
             com.badlogic.gdx.graphics.Texture badge =
                     liesecore.helpers.TextureHelper.getTexture(makeImagePath("badge.png"));

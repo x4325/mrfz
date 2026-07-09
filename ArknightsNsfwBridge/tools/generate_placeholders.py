@@ -116,7 +116,8 @@ def save_relic(name, color):
         d = ROOT / sub
         d.mkdir(parents=True, exist_ok=True)
         out = d / f"{name}.png"
-        if out.exists() and out.stat().st_size > 2000:
+        if out.exists():
+            # 已有成品图标（含轮廓）一律不覆盖
             continue
         img = Image.new("RGBA", (128, 128), color + (255,))
         ImageDraw.Draw(img).ellipse((8, 8, 120, 120), fill=(240, 240, 240, 255))
