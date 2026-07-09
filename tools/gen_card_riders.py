@@ -146,6 +146,113 @@ TABLE.update({
     "nymph:ShadowReap": ["ex8"],
 })
 
+
+# ---- 艾雅法拉本体卡（101张，按机制家族逐张指定）----
+def _many(fx, *ids):
+    return {i: [fx] for i in ids}
+
+EYJA = {}
+# 轻攻击：兴奋+2
+EYJA.update(_many("ex2", "Strike_Eyjafjalla", "FloorCloud_Eyjafjalla", "Sunshine_Eyjafjalla",
+    "InstantFireworks_Eyjafjalla", "CPS_Eyjafjalla", "JMCPS_Eyjafjalla", "XSS_Eyjafjalla",
+    "VolcanoStone_Eyjafjalla"))
+# 多段/激情攻击：兴奋+3
+EYJA.update(_many("ex3", "HeartScar_Eyjafjalla", "UrgentPresto_Eyjafjalla", "Chorus_Eyjafjalla",
+    "SilentSound_Eyjafjalla", "Duetto_Eyjafjalla", "ThunderCloud_Eyjafjalla", "CXXSS_Eyjafjalla"))
+# 灼伤/炎息自热：痛热转快感 兴奋+4
+EYJA.update(_many("ex4", "FlameSurround_Eyjafjalla", "FlameMountain_Eyjafjalla", "Ignition_Eyjafjalla",
+    "ReIgnition_Eyjafjalla", "FireOfLove_Eyjafjalla", "HappinessAria_Eyjafjalla",
+    "SadnessRecitative_Eyjafjalla", "DancingLava_Eyjafjalla", "FireHeart_Eyjafjalla",
+    "SpurtOut_Eyjafjalla", "SayToSun_Eyjafjalla"))
+# 旋律/咏唱：口枷联动
+EYJA.update(_many("gag_ex3", "TreeAngle_Eyjafjalla", "InSunset_Eyjafjalla", "Sailing_Eyjafjalla",
+    "TheEnd_Eyjafjalla", "WaveFlower_Eyjafjalla", "GoldAndRoses_Eyjafjalla", "BlazePrelude_Eyjafjalla",
+    "AnswerInWind_Eyjafjalla", "TranceDream_Eyjafjalla", "Songs_Eyjafjalla", "SongMary_Eyjafjalla",
+    "SongFarmer_Eyjafjalla", "SongBoat_Eyjafjalla"))
+# 心音/检索抽牌：跳蛋联动
+EYJA.update(_many("vibe_draw", "ResonanceDefend_Eyjafjalla", "HeartFeel_Eyjafjalla",
+    "DreamCradle_Eyjafjalla", "LittleFeelings_Eyjafjalla", "Marshmallow_Eyjafjalla",
+    "Shuttle_Eyjafjalla", "ClearDream_Eyjafjalla", "PracticalJoke_Eyjafjalla", "FKY_Eyjafjalla",
+    "MTFKY_Eyjafjalla", "FXZ_Eyjafjalla", "LJFXZ_Eyjafjalla", "BurnGround_Eyjafjalla"))
+# 云层/甜梦：受孕+3
+EYJA.update(_many("conc3", "IntoDream_Eyjafjalla", "RiseUp_Eyjafjalla", "SevenColor_Eyjafjalla",
+    "Morning_Eyjafjalla", "Afterglow_Eyjafjalla", "CloudSilk_Eyjafjalla", "Fairy_Eyjafjalla",
+    "HeartInCandy_Eyjafjalla", "CloudCake_Eyjafjalla", "FollowHeart_Eyjafjalla",
+    "SoLongAdele_Eyjafjalla", "PinkOcean_Eyjafjalla", "Cloud_Eyjafjalla", "UnknownCloud_Eyjafjalla",
+    "HPY_Eyjafjalla", "DollyInvitation_Eyjafjalla", "TheLovedOne_Eyjafjalla", "TimeOfLove_Eyjafjalla",
+    "BetweenUs_Eyjafjalla", "MissSound_Eyjafjalla", "ResearchOnNature_Eyjafjalla",
+    "LetRainGo_Eyjafjalla", "CloudMelody_Eyjafjalla", "Inherit_Eyjafjalla", "SongOfLove_Eyjafjalla"))
+# 守护/能力滋养：受胎+3
+EYJA.update(_many("fert3", "DenseMist_Eyjafjalla", "VolcanicHealing_Eyjafjalla",
+    "SilentWet_Eyjafjalla", "DGDGZ_Eyjafjalla"))
+# 格挡类：兴奋≥30格挡联动
+EYJA.update(_many("blk30_2", "Defend_Eyjafjalla", "FlutteringBreeze_Eyjafjalla",
+    "CloudyBarrier_Eyjafjalla", "TQB_Eyjafjalla", "LTTQB_Eyjafjalla", "LLH_Eyjafjalla",
+    "NSLLH_Eyjafjalla", "DGZ_Eyjafjalla", "LiveStone_Eyjafjalla", "PrepareBeforeCamp_Eyjafjalla",
+    "CloudCrack_Eyjafjalla"))
+# 按捺：压制欲望
+EYJA["Push_Eyjafjalla"] = ["calm4"]
+# 大招：兴奋≥50本源+1 + 淫纹联动
+for i in ("Volcano_Eyjafjalla", "Darkside_Eyjafjalla", "FlameBurst_Eyjafjalla",
+          "PulseOfTerra_Eyjafjalla", "Dreiton_Eyjafjalla"):
+    EYJA[i] = ["mech50_1", "crest_ex4"]
+
+# ---- 缪尔赛思本体卡（140张）----
+MUEL = {}
+# 协同轻攻击：兴奋+2
+MUEL.update(_many("ex2", "WaterStrike_Muelsyse", "WaterStrikePro_Muelsyse", "Bright_Muelsyse",
+    "Geometry_Muelsyse", "ScatterSpore_Muelsyse", "Starter_Muelsyse", "GoldenWander_Muelsyse",
+    "StarMove_Muelsyse"))
+# 大水/连击攻击：兴奋+3
+MUEL.update(_many("ex3", "WaterStrikeEnd_Muelsyse", "FractalAttack_Muelsyse", "PoisonIvy_Muelsyse",
+    "HugOfRegret_Muelsyse", "ApartWhenLoss_Muelsyse", "WaterWave_Muelsyse", "ExplosionMagic_Muelsyse",
+    "CondensateWish_Muelsyse", "LiftStar_Muelsyse", "Suzuran_Muelsyse", "WhiteRose_Muelsyse",
+    "MillenniumVine_Muelsyse", "VowAndEvolution_Muelsyse", "SourceTogether_Muelsyse",
+    "GraduallyWater_Muelsyse", "FluidPower_Muelsyse"))
+# 全身濡湿：兴奋+4
+MUEL.update(_many("ex4", "WaterSilently_Muelsyse", "ShallowAdaption_Muelsyse", "WaterRecycle_Muelsyse"))
+# 栽培/播种/花：受孕+3（授粉主题）
+MUEL.update(_many("conc3", "SongOfRose_Muelsyse", "SpringWord_Muelsyse", "Seed_Muelsyse",
+    "FullBlown_Muelsyse", "SoilSpread_Muelsyse", "SoilExhaust_Muelsyse", "BornShoots_Muelsyse",
+    "LifeAndWind_Muelsyse", "EcologyCycle_Muelsyse", "Shoot_Muelsyse", "SpruceInCage_Muelsyse",
+    "PlantAStar_Muelsyse", "EndTime_Muelsyse", "DeGold_Muelsyse", "EcologicalProject_Muelsyse",
+    "ModeCultivate_Muelsyse", "FallenSeasons_Muelsyse", "StarLaurel_Muelsyse",
+    "LingerFragrance_Muelsyse", "CrazyWord_Muelsyse", "SourceOfLife_Muelsyse", "MatrixWave_Muelsyse",
+    "MyShadow_Muelsyse", "SeriousSpawn_Muelsyse"))
+MUEL["LifeDeduction_Muelsyse"] = ["conc4"]
+# 养料/塑形：受胎+3
+MUEL.update(_many("fert3", "Orchid_Muelsyse", "FineBlend_Muelsyse", "CompositeNutrient_Muelsyse",
+    "Reflux_Muelsyse", "LightFlow_Muelsyse", "TransRapid_Muelsyse", "TransCleanWater_Muelsyse",
+    "SoilBack_Muelsyse", "UnknownFluid_Muelsyse", "DeepReflect_Muelsyse", "CurseOfSpirit_Muelsyse",
+    "EcologicalCoupling_Muelsyse", "FlowerSpread_Muelsyse", "FlowerParasitism_Muelsyse",
+    "FlowerCure_Muelsyse", "FlowerWater_Muelsyse"))
+# 漫步/检索：跳蛋联动
+MUEL.update(_many("vibe_draw", "TerraPatrol_Muelsyse", "Reconfiguration_Muelsyse",
+    "InverseChange_Muelsyse", "DorothyVision_Muelsyse", "MeetInSnow_Muelsyse", "TimeRiver_Muelsyse",
+    "UncertainForm_Muelsyse", "RemainDust_Muelsyse", "LivingEcho_Muelsyse", "LoneStar_Muelsyse",
+    "CloudyBarrier_Muelsyse", "Mibo_Muelsyse"))
+MUEL["ForSeek_Muelsyse"] = ["edge_energy"]
+MUEL["Hypothermia_Muelsyse"] = ["calm4"]
+# 格挡类
+MUEL.update(_many("blk30_2", "WaterDefend_Muelsyse", "LossShield_Muelsyse", "Rest_Muelsyse",
+    "Trail_Muelsyse", "Irrigate_Muelsyse", "DreamBubble_Muelsyse", "WaterShield_Muelsyse",
+    "Revive_Muelsyse", "NoManMachine_Muelsyse", "BlueHyacinth_Muelsyse", "LifeRipple_Muelsyse"))
+MUEL["ItIs_Muelsyse"] = ["gearblk1"]
+# 大招
+for i in ("WaterStrikeO_Muelsyse", "Ocean_Muelsyse", "RainWorld_Muelsyse", "Dandelion_Muelsyse",
+          "ChorusFlower_Muelsyse"):
+    MUEL[i] = ["mech50_1", "crest_ex4"]
+# 复制卡：攻击型分身=兴奋+2，其余=被分身环绕 受孕+3
+for i in ("Ifrit", "Typhon", "Greyy", "Kafka", "Dorothy", "Astgenne", "Amiya"):
+    MUEL[f"{i}_Muelsyse"] = ["ex2"]
+for i in ("Saria", "Mechanist", "Silence", "Ptilopsis", "Megallan", "Mayer", "Saileach", "Reed",
+          "SilverAsh", "Astesia", "Tulip", "Pepe", "Narantuya", "Shu", "Eyjafjalla", "SilenceP",
+          "Marcille", "TinMan", "Theresa", "Isharmla"):
+    MUEL[f"{i}_Muelsyse"] = ["conc3"]
+
+TABLE.update(EYJA)
+TABLE.update(MUEL)
+
 HEADER = '''package arknsfw.helpers;
 
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
