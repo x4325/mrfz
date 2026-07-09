@@ -86,9 +86,6 @@ public final class ArkPortraitPanel {
         if (time < climaxUntil) {
             return "climax";
         }
-        if (hasRelic(arknsfw.relics.equipment.RestraintCuffsRelic.ID)) {
-            return "cuffs";
-        }
         if (crestVisible(key) && !NsfwRunStats.pregnant && ArkExposureHelper.stage() == 0) {
             return "crest";
         }
@@ -102,6 +99,8 @@ public final class ArkPortraitPanel {
     /** 装备单件层：戴哪件叠哪件（从锁底装备合体图切出）。 */
     private static void drawUserItems(SpriteBatch sb, String key, float ox, float oy, float bw, float bh, int preg) {
         String suffix = preg > 0 ? "_p" + preg : "";
+        // 手铐改为叠加件（0.7.3 起与破损/情欲/高潮任意组合；缪尔右腕为镜像移植）
+        if (hasRelic(arknsfw.relics.equipment.RestraintCuffsRelic.ID)) drawUserItem(sb, key, "cuffs" + suffix, ox, oy, bw, bh);
         if (hasRelic(arknsfw.relics.equipment.RopeBindRelic.ID)) drawUserItem(sb, key, "rope" + suffix, ox, oy, bw, bh);
         if (hasRelic(arknsfw.relics.equipment.ChastityBeltRelic.ID)) drawUserItem(sb, key, "chastity" + suffix, ox, oy, bw, bh);
         if (hasRelic(arknsfw.relics.equipment.LaceGarterRelic.ID)) drawUserItem(sb, key, "garter" + suffix, ox, oy, bw, bh);

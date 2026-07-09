@@ -47,6 +47,20 @@ def extract(base, img):
     return layer
 
 
+def cuffs_layer(tag, cn):
+    """手铐叠加件：缪尔赛思左手铐镜像移植到右腕（原图只画了左手）。"""
+    base = np.asarray(Image.open(f"art_input/{cn}/基础.png").convert("RGBA"), dtype=np.int16)
+    img = Image.open(f"art_input/{cn}/手铐.png").convert("RGBA")
+    layer = extract(base, img)
+    canvas = Image.fromarray(layer)
+    if tag == "muel":
+        band = canvas.crop((574, 370, 624, 404)).transpose(Image.FLIP_LEFT_RIGHT)
+        band = band.resize((int(band.width * 0.84), int(band.height * 0.84)), Image.LANCZOS)
+        band = band.rotate(4, resample=Image.BICUBIC, expand=True)
+        canvas.alpha_composite(band, (293 - band.width // 2, 661 - band.height // 2))
+    return np.asarray(canvas)
+
+
 def main():
     for tag, (cn, items) in FILES.items():
         base = np.asarray(Image.open(f"art_input/{cn}/基础.png").convert("RGBA"), dtype=np.int16)
@@ -58,7 +72,12 @@ def main():
             for stage, (radius, strength) in PREG.items():
                 warped = belly_warp(layer, cx, cy, radius, strength)
                 Image.fromarray(warped).save(f"{OUT}/{tag}_{key}_p{stage}.png")
-        print(tag, len(items), "layers (+preg)")
+        cuffs = cuffs_layer(tag, cn)
+        Image.fromarray(cuffs).save(f"{OUT}/{tag}_it_cuffs.png")
+        for stage, (radius, strength) in PREG.items():
+            warped = belly_warp(cuffs, cx, cy, radius, strength)
+            Image.fromarray(warped).save(f"{OUT}/{tag}_it_cuffs_p{stage}.png")
+        print(tag, len(items) + 1, "layers (+preg)")
 
 
 if __name__ == "__main__":
